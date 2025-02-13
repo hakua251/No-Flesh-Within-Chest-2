@@ -1,0 +1,10 @@
+{
+    "slotPositions": [
+        {"x": 18, "y": 10}
+    ],
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity.png",
+    "playerInventoryPosition": {
+        "x": 0,
+        "y": 0
+    }
+}
