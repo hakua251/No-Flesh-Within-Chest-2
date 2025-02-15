@@ -5,8 +5,6 @@ RegistryOrgan('kubejs:prismarine_crown')
     .addScore('chestcavity:luck', 1)
 
 
-OrganChestCavityUpdateStrategy.addOnlyStrategy('kubejs:prismarine_crown', PrismarineCrownChestCavityUpdate)
-
 /**
  * @param {any} customData
  * @param {Internal.EvaluateChestCavityJS} event 
@@ -14,15 +12,11 @@ OrganChestCavityUpdateStrategy.addOnlyStrategy('kubejs:prismarine_crown', Prisma
  * @param {number} organIndex
  */
 function PrismarineCrownChestCavityUpdate(customData, event, organItem, organIndex) {
-    const {  chestCavity } = event
+    const { chestCavity } = event
     chestCavity.organScores.forEach((key, value) => {
-        if (value < 10) {
-            chestCavity.organScores.put(key, new $Float(10))
+        if (value < 0) {
+            chestCavity.setOrganScores(key, 0)
         }
     })
 }
-
-
-/**
- * 
- */
+OrganChestCavityUpdateStrategy.addOnlyStrategy('kubejs:prismarine_crown', PrismarineCrownChestCavityUpdate)

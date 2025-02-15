@@ -3,9 +3,6 @@ RegistryOrgan('kubejs:greedy_stomach')
     .addScore('chestcavity:digestion', 0.5)
     .addScore('chestcavity:health', 1)
 
-
-OrganFoodEatenStrategy.addOnlyStrategy('kubejs:greedy_stomach', GreedyStomachItemEaten)
-
 /**
  * @param {any} customData
  * @param {Internal.FoodEatenEventJS} event 
@@ -13,5 +10,6 @@ OrganFoodEatenStrategy.addOnlyStrategy('kubejs:greedy_stomach', GreedyStomachIte
  * @param {number} organIndex
  */
 function GreedyStomachItemEaten(customData, event, organItem, organIndex) {
-    event.player.giveExperiencePoints(30)
+    event.player.giveExperiencePoints(10)
 }
+OrganFoodEatenStrategy.addStrategy('kubejs:greedy_stomach', GreedyStomachItemEaten)

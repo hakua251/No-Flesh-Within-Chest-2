@@ -1,8 +1,32 @@
-
+// priority: 100
 NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', /** @param {Internal.LivingHurtEvent} event */ event => {
-    
+    if (!event.source.actual) return
 
+    if (event.source.is($DamageTypes.THORNS)) return
+    
+    let customData = {
+        thornsDamage: 0
+    }
+    OrganEntityDoDamage(event, customData)
+    if (customData.thornsDamage != 0 && event.entity) {
+        event.source.actual.tell(customData.thornsDamage)
+        let level = event.entity.level
+        event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)
+    }
 })
 
 
 
+
+
+NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent', /** @param {Internal.LivingDamageEvent} event */ event => {
+    if (!event.entity) return
+    let customData = {
+        thornsDamage: 0
+    }
+    OrganEntityBeHurt(event, customData)
+    if (customData.thornsDamage != 0 && event.source.actual) {
+        let level = event.entity.level
+        event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)
+    }
+})

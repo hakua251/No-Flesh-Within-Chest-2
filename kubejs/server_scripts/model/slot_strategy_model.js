@@ -1,14 +1,13 @@
 // priority: 900
-function OrganStrategyModel() {
+function SlotStrategyModel() {
     /**@type {Object<string, function(...any): void>} */
     this.strategyMap = {}
-    this.onlyStrategyMap = {}
     this.init = (args) => { }
     this.defer = (args) => { }
     return this
 }
 
-OrganStrategyModel.prototype = {
+SlotStrategyModel.prototype = {
     /**
      * @param {Object<string, function(...any): void>} strategyMap
      */
@@ -41,31 +40,28 @@ OrganStrategyModel.prototype = {
         return this
     },
     /**
- * @param {function(...any): void} data
- */
+     * @param {function(...any): void} data
+     */
     setDefer: function (deferFunc) {
         this.defer = deferFunc
         return this
     },
     /**
-     * @param {Internal.ChestCavityInventory} ccInv
+     * @param {Internal.ChestCavityInstance} chestCavity
      * @param {any[]} args 
      * @param {any} customData
      */
-    run: function (ccInv, args, customData) {
+    run: function (chestCavity, args, customData) {
+        const ccInv = chestCavity.inventory
+        const invTypeData = chestCavity.getInventoryTypeData()
         args.unshift(customData)
         this.init.apply(null, args)
-        let onlySet = new Set()
         for (let i = 0; i < ccInv.getSlots(); i++) {
             let curItem = ccInv.getStackInSlot(i)
             if (!curItem || curItem.isEmpty()) continue
-            let itemId = curItem.id
-            if (this.onlyStrategyMap[itemId] && !onlySet.has(itemId)) {
-                onlySet.add(itemId)
-                this.onlyStrategyMap[itemId].apply(null, args.concat(curItem, i))
-            }
-            if (this.strategyMap[itemId]) {
-                this.strategyMap[itemId].apply(null, args.concat(curItem, i))
+            let slotType = invTypeData.getSlotType(i)
+            if (this.strategyMap[slotType]) {
+                this.strategyMap[slotType].apply(null, args.concat(curItem, i))
             }
         }
         this.defer.apply(null, args)

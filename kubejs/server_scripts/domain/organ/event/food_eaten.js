@@ -19,6 +19,7 @@ const OrganFoodEatenStrategy = new OrganStrategyModel()
 
 
 ItemEvents.foodEaten(event => {
+    if (!event.entity) return
     let customData = {}
     OrganFoodEatenStrategy.run(GetEntityChestCavityInventory(event.entity), [event], customData)
 })

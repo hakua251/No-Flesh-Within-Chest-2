@@ -28,5 +28,5 @@
     {"item": "chestcavity:aquatic_muscle","position": 25},
     {"item": "chestcavity:aquatic_muscle","position": 26}
   ],
-  "inventoryType": "kubejs:inventory/default.json"
+  "inventoryType": "kubejs:cc_inventory_types/default.json"
 }

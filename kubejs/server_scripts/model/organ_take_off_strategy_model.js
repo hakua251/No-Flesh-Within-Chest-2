@@ -1,5 +1,5 @@
 // priority: 900
-function OrganStrategyModel() {
+function OrganTakeOffStrategyModel() {
     /**@type {Object<string, function(...any): void>} */
     this.strategyMap = {}
     this.onlyStrategyMap = {}
@@ -8,7 +8,7 @@ function OrganStrategyModel() {
     return this
 }
 
-OrganStrategyModel.prototype = {
+OrganTakeOffStrategyModel.prototype = {
     /**
      * @param {Object<string, function(...any): void>} strategyMap
      */
@@ -49,25 +49,32 @@ OrganStrategyModel.prototype = {
     },
     /**
      * @param {Internal.ChestCavityInventory} ccInv
+     * @param {Internal.ChestCavityInventory} oldccInv
      * @param {any[]} args 
      * @param {any} customData
      */
-    run: function (ccInv, args, customData) {
+    run: function (ccInv, oldccInv, args, customData) {
+        if (!oldccInv) return
         args.unshift(customData)
         this.init.apply(null, args)
         let onlySet = new Set()
-        for (let i = 0; i < ccInv.getSlots(); i++) {
-            let curItem = ccInv.getStackInSlot(i)
-            if (!curItem || curItem.isEmpty()) continue
-            let itemId = curItem.id
+        let oldContainerSize = oldccInv.getContainerSize()
+        for (let i = 0; i < oldContainerSize; i++) {
+            let oldItem = oldccInv.getStackInSlot(i)
+            if (!oldItem || oldItem.isEmpty()) continue
+            let newItem = ccInv.getStackInSlot(i)
+            if (oldItem.equals(newItem, true)) continue
+
+            let itemId = oldItem.id
             if (this.onlyStrategyMap[itemId] && !onlySet.has(itemId)) {
                 onlySet.add(itemId)
-                this.onlyStrategyMap[itemId].apply(null, args.concat(curItem, i))
+                this.onlyStrategyMap[itemId].apply(null, args.concat(oldItem, i))
             }
             if (this.strategyMap[itemId]) {
-                this.strategyMap[itemId].apply(null, args.concat(curItem, i))
+                this.strategyMap[itemId].apply(null, args.concat(oldItem, i))
             }
         }
+
         this.defer.apply(null, args)
         return
     },

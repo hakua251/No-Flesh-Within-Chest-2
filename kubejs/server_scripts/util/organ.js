@@ -8,3 +8,12 @@
 function GetEntityChestCavityInventory(entity) {
     return entity.chestCavityInstance.inventory
 }
+
+/**
+ * 
+ * @param {Internal.ChestCavityInstance} cc 
+ * @param {Number} index 
+ */
+function GetChestCavitySlotType(cc, index) {
+    return cc.getInventoryTypeData().getSlotType(index)
+}

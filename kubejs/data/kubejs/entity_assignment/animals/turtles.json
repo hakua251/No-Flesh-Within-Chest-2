@@ -1,6 +1,0 @@
-{
-  "chestcavity": "kubejs:types/animals/turtle.json",
-  "entities": [
-    "minecraft:turtle"
-  ]
-}

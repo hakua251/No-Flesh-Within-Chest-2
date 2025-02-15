@@ -1,4 +1,8 @@
 // priority: 1000
+/**
+ * 
+ * @param {String} itemId 
+ */
 function MultiStateTooltip(itemId) {
     this.itemId = itemId
     this.defaultTooltips = []
@@ -93,7 +97,7 @@ MultiStateTooltip.prototype = {
  */
 const OrganTooltipRegistryMap = {}
 /**
- * @param {MultiStateTooltip} tooltipModel 
+ * @param {MultiStateTooltip} tooltipModel
  */
 function RegisteryOrganTooltip(tooltipModel) {
     OrganTooltipRegistryMap[tooltipModel.itemId] = tooltipModel
