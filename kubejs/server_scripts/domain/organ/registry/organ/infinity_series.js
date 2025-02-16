@@ -54,7 +54,7 @@ OrganTakeOffStrategy.addOnlyStrategy('kubejs:infinity_beats', InfinityBeatsTakeO
 
 const InfinityForceAttackUpUUID = UUID.fromString('67580408-8DF1-40EB-8DCB-50B10DB9C480')
 /**
- * @param {any} customData
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
@@ -65,28 +65,9 @@ function InfinityForceEntityChestCavityUpdate(customData, event, organItem, orga
     if (!entity.isLiving()) return
     if (!organItem.hasNBT() || !organItem.nbt.contains('forgeTimes')) return
     let value = organItem.nbt.getInt('forgeTimes')
-
-    let attributeInstance = entity.getAttribute('minecraft:generic.attack_damage')
-    let attributeModifier = new $AttributeModifier(InfinityForceAttackUpUUID, 'InfinityForceAttackUp', value, $Operation.ADDITION)
-
-    attributeInstance.removeModifier(InfinityForceAttackUpUUID)
-    attributeInstance.addTransientModifier(attributeModifier)
+    customData.attackDamage.addAttributeModifier(value, 'addition', 'base')
 }
 OrganChestCavityUpdateStrategy.addOnlyStrategy('kubejs:infinity_force', InfinityForceEntityChestCavityUpdate)
-
-
-/**
- * @param {any} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- */
-function InfinityForceTakeOff(customData, event, organItem, organIndex) {
-    const { entity } = event
-    let attributeInstance = entity.getAttribute('minecraft:generic.attack_damage')
-    attributeInstance.removeModifier(InfinityForceAttackUpUUID)
-}
-OrganTakeOffStrategy.addOnlyStrategy('kubejs:infinity_force', InfinityForceTakeOff)
 
 /**
  * @param {any} customData

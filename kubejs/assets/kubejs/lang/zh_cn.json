@@ -1,9 +1,7 @@
 {
     "_comment.base_info": "基础信息",
     "kubejs.gameinfo.modpack.name": "No Flesh Within Chest",
-
-
-
+    
     "_comment.organ_score_tooltips": "器官 Score Tooltips",
     "tooltips.kubejs.score_tag.chestcavity:filtration": "血液过滤效率",
     "tooltips.kubejs.score_tag.chestcavity:breath_recovery": "呼吸效率",
@@ -56,6 +54,7 @@
     "tooltips.kubejs.score_tag.chestcavity:impact_resistant": "冲击抗性",
     "tooltips.kubejs.score_tag.chestcavity:rotgut": "嗜腐",
     "tooltips.kubejs.score_tag.chestcavity:ease_of_access": "易于开胸",
+    "tooltips.kubejs.score_tag.kubejs:rosy": "玫瑰化",
     "tooltips.kubejs.score_tag.hover.chestcavity:filtration": "如果你没有足够的血液过滤效率，你就会中毒",
     "tooltips.kubejs.score_tag.hover.chestcavity:breath_recovery": "影响你呼吸气泡的恢复速度",
     "tooltips.kubejs.score_tag.hover.chestcavity:nutrition": "影响食物的饱和度",
@@ -107,6 +106,7 @@
     "tooltips.kubejs.score_tag.hover.chestcavity:impact_resistant": "提供你额外的冲击抗性",
     "tooltips.kubejs.score_tag.hover.chestcavity:rotgut": "能够使你可以食用腐肉",
     "tooltips.kubejs.score_tag.hover.chestcavity:ease_of_access": "能使该生物满血被开胸，且不会因此损失血量",
+    "tooltips.kubejs.score_tag.hover.kubejs:rosy": "玫瑰化程度能够表示你对玫瑰系列器官的能力的发挥程度",
 
     "_comment.organ_tag_tooltips": "器官 Tag Tooltips",
     "tooltips.kubejs.tag.kubejs:appendix": "阑尾",
@@ -165,10 +165,10 @@
 
     "_comment.multi_state_tooltips": "多态Tooltips",
     "tooltips.kubejs.multi_state.shift.1": "§6·§r 按住 §e§l[ shift ]§r 查看基础属性",
-    "tooltips.kubejs.multi_state.ctrl.1": "§6·§r 按住 §e§l[ ctrl ]§r 查看特殊效果",
+    "tooltips.kubejs.multi_state.ctrl.1": "§6·§r 按住 §e§l[ ctrl ]§r 查看可用增强",
     "tooltips.kubejs.multi_state.alt.1": "§6·§r 按住 §e§l[ alt ]§r 查看特殊效果",
     "tooltips.kubejs.multi_state.shift_holding.1": "§7▼ 按住 §8§l[ shift ]§r§7 查看基础属性",
-    "tooltips.kubejs.multi_state.ctrl_holding.1": "§7▼ 按住 §8§l[ ctrl ]§r§7 查看相关技艺",
+    "tooltips.kubejs.multi_state.ctrl_holding.1": "§7▼ 按住 §8§l[ ctrl ]§r§7 查看可用增强",
     "tooltips.kubejs.multi_state.alt_holding.1": "§7▼ 按住 §8§l[ alt ]§r§7 查看特殊效果",
 
     "_comment.tool_tooltips": "工具Tooltips",

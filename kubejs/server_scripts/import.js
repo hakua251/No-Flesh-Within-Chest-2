@@ -31,3 +31,8 @@ const $MobSpawnSettings = Java.loadClass('net.minecraft.world.level.biome.MobSpa
 const $FlipCondition = Java.loadClass('corgitaco.corgilib.entity.condition.FlipCondition')
 const $AnyCondition = Java.loadClass('corgitaco.corgilib.entity.condition.AnyCondition')
 const $DropSettings = Java.loadClass('corgitaco.enhancedcelestials.api.lunarevent.DropSettings')
+
+const $ModelData = Java.loadClass('noppes.mpm.ModelData')
+const $MpmPartData = Java.loadClass('noppes.mpm.client.parts.MpmPartData')
+const $MpmPackets = Java.loadClass('noppes.mpm.packets.Packets')
+const $PacketPlayerDataSend = Java.loadClass('noppes.mpm.packets.client.PacketPlayerDataSend')

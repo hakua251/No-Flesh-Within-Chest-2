@@ -3,16 +3,21 @@
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
-    let res = []
-    player.inventory.allItems.forEach(itemStack => {
-        let item = itemStack.getItem()
-        if (item instanceof $BucketItem) {
-            res.push(item.getFluid().fluidType)
-        }
-    })
-    // let tempSphere = new GeodeSphereModel()
-    // .addVein(Block.getBlock('minecraft:diamond_block').defaultBlockState(), 23, 'cloud')
-    // .setFillBlock(Block.getBlock('minecraft:glass').defaultBlockState())
-    // .setShellProperties(Block.getBlock('minecraft:glass').defaultBlockState(), 24, 1)
-    // tempSphere.generateSphere(level, player.block.getPos().atY(100))
+    let modelData = $ModelData.get(player)
+    let testPart = new $MpmPartData()
+    let nbt = new $CompoundTag()
+    // nbt.putString('Id', 'moreplayermodels:parts/accessories/backpack.json')
+    nbt.putString('Id', 'moreplayermodels:parts/legs/legs_naga.json')
+    nbt.putBoolean('UsePlayerSkin', false)
+    nbt.putString('Url', '')
+    nbt.putString('Texture', '')
+    nbt.putInt('ColorR', 1)
+    nbt.putInt('ColorG', 1)
+    nbt.putInt('ColorB', 1)
+    testPart.setNbt(nbt)
+    modelData.mpmParts.add(0, testPart)
+    modelData.refreshParts()
+    modelData.updateTransate()
+
+    $MpmPackets.sendNearby(player, new $PacketPlayerDataSend(player.getUuid(), modelData.writeToNBT()))
 })

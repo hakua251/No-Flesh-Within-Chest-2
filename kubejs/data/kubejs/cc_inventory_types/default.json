@@ -1,6 +1,6 @@
 {
     "slotDefinitions": [
-        {"x": 8, "y": 18, "type": "high_adaptability"},
+        {"x": 8, "y": 18, "type": "rose_spread"},
         {"x": 26, "y": 18},
         {"x": 44, "y": 18},
         {"x": 62, "y": 18},

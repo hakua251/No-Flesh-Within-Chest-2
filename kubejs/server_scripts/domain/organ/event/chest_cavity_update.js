@@ -1,44 +1,34 @@
 // priority: 801
+/**
+ * @typedef {Object} OrganChestCavityUpdateStrategyCustomData
+ * @property {AttributeManagerModel} attackDamage
+ */
+
 const OrganChestCavityUpdateStrategy = new OrganStrategyModel()
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganChestCavityUpdateStrategyCustomData} customData
          * @param {Internal.EvaluateChestCavityJS} event
          */
         (customData, event) => {
+            customData.attackDamage = new AttributeManagerModel(1)
         }
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganChestCavityUpdateStrategyCustomData} customData
          * @param {Internal.EvaluateChestCavityJS} event
          */
         (customData, event) => {
         }
     )
 
-const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
-    .setInit(
-        /** 
-         * @param {any} customData
-         * @param {Internal.EvaluateChestCavityJS} event
-         */
-        (customData, event) => {
-        }
-    )
-    .setDefer(
-        /**
-         * @param {any} customData
-         * @param {Internal.EvaluateChestCavityJS} event
-         */
-        (customData, event) => {
-        }
-    )
+
 
 const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganChestCavityUpdateStrategyCustomData} customData
          * @param {Internal.EvaluateChestCavityJS} event
          */
         (customData, event) => {
@@ -46,10 +36,30 @@ const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganChestCavityUpdateStrategyCustomData} customData
          * @param {Internal.EvaluateChestCavityJS} event
          */
         (customData, event) => {
+        }
+    )
+
+
+const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
+    .setInit(
+        /** 
+         * @param {OrganChestCavityUpdateStrategyCustomData} customData
+         * @param {Internal.EvaluateChestCavityJS} event
+         */
+        (customData, event) => {
+        }
+    )
+    .setDefer(
+        /**
+         * @param {OrganChestCavityUpdateStrategyCustomData} customData
+         * @param {Internal.EvaluateChestCavityJS} event
+         */
+        (customData, event) => {
+            customData.attackDamage.applyOnEntityByAttributeKey(event.entity, 'minecraft:generic.attack_damage', 'OrganAttackDamage')
         }
     )
 

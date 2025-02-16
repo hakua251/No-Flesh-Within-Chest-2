@@ -12,8 +12,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:infinity_force')
     .addAlt(Text.translatable('tooltips.kubejs.infinity_force.alt.3'))
     .addAlt(Text.translatable('tooltips.kubejs.infinity_force.alt.4')))
 
-    ItemEvents.tooltip(tooltip => {
-        tooltip.addAdvanced('kubejs:infinity_force', (item, advanced, text) => {
-            text.set(0, [text.get(0), Text.yellow(` +${item.nbt?.forgeTimes ? item.nbt.forgeTimes : 0}`)])
-        })
+ItemEvents.tooltip(tooltip => {
+    tooltip.addAdvanced('kubejs:infinity_force', (item, advanced, text) => {
+        text.set(0, [text.get(0), Text.yellow(` +${item.nbt?.forgeTimes ? item.nbt.forgeTimes : 0}`)])
     })
+})
