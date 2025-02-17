@@ -48,12 +48,13 @@ OrganTakeOffStrategyModel.prototype = {
         return this
     },
     /**
-     * @param {Internal.ChestCavityInventory} ccInv
-     * @param {Internal.ChestCavityInventory} oldccInv
+     * @param {Internal.ChestCavityInstance} ccInstance
      * @param {any[]} args 
      * @param {any} customData
      */
-    run: function (ccInv, oldccInv, args, customData) {
+    run: function (ccInstance, args, customData) {
+        const ccInv = ccInstance.inventory
+        const oldccInv = ccInstance.oldInventory
         if (!oldccInv) return
         args.unshift(customData)
         this.init.apply(null, args)

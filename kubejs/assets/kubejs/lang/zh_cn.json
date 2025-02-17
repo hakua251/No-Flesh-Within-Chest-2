@@ -196,5 +196,11 @@
     "tooltips.kubejs.infinity_force.alt.1": "    §6★§r 根据激活时该物品的强化次数决定伤害加成",
     "tooltips.kubejs.infinity_force.alt.2": "    §6★§r 装备时，击杀Boss概率会获得低于当前强化等级的无尽之力",
     "tooltips.kubejs.infinity_force.alt.3": "    §6★§r 同等级的无尽之力合成后会提高锻造等级",
-    "tooltips.kubejs.infinity_force.alt.4": "    §6★§r 掉落概率与幸运相关"
+    "tooltips.kubejs.infinity_force.alt.4": "    §6★§r 掉落概率与幸运相关",
+
+
+    "gui.kubejs.title.name.suffix": "的",
+	"gui.kubejs.title.chestcavity": "胸腔",
+    "status_msg.kubejs.chestopener.fail.obstructed": "无法对穿戴护甲的目标开胸",
+    "status_msg.kubejs.chestopener.fail.healthy": "无法对过于健康的目标开胸"
 }

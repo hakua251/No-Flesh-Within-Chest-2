@@ -75,7 +75,7 @@ StartupEvents.registry('item', event => {
             if (level.isClientSide()) return itemstack
             if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
                 let friend = Utils.server.getPlayer(itemstack.nbt.friendName)
-                if (friend && friend.isLiving()) {
+                if (friend && friend.isAlive()) {
                     let targetDim = friend.level.getDimension()
                     entity.teleportTo(targetDim, friend.x, friend.y, friend.z, 0, 0)
                     entity.addItemCooldown(itemstack, 20 * 10)
@@ -173,7 +173,7 @@ StartupEvents.registry('item', event => {
             let nbt = { organSocres: {} }
             let ray = entity.rayTrace(4, false)
             let target = entity
-            if (ray.entity && ray.entity.isLiving()) {
+            if (ray.entity && ray.entity.isAlive()) {
                 target = ray.entity
             }
             target.getChestCavityInstance().getOrganScores().forEach((key, value) => {

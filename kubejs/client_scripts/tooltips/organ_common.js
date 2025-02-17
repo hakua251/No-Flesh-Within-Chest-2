@@ -11,13 +11,13 @@ ItemEvents.tooltip(tooltip => {
             organTagTooltipsList.push(OrganTagMap[tagLocation])
         })
         if (organTagTooltipsList.length > 0) {
-            lineNum = AddForTextLines(text, [JoinWithSeparator('    ', organTagTooltipsList)], lineNum)
+            lineNum = AddForTextLines(text, [Text.of(' ').append(JoinWithSeparator('    ', organTagTooltipsList))], lineNum)
         }
 
         let organData = $ChestCavityUtil.lookupOrgan(item, null)
         let scoreTooltipsList = []
         organData.organScores.forEach((score, value) => {
-            let roundValue = FloorFix(value, 2)
+            let roundValue = RoundFix(value, 2)
             let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).getString()
             let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), Text.yellow(scoreString))
             scoreTooltipsList.push(scoreTooltips)
@@ -29,7 +29,7 @@ ItemEvents.tooltip(tooltip => {
             text.addAll(lineNum, customToolTips.defaultTooltips)
             lineNum += customToolTips.defaultTooltips.length
         }
-        
+
         switch (true) {
             case tooltip.isShift():
                 if (customToolTips.shiftTooltips.length + scoreTooltipsList.length > 0) {

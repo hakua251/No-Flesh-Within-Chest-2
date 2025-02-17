@@ -17,21 +17,51 @@ RegistryOrgan('kubejs:rose_quartz_liver')
 RegistryOrgan('kubejs:rose_quartz_dialyzer')
     .addScore('chestcavity:filtration', 1.5)
     .addScore('chestcavity:nerves', -0.25)
-    .addScore('kubejs:rosy', 1)
+    .addScore('kubejs:rosy', 0.5)
 
-const RoseMuscleAttackUp = UUID.fromString('EF4EFB50-5CCE-43CC-AF0F-96C9226413C9')
+/** ============================================================== */
+
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  */
-function RoseMuscleEntityChestCavityUpdate(customData, event, organItem, organIndex) {
-    /**@type {Internal.LivingEntity} */
-    const entity = event.entity
+function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIndex) {
     const chestCavity = event.chestCavity
-    if (!entity.isLiving()) return
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     customData.attackDamage.addAttributeModifier(rosyValue, 'addition', 'base')
 }
-OrganChestCavityUpdateStrategy.addStrategy('kubejs:rose_quartz_muscle', RoseMuscleEntityChestCavityUpdate)
+OrganChestCavityUpdateStrategy.addStrategy('kubejs:rose_quartz_muscle', RoseQuartzMuscleChestCavityUpdate)
+
+/** ============================================================== */
+
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organIndex) {
+    const chestCavity = event.chestCavity
+    let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
+    customData.maxHealth.addAttributeModifier(rosyValue, 'addition', 'base')
+}
+OrganChestCavityUpdateStrategy.addStrategy('kubejs:rose_quartz_heart', RoseQuartzHeartChestCavityUpdate)
+
+/** ============================================================== */
+
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function RoseQuartzLiverChestCavityUpdate(customData, event, organItem, organIndex) {
+    const chestCavity = event.chestCavity
+    let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
+    customData.maxHealth.addAttributeModifier(rosyValue, 'addition', 'base')
+}
+OrganChestCavityUpdateStrategy.addStrategy('kubejs:rose_quartz_heart', RoseQuartzLiverChestCavityUpdate)
+
+/** ============================================================== */

@@ -9,6 +9,9 @@ RegistryOrgan('kubejs:infinity_force')
     .addScore('chestcavity:defense', -2)
     .addScore('chestcavity:breath_recovery', -2)
 
+
+/** ============================================================== */
+
 const InfinityBeatsTempAttackUpUUID = UUID.fromString('686F8285-3FBF-4A22-9F2A-B1D6BA452BA8')
 /**
  * @param {any} customData
@@ -19,7 +22,7 @@ const InfinityBeatsTempAttackUpUUID = UUID.fromString('686F8285-3FBF-4A22-9F2A-B
 function InfinityBeatsEntityDoDamage(customData, event, organItem, organIndex) {
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
-    if (!sourceEntity.isLiving()) return
+    if (!sourceEntity.isAlive()) return
     if (sourceEntity.hasItemInSlot('mainhand') || sourceEntity.hasItemInSlot('offhand')) return
 
     let value = 4
@@ -51,23 +54,21 @@ function InfinityBeatsTakeOff(customData, event, organItem, organIndex) {
 OrganTakeOffStrategy.addOnlyStrategy('kubejs:infinity_beats', InfinityBeatsTakeOff)
 
 
+/** ============================================================== */
 
-const InfinityForceAttackUpUUID = UUID.fromString('67580408-8DF1-40EB-8DCB-50B10DB9C480')
+
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  */
-function InfinityForceEntityChestCavityUpdate(customData, event, organItem, organIndex) {
-    /**@type {Internal.LivingEntity} */
-    const entity = event.entity
-    if (!entity.isLiving()) return
+function InfinityForceChestCavityUpdate(customData, event, organItem, organIndex) {
     if (!organItem.hasNBT() || !organItem.nbt.contains('forgeTimes')) return
     let value = organItem.nbt.getInt('forgeTimes')
     customData.attackDamage.addAttributeModifier(value, 'addition', 'base')
 }
-OrganChestCavityUpdateStrategy.addOnlyStrategy('kubejs:infinity_force', InfinityForceEntityChestCavityUpdate)
+OrganChestCavityUpdateStrategy.addOnlyStrategy('kubejs:infinity_force', InfinityForceChestCavityUpdate)
 
 /**
  * @param {any} customData
@@ -91,4 +92,4 @@ function InfinityForceEntityLoot(customData, event, organItem, organIndex) {
 OrganEntityLootStrategy.addOnlyStrategy('kubejs:infinity_force', InfinityForceEntityLoot)
 
 
-
+/** ============================================================== */
