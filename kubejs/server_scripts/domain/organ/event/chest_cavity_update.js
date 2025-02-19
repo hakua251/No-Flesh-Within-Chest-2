@@ -75,6 +75,7 @@ ChestCavityEvents.evaluateChestCavity(event => {
     const { chestCavity, entity } = event
     let customData = {}
     if (!entity.isAlive()) return
+    entity.tell(1)
     
     OrganTakeOffStrategy.run(chestCavity, [event], customData)
     

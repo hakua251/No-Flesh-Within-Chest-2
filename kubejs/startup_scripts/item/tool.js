@@ -218,57 +218,8 @@ StartupEvents.registry('item', event => {
             return
         })
 
-    // event.create('operation_box').texture('kubejs:item/operation_box').maxStackSize(1)
-    //     .useAnimation('bow')
-    //     .use((level, player, hand) => {
-    //         return true
-    //     })
-    //     .useDuration(itemStack => 20)
-    //     .finishUsing((itemstack, level, entity) => {
-    //         if (level.isClientSide()) return itemstack
-    //         if (!entity.isPlayer()) return itemstack
-    //         let instance = entity.getChestCavityInstance()
-    //         let oriInv = instance.inventory.getTags()
-    //         let replaceInv = itemstack?.nbt?.inventory
-    //         if (!replaceInv) {
-    //             replaceInv = []
-    //         }
-    //         if (oriInv && replaceInv) {
-    //             instance.inventory.readTags(replaceInv)
-    //             if (itemstack.hasNBT()) {
-    //                 itemstack.nbt.put('inventory', oriInv)
-    //             } else {
-    //                 itemstack.setNbt({ inventory: oriInv })
-    //             }
-    //         }
-    //         global.initChestCavityIntoMap(entity, true)
-    //         if (entity.getChestCavityInstance().inventory.hasAnyMatching(item => {
-    //             return item.hasTag('kubejs:auto_active')
-    //         })) {
-    //             global.updatePlayerActiveStatus(entity)
-    //             entity.persistentData.putInt(organActive, 1)
-    //         }
-    //         entity.tell($Serializer.fromJsonLenient({ translate: 'kubejs.msg.operation_box.1' }))
-    //         return itemstack
-    //     })
 
     event.create('advanced_chest_opener').texture('kubejs:item/advanced_chest_opener')
         .maxStackSize(1)
-
-    // event.create('random_delivery_agreement').texture('kubejs:item/random_delivery_agreement')
-    //     .maxStackSize(16)
-    //     .useAnimation('bow')
-    //     .use((level, player, hand) => {
-    //         return true
-    //     })
-    //     .useDuration(itemStack => 20)
-    //     .finishUsing((itemstack, level, entity) => {
-    //         if (level.isClientSide()) return itemstack
-    //         if (!entity.isPlayer()) return itemstack
-    //         let wares = global.getRandomWare()
-    //         entity.give(wares)
-    //         itemstack.shrink(1)
-    //         return itemstack
-    //     })
 
 })

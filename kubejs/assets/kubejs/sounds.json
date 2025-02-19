@@ -7,23 +7,5 @@
         "stream": true
       }
     ]
-  },
-  "beak_metal": {
-    "category": "record",
-    "sounds": [
-      {
-        "name": "kubejs:records/beak_metal",
-        "stream": true
-      }
-    ]
-  },
-  "beak_mangrove_roots": {
-    "category": "record",
-    "sounds": [
-      {
-        "name": "kubejs:records/beak_mangrove_roots",
-        "stream": true
-      }
-    ]
   }
 }

@@ -3,5 +3,4 @@
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
-    player.tell(IsLoadedMPM)
 })

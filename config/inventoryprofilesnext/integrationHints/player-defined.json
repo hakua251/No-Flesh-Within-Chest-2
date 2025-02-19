@@ -1,5 +1,8 @@
 {
     "net.tigereye.chestcavity.ui.ChestCavityScreen": {
         "ignore": true
+    },
+    "net.tigereye.chestcavity.ui.ChestCavityItemScreen": {
+        "ignore": true
     }
 }
