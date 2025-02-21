@@ -11,6 +11,7 @@ const EventId2TagId = {
     'player_enchant': 'kubejs:player_enchant',
     'entity_loot': 'kubejs:entity_loot',
     'chest_loot': 'kubejs:chest_loot',
+    'entity_tick': 'kubejs:entity_tick',
 }
 
 

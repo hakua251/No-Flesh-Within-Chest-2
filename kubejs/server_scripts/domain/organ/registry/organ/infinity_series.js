@@ -27,6 +27,7 @@ function InfinityBeatsEntityDoDamage(customData, event, organItem, organIndex) {
 
     let value = 4
     let attributeInstance = sourceEntity.getAttribute('minecraft:generic.attack_damage')
+    if (!attributeInstance) return
     let oldModifier = attributeInstance.getModifier(InfinityBeatsTempAttackUpUUID)
     if (oldModifier) {
         value = oldModifier.amount + value
@@ -48,6 +49,7 @@ function InfinityBeatsEntityDoDamage(customData, event, organItem, organIndex) {
 function InfinityBeatsTakeOff(customData, event, organItem, organIndex) {
     const { entity } = event
     let attributeInstance = entity.getAttribute('minecraft:generic.attack_damage')
+    if (!attributeInstance) return
     attributeInstance.removeModifier(InfinityBeatsTempAttackUpUUID)
 }
 

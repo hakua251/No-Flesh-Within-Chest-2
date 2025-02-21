@@ -3,7 +3,7 @@ const OrganEntityTickEvent = new OrganEventModel('entity_tick')
     .setInit(
         /** 
          * @param {any} customData
-         * @param {Internal.SimplePlayerEventJS} event
+         * @param {Internal.OpenedEntityTickJS} event
          */
         (customData, event) => {
         }
@@ -11,7 +11,7 @@ const OrganEntityTickEvent = new OrganEventModel('entity_tick')
     .setDefer(
         /**
          * @param {any} customData
-         * @param {Internal.SimplePlayerEventJS} event
+         * @param {Internal.OpenedEntityTickJS} event
          */
         (customData, event) => {
         }
@@ -20,7 +20,7 @@ const OrganEntityTickEvent = new OrganEventModel('entity_tick')
 
 ChestCavityEvents.openedEntityTick(event => {
     const entity = event.entity
-    if (!entity || entity.age % 10 != 0) return
+    if (!entity || entity.age % 20 != 0) return
     let customData = {}
     OrganEntityTickEvent.run(entity, customData, [event])
 })

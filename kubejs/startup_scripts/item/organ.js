@@ -17,9 +17,9 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:rose_quartz_rib').maxStackSize(1).texture('kubejs:item/organs/rose_quartz/rose_quartz_rib').tag('kubejs:rose').tag('kubejs:rib')
 
     // 机械
-    event.create('kubejs:furnace_core').maxStackSize(1).texture('kubejs:item/organs/machine/furnace_core').tag('kubejs:revolution').tag('kubejs:heart').tag('kubejs:machine')
-
-
+    event.create('kubejs:furnace_core').maxStackSize(1).texture('kubejs:item/organs/machine/furnace_core').maxDamage(100).tag('kubejs:revolution').tag('kubejs:heart').tag('kubejs:machine')
+    event.create('kubejs:burning_heart').maxStackSize(1).texture('kubejs:item/organs/machine/burning_heart').maxDamage(100).tag('kubejs:revolution').tag('kubejs:heart').tag('kubejs:machine')
+    
 
     // // 无形肿瘤
     // event.create('kubejs:random_tumor')

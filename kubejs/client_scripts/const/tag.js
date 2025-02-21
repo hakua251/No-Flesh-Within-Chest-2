@@ -59,4 +59,6 @@ const OrganTagMap = {
     'kubejs:temperature': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:temperature')),
     'kubejs:temperature_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:temperature_only')),
     'chestcavity:salvageable': Text.gold(Text.translatable('tooltips.kubejs.tag.chestcavity:salvageable')),
+    'kubejs:entity_tick_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick_only')),
+    'kubejs:entity_tick': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick')),
 }
