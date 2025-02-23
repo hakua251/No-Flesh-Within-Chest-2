@@ -55,6 +55,9 @@ RegistryOrganStrategy(
 
 /** ============================================================== */
 
+
+
+
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
@@ -77,9 +80,26 @@ function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organInd
             return
     }
 }
+
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function RoseQuartzHeartMpmRender(customData, event, organItem, organIndex) {
+    const chestCavity = event.chestCavity
+    let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
+    if (rosyValue > 3) {
+        let mpmData = new MpmDataModel('kubejs:parts/body/rose_body_model.json')
+        customData.mpmParts.push(mpmData)
+    }
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rose_quartz_heart')
         .addStrategy('chest_cavity_update', RoseQuartzHeartChestCavityUpdate)
+        .addOnlyStrategy('mpm_render', RoseQuartzHeartMpmRender)
 )
 
 /** ============================================================== */

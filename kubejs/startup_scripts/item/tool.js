@@ -15,10 +15,7 @@ StartupEvents.registry('item', event => {
     event.create('ritual_catalyst').texture('kubejs:item/ritual_catalyst')
     event.create('lime_powder').texture('kubejs:item/lime_powder')
 
-    event.create('god_bless_empty_necklace').texture('kubejs:item/god_bless_empty_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
-    event.create('god_bless_full_necklace').texture('kubejs:item/god_bless_full_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
-    event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1).fireResistant()
-    event.create('god_agreement').texture('kubejs:item/god_agreement').maxStackSize(1)
+
     event.create('candy').texture('kubejs:item/candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible().effect('kubejs:sweet_dream', 20 * 5, 0, 1) }).tag('supplementaries:cookies')
     event.create('ice_candy').texture('kubejs:item/ice_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible().effect('kubejs:sweet_dream', 20 * 5, 0, 1) }).tag('supplementaries:cookies')
     event.create('water_candy').texture('kubejs:item/water_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible().effect('kubejs:sweet_dream', 20 * 5, 0, 1) }).tag('supplementaries:cookies')
@@ -162,48 +159,7 @@ StartupEvents.registry('item', event => {
             return itemstack
         })
 
-    event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
-        .useAnimation('bow')
-        .use((level, player, hand) => {
-            return true
-        })
-        .useDuration(itemStack => 20)
-        .finishUsing((itemstack, level, entity) => {
-            if (level.isClientSide()) return itemstack
-            let nbt = { organSocres: {} }
-            let ray = entity.rayTrace(4, false)
-            let target = entity
-            if (ray.entity && ray.entity.isAlive()) {
-                target = ray.entity
-            }
-            target.getChestCavityInstance().getOrganScores().forEach((key, value) => {
-                nbt.organSocres[key] = value
-            })
-            entity.give(Item.of('kubejs:glass_vial', nbt))
-            entity.addItemCooldown(itemstack, 20 * 15)
-            return itemstack
-        })
 
-    event.create('glass_vial').texture('kubejs:item/glass_vial').maxStackSize(1)
-        .useAnimation('bow')
-        .use((level, player, hand) => {
-            return true
-        })
-        .useDuration(itemStack => 20)
-        .finishUsing((itemstack, level, entity) => {
-            if (level.isClientSide()) return itemstack
-            if (!itemstack.nbt?.organSocres) return itemstack
-            
-            itemstack.nbt.organSocres.getAllKeys().forEach(key => {
-                let roundValue = FloorFix(itemstack.nbt.organSocres[key], 2)
-                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${key}`).getString()
-                let scoreTooltips = Text.translatable('tooltips.kubejs.glass_vial.4', Text.yellow(scoreString), Text.yellow(roundValue)).hover(Text.translate(`tooltips.kubejs.score_tag.hover.${key}`))
-                entity.tell(scoreTooltips)
-            })
-    
-            entity.addItemCooldown(itemstack, 20 * 15)
-            return itemstack
-        })
 
     event.create('holy_potion').texture('kubejs:item/holy_potion').maxStackSize(1)
         .rarity('epic')
@@ -219,7 +175,28 @@ StartupEvents.registry('item', event => {
         })
 
 
-    event.create('advanced_chest_opener').texture('kubejs:item/advanced_chest_opener')
-        .maxStackSize(1)
+    event.create('advanced_chest_opener').texture('kubejs:item/advanced_chest_opener').maxStackSize(1)
+    
+    event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
 
+    event.create('glass_vial').texture('kubejs:item/glass_vial').maxStackSize(1)
+        .useAnimation('bow')
+        .use((level, player, hand) => {
+            return true
+        })
+        .useDuration(itemStack => 20)
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            if (!itemstack.nbt?.organSocres) return itemstack
+
+            itemstack.nbt.organSocres.getAllKeys().forEach(key => {
+                let roundValue = FloorFix(itemstack.nbt.organSocres[key], 2)
+                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${key}`).getString()
+                let scoreTooltips = Text.translatable('tooltips.kubejs.glass_vial.4', Text.yellow(scoreString), Text.yellow(roundValue)).hover(Text.translate(`tooltips.kubejs.score_tag.hover.${key}`))
+                entity.tell(scoreTooltips)
+            })
+
+            entity.addItemCooldown(itemstack, 20 * 5)
+            return itemstack
+        })
 })

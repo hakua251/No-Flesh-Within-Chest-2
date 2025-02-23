@@ -64,7 +64,7 @@
 	#Range: -5 ~ 5
 	potGap = 0
 	#Potion HUD mini mode
-	potMini = false
+	potMini = true
 	#Potion HUD horizontal mode
 	potHor = false
 	#Full bar duration

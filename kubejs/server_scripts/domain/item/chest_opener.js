@@ -1,17 +1,17 @@
 // priority: 500
 ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
     const player = event.player
-    const level = event.level
-    let teleOpener = event.item.enchantments.containsKey('kubejs:tele_operation')
+    const item = event.item
+    let teleOpener = item.enchantments.containsKey('kubejs:tele_operation')
     let dist = 5
     if (teleOpener) {
-        let teleOpenerLevel = event.item.getEnchantmentLevel('kubejs:tele_operation')
+        let teleOpenerLevel = item.getEnchantmentLevel('kubejs:tele_operation')
         dist = Math.min(dist + teleOpenerLevel * 3, 20)
     }
     let ray = player.rayTrace(dist, false)
     let target = player
     let selfTag = true
-    let safeOpener = event.item.enchantments.containsKey('kubejs:safe_operation')
+    let safeOpener = item.enchantments.containsKey('kubejs:safe_operation')
     if (ray.entity && ray.entity.isAlive() && !ray.entity.isPlayer()) {
         selfTag = false
         target = ray.entity
@@ -19,22 +19,36 @@ ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
         return
     }
 
-    if (target.type == 'iceandfire:fire_dragon' || target.type == 'iceandfire:ice_dragon' || target.type == 'iceandfire:lightning_dragon') {
-        let getAgeTicks = target.nbt.AgeTicks
-        let getDeathStage = target.nbt.DeathStage
-        let curStage = ((getAgeTicks / 24000) / 5) / 2
-        if (getDeathStage + 1 >= curStage) return
-    }
+    AdvancedChstOpenerOpenChestCavity(player, item, target, selfTag)
+})
 
+
+ItemEvents.entityInteracted('kubejs:advanced_chest_opener', event => {
+    const player = event.player
+    const target = event.target
+    const item = event.item
+    let selfTag = false
+    AdvancedChstOpenerOpenChestCavity(player, item, target, selfTag)
+})
+
+
+/**
+ * 
+ * @param {Internal.ServerPlayer} player 
+ * @param {Internal.ItemStack} item 
+ * @param {Internal.LivingEntity} target 
+ * @param {boolean} selfTag 
+ */
+function AdvancedChstOpenerOpenChestCavity(player, item, target, selfTag) {
     player.swing()
-    let painlessOpener = event.item.enchantments.containsKey('kubejs:painless_operation')
-    let creativeOpener = event.item.enchantments.containsKey('kubejs:creative_operation')
-
+    let painlessOpener = item.enchantments.containsKey('kubejs:painless_operation')
+    let creativeOpener = item.enchantments.containsKey('kubejs:creative_operation')
+    let cc = target.chestCavityInstance
+    cc.inventory.setInstance(cc)
     if (target.isAlive()) {
-        let cc = target.chestCavityInstance
         if (cc.getChestCavityType().isOpenable(cc) || creativeOpener || selfTag) {
             if (!cc.getOrganScore('chestcavity:ease_of_acess') > 0 && !painlessOpener) {
-                target.attack(level.damageSources().generic(), 4)
+                target.attack(player.damageSources().generic(), 4)
             }
 
             cc.ccBeingOpened = cc
@@ -51,11 +65,9 @@ ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
         } else {
             if (!target.getEquipment('chest').isEmpty()) {
                 player.setStatusMessage(Text.translatable('status_msg.kubejs.chestopener.fail.obstructed'))
-                player.playSound('minecraft:chain_hit', 0.75, 1.0)
             } else {
                 player.setStatusMessage(Text.translatable('status_msg.kubejs.chestopener.fail.healthy'))
-                player.playSound('minecraft:armor_equip_turtle', 0.75, 1.0)
             }
         }
-    }
-})
+    } 
+}

@@ -51,6 +51,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "untitledduckmod": {
+    "lay_egg": true
+  },
   "supplementaries": {
     "hat_stand": true
   },
