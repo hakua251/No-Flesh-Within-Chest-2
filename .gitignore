@@ -29,7 +29,7 @@ usernamecache.json
 XaeroWaypoints*
 config/worldedit/
 config/jei/
-config\embeddium*
+config/embeddium*
 minemenu/
 config/inventoryprofilesnext/
 !config/inventoryprofilesnext/inventoryprofiles.json
