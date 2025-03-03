@@ -28,11 +28,11 @@ PlayerEvents.tick(event => {
     const chestCavity = player.chestCavityInstance
     const customDataMap = chestCavity.customEntityDataMap
     if (!customDataMap.containsKey('organEffectChanged') || !customDataMap.get('organEffectChanged')) return
-    if (!customDataMap.containsKey('organEffectList')) return
+    if (!customDataMap.containsKey('organEffectMap')) return
     /** @type {Map<string, OragnEffectModel>} */
-    let organEffectObj = customDataMap.get('organEffectList')
+    let organEffectMap = customDataMap.get('organEffectMap')
     let organEffectList = []
-    organEffectObj.forEach((value, key) => {
+    organEffectMap.forEach((value, key) => {
         if (value instanceof OragnEffectModel) {
             organEffectList.push(value)
         }
@@ -44,6 +44,7 @@ PlayerEvents.tick(event => {
     let paintObj = {}
     for (let i = 0; i < organEffectList.length; i++) {
         if (i >= OrganEffectSlotDefinition.length) break
+        /**@type {OragnEffectModel} */
         let effect = organEffectList[i]
         let slotDef = OrganEffectSlotDefinition[i]
         paintObj[slotDef.id] = {
@@ -69,35 +70,3 @@ PlayerEvents.tick(event => {
     customDataMap.put('organEffectChanged', false)
     player.paint(paintObj)
 })
-
-
-/**
- * 
- * @param {Internal.ItemStack} item 
- */
-function OragnEffectModel(item) {
-    this.item = item
-    this.customText = ''
-    this.visible = true
-    this.overlay = true
-    this.priority = 100
-}
-
-OragnEffectModel.prototype = {
-    setCustomText(text) {
-        this.customText = text
-        return this
-    },
-    setVisible(visible) {
-        this.visible = visible
-        return this
-    },
-    setOverlay(overlay) {
-        this.overlay = overlay
-        return this
-    },
-    setPriority(priority) {
-        this.priority = priority
-        return this
-    }
-}

@@ -65,9 +65,14 @@ OrganTakeOffStrategyModel.prototype = {
             }
         }
 
-        customData.localDefer.forEach((func) => {
-            func.apply(null, args) 
-        })
+        if (customData.localDefer.length > 0) {
+            customData.localDefer.sort((a, b) => {
+                return a.priority - b.priority 
+            })
+            customData.localDefer.forEach((model) => {
+                model.func.apply(null, [customData].concat(model.arg))
+            })
+        }
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })

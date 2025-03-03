@@ -36,7 +36,8 @@ const TumorAttriBute = [
 function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const chestCavity = event.chestCavity
-    if (entity.age % 1200 != 0) return
+    let interval = 1200
+    if (entity.age % interval != 0) return
 
     let tumor = Item.of('kubejs:tumor')
     let nbt = tumor.getOrCreateTag()
@@ -65,7 +66,13 @@ function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType
     }
     let targetSlotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
     SetOrganWithoutUpdate(customData, chestCavity, tumor, targetIndex, targetSlotType)
+    if (entity instanceof $ServerPlayer) {
+        entity.addItemCooldown('kubejs:worm_neuron', interval)
+    }
 }
+
+
+
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:worm_neuron')

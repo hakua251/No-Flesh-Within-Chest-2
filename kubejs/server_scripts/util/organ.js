@@ -18,7 +18,13 @@ function GetChestCavitySlotType(cc, index) {
     return cc.getInventoryTypeData().getSlotType(index)
 }
 
-
 function GetCustomDataOrDefault(customData, key, defaultValue) {
-    return customData[key] ? customData[key] : defaultValue
+    if (!customData[key]) {
+        customData[key] = defaultValue
+    }
+    return customData[key]
+}
+
+function SetCustomData(customData, key, value) {
+    customData[key] = value
 }

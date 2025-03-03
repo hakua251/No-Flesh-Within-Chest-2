@@ -8,5 +8,5 @@
 
 /**
  * @typedef {Object} OrganEventCustomData
- * @property {Internal.CompoundTag} localDefer
+ * @property {OrganLocalDeferModel[]} localDefer
  */

@@ -6,6 +6,6 @@ ItemEvents.rightClicked('stick', event => {
     // let pos = GenDungeonIslands(event.level)
     let map = new Map()
     // map.set('kubejs:warden_core', new OragnEffectModel(Item.of('kubejs:warden_core')).setPriority(100).setCustomText('测试2'))
-    player.chestCavityInstance.customEntityDataMap.put('organEffectList', map)
+    player.chestCavityInstance.customEntityDataMap.put('organEffectMap', map)
     player.chestCavityInstance.customEntityDataMap.put('organEffectChanged', true)
 })
