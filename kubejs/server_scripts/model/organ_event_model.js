@@ -29,7 +29,7 @@ OrganEventModel.prototype = {
      */
     run: function (entity, customData, args) {
         let optional = $ChestCavityEntity.of(entity)
-        customData.localDefer = []
+        customData.localDefers = []
 
         if (!optional.isPresent()) return
         args.unshift(customData)
@@ -61,11 +61,11 @@ OrganEventModel.prototype = {
         }
         ExcretionSlot(customData, ccInstance)
 
-        if (customData.localDefer.length > 0) {
-            customData.localDefer.sort((a, b) => {
+        if (customData.localDefers.length > 0) {
+            customData.localDefers.sort((a, b) => {
                 return a.priority - b.priority 
             })
-            customData.localDefer.forEach((model) => {
+            customData.localDefers.forEach((model) => {
                 // 当心自指引发stackOverflow，请不要用该model传递customData本身！
                 model.func.apply(null, [customData].concat(model.arg))
             })

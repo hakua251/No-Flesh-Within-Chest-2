@@ -67,7 +67,7 @@ function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType
     let targetSlotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
     SetOrganWithoutUpdate(customData, chestCavity, tumor, targetIndex, targetSlotType)
     if (entity instanceof $ServerPlayer) {
-        entity.addItemCooldown('kubejs:worm_neuron', interval)
+        entity.addItemCooldown(organItem, interval)
     }
 }
 

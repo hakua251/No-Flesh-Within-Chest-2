@@ -55,7 +55,7 @@ function FurnaceCoreEntityTickDefer(customData, event, organItem, organIndex, sl
  * @param {string} slotType
  */
 function FurnaceCoreEntityTick(customData, event, organItem, organIndex, slotType) {
-    customData.localDefer.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], FurnaceCoreEntityTickDefer, organIndex))
+    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], FurnaceCoreEntityTickDefer, organIndex))
 }
 
 /**
@@ -202,7 +202,7 @@ function BurningCoreEntityTickDefer(customData, event, organItem, organIndex, sl
  * @param {string} slotType
  */
 function BurningCoreEntityTick(customData, event, organItem, organIndex, slotType) {
-    customData.localDefer.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningCoreEntityTickDefer, organIndex))
+    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningCoreEntityTickDefer, organIndex))
 }
 
 
@@ -246,7 +246,7 @@ function BurningCoreDoDamageDefer(customData, event, organItem, organIndex, slot
  * @param {string} slotType
  */
 function BurningCoreDoDamage(customData, event, organItem, organIndex, slotType) {
-    customData.localDefer.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningCoreDoDamageDefer, organIndex))
+    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningCoreDoDamageDefer, organIndex))
 }
 
 

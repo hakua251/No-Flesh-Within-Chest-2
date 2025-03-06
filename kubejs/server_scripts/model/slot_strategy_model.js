@@ -60,7 +60,7 @@ SlotStrategyModel.prototype = {
      */
     run: function (chestCavity, args, customData) {
         const ccInv = chestCavity.inventory
-        customData.localDefer = []
+        customData.localDefers = []
         const invTypeData = chestCavity.getInventoryTypeData()
         args.unshift(customData)
         const onlyMap = new Map()
@@ -81,7 +81,7 @@ SlotStrategyModel.prototype = {
                 strategyModel['default'].apply(null, args.concat(curItem, i))
             }
         }
-        customData.localDefer.forEach((func) => {
+        customData.localDefers.forEach((func) => {
             func.apply(null, args) 
         })
         this.defers.forEach(defer => {

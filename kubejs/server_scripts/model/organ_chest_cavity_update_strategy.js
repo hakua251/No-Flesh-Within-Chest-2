@@ -48,7 +48,7 @@ OrganChestCavityUpdateStrategyModel.prototype = {
      */
     run: function (ccInstance, args, customData) {
         const ccInv = ccInstance.inventory
-        customData.localDefer = []
+        customData.localDefers = []
 
         args.unshift(customData)
         this.inits.forEach(init => {
@@ -109,11 +109,11 @@ OrganChestCavityUpdateStrategyModel.prototype = {
             renderMpm(ccInstance, customData)
         }
 
-        if (customData.localDefer.length > 0) {
-            customData.localDefer.sort((a, b) => {
+        if (customData.localDefers.length > 0) {
+            customData.localDefers.sort((a, b) => {
                 return a.priority - b.priority 
             })
-            customData.localDefer.forEach((model) => {
+            customData.localDefers.forEach((model) => {
                 model.func.apply(null, [customData].concat(model.arg))
             })
         }

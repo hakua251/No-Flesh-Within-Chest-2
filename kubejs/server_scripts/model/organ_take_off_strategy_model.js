@@ -39,7 +39,7 @@ OrganTakeOffStrategyModel.prototype = {
         const ccInv = ccInstance.inventory
         const oldccInv = ccInstance.oldInventory
         if (!oldccInv || !ccInv) return
-        customData.localDefer = []
+        customData.localDefers = []
         args.unshift(customData)
         this.inits.forEach(init => {
             init.apply(null, args)
@@ -70,11 +70,11 @@ OrganTakeOffStrategyModel.prototype = {
             }
         }
 
-        if (customData.localDefer.length > 0) {
-            customData.localDefer.sort((a, b) => {
+        if (customData.localDefers.length > 0) {
+            customData.localDefers.sort((a, b) => {
                 return a.priority - b.priority 
             })
-            customData.localDefer.forEach((model) => {
+            customData.localDefers.forEach((model) => {
                 model.func.apply(null, [customData].concat(model.arg))
             })
         }

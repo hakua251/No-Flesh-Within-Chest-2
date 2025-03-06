@@ -164,7 +164,7 @@ function BlazePressurizerKeyActiveOnly(customData, event, organItem, organIndex,
     chestCavity.customEntityDataMap.put('blazePressurizerCounter', counter)
     let organEffect = new OragnEffectModel(organItem).setPriority(200).setCustomText(counter.toFixed(0))
     SetOrganEffect(chestCavity, organEffect)
-    player.addItemCooldown('kubejs:blaze_pressurizer', 20 * 30)
+    player.addItemCooldown(organItem, 20 * 30)
 }
 
 
