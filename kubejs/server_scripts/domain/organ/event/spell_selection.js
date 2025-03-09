@@ -34,7 +34,8 @@ function OrganSpellSelection(event, customData) {
     OrganSpellSelectionEvent.run(event.entity, customData, [event])
 }
 
-
+// 频繁刷取SpellSelectionManager会引发客户端崩溃
+// 原方案可参考 commit：41fabe47049e67f21ac05fca721e9522c5381f69
 PlayerEvents.loggedIn(event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player

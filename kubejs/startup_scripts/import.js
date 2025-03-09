@@ -9,3 +9,4 @@ const $EyeofEnder = Java.loadClass('net.minecraft.world.entity.projectile.EyeOfE
 
 const $RangedAttribute = Java.loadClass('net.minecraft.world.entity.ai.attributes.RangedAttribute')
 const $EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
+const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')

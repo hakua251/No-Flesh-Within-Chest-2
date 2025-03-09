@@ -259,6 +259,21 @@
     "msg.kubejs.expansion_content.load_expansion.1": "No Flesh Within Chest已加载 %s 份拓展包。",
     "msg.kubejs.expansion_content.load_expansion.2": "点击此处以查看已安装的扩展包列表。",
     "msg.kubejs.expansion_content.list.1": "        - ",
-    "msg.kubejs.expansion_content.list.2": "- 扩展包ID：%s \n- 扩展包版本：%s \n- 扩展包作者：%s \n- 扩展包描述：%s"
+    "msg.kubejs.expansion_content.list.2": "- 扩展包ID：%s \n- 扩展包版本：%s \n- 扩展包作者：%s \n- 扩展包描述：%s",
 
+    "_comment.tcon_material": "匠魂材料",
+    "material.kubejs.living_flesh": "鲜活血肉",
+    "material.kubejs.living_flesh.flavor": "一种再生能力极强的材料，其来源于一种人造——亦或是来自于异界的生物",
+    "material.kubejs.living_flesh.encyclopedia": "手持该物品时会消耗饥饿值以修复物品的耐久",
+    "material.kubejs.creator_mix": "怪异血肉",
+    "material.kubejs.creator_mix.flavor": "一种血肉混合而来的材料，似乎在模拟鲜活血肉的时候出现了一些问题",
+    "material.kubejs.creator_mix.encyclopedia": "手持该物品时会消耗血量以修复物品的耐久",
+
+    "_comment.tcon_modifier": "匠魂修饰器",
+    "modifier.kubejs.boold_repair": "鲜血修补",
+    "modifier.kubejs.boold_repair.flavor": "鲜血修补",
+    "modifier.kubejs.boold_repair.description": "手持该物品将会消耗玩家的血量以修复物品的耐久，该效果并不会致死",
+    "modifier.kubejs.hunger_repair": "饿欲修补",
+    "modifier.kubejs.hunger_repair.flavor": "饿欲修补",
+    "modifier.kubejs.hunger_repair.description": "手持该物品将会消耗玩家的饥饿以修复物品的耐久，该效果并不会消耗最后的饥饿值"
 }

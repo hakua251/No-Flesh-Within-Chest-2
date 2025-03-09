@@ -1,0 +1,10 @@
+{
+    "modifier.kubejs": {
+        "boold_repair": "#df679b",
+        "hunger_repair": "#df585f"
+    },
+    "material.kubejs": {
+        "creator_mix": "#df679b",
+        "living_flesh": "#df585f"
+    }
+}
