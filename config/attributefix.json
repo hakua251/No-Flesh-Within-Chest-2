@@ -459,7 +459,7 @@
       },
       "max": {
         "default": 1024,
-        "value": 1000000
+        "value": 2147483647
       }
     },
     "irons_spellbooks:mana_regen": {
@@ -987,7 +987,7 @@
       },
       "max": {
         "default": 2048,
-        "value": 1000000
+        "value": 2147483647
       }
     },
     "attributeslib:draw_speed": {

@@ -37,7 +37,7 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + Math.pow(chestCavity.getOrganScore('chestcavity:strength'), 2)
+            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:strength') * chestCavity.inventory.getContainerSize()
             break
         }
     }
@@ -82,7 +82,7 @@ function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organInd
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + Math.pow(chestCavity.getOrganScore('chestcavity:health'), 2)
+            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:health') * chestCavity.inventory.getContainerSize()
             break
         }
     }
@@ -120,7 +120,7 @@ function RoseQuartzRibChestCavityUpdate(customData, event, organItem, organIndex
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + Math.pow(chestCavity.getOrganScore('chestcavity:defense'), 2)
+            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:defense') * chestCavity.inventory.getContainerSize()
             break
         }
     }
@@ -146,7 +146,7 @@ function RoseQuartzDialyzerKeyActiveOnly(customData, event, organItem, organInde
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + Math.pow(chestCavity.getOrganScore('chestcavity:filtration'), 2)
+            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:filtration') * chestCavity.inventory.getContainerSize()
             break
         }
     }
@@ -180,23 +180,18 @@ RegistryOrganStrategy(
  * @param {number} organIndex
  * @param {string} slotType
  */
-function RoseQuartzLiverChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
-    let isRoseQuartzLiverActived = GetCustomDataOrDefault(customData, 'isRoseQuartzLiverActived', false)
-    if (isRoseQuartzLiverActived) {
-        return 
-    }
+function RoseQuartzLiverChestCavityUpdateOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + Math.pow(chestCavity.getOrganScore('chestcavity:detoxification'), 2)
+            rosyValue = rosyValue * 1.5 + chestCavity.getOrganScore('chestcavity:detoxification') * chestCavity.inventory.getContainerSize() * 0.5
             break
         }
     }
-    chestCavity.setOrganScore('kubejs:rosy', rosyValue * 1.5)
-    SetCustomData(customData, 'isRoseQuartzLiverActived', true)
+    chestCavity.setOrganScore('kubejs:rosy', rosyValue)
 }
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rose_quartz_liver')
-        .addStrategy('chest_cavity_update', RoseQuartzLiverChestCavityUpdate)
+        .addOnlyStrategy('chest_cavity_update', RoseQuartzLiverChestCavityUpdateOnly)
 )
