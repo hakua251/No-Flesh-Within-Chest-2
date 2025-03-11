@@ -1,0 +1,43 @@
+{
+    "slotDefinitions": [
+        {"x": 28, "y": 33},
+        {"x": 46, "y": 33},
+        {"x": 64, "y": 33},
+        {"x": 28, "y": 51},
+        {"x": 46, "y": 51},
+        {"x": 64, "y": 51},
+        {"x": 28, "y": 69},
+        {"x": 46, "y": 69},
+        {"x": 64, "y": 69},
+        {"x": 82, "y": 69},
+        {"x": 100, "y": 69},
+        {"x": 122, "y": 69, "type": "machinary_lubricant"},
+        {"x": 28, "y": 87},
+        {"x": 46, "y": 87},
+        {"x": 64, "y": 87},
+        {"x": 82, "y": 87},
+        {"x": 100, "y": 87},
+        {"x": 122, "y": 87, "type": "machinary_lubricant"},
+        {"x": 113, "y": 21, "type": "revolution_flame"},
+        {"x": 181, "y": 74, "type": "revolution_flame"}
+    ],
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity/revolution_machine.png",
+    "titlePosition": {
+        "x": 0,
+        "y": 24,
+        "hide": true
+    },
+    "backgroundSize": {
+        "x": 225,
+        "y": 215
+    },
+    "playerInventoryPosition": {
+        "x": 20,
+        "y": 33
+    },
+    "inventoryLabelPosition": {
+        "x": 10,
+        "y": -16,
+        "hide": true
+    }
+}

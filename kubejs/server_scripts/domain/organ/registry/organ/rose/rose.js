@@ -37,7 +37,7 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:strength') * chestCavity.inventory.getContainerSize()
+            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:strength') * chestCavity.inventory.countNonEmpty()
             break
         }
     }
@@ -82,7 +82,7 @@ function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organInd
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:health') * chestCavity.inventory.getContainerSize()
+            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:health') * chestCavity.inventory.countNonEmpty()
             break
         }
     }
@@ -120,7 +120,7 @@ function RoseQuartzRibChestCavityUpdate(customData, event, organItem, organIndex
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:defense') * chestCavity.inventory.getContainerSize()
+            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:defense') * chestCavity.inventory.countNonEmpty()
             break
         }
     }
@@ -146,7 +146,7 @@ function RoseQuartzDialyzerKeyActiveOnly(customData, event, organItem, organInde
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:filtration') * chestCavity.inventory.getContainerSize()
+            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:filtration') * chestCavity.inventory.countNonEmpty()
             break
         }
     }
@@ -185,7 +185,7 @@ function RoseQuartzLiverChestCavityUpdateOnly(customData, event, organItem, orga
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue * 1.5 + chestCavity.getOrganScore('chestcavity:detoxification') * chestCavity.inventory.getContainerSize() * 0.5
+            rosyValue = rosyValue * 1.5 + chestCavity.getOrganScore('chestcavity:detoxification') * chestCavity.inventory.countNonEmpty() * 0.5
             break
         }
     }

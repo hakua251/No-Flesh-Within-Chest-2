@@ -51,7 +51,6 @@ function AdvancedChstOpenerOpenChestCavity(player, item, target, selfTag) {
                 target.attack(player.damageSources().generic(), 4)
             }
 
-            cc.ccBeingOpened = cc
             player.getChestCavityInstance().ccBeingOpened = cc
 
             let invName = Text.of(target.getDisplayName().getString())

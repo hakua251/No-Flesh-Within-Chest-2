@@ -28,7 +28,15 @@ function RevolutionCableChestCavityUpdate(customData, event, organItem, organInd
     const chestCavity = event.chestCavity
     let machineCount = chestCavity.inventory.count('#kubejs:machine')
     let revolutionCount = chestCavity.inventory.count('#kubejs:revolution')
-    customData.maxHealth.addAttributeModifier((machineCount + revolutionCount) * 2, 'addition', 'base')
+    let total = revolutionCount + machineCount
+    switch (slotType) {
+        case 'machinary_lubricant':
+            customData.maxHealth.addAttributeModifier(total * 4, 'addition', 'base')
+            break
+        default:
+            customData.maxHealth.addAttributeModifier(total, 'addition', 'base')
+            break
+    }
 }
 
 
@@ -46,8 +54,28 @@ RegistryOrganStrategy(
 */
 function RevolutionRelayChestCavityUpdateOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    let num = chestCavity.inventory.countItem('kubejs:revolution_relay')
-    chestCavity.customEntityDataMap.put('furnaceCoreRelay', num)
+    chestCavity.customEntityDataMap.put('furnaceCoreRelay', 0)
+}
+
+/**
+* @param {OrganChestCavityUpdateStrategyCustomData} customData
+* @param {Internal.EvaluateChestCavityJS} event 
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function RevolutionRelayChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+    const chestCavity = event.chestCavity
+    let num = 1
+    switch (slotType) {
+        case 'machinary_lubricant':
+            num = num * 4
+            break
+        default:
+            break
+    }
+    let value = chestCavity.customEntityDataMap.getOrDefault('furnaceCoreRelay', 0)
+    chestCavity.customEntityDataMap.put('furnaceCoreRelay', value + num)
 }
 
 /**
@@ -65,6 +93,7 @@ function RevolutionRelayChestCavityTakeOffOnly(customData, event, organItem, org
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:revolution_relay')
         .addOnlyStrategy('chest_cavity_update', RevolutionRelayChestCavityUpdateOnly)
+        .addStrategy('chest_cavity_update', RevolutionRelayChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', RevolutionRelayChestCavityTakeOffOnly)
 )
 
@@ -77,8 +106,28 @@ RegistryOrganStrategy(
 */
 function RevolutionDelayChestCavityUpdateOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    let num = chestCavity.inventory.countItem('kubejs:revolution_delay')
-    chestCavity.customEntityDataMap.put('burningHeartDelay', num)
+    chestCavity.customEntityDataMap.put('burningHeartDelay', 0)
+}
+
+/**
+* @param {OrganChestCavityUpdateStrategyCustomData} customData
+* @param {Internal.EvaluateChestCavityJS} event 
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function RevolutionDelayChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+    const chestCavity = event.chestCavity
+    let num = 1
+    switch (slotType) {
+        case 'machinary_lubricant':
+            num = num * 4
+            break
+        default:
+            break
+    }
+    let value = chestCavity.customEntityDataMap.getOrDefault('burningHeartDelay', 0)
+    chestCavity.customEntityDataMap.put('burningHeartDelay', value + num)
 }
 
 /**
@@ -98,42 +147,15 @@ function RevolutionDelayChestCavityTakeOffOnly(customData, event, organItem, org
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:revolution_delay')
         .addOnlyStrategy('chest_cavity_update', RevolutionDelayChestCavityUpdateOnly)
+        .addStrategy('chest_cavity_update', RevolutionDelayChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', RevolutionDelayChestCavityTakeOffOnly)
 )
 
 
 
-/**
-* @param {OrganChestCavityUpdateStrategyCustomData} customData
-* @param {Internal.EvaluateChestCavityJS} event 
-* @param {Internal.ItemStack} organItem
-* @param {number} organIndex
-* @param {string} slotType
-*/
-function RevolutionBellChestCavityUpdateOnly(customData, event, organItem, organIndex, slotType) {
-    const chestCavity = event.chestCavity
-    chestCavity.customEntityDataMap.put('haveRevolutionBell', true)
-}
-/**
-* @param {OrganChestCavityUpdateStrategyCustomData} customData
-* @param {Internal.EvaluateChestCavityJS} event 
-* @param {Internal.ItemStack} organItem
-* @param {number} organIndex
-* @param {string} slotType
-*/
-function RevolutionBellChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
-    const chestCavity = event.chestCavity
-    chestCavity.customEntityDataMap.put('haveRevolutionBell', false)
-}
-
-
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:revolution_bell')
-        .addOnlyStrategy('chest_cavity_update', RevolutionBellChestCavityUpdateOnly)
-        .addOnlyStrategy('organ_take_off', RevolutionBellChestCavityTakeOffOnly)
 )
-
-
 
 
 
@@ -160,11 +182,29 @@ function BlazePressurizerChestCavityTakeOffOnly(customData, event, organItem, or
 function BlazePressurizerKeyActiveOnly(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const chestCavity = player.chestCavityInstance
-    let counter = 5
-    chestCavity.customEntityDataMap.put('blazePressurizerCounter', counter)
+    let counter = BlazePressurizerActive(chestCavity, slotType)
     let organEffect = new OragnEffectModel(organItem).setPriority(200).setCustomText(counter.toFixed(0))
     SetOrganEffect(chestCavity, organEffect)
     player.addItemCooldown(organItem, 20 * 30)
+}
+
+/**
+ * 
+ * @param {Internal.ChestCavityInstance} chestCavity 
+ * @param {string} slotType 
+ * @returns {number}
+ */
+function BlazePressurizerActive(chestCavity, slotType) {
+    let counter = 5
+    switch (slotType) {
+        case 'machinary_lubricant':
+            counter = counter * 4
+            break
+        default:
+            break
+    }
+    chestCavity.customEntityDataMap.put('blazePressurizerCounter', counter)
+    return counter
 }
 
 

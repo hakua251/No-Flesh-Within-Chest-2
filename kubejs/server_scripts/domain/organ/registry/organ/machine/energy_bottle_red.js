@@ -12,8 +12,16 @@ RegistryOrgan('kubejs:energy_bottle_red')
  * @param {string} slotType
  */
 function EnergyBottleRedEntityTick(customData, event, organItem, organIndex, slotType) {
+    let repairValue = 1
+    switch (slotType) {
+        case 'machinary_lubricant':
+            repairValue = repairValue * 4
+            break
+        default:
+            break
+    }
     if (organItem.getDamageValue() > 0) {
-        organItem.setDamageValue(organItem.getDamageValue() - 1)
+        organItem.setDamageValue(Math.max(organItem.getDamageValue() - repairValue, 0))
     }
 }
 
@@ -30,12 +38,34 @@ function EnergyBottleRedDoDamage(customData, event, organItem, organIndex, slotT
     const sourceEntity = event.source.actual
     const chestCavity = sourceEntity.chestCavityInstance
 
-    if (chestCavity.customEntityDataMap.getOrDefault('isBurningHeart', false)) {
-        if (organItem.getDamageValue() + 10 <= organItem.getMaxDamage()) {
-            let value = GetCustomDataOrDefault(customData, 'burningItemDamageBoost', 0)
-            SetCustomData(customData, 'burningItemDamageBoost', value + organItem.getMaxDamage() - organItem.getDamageValue())
-            organItem.setDamageValue(organItem.getDamageValue() + 10)
+    if (chestCavity.inventory.find('kubejs:burning_heart') > 0) {
+        switch (slotType) {
+            case 'revolution_flame':
+                if (organItem.getDamageValue() + 10 <= organItem.getMaxDamage()) {
+                    let damageRate = RoundFix(organItem.getMaxDamage() - organItem.getDamageValue() / organItem.getMaxDamage(), 2)
+                    let value = GetCustomDataOrDefault(customData, 'burningItemMultiplierBoost', 0)
+                    SetCustomData(customData, 'burningItemMultiplierBoost', value + damageRate * 2)
+                    organItem.setDamageValue(organItem.getDamageValue() + 10)
+                }
+                break
+            case 'machinary_lubricant':
+                if (organItem.getDamageValue() + 10 <= organItem.getMaxDamage()) {
+                    let damageRate = organItem.getMaxDamage() - organItem.getDamageValue()
+                    let value = GetCustomDataOrDefault(customData, 'burningItemDamageBoost', 0)
+                    SetCustomData(customData, 'burningItemDamageBoost', value + damageRate * 4)
+                    organItem.setDamageValue(organItem.getDamageValue() + 10)
+                }
+                break
+            default:
+                if (organItem.getDamageValue() + 10 <= organItem.getMaxDamage()) {
+                    let damageRate = organItem.getMaxDamage() - organItem.getDamageValue()
+                    let value = GetCustomDataOrDefault(customData, 'burningItemDamageBoost', 0)
+                    SetCustomData(customData, 'burningItemDamageBoost', value + damageRate)
+                    organItem.setDamageValue(organItem.getDamageValue() + 10)
+                }
+                break
         }
+
     }
 }
 
