@@ -50,17 +50,17 @@ function EnergyBottleRedDoDamage(customData, event, organItem, organIndex, slotT
                 break
             case 'machinary_lubricant':
                 if (organItem.getDamageValue() + 10 <= organItem.getMaxDamage()) {
-                    let damageRate = organItem.getMaxDamage() - organItem.getDamageValue()
+                    let damageValue = organItem.getMaxDamage() - organItem.getDamageValue()
                     let value = GetCustomDataOrDefault(customData, 'burningItemDamageBoost', 0)
-                    SetCustomData(customData, 'burningItemDamageBoost', value + damageRate * 4)
+                    SetCustomData(customData, 'burningItemDamageBoost', value + damageValue * 4)
                     organItem.setDamageValue(organItem.getDamageValue() + 10)
                 }
                 break
             default:
                 if (organItem.getDamageValue() + 10 <= organItem.getMaxDamage()) {
-                    let damageRate = organItem.getMaxDamage() - organItem.getDamageValue()
+                    let damageValue = organItem.getMaxDamage() - organItem.getDamageValue()
                     let value = GetCustomDataOrDefault(customData, 'burningItemDamageBoost', 0)
-                    SetCustomData(customData, 'burningItemDamageBoost', value + damageRate)
+                    SetCustomData(customData, 'burningItemDamageBoost', value + damageValue)
                     organItem.setDamageValue(organItem.getDamageValue() + 10)
                 }
                 break

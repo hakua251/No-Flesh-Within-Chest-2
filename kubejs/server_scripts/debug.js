@@ -4,6 +4,14 @@
 const PositionEmitter = new $PositionGoopEmitter()
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
+    // let res = []
+    // $ForgeRegistries.ENTITY_TYPES.getEntries().forEach(entityType => {
+    //     if (entityType.getValue().getCategory().toString() == 'MISC') return
+    //     res.push(entityType.getKey().getNamespace() + ':' + entityType.getKey().getPath())
+    // })
+    // console.log(res)
+
+
     // let nbt = new $CompoundTag()
     // nbt.putString('replaceBlock', 'minecraft:deepslate')
     // nbt.putString('mode', 'mark')

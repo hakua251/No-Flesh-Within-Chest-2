@@ -195,7 +195,7 @@ function BlazePressurizerKeyActiveOnly(customData, event, organItem, organIndex,
  * @returns {number}
  */
 function BlazePressurizerActive(chestCavity, slotType) {
-    let counter = 5
+    let counter = 3
     switch (slotType) {
         case 'machinary_lubricant':
             counter = counter * 4

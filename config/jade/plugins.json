@@ -51,6 +51,10 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "mbd2": {
+    "recipe_logic_provider": true,
+    "multiblock_provider": true
+  },
   "untitledduckmod": {
     "lay_egg": true
   },
@@ -68,15 +72,7 @@
   "waystones": {
     "waystone": true
   },
-  "goety": {
-    "block_owner": true,
-    "soul_energy": true,
-    "servant_mode": true,
-    "zombie_villager": true,
-    "villager_profession": true,
-    "summon_lifespan": true
-  },
-  "custommachinery": {
-    "machine_component_provider": true
+  "balm": {
+    "jade": true
   }
 }

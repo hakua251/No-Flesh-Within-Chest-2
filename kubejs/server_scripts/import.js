@@ -9,8 +9,9 @@ const $PalettedContainer = Java.loadClass('net.minecraft.world.level.chunk.Palet
 const $StructureMode = Java.loadClass('net.minecraft.world.level.block.state.properties.StructureMode')
 const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
 const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
-
+const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
+const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
 const $Float = Java.loadClass('java.lang.Float')
 const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavityUtil')

@@ -1,4 +1,5 @@
 {
+  "balm:jade": null,
   "custommachinery:machine_component_provider": null,
   "custommachinery:machine_server_data_provider": null,
   "goety:block_owner": null,
@@ -15,6 +16,8 @@
   "jade:mod_name": null,
   "jade:object_name": null,
   "jade:registry_name": null,
+  "mbd2:multiblock_provider": null,
+  "mbd2:recipe_logic_provider": null,
   "minecraft:animal_owner": null,
   "minecraft:armor_stand": null,
   "minecraft:beehive": null,
