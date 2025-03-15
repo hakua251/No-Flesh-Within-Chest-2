@@ -4,6 +4,12 @@
 const PositionEmitter = new $PositionGoopEmitter()
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
+    let area = GenDungeonLevelArea(event.level, player.blockPosition())
+    if (!area) return
+    player.tell(1)
+    let manager = LoquatAreaManager.of(event.level)
+    manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1))
+    
     // let res = []
     // $ForgeRegistries.ENTITY_TYPES.getEntries().forEach(entityType => {
     //     if (entityType.getValue().getCategory().toString() == 'MISC') return
@@ -33,11 +39,11 @@ ItemEvents.rightClicked('stick', event => {
 })
 
 
-ItemEvents.entityInteracted('minecraft:blaze_rod', event => {
-    /**@type {Internal.LivingEntity} */
-    const entity = event.target
-    const chestCavity = entity.chestCavityInstance
-    chestCavity.setOrganScore('chestcavity:nutrition', -10)
-    const player = event.player
-    player.tell(chestCavity.getOrganScore('chestcavity:nutrition'))
-})
+// ItemEvents.entityInteracted('minecraft:blaze_rod', event => {
+//     /**@type {Internal.LivingEntity} */
+//     const entity = event.target
+//     const chestCavity = entity.chestCavityInstance
+//     chestCavity.setOrganScore('chestcavity:nutrition', -10)
+//     const player = event.player
+//     player.tell(chestCavity.getOrganScore('chestcavity:nutrition'))
+// })

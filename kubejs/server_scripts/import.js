@@ -1,6 +1,7 @@
 // priority: 2000
 const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $ListTag = Java.loadClass('net.minecraft.nbt.ListTag')
+const $UUID = Java.loadClass('java.util.UUID')
 const $StructurePlaceSettings = Java.loadClass('net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings')
 const $Mirror = Java.loadClass('net.minecraft.world.level.block.Mirror')
 const $Rotation = Java.loadClass('net.minecraft.world.level.block.Rotation')
@@ -36,3 +37,12 @@ const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.m
 const $PositionGoopEmitter = Java.loadClass('absolutelyaya.goop.api.emitter.PositionGoopEmitter')
 const $ExtraGoopData = Java.loadClass('absolutelyaya.goop.api.ExtraGoopData')
 const $WaterHandling = Java.loadClass('absolutelyaya.goop.api.WaterHandling')
+
+
+const $AABBArea = Java.loadClass('snownee.loquat.core.area.AABBArea')
+const $RestrictInstance = Java.loadClass('snownee.loquat.core.RestrictInstance')
+const $RestrictBehavior = Java.loadClass('snownee.loquat.core.RestrictInstance$RestrictBehavior')
+const $SSyncRestrictionPacket = Java.loadClass('snownee.loquat.network.SSyncRestrictionPacket')
+const $Zone = Java.loadClass('snownee.loquat.core.area.Zone')
+const $MobSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType')
+const $SpawnMobAreaKubeEvent = Java.loadClass('snownee.loquat.spawner.SpawnMobAreaKubeEvent')

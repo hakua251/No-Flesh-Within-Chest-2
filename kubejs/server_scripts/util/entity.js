@@ -173,28 +173,6 @@ function FindDirectionNearestBlock(mob, searchRange, verticalSearchRange, vertic
 }
 
 /**
- * 获取生物状态
- * @param {Internal.PathfinderMob} mob 
- * @returns 
- */
-function GetEntityStatus(mob) {
-    if (mob.persistentData.contains('status')) {
-        return mob.persistentData.getString('status')
-    }
-    return STATUS_NONE
-}
-
-/**
- * 设置生物状态，如果状态没有变更，则不进行设置（这影响到旧状态列表的维护）
- * @param {Internal.PathfinderMob} mob 
- * @param {string} status
- */
-function SetEntityStatus(mob, status) {
-    mob.persistentData.putString('status', status)
-    return
-}
-
-/**
  * 获取生物Position，并且输出对应的BlockPos
  * @param {Internal.PathfinderMob} mob 
  * @param {BlockPos} status

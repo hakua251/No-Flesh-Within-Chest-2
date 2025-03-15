@@ -1,0 +1,47 @@
+// priority: 800
+const DungeonStructureRadius = 24
+const DungeonStructureHeight = 10
+/**
+ * 根据中心位置生成一个区域
+ * @param {Internal.Level} level 
+ * @param {Internal.Player} player
+ * @param {BlockPos} centerPos 
+ * @returns {Internal.Area}
+ */
+function GenDungeonLevelArea(level, centerPos) {
+    let leftConner = centerPos.offset(-DungeonStructureRadius, -1, -DungeonStructureRadius)
+    let rightConner = centerPos.offset(DungeonStructureRadius, DungeonStructureHeight, DungeonStructureRadius)
+    let aabb = AABB.ofBlocks(
+        leftConner,
+        rightConner
+    )
+
+    let players = level.getPlayers()
+    if (players.length == 0) return false
+
+    let area = new $AABBArea(aabb)
+    area.setUuid($UUID.randomUUID())
+    let levelManager = LoquatAreaManager.of(level)
+    if (levelManager.contains(area)) return null
+    levelManager.add(area)
+
+    let zoneSideLength = Math.floor(DungeonStructureRadius / Math.sqrt(2))
+    let zoneLeftConner = centerPos.offset(-zoneSideLength, 0, -zoneSideLength)
+    let zoneRightConner = centerPos.offset(zoneSideLength, 3, zoneSideLength)
+    let zoneAABB = AABB.ofBlocks(
+        zoneLeftConner, 
+        zoneRightConner
+    )
+    area.getZones().put('spawnZone', new $Zone([zoneAABB]))
+    levelManager.setChanged([area])
+    let restrictions = $RestrictInstance.of(level, '*')
+    $RestrictBehavior.VALUES.forEach(behavior => {
+        restrictions.restrict(area, behavior, true)
+    })
+
+    levelManager.setDirty()
+    players.forEach(player => {
+        $SSyncRestrictionPacket.sync(player)
+    })
+    return area
+}
