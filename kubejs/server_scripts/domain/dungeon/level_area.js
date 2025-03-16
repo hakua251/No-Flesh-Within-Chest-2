@@ -25,11 +25,20 @@ function GenDungeonLevelArea(level, centerPos) {
     if (levelManager.contains(area)) return null
     levelManager.add(area)
 
+    let entityAABBList = level.getEntitiesWithin(aabb)
+    let areaUuid = area.getUuid()
+    entityAABBList.forEach(entity => {
+        // 清空AABB里面可能的生物残留
+        if (entity.persistentData.contains('relatedArea') && entity.persistentData.getUUID('relatedArea').equals(areaUuid)) {
+            entity.remove('discarded')
+            return
+        }
+    })
     let zoneSideLength = Math.floor(DungeonStructureRadius / Math.sqrt(2))
     let zoneLeftConner = centerPos.offset(-zoneSideLength, 0, -zoneSideLength)
     let zoneRightConner = centerPos.offset(zoneSideLength, 3, zoneSideLength)
     let zoneAABB = AABB.ofBlocks(
-        zoneLeftConner, 
+        zoneLeftConner,
         zoneRightConner
     )
     area.getZones().put('spawnZone', new $Zone([zoneAABB]))
@@ -45,3 +54,7 @@ function GenDungeonLevelArea(level, centerPos) {
     })
     return area
 }
+
+PlayerEvents.loggedIn(event => {
+    $SSyncRestrictionPacket.sync(event.player)
+})

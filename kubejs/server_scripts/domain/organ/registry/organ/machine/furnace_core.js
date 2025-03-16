@@ -69,7 +69,7 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     const chestCavity = sourceEntity.chestCavityInstance
-    let damageValue = 2 + chestCavity.customEntityDataMap.getOrDefault('furnaceCoreRelay', 0)
+    let damageValue = 2 + chestCavity.customDataMap.getOrDefault('furnaceCoreRelay', 0)
     // 烈焰槽位解除耐久消耗提升限制
     if (slotType != 'revolution_flame') {
         damageValue = Math.min(damageValue, 5)
@@ -159,7 +159,7 @@ RegistryOrganStrategy(
 function BurningCoreEntityTickDefer(customData, event, organItem, organIndex, slotType) {
     const { entity, chestCavity } = event
     let attributeInstance = event.entity.getAttribute('minecraft:generic.attack_damage')
-    let damageValue = Math.max(10 - chestCavity.customEntityDataMap.getOrDefault('burningHeartDelay', 0), 0)
+    let damageValue = Math.max(10 - chestCavity.customDataMap.getOrDefault('burningHeartDelay', 0), 0)
     // 烈焰槽位解除耐久消耗降低限制
     if (slotType != 'revolution_flame') {
         damageValue = Math.max(damageValue, 5)
@@ -177,10 +177,10 @@ function BurningCoreEntityTickDefer(customData, event, organItem, organIndex, sl
         let replaceItem = Item.of('kubejs:furnace_core')
         let damageValue = replaceItem.getMaxDamage()
         /**@type {number} */
-        let blazerCount = chestCavity.customEntityDataMap.getOrDefault('blazePressurizerCounter', 0)
+        let blazerCount = chestCavity.customDataMap.getOrDefault('blazePressurizerCounter', 0)
         if (blazerCount > 0) {
             damageValue = Math.max(damageValue - blazerCount * 10, 0)
-            chestCavity.customEntityDataMap.put('blazePressurizerCounter', 0)
+            chestCavity.customDataMap.put('blazePressurizerCounter', 0)
             if (entity instanceof $ServerPlayer) {
                 RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer')
             }
@@ -221,13 +221,13 @@ function BurningCoreDoDamageDefer(customData, event, organItem, organIndex, slot
     const chestCavity = sourceEntity.chestCavityInstance
     let blazerBoost = 1
     /**@type {number} */
-    let blazerCount = chestCavity.customEntityDataMap.getOrDefault('blazePressurizerCounter', 0)
+    let blazerCount = chestCavity.customDataMap.getOrDefault('blazePressurizerCounter', 0)
     let damageBoost = GetCustomDataOrDefault(customData, 'burningItemDamageBoost', 0)
     let multiplierBoost = GetCustomDataOrDefault(customData, 'burningItemMultiplierBoost', 0)
     if (blazerCount > 0 && (multiplierBoost > 0 || damageBoost > 0)) {
         blazerBoost = 2
         blazerCount = blazerCount - 1
-        chestCavity.customEntityDataMap.put('blazePressurizerCounter', blazerCount)
+        chestCavity.customDataMap.put('blazePressurizerCounter', blazerCount)
         if (sourceEntity instanceof $ServerPlayer) {
             if (blazerCount <= 0) {
                 RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer')

@@ -30,8 +30,8 @@ StartupEvents.registry('mob_effect', event => {
             if (!entity.isAlive() || !entity instanceof $LivingEntity) return
             /**@type {Internal.ChestCavityInstance} */
             const chestCavity = entity.chestCavityInstance
-            if (!chestCavity.customEntityDataMap.containsKey('lethalToxins')) return
-            let lethalToxinsDamage = chestCavity.customEntityDataMap.get('lethalToxins')
+            if (!chestCavity.customDataMap.containsKey('lethalToxins')) return
+            let lethalToxinsDamage = chestCavity.customDataMap.get('lethalToxins')
             let effect = entity.getEffect('kubejs:lethal_toxins')
             if (!effect) return
             entity.attack(entity.damageSources().magic(), lethalToxinsDamage * (effect.getAmplifier() + 1))

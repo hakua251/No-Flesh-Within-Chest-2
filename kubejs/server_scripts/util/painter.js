@@ -39,7 +39,7 @@ OragnEffectModel.prototype = {
  * @param {Internal.ChestCavityInstance} chestCavity 
  */
 function MakeOrganEffectChanged(chestCavity) {
-    chestCavity.customEntityDataMap.put('organEffectChanged', true)
+    chestCavity.customDataMap.put('organEffectChanged', true)
 }
 
 /**
@@ -48,10 +48,10 @@ function MakeOrganEffectChanged(chestCavity) {
  * @param {OragnEffectModel} organEffect 
  */
 function SetOrganEffect(chestCavity, organEffect) {
-    if (!chestCavity.customEntityDataMap.containsKey('organEffectMap')) {
-        chestCavity.customEntityDataMap.put('organEffectMap', new Map()) 
+    if (!chestCavity.customDataMap.containsKey('organEffectMap')) {
+        chestCavity.customDataMap.put('organEffectMap', new Map()) 
     }
-    let organEffectMap = chestCavity.customEntityDataMap.get('organEffectMap')
+    let organEffectMap = chestCavity.customDataMap.get('organEffectMap')
     organEffectMap.set(String(organEffect.item.id), organEffect)
     MakeOrganEffectChanged(chestCavity)
 }
@@ -62,11 +62,11 @@ function SetOrganEffect(chestCavity, organEffect) {
  * @param {string} itemId 
  */
 function RemoveOrganEffect(chestCavity, itemId) {
-    if (!chestCavity.customEntityDataMap.containsKey('organEffectMap')) {
-        chestCavity.customEntityDataMap.put('organEffectMap', new Map())
+    if (!chestCavity.customDataMap.containsKey('organEffectMap')) {
+        chestCavity.customDataMap.put('organEffectMap', new Map())
     }
     /**@type {Map<string, OragnEffectModel>} */
-    let organEffectMap = chestCavity.customEntityDataMap.get('organEffectMap')
+    let organEffectMap = chestCavity.customDataMap.get('organEffectMap')
     organEffectMap.delete(String(itemId))
     MakeOrganEffectChanged(chestCavity)
 }
@@ -78,9 +78,9 @@ function RemoveOrganEffect(chestCavity, itemId) {
  * @returns {OragnEffectModel}
  */
 function GetOrganEffect(chestCavity, itemId) {
-    if (!chestCavity.customEntityDataMap.containsKey('organEffectMap')) {
-        chestCavity.customEntityDataMap.put('organEffectMap', new Map()) 
+    if (!chestCavity.customDataMap.containsKey('organEffectMap')) {
+        chestCavity.customDataMap.put('organEffectMap', new Map()) 
     }
-    let organEffectMap = chestCavity.customEntityDataMap.get('organEffectMap')
+    let organEffectMap = chestCavity.customDataMap.get('organEffectMap')
     return organEffectMap.get(String(itemId))
 }

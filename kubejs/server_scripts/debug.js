@@ -8,7 +8,7 @@ ItemEvents.rightClicked('stick', event => {
     if (!area) return
     player.tell(1)
     let manager = LoquatAreaManager.of(event.level)
-    manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1))
+    manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1, 0))
     
     // let res = []
     // $ForgeRegistries.ENTITY_TYPES.getEntries().forEach(entityType => {
@@ -34,8 +34,8 @@ ItemEvents.rightClicked('stick', event => {
     // map.set('2', new OragnEffectModel(Item.of('kubejs:warden_core')).setPriority(100).setCustomText('测试3'))
     // map.set('3', new OragnEffectModel(Item.of('kubejs:warden_core')).setPriority(100).setCustomText('测试4'))
     // map.set('4', new OragnEffectModel(Item.of('kubejs:warden_core')).setPriority(100).setCustomText('测试5'))
-    // player.chestCavityInstance.customEntityDataMap.put('organEffectMap', map)
-    // player.chestCavityInstance.customEntityDataMap.put('organEffectChanged', true)
+    // player.chestCavityInstance.customDataMap.put('organEffectMap', map)
+    // player.chestCavityInstance.customDataMap.put('organEffectChanged', true)
 })
 
 

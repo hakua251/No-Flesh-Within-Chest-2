@@ -46,3 +46,5 @@ const $SSyncRestrictionPacket = Java.loadClass('snownee.loquat.network.SSyncRest
 const $Zone = Java.loadClass('snownee.loquat.core.area.Zone')
 const $MobSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType')
 const $SpawnMobAreaKubeEvent = Java.loadClass('snownee.loquat.spawner.SpawnMobAreaKubeEvent')
+
+const $CustomBossEvent = Java.loadClass('net.minecraft.server.bossevents.CustomBossEvent')

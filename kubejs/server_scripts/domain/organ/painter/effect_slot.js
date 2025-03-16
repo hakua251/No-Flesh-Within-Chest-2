@@ -65,7 +65,7 @@ PlayerEvents.tick(event => {
     const player = event.player
     if (!player.chestCavityInstance || !player.chestCavityInstance.inventory) return
     const chestCavity = player.chestCavityInstance
-    const customDataMap = chestCavity.customEntityDataMap
+    const customDataMap = chestCavity.customDataMap
     if (!customDataMap.containsKey('organEffectChanged') || !customDataMap.get('organEffectChanged')) return
     if (!customDataMap.containsKey('organEffectMap')) return
     /** @type {Map<string, OragnEffectModel>} */

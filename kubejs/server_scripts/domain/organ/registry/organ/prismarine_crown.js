@@ -19,7 +19,7 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
         }
     })
     AddRefreshClientSpellSelectionOption(customData, 'irons_spellbooks:gust', 1)
-    // event.entity.chestCavityInstance.customEntityDataMap.put('refreshSpell', true)
+    // event.entity.chestCavityInstance.customDataMap.put('refreshSpell', true)
 }
 
 /**

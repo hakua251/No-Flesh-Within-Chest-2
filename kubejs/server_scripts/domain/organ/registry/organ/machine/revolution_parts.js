@@ -54,7 +54,7 @@ RegistryOrganStrategy(
 */
 function RevolutionRelayChestCavityUpdateOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.customEntityDataMap.put('furnaceCoreRelay', 0)
+    chestCavity.customDataMap.put('furnaceCoreRelay', 0)
 }
 
 /**
@@ -74,8 +74,8 @@ function RevolutionRelayChestCavityUpdate(customData, event, organItem, organInd
         default:
             break
     }
-    let value = chestCavity.customEntityDataMap.getOrDefault('furnaceCoreRelay', 0)
-    chestCavity.customEntityDataMap.put('furnaceCoreRelay', value + num)
+    let value = chestCavity.customDataMap.getOrDefault('furnaceCoreRelay', 0)
+    chestCavity.customDataMap.put('furnaceCoreRelay', value + num)
 }
 
 /**
@@ -87,7 +87,7 @@ function RevolutionRelayChestCavityUpdate(customData, event, organItem, organInd
 */
 function RevolutionRelayChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.customEntityDataMap.put('furnaceCoreRelay', 0)
+    chestCavity.customDataMap.put('furnaceCoreRelay', 0)
 }
 
 RegistryOrganStrategy(
@@ -106,7 +106,7 @@ RegistryOrganStrategy(
 */
 function RevolutionDelayChestCavityUpdateOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.customEntityDataMap.put('burningHeartDelay', 0)
+    chestCavity.customDataMap.put('burningHeartDelay', 0)
 }
 
 /**
@@ -126,8 +126,8 @@ function RevolutionDelayChestCavityUpdate(customData, event, organItem, organInd
         default:
             break
     }
-    let value = chestCavity.customEntityDataMap.getOrDefault('burningHeartDelay', 0)
-    chestCavity.customEntityDataMap.put('burningHeartDelay', value + num)
+    let value = chestCavity.customDataMap.getOrDefault('burningHeartDelay', 0)
+    chestCavity.customDataMap.put('burningHeartDelay', value + num)
 }
 
 /**
@@ -139,7 +139,7 @@ function RevolutionDelayChestCavityUpdate(customData, event, organItem, organInd
 */
 function RevolutionDelayChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.customEntityDataMap.put('burningHeartDelay', 0)
+    chestCavity.customDataMap.put('burningHeartDelay', 0)
 }
 
 
@@ -168,7 +168,7 @@ RegistryOrganStrategy(
 */
 function BlazePressurizerChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.customEntityDataMap.put('blazePressurizerCounter', 0)
+    chestCavity.customDataMap.put('blazePressurizerCounter', 0)
     RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer')
 }
 
@@ -203,7 +203,7 @@ function BlazePressurizerActive(chestCavity, slotType) {
         default:
             break
     }
-    chestCavity.customEntityDataMap.put('blazePressurizerCounter', counter)
+    chestCavity.customDataMap.put('blazePressurizerCounter', counter)
     return counter
 }
 
