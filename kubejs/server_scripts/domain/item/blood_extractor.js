@@ -2,6 +2,7 @@
 ItemEvents.rightClicked('kubejs:blood_extractor', event => {
     const player = event.player
     const item = event.item
+    if (player.getCooldowns().isOnCooldown('kubejs:blood_extractor') && !player.isCreative()) return
 
     let nbt = { organScores: {} }
     let ray = player.rayTrace(4, false)
@@ -26,6 +27,7 @@ ItemEvents.entityInteracted('kubejs:blood_extractor', event => {
     const player = event.player
     const target = event.target
     const item = event.item
+    if (player.getCooldowns().isOnCooldown('kubejs:blood_extractor') && !player.isCreative()) return
 
     let nbt = { organScores: {} }
     if (!target.isAlive() || !target.chestCavityInstance) return

@@ -13,7 +13,6 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
         let dungeonEventModel = DungeonSpawnerIdMap[context.spawnerId]
         customDataMap.put('dungeonEventAction', dungeonEventModel)
         customDataMap.put('curWaveInit', false)
-        // todo 地牢初始化行为
         dungeonEventModel.initAction(level, context, areaManager)
     }
 

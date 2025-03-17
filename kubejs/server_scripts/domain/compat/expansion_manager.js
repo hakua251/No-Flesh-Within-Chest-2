@@ -1,4 +1,5 @@
 // priority: 500
+// todo 使用Kubeloader进行扩展管理
 /**
  * 用于管理扩展包
  */

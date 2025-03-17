@@ -1,55 +1,4 @@
-// priority: 2000
-function DungeonEventActionModel(id) {
-    this.id = id
-    /**@type {DungeonWaveModel[]} */
-    this.waves = []
-    /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} */
-    this.initAction = () => { }
-    /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} */
-    this.successAction = () => { }
-     /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} */
-     this.failAction = () => { }   
-    return this
-}
-DungeonEventActionModel.prototype = {
-    /**
-     *
-     * @param {DungeonWaveModel} wave
-     * @returns {DungeonEventActionModel}
-     */
-    addWave: function (wave) {
-        this.waves.push(wave)
-        return this
-    },
-    /**
-     *
-     * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} action
-     * @returns {DungeonEventActionModel}
-     */
-    setInitAction: function (action) {
-        this.initAction = action
-        return this
-    },
-    /**
-     *
-     * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} action
-     * @returns {DungeonEventActionModel}
-     */
-    setSuccessAction: function (action) {
-        this.successAction = action
-        return this
-    },
-    /**
-     *
-     * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} action
-     * @returns {DungeonEventActionModel}
-     */
-    setFailAction: function (action) {
-        this.failAction = action
-        return this
-    }
-}
-
+// priority: 2001
 function DungeonWaveModel() {
     /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} */
     this.initAction = () => { }
@@ -84,7 +33,7 @@ DungeonWaveModel.prototype = {
         return this
     },
     /**
-     *
+     * 秒级别逻辑，20tick执行一次（底层限制性能影响）
      * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} action
      * @returns {DungeonWaveModel}
      */
@@ -111,7 +60,3 @@ DungeonWaveModel.prototype = {
         return this
     }
 }
-
-
-
-
