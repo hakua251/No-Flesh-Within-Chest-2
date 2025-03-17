@@ -14,6 +14,7 @@ function NewKillAmountWave(maxKillAmount, waveTicks, entityGenerator) {
             // 初始化bossBar展示
             let customBossEvent = new $CustomBossEvent(new ResourceLocation('kubejs:test'), Text.translatable('boss_bar.kubejs.dungeon.kill_amount_task.title.1', '0', maxKillAmount.toFixed(0)))
             customBossEvent.setProgress(1)
+            customBossEvent.setColor($BossBarColor.GREEN)
             customDataMap.put('customBossEvent', customBossEvent)
 
             let aabb = area.getRoughAABB()

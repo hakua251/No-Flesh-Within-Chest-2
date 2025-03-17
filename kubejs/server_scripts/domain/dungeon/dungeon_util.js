@@ -9,11 +9,13 @@
 function DungeonCreateEntity(level, context, entity) {
     const area = context.area
     let spawnPosOpt = area.findSpawnPos(level, 'spawnZone', entity)
+    let spawnPos = BlockPos.ZERO
     if (!spawnPosOpt.isPresent()) {
         let center = area.getCenter()
-        spawnPos = new BlockPos(center.x, center.y, center.z)
+        spawnPos = new BlockPos(center.x(), center.y(), center.z())
+    } else {
+        spawnPos = spawnPosOpt.get()
     }
-    let spawnPos = spawnPosOpt.get()
     entity.setPos(spawnPos.getX(), spawnPos.getY(), spawnPos.getZ())
     entity.setPersistenceRequired()
     entity.loquat$setRestriction(context)
