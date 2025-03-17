@@ -10,10 +10,8 @@ function DungeonEventActionModel(id) {
     this.waves = []
     /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} */
     this.initAction = () => { }
-    /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} */
-    this.successAction = () => { }
-    /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} */
-    this.failAction = () => { }   
+    /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager, boolean): void} */
+    this.finishAction = () => { }   
     return this
 }
 
@@ -38,20 +36,11 @@ DungeonEventActionModel.prototype = {
     },
     /**
      *
-     * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} action
+     * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager, boolean): void} action
      * @returns {DungeonEventActionModel}
      */
-    setSuccessAction: function (action) {
-        this.successAction = action
-        return this
-    },
-    /**
-     *
-     * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} action
-     * @returns {DungeonEventActionModel}
-     */
-    setFailAction: function (action) {
-        this.failAction = action
+    setFinishAction: function (action) {
+        this.finishAction = action
         return this
     }
 }

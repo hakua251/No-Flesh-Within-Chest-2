@@ -3,7 +3,6 @@
     "kubejs.gameinfo.modpack.name": "No Flesh Within Chest",
     "kubejs.expansion_info.offical.description": "官方扩展包 - 扩展包基础支持",
     "kubejs.expansion_info.offical.name": "官方扩展包",
-    
     "_comment.organ_score_tooltips": "器官 Score Tooltips",
     "tooltips.kubejs.score_tag.chestcavity:filtration": "血液过滤效率",
     "tooltips.kubejs.score_tag.chestcavity:breath_recovery": "呼吸效率",
@@ -109,7 +108,6 @@
     "tooltips.kubejs.score_tag.hover.chestcavity:rotgut": "能够使你可以食用腐肉",
     "tooltips.kubejs.score_tag.hover.chestcavity:ease_of_access": "能使该生物满血被开胸，且不会因此损失血量",
     "tooltips.kubejs.score_tag.hover.kubejs:rosy": "玫瑰化程度能够表示你对玫瑰系列器官的能力的发挥程度",
-
     "_comment.organ_tag_tooltips": "器官 Tag Tooltips",
     "tooltips.kubejs.tag.kubejs:appendix": "阑尾",
     "tooltips.kubejs.tag.kubejs:heart": "心脏",
@@ -167,7 +165,6 @@
     "tooltips.kubejs.tag.kubejs:chest_loot_only": "唯一箱子战利品",
     "tooltips.kubejs.tag.kubejs:entity_tick": "实体刻",
     "tooltips.kubejs.tag.kubejs:entity_tick_only": "唯一实体刻",
-    
     "_comment.multi_state_tooltips": "多态Tooltips",
     "tooltips.kubejs.multi_state.shift.1": "§6·§r 按住 §e§l[ shift ]§r 查看器官基础属性",
     "tooltips.kubejs.multi_state.ctrl.1": "§6·§r 按住 §e§l[ ctrl ]§r 查看槽位激活效果",
@@ -175,19 +172,15 @@
     "tooltips.kubejs.multi_state.shift_holding.1": "§7▼ 按住 §8§l[ shift ]§r§7 查看器官基础属性",
     "tooltips.kubejs.multi_state.ctrl_holding.1": "§7▼ 按住 §8§l[ ctrl ]§r§7 查看槽位激活效果",
     "tooltips.kubejs.multi_state.alt_holding.1": "§7▼ 按住 §8§l[ alt ]§r§7 查看器官特殊效果",
-
     "tooltips.kubejs.pseudo_organ.shift.1": "§7· 按住 §8§l[ shift ]§r §7查看潜在器官属性",
     "tooltips.kubejs.pseudo_organ.shift_holding.1": "§7▼ 按住 §8§l[ shift ]§r §7查看潜在器官属性",
-
     "_comment.tool_tooltips": "工具Tooltips",
     "tooltips.kubejs.glass_vial.1": "§6·§r 按住 §e§l[ shift ]§r 查看血清样本信息",
     "tooltips.kubejs.glass_vial.2": "§7▼ 按住 §8§l[ shift ]§r§7 查看血清样本信息",
     "tooltips.kubejs.glass_vial.3": "    §6·§r %s : %s",
     "tooltips.kubejs.glass_vial.4": "§6·§r %s : %s",
-
     "_comment.organ_tooltips": "器官 Tooltips",
     "tooltips.kubejs.common_organ.1": "    §6★§r 每 %s 个该器官提供 %s 点 %s ",
-
     "_comment.organ": "器官",
     "item.kubejs.greedy_stomach": "贪婪之胃",
     "tooltips.kubejs.greedy_stomach.default.1": "它贪婪地等待你的进食",
@@ -270,7 +263,6 @@
     "tooltips.kubejs.blaze_pressurizer.alt.2": "    §6★§r 如果玩家造成的伤害被§6满溢能量瓶§r加成，则会消耗§c烈火超压§r层数以提高能量瓶的效果",
     "tooltips.kubejs.blaze_pressurizer.alt.3": "    §6★§r 如果玩家进入到熔火状态时，其具有§c烈火超压§r层数，则剩余的所有层数会转化为§6熔火核心§r的耐久度",
     "tooltips.kubejs.blaze_pressurizer.ctrl.1": "        §6★§r §c烈火超压§r层数的提供数量会提高 %s",
-    
     "_comment.slot_type": "槽位类型",
     "slot_type.kubejs.default.1": "    ■ 默认槽",
     "slot_type.chestcavity.default.name": "默认槽 #%s",
@@ -290,30 +282,22 @@
     "slot_type.kubejs.machinary_lubricant.1": "    ■ 顺滑机械",
     "slot_type.chestcavity.machinary_lubricant.name": "顺滑机械 #%s",
     "slot_type.chestcavity.machinary_lubricant.desc": " ■ 可用于强化§c机械系列§r器官，在绝大多数情况下，可以提升约300%的机械效率",
-
-
     "_comment.status_msg": "物品",
     "status_msg.kubejs.chestopener.fail.obstructed": "无法对穿戴护甲的目标开胸",
     "status_msg.kubejs.chestopener.fail.healthy": "无法对过于健康的目标开胸",
     "status_msg.kubejs.warden_core.key_active.cooldown": "%s 冷却时间：%s 秒",
-
-    
     "_comment.item": "物品",
     "item.chestcavity.surgical_box": "手术盒",
     "item_name.kubejs.glass_vial.suffix": "的血清",
-
-
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
-	"gui.kubejs.title.chestcavity": "胸腔",
+    "gui.kubejs.title.chestcavity": "胸腔",
     "gui.chestcavity.surgical_box.title": "手术盒内部空间",
-
     "_comment.msg": "消息",
     "msg.kubejs.expansion_content.load_expansion.1": "No Flesh Within Chest已加载 %s 份拓展包。",
     "msg.kubejs.expansion_content.load_expansion.2": "点击此处以查看已安装的扩展包列表。",
     "msg.kubejs.expansion_content.list.1": "        - ",
     "msg.kubejs.expansion_content.list.2": "- 扩展包ID：%s \n- 扩展包版本：%s \n- 扩展包作者：%s \n- 扩展包描述：%s",
-
     "_comment.tcon_material": "匠魂材料",
     "material.kubejs.living_flesh": "鲜活血肉",
     "material.kubejs.living_flesh.flavor": "一种再生能力极强的材料，其来源于一种人造——亦或是来自于异界的生物",
@@ -321,12 +305,15 @@
     "material.kubejs.creator_mix": "怪异血肉",
     "material.kubejs.creator_mix.flavor": "一种血肉混合而来的材料，似乎在模拟鲜活血肉的时候出现了一些问题",
     "material.kubejs.creator_mix.encyclopedia": "手持该物品时会消耗血量以修复物品的耐久",
-
     "_comment.tcon_modifier": "匠魂修饰器",
     "modifier.kubejs.boold_repair": "鲜血修补",
     "modifier.kubejs.boold_repair.flavor": "鲜血修补",
     "modifier.kubejs.boold_repair.description": "手持该物品将会消耗玩家的血量以修复物品的耐久，该效果并不会致死",
     "modifier.kubejs.hunger_repair": "饿欲修补",
     "modifier.kubejs.hunger_repair.flavor": "饿欲修补",
-    "modifier.kubejs.hunger_repair.description": "手持该物品将会消耗玩家的饥饿以修复物品的耐久，该效果并不会消耗最后的饥饿值"
+    "modifier.kubejs.hunger_repair.description": "手持该物品将会消耗玩家的饥饿以修复物品的耐久，该效果并不会消耗最后的饥饿值",
+    "_comment.boss_bar": "bossBar",
+    "boss_bar.kubejs.dungeon.default.title.1": "",
+    "boss_bar.kubejs.dungeon.kill_amount_task.title.1": "击杀 %s / %s 个敌人",
+    "boss_bar.kubejs.dungeon.wait.title.1": "等待本波次开始"
 }

@@ -2,20 +2,20 @@
 function DungeonWaveModel() {
     /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} */
     this.initAction = () => { }
-    /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): boolean} */
-    this.finishAction = () => { return false}
+    /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager, boolean): boolean} */
+    this.finishAction = () => { return false }
     /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} */
     this.tickAction = () => { }
     /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): boolean} */
-    this.tickTester = () => { return false}
+    this.tickTester = () => { return false }
     /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): boolean} */
-    this.endTester = () => { return true}
+    this.endTester = () => { return true }
     return this
 }
 
 DungeonWaveModel.prototype = {
     /**
-     * 
+     * 一个波次仅会执行一次initAction
      * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} action 
      * @returns {DungeonWaveModel}
      */
@@ -24,8 +24,8 @@ DungeonWaveModel.prototype = {
         return this
     },
     /**
-     * 
-     * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): void} action 
+     * 在判断波次完成后，会执行finishAction；如果返回True则认为整个地牢结束，否则会执行下一波次
+     * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager, boolean): void} action 
      * @returns {DungeonWaveModel}
      */
     setFinishAction: function (action) {
@@ -42,7 +42,7 @@ DungeonWaveModel.prototype = {
         return this
     },
     /**
-     * 
+     * 在Runing状态下，每20tick执行一次，返回true则认为满足波次条件，提前结束波次
      * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): boolean} tester 
      * @returns {DungeonWaveModel}
      */
@@ -51,7 +51,7 @@ DungeonWaveModel.prototype = {
         return this
     },
     /**
-     * 
+     * 时间结束或TickTester返回true，会执行endTester，返回true则认为波次结束，否则会认为波次失败
      * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager): boolean} tester 
      * @returns {DungeonWaveModel}
      */

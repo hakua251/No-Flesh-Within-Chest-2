@@ -48,3 +48,4 @@ const $MobSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType')
 const $SpawnMobAreaKubeEvent = Java.loadClass('snownee.loquat.spawner.SpawnMobAreaKubeEvent')
 
 const $CustomBossEvent = Java.loadClass('net.minecraft.server.bossevents.CustomBossEvent')
+const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
