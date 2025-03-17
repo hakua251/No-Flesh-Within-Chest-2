@@ -4,11 +4,21 @@
 const PositionEmitter = new $PositionGoopEmitter()
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
-    let area = GenDungeonLevelArea(event.level, player.blockPosition())
+    let minecraftServer = event.level.server
+    let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
+    let pos = GenDungeonIslands(dungeonLevel)
+    
+    player.teleportTo(dungeonLevel.getDimension(), pos.x, pos.y, pos.z, 0, 0)
+    let area = GenDungeonLevelArea(dungeonLevel, pos)
     if (!area) return
-    player.tell(1)
-    let manager = LoquatAreaManager.of(event.level)
+    let manager = LoquatAreaManager.of(dungeonLevel)
     manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1, 0))
+
+
+
+    // player.tell(pos)
+    // let pos = player.blockPosition()
+    // let vec3 = new Vec3d(pos.x, pos.y, pos.z)
     
     // let res = []
     // $ForgeRegistries.ENTITY_TYPES.getEntries().forEach(entityType => {
@@ -18,14 +28,7 @@ ItemEvents.rightClicked('stick', event => {
     // console.log(res)
 
 
-    // let nbt = new $CompoundTag()
-    // nbt.putString('replaceBlock', 'minecraft:deepslate')
-    // nbt.putString('mode', 'mark')
-    // console.log(nbt)
-    // let pos = GenDungeonIslands(event.level)
-    // player.tell(pos)
-    // let pos = player.blockPosition()
-    // let vec3 = new Vec3d(pos.x, pos.y, pos.z)
+
 
     // PositionEmitter.emitInternal(event.level, vec3, 0xffffff, new Vec4f(0, 0, 0, 0.25), 1, 1)
     // let map = new Map()

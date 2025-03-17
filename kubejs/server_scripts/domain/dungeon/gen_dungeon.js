@@ -13,9 +13,9 @@ const X_POINT_MODIFIER = [1, 1, -1, -1]
 const Z_POINT_MODIFIER = [-1, 1, 1, -1]
 const DungeonStructureFileLocation = 'kubejs/data/kubejs/structures/infinity_dungeon'
 
-const MAINISLAND_TEMPLATE_LIST = []
 
-ServerEvents.highPriorityData((event) => {
+function GetRandomDungeonStructureId() {
+    const dungeonStructureIdList = []
     if (!FilesJS.exists(DungeonStructureFileLocation)) return
     FilesJS.listFilesRecursively(DungeonStructureFileLocation).forEach(file => {
         if (file.endsWith('.nbt')) {
@@ -23,45 +23,40 @@ ServerEvents.highPriorityData((event) => {
             if (!reg.test(file)) return
             let res = 'kubejs:' + RegExp.$1
             res = res.replace('\\', '/')
-            MAINISLAND_TEMPLATE_LIST.push(res)
+            dungeonStructureIdList.push(res)
         }
     })
-    console.log(MAINISLAND_TEMPLATE_LIST)
-})
-
+    return RandomGet(dungeonStructureIdList)
+}
 /**
- * @param {Internal.Level} level 
+ * @param {Internal.ServerLevel} level 
  * @return {BlockPos}
  */
 function GenDungeonIslands(level) {
-    let minecraftServer = level.getServer()
-    let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    let dungeonStructManager = dungeonLevel.getStructureManager()
+    let dungeonStructManager = level.getStructureManager()
     let dungeonNum = 0
-    if (dungeonLevel.persistentData.contains('islandNum')) {
-        dungeonNum = dungeonLevel.persistentData.getInt('islandNum')
+    if (level.persistentData.contains('islandNum')) {
+        dungeonNum = level.persistentData.getInt('islandNum')
     }
-
     let buildOffset = calculateStructureCenterPos(dungeonNum)
     let buildX = buildOffset.x * ISLAND_BUILD_INTERVAL + Math.random() * ISLAND_BUILD_RANDOM_OFFSET
     let buildZ = buildOffset.z * ISLAND_BUILD_INTERVAL + Math.random() * ISLAND_BUILD_RANDOM_OFFSET
-    let mainIslandId = RandomGet(MAINISLAND_TEMPLATE_LIST)
-
+    let mainIslandId = GetRandomDungeonStructureId()
     let mainIslandTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(mainIslandId))
     let mainIslandSizeRange = ConvertVec3i2BlockPos(mainIslandTemplate.getSize())
     let mainIslandBuildPos = new BlockPos(buildX, 0, buildZ)
-
-    let chunkAccess = GetChunkAccess(dungeonLevel, mainIslandBuildPos)
+    let chunkAccess = GetChunkAccess(level, mainIslandBuildPos)
     if (!chunkAccess) return
 
     // 主岛
     let placementSettings = new $StructurePlaceSettings().setMirror($Mirror.NONE).setRotation($Rotation.NONE).setIgnoreEntities(false)
-    mainIslandTemplate.placeInWorld(dungeonLevel, mainIslandBuildPos, mainIslandSizeRange, placementSettings, dungeonLevel.getRandom(), 2)
+    mainIslandTemplate.placeInWorld(level, mainIslandBuildPos, mainIslandSizeRange, placementSettings, level.getRandom(), 2)
+
     HandleDataBlock(level, mainIslandTemplate, mainIslandBuildPos, placementSettings)
 
-
-    dungeonLevel.persistentData.putInt('islandNum', dungeonNum + 1)
-    return mainIslandBuildPos
+    level.persistentData.putInt('islandNum', dungeonNum + 1)
+    // todo 确认建筑的offset
+    return mainIslandBuildPos.offset(mainIslandSizeRange.x / 2, 2, mainIslandSizeRange.z / 2)
 }
 
 /**
@@ -76,12 +71,12 @@ function HandleDataBlock(level, template, position, placementSettings) {
         if (block.nbt()) {
             let structureMode = $StructureMode.valueOf(block.nbt().getString('mode'))
             if (structureMode == $StructureMode.DATA) {
-                let metaData = block.nbt().getString('metadata')
-                let metaDataJsonObj = JsonIO.parseRaw(metaData).getAsJsonObject()
-                if (!metaDataJsonObj.has('mode')) return
-                let mode = metaDataJsonObj.get('mode').getAsString()
-                switch (mode) {
-                }
+                // let metaData = block.nbt().getString('metadata')
+                // let metaDataJsonObj = JsonIO.parseRaw(metaData).getAsJsonObject()
+                // if (!metaDataJsonObj.has('mode')) return
+                // let mode = metaDataJsonObj.get('mode').getAsString()
+                // switch (mode) {
+                // }
                 // let nbt = ConvertPos2Nbt(position.above(10))
                 // let nextLevelBlock = Block.getBlock('kubejs:locker_block').defaultBlockState()
                 // level.setBlock(block.pos(), nextLevelBlock, 3)

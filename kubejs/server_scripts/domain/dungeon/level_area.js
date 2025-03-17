@@ -1,5 +1,5 @@
 // priority: 800
-const DungeonStructureRadius = 24
+const DungeonStructureRadius = 32
 const DungeonStructureHeight = 10
 /**
  * 根据中心位置生成一个区域
@@ -9,7 +9,7 @@ const DungeonStructureHeight = 10
  * @returns {Internal.Area}
  */
 function GenDungeonLevelArea(level, centerPos) {
-    let leftConner = centerPos.offset(-DungeonStructureRadius, -1, -DungeonStructureRadius)
+    let leftConner = centerPos.offset(-DungeonStructureRadius, -3, -DungeonStructureRadius)
     let rightConner = centerPos.offset(DungeonStructureRadius, DungeonStructureHeight, DungeonStructureRadius)
     let aabb = AABB.ofBlocks(
         leftConner,
@@ -35,8 +35,8 @@ function GenDungeonLevelArea(level, centerPos) {
         }
     })
     let zoneSideLength = Math.floor(DungeonStructureRadius / Math.sqrt(2))
-    let zoneLeftConner = centerPos.offset(-zoneSideLength, 0, -zoneSideLength)
-    let zoneRightConner = centerPos.offset(zoneSideLength, 3, zoneSideLength)
+    let zoneLeftConner = centerPos.offset(-zoneSideLength, -1, -zoneSideLength)
+    let zoneRightConner = centerPos.offset(zoneSideLength, 6, zoneSideLength)
     let zoneAABB = AABB.ofBlocks(
         zoneLeftConner,
         zoneRightConner

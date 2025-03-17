@@ -13,7 +13,7 @@ const testDungeonSpawner = new DungeonEventActionModel('test')
         for (let i = 0; i < 8; i++) {
             /**@type {Internal.PathfinderMob} */
             let entity = level.createEntity('zombie')
-            entity.setMaxHealth(2)
+            entity.setMaxHealth(20)
             DungeonCreateEntity(level, context, entity)
         }
     }))
@@ -21,7 +21,7 @@ const testDungeonSpawner = new DungeonEventActionModel('test')
         for (let i = 0; i < 8; i++) {
             /**@type {Internal.PathfinderMob} */
             let entity = level.createEntity('zombie')
-            entity.setMaxHealth(2)
+            entity.setMaxHealth(20)
             DungeonCreateEntity(level, context, entity)
         }
     }))
