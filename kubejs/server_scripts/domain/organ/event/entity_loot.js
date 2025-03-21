@@ -8,5 +8,6 @@ LootJS.modifiers(context => {
             if (!entity) return
             let customData = {}
             OrganEntityLootEvent.run(entity, customData, [event])
+            UpdateClientISSSpellDataEvent(customData, entity)
         })
 })

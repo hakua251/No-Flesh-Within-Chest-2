@@ -10,4 +10,5 @@
 /**
  * @typedef {Object} OrganEventCustomData
  * @property {OrganLocalDeferModel[]} localDefers
+ * @property {boolean} needRefreshSpellSelection
  */

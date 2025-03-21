@@ -46,6 +46,7 @@ NativeEvents.onEvent('io.redspace.ironsspellbooks.api.magic.SpellSelectionManage
     if (!event.entity.level.isClientSide()) return
     let index = 0
     OrganAdditionSpellSelectionMap.forEach(element => {
-        event.addSelectionOption(element, 'chestcavity', 0)
+        event.addSelectionOption(element, 'chestcavity', index)
+        index++
     })
 })

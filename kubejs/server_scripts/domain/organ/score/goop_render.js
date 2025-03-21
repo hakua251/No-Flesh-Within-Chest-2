@@ -15,9 +15,13 @@ function RegisterOrganScoreGoopRenderStrategy(strategy) {
  * @param {OrganEventCustomData} customData 
  */
 function OrganScoreDamagedEffect(event, customData) {
+    /**@type {Internal.LivingEntity} */
     const entity = event.entity
     const chestCavity = entity.chestCavityInstance
     if (!entity.isAlive() || !chestCavity) return
+    if (!chestCavity.opened) {
+        $ChestCavityUtil.openChestCavity(chestCavity)
+    }
     let goopModel = new OrganScoreDamagedGoopModel(entity.level, entity.position().add(new Vec3d(0, entity.getBbHeight(), 0)))
     OrganScoreGoopRenderStrategy.forEach(strategy => {
         strategy(event, chestCavity, customData, goopModel)

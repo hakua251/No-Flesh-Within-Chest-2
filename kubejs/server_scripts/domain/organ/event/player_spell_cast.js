@@ -7,4 +7,5 @@ PlayerEvents.spellOnCast(event => {
     if (!player) return
     let customData = {}
     PlayerSpellCastEvent.run(player, customData, [event])
+    UpdateClientISSSpellDataEvent(customData, player)
 })

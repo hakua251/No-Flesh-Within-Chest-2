@@ -19,4 +19,5 @@ NetworkEvents.dataReceived('mine_menu_use_item', event => {
     }
 
     OrganKeyBindEvent.run(player, item, customData, [event])
+    UpdateClientISSSpellDataEvent(customData, player)
 })

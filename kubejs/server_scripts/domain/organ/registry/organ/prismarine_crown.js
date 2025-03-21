@@ -18,25 +18,6 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
             chestCavity.setOrganScore(key, 0)
         }
     })
-    if (event.entity.isPlayer()) {
-        AddSpellSelection(customData, chestCavity.customDataMap, 'irons_spellbooks:gust', 1)
-        AddClientISSSpellDataDefer(customData, event.entity, organIndex)
-    }
-}
-
-/**
- * @param {OrganEventCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function PrismarineCrownTakeOff(customData, event, organItem, organIndex, slotType) {
-    const { entity, chestCavity } = event
-    if (entity.isPlayer()) {
-        RemoveSpellSelection(customData, chestCavity.customDataMap, 'irons_spellbooks:gust', 1)
-        AddClientISSSpellDataDefer(customData, entity, organIndex)
-    }
 }
 
 
@@ -44,5 +25,4 @@ function PrismarineCrownTakeOff(customData, event, organItem, organIndex, slotTy
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:prismarine_crown')
         .addOnlyStrategy('chest_cavity_update', PrismarineCrownChestCavityUpdate)
-        .addOnlyStrategy('organ_take_off', PrismarineCrownTakeOff)
 )

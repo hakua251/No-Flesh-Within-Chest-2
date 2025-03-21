@@ -90,10 +90,26 @@ function OriginiumsPlayerCastEvent(customData, event, organItem, organIndex, slo
 
     player.addItemCooldown(organItem, 20 * 30)
 }
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function OriginiumsMpmRender(customData, event, organItem, organIndex, slotType) {
+    /**@type {Internal.ServerPlayer} */
+    let player = event.entity
+    let mpmData = new MpmDataModel('kubejs:parts/arms/originium_dragon_arm_slim_model.json').exportModelData()
+    if (player.profile.isLegacy()) {
+        mpmData = new MpmDataModel('kubejs:parts/arms/originium_dragon_arm_wide_model.json').exportModelData()
+    }
+    customData.mpmParts.push(mpmData)
+}
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:originiums')
         .addOnlyStrategy('player_spell_cast', OriginiumsPlayerCastEvent)
+        .addOnlyStrategy('mpm_render', OriginiumsMpmRender)
 )
 
 
@@ -112,10 +128,26 @@ function SubOriginiumsChestCavityUpdate(customData, event, organItem, organIndex
     let spellId = nbt.getString('spellId')
     let spellLvl = nbt.getInt('spellLvl')
     AddSpellSelection(customData, chestCavity.customDataMap, spellId, spellLvl)
-    AddClientISSSpellDataDefer(customData, event.entity, organIndex)
+}
+
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function SubOriginiumsTakeOff(customData, event, organItem, organIndex, slotType) {
+    const { entity, chestCavity } = event
+    if (!entity.isPlayer()) return
+    let nbt = organItem.getOrCreateTag()
+    let spellId = nbt.getString('spellId')
+    let spellLvl = nbt.getInt('spellLvl')
+    RemoveSpellSelection(customData, chestCavity.customDataMap, spellId, spellLvl)
 }
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:sub_originiums')
-        .addOnlyStrategy('chest_cavity_update', SubOriginiumsChestCavityUpdate)
+        .addStrategy('chest_cavity_update', SubOriginiumsChestCavityUpdate)
+        .addStrategy('organ_take_off', SubOriginiumsTakeOff)
 )

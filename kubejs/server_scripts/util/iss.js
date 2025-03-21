@@ -1,14 +1,37 @@
 // priority: 2500
 /**
+ * 更新客户端的法术数据，不存在在tick策略中
  * @param {OrganEventCustomData} customData
- * @param {Internal.ServerPlayer} player
+ * @param {Internal.ServerPlayer} entity
  */
-function UpdateClientISSSpellData(customData, player) {
-    const chestCavity = player.chestCavityInstance
+function UpdateClientISSSpellDataEvent(customData, entity) {
+    if (!customData.needRefreshSpellSelection) return
+    if (!entity || !entity.isPlayer()) return
+    if (!entity.connection) return
+    const chestCavity = entity.chestCavityInstance
     const entityDataMap = chestCavity.customDataMap
     if (!entityDataMap || !entityDataMap.containsKey('organ_spell_selection')) return
     /**@type {Map<string, SpellData>} */
     const organSpellSelection = entityDataMap.get('organ_spell_selection')
+    if (entityDataMap.containsKey('old_organ_spell_selection')) {
+        /** @type {Map<string, SpellData>} */
+        let oldOrganSpellSelection = entityDataMap.get('old_organ_spell_selection')
+        if (oldOrganSpellSelection.size == organSpellSelection.size) {
+            let isSame = true
+            organSpellSelection.forEach(/** @param {SpellData} spellData */ spellData => {
+                let spellId = spellData.getSpell().getSpellId()
+                spellId = String(spellId)
+                if (!oldOrganSpellSelection.has(spellId) || oldOrganSpellSelection.get(spellId).getLevel() != spellData.getLevel()) {
+                    isSame = false
+                    return
+                }
+            })
+            if (isSame) return
+        }
+    }
+
+    entityDataMap.put('old_organ_spell_selection', new Map(organSpellSelection))
+
     let syncSpellData = new $CompoundTag()
     let spellNBTList = new $ListTag()
     organSpellSelection.forEach(/** @param {SpellData} spellData */ spellData => {
@@ -17,21 +40,9 @@ function UpdateClientISSSpellData(customData, player) {
         spellNBT.putInt('level', spellData.getLevel())
         spellNBTList.add(spellNBT)
     })
-    console.log(spellNBTList)
     syncSpellData.put('spellList', spellNBTList)
     syncSpellData.putString('mode', 'refresh')
-    player.sendData('spell_selection_data', syncSpellData)
-}
-
-/**
- * @param {OrganEventCustomData} customData
- * @param {Internal.ServerPlayer} player
- * @param {number} organIndex
- */
-function AddClientISSSpellDataDefer(customData, player, organIndex) {
-    if (customData['refreshClientISS']) return
-    customData['refreshClientISS'] = true
-    customData.localDefers.push(new OrganLocalDeferModel([player], UpdateClientISSSpellData, organIndex))
+    entity.sendData('spell_selection_data', syncSpellData)
 }
 
 /**
@@ -43,14 +54,15 @@ function AddClientISSSpellDataDefer(customData, player, organIndex) {
 function AddSpellSelection(customData, entityDataMap, spellId, spellLvl) {
     /**@type {Map<string, SpellData>} */
     let spellSlectionMap = entityDataMap.getOrDefault('organ_spell_selection', new Map())
+    spellId = String(spellId)
     if (spellSlectionMap.has(spellId)) {
-        let spellData = spellSlectionMap.get(spellId)
-        let maxLevel = Math.max(spellData.getLevel(), spellLvl)
-        spellSlectionMap.set(spellId, new SpellData(spellId, maxLevel))
+        if (spellSlectionMap.get(spellId).getLevel() >= spellLvl) return
+        spellSlectionMap.set(spellId, new SpellData(spellId, spellLvl))
     } else {
         spellSlectionMap.set(spellId, new SpellData(spellId, spellLvl))
     }
     entityDataMap.put('organ_spell_selection', spellSlectionMap)
+    customData.needRefreshSpellSelection = true
 }
 
 /**
@@ -62,11 +74,13 @@ function AddSpellSelection(customData, entityDataMap, spellId, spellLvl) {
 function RemoveSpellSelection(customData, entityDataMap, spellId, spellLvl) {
     /**@type {Map<string, SpellData>} */
     let spellSlectionMap = entityDataMap.getOrDefault('organ_spell_selection', new Map())
+    spellId = String(spellId)
     if (spellSlectionMap.has(spellId)) {
         let spellData = spellSlectionMap.get(spellId)
         if (spellData.getLevel() == spellLvl) {
             spellSlectionMap.delete(spellId)
             entityDataMap.put('organ_spell_selection', spellSlectionMap)
+            customData.needRefreshSpellSelection = true
         }
     }
 }

@@ -27,9 +27,7 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent',
     let customData = {
         thornsDamage: 0
     }
-    if (entity.isAlive() && entity instanceof $LivingEntity && !entity.chestCavityInstance.opened) {
-        entity.chestCavityInstance.opened = true
-    }
+
     OrganEntityBeHurt(event, customData)
     if (amount > 0) {
         OrganScoreDamagedEffect(event, customData)

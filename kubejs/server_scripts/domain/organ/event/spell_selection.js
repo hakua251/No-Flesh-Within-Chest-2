@@ -7,5 +7,7 @@ const OrganSpellSelectionEvent = new OrganEventModel('spell_selection')
  * @param {OrganEventCustomData} customData 
  */
 function OrganSpellSelection(event, customData) {
-    OrganSpellSelectionEvent.run(event.entity, customData, [event])
+    const entity = event.entity
+    OrganSpellSelectionEvent.run(entity, customData, [event])
+    UpdateClientISSSpellDataEvent(customData, entity)
 }
