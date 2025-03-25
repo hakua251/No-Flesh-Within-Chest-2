@@ -13,9 +13,9 @@ const X_POINT_MODIFIER = [1, 1, -1, -1]
 const Z_POINT_MODIFIER = [-1, 1, 1, -1]
 const DungeonStructureFileLocation = 'kubejs/data/kubejs/structures/infinity_dungeon'
 
+const DungeonStructIdList = []
 
-function GetRandomDungeonStructureId() {
-    const dungeonStructureIdList = []
+ServerEvents.highPriorityData(event => {
     if (!FilesJS.exists(DungeonStructureFileLocation)) return
     FilesJS.listFilesRecursively(DungeonStructureFileLocation).forEach(file => {
         if (file.endsWith('.nbt')) {
@@ -23,11 +23,11 @@ function GetRandomDungeonStructureId() {
             if (!reg.test(file)) return
             let res = 'kubejs:' + RegExp.$1
             res = res.replace('\\', '/')
-            dungeonStructureIdList.push(res)
+            DungeonStructIdList.push(res)
         }
     })
-    return RandomGet(dungeonStructureIdList)
-}
+})
+
 /**
  * @param {Internal.ServerLevel} level 
  * @return {BlockPos}
@@ -41,7 +41,7 @@ function GenDungeonStruct(level) {
     let buildOffset = calculateStructureCenterPos(dungeonNum)
     let buildX = buildOffset.x * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
     let buildZ = buildOffset.z * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
-    let structId = GetRandomDungeonStructureId()
+    let structId = RandomGet(DungeonStructIdList)
     let structTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(structId))
     let structSizeRange = ConvertVec3i2BlockPos(structTemplate.getSize())
     let structBuildPos = new BlockPos(buildX, 0, buildZ)
