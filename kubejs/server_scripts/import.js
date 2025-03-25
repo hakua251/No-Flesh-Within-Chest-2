@@ -53,3 +53,4 @@ const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
 
 const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellData')
 const $TitleManager = Java.loadClass('aurilux.titles.common.core.TitleManager')
+const $TamableAnimal = Java.loadClass('net.minecraft.world.entity.TamableAnimal')

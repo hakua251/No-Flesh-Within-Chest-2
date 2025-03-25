@@ -9,7 +9,7 @@ StartupEvents.registry('mob_effect', event => {
             const chestCavity = entity.chestCavityInstance
             if (!chestCavity.customDataMap.containsKey('putridToxinsDamage')) return
             let putridToxinsDamage = chestCavity.customDataMap.get('putridToxinsDamage')
-            entity.attack(entity.damageSources().magic(), putridToxinsDamage * (lvl + 1))
+            entity.attack(entity.damageSources().magic(), putridToxinsDamage * (lvl * 0.5 + 1))
         })
         .color(Color.DARK_PURPLE)
 })

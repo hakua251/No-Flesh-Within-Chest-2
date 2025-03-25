@@ -21,7 +21,7 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
         /** @type {Internal.LivingEntity} */
         const target = event.entity
         organItem.setDamageValue(organItem.getMaxDamage())
-        target.potionEffects.add('kubejs:putrid_toxins', 20 * 12, 0, false, false)
+        target.potionEffects.add('kubejs:putrid_toxins', 20 * 20, 0, false, false)
         SetPutridToxinsDamage(target, event.amount)
     }
     if (sourceEntity instanceof $ServerPlayer) {

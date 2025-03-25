@@ -2,10 +2,7 @@
 StartupEvents.registry('item', event => {
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
-    event.create('exclamation_mark').texture('kubejs:item/exclamation_mark')
     event.create('full_mark').texture('kubejs:item/full_mark')
-
-
 
     event.create('kubejs:chicken_flavor_powder').texture('kubejs:item/chicken_flavor_powder').maxStackSize(64)
 

@@ -44,7 +44,7 @@ function SetPutridToxinsDamage(target, damage) {
  * @param {Internal.LivingEntity} target 
  * @returns {number}
  */
-function GetPutridToxinsDamage(target, damage) {
+function GetPutridToxinsDamage(target) {
     const chestCavity = target.chestCavityInstance
     return chestCavity.customDataMap.getOrDefault('putridToxinsDamage', 0)
 }

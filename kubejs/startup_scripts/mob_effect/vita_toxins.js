@@ -15,14 +15,14 @@ StartupEvents.registry('mob_effect', event => {
             let sourcePlayer = level.getPlayerByUUID(sourceUuid)
             if (!sourcePlayer) return
             let vitaToxinsType = chestCavity.customDataMap.getOrDefault('vitaToxinsType', 'attack_damage')
-            let vitaToxinsCoe = chestCavity.customDataMap.getOrDefault('vitaToxinsCoe', 0.1)
+            let vitaToxinsCoe = chestCavity.customDataMap.getOrDefault('vitaToxinsCoe', 0.5)
             let vitaToxinsDamage = 0
             switch (vitaToxinsType) {
                 case 'attack_damage':
                     vitaToxinsDamage = sourcePlayer.getAttribute('minecraft:generic.attack_damage').value * vitaToxinsCoe
                     break 
             }
-            entity.attack(entity.damageSources().magic(), vitaToxinsDamage * (lvl + 1))
+            entity.attack(entity.damageSources().magic(), vitaToxinsDamage * (lvl * 0.5 + 1))
         })
         .color(Color.DARK_RED)
 })

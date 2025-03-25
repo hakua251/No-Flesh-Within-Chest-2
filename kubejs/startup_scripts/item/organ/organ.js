@@ -1,8 +1,6 @@
 // priority: 500
 
 StartupEvents.registry('item', event => {
-    event.create('kubejs:greedy_stomach').maxStackSize(1).texture('kubejs:item/organs/common/stomach').tag('kubejs:stomach')
-
     event.create('kubejs:prismarine_crown').maxStackSize(1).texture('kubejs:item/organs/legends/prismarine_crown').tag('kubejs:legends')
 
     // 无尽

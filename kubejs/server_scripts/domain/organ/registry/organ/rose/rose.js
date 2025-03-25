@@ -150,7 +150,7 @@ function RoseQuartzDialyzerKeyActiveOnly(customData, event, organItem, organInde
             break
         }
     }
-    let repairValue = rosyValue * 5
+    let repairValue = rosyValue * 3
     for (let i = 0; i < chestCavity.inventory.getContainerSize(); i++) {
         let item = chestCavity.inventory.getItem(i)
         if (item.getMaxDamage() <= 0) continue

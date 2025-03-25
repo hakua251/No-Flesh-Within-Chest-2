@@ -12,6 +12,10 @@ const EventId2TagId = {
     'entity_loot': 'kubejs:entity_loot',
     'chest_loot': 'kubejs:chest_loot',
     'entity_tick': 'kubejs:entity_tick',
+    'entity_tick': 'kubejs:entity_tick',
+    'player_spell_cast': 'kubejs:player_spell_cast',
+    'entity_kill': 'kubejs:entity_kill',
+    'entity_death': 'kubejs:entity_death',
 }
 
 
