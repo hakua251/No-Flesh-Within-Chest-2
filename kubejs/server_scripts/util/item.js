@@ -7,6 +7,9 @@ function DeserializeItemFromNbt(data) {
     let id = data.getString('id')
     let count = data.getInt('Count')
     let nbt = data.getCompound('tag')
+    if (!id) {
+        return null
+    }
     let res = Item.of(id, count)
     if (nbt) {
         res.setNbt(nbt)

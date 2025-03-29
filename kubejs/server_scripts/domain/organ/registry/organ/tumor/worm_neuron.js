@@ -1,4 +1,4 @@
-// priority: 2.500
+// priority: 500
 RegistryOrgan('kubejs:worm_neuron')
     .addScore('chestcavity:nerves', 1.5)
     .addScore('chestcavity:endurance', -1)

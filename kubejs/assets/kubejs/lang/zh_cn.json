@@ -3,6 +3,8 @@
     "kubejs.gameinfo.modpack.name": "No Flesh Within Chest",
     "kubejs.expansion_info.offical.description": "官方扩展包 - 扩展包基础支持",
     "kubejs.expansion_info.offical.name": "官方扩展包",
+    "key.categories.kubejs": "kubejs",
+    "key.kubejs.organ_skill": "器官技能按键",
     "_comment.organ_score_tooltips": "器官 Score Tooltips",
     "tooltips.kubejs.score_tag.chestcavity:filtration": "血液过滤效率",
     "tooltips.kubejs.score_tag.chestcavity:breath_recovery": "呼吸效率",

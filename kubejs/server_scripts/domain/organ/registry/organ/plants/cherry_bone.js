@@ -13,7 +13,7 @@ RegistryOrgan('kubejs:cherry_bone')
 function CherryBoneEntityBeHurt(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
     const sourceEntity = event.source.actual
-    if (!source) return
+    if (!sourceEntity) return
     if (sourceEntity.hasEffect('kubejs:vita_toxins')) {
         let effect = sourceEntity.getEffect('kubejs:vita_toxins')
         if (effect.duration > event.amount * 20) {

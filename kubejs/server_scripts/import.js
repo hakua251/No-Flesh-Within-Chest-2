@@ -17,6 +17,7 @@ const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
 const $Float = Java.loadClass('java.lang.Float')
 const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavityUtil')
 const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
+const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')
 
 const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
 
