@@ -37,3 +37,8 @@ config/inventoryprofilesnext/
 !config/inventoryprofilesnext/integrationHints
 config/oculus*
 kubejs/pack_resources
+kubejs/config/contentpacks
+config/konkrete
+config/spark
+config/titanium
+config/ibeeditor*
