@@ -44,9 +44,6 @@ StartupEvents.registry('item', event => {
             return itemstack
         })
 
-
-    event.create('advanced_chest_opener').texture('kubejs:item/advanced_chest_opener').maxStackSize(1)
-    
     event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
 
     event.create('glass_vial').texture('kubejs:item/glass_vial').maxStackSize(1)

@@ -3,7 +3,7 @@
  * 
  * @param {Internal.Level} level 
  * @param {Internal.SpawnMobAreaKubeEvent} context 
- * @param {Internal.PathfinderMob} entity 
+ * @param {Internal.Entity} entity 
  * @returns {boolean}
  */
 function DungeonCreateEntity(level, context, entity) {
@@ -16,10 +16,10 @@ function DungeonCreateEntity(level, context, entity) {
     } else {
         spawnPos = spawnPosOpt.get()
     }
+    entity.getPersistentData().putUUID('relatedArea', area.getUuid())
     entity.setPos(spawnPos.getX(), spawnPos.getY(), spawnPos.getZ())
     entity.setPersistenceRequired()
     entity.loquat$setRestriction(context)
-    entity.persistentData.putUUID('relatedArea', area.getUuid())
     entity.spawn()
     return true
 }

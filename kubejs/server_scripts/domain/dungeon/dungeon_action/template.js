@@ -12,16 +12,14 @@ const testDungeonSpawner = new DungeonEventActionModel('test')
     .addWave(NewKillAmountWave(5, 20 * 60, (level, context, areaManager) => {
         for (let i = 0; i < 8; i++) {
             /**@type {Internal.PathfinderMob} */
-            let entity = level.createEntity('zombie')
-            entity.setMaxHealth(20)
+            let entity = level.createEntity('minecraft:zombie')
             DungeonCreateEntity(level, context, entity)
         }
     }))
     .addWave(NewKillAmountWave(6, 20 * 60, (level, context, areaManager) => {
         for (let i = 0; i < 8; i++) {
             /**@type {Internal.PathfinderMob} */
-            let entity = level.createEntity('zombie')
-            entity.setMaxHealth(20)
+            let entity = level.createEntity('minecraft:zombie')
             DungeonCreateEntity(level, context, entity)
         }
     }))

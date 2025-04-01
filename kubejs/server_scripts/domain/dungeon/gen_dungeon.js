@@ -54,7 +54,7 @@ function GenDungeonStruct(level) {
     HandleDataBlock(level, structTemplate, structBuildPos, placementSettings)
 
     level.persistentData.putInt('dungeonNum', dungeonNum + 1)
-    
+
     return structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
 }
 
@@ -70,18 +70,25 @@ function HandleDataBlock(level, template, position, placementSettings) {
         if (block.nbt()) {
             let structureMode = $StructureMode.valueOf(block.nbt().getString('mode'))
             if (structureMode == $StructureMode.DATA) {
-                // let metaData = block.nbt().getString('metadata')
-                // let metaDataJsonObj = JsonIO.parseRaw(metaData).getAsJsonObject()
-                // if (!metaDataJsonObj.has('mode')) return
-                // let mode = metaDataJsonObj.get('mode').getAsString()
-                // switch (mode) {
-                // }
-                // let nbt = ConvertPos2Nbt(position.above(10))
-                // let nextLevelBlock = Block.getBlock('kubejs:locker_block').defaultBlockState()
-                // level.setBlock(block.pos(), nextLevelBlock, 3)
-                // let spawnedBlock = level.getBlock(block.pos())
-                // spawnedBlock.entity.persistentData.put('SpawnPos', nbt)
-                // spawnedBlock.entity.setChanged()
+                let metaData = block.nbt().getString('metadata')
+                let metaDataJsonObj = JsonIO.parseRaw(metaData).getAsJsonObject()
+                if (!metaDataJsonObj.has('mode')) return
+                let mode = metaDataJsonObj.get('mode').getAsString()
+                switch (mode) {
+                    case 'spawn_obelisk':
+                        let spawnPosNbt = ConvertPos2Nbt(position.above(10))
+                        /** @type {Internal.BlockContainerJS} */
+                        let obeliskBlockUpper = Block.getBlock('kubejs:dungeon_obelisk')
+                        obeliskBlockUpper.blockState.setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.UPPER)
+                        /** @type {Internal.BlockContainerJS} */
+                        let obeliskBlockLower = Block.getBlock('kubejs:dungeon_obelisk')
+                        obeliskBlockLower.blockState.setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.LOWER)
+                        obeliskBlockLower.entity.persistentData.put('SpawnPos', spawnPosNbt)
+                        obeliskBlockLower.entity.setChanged()
+                        level.setBlock(position.above(1), obeliskBlockLower, 3)
+                        level.setBlock(position.above(2), obeliskBlockUpper, 3)
+                
+                }
             }
         }
         return

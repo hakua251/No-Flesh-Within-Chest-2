@@ -2,10 +2,18 @@
 
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
-    let player = event.player
-    UnlockPlayerTitle(player, 'kubejs:chest_opener')
+    const level = event.level
+    let entity = level.createEntity('minecraft:zombie')
+    entity.getPersistentData().putUUID('relatedArea', '00000000-0000-0000-0000-000000000000')
+    let pos = event.player.blockPosition().above(2)
+    entity.setPos(pos)
+    entity.spawn()
+    
+    // UnlockPlayerTitle(player, 'kubejs:chest_opener')
+    // let player = event.player
     // let minecraftServer = event.level.server
     // let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
+    // console.log(1)
     // let pos = GenDungeonStruct(dungeonLevel)
     
     // player.teleportTo(dungeonLevel.getDimension(), pos.x, pos.y, pos.z, 0, 0)
