@@ -3,7 +3,7 @@
  * 
  * @param {Internal.Level} level 
  * @param {Internal.SpawnMobAreaKubeEvent} context 
- * @param {Internal.Entity} entity 
+ * @param {Internal.PathfinderMob} entity 
  * @returns {boolean}
  */
 function DungeonCreateEntity(level, context, entity) {

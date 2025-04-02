@@ -34,3 +34,22 @@ BlockEvents.placed('kubejs:dungeon_obelisk', event => {
             break 
     }
 })
+
+
+BlockEvents.rightClicked('kubejs:dungeon_obelisk', event => {
+    const block = event.block
+    const level = event.level
+    if (!block.getBlockState().hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
+    let pos = block.getPos()
+    if (block.getBlockState().getValue(BlockProperties.DOUBLE_BLOCK_HALF) == $DoubleBlockHalf.UPPER) {
+        let lowerBlockState = level.getBlockState(pos.below())
+        if (lowerBlockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF) && lowerBlockState.getValue(BlockProperties.DOUBLE_BLOCK_HALF) == $DoubleBlockHalf.LOWER) {
+            pos = pos.below()
+        }
+    }
+    let obeliskBlockEntity = level.getBlockEntity(pos)
+    if (!obeliskBlockEntity || !obeliskBlockEntity.getPersistentData().contains('spawnPos')) return
+    let spawnPosNbt = obeliskBlockEntity.getPersistentData().get('spawnPos')
+    let spawnPos = ConvertNbt2Pos(spawnPosNbt)
+    BuildNewDungeonLevel(level, spawnPos)
+})

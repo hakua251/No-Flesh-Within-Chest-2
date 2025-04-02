@@ -16,6 +16,9 @@ const DungeonStructureFileLocation = 'kubejs/data/kubejs/structures/infinity_dun
 const DungeonStructIdList = []
 
 ServerEvents.highPriorityData(event => {
+    LoadDungeonStructIdList()
+})
+function LoadDungeonStructIdList() {
     if (!FilesJS.exists(DungeonStructureFileLocation)) return
     FilesJS.listFilesRecursively(DungeonStructureFileLocation).forEach(file => {
         if (file.endsWith('.nbt')) {
@@ -26,21 +29,25 @@ ServerEvents.highPriorityData(event => {
             DungeonStructIdList.push(res)
         }
     })
-})
+}
 
 /**
  * @param {Internal.ServerLevel} level 
  * @return {BlockPos}
  */
 function GenDungeonStruct(level) {
-    let dungeonStructManager = level.getStructureManager()
+    const dungeonStructManager = level.getStructureManager()
     let dungeonNum = 0
     if (level.getPersistentData().contains('dungeonNum')) {
         dungeonNum = level.getPersistentData().getInt('dungeonNum')
     }
+    if (DungeonStructIdList.length == 0) {
+        LoadDungeonStructIdList()
+    }
     let buildOffset = calculateStructureCenterPos(dungeonNum)
     let buildX = buildOffset.x * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
     let buildZ = buildOffset.z * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
+    if (DungeonStructIdList.length == 0) return null
     let structId = RandomGet(DungeonStructIdList)
     let structTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(structId))
     let structSizeRange = ConvertVec3i2BlockPos(structTemplate.getSize())
@@ -50,12 +57,10 @@ function GenDungeonStruct(level) {
 
     let placementSettings = new $StructurePlaceSettings().setMirror($Mirror.NONE).setRotation($Rotation.NONE).setIgnoreEntities(false)
     structTemplate.placeInWorld(level, structBuildPos, structSizeRange, placementSettings, level.getRandom(), 2)
-
     HandleDataBlock(level, structTemplate, structBuildPos, placementSettings)
-
     level.getPersistentData().putInt('dungeonNum', dungeonNum + 1)
 
-    return structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
+    return structBuildPos
 }
 
 /**
@@ -67,6 +72,7 @@ function GenDungeonStruct(level) {
 function HandleDataBlock(level, template, position, placementSettings) {
     // 结构行为
     template.filterBlocks(position, placementSettings, Blocks.STRUCTURE_BLOCK).forEach(block => {
+        let blockPos = block.pos()
         if (block.nbt()) {
             let structureMode = $StructureMode.valueOf(block.nbt().getString('mode'))
             if (structureMode == $StructureMode.DATA) {
@@ -77,17 +83,13 @@ function HandleDataBlock(level, template, position, placementSettings) {
                 switch (mode) {
                     case 'spawn_obelisk':
                         let spawnPosNbt = ConvertPos2Nbt(position.above(10))
-                        /** @type {Internal.BlockContainerJS} */
-                        let obeliskBlockUpper = Block.getBlock('kubejs:dungeon_obelisk')
-                        obeliskBlockUpper.blockState.setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.UPPER)
-                        /** @type {Internal.BlockContainerJS} */
-                        let obeliskBlockLower = Block.getBlock('kubejs:dungeon_obelisk')
-                        obeliskBlockLower.blockState.setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.LOWER)
-                        obeliskBlockLower.entity.getPersistentData().put('SpawnPos', spawnPosNbt)
-                        obeliskBlockLower.entity.setChanged()
-                        level.setBlock(position.above(1), obeliskBlockLower, 3)
-                        level.setBlock(position.above(2), obeliskBlockUpper, 3)
-                
+                        let obeliskBlockLowerState = Block.getBlock('kubejs:dungeon_obelisk').defaultBlockState().setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.LOWER)
+                        let obeliskBlockUpperState = Block.getBlock('kubejs:dungeon_obelisk').defaultBlockState().setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.UPPER)
+                        level.setBlock(blockPos, obeliskBlockLowerState, 3)
+                        level.setBlock(blockPos.above(1), obeliskBlockUpperState, 3)
+                        let obeliskBlockLowerEntity = level.getBlockEntity(blockPos)
+                        obeliskBlockLowerEntity.getPersistentData().put('spawnPos', spawnPosNbt)
+                        obeliskBlockLowerEntity.setChanged()
                 }
             }
         }
@@ -111,4 +113,24 @@ function calculateStructureCenterPos(n) {
     let x = rad * X_POINT_MODIFIER[sideNum] + X_SIDE_MODIFIER[sideNum] * moveNum
     let z = rad * Z_POINT_MODIFIER[sideNum] + Z_SIDE_MODIFIER[sideNum] * moveNum
     return { x: x, z: z }
+}
+
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {BlockPos} buildPos 
+ * @returns 
+ */
+function BuildNewDungeonLevel(level, buildPos) {
+    const dungeonStructManager = level.getStructureManager()
+    let structId = RandomGet(DungeonStructIdList)
+    let structTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(structId))
+    let structSizeRange = ConvertVec3i2BlockPos(structTemplate.getSize())
+    let chunkAccess = GetChunkAccess(level, buildPos)
+    if (!chunkAccess) return
+
+    let placementSettings = new $StructurePlaceSettings().setMirror($Mirror.NONE).setRotation($Rotation.NONE).setIgnoreEntities(false)
+    structTemplate.placeInWorld(level, buildPos, structSizeRange, placementSettings, level.getRandom(), 2)
+    HandleDataBlock(level, structTemplate, buildPos, placementSettings)
 }

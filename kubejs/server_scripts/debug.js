@@ -2,25 +2,19 @@
 
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
-    const level = event.level
-    let entity = level.createEntity('minecraft:zombie')
-    entity.getPersistentData().putUUID('relatedArea', '00000000-0000-0000-0000-000000000000')
-    let pos = event.player.blockPosition().above(2)
-    entity.setPos(pos)
-    entity.spawn()
-    
     // UnlockPlayerTitle(player, 'kubejs:chest_opener')
-    // let player = event.player
-    // let minecraftServer = event.level.server
-    // let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    // console.log(1)
-    // let pos = GenDungeonStruct(dungeonLevel)
+    let player = event.player
+    let minecraftServer = event.level.server
+    let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
+    console.log(1)
+    let structBuildPos = GenDungeonStruct(dungeonLevel)
+    let centerPos = structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
     
-    // player.teleportTo(dungeonLevel.getDimension(), pos.x, pos.y, pos.z, 0, 0)
-    // let area = GenDungeonLevelArea(dungeonLevel, pos)
-    // if (!area) return
-    // let manager = LoquatAreaManager.of(dungeonLevel)
-    // manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1, 0))
+    player.teleportTo(dungeonLevel.getDimension(), centerPos.x, centerPos.y, centerPos.z, 0, 0)
+    let area = GenDungeonLevelArea(dungeonLevel, centerPos)
+    if (!area) return
+    let manager = LoquatAreaManager.of(dungeonLevel)
+    manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1, 0))
 
 
 

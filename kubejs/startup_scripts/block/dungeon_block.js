@@ -4,6 +4,7 @@ StartupEvents.registry('block', event => {
         .property(BlockProperties.DOUBLE_BLOCK_HALF)
         .defaultState(defaultState => {
             defaultState.set(BlockProperties.DOUBLE_BLOCK_HALF, 'lower')
+            defaultState.set(BlockProperties.CANDLES, 1)
         })
         .item(item => {
             // item.texture()
@@ -13,3 +14,4 @@ StartupEvents.registry('block', event => {
         .defaultTranslucent()
         .unbreakable()
 })
+StartupEvents.registry('')
