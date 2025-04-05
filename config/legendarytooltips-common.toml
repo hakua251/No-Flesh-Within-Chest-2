@@ -28,7 +28,7 @@
 		# If enabled, tooltip titles will be drawn centered.
 		centered_title = true
 		# If enabled, tooltips with custom borders will always be at least wide enough to display all border decorations.
-		enforce_minimum_width = true
+		enforce_minimum_width = false
 		# If enabled, some unnecessary text and spacing will be removed from equipment tooltips.
 		compact_tooltips = true
 		# Which items should have a 3D model rendered in the tooltip.  If set to "equipment", the model will only be rendered for items with durability.
