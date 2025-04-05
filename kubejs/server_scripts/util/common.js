@@ -176,3 +176,13 @@ function ConvertVec3i2BlockPos(vec3i) {
 function ConvertBlockPos2Vec3d(blockPos) {
     return new Vec3d(blockPos.x, blockPos.y, blockPos.z)
 }
+
+
+/**
+ * 
+ * @param {number} num 
+ * @returns {number}
+ */
+function Int2Integer(num) {
+    return $Integer.valueOf(JavaMath.toIntExact(num))
+}

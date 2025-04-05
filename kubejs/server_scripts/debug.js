@@ -6,7 +6,6 @@ ItemEvents.rightClicked('stick', event => {
     let player = event.player
     let minecraftServer = event.level.server
     let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    console.log(1)
     let structBuildPos = GenDungeonStruct(dungeonLevel)
     let centerPos = structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
     

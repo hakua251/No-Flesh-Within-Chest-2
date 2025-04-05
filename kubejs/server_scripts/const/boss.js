@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 4000
 const BossEntityTypeList = [
     'cataclysm:netherite_monstrosity',
     'cataclysm:ender_guardian',

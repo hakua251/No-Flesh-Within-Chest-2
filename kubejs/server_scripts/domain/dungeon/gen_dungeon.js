@@ -1,5 +1,4 @@
 // priority: 800
-
 const DUNGEON_DIM = new ResourceLocation('kubejs:dungeon')
 
 // todo 确认是否需要如此大的范围
@@ -14,12 +13,7 @@ const Z_POINT_MODIFIER = [-1, 1, 1, -1]
 const DungeonStructureFileLocation = 'kubejs/data/kubejs/structures/infinity_dungeon'
 
 const DungeonStructIdList = []
-
-ServerEvents.highPriorityData(event => {
-    LoadDungeonStructIdList()
-})
-function LoadDungeonStructIdList() {
-    if (!FilesJS.exists(DungeonStructureFileLocation)) return
+if (FilesJS.exists(DungeonStructureFileLocation)) {
     FilesJS.listFilesRecursively(DungeonStructureFileLocation).forEach(file => {
         if (file.endsWith('.nbt')) {
             let reg = new RegExp(/structures\\(\S+)\.nbt/)
@@ -31,6 +25,7 @@ function LoadDungeonStructIdList() {
     })
 }
 
+
 /**
  * @param {Internal.ServerLevel} level 
  * @return {BlockPos}
@@ -40,9 +35,6 @@ function GenDungeonStruct(level) {
     let dungeonNum = 0
     if (level.getPersistentData().contains('dungeonNum')) {
         dungeonNum = level.getPersistentData().getInt('dungeonNum')
-    }
-    if (DungeonStructIdList.length == 0) {
-        LoadDungeonStructIdList()
     }
     let buildOffset = calculateStructureCenterPos(dungeonNum)
     let buildX = buildOffset.x * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
@@ -85,10 +77,17 @@ function HandleDataBlock(level, template, position, placementSettings) {
                         let spawnPosNbt = ConvertPos2Nbt(position.above(10))
                         let obeliskBlockLowerState = Block.getBlock('kubejs:dungeon_obelisk').defaultBlockState().setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.LOWER)
                         let obeliskBlockUpperState = Block.getBlock('kubejs:dungeon_obelisk').defaultBlockState().setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.UPPER)
+                        let spawnIdList = metaDataJsonObj.get('spawn_id_list').getAsJsonArray()
+                        if (spawnIdList.size() == 0) return
+
                         level.setBlock(blockPos, obeliskBlockLowerState, 3)
                         level.setBlock(blockPos.above(1), obeliskBlockUpperState, 3)
                         let obeliskBlockLowerEntity = level.getBlockEntity(blockPos)
-                        obeliskBlockLowerEntity.getPersistentData().put('spawnPos', spawnPosNbt)
+                        let persistentData = obeliskBlockLowerEntity.getPersistentData()
+                        persistentData.put('spawnPos', spawnPosNbt)
+
+                        let spawnIdJson = spawnIdList.get(Math.floor(Math.random() * spawnIdList.size()))
+                        persistentData.put('spawnId', spawnIdJson.getAsString())
                         obeliskBlockLowerEntity.setChanged()
                 }
             }
