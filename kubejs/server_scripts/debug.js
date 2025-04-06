@@ -2,18 +2,20 @@
 
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
-    // UnlockPlayerTitle(player, 'kubejs:chest_opener')
     let player = event.player
-    let minecraftServer = event.level.server
-    let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    let structBuildPos = GenDungeonStruct(dungeonLevel)
-    let centerPos = structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
+    player.triggerAnimation('kubejs:hittingiron.animation')
+
+
+    // let minecraftServer = event.level.server
+    // let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
+    // let structBuildPos = GenDungeonStruct(dungeonLevel)
+    // let centerPos = structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
     
-    player.teleportTo(dungeonLevel.getDimension(), centerPos.x, centerPos.y, centerPos.z, 0, 0)
-    let area = GenDungeonLevelArea(dungeonLevel, centerPos)
-    if (!area) return
-    let manager = LoquatAreaManager.of(dungeonLevel)
-    manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1, 0))
+    // player.teleportTo(dungeonLevel.getDimension(), centerPos.x, centerPos.y, centerPos.z, 0, 0)
+    // let area = GenDungeonLevelArea(dungeonLevel, centerPos)
+    // if (!area) return
+    // let manager = LoquatAreaManager.of(dungeonLevel)
+    // manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1, 0))
 
 
 

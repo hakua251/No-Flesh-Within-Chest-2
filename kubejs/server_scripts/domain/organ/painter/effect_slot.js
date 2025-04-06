@@ -39,7 +39,7 @@ PlayerEvents.loggedIn(event => {
             'alignX': 'right',
             'alignY': 'bottom',
             'texture': 'kubejs:textures/gui/organ_effect_ui.png',
-            'visible': true
+            'visible': false
         }
     })
     let paintObj = {}
@@ -98,6 +98,11 @@ PlayerEvents.tick(event => {
     for (let i = organEffectList.length; i < OrganEffectSlotDefinition.length; i++) {
         let slotDef = OrganEffectSlotDefinition[i]
         paintObj[slotDef.id] = { 'visible': false }
+    }
+    if (organEffectList.length <= 0) {
+        paintObj['organ_effect_ui'] = { 'visible': false }
+    } else {
+        paintObj['organ_effect_ui'] = { 'visible': true } 
     }
     customDataMap.put('organEffectChanged', false)
     player.paint(paintObj)

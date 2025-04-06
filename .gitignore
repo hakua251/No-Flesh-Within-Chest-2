@@ -1,7 +1,6 @@
 .vscode/
 .DS_Store
 crash-reports/
-defaultconfigs/
 emi.json
 fancymenu_data
 fancymenu_setups
