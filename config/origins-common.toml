@@ -95,6 +95,12 @@
 		enabled = true
 		"kubejs:disable_exhaustion" = true
 		"kubejs:disable_air_supply" = true
+		"kubejs:lich_burn" = true
+		"kubejs:disable_regen" = true
+		"kubejs:mob_type_undead" = true
+		"kubejs:undead_burn" = true
+		"kubejs:no_need_food" = true
+		"kubejs:no_need_air" = true
 
 	[origins."origins:lich"]
 		enabled = true
@@ -103,4 +109,6 @@
 		"origins:lich_burn" = true
 		"origins:lich_weak_health" = true
 		"origins:lich_weak_attack" = true
+		"origins:disable_regen" = true
+		"origins:mob_type_undead" = true
 

@@ -4,7 +4,7 @@
     "enabled": true,
     "origins": [
       "origins:human",
-      "origins:lich"
+      "kubejs:lich"
     ],
     "allow_random": true,
     "exclude_random": [

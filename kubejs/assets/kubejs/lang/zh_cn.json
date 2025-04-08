@@ -381,5 +381,19 @@
     "effect.kubejs.putrid_toxins": "恶腐蚀毒",
     "effect.minecraft.putrid_toxins.desc": "每 40 刻造成 恶腐蚀性层数 * (level * 0.5 + 0.5) 点魔法伤害",
     "effect.kubejs.vita_toxins": "活肉霉毒",
-    "effect.minecraft.vita_toxins.desc": "每 40 刻造成等同于 赋予毒素者某属性 * 活肉霉毒效率 * (level * 0.5 + 0.5) 点魔法伤害"
+    "effect.minecraft.vita_toxins.desc": "每 40 刻造成等同于 赋予毒素者某属性 * 活肉霉毒效率 * (level * 0.5 + 0.5) 点魔法伤害",
+    "_comment.origin": "起源",
+    "origin.kubejs.lich.name": "巫妖",
+    "origin.kubejs.lich.description": "具有部分不死血统的类人生物，其无需氧气和食物的特性使得其能够几乎无限制的探索世界的任何位面。\n尽管其不具备生命恢复能力，但通过其独特的“灵笼”器官，能够使用其他生物的声明能量来修复",
+    "_comment.power": "起源",
+    "power.kubejs.no_need_food.name": "免受饥荒",
+    "power.kubejs.no_need_food.description": "你不需要任何食物就可以生存",
+    "power.kubejs.no_need_air.name": "无氧生物",
+    "power.kubejs.no_need_air.description": "你不需要任何氧气就可以生存",
+    "power.kubejs.undead_burn.name": "亡灵燃烧",
+    "power.kubejs.undead_burn.description": "你会被阳光点燃；可以通过佩戴帽子来避免被点燃",
+    "power.kubejs.disable_regen.name": "无法再生",
+    "power.kubejs.disable_regen.description": "你无法自然恢复生命值",
+    "power.kubejs.mob_type_undead.name": "不死生物",
+    "power.kubejs.mob_type_undead.description": "你会被识别为不死类型生物"
 }
