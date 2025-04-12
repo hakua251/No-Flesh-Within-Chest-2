@@ -1,6 +1,7 @@
 // priority: 999
 const DungeonSpawnerIdMap = {
-    'test': testDungeonSpawner
+    
+
 }
 
 /**
@@ -11,3 +12,6 @@ const DungeonSpawnerIdMap = {
 function RegistryDungeonSpawner(id, spawner) {
     DungeonSpawnerIdMap[id] = spawner
 }
+
+
+RegistryDungeonSpawner('killAmountTask_ZombieGroupTask', ZombieGroupTask)

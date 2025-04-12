@@ -205,7 +205,7 @@ dogGolemSlot = 2
 ["goety compat"]
 	#Chance per armor per modifier level to summon haunted armor servant
 	#Range: 0.05 ~ 1.0
-	hauntedBaseChance = 0.0
+	hauntedBaseChance = 0.05
 	#Soul Repair modifier healing soul cost as multiple of item repair soul cost
 	#Range: 1 ~ 100
 	soulHealingCost = 2

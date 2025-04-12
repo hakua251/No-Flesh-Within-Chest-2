@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 1000
 StartupEvents.registry('item', event => {
 	event.create('eye_of_fortress')
 		.texture('kubejs:item/eye_of_fortress')

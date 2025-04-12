@@ -109,15 +109,16 @@ function SetDungeonObeliskState(level, area, state) {
 
 /**
  * 
- * @param {Internal.Area} area 
+ * @param {Internal.SpawnMobAreaKubeEvent} context 
  * @returns 
  */
-function GetAreaDifficulty(area) {
+function GetDungeonAttribute(context) {
+    const area = context.area
     const persistentData = area.getPersistentData()
-    if (!persistentData.contains('difficulty')) {
-        return 0
+    if (!persistentData.contains('dungeonAttr')) {
+        return new DungeonAttributeModel(null)
     }
-    return persistentData.getInt('difficulty')
+    return new DungeonAttributeModel(persistentData.get('dungeonAttr'))
 }
 
 /**
@@ -138,17 +139,67 @@ function GetAreaObeliskBlockPos(area) {
 /**
  * 
  * @param {Internal.PathfinderMob} entity 
- * @param {number} difficulty 
+ * @param {number} tier 
  * @returns 
  */
-function CommonDungeonEntityDifficultyModifier(entity, difficulty) {
+function CommonDungeonEntityTierModifier(entity, tier) {
     const attributes = entity.getAttributes()
     if (attributes.hasAttribute('minecraft:generic.max_health')) {
-        entity.setAttributeBaseValue('minecraft:generic.max_health', entity.getAttribute('minecraft:generic.max_health').getValue() * (1 + difficulty * 0.2))
+        entity.setAttributeBaseValue('minecraft:generic.max_health', Math.floor(entity.getAttribute('minecraft:generic.max_health').getValue() * Math.pow(1.2, tier)))
         entity.setHealth(entity.getMaxHealth())
     }
     if (attributes.hasAttribute('minecraft:generic.attack_damage')) {
-        entity.setAttributeBaseValue('minecraft:generic.attack_damage', entity.getAttribute('minecraft:generic.attack_damage').getValue() * (1 + difficulty * 0.05))
+        entity.setAttributeBaseValue('minecraft:generic.attack_damage', Math.floor(entity.getAttribute('minecraft:generic.attack_damage').getValue() * (1 + tier * 0.05)))
     }
     return entity
+}
+
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {Internal.SpawnMobAreaKubeEvent} context 
+ * @param {Internal.ItemStack[]} lootList 
+ * @param {Boolean} isWin 
+ */
+function CommonDungeonFinishAction(level, context, lootList, isWin) {
+    const area = context.area
+    let playerList = GetAreaPlayerList(level, area)
+    if (isWin) {
+        let obeliskBlockPos = GetAreaObeliskBlockPos(area)
+
+        playerList.forEach(player => {
+            // todo 本地化
+            player.tell('§c§l波次成功')
+            level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.player.levelup', player.getSoundSource(), 0.5, 1)
+        })
+    } else {
+        playerList.forEach(player => {
+            // todo 本地化
+            player.tell('§c§l波次失败')
+            level.playSound(null, player.getX(), player.getY(), player.getZ(), 'item.trident.thunder', player.getSoundSource(), 0.5, 1)
+        })
+    }
+}
+
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {BlockPos} blockPos 
+ * @param {Internal.ItemStack[]} lootList 
+ */
+function SpawnDungeonLootAtLocation(level, blockPos, lootList) {
+    /**@type {Internal.ItemStack[][]} */
+    let itemChunks = SliceChunkArray(lootList, 3)
+    let tickCounter = 5
+    itemChunks.forEach(itemChunk => {
+        level.server.scheduleInTicks(tickCounter, callback => {
+            let movement = new Vec3d(Math.random() - 0.5, 1, Math.random() - 0.5)
+            itemChunk.forEach(item => {
+                SpawnItemEntityWithMovement(level, blockPos, item, movement)
+            })
+        })
+        tickCounter = tickCounter + 10
+    })
 }

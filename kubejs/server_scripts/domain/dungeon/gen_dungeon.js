@@ -1,4 +1,4 @@
-// priority: 800
+// priority: 2000
 const DUNGEON_DIM = new ResourceLocation('kubejs:dungeon')
 
 // todo 确认是否需要如此大的范围
@@ -28,10 +28,10 @@ if (FilesJS.exists(DungeonStructureFileLocation)) {
 
 /**
  * @param {Internal.ServerLevel} level 
- * @param {number} difficulty
+ * @param {DungeonAttributeModel} dungeonAttr
  * @return {Object}
  */
-function GenDungeonStruct(level, difficulty) {
+function GenDungeonStruct(level, dungeonAttr) {
     const dungeonStructManager = level.getStructureManager()
     let dungeonNum = 0
     if (level.getPersistentData().contains('dungeonNum')) {
@@ -51,7 +51,7 @@ function GenDungeonStruct(level, difficulty) {
 
     let placementSettings = new $StructurePlaceSettings().setMirror($Mirror.NONE).setRotation($Rotation.NONE).setIgnoreEntities(false)
     structTemplate.placeInWorld(level, structBuildPos, structSizeRange, placementSettings, level.getRandom(), 2)
-    HandleDataBlock(level, structTemplate, structBuildPos, centerPos, placementSettings, difficulty)
+    HandleDataBlock(level, structTemplate, structBuildPos, centerPos, placementSettings, dungeonAttr)
     level.getPersistentData().putInt('dungeonNum', dungeonNum + 1)
 
     return centerPos
@@ -63,9 +63,9 @@ function GenDungeonStruct(level, difficulty) {
  * @param {BlockPos} position
  * @param {BlockPos} centerPos
  * @param {Internal.StructurePlaceSettings} placementSettings
- * @param {number} difficulty
+ * @param {DungeonAttributeModel} dungeonAttr
  */
-function HandleDataBlock(level, template, position, centerPos, placementSettings, difficulty) {
+function HandleDataBlock(level, template, position, centerPos, placementSettings, dungeonAttr) {
     // 结构行为
     template.filterBlocks(position, placementSettings, Blocks.STRUCTURE_BLOCK).forEach(block => {
         let blockPos = block.pos()
@@ -78,20 +78,14 @@ function HandleDataBlock(level, template, position, centerPos, placementSettings
                 let mode = metaDataJsonObj.get('mode').getAsString()
                 switch (mode) {
                     case 'spawn_obelisk':
-                        let spawnPosNbt = ConvertPos2Nbt(centerPos.above(10))
                         let obeliskBlockLowerState = Block.getBlock('kubejs:dungeon_obelisk').defaultBlockState().setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.LOWER)
                         let obeliskBlockUpperState = Block.getBlock('kubejs:dungeon_obelisk').defaultBlockState().setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.UPPER)
-                        let spawnIdList = metaDataJsonObj.get('spawn_id_list').getAsJsonArray()
-                        if (spawnIdList.size() == 0) return
 
                         level.setBlock(blockPos, obeliskBlockLowerState, 3)
                         level.setBlock(blockPos.above(1), obeliskBlockUpperState, 3)
                         let obeliskBlockLowerEntity = level.getBlockEntity(blockPos)
                         let persistentData = obeliskBlockLowerEntity.getPersistentData()
-                        persistentData.put('spawnPos', spawnPosNbt)
-                        persistentData.putInt('difficulty', difficulty)
-                        let spawnIdJson = spawnIdList.get(Math.floor(Math.random() * spawnIdList.size()))
-                        persistentData.put('spawnId', spawnIdJson.getAsString())
+                        persistentData.put('dungeonAttr', dungeonAttr.serializeToNBT())
                         obeliskBlockLowerEntity.setChanged()
                 }
             }
@@ -116,28 +110,4 @@ function calculateStructureBuildPos(n) {
     let x = rad * X_POINT_MODIFIER[sideNum] + X_SIDE_MODIFIER[sideNum] * moveNum
     let z = rad * Z_POINT_MODIFIER[sideNum] + Z_SIDE_MODIFIER[sideNum] * moveNum
     return { x: x, z: z }
-}
-
-
-/**
- * 
- * @param {Internal.Level} level 
- * @param {BlockPos} centerPos 
- * @param {number} difficulty
- * @returns 
- */
-function BuildNewDungeonLevel(level, centerPos, difficulty) {
-    const dungeonStructManager = level.getStructureManager()
-    let structId = RandomGet(DungeonStructIdList)
-    let structTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(structId))
-    let structSizeRange = ConvertVec3i2BlockPos(structTemplate.getSize())
-
-    let buildPos = centerPos.offset(-structSizeRange.x / 2, -2, -structSizeRange.z / 2)
-
-    let chunkAccess = GetChunkAccess(level, buildPos)
-    if (!chunkAccess) return
-
-    let placementSettings = new $StructurePlaceSettings().setMirror($Mirror.NONE).setRotation($Rotation.NONE).setIgnoreEntities(false)
-    structTemplate.placeInWorld(level, buildPos, structSizeRange, placementSettings, level.getRandom(), 2)
-    HandleDataBlock(level, structTemplate, buildPos, centerPos, placementSettings, difficulty)
 }

@@ -186,3 +186,17 @@ function ConvertBlockPos2Vec3d(blockPos) {
 function Int2Integer(num) {
     return $Integer.valueOf(JavaMath.toIntExact(num))
 }
+
+
+/**
+ * @param {any[]} array 
+ * @param {Number} chunkSize 
+ * @returns {any[][]}
+ */
+function SliceChunkArray(array, chunkSize) {
+    let chunks = []
+    for (let i = 0; i < array.length; i += chunkSize) {
+        chunks.push(array.slice(i, i + chunkSize))
+    }
+    return chunks
+}

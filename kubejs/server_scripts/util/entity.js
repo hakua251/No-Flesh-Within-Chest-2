@@ -230,9 +230,11 @@ function GetLivingWithinRadius(level, pos, radius, entityTester) {
  * @param {Internal.Level} level 
  * @param {BlockPos} pos 
  * @param {Internal.ItemStack} itemStack 
+ * @param {Vec3d} movement
  */
-function SpawnItemEntity(level, pos, itemStack) {
+function SpawnItemEntityWithMovement(level, pos, itemStack, movement) {
     let itemEntity = new $ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), itemStack)
+    itemEntity.addDeltaMovement(movement)
     itemEntity.setDefaultPickUpDelay()
     level.addFreshEntity(itemEntity)
 }

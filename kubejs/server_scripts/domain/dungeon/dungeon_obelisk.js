@@ -1,4 +1,4 @@
-// priority: 3000
+// priority: 500
 BlockEvents.broken('kubejs:dungeon_obelisk', event => {
     const block = event.block
     const level = event.level
@@ -63,7 +63,6 @@ BlockEvents.rightClicked('kubejs:dungeon_obelisk', event => {
     let obeliskBlockEntity = level.getBlockEntity(blockPos)
     if (!obeliskBlockEntity) return
     const persistentData = obeliskBlockEntity.getPersistentData()
-    const curDifficulty = persistentData.contains('difficulty') ? persistentData.getInt('difficulty') : 0
     switch (stage) {
         case 0:
             if (!persistentData.contains('spawnId')) return
@@ -74,17 +73,15 @@ BlockEvents.rightClicked('kubejs:dungeon_obelisk', event => {
             let areaEvent = new $SpawnMobAreaKubeEvent(area, spawnId, 1, 0)
             let areaPersistentData = area.getPersistentData()
             areaPersistentData.put('obeliskBlockPos', ConvertPos2Nbt(blockPos))
-            areaPersistentData.putInt('difficulty', curDifficulty)
+            if (persistentData.contains('dungeonAttr')) {
+                areaPersistentData.put('dungeonAttr', persistentData.get('dungeonAttr'))
+            }
             manager.addEvent(areaEvent)
             break
         case 1:
             break
         case 2:
-            if (!persistentData.contains('spawnPos')) return
-            let spawnPosNbt = persistentData.get('spawnPos')
-            let spawnPos = ConvertNbt2Pos(spawnPosNbt)
-            if (spawnPos.getY() + 9 > level.getMaxBuildHeight()) return
-            BuildNewDungeonLevel(level, spawnPos)
+
             level.setBlockAndUpdate(blockPos, blockState.setValue(OBELISK_STATE, Int2Integer(3)))
             level.setBlockAndUpdate(upperBlockPos, upperBlockState.setValue(OBELISK_STATE, Int2Integer(3)))
             break
