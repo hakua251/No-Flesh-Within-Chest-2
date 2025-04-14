@@ -4,7 +4,15 @@
     "enabled": true,
     "origins": [
       "origins:human",
-      "kubejs:lich"
+      {
+        "condition": {
+            "type": "origins:kubejs_entity_condition",
+            "param": "kubejs:lich"
+        },
+        "origins": [
+            "kubejs:lich"
+        ]
+    }
     ],
     "allow_random": true,
     "exclude_random": [

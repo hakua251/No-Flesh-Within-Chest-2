@@ -29,12 +29,18 @@ function DungeonAttributeModel(nbt) {
 
 
 DungeonAttributeModel.prototype = {
-    serializeToNBT: function () {
-        let nbt = new $CompoundTag()
-        nbt.putInt('tier', this.tier)
-        nbt.put('modifierList', this.modifierList)
+    /**
+     * 
+     * @param {Internal.CompoundTag} nbt 
+     * @returns 
+     */
+    serializeToNBT: function (nbt) {
+        let dungeonAttrNbt = new $CompoundTag()
+        dungeonAttrNbt.putInt('tier', this.tier)
+        dungeonAttrNbt.put('modifierList', this.modifierList)
+        nbt.put('dungeonAttr', dungeonAttrNbt)
         nbt.putString('spawnId', this.spawnId)
-        return nbt
+        return
     },
     getTier: function () {
         return this.tier

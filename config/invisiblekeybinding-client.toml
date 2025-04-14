@@ -1,8 +1,0 @@
-
-#InvisibleKeybinding Settings
-[general]
-	#Keybindings that should be invisible in the controls screen
-	invisibleKeybindings = ["key.loadToolbarActivator", "key.saveToolbarActivator", "MPM 1", "MPM 2", "MPM 3", "MPM 4", "MPM 5", "key.advancements", "key.spectatorOutlines", "key.smoothCamera", "key.blockprints.rotate_right", "key.blockprints.rotate_left", "key.entityculling.toggle", "key.ftbteams.open_gui", "key.ftbquests.quests", "key.ftbchunks.claim_manager", "key.modernui.openCenter", "key.modernui.zoom"]
-	#Keybinding categories that should be invisible in the controls screen
-	invisibleCategories = ["jei.key.category.cheat.mode", "jei.key.category.hover.config.button", "jei.key.category.dev.tools", "jei.key.category.overlays", "jei.key.category.search", "jei.key.category.edit.mode", "jei.key.category.recipe.gui", "key.categories.placebo"]
-

@@ -1,4 +1,5 @@
 // priority: 2000
+const DungeonSpawnerIdMap = {}
 /**
  * 
  * @param {String} id spawnerId 用于在map中建立映射关系
@@ -42,6 +43,9 @@ DungeonEventActionModel.prototype = {
     setFinishAction: function (action) {
         this.finishAction = action
         return this
+    },
+    registry : function () {
+        DungeonSpawnerIdMap[this.id] = this
     }
 }
 

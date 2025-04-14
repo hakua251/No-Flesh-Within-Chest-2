@@ -85,7 +85,7 @@ function HandleDataBlock(level, template, position, centerPos, placementSettings
                         level.setBlock(blockPos.above(1), obeliskBlockUpperState, 3)
                         let obeliskBlockLowerEntity = level.getBlockEntity(blockPos)
                         let persistentData = obeliskBlockLowerEntity.getPersistentData()
-                        persistentData.put('dungeonAttr', dungeonAttr.serializeToNBT())
+                        dungeonAttr.serializeToNBT(persistentData)
                         obeliskBlockLowerEntity.setChanged()
                 }
             }

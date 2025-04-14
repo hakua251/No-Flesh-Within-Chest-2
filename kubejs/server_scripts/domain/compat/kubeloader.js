@@ -17,7 +17,6 @@ if (IsLoadedKubeloader) {
             'DungeonEventActionModel': DungeonEventActionModel,
             'NewKillAmountWave': NewKillAmountWave,
             'NewContinousKillAmountWave': NewContinousKillAmountWave,
-            'RegistryDungeonSpawner': RegistryDungeonSpawner,
             'RegisterOrganScoreGoopRenderStrategy': RegisterOrganScoreGoopRenderStrategy,
             'RegisterOriginChangedStrategy': RegisterOriginChangedStrategy,
             'SlotStrategyModel': SlotStrategyModel,

@@ -1,5 +1,5 @@
 // priority: 1000
-const ZombieGroupTask = new DungeonEventActionModel('test')
+new DungeonEventActionModel('killAmountTask_ZombieGroupTask_1')
     .setInitAction((level, context, areaManager) => {
     })
     .setFinishAction((level, context, areaManager, isWin) => {
@@ -27,3 +27,35 @@ const ZombieGroupTask = new DungeonEventActionModel('test')
             DungeonCreateEntity(level, context, entity)
         }
     }))
+    .registry()
+
+
+new DungeonEventActionModel('killAmountTask_ZombieGroupTask_2')
+    .setInitAction((level, context, areaManager) => {
+    })
+    .setFinishAction((level, context, areaManager, isWin) => {
+        const area = context.area
+        ClearEntityRemainInArea(level, area)
+        CommonDungeonFinishAction(level, context, [Item.of('minecraft:diamond')], isWin)
+    })
+    .addWave(NewContinousKillAmountWave(10, 20 * 60, (level, context, areaManager) => {
+        const dungeonAttr = GetDungeonAttribute(context)
+        for (let i = 0; i < 3; i++) {
+            /**@type {Internal.PathfinderMob} */
+            let entity = level.createEntity('minecraft:zombie')
+            CommonDungeonEntityTierModifier(entity, dungeonAttr.getTier())
+            ApplyCreateEntityModifier(level, context, areaManager, entity, dungeonAttr)
+            DungeonCreateEntity(level, context, entity)
+        }
+    }))
+    .addWave(NewContinousKillAmountWave(10, 20 * 60, (level, context, areaManager) => {
+        const dungeonAttr = GetDungeonAttribute(context)
+        for (let i = 0; i < 3; i++) {
+            /**@type {Internal.PathfinderMob} */
+            let entity = level.createEntity('minecraft:zombie')
+            CommonDungeonEntityTierModifier(entity, dungeonAttr.getTier())
+            ApplyCreateEntityModifier(level, context, areaManager, entity, dungeonAttr)
+            DungeonCreateEntity(level, context, entity)
+        }
+    }))
+    .registry()
