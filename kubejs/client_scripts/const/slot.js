@@ -4,3 +4,6 @@ const HighAdaptabilitySlotType = Text.translatable('slot_type.kubejs.high_adapta
 const RosyExplosionSlotType = Text.translatable('slot_type.kubejs.rosy_explosion.1').color('#f26ba8')
 const EternalFlameSlotType = Text.translatable('slot_type.kubejs.revolution_flame.1').color('#ff672b')
 const MachinaryLubricantSlotType = Text.translatable('slot_type.kubejs.machinary_lubricant.1').color('#e69900')
+const GulaSlotType = Text.translatable('slot_type.kubejs.gula_slot.1').color('#ae5dce')
+const ContainerSlotType = Text.translatable('slot_type.kubejs.container_slot.1').color('#afbab7')
+const DigestSlotType = Text.translatable('slot_type.kubejs.digest_slot.1').color('#d5e05a')

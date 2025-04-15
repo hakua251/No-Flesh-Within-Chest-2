@@ -1,4 +1,5 @@
 // priority: 500
+const ContainerSlot = 'container_slot'
 /**
  * @param {string} slotType
  * @returns 

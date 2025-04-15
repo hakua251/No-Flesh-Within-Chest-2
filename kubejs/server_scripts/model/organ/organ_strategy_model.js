@@ -7,6 +7,7 @@ function OrganStrategyModel(itemId) {
     this.strategyMap = {}
     return this
 }
+
 OrganStrategyModel.prototype = {
     /**
      * 

@@ -1,4 +1,5 @@
 // priority: 500
+const ExcretionSlot = 'excretion_slot'
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.ChestCavityInstance} ccInstance 
@@ -22,7 +23,7 @@ function SetOrganWithoutUpdate(customData, ccInstance, organItem, organIndex, sl
  * @param {Internal.ChestCavityInstance} ccInstance 
  * @returns 
  */
-function ExcretionSlot(customData, ccInstance) {
+function ExcretionSlotEvent(customData, ccInstance) {
     if (!customData['excretionOrganList']) return
     const onlyMap = new Map()
     const invTypeData = ccInstance.getInventoryTypeData()

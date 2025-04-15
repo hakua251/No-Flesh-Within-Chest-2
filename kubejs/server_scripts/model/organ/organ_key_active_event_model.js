@@ -79,7 +79,7 @@ OrganKeyActiveEventModel.prototype = {
                 })
             }
         }
-        ExcretionSlot(customData, ccInstance)
+        ExcretionSlotEvent(customData, ccInstance)
         
         this.defers.forEach(defer => {
             defer.apply(null, args)

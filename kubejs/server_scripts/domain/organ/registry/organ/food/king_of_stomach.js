@@ -1,13 +1,13 @@
 // priority: 500
 RegistryOrgan('kubejs:king_of_stomach')
-    .addScore('chestcavity:endurance', -10)
-    .addScore('chestcavity:digestion', 2)
-    .addScore('chestcavity:nutrition', 2)
-    .addScore('chestcavity:metabolism', 2)
+    .addScore('chestcavity:endurance', -3)
+    .addScore('chestcavity:digestion', 1)
+    .addScore('chestcavity:nutrition', 1)
+    .addScore('chestcavity:metabolism', 1)
 
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.EvaluateChestCavityJS} event
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
@@ -35,7 +35,38 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
     customData.maxHealth.addAttributeModifier(healthUp, 'addition', 'base')
 }
 
+
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function KingOfStomachTakeOn(customData, event, organItem, organIndex, slotType) {
+    const { entity } = event
+    if (slotType == GulaSlot && entity instanceof $ServerPlayer) {
+        entity.foodData.setNoFoodTick(true)
+    }
+}
+
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function KingOfStomachTakeOff(customData, event, organItem, organIndex, slotType) {
+    const { entity } = event
+    if (slotType == GulaSlot && entity instanceof $ServerPlayer) {
+        entity.foodData.setNoFoodTick(false)
+    }
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:king_of_stomach')
+        .addOnlyStrategy('organ_take_on', KingOfStomachTakeOn)
+        .addOnlyStrategy('organ_take_off', KingOfStomachTakeOff)
         .addOnlyStrategy('chest_cavity_update', KingOfStomachChestCavityUpdate)
 )

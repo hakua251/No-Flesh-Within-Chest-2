@@ -1,5 +1,6 @@
 // priority: 500
-SlotChestCavityUpdateStrategy.addStrategy('high_adaptability', HighAdaptabilitySlot)
+const HighAdaptabilitySlot = 'high_adaptability'
+SlotChestCavityUpdateStrategy.addStrategy('high_adaptability', HighAdaptabilitySlotEvent)
 
 /**
  * @param {OrganEventCustomData} customData
@@ -7,7 +8,7 @@ SlotChestCavityUpdateStrategy.addStrategy('high_adaptability', HighAdaptabilityS
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  */
-function HighAdaptabilitySlot(customData, event, organItem, organIndex) {
+function HighAdaptabilitySlotEvent(customData, event, organItem, organIndex) {
     const { chestCavity } = event
     let organData = $ChestCavityUtil.lookupOrgan(organItem, null)
     organData.organScores.forEach((score, value) => {
