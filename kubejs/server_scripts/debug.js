@@ -4,7 +4,12 @@
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     let player = event.player
-    player.foodData.setNoFoodTick(true)
+    let level = event.level
+    let adlodList = ListGeneratedAdlodsAround(level, player.blockPosition(), 100)
+    console.log(adlodList)
+    /**@type {Internal.DepositGenResult} */
+    let target = RandomGet(adlodList)
+    player.teleportTo(level.getDimension(), target.pos.x, target.pos.y, target.pos.z, 0, 0)
     // player.triggerAnimation('kubejs:inject_animation', false)
     // player.triggerAnimation('kubejs:head_fly_animation', false)
     // player.triggerAnimation('kubejs:punch_animation', false)

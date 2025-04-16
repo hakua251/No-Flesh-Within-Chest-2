@@ -21,6 +21,7 @@ function VitaRoseLiverDoDamage(customData, event, organItem, organIndex, slotTyp
     if (!sourceEntity.getUuid()) return
     const chestCavity = sourceEntity.chestCavityInstance
     SetVitaToxinsSource(target, sourceEntity.getUuid())
+    // todo .find模式改造，避免出现容器槽位
     if (chestCavity.inventory.find('kubejs:vita_berry') > 0) {
         SetVitaToxinsType(target, 'max_health')
         SetVitaToxinsCoe(target, 2)

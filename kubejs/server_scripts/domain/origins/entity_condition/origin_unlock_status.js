@@ -1,7 +1,11 @@
 // priority: 500
+const DataPath = 'data'
 const OriginUnlockStatusData = 'data/origin_unlock_status.json'
 
 const OriginUnlockStatusUuidMap = {}
+if (!FilesJS.exists(DataPath)) {
+    FilesJS.createDirectory(DataPath)
+}
 if (FilesJS.exists(OriginUnlockStatusData)) {
     let playerStatusJson = JsonIO.readJson(OriginUnlockStatusData).getAsJsonObject()
     playerStatusJson.entrySet().forEach(playerStatus => {
@@ -59,7 +63,7 @@ function syncPlayerOriginUnlockStatus(player) {
  */
 function UnlockOrigin(player, id) {
     if (!FilesJS.exists(OriginUnlockStatusData)) {
-        FilesJS.appendFile(OriginUnlockStatusData, '{}')
+        return
     }
     let playerStatusJson = JsonIO.readJson(OriginUnlockStatusData).getAsJsonObject()
     let uuidString = player.getUuid().toString()
@@ -90,7 +94,7 @@ function UnlockOrigin(player, id) {
  */
 function LockOrigin(player, id) {
     if (!FilesJS.exists(OriginUnlockStatusData)) {
-        FilesJS.appendFile(OriginUnlockStatusData, '{}')
+        return
     }
     let playerStatusJson = JsonIO.readJson(OriginUnlockStatusData).getAsJsonObject()
     let uuidString = player.getUuid().toString()

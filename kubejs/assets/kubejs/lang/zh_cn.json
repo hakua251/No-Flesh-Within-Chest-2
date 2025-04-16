@@ -339,7 +339,7 @@
     "slot_type.chestcavity.machinary_lubricant.desc": " ■ 可用于强化§c机械系列§r器官，在绝大多数情况下，可以提升约300%的机械效率",
     "slot_type.kubejs.container_slot.1": "    ■ 容器",
     "slot_type.chestcavity.container_slot.name": "容器 #%s",
-    "slot_type.chestcavity.container_slot.desc": " ■ 只能够作为容纳物品的容器，§n无法发挥任何器官的特殊能力§r",
+    "slot_type.chestcavity.container_slot.desc": " ■ 只能够作为容纳物品的容器，§n无法发挥任何器官的能力§r",
     "slot_type.kubejs.gula_slot.1": "    ■ 暴食",
     "slot_type.chestcavity.gula_slot.name": "暴食 #%s",
     "slot_type.chestcavity.gula_slot.desc": " ■ §e祂§r要求我饮下一半的§c血§r，咽下六又之四的§c肉§r和全部的§c脑§r；当肉体连指甲都无法束缚之日，滑脱的内脏必将连同§k智识§r在§e祂§r庇佑下永恒",
