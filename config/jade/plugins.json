@@ -1,6 +1,5 @@
 {
   "minecraft": {
-    "agriculturalenhancements.crop_manager": true,
     "item_storage.show_name_amount": 5,
     "furnace": true,
     "harvest_tool.show_unbreakable": false,
@@ -12,7 +11,6 @@
     "vapourware.fuel": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
-    "agriculturalenhancements.soil": true,
     "energy_storage": true,
     "entity_armor.max_for_render": 40,
     "breaking_progress": true,
@@ -20,7 +18,6 @@
     "item_storage.items_per_line": 9,
     "item_frame": true,
     "crop_progress": true,
-    "agriculturalenhancements.fertilizer_producer": true,
     "command_block": true,
     "mob_growth": true,
     "waxed": true,
@@ -32,14 +29,11 @@
     "fluid_storage": true,
     "chicken_egg": true,
     "jukebox": true,
-    "agriculturalenhancements.crops": true,
     "brewing_stand": true,
     "energy_storage.detailed": false,
     "note_block": true,
     "beehive": true,
     "item_storage.detailed_amount": 54,
-    "agriculturalenhancements.irrigation": true,
-    "agriculturalenhancements.harvester": true,
     "player_head": true,
     "block_states": false,
     "lectern": true,
@@ -57,13 +51,6 @@
     "potion_effects": true,
     "painting": true,
     "chiseled_bookshelf": true
-  },
-  "mbd2": {
-    "recipe_logic_provider": true,
-    "multiblock_provider": true
-  },
-  "untitledduckmod": {
-    "lay_egg": true
   },
   "supplementaries": {
     "hat_stand": true

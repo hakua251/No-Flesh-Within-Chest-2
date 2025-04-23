@@ -82,12 +82,12 @@ SlotStrategyModel.prototype = {
             let slotType = invTypeData.getSlotType(i)
             let strategyModel = this.strategyMap[slotType]
             if (!strategyModel) continue
-            if (strategyModel['only'] && !onlyMap.has(itemId)) {
-                onlyMap.set(itemId, true)
+            if (strategyModel['only'] && !onlyMap.has(slotType)) {
+                onlyMap.set(slotType, true)
                 strategyModel['only'].forEach(e => {
                     strategyFuncList.push({
                         'strategyModel': e,
-                        'arg': args.concat(curItem, i)
+                        'arg': args.concat(curItem, i, slotType)
                     })
                 })
             }
@@ -95,7 +95,7 @@ SlotStrategyModel.prototype = {
                 strategyModel['default'].forEach(e => {
                     strategyFuncList.push({
                         'strategyModel': e,
-                        'arg': args.concat(curItem, i)
+                        'arg': args.concat(curItem, i, slotType)
                     })
                 })
             }

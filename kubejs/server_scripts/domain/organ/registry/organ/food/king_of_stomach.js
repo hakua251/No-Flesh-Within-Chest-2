@@ -21,9 +21,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
     let healthUp = 0
     let attackUp = 0
     const sweetsGlandEffect = GetCustomDataOrDefault(customData, 'hasSweetsGland', 0)
-    console.log(sweetsGlandEffect)
     const beerGlandEffect = GetCustomDataOrDefault(customData, 'hasBeerGland', 0)
-    console.log(beerGlandEffect)
     const gulaSlotEffect = slotType == GulaSlot
 
     inventory.allItems.forEach(item => {
@@ -33,7 +31,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
             if (item.hasTag('kubejs:cake') && sweetsGlandEffect == 2) {
                 let foodPro = CakeFoodProperties[item.getId().toString()]
                 if (!foodPro) return
-                
+
                 attackUp = attackUp + foodPro.saturation * 2
                 healthUp = healthUp + foodPro.nutrition / 4
             } else if (item.hasTag('kubejs:sweets') && sweetsGlandEffect >= 1) {
@@ -54,23 +52,19 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
                     // 允许重复放置
                     return
                 }
-            } else if (item.hasTag('kubejs:wine') && beerGlandEffect >= 1) {
-                if (beerGlandEffect == 2) {
-                    let age = $WineYears.getWineAge(item, level)
-                    attackUp = attackUp + 0.4 * age
-                } else {
-                    attackUp = attackUp + 4
-                }
+            } else if (item.hasTag('kubejs:wine') && beerGlandEffect == 2) {
+                let age = $WineYears.getWineAge(item, level)
+                attackUp = attackUp + 1 * age
             } else {
                 let foodPro = item.getFoodProperties(entity)
                 if (!foodPro) return
                 let nutrition = foodPro.getNutrition()
                 let staturation = foodPro.getSaturationModifier() * nutrition
                 if (gulaSlotEffect) {
-                    attackUp = attackUp + staturation / 2
+                    attackUp = attackUp + staturation
                     healthUp = healthUp + nutrition / 2
                 } else {
-                    attackUp = attackUp + staturation / 4
+                    attackUp = attackUp + staturation / 2
                     healthUp = healthUp + nutrition / 4
                 }
             }

@@ -9,7 +9,7 @@ SlotChestCavityUpdateStrategy.addOnlyStrategy(GulaSlot, GulaSlotEventDefer, -10)
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  */
-function GulaSlotEventDefer(customData, event, organItem, organIndex) {
+function GulaSlotEventDefer(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     chestCavity.setOrganScore('chestcavity:ease_of_access', 1)
     chestCavity.setOrganScore('chestcavity:nerves', 2)

@@ -22,6 +22,7 @@ const OrganTagMap = {
     'kubejs:revolution': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:revolution')).color('#deaa00'),
     'kubejs:relics': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:relics')).color('#ffe100'),
     'kubejs:legends': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:legends')).color('#d6e5ff'),
+    'kubejs:nature': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:nature')).color('#84e45b'),
     'kubejs:evolution': Text.green(Text.translatable('tooltips.kubejs.tag.kubejs:evolution')),
     'kubejs:food': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:food')).color('#f1b500'),
     'kubejs:huge': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:huge')).color('#a900fd'),
