@@ -4,7 +4,8 @@ RegistryOrgan('kubejs:king_of_stomach')
     .addScore('chestcavity:nutrition', -1)
     .addScore('chestcavity:metabolism', 1)
 
-const CakeFoodProperties = { 'minecraft:cake': { 'nutrition': 14, 'saturation': 2.8 }, 'bakery:strawberry_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:sweetberry_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:chocolate_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:chocolate_gateau': { 'nutrition': 20, 'saturation': 14 }, 'bakery:bundt_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:linzer_tart': { 'nutrition': 20, 'saturation': 14 }, 'bakery:apple_pie': { 'nutrition': 20, 'saturation': 14 }, 'bakery:glowberry_tart': { 'nutrition': 20, 'saturation': 14 }, 'bakery:chocolate_tart': { 'nutrition': 20, 'saturation': 14 }, 'bakery:pudding': { 'nutrition': 20, 'saturation': 14 } }
+const CakeFoodProperties = { 'minecraft:cake': { 'nutrition': 14, 'saturation': 2.8 }, 'bakery:strawberry_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:sweetberry_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:chocolate_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:chocolate_gateau': { 'nutrition': 20, 'saturation': 14 }, 'bakery:bundt_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:linzer_tart': { 'nutrition': 20, 'saturation': 14 }, 'bakery:apple_pie': { 'nutrition': 20, 'saturation': 14 }, 'bakery:glowberry_tart': { 'nutrition': 20, 'saturation': 14 }, 'bakery:chocolate_tart': { 'nutrition': 20, 'saturation': 14 }, 'bakery:pudding': { 'nutrition': 20, 'saturation': 14 }, 'create:blaze_cake': { 'nutrition': 18, 'saturation': 18 }, 'create:creative_blaze_cake': { 'nutrition': 24, 'saturation': 48 }, 'tconstruct:earth_cake': { 'nutrition': 12, 'saturation': 24 }, 'tconstruct:sky_cake': { 'nutrition': 12, 'saturation': 24 }, 'tconstruct:ichor_cake': { 'nutrition': 12, 'saturation': 24 }, 'tconstruct:ender_cake': { 'nutrition': 12, 'saturation': 24 }, 'tconstruct:magma_cake': { 'nutrition': 12, 'saturation': 24 }, 'tconstruct:ender_cake': { 'nutrition': 12, 'saturation': 24 }, 'tconstruct:blood_cake': { 'nutrition': 12, 'saturation': 24 } }
+
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event
@@ -26,8 +27,12 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
 
     inventory.allItems.forEach(item => {
         if (item.isEmpty()) return
-
         if (!onlySet.has(item.getId())) {
+            let isGreedy = false
+            if (item.hasNBT()) {
+                let nbt = item.getNbt()
+                if (nbt.contains('greedyThroatUUID')) isGreedy = true
+            }
             if (item.hasTag('kubejs:cake') && sweetsGlandEffect == 2) {
                 let foodPro = CakeFoodProperties[item.getId().toString()]
                 if (!foodPro) return
@@ -37,7 +42,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
             } else if (item.hasTag('kubejs:sweets') && sweetsGlandEffect >= 1) {
                 let foodPro = item.getFoodProperties(entity)
                 if (!foodPro) return
-                let nutrition = foodPro.getNutrition()
+                let nutrition = foodPro.getNutrition() + (isGreedy ? 2 : 0)
                 let staturation = foodPro.getSaturationModifier() * nutrition
 
                 attackUp = attackUp + staturation * 2
@@ -45,7 +50,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
             } else if (item.hasTag('kubejs:beer') && beerGlandEffect >= 1) {
                 let foodPro = item.getFoodProperties(entity)
                 if (!foodPro) return
-                let nutrition = foodPro.getNutrition()
+                let nutrition = foodPro.getNutrition() + (isGreedy ? 2 : 0)
                 let staturation = foodPro.getSaturationModifier() * nutrition
                 attackUp = attackUp + staturation * 2 + nutrition * 2
                 if (beerGlandEffect == 2) {
@@ -58,7 +63,8 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
             } else {
                 let foodPro = item.getFoodProperties(entity)
                 if (!foodPro) return
-                let nutrition = foodPro.getNutrition()
+                let nutrition = foodPro.getNutrition() + (isGreedy ? 2 : 0)
+
                 let staturation = foodPro.getSaturationModifier() * nutrition
                 if (gulaSlotEffect) {
                     attackUp = attackUp + staturation

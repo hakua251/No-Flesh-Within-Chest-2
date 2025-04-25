@@ -15,8 +15,8 @@ function HopKidneyKeyActive(customData, event, organItem, organIndex, slotType) 
     const player = event.player
     $AlcoholManager.drinkAlcohol(player)
     player.addItemCooldown(organItem, 20 * 5)
+    customData.attackDamage.addAttributeModifier()
 }
-// todo 更多的跟醉酒相关的器官
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:hop_kidney')

@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:beer_gland')
-    .addScore('chestcavity:endurance', 0.5)
-    .addScore('chestcavity:nutrition', 1)
+    .addScore('chestcavity:filtration', 1)
+    .addScore('chestcavity:fire_resistant', -1)
 
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData

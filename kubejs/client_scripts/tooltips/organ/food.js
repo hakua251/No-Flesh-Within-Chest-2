@@ -1,4 +1,15 @@
 // priority: 900
+ItemEvents.tooltip(tooltip => {
+    tooltip.addAdvancedToAll((item, advanced, text) => {
+        if (item.hasNBT()) {
+            let nbt = item.getNbt()
+            if (nbt.contains('greedyThroatUUID')) {
+                text.add(Text.translatable('tooltips.kubejs.greedy_throat.food_item').color('#025e00'))
+            }
+        }
+    })
+})
+
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:king_of_stomach')
     .addDefault(Text.translatable('tooltips.kubejs.king_of_stomach.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.king_of_stomach.alt.1'))
@@ -19,7 +30,6 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:beer_gland')
     .addCtrl(Text.translatable('tooltips.kubejs.beer_gland.ctrl.2', Text.gold('1')))
 )
 
-
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:sweets_gland')
     .addDefault(Text.translatable('tooltips.kubejs.sweets_gland.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.sweets_gland.alt.1'))
@@ -27,4 +37,18 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:sweets_gland')
     .addAlt(Text.translatable('tooltips.kubejs.sweets_gland.alt.3', Text.gold('2')))
     .addCtrl(DigestSlotType)
     .addCtrl(Text.translatable('tooltips.kubejs.sweets_gland.ctrl.1'))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:parasitism_stomach')
+    .addDefault(Text.translatable('tooltips.kubejs.parasitism_stomach.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.parasitism_stomach.alt.1'), Text.gold('3'))
+    .addAlt(Text.translatable('tooltips.kubejs.parasitism_stomach.alt.2'))
+    .addAlt(Text.translatable('tooltips.kubejs.parasitism_stomach.alt.3'))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:greedy_throat')
+    .addDefault(Text.translatable('tooltips.kubejs.greedy_throat.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.greedy_throat.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.greedy_throat.alt.2'))
+    .addAlt(Text.translatable('tooltips.kubejs.greedy_throat.alt.3'))
 )

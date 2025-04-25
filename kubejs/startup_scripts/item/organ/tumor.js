@@ -25,4 +25,6 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:organ')
         .tag('kubejs:infected')
         .tag('kubejs:magic')
+
+    event.create('kubejs:mutation_eye').maxStackSize(1).texture('kubejs:item/organs/infected/mutation_eye').tag('kubejs:infected')
 })

@@ -8,4 +8,3 @@ ItemEvents.foodEaten(event => {
     OrganFoodEatenEvent.run(entity, customData, [event])
     UpdateClientISSSpellDataEvent(customData, entity)
 })
-

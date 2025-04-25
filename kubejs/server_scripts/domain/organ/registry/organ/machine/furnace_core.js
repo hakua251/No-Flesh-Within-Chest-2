@@ -28,7 +28,7 @@ function FurnaceCoreEntityTickDefer(customData, event, organItem, organIndex, sl
         value = 1
         let oldModifier = attributeInstance.getModifier(FurnaceCoreTempAttackUpUUID)
         if (oldModifier) value = oldModifier.amount + value
-        if (slotType != RevolutionFlame) value = Math.min(value, 500)
+        if (slotType != RevolutionFlame) value = Math.min(value, 300)
 
         let attributeModifier = new $AttributeModifier(FurnaceCoreTempAttackUpUUID, 'FurnaceCoreTempAttackUp', value, $Operation.ADDITION)
 
