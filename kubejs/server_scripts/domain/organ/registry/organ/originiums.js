@@ -79,14 +79,14 @@ function OriginiumsPlayerCastEvent(customData, event, organItem, organIndex, slo
             canSetSlotList.push(i)
         }
     }
-    let targetIndex = 0
+    let targetIndex = -1
     if (canSetSlotList.length == 0) {
         targetIndex = Math.floor(Math.random() * chestCavity.inventory.getContainerSize())
     } else {
         targetIndex = RandomGet(canSetSlotList)
     }
     let targetSlotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
-    SetOrganWithoutUpdate(customData, chestCavity, subOriginiums, targetIndex, targetSlotType)
+    SetChestCavityOrgan(customData, chestCavity, subOriginiums, targetIndex, targetSlotType, true)
 
     player.addItemCooldown(organItem, 20 * 30)
 }

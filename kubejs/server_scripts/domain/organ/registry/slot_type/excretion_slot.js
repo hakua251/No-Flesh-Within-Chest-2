@@ -1,19 +1,43 @@
 // priority: 500
 const ExcretionSlot = 'excretion_slot'
+
+
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.ChestCavityInstance} ccInstance 
  * @param {Internal.ItemStack} organItem
- * @param {number} organIndex\
+ * @param {number} organIndex
  * @param {string} slotType
+ * @param {boolean} needUpdate
  */
-function SetOrganWithoutUpdate(customData, ccInstance, organItem, organIndex, slotType) {
-    ccInstance.inventory.setItemNoUpdate(organIndex, organItem)
-    if (slotType == 'excretion_slot') {
+function SetChestCavityOrgan(customData, ccInstance, organItem, organIndex, slotType, needUpdate) {
+    if (needUpdate) {
+        ccInstance.inventory.setItem(organIndex, organItem)
+    } else {
+        ccInstance.inventory.setItemNoUpdate(organIndex, organItem)
+    }
+    
+    if (slotType == ExcretionSlot) {
         if (!customData['excretionOrganList']) {
             customData['excretionOrganList'] = new Map()
         }
         customData['excretionOrganList'].set(organIndex, organItem)
+    }
+}
+
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.ChestCavityInstance} ccInstance 
+ * @param {number} organIndex
+ * @param {string} slotType
+ * @param {boolean} needUpdate
+ */
+function RemoveChestCavityOrgan(customData, ccInstance, organIndex, slotType, needUpdate) {
+    if (needUpdate) {
+        let item = ccInstance.inventory.getStackInSlot(organIndex)
+        ccInstance.inventory.removeItem(organIndex, item.getCount())
+    } else {
+        ccInstance.inventory.removeItemNoUpdate(organIndex)
     }
 }
 

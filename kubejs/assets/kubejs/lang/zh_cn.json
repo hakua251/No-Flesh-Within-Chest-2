@@ -374,7 +374,7 @@
     "slot_type.chestcavity.rosy_explosion.desc": " ■ 可用于强化§c玫瑰系列§r器官，以在较少的槽位下爆发出远超常规的能力",
     "slot_type.kubejs.excretion_slot.1": "    ■ 排泄",
     "slot_type.chestcavity.excretion_slot.name": "排泄 #%s",
-    "slot_type.chestcavity.excretion_slot.desc": " ■ 如果一个器官被§6不引发更新§r的方式放置在此处，则该器官会被§6排出到体外§r",
+    "slot_type.chestcavity.excretion_slot.desc": " ■ 如果一个物品因器官效果被放置在此处，则该器官会被§6排出到体外§r",
     "slot_type.kubejs.revolution_flame.1": "    ■ 革命烈焰",
     "slot_type.chestcavity.revolution_flame.name": "革命烈焰 #%s",
     "slot_type.chestcavity.revolution_flame.desc": " ■ 可用于强化§c革命系列§r器官，能够完全解放革命器官的束缚，使其发挥出远超常规的能力",

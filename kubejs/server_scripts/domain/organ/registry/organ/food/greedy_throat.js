@@ -33,14 +33,14 @@ function GreedyThroatItemEaten(customData, event, organItem, organIndex, slotTyp
         }
     }
 
-    let targetIndex = 0
+    let targetIndex = -1
     if (canSetSlotList.length > 0) {
         targetIndex = RandomGet(canSetSlotList)
     } else {
         return
     }
     let targetSlotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
-    SetOrganWithoutUpdate(customData, chestCavity, itemCopy, targetIndex, targetSlotType)
+    SetChestCavityOrgan(customData, chestCavity, itemCopy, targetIndex, targetSlotType, true)
     if (player instanceof $ServerPlayer) {
         player.addItemCooldown(organItem, 20 * 10)
     }

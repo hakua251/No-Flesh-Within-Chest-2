@@ -36,7 +36,7 @@ const TumorAttriBute = [
 function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const chestCavity = event.chestCavity
-    let interval = 1200
+    const interval = 80
     if (entity.age % interval != 0) return
 
     let tumor = Item.of('kubejs:tumor')
@@ -58,14 +58,14 @@ function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType
             canSetSlotList.push(i) 
         }
     }
-    let targetIndex = 0
+    let targetIndex = -1
     if (canSetSlotList.length == 0) {
         targetIndex = Math.floor(Math.random() * chestCavity.inventory.getContainerSize())
     } else {
         targetIndex = RandomGet(canSetSlotList)
     }
     let targetSlotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
-    SetOrganWithoutUpdate(customData, chestCavity, tumor, targetIndex, targetSlotType)
+    SetChestCavityOrgan(customData, chestCavity, tumor, targetIndex, targetSlotType, true)
     if (entity instanceof $ServerPlayer) {
         entity.addItemCooldown(organItem, interval)
     }
