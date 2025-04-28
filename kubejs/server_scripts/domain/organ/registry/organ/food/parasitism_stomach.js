@@ -29,7 +29,7 @@ function ParasitismStomachItemEaten(customData, event, organItem, organIndex, sl
     let attackUp = (staturation + nutrition) * organItemCount * (isGreedy ? 1.5 : 1)
     SetCustomDataMap(chestCavity, 'parasitismStomachCounter', 3)
     SetCustomDataMap(chestCavity, 'parasitismStomachAttackUp', attackUp)
-    let organEffect = new OragnEffectModel(organItem).setPriority(200).setCustomText('3')
+    let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText('3')
     SetOrganEffect(chestCavity, organEffect)
     player.addItemCooldown(organItem, 20 * 3)
 }
@@ -72,7 +72,7 @@ function ParasitismStomachDoDamage(customData, event, organItem, organIndex, slo
     if (curCounter == 0) {
         RemoveOrganEffect(chestCavity, 'kubejs:parasitism_stomach')
     } else {
-        let organEffect = new OragnEffectModel(organItem).setPriority(200).setCustomText(curCounter.toFixed(0))
+        let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText(curCounter.toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
 }

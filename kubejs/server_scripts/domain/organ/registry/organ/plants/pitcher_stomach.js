@@ -25,7 +25,7 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
         SetPutridToxinsDamage(target, event.amount)
     }
     if (sourceEntity instanceof $ServerPlayer) {
-        let organEffect = new OragnEffectModel(organItem).setPriority(150).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
+        let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
 }

@@ -185,7 +185,7 @@ function BlazePressurizerKeyActiveOnly(customData, event, organItem, organIndex,
     const player = event.player
     const chestCavity = player.chestCavityInstance
     let counter = BlazePressurizerActive(chestCavity, slotType)
-    let organEffect = new OragnEffectModel(organItem).setPriority(101).setCustomText(counter.toFixed(0))
+    let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText(counter.toFixed(0))
     SetOrganEffect(chestCavity, organEffect)
     player.addItemCooldown(organItem, 20 * 30)
 }

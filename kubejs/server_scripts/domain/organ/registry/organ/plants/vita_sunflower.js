@@ -35,7 +35,7 @@ function VitaSunflowerEntityTick(customData, event, organItem, organIndex, slotT
         organItem.setDamageValue(organItem.getDamageValue() - 1)
     }
     if (entity instanceof $ServerPlayer) {
-        let organEffect = new OragnEffectModel(organItem).setPriority(152).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
+        let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
 }

@@ -16,7 +16,7 @@ function TwistingWeepingIntestineKeyActiveOnly(customData, event, organItem, org
     const player = event.player
     const chestCavity = player.chestCavityInstance
     SetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', true)
-    let organEffect = new OragnEffectModel(organItem).setPriority(151)
+    let organEffect = new OragnEffectModel(organItem).setPriority(organIndex)
     SetOrganEffect(chestCavity, organEffect)
     player.addItemCooldown(organItem, 20 * 30)
 }

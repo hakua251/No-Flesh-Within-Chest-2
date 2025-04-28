@@ -25,7 +25,7 @@ function SoulCageEntityKill(customData, event, organItem, organIndex, slotType) 
         organItem.setDamageValue(0) 
     }
     if (sourceEntity instanceof $ServerPlayer) {
-        let organEffect = new OragnEffectModel(organItem).setPriority(200).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
+        let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
 }
@@ -60,7 +60,7 @@ function SoulCageEntityTick(customData, event, organItem, organIndex, slotType) 
     entity.heal(2)
     organItem.setDamageValue(damageValue + 1)
     if (entity instanceof $ServerPlayer) {
-        let organEffect = new OragnEffectModel(organItem).setPriority(200).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
+        let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(entity.chestCavityInstance, organEffect)
     }
 }
