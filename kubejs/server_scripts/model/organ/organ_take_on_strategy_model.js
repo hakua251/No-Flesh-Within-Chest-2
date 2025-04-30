@@ -57,6 +57,10 @@ OrganTakeOnStrategyModel.prototype = {
             let itemId = newItem.id
             let strategyModel = OrganStrategyMap[itemId]
             if (strategyModel) {
+                Object.keys(strategyModel.strategyMap).forEach(eventId => {
+                    ccInstance.addListener(eventId, i)
+                })
+
                 let organEventStrategy = strategyModel.strategyMap[this.eventId]
                 if (organEventStrategy) {
                     if (organEventStrategy['only'] && !onlyMap.has(itemId)) {

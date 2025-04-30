@@ -61,3 +61,15 @@ function FindNearestBlockAroundBlock(block, searchRange, verticalSearchRange, is
     }
     return null
 }
+
+/**
+ * 生成一个随机的Lootr Chest
+ * @param {Internal.Level} level 
+ * @param {BlockPos} pos 
+ * @param {ResourceLocation} table 
+ */
+function GenLootrChestWithLootTable(level, pos, table) {
+    let placementState = Block.getBlock('minecraft:chest').defaultBlockState()
+    level.setBlock(pos, placementState, 2)
+    $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)
+}

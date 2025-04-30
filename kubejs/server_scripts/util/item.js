@@ -23,8 +23,3 @@ function GetTreaseMapItem(level, pos) {
     $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecorationType.RED_X)
     return mapItem
 }
-
-// todo
-// let placementState = Block.getBlock('minecraft:chest').defaultBlockState()
-// level.setBlock(pos, placementState, 2)
-// $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)

@@ -39,11 +39,16 @@ ChestCavityEvents.evaluateChestCavity(event => {
     const { chestCavity, entity } = event
     let customData = {}
     if (!entity.isAlive()) return
-    // 器官摘下 - 通常用于归位操作
+    // 器官摘下 - 通常用于归位操作Å
     OrganTakeOffStrategy.run(chestCavity, [event], customData)
     OrganTakeOnStrategy.run(chestCavity, [event], customData)
 
     OrganChestCavityUpdateStrategy.run(chestCavity, [event], customData)
     SlotChestCavityUpdateStrategy.run(chestCavity, [event], customData)
+
+    // 渲染MPM
+    if (ccInstance.owner.isPlayer() && IsLoadedMPM && customData.modelData) {
+        renderMpm(ccInstance, customData)
+    }
     UpdateClientISSSpellDataEvent(customData, entity)
 })

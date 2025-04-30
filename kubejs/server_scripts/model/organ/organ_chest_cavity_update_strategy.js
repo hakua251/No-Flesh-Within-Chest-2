@@ -36,89 +36,57 @@ OrganChestCavityUpdateStrategyModel.prototype = {
         this.inits.forEach(init => {
             init.apply(null, args)
         })
-
-        let needLoadMpm = ccInstance.owner.isPlayer() && IsLoadedMPM
         const onlyMap = new Map()
         ccInstance.clearListenerMap()
-        const invTypeData = ccInstance.getInventoryTypeData()
 
-        let strategyFuncList = []
-        for (let i = 0; i < ccInv.getSlots(); i++) {
-            let slotType = invTypeData.getSlotType(i)
-            if (IsContainerSlot(slotType)) continue
-            let curItem = ccInv.getStackInSlot(i)
-            let itemId = String(curItem.id)
-            if (OrganStrategyMap[itemId]) {
+        let slotMap = ccInstance.getListenerMap(this.eventId)
+        if (slotMap) {
+            let strategyFuncList = []
+            slotMap.forEach((slotIndex, slotType) => {
+                if (IsContainerSlot(slotType)) return
+                let curItem = ccInv.getStackInSlot(slotIndex)
+                let itemId = String(curItem.id)
+
+                // 执行常规更新器官效果策略
+                if (!curItem || curItem.isEmpty()) return
+
                 let strategyModel = OrganStrategyMap[itemId]
-                Object.keys(strategyModel.strategyMap).forEach(eventId => {
-                    ccInstance.addListener(eventId, i)
+                if (!strategyModel) return
+
+                let organEventStrategy = strategyModel.strategyMap[this.eventId]
+                // 器官更新策略
+                if (organEventStrategy) {
+                    if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+                        onlyMap.set(itemId, true)
+                        organEventStrategy['only'].forEach(e => {
+                            strategyFuncList.push({
+                                'strategyModel': e,
+                                'arg': args.concat(curItem, slotIndex, slotType)
+                            })
+                        })
+                    }
+                    if (organEventStrategy['default']) {
+                        organEventStrategy['default'].forEach(e => {
+                            strategyFuncList.push({
+                                'strategyModel': e,
+                                'arg': args.concat(curItem, slotIndex, slotType)
+                            })
+                        })
+                    }
+                }
+            })
+            if (strategyFuncList.length > 0) {
+                strategyFuncList.sort((a, b) => {
+                    return b['strategyModel']['priority'] - a['strategyModel']['priority']
+                })
+                strategyFuncList.forEach((model) => {
+                    model['strategyModel']['func'].apply(null, model['arg'])
                 })
             }
-
-            // 执行常规更新器官效果策略
-            if (!curItem || curItem.isEmpty()) continue
-
-            let strategyModel = OrganStrategyMap[itemId]
-            if (!strategyModel) continue
-
-            let organEventStrategy = strategyModel.strategyMap[this.eventId]
-            // 器官更新策略
-            if (organEventStrategy) {
-                if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
-                    onlyMap.set(itemId, true)
-                    organEventStrategy['only'].forEach(e => {
-                        strategyFuncList.push({
-                            'strategyModel': e,
-                            'arg': args.concat(curItem, i, slotType)
-                        })
-                    })
-                }
-                if (organEventStrategy['default']) {
-                    organEventStrategy['default'].forEach(e => {
-                        strategyFuncList.push({
-                            'strategyModel': e,
-                            'arg': args.concat(curItem, i, slotType)
-                        })
-                    })
-                }
-            }
         }
-
-
-        if (strategyFuncList.length > 0) {
-            strategyFuncList.sort((a, b) => {
-                return b['strategyModel']['priority'] - a['strategyModel']['priority']
-            })
-            strategyFuncList.forEach((model) => {
-                model['strategyModel']['func'].apply(null, model['arg'])
-            })
-        }
-
-        // 渲染MPM
-        if (needLoadMpm && customData.modelData) {
-            renderMpm(ccInstance, customData)
-        }
-
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })
         return
     },
-}
-
-/**
- * 
- * @param {Internal.ChestCavityInstance} ccInstance 
- * @param {OrganChestCavityUpdateStrategyCustomData} customData 
- */
-function renderMpm(ccInstance, customData) {
-    /**@type {Internal.ServerPlayer} */
-    let player = ccInstance.owner
-    if (!player.inventory) {
-        return
-    }
-    let modelData = customData.modelData
-    modelData.refreshParts()
-    modelData.updateTransate()
-    $MpmPackets.sendNearby(player, new $PacketPlayerDataSend(player.getUuid(), modelData.writeToNBT()))
 }

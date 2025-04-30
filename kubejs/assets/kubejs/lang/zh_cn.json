@@ -398,6 +398,7 @@
     "_comment.item": "物品",
     "item.chestcavity.surgical_box": "手术盒",
     "item_name.kubejs.glass_vial.suffix": "的血清",
+    "item_name.kubejs.breast_gland_bucket.name": "%s的奶",
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
     "gui.kubejs.title.chestcavity": "胸腔",
