@@ -11,7 +11,7 @@ function ExtremeFitnessUpdateOrganScore(event) {
     const attributeInstance = entity.getAttribute('minecraft:generic.max_health')
     if (!attributeInstance) return
     attributeInstance.removeModifier(ExtremeFitnessHealthUpUUID)
-    if (organScoreValue <= 0) return
+    if (organScoreValue == 0) return
     attributeInstance.addPermanentModifier(
         new $AttributeModifier(
             ExtremeFitnessHealthUpUUID,
@@ -20,3 +20,5 @@ function ExtremeFitnessUpdateOrganScore(event) {
             $Operation.ADDITION)
     )
 }
+
+RegistryOrganScoreAttribute('kubejs:extreme_fitness', ExtremeFitnessUpdateOrganScore)

@@ -11,7 +11,7 @@ function ExtremeStrengthUpdateOrganScore(event) {
     const attributeInstance = entity.getAttribute('minecraft:generic.attack_damage')
     if (!attributeInstance) return
     attributeInstance.removeModifier(ExtremeStrengthAttackUpUUID)
-    if (organScoreValue <= 0) return
+    if (organScoreValue == 0) return
     attributeInstance.addPermanentModifier(
         new $AttributeModifier(
             ExtremeStrengthAttackUpUUID,
@@ -20,3 +20,5 @@ function ExtremeStrengthUpdateOrganScore(event) {
             $Operation.MULTIPLY_BASE)
     )
 }
+
+RegistryOrganScoreAttribute('kubejs:extreme_strength', ExtremeStrengthUpdateOrganScore)

@@ -39,7 +39,6 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
 
                 attackUp = attackUp + foodPro.saturation * 2
                 healthUp = healthUp + foodPro.nutrition / 4
-                console.log(item)
             } else if (item.hasTag('kubejs:sweets') && sweetsGlandEffect >= 1) {
                 let foodPro = item.getFoodProperties(entity)
                 if (!foodPro) return

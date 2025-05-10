@@ -1,18 +1,18 @@
 // priority: 999
+const OrganScoreAttributeMap = new Map()
 ChestCavityEvents.updateOrganScore(event => {
     const chestCavity = event.chestCavity
     if (!chestCavity) return
-    if (isScoreChanged('kubejs:extreme_strength')) {
-        ExtremeStrengthUpdateOrganScore(event)
-    }
-    if (isScoreChanged('kubejs:extreme_fitness')) {
-        ExtremeFitnessUpdateOrganScore(event)
-    }
-    if (isScoreChanged('kubejs:attack_dodge')) {
-        AttackDodgeUpdateOrganScore(event)
-    }
+    OrganScoreAttributeMap.forEach((func, organScoreName) => {
+        if (isScoreChanged(chestCavity, organScoreName)) {
+            func(event)
+        }
+    })
 })
 
+function RegistryOrganScoreAttribute(organScoreName, func) {
+    OrganScoreAttributeMap.set(organScoreName, func)
+}
 
 /**
  * 
