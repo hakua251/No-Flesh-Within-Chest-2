@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:energy_bottle_red')
     .addScore('chestcavity:nerves', -0.5)
-    .addScore('chestcavity:metabolism', 1)
+    .addScore('chestcavity:strength', 1.5)
 
 
 

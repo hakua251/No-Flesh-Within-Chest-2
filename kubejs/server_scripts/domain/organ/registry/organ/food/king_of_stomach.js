@@ -23,11 +23,11 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
     let attackUp = 0
     const sweetsGlandEffect = GetCustomDataOrDefault(customData, 'hasSweetsGland', 0)
     const beerGlandEffect = GetCustomDataOrDefault(customData, 'hasBeerGland', 0)
-    const gulaSlotEffect = slotType == GulaSlot
 
     inventory.allItems.forEach(item => {
         if (item.isEmpty()) return
-        if (!onlySet.has(String(item.getId()))) {
+        let itemId = String(item.getId())
+        if (!onlySet.has(itemId)) {
             let isGreedy = false
             if (item.hasNBT()) {
                 let nbt = item.getNbt()
@@ -67,19 +67,18 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
                 let nutrition = foodPro.getNutrition() + (isGreedy ? 2 : 0)
 
                 let staturation = foodPro.getSaturationModifier() * nutrition
-                if (gulaSlotEffect) {
-                    attackUp = attackUp + staturation
-                    healthUp = healthUp + nutrition / 2
-                } else {
-                    attackUp = attackUp + staturation / 2
-                    healthUp = healthUp + nutrition / 4
-                }
+                attackUp = attackUp + staturation / 2
+                healthUp = healthUp + nutrition / 4
+
             }
-            onlySet.add(String(item.getId()))
+            onlySet.add(itemId)
         }
 
     })
-
+    if (slotType == GulaSlot) {
+        attackUp = attackUp + staturation
+        healthUp = healthUp + nutrition / 2
+    }
     customData.attackDamage.addAttributeModifier(attackUp, 'addition', 'base')
     customData.maxHealth.addAttributeModifier(healthUp, 'addition', 'base')
 }

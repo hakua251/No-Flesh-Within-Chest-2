@@ -12,11 +12,11 @@ function ExtremeFitnessUpdateOrganScore(event) {
     if (!attributeInstance) return
     attributeInstance.removeModifier(ExtremeFitnessHealthUpUUID)
     if (organScoreValue <= 0) return
-    attributeInstance.addTransientModifier(
+    attributeInstance.addPermanentModifier(
         new $AttributeModifier(
             ExtremeFitnessHealthUpUUID,
             ExtremeFitnessHealthUpIdentifier,
             organScoreValue / 100 * 3,
-            $Operation.MULTIPLY_TOTAL)
+            $Operation.ADDITION)
     )
 }

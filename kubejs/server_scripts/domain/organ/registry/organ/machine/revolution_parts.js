@@ -14,7 +14,7 @@ RegistryOrgan('kubejs:revolution_bell')
     .addScore('chestcavity:metabolism', -0.5)
 
 RegistryOrgan('kubejs:blaze_pressurizer')
-    .addScore('chestcavity:strength', 1)
+    .addScore('chestcavity:strength', 1.5)
     .addScore('chestcavity:defense', -1)
 
 /**
