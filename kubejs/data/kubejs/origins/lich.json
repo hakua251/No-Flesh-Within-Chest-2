@@ -9,6 +9,6 @@
 	"icon": {
 		"item": "minecraft:feather"
 	},
-	"order": 0,
-	"impact": 1
+	"order": 1,
+	"impact": 2
 }

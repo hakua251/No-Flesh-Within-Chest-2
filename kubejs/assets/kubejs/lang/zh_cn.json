@@ -13,6 +13,8 @@
     "enchantment.chestcavity.creative_surgery": "创造手术",
     "enchantment.chestcavity.creative_surgery.desc": "你可以打开任何生物的胸腔",
     "_comment.organ_score_tooltips": "器官 Score Tooltips",
+    "tooltips.kubejs.mpm_type.0": "□ 外观激活状态：未激活",
+    "tooltips.kubejs.mpm_type.1": "■ 外观激活状态：已激活",
     "tooltips.kubejs.score_tag.chestcavity:filtration": "血液过滤效率",
     "tooltips.kubejs.score_tag.chestcavity:breath_recovery": "呼吸效率",
     "tooltips.kubejs.score_tag.chestcavity:nutrition": "营养获取效率",

@@ -73,6 +73,12 @@ ItemEvents.tooltip(tooltip => {
             text.add(lineNum++, customToolTips.altDescription)
         }
 
+        if (customToolTips.mpmTypeTooltipsMap.size > 0) {
+            let mpmType = GetOrganItemMPMType(item)
+            if (customToolTips.mpmTypeTooltipsMap.has(mpmType)) {
+                text.add(lineNum++, customToolTips.mpmTypeTooltipsMap.get(mpmType))
+            }
+        }
     })
 
 

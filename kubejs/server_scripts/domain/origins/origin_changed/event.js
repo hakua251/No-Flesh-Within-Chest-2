@@ -7,8 +7,6 @@ OriginsEvents.originChanged(event => {
     OriginChangedStrategy.run([key], [event], customData)
 })
 
-
-
 const OriginChangedStrategy = new StrategyModel()
 
 function RegisterOriginChangedStrategy(id, func) {

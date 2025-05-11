@@ -138,17 +138,23 @@ function FurnaceCoreTakeOn(customData, event, organItem, organIndex, slotType) {
  * @param {number} organIndex
  */
 function BurningHeartMpmTakeOn(customData, event, organItem, organIndex, slotType) {
-    let bodyPartId = 'kubejs:parts/body/burning_heart_body_model.json'
-    let armPartId = 'kubejs:parts/arms/burning_heart_arm_model.json'
+    switch (GetOrganItemMPMType(organItem)) {
+        case OrganItemMPMTypeShow: {
+            let bodyPartId = 'kubejs:parts/body/burning_heart_body_model.json'
+            let armPartId = 'kubejs:parts/arms/burning_heart_arm_model.json'
+            let bodyIndex = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == bodyPartId)
+            if (bodyIndex == -1) {
+                customData.modelData.mpmParts.add(new MpmDataModel(bodyPartId).exportModelData())
+            }
 
-    let bodyIndex = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == bodyPartId)
-    if (bodyIndex == -1) {
-        customData.modelData.mpmParts.add(new MpmDataModel(bodyPartId).exportModelData())
-    }
-
-    let armorIndex = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == armPartId)
-    if (armorIndex == -1) {
-        customData.modelData.mpmParts.add(new MpmDataModel(armPartId).exportModelData())
+            let armorIndex = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == armPartId)
+            if (armorIndex == -1) {
+                customData.modelData.mpmParts.add(new MpmDataModel(armPartId).exportModelData())
+            }
+            return
+        }
+        default:
+            return
     }
 }
 
@@ -300,3 +306,9 @@ RegistryOrganStrategy(
         .addOnlyStrategy('mpm_render_take_on', BurningHeartMpmTakeOn)
         .addOnlyStrategy('mpm_render_take_off', BurningHeartMpmTakeOff)
 )
+
+
+ServerEvents.recipes(event => {
+    event.shapeless(GetOrganItemWithMPMType(Item.of('kubejs:burning_heart'), OrganItemMPMTypeShow), ['kubejs:plastic_stem_cells', 'kubejs:burning_heart', Ingredient.of('#forge:dyes/white')])
+    event.shapeless(GetOrganItemWithMPMType(Item.of('kubejs:furnace_core'), OrganItemMPMTypeShow), ['kubejs:plastic_stem_cells', 'kubejs:furnace_core', Ingredient.of('#forge:dyes/white')])
+})

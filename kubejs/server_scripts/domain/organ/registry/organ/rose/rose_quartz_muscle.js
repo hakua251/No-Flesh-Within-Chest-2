@@ -34,11 +34,17 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
 function RoseQuartzMuscleMpmTakeOn(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
     let player = event.entity
-    let partId = player.profile.isLegacy() ? 'kubejs:parts/arms/rose_arm_wide_model.json' : 'kubejs:parts/arms/rose_arm_slim_model.json'
-
-    let index = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == partId)
-    if (index == -1) {
-        customData.modelData.mpmParts.add(new MpmDataModel(partId).exportModelData())
+    switch (GetOrganItemMPMType(organItem)) {
+        case OrganItemMPMTypeShow: {
+            let partId = player.profile.isLegacy() ? 'kubejs:parts/arms/rose_arm_wide_model.json' : 'kubejs:parts/arms/rose_arm_slim_model.json'
+            let index = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == partId)
+            if (index == -1) {
+                customData.modelData.mpmParts.add(new MpmDataModel(partId).exportModelData())
+            }
+            return
+        }
+        default:
+            return
     }
 }
 
@@ -61,3 +67,7 @@ RegistryOrganStrategy(
         .addOnlyStrategy('mpm_render_take_on', RoseQuartzMuscleMpmTakeOn)
         .addOnlyStrategy('mpm_render_take_off', RoseQuartzMuscleMpmTakeOff)
 )
+
+ServerEvents.recipes(event => {
+    event.shapeless(GetOrganItemWithMPMType(Item.of('kubejs:rose_quartz_muscle'), OrganItemMPMTypeShow), ['kubejs:plastic_stem_cells', 'kubejs:rose_quartz_muscle', Ingredient.of('#forge:dyes/white')])
+})

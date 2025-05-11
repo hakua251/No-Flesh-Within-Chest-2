@@ -56,12 +56,17 @@ function OriginiumsTakeOff(customData, event, organItem, organIndex, slotType) {
 function OriginiumsMpmTakeOn(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
     let player = event.entity
-    let partId = player.profile.isLegacy() ? 'kubejs:parts/arms/originium_dragon_arm_wide_model.json' : 'kubejs:parts/arms/originium_dragon_arm_slim_model.json'
-
-    let index = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == partId)
-
-    if (index == -1) {
-        customData.modelData.mpmParts.add(new MpmDataModel(partId).exportModelData())
+    switch (GetOrganItemMPMType(organItem)) {
+        case OrganItemMPMTypeShow: {
+            let partId = player.profile.isLegacy() ? 'kubejs:parts/arms/originium_dragon_arm_wide_model.json' : 'kubejs:parts/arms/originium_dragon_arm_slim_model.json'
+            let index = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == partId)
+            if (index == -1) {
+                customData.modelData.mpmParts.add(new MpmDataModel(partId).exportModelData())
+            }
+            return
+        }
+        default:
+            return
     }
 }
 
@@ -85,3 +90,7 @@ RegistryOrganStrategy(
         .addOnlyStrategy('mpm_render_take_on', OriginiumsMpmTakeOn)
         .addOnlyStrategy('mpm_render_take_off', OriginiumsMpmTakeOff)
 )
+
+ServerEvents.recipes(event => {
+    event.shapeless(GetOrganItemWithMPMType(Item.of('kubejs:originiums'), OrganItemMPMTypeShow), ['kubejs:plastic_stem_cells', 'kubejs:originiums', Ingredient.of('#forge:dyes/white')])
+})
