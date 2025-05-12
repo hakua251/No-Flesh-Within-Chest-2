@@ -20,6 +20,8 @@ const $Integer = Java.loadClass('java.lang.Integer')
 const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavityUtil')
 const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
 const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')
+const $LootParamsBuilder = Java.loadClass('net.minecraft.world.level.storage.loot.LootParams$Builder')
+const $Containers = Java.loadClass('net.minecraft.world.Containers')
 
 const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
 
@@ -74,3 +76,5 @@ const $RandomizableContainerBlockEntity = Java.loadClass('net.minecraft.world.le
 const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi")
 const $GravityChangerAPI = Java.loadClass("gravitychanger.api.GravityChangerAPI")
 const $RotationParameters = Java.loadClass("gravitychanger.api.RotationParameters")
+const $BonemealableBlock = Java.loadClass("net.minecraft.world.level.block.BonemealableBlock")
+const $BoneMealItem = Java.loadClass("net.minecraft.world.item.BoneMealItem")

@@ -189,15 +189,14 @@ function CommonDungeonFinishAction(level, context, lootList, isWin) {
  * @param {BlockPos} blockPos 
  * @param {Internal.ItemStack[]} lootList 
  */
-function SpawnDungeonLootAtLocation(level, blockPos, lootList) {
+function SpawnLootAtLocation(level, blockPos, lootList) {
     /**@type {Internal.ItemStack[][]} */
     let itemChunks = SliceChunkArray(lootList, 3)
     let tickCounter = 5
     itemChunks.forEach(itemChunk => {
         level.server.scheduleInTicks(tickCounter, callback => {
-            let movement = new Vec3d(Math.random() - 0.5, 1, Math.random() - 0.5)
             itemChunk.forEach(item => {
-                SpawnItemEntityWithMovement(level, blockPos, item, movement)
+                $Containers.dropItemStack(level, blockPos.x, blockPos.y, blockPos.z, item)
             })
         })
         tickCounter = tickCounter + 10
