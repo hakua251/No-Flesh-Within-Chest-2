@@ -10,3 +10,13 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:mammary_gland')
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:moew_nose')
     .addDefault(Text.translatable('tooltips.kubejs.moew_nose.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.moew_nose.alt.1')))
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:tentacles_harvester')
+    .addDefault(Text.translatable('tooltips.kubejs.tentacles_harvester.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.tentacles_harvester.alt.1'))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:leaf_insect_exoskeleton')
+    .addDefault(Text.translatable('tooltips.kubejs.leaf_insect_exoskeleton.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.leaf_insect_exoskeleton.alt.1'))
+)

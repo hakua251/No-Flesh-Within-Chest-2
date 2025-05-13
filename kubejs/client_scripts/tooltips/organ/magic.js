@@ -7,3 +7,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:originiums')
     .addMPMType(OrganItemMPMTypeNotShow, OrganItemMPMTypeNotShowText)
     .addMPMType(OrganItemMPMTypeShow, OrganItemMPMTypeShowText)
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:harvest_rune_bone')
+    .addDefault(Text.translatable('tooltips.kubejs.harvest_rune_bone.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.harvest_rune_bone.alt.1'))
+)

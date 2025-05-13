@@ -9,7 +9,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:intestine_template').maxStackSize(1).texture('kubejs:item/organs/template/intestine_template').tag('kubejs:intestine')
 
-    event.create('kubejs:rib_template').maxStackSize(1).texture('kubejs:item/organs/template/rib_template').tag('kubejs:rib')
+    event.create('kubejs:rib_template').maxStackSize(1).texture('kubejs:item/organs/template/rib_template').tag('kubejs:bone')
 
     event.create('kubejs:spine_template').maxStackSize(1).texture('kubejs:item/organs/template/spine_template').tag('kubejs:spine')
 

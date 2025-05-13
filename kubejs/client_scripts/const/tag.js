@@ -8,7 +8,7 @@ const OrganTagMap = {
     'kubejs:liver': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:liver')),
     'kubejs:lung': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:lung')),
     'kubejs:muscle': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:muscle')),
-    'kubejs:rib': Text.gray(Text.translatable('tooltips.kubejs.tag.kubejs:rib')),
+    'kubejs:bone': Text.gray(Text.translatable('tooltips.kubejs.tag.kubejs:bone')),
     'kubejs:spine': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:spine')).color('#cff9ff'),
     'kubejs:spleen': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:spleen')),
     'kubejs:pancreas': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:pancreas')),

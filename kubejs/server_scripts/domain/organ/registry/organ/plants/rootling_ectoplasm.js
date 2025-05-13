@@ -16,7 +16,9 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
     const chestCavity = event.chestCavity
     if (Math.random() > 1) return
     let digestion = chestCavity.getOrganScore('chestcavity:digestion')
-    let growthCnt = Math.min(Math.floor(digestion / 10) + 1, 1)
+    let growthCnt = Math.min(Math.floor(digestion / 5) + 1, 1)
+    const hasTentaclesHarvester = GetCustomDataMap(chestCavity, 'hasTentaclesHarvester', 0)
+    const hasHarvestRuneBone = GetCustomDataMap(chestCavity, 'hasHarvestRuneBone', 0)
     for (let i = 0; i < growthCnt; i++) {
         let rx = Math.floor(Math.random() * 9) - 4
         let rz = Math.floor(Math.random() * 9) - 4
@@ -28,7 +30,7 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
             level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
         }
 
-        // todo 可以拆
+        if (hasTentaclesHarvester == 0) return
         if (targetBlockState.hasProperty(BlockProperties.AGE_7) && targetBlockState.getValue(BlockProperties.AGE_7).intValue() == 7) {
             let lootContext = new $LootParamsBuilder(level)
                 .withParameter(LootContextParams.ORIGIN, new Vec3d(targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ()))
@@ -40,9 +42,10 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
             })
             level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
             level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
-            // todo 也可以拆
-            targetBlockState = targetBlockState.setValue(BlockProperties.AGE_7, Int2Integer(0))
-            level.setBlockAndUpdate(targetBlockPos, targetBlockState)
+            if (hasHarvestRuneBone == 0) {
+                targetBlockState = targetBlockState.setValue(BlockProperties.AGE_7, Int2Integer(0))
+                level.setBlockAndUpdate(targetBlockPos, targetBlockState)
+            }
         }
     }
 }

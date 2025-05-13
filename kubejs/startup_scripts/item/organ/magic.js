@@ -9,6 +9,8 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:candy_stomach').maxStackSize(1).texture('kubejs:item/organs/magic/candy_stomach').tag('kubejs:magic').tag('kubejs:stomach')
 
 
+    event.create('kubejs:harvest_rune_bone').maxStackSize(1).texture('kubejs:item/organs/magic/harvest_rune_bone').tag('kubejs:magic').tag('kubejs:bone')
+
     // 灵笼
     event.create('kubejs:soul_cage')
         .maxStackSize(1)

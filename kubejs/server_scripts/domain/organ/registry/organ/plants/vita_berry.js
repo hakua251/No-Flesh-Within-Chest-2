@@ -31,6 +31,6 @@ function VitaBerryChestCavityTakeOff(customData, event, organItem, organIndex, s
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:vita_berry')
         .addOnlyStrategy('organ_take_on', VitaBerryChestCavityTakeOn)
-        .addOnlyStrategy('organ_break', VitaBerryChestCavityTakeOn)
+        .addOnlyStrategy('organ_take_off', VitaBerryChestCavityTakeOff)
 
 )
