@@ -22,6 +22,9 @@ const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attribu
 const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')
 const $LootParamsBuilder = Java.loadClass('net.minecraft.world.level.storage.loot.LootParams$Builder')
 const $Containers = Java.loadClass('net.minecraft.world.Containers')
+const $ChorusFlowerBlock = Java.loadClass('net.minecraft.world.level.block.ChorusFlowerBlock')
+const $BambooStalkBlock = Java.loadClass('net.minecraft.world.level.block.BambooStalkBlock')
+const $BambooLeaves = Java.loadClass('net.minecraft.world.level.block.state.properties.BambooLeaves')
 
 const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
 

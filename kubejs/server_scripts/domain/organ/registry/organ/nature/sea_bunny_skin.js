@@ -21,8 +21,9 @@ function SeaBunnyGlandEntityTick(customData, event, organItem, organIndex, slotT
         return false
     })
     if (entityList.length <= 0) return
-    RandomGet(entityList).setTarget(entity)
-    // todo 可以增添粒子效果
+    /**@type {Internal.PathfinderMob_} */
+    let targetEntity = RandomGet(entityList)
+    targetEntity.setTarget(entity)
 }
 
 
