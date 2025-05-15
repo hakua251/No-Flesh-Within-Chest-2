@@ -75,8 +75,8 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
 
     })
     if (slotType == GulaSlot) {
-        attackUp = attackUp + staturation
-        healthUp = healthUp + nutrition / 2
+        attackUp = attackUp * 2
+        healthUp = healthUp * 2
     }
     customData.attackDamage.addAttributeModifier(attackUp, 'addition', 'base')
     customData.maxHealth.addAttributeModifier(healthUp, 'addition', 'base')
