@@ -15,7 +15,14 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     const chestCavity = sourceEntity.chestCavityInstance
+    let isTwistingIntestineAttack = GetCustomDataMap(chestCavity, 'twistingIntestineAttack', false)
+    if (isTwistingIntestineAttack) {
+        // 毒素爆发并不会触发毒效果
+        SetCustomDataMap(chestCavity, 'twistingIntestineAttack', false)
+        return
+    }
     const curDamage = organItem.getDamageValue()
+
     if (curDamage == 1) CommonDingNotice(sourceEntity.level, sourceEntity)
     if (curDamage > 0) {
         organItem.setDamageValue(curDamage - 1)

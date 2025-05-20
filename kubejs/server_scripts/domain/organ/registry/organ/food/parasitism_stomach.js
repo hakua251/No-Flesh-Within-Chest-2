@@ -18,15 +18,10 @@ function ParasitismStomachItemEaten(customData, event, organItem, organIndex, sl
     if (!foodItem) return
     let foodPro = foodItem.getFoodProperties(player)
     if (!foodPro) return
-    let isGreedy = false
-    if (foodItem.hasNBT()) {
-        let nbt = foodItem.getNbt()
-        if (nbt.contains('greedyThroatUUID')) isGreedy = true
-    }
     let nutrition = foodPro.getNutrition()
     let staturation = foodPro.getSaturationModifier() * nutrition
     let organItemCount = ccInv.count(foodItem)
-    let attackUp = (staturation + nutrition) * organItemCount * (isGreedy ? 1.5 : 1)
+    let attackUp = (staturation + nutrition) * organItemCount * 0.2
     SetCustomDataMap(chestCavity, 'parasitismStomachCounter', 3)
     SetCustomDataMap(chestCavity, 'parasitismStomachAttackUp', attackUp)
     let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText('3')

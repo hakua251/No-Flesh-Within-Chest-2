@@ -57,6 +57,7 @@ function TwistingWeepingIntestineDoDamage(customData, event, organItem, organInd
 
     let damage = (effect.getAmplifier() + 1) * GetPutridToxinsDamage(target) * effect.getDuration() / 40
     event.amount = damage + event.amount
+    SetCustomDataMap(chestCavity, 'twistingIntestineAttack', true)
     SetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', false)
 
     if (entity instanceof $ServerPlayer) {
