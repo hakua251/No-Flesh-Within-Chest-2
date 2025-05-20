@@ -27,7 +27,7 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent',
     let customData = {
         thornsDamage: 0
     }
-
+    SweetDreamEntityBeHurt(event, customData)
     OrganEntityBeHurt(event, customData)
     if (amount > 0) {
         OrganScoreDamagedEffect(event, customData)

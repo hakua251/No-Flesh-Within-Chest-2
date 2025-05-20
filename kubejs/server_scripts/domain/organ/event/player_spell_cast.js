@@ -1,7 +1,6 @@
 // priority: 999
 const PlayerSpellCastEvent = new OrganEventModel('player_spell_cast')
 
-
 PlayerEvents.spellOnCast(event => {
     const player = event.player
     if (!player) return

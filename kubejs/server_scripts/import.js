@@ -39,7 +39,6 @@ const $SimpleMenuProvider = Java.loadClass('net.minecraft.world.SimpleMenuProvid
 const $ChestCavityScreenHandler = Java.loadClass('net.tigereye.chestcavity.ui.ChestCavityScreenHandler')
 const $ChestCavityEntity = Java.loadClass('net.tigereye.chestcavity.interfaces.ChestCavityEntity')
 
-
 const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')
 
 const $PositionGoopEmitter = Java.loadClass('absolutelyaya.goop.api.emitter.PositionGoopEmitter')
@@ -75,14 +74,8 @@ const $MapDecorationType = Java.loadClass('net.minecraft.world.level.saveddata.m
 const $ModBlocks = Java.loadClass('noobanidus.mods.lootr.init.ModBlocks')
 const $RandomizableContainerBlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity')
 
-
 const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
 const $GravityChangerAPI = Java.loadClass('gravitychanger.api.GravityChangerAPI')
 const $RotationParameters = Java.loadClass('gravitychanger.api.RotationParameters')
 const $BonemealableBlock = Java.loadClass('net.minecraft.world.level.block.BonemealableBlock')
 const $BoneMealItem = Java.loadClass('net.minecraft.world.item.BoneMealItem')
-
-const $ImmersiveMessage = Java.loadClass('toni.immersivemessages.api.ImmersiveMessage')
-const $ImmersiveFont = Java.loadClass('toni.immersivemessages.ImmersiveFont')
-const $ChatFromatting = Java.loadClass('net.minecraft.ChatFormatting')
-const $TextAnchor = Java.loadClass('toni.immersivemessages.api.TextAnchor')
