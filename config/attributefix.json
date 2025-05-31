@@ -704,6 +704,17 @@
         "value": 1000
       }
     },
+    "tinkersjewelry:fortune": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "forge:entity_gravity": {
       "enabled": false,
       "min": {
@@ -790,6 +801,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "kubejs:candy_spell_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "irons_spellbooks:fire_spell_power": {
@@ -924,6 +946,17 @@
         "value": 1000000
       }
     },
+    "kubejs:candy_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "lodestone:magic_resistance": {
       "enabled": false,
       "min": {
@@ -944,6 +977,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "tinkersjewelry:silk": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "tetra:draw_speed": {
@@ -1010,6 +1054,17 @@
       "max": {
         "default": 10000,
         "value": 10000
+      }
+    },
+    "tinkersjewelry:subspace": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 6,
+        "value": 6
       }
     },
     "malum:reserve_staff_charges": {
@@ -1219,6 +1274,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "tinkersjewelry:trade": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "additionalentityattributes:lava_speed": {

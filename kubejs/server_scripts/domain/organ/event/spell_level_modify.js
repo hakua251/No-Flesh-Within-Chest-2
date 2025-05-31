@@ -4,7 +4,7 @@ const OrganSpellLevelModifyEvent = new OrganEventModel('spell_level_modify')
 /**
  * 法术等级修正
  */
-NativeEvents.onEvent('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEvent', /** @param {Internal.ModifySpellLevelEvent} event */ event => {
+NativeEvents.onEvent($ModifySpellLevelEvent, /** @param {Internal.ModifySpellLevelEvent} event */ event => {
     const entity = event.entity
     if (!entity.isAlive()) return
     let customData = {}

@@ -54,12 +54,17 @@
 	# type does not generate in rivers.
 	neutral_biome_kinds = ["river"]
 
-# Average number of Adaptive Underbiomes to be generated per full Minecraft map (zoom level 4 map / 2028x2048 blocks).
-# Remember that this is just an average - underbiomes don't know about Minecraft maps and will cross from one map to another.
-# Also, some areas might have higher underbiome density to balance out lower density ones. Densities that are too high might cause lag.
 [underbiome_density]
+	# Adaptive Underbiomes Per Map: Average number of Adaptive Underbiomes to be generated per full Minecraft map (zoom level 4 map / 2028x2048 blocks).
+	# Remember that this is just an average - underbiomes don't know about Minecraft maps and will cross from one map to another.
+	# Also, some areas might have higher underbiome density to balance out lower density ones. Densities that are too high might cause lag.
 	#Range: 0.016 ~ 100.0
 	adaptiveUnderbiomesPerMap = 12.0
+	# Crater Density Multiplier: Normally you can expect to find 1 crater for every 6 to 9 fully explored Minecraft maps.
+	# Use this multiplier to change the number of craters by a factor. For example, if you use 1.5 you can expect to find
+	# approximately 1 crater for every 4 to 6 fully explored Minecraft maps. With 0.5, expect 1 crater for every 13 to 18 maps. Bear in mind that this is an average - these frequencies are not guaranteed.
+	#Range: 0.2 ~ 10.0
+	craterDensityMultiplier = 1.0
 
 # This section classifies vanilla or modded Minecraft biomes into 'Surface Biome Kinds', that Undermod uses to determine where it
 # should generate Mystronics Underbiomes. If you want to add Adaptive Underbiomes under a new Minecraft biome, first add the Minecraft

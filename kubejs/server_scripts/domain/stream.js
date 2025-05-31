@@ -2,7 +2,7 @@
 /**
  * 造成伤害（未过护甲结算）节点，适合用于结算造成伤害效果
  */
-NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', /** @param {Internal.LivingHurtEvent} event */ event => {
+NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} event */ event => {
     if (!event.source.actual) return
 
     if (event.source.is($DamageTypes.THORNS)) return
@@ -20,7 +20,7 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', /
 /**
  * 实际受伤（过护甲结算）节点，适合用于结算受伤效果
  */
-NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent', /** @param {Internal.LivingDamageEvent} event */ event => {
+NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent} event */ event => {
     const entity = event.entity
     if (!entity) return
     const amount = event.amount

@@ -79,3 +79,8 @@ const $GravityChangerAPI = Java.loadClass('gravitychanger.api.GravityChangerAPI'
 const $RotationParameters = Java.loadClass('gravitychanger.api.RotationParameters')
 const $BonemealableBlock = Java.loadClass('net.minecraft.world.level.block.BonemealableBlock')
 const $BoneMealItem = Java.loadClass('net.minecraft.world.item.BoneMealItem')
+
+const $SpellSelectionEvent = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent')
+const $ModifySpellLevelEvent = Java.loadClass('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEvent')
+const $LivingHurtEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingHurtEvent')
+const $LivingDamageEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingDamageEvent')
