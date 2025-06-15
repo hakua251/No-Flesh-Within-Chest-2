@@ -8,8 +8,6 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .color(Color.RED)
 
-    event.create('dragon_power')
-        .beneficial()
-        .color(Color.DARK_PURPLE)
+
 })
 

@@ -1,0 +1,26 @@
+// priority: 500
+RegistryOrgan('kubejs:dragon_blood_heart')
+    .addScore('chestcavity:health', 1.75)
+    .addScore('kubejs:extreme_strength', 1)
+
+
+/**
+* @param {OrganChestCavityUpdateStrategyCustomData} customData
+* @param {Internal.NetworkEventJS} event
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function DragonBloodHeartKeyActive(customData, event, organItem, organIndex, slotType) {
+    const player = event.player
+    player.potionEffects.add('kubejs:dragon_power', 20 * 10)
+    player.addItemCooldown(organItem, 20 * 60)
+}
+
+
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:dragon_blood_heart')
+        .addOnlyStrategy('key_active', DragonBloodHeartKeyActive)
+)
+
+

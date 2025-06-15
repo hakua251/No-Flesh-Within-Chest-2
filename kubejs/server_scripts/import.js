@@ -64,7 +64,7 @@ const $TamableAnimal = Java.loadClass('net.minecraft.world.entity.TamableAnimal'
 const $AlcoholManager = Java.loadClass('net.satisfy.brewery.core.effect.alcohol.AlcoholManager')
 const $DoubleBlockHalf = Java.loadClass('net.minecraft.world.level.block.state.properties.DoubleBlockHalf')
 const $EvaluateChestCavityJS = Java.loadClass('net.tigereye.chestcavity.compat.kubejs.EvaluateChestCavityJS')
-const $WorldDeposits = Java.loadClass('com.endertech.minecraft.mods.adlods.world.WorldDeposits')
+const $WorldTargets = Java.loadClass('com.endertech.minecraft.mods.adlods.world.WorldTargets')
 const $AbstractOre = Java.loadClass('com.endertech.minecraft.mods.adlods.ore.AbstractOre')
 const $WineYears = Java.loadClass('net.satisfy.vinery.core.util.WineYears')
 

@@ -5,7 +5,7 @@
  * @returns {Internal.Map<BlockPos, Internal.DepositGenResult>}
  */
 function GetDeposits(level) {
-    return $WorldDeposits.get(level).generated()
+    return $WorldTargets.get(level).generated()
 }
 
 /**

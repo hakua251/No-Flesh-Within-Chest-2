@@ -20,13 +20,12 @@ function CandyPancreasEntitySpellCast(customData, event, organItem, organIndex, 
     let recoverMana = manaCost * Clamp(enduranceOrganScore * 0.1, 0, 0.9)
     const spell = event.getSpell()
     const manaCost = spell.getManaCost()
-    if (spell.schoolType.getId().toString() != 'kubejs:candy') return
     entity.getMagicData().addMana(recoverMana)
-    entity.addItemCooldown(organItem, 10 * 20)
+    entity.addItemCooldown(organItem, 15 * 20)
 }
 
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:candy_pancreas')
-        .addOnlyStrategy('entity_spell_cast', CandyStomachEntitySpellCast)
+        .addOnlyStrategy('entity_spell_cast', CandyPancreasEntitySpellCast)
 )
