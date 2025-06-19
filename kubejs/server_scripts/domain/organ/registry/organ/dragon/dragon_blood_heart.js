@@ -1,6 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:dragon_blood_heart')
-    .addScore('chestcavity:health', 1.75)
+    .addScore('chestcavity:health', 2)
     .addScore('kubejs:extreme_strength', 1)
 
 
