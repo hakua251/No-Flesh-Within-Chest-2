@@ -85,4 +85,7 @@ const $ModifySpellLevelEvent = Java.loadClass('io.redspace.ironsspellbooks.api.e
 const $LivingHurtEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingHurtEvent')
 const $LivingDamageEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingDamageEvent')
 
-const $EffectResolveEvent = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent')
+const $EffectResolveEventPost = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Post')
+const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Pre')
+const $EntityHitResult = Java.loadClass('net.minecraft.world.phys.EntityHitResult')
+const $BlockHitResult = Java.loadClass('net.minecraft.world.phys.BlockHitResult')

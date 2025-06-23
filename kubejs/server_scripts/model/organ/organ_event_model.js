@@ -40,7 +40,7 @@ OrganEventModel.prototype = {
         let ccInv = ccInstance.inventory
         const onlyMap = new Map()
         let slotMap = ccInstance.getListenerMap(this.eventId)
-        if (slotMap) {
+        if (slotMap && slotMap.size() > 0) {
             let strategyFuncList = []
             slotMap.forEach((slotIndex, slotType) => {
                 let curItem = ccInv.getStackInSlot(slotIndex)
@@ -70,8 +70,9 @@ OrganEventModel.prototype = {
                     model.getFunc().apply(null, model.getArgs())
                 })
             }
+            ExcretionSlotEvent(customData, ccInstance)
         }
-        ExcretionSlotEvent(customData, ccInstance)
+        
 
         this.defers.forEach(defer => {
             defer.apply(null, args)
