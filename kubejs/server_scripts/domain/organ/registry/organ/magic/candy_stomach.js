@@ -20,5 +20,5 @@ function CandyStomachPlayerSpellCast(customData, event, organItem, organIndex, s
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:candy_stomach')
-        .addOnlyStrategy('player_spell_cast', CandyStomachPlayerSpellCast)
+        .addOnlyStrategy('iss_player_spell_cast', CandyStomachPlayerSpellCast)
 )

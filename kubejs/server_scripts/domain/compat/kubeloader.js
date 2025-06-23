@@ -37,9 +37,9 @@ if (IsLoadedKubeloader) {
             'OrganItemRightClickedEvent': OrganItemRightClickedEvent,
             'OrganKeyBindEvent': OrganKeyBindEvent,
             'OrganPlayerEnchantEvent': OrganPlayerEnchantEvent,
-            'PlayerSpellCastEvent': PlayerSpellCastEvent,
-            'OrganSpellLevelModifyEvent': OrganSpellLevelModifyEvent,
-            'OrganSpellSelectionEvent': OrganSpellSelectionEvent,
+            'PlayerSpellCastEvent': ISSPlayerSpellCastEvent,
+            'OrganSpellLevelModifyEvent': ISSSpellLevelModifyEvent,
+            'OrganSpellSelectionEvent': ISSSpellSelectionEvent,
             'OrganScoreGoopRenderStrategy': OrganScoreGoopRenderStrategy,
         },
     }

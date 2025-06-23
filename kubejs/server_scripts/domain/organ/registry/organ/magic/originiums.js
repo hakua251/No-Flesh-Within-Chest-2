@@ -85,7 +85,7 @@ function OriginiumsMpmTakeOff(customData, event, organItem, organIndex, slotType
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:originiums')
-        .addOnlyStrategy('player_spell_cast', OriginiumsPlayerSpellCast)
+        .addOnlyStrategy('iss_player_spell_cast', OriginiumsPlayerSpellCast)
         .addOnlyStrategy('organ_take_off', OriginiumsTakeOff)
         .addOnlyStrategy('mpm_render_take_on', OriginiumsMpmTakeOn)
         .addOnlyStrategy('mpm_render_take_off', OriginiumsMpmTakeOff)

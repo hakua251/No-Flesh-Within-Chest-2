@@ -52,6 +52,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
   "supplementaries": {
     "hat_stand": true
   },

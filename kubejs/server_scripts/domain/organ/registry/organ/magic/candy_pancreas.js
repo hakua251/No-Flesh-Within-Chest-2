@@ -27,5 +27,5 @@ function CandyPancreasEntitySpellCast(customData, event, organItem, organIndex, 
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:candy_pancreas')
-        .addOnlyStrategy('entity_spell_cast', CandyPancreasEntitySpellCast)
+        .addOnlyStrategy('iss_entity_spell_cast', CandyPancreasEntitySpellCast)
 )

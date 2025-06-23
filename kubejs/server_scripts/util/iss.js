@@ -40,7 +40,7 @@ function UpdateClientISSSpellDataEvent(customData, entity) {
     })
     syncSpellData.put('spellList', spellNBTList)
     syncSpellData.putString('mode', 'refresh')
-    entity.sendData('spell_selection_data', syncSpellData)
+    entity.sendData('iss_spell_selection_data', syncSpellData)
 }
 
 /**
@@ -64,7 +64,7 @@ function InitClientISSSpellData(entity) {
     })
     syncSpellData.put('spellList', spellNBTList)
     syncSpellData.putString('mode', 'refresh')
-    entity.sendData('spell_selection_data', syncSpellData)
+    entity.sendData('iss_spell_selection_data', syncSpellData)
 }
 
 /**

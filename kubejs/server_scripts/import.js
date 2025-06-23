@@ -84,3 +84,5 @@ const $SpellSelectionEvent = Java.loadClass('io.redspace.ironsspellbooks.api.mag
 const $ModifySpellLevelEvent = Java.loadClass('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEvent')
 const $LivingHurtEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingHurtEvent')
 const $LivingDamageEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingDamageEvent')
+
+const $EffectResolveEvent = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent')

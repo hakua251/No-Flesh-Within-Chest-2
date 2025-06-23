@@ -6,10 +6,10 @@ const OrganAdditionSpellSelectionMap = new Map()
 
 ClientEvents.loggedIn(event => {
     OrganAdditionSpellSelectionMap.clear()
-    event.player.sendData('spell_selection_init') 
+    event.player.sendData('iss_spell_selection_init') 
 })
 
-NetworkEvents.dataReceived('spell_selection_data', event => {
+NetworkEvents.dataReceived('iss_spell_selection_data', event => {
     /**@type {Internal.ListTag} */
     const spellDataNbt = event.getData()
     let mode = spellDataNbt.getString('mode')
@@ -46,7 +46,7 @@ NetworkEvents.dataReceived('spell_selection_data', event => {
     $ClientMagicData.updateSpellSelectionManager()
 })
 
-NativeEvents.onEvent('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent', /** @param {Internal.SpellSelectionManager$SpellSelectionEvent} event */ event => {
+NativeEvents.onEvent($SpellSelectionEvent, /** @param {Internal.SpellSelectionManager$SpellSelectionEvent} event */ event => {
     if (!event.entity) return
     if (!event.entity.level.isClientSide()) return
     let index = 0
