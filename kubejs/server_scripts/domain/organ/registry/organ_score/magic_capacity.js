@@ -9,7 +9,7 @@ function MagicCapacityMaxManaUpUpdateOrganScore(event) {
     /**@type {Internal.ServerPlayer} */
     const entity = event.entity
     const organScoreValue = event.chestCavity.getOrganScore('kubejs:magic_capacity')
-    const attributeInstance = entity.getAttribute('irons_spellbooks:max_mana')
+    const attributeInstance = entity.getAttribute('ars_nouveau:ars_nouveau.perk.max_mana')
     if (!attributeInstance) return
     attributeInstance.removeModifier(MagicCapacityMaxManaUpUUID)
     if (organScoreValue == 0) return

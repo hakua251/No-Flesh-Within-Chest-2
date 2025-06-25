@@ -89,3 +89,4 @@ const $EffectResolveEventPost = Java.loadClass('com.hollingsworth.arsnouveau.api
 const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Pre')
 const $EntityHitResult = Java.loadClass('net.minecraft.world.phys.EntityHitResult')
 const $BlockHitResult = Java.loadClass('net.minecraft.world.phys.BlockHitResult')
+const $SpellUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.SpellUtil')

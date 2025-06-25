@@ -18,8 +18,8 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
     let digestion = chestCavity.getOrganScore('chestcavity:digestion')
     let growthCnt = Math.min(Math.floor(digestion / 5) + 1, 1)
     const hasTentaclesHarvester = GetCustomDataMap(chestCavity, 'hasTentaclesHarvester', 0)
-    const hasHarvestRuneBone = GetCustomDataMap(chestCavity, 'hasHarvestRuneBone', 0)
-    const radius = Math.max(4 - GetCustomDataMap(chestCavity, 'hasShrinkRuneBoneAmount', 0), 0)
+    const hasHarvestStarGem = GetCustomDataMap(chestCavity, 'hasHarvestStarGem', 0)
+    const radius = 4
     const diameter = radius * 2 + 1
     for (let i = 0; i < growthCnt; i++) {
         let rx = Math.floor(Math.random() * diameter) - radius
@@ -44,7 +44,7 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
             })
             level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
             level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
-            if (hasHarvestRuneBone == 0) {
+            if (hasHarvestStarGem == 0) {
                 targetBlockState = targetBlockState.setValue(BlockProperties.AGE_7, Int2Integer(0))
                 level.setBlockAndUpdate(targetBlockPos, targetBlockState)
             }
