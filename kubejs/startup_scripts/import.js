@@ -14,7 +14,7 @@ const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const $CommonUtil = Java.loadClass('net.tigereye.chestcavity.util.CommonUtil')
 const $IntegerProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.IntegerProperty')
 const $Integer = Java.loadClass('java.lang.Integer')
-const $GravityChangerAPI = Java.loadClass("gravitychanger.api.GravityChangerAPI")
+
 
 const $MagicFireball = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.fireball.MagicFireball')
 const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.AbstractSpell')

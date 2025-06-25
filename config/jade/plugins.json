@@ -55,6 +55,10 @@
   "ars_nouveau": {
     "mob_jar": true
   },
+  "bakeries": {
+    "baysalt_frame": true,
+    "oven": true
+  },
   "supplementaries": {
     "hat_stand": true
   },
