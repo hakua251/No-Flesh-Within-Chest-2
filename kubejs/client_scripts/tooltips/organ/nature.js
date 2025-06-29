@@ -32,3 +32,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:dumbo_octopus_hat')
     .addAlt(Text.translatable('tooltips.kubejs.dumbo_octopus_hat.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.dumbo_octopus_hat.alt.2', Text.gold('60')))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:jumping_spider_leg')
+    .addDefault(Text.translatable('tooltips.kubejs.jumping_spider_leg.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.jumping_spider_leg.alt.1'))
+)

@@ -43,5 +43,7 @@ rhino.local.properties
 /config/ibeeditor*
 /config/fml.toml
 /config/forgeendertech
+/config/biomebeats
 /data/
 config/fabric/indigo-renderer.properties
+config/asyncparticles
