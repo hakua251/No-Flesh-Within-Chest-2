@@ -20,3 +20,6 @@ const $FireBomb = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.magm
 const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.AbstractSpell')
 
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
+
+const $FuelManager = Java.loadClass('forestry.api.fuels.FuelManager')
+const $EngineBronzeFuel = Java.loadClass('forestry.api.fuels.EngineBronzeFuel')
