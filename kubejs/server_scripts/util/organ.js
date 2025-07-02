@@ -123,3 +123,22 @@ function SetVitaToxinsCoe(target, coe) {
 function CommonDingNotice(level, player) {
     level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.experience_orb.pickup', player.getSoundSource(), 3, 1)
 }
+
+/**
+ * 
+ * @param {Internal.ServerPlayer} player 
+ * @param {Internal.ItemStack} item 
+ * @returns {Boolean}
+ */
+function OrganItemCoolDown(player, item) {
+    const cooldowns = player.getCooldowns()
+    if (cooldowns.isOnCooldown(item)) {
+        let cooldownInstance = cooldowns.cooldowns.getOrDefault(item.getItem(), null)
+        if (!cooldownInstance) return
+        let endTime = cooldownInstance.endTime
+        let leftTime = endTime - cooldowns.tickCount
+        player.setStatusMessage(Text.translatable('status_msg.kubejs.warden_core.key_active.cooldown', Text.gold(item.getHoverName()), leftTime / 20))
+        return true
+    }
+    return false
+}

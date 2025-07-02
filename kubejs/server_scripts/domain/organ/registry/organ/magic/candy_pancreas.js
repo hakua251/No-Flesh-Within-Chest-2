@@ -14,7 +14,7 @@ function CandyPancreasEntitySpellCast(customData, event, organItem, organIndex, 
     /**@type {Internal.ServerPlayer} */
     const entity = event.getEntity()
     if (!entity.isPlayer()) return
-    if (entity.getCooldowns().isOnCooldown(organItem)) return
+    if (OrganItemCoolDown(entity, organItem)) return
     const chestCavity = entity.getChestCavityInstance()
     const enduranceOrganScore = chestCavity.getOrganScore('chestcavity:endurance')
     let recoverMana = manaCost * Clamp(enduranceOrganScore * 0.1, 0, 0.9)

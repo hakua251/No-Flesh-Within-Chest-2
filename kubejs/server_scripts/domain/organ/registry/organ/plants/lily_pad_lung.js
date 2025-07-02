@@ -13,7 +13,7 @@ RegistryOrgan('kubejs:lily_pad_lung')
 function LilyPadLungDoDamageDefer(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.LivingEntity} */
     const source = event.source.actual
-    if (source.isPlayer() && source.getCooldowns().isOnCooldown('kubejs:lily_pad_lung')) {
+    if (source.isPlayer() && OrganItemCoolDown(source, organItem)) {
         return
     }
     /**@type {Internal.LivingEntity} */

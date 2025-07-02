@@ -61,6 +61,8 @@ const OrganTagMap = {
     'kubejs:iss_player_spell_cast': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:iss_player_spell_cast')),
     'kubejs:entity_kill_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_kill_only')),
     'kubejs:entity_kill': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_kill')),
+    'kubejs:entity_interact_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_interact_only')),
+    'kubejs:entity_interact': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_interact')),
     'kubejs:entity_death_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_death_only')),
     'kubejs:entity_death': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_death')),
     'kubejs:plants': Text.green(Text.translatable('tooltips.kubejs.tag.kubejs:plants')),

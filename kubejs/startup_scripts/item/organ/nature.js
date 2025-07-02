@@ -12,4 +12,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:otter_tooth').maxStackSize(1).texture('kubejs:item/organs/nature/otter_tooth').tag('kubejs:nature')
     event.create('kubejs:red_panda_tail').maxStackSize(1).texture('kubejs:item/organs/nature/red_panda_tail').tag('kubejs:nature')
     event.create('kubejs:shima_enaga_feather').maxStackSize(1).texture('kubejs:item/organs/nature/shima_enaga_feather').tag('kubejs:nature')
+    event.create('kubejs:deer_horn').maxStackSize(1).texture('kubejs:item/organs/nature/deer_horn').tag('kubejs:nature')
+    event.create('kubejs:red_wolf_beard').maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/nature/red_wolf_beard').tag('kubejs:nature')
+    event.create('kubejs:raccoon_paw').maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/nature/raccoon_paw').tag('kubejs:nature')
 })

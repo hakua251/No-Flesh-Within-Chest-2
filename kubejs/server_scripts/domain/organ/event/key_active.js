@@ -26,15 +26,7 @@ NetworkEvents.dataReceived('mine_menu_use_item', event => {
     }
     if (!item || item.isEmpty()) return
     let customData = {}
-    if (cooldowns.isOnCooldown(item)) {
-        let cooldownInstance = cooldowns.cooldowns.getOrDefault(item.getItem(), null)
-        if (!cooldownInstance) return
-        let endTime = cooldownInstance.endTime
-        let leftTime = endTime - cooldowns.tickCount
-        player.setStatusMessage(Text.translatable('status_msg.kubejs.warden_core.key_active.cooldown', Text.gold(item.getHoverName()), leftTime / 20))
-        return
-    }
-
+    if (OrganItemCoolDown(player, item)) return
     OrganKeyBindEvent.run(player, item, customData, [event])
     UpdateClientISSSpellDataEvent(customData, player)
 })

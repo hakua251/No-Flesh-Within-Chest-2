@@ -64,3 +64,23 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:shima_enaga_feather')
     .addDefault(Text.translatable('tooltips.kubejs.shima_enaga_feather.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.shima_enaga_feather.alt.1'))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:shima_enaga_feather')
+    .addDefault(Text.translatable('tooltips.kubejs.shima_enaga_feather.default.1').gray())
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:deer_horn')
+    .addDefault(Text.translatable('tooltips.kubejs.deer_horn.default.1').gray())
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:red_wolf_beard')
+    .addDefault(Text.translatable('tooltips.kubejs.red_wolf_beard.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.red_wolf_beard.alt.1', Text.gold('30')))
+    .addAlt(Text.translatable('tooltips.kubejs.red_wolf_beard.alt.2', Text.gold('1'), Text.gold('50%')))
+    .addAlt(Text.translatable('tooltips.kubejs.red_wolf_beard.alt.3', Text.gold('2'), Text.gold('4')))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:raccoon_paw')
+    .addDefault(Text.translatable('tooltips.kubejs.raccoon_paw.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.raccoon_paw.alt.1'))
+)
