@@ -67,4 +67,17 @@ TConJSEvents.modifierRegistry(event => {
             entity.potionEffects.add('potioncore:revival', 20 * 3 * lvl)
         })
     })
+
+
+    // 胸腔活化
+    event.createNew('active_chestcavity', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            /**@type {Internal.LivingEntity} */
+            const target = context.target
+            const chestCavity = target.chestCavityInstance
+            if (!chestCavity.opened) {
+                $ChestCavityUtil.openChestCavity(chestCavity)
+            }
+        })
+    })
 })

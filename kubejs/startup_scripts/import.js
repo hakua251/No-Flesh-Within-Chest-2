@@ -23,3 +23,4 @@ const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 
 const $FuelManager = Java.loadClass('forestry.api.fuels.FuelManager')
 const $EngineBronzeFuel = Java.loadClass('forestry.api.fuels.EngineBronzeFuel')
+const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavityUtil')
