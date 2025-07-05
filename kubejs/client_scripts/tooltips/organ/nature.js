@@ -94,3 +94,9 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:minisheep_gland')
     .addDefault(Text.translatable('tooltips.kubejs.minisheep_gland.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.minisheep_gland.alt.1'))
 )
+
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:squirrel_tail')
+    .addDefault(Text.translatable('tooltips.kubejs.squirrel_tail.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.squirrel_tail.alt.1'))
+)

@@ -17,4 +17,5 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:raccoon_paw').maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/nature/raccoon_paw').tag('kubejs:nature')
     event.create('kubejs:boar_nose').maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/nature/boar_nose').tag('kubejs:nature')
     event.create('kubejs:minisheep_gland').maxStackSize(1).texture('kubejs:item/organs/nature/minisheep_gland').tag('kubejs:nature')
+    event.create('kubejs:squirrel_tail').maxStackSize(1).texture('kubejs:item/organs/nature/squirrel_tail').tag('kubejs:nature')
 })
