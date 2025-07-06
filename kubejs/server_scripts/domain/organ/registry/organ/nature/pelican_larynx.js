@@ -13,8 +13,7 @@ RegistryOrgan('kubejs:pelican_larynx')
 * @param {string} slotType
 */
 function PelicanLarynxEntityInteract(customData, event, organItem, organIndex, slotType) {
-    /**@type {Internal.ServerPlayer} */
-    const player = event.entity
+    const player = event.player
     /**@type {Internal.PathfinderMob} */
     const target = event.target
     if (!(target.isLiving() && target instanceof $PathfinderMob)) return

@@ -15,8 +15,12 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
     const player = event.player
 
     let weightRandomModel = new WeightRandomModel()
-    weightRandomModel.addWeightRandom('end_city_treasure', 2)
-        weightRandomModel.addWeightRandom('ancient_city', 2)
+    /**@type {Map<string, WeightRandomItem[]>} */
+    let koiFishPool = GetCustomDataMap(player.chestCavityInstance, 'koiFishPool', new Map())
+    weightRandomModel.addWeightRandom('ancient_city', 2)
+    koiFishPool.forEach((value, _) => {
+        weightRandomModel.weightRandomList = weightRandomModel.weightRandomList.concat(value)
+    })
 
     let airdropPos = getKoiAirDropSpawnLocation(level, player)
     let airdropEntity = getAirdropEntity(level, airdropPos, 'kubejs:airdrop_balloon_red', weightRandomModel.getWeightRandomObj())
@@ -26,9 +30,10 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
     $MapItem.renderBiomePreviewMap(level, mapItem)
     $MapItemSavedData.addTargetDecoration(mapItem, airdropPos, "+", $MapDecorationType.RED_X)
     player.give(mapItem.withName(Text.translatable('map.kubejs.lost_treasure')))
+    level.playSound(null, player.getX(), player.getY(), player.getZ(), 'minecraft:block.enchantment_table.use', player.getSoundSource(), 0.5, 1)
     // 增强功能
-    // CreateWaypoint(player, pos, new Date().toLocaleString(), 0xFC4C00)
-    player.addItemCooldown('kubejs:koi_fish_scale', 20 * 10)
+    // CreateWaypoint(player, airdropPos, new Date().toLocaleString(), 0xFC4C00)
+    player.addItemCooldown('kubejs:koi_fish_scale', 20 * 300)
 }
 
 RegistryOrganStrategy(

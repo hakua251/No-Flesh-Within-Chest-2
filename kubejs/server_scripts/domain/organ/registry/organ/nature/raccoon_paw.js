@@ -17,17 +17,24 @@ function RacconPawEntityInteract(customData, event, organItem, organIndex, slotT
     const player = event.player
     if (event.hand != 'main_hand') return
     if (OrganItemCoolDown(player, organItem)) return
-    let allSlotsList = []
-    let i = 0
-    target.getAllSlots().forEach(item => {
-        if (!item.isEmpty()) {
-            allSlotsList.push({ item: item, slot: i })
-        }
-        i++
-    })
-    let randomObj = RandomGet(allSlotsList)
-    SpawnLootAtLocation(event.level, player.blockPosition(), [randomObj.item])
-    target.setItemSlot(EquimentSlotList[randomObj.slot], Item.empty)
+    switch (target.type) {
+        case 'minecraft:villager':
+            SpawnLootAtLocation(event.level, player.blockPosition(), [Item.of('kubejs:villager_own_you')])
+            break
+        default:
+            let allSlotsList = []
+            let i = 0
+            target.getAllSlots().forEach(item => {
+                if (!item.isEmpty()) {
+                    allSlotsList.push({ item: item, slot: i })
+                }
+                i++
+            })
+            let randomObj = RandomGet(allSlotsList)
+            SpawnLootAtLocation(event.level, player.blockPosition(), [randomObj.item])
+            target.setItemSlot(EquimentSlotList[randomObj.slot], Item.empty)
+    }
+
     player.addItemCooldown(organItem, 20 * 10)
 }
 
