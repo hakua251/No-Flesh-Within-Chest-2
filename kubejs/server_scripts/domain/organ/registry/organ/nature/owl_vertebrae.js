@@ -15,11 +15,10 @@ function OwlVertebraeEntityTick(customData, event, organItem, organIndex, slotTy
     const level = event.level
     const entity = event.entity
     if (!level.isDay()) {
-        entity.potionEffects.add('minecraft:night_vision', 240)
+        entity.potionEffects.add('minecraft:night_vision', 400)
     }
 }
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:owl_vertebrae')
         .addOnlyStrategy('entity_tick', OwlVertebraeEntityTick)
 )
-
