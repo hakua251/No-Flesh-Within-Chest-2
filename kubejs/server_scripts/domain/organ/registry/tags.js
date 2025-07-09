@@ -4,7 +4,7 @@ const EventId2TagId = {
     'key_active': 'kubejs:key_active',
     'entity_do_damage': 'kubejs:entity_do_damage',
     'chest_cavity_update': 'kubejs:chest_cavity_update',
-    'item_eaten': 'kubejs:item_eaten',
+    'food_eaten': 'kubejs:food_eaten',
     'block_broken': 'kubejs:block_broken',
     'entity_be_hurt': 'kubejs:entity_be_hurt',
     'player_enchant': 'kubejs:player_enchant',

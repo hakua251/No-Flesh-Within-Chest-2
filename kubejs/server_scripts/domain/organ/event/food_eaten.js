@@ -1,5 +1,5 @@
 // priority: 999
-const OrganFoodEatenEvent = new OrganEventModel('item_eaten')
+const OrganFoodEatenEvent = new OrganEventModel('food_eaten')
 
 ItemEvents.foodEaten(event => {
     const entity = event.entity

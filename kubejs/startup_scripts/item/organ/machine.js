@@ -13,4 +13,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:telescopic_attack_arm').maxStackSize(1).texture('kubejs:item/organs/machine/telescopic_attack_arm').tag('kubejs:machine')
 
     event.create('kubejs:lava_life_cycle_system').maxStackSize(1).texture('kubejs:item/organs/machine/lava_life_cycle_system').tag('kubejs:machine')
+
+    event.create('kubejs:living_controller').maxStackSize(1).texture('kubejs:item/organs/machine/living_controller').tag('kubejs:machine')
 })

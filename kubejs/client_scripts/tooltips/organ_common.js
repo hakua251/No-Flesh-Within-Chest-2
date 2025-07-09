@@ -79,6 +79,14 @@ ItemEvents.tooltip(tooltip => {
                 text.add(lineNum++, customToolTips.mpmTypeTooltipsMap.get(mpmType))
             }
         }
+        if (customToolTips.isBindEntity) {
+            if (item.hasNBT() && item.getNbt().contains('bindEntity')) {
+                let itemNbt = item.getNbt()
+                let bindEntityNbt = itemNbt.getCompound('bindEntity')
+                let bindEntityName = bindEntityNbt.getString('name')
+                text.add(lineNum++, Text.translatable('tooltips.kubejs.bind_entity.1', bindEntityName))
+            }
+        }
     })
 
 

@@ -10,6 +10,7 @@ function MultiStateTooltip(itemId) {
     this.shiftTooltips = []
     this.altTooltips = []
     this.mpmTypeTooltipsMap = new Map()
+    this.isBindEntity = false
     this.shiftDescription = Text.translatable('tooltips.kubejs.multi_state.shift.1')
     this.shiftHoldingDescription = Text.translatable('tooltips.kubejs.multi_state.shift_holding.1')
     this.ctrlDescription = Text.translatable('tooltips.kubejs.multi_state.ctrl.1')
@@ -95,6 +96,12 @@ MultiStateTooltip.prototype = {
     setAltHoldingDescription: function (textComponent) {
         this.altHoldingDescription = textComponent
         return this
+    },
+    /**
+     * @param {boolean} isBindEntity
+     */
+    setIsBindEntity: function (isBindEntity) {
+        this.isBindEntity = isBindEntity
     },
     registry: function () {
         RegisteryMultiStateTooltip(this)

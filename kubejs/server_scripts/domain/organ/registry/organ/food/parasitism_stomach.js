@@ -10,7 +10,7 @@ RegistryOrgan('kubejs:parasitism_stomach')
  * @param {number} organIndex
  * @param {string} slotType
  */
-function ParasitismStomachItemEaten(customData, event, organItem, organIndex, slotType) {
+function ParasitismStomachFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     if (OrganItemCoolDown(player, organItem)) return
     const chestCavity = player.chestCavityInstance
@@ -75,7 +75,7 @@ function ParasitismStomachDoDamage(customData, event, organItem, organIndex, slo
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:parasitism_stomach')
-        .addOnlyStrategy('item_eaten', ParasitismStomachItemEaten)
+        .addOnlyStrategy('food_eaten', ParasitismStomachFoodEaten)
         .addOnlyStrategy('organ_take_off', ParasitismStomachTakeOff)
         .addOnlyStrategy('entity_do_damage', ParasitismStomachDoDamage)
 )

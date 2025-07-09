@@ -93,3 +93,9 @@ const $ClientboundSetEntityMotionPacket = Java.loadClass('net.minecraft.network.
 
 const $AxeItem = Java.loadClass('net.minecraft.world.item.AxeItem')
 const $SoundSource = Java.loadClass('net.minecraft.sounds.SoundSource')
+
+const $CreateRecipesType = Java.loadClass('com.simibubi.create.AllRecipeTypes')
+const $RecipeWrapper = Java.loadClass('net.minecraftforge.items.wrapper.RecipeWrapper')
+const $ProcessingInventory = Java.loadClass('com.simibubi.create.content.processing.recipe.ProcessingInventory')
+
+const $ItemHelper = Java.loadClass('com.simibubi.create.foundation.item.ItemHelper')

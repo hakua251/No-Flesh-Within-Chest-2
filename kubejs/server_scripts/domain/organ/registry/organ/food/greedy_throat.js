@@ -12,7 +12,7 @@ RegistryOrgan('kubejs:greedy_throat')
 * @param {number} organIndex
 * @param {string} slotType
 */
-function GreedyThroatItemEaten(customData, event, organItem, organIndex, slotType) {
+function GreedyThroatFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const chestCavity = player.chestCavityInstance
     const ccInv = chestCavity.inventory
@@ -49,5 +49,5 @@ function GreedyThroatItemEaten(customData, event, organItem, organIndex, slotTyp
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:greedy_throat')
-        .addOnlyStrategy('item_eaten', GreedyThroatItemEaten)
+        .addOnlyStrategy('food_eaten', GreedyThroatFoodEaten)
 )
