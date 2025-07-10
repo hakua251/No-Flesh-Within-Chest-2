@@ -85,7 +85,7 @@ ItemEvents.tooltip(tooltip => {
                 let itemNbt = item.getNbt()
                 let bindEntityNbt = itemNbt.getCompound('bindEntity')
                 let bindEntityName = bindEntityNbt.getString('name')
-                text.add(lineNum++, Text.translatable('tooltips.kubejs.bind_entity.1', bindEntityName))
+                text.add(lineNum++, Text.translatable('tooltips.kubejs.bind_entity.1', bindEntityName).darkGray())
             }
         }
     })

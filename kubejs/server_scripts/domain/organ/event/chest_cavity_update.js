@@ -26,11 +26,11 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
          */
         (customData, event) => {
             const entity = event.entity
-            customData.attackDamage.applyOnEntityByAttributeKey(entity, 'minecraft:generic.attack_damage', 'OrganAttackDamage')
-            customData.maxHealth.applyOnEntityByAttributeKey(entity, 'minecraft:generic.max_health', 'OrganMaxHealth')
-            customData.armor.applyOnEntityByAttributeKey(entity, 'minecraft:generic.armor', 'OrganArmor')
-            customData.entityReach.applyOnEntityByAttributeKey(entity, 'forge:entity_reach', 'OrganEntityReach')
-            customData.blockReach.applyOnEntityByAttributeKey(entity, 'forge:block_reach', 'OrganBlockReach')
+            customData.attackDamage.applyOnEntityByAttributeKey(entity, 'OrganAttackDamage')
+            customData.maxHealth.applyOnEntityByAttributeKey(entity, 'OrganMaxHealth')
+            customData.armor.applyOnEntityByAttributeKey(entity, 'OrganArmor')
+            customData.entityReach.applyOnEntityByAttributeKey(entity, 'OrganEntityReach')
+            customData.blockReach.applyOnEntityByAttributeKey(entity,  'OrganBlockReach')
         }
     )
 

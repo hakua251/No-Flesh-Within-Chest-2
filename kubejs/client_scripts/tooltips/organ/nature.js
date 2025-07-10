@@ -98,7 +98,6 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:minisheep_gland')
     .addAlt(Text.translatable('tooltips.kubejs.minisheep_gland.alt.1'))
 )
 
-
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:squirrel_tail')
     .addDefault(Text.translatable('tooltips.kubejs.squirrel_tail.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.squirrel_tail.alt.1'))
@@ -124,4 +123,14 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:turkey_gizzard')
     .addDefault(Text.translatable('tooltips.kubejs.turkey_gizzard.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.turkey_gizzard.alt.1', LuckHover))
     .addAlt(Text.translatable('tooltips.kubejs.turkey_gizzard.alt.2'))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:penguin_flipper')
+    .addDefault(Text.translatable('tooltips.kubejs.penguin_flipper.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.penguin_flipper.alt.1'))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:dog_tail')
+    .addDefault(Text.translatable('tooltips.kubejs.dog_tail.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.dog_tail.alt.1', PointAtHover))
 )

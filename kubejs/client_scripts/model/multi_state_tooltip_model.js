@@ -102,6 +102,7 @@ MultiStateTooltip.prototype = {
      */
     setIsBindEntity: function (isBindEntity) {
         this.isBindEntity = isBindEntity
+        return this
     },
     registry: function () {
         RegisteryMultiStateTooltip(this)

@@ -99,3 +99,11 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:lava_life_cycle_system')
     .addCtrl(MachinaryLubricantSlotType)
     .addCtrl(Text.translatable('tooltips.kubejs.lava_life_cycle_system.cltr.1', Text.gold('40')))
 )
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:living_controller')
+    .addDefault(Text.translatable('tooltips.kubejs.living_controller.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.living_controller.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.living_controller.alt.2', PointAtHover))
+    .setIsBindEntity(true)
+)
+
+

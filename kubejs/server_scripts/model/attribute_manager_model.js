@@ -6,7 +6,7 @@
 function AttributeManagerModel(attr) {
     this.attr = attr
     this.baseAddModifier = 0
-    this.baseMultiModifier = 0
+    this.baseMultiModifier = 1
     this.allAddModifier = 0
     this.allMultiModifier = 0
     this.isModified = false
@@ -56,14 +56,13 @@ AttributeManagerModel.prototype = {
     },
     /**
      * @param {Internal.LivingEntity} entity 
-     * @param {Internal.Attribute_} attributeKey
      * @param {string} identifier
      * @returns {AttributeManagerModel}
      */
-    applyOnEntityByAttributeKey: function (entity, attributeKey, identifier) {
-        if (!AttributeIdentifierMap[attributeKey]) return
-        let attributeUUIDModel = AttributeIdentifierMap[attributeKey]
-        let attributeInstance = entity.getAttribute(attributeKey)
+    applyOnEntityByAttributeKey: function (entity, identifier) {
+        if (!AttributeIdentifierMap[identifier]) return
+        let attributeUUIDModel = AttributeIdentifierMap[identifier]
+        let attributeInstance = entity.getAttribute(attributeUUIDModel.attributeKey)
         if (!attributeInstance) return
         attributeInstance.modifiers.forEach(modifier => {
             if (modifier.operation.equals($Operation.ADDITION) && modifier.id.equals(attributeUUIDModel.baseAdd)) {
