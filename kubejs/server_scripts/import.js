@@ -25,6 +25,8 @@ const $Containers = Java.loadClass('net.minecraft.world.Containers')
 const $ChorusFlowerBlock = Java.loadClass('net.minecraft.world.level.block.ChorusFlowerBlock')
 const $BambooStalkBlock = Java.loadClass('net.minecraft.world.level.block.BambooStalkBlock')
 const $BambooLeaves = Java.loadClass('net.minecraft.world.level.block.state.properties.BambooLeaves')
+const $RandomPos = Java.loadClass('net.minecraft.world.entity.ai.util.RandomPos')
+
 
 const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
 
@@ -101,6 +103,5 @@ const $ProcessingInventory = Java.loadClass('com.simibubi.create.content.process
 const $ItemHelper = Java.loadClass('com.simibubi.create.foundation.item.ItemHelper')
 
 const $AAALevel = Java.loadClass('mod.chloeprime.aaaparticles.api.common.AAALevel')
-
 
 const $OpticManager = Java.loadClass('team.creative.opticmanager.OpticManager')

@@ -4,9 +4,8 @@
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     let player = event.player
-    let level = event.level
-    $OpticManager.CONFIG.nightDuration = 20
-    
+    let server = event.server
+    // SetDayDuration(server, 12000)
     // let info = ParticleEmitterInfo.create(level, new ResourceLocation('kubejs:lightning')).position(new Vec3d(0, 56, 0)).scale(1, 1, 1)
     // console.log(info.position())
     // $AAALevel.addParticle(level, true, info)

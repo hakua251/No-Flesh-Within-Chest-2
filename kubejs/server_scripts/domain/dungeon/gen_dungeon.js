@@ -16,28 +16,30 @@ const SideSkylandStructureFileLocation = 'kubejs/data/kubejs/structures/side_sky
 
 const MainSkylandStructIdList = []
 const SideSkylandStructIdList = []
-// if (FilesJS.exists(MainSkylandStructureFileLocation)) {
-//     FilesJS.listFilesRecursively(MainSkylandStructureFileLocation).forEach(file => {
-//         if (file.endsWith('.nbt')) {
-//             let reg = new RegExp(/structures\\(\S+)\.nbt/)
-//             if (!reg.test(file)) return
-//             let res = 'kubejs:' + RegExp.$1
-//             res = res.replace('\\', '/')
-//             MainSkylandStructIdList.push(res)
-//         }
-//     })
-// }
-// if (FilesJS.exists(SideSkylandStructureFileLocation)) {
-//     FilesJS.listFilesRecursively(SideSkylandStructureFileLocation).forEach(file => {
-//         if (file.endsWith('.nbt')) {
-//             let reg = new RegExp(/structures\\(\S+)\.nbt/)
-//             if (!reg.test(file)) return
-//             let res = 'kubejs:' + RegExp.$1
-//             res = res.replace('\\', '/')
-//             SideSkylandStructIdList.push(res)
-//         }
-//     })
-// }
+
+if (FilesJS.exists(MainSkylandStructureFileLocation)) {
+    FilesJS.listFilesRecursively(MainSkylandStructureFileLocation).forEach(file => {
+        if (file.endsWith('.nbt')) {
+            let reg = new RegExp(/structures\\(\S+)\.nbt/)
+            if (!reg.test(file)) return
+            let res = 'kubejs:' + RegExp.$1
+            res = res.replace('\\', '/')
+            MainSkylandStructIdList.push(res)
+        }
+    })
+}
+
+if (FilesJS.exists(SideSkylandStructureFileLocation)) {
+    FilesJS.listFilesRecursively(SideSkylandStructureFileLocation).forEach(file => {
+        if (file.endsWith('.nbt')) {
+            let reg = new RegExp(/structures\\(\S+)\.nbt/)
+            if (!reg.test(file)) return
+            let res = 'kubejs:' + RegExp.$1
+            res = res.replace('\\', '/')
+            SideSkylandStructIdList.push(res)
+        }
+    })
+}
 
 /**
  * @param {Internal.Level} level
