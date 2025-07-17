@@ -20,3 +20,19 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:ender_guardian_spine')
     .addDefault(Text.translatable('tooltips.kubejs.ender_guardian_spine.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.ender_guardian_spine.alt.1', Text.gold('10')))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:embers_liver')
+    .addDefault(Text.translatable('tooltips.kubejs.embers_liver.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.embers_liver.alt.1', Text.gold('1')))
+    .addAlt(Text.translatable('tooltips.kubejs.embers_liver.alt.2', Text.gold('30')))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:netherite_muscle')
+    .addDefault(Text.translatable('tooltips.kubejs.netherite_muscle.default.1').gray())
+)
+
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:harbinger_lung')
+    .addDefault(Text.translatable('tooltips.kubejs.harbinger_lung.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.harbinger_lung.alt.1', Text.gold('1')))
+)

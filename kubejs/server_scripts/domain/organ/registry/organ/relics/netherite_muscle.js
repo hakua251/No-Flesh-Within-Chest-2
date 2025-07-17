@@ -1,22 +1,12 @@
 // priority: 500
 RegistryOrgan('kubejs:netherite_muscle')
-    .addScore('kubejs:extreme_fitness', -1)
-    .addScore('chestcavity:digestion', -1)
+    .addScore('kubejs:extreme_strength', 2)
+    .addScore('chestcavity:digestion', -0.5)
+    .addScore('chestcavity:nutrition', -0.5)
 
-// todo 没做完
-/**
-* @param {OrganEventCustomData} customData
-* @param {Internal.LivingHurtEvent} event 
-* @param {Internal.ItemStack} organItem
-* @param {number} organIndex
-* @param {string} slotType
-*/
-function NetheriteMuscleDoDamage(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    event.amount = event.amount + (entity.maxHealth - entity.health) * 2
-}
 
-RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:netherite_muscle')
-        .addStrategy('entity_do_damage', NetheriteMuscleDoDamage)
-)
+ServerEvents.recipes(event => {
+    event.recipes.create.crushing([Item.of('minecraft:netherite_scrap'), Item.of('minecraft:netherite_scrap').withChance(0.7), Item.of('minecraft:netherite_scrap').withChance(0.3)], 'kubejs:netherite_muscle').processingTime(400)
+
+    event.smelting('tconstruct:netherite_nugget', 'kubejs:netherite_muscle', '5.0')
+})

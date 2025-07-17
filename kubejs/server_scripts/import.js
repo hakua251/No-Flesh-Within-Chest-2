@@ -105,3 +105,5 @@ const $ItemHelper = Java.loadClass('com.simibubi.create.foundation.item.ItemHelp
 const $AAALevel = Java.loadClass('mod.chloeprime.aaaparticles.api.common.AAALevel')
 
 const $OpticManager = Java.loadClass('team.creative.opticmanager.OpticManager')
+
+const $PlayerProgressionData = Java.loadClass('com.araxer.araxers_bestiary.data.PlayerProgressionData')

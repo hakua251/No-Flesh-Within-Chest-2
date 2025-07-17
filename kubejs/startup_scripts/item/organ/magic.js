@@ -12,7 +12,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:harvest_star_gem').maxStackSize(1).texture('kubejs:item/organs/magic/harvest_star_gem').tag('kubejs:magic').tag('kubejs:gem')
     // 星宝石
     event.create('kubejs:heal_star_gem').maxStackSize(1).texture('kubejs:item/organs/magic/heal_star_gem').tag('kubejs:magic').tag('kubejs:gem')
-    
+
     // 灵笼
     event.create('kubejs:soul_cage').maxStackSize(1).maxDamage(50).texture('kubejs:item/organs/magic/soul_cage').tag('kubejs:magic')
 
