@@ -109,7 +109,7 @@
       "--launchTarget",
       "forgeclient",
       "--fml.forgeVersion",
-      "47.3.29",
+      "47.4.4",
       "--fml.mcVersion",
       "1.20.1",
       "--fml.forgeGroup",
@@ -181,10 +181,10 @@
   },
   "assetIndex": {
     "id": "5",
-    "sha1": "f209be2b22b646455c9cefa8bfda35bc2eef5281",
-    "size": 412176,
-    "totalSize": 629820499,
-    "url": "https://piston-meta.mojang.com/v1/packages/f209be2b22b646455c9cefa8bfda35bc2eef5281/5.json"
+    "sha1": "a09672c44a668bf4246abd876073511be016b181",
+    "size": 412373,
+    "totalSize": 633592726,
+    "url": "https://piston-meta.mojang.com/v1/packages/a09672c44a668bf4246abd876073511be016b181/5.json"
   },
   "assets": "5",
   "complianceLevel": 1,
@@ -210,7 +210,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/0b4dba049482496c507b2387a73a913230ebbd76/server.txt"
     }
   },
-  "id": "No Flesh Within Chest 1.20.1",
+  "id": "1.20.1-Forge_47.4.4",
   "javaVersion": {
     "component": "java-runtime-gamma",
     "majorVersion": 17
@@ -1842,24 +1842,24 @@
       }
     },
     {
-      "name": "net.minecraftforge:fmlloader:1.20.1-47.3.29",
+      "name": "net.minecraftforge:fmlloader:1.20.1-47.4.4",
       "downloads": {
         "artifact": {
-          "path": "net/minecraftforge/fmlloader/1.20.1-47.3.29/fmlloader-1.20.1-47.3.29.jar",
-          "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlloader/1.20.1-47.3.29/fmlloader-1.20.1-47.3.29.jar",
-          "sha1": "191ff629738a9b2cda6a66bea8f8ee0aed244664",
+          "path": "net/minecraftforge/fmlloader/1.20.1-47.4.4/fmlloader-1.20.1-47.4.4.jar",
+          "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlloader/1.20.1-47.4.4/fmlloader-1.20.1-47.4.4.jar",
+          "sha1": "8d7112d3f79555f4d6a801b53ab24c8a94bb24c0",
           "size": 267079
         }
       }
     },
     {
-      "name": "net.minecraftforge:fmlearlydisplay:1.20.1-47.3.29",
+      "name": "net.minecraftforge:fmlearlydisplay:1.20.1-47.4.4",
       "downloads": {
         "artifact": {
-          "path": "net/minecraftforge/fmlearlydisplay/1.20.1-47.3.29/fmlearlydisplay-1.20.1-47.3.29.jar",
-          "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlearlydisplay/1.20.1-47.3.29/fmlearlydisplay-1.20.1-47.3.29.jar",
-          "sha1": "1c976943966001f4af547882e9b3efe9aef3ec51",
-          "size": 170519
+          "path": "net/minecraftforge/fmlearlydisplay/1.20.1-47.4.4/fmlearlydisplay-1.20.1-47.4.4.jar",
+          "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlearlydisplay/1.20.1-47.4.4/fmlearlydisplay-1.20.1-47.4.4.jar",
+          "sha1": "2b323ecae7cc6ca7ccb466a63100790d59521dbc",
+          "size": 170518
         }
       }
     }

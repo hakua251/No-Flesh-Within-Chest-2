@@ -3,24 +3,24 @@
     "rarityTooltip": true,
     "hungerTooltip": true,
     "saturationTooltip": true,
-    "effectsTooltip": true,
-    "armorTooltip": true,
+    "effectsTooltip": "WITH_ICON",
+    "armorTooltip": "PLAYER",
     "bucketTooltip": true,
-    "spawnEggTooltip": false,
-    "enhancedDurabilityTooltip": true,
-    "durabilityBar": true,
+    "spawnEggTooltip": true,
+    "durabilityTooltip": "VANILLA_BACKGROUND",
     "containerTooltip": true,
     "paintingTooltip": true,
     "bannerTooltip": true,
     "mapTooltip": true,
     "itemGroupTooltip": false,
     "debugInfoTooltip": false,
-    "enchantmentTooltip": true,
-    "": {},
-    "usePlayer": false,
+    "enchantmentTooltip": "SHIFT_DETAIL"
+  },
+  "misc": {
     "scaleFactor": 1.0,
     "useNameColor": true,
     "backgroundColor": -267386864,
-    "effectsIcon": true
+    "itemBorderColor": -5592406,
+    "mouseScrollTooltip": true
   }
 }
