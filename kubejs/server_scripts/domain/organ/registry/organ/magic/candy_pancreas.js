@@ -1,6 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:candy_pancreas')
-    .addScore('chestcavity:endurance', 1)
+    .addScore('chestcavity:endurance', 2)
     .addScore('chestcavity:defense', -1)
 
 /**

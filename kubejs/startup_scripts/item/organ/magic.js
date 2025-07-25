@@ -21,4 +21,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:coral_armor').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/coral_armor')
     event.create('kubejs:deepling_ectoplasm').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/deepling_ectoplasm')
     event.create('kubejs:amethyst_core').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/amethyst_core')
+    event.create('kubejs:koboleton_spine').maxStackSize(1).tag('kubejs:magic').tag('kubejs:spine').texture('kubejs:item/organs/magic/koboleton_spine')
+    event.create('kubejs:koboleton_rib').maxStackSize(1).tag('kubejs:magic').tag('kubejs:rib').texture('kubejs:item/organs/magic/koboleton_rib')
+    event.create('kubejs:koboleton_coccyx').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/koboleton_coccyx')
 })

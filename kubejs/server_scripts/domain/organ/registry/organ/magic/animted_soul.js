@@ -32,7 +32,6 @@ function AnimtedSoulKeyActive(customData, event, organItem, organIndex, slotType
         headSummon.setAggressive(true)
         headSummon.setTarget(target)
         headSummon.setOwnerID(playerUuid)
-        
         level.addFreshEntity(headSummon)
     })
     player.addItemCooldown(organItem, 20 * 30)

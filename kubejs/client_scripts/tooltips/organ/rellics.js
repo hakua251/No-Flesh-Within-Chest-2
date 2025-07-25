@@ -46,3 +46,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:remnant_heart')
     .addAlt(Text.translatable('tooltips.kubejs.remnant_heart.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.remnant_heart.alt.2'))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:maledictus_wing')
+    .addDefault(Text.translatable('tooltips.kubejs.maledictus_wing.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.maledictus_wing.alt.1'))
+)

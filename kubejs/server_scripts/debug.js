@@ -3,11 +3,24 @@
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
-    let player = event.player
-    let level = event.level
-    let itemList = GetItemEntityWithinRadius(level, player.blockPosition(), 5)
+    const player = event.player
+    const level = event.level
+    const server = event.server
+    let rad = JavaMath.toRadians(player.getYHeadRot() + 90)
+    let dx = JavaMath.cos(rad)
+    let dy = JavaMath.sin(rad)
 
-    console.log(itemList)
+    let nowMove = player.getDeltaMovement().add(dx * 10, 0.5, dy * 10)
+    player.setDeltaMovement(nowMove)
+    player.connection.send(new $ClientboundSetEntityMotionPacket(player))
+    let timer = 0
+    server.scheduleRepeatingInTicks(2, (ctx) => {
+        level.spawnParticles($ParticleTypes.SONIC_BOOM, false, player.x, player.y, player.z, 0, 0, 0, 1, 0)
+        if (timer > 5) ctx.clear()
+        timer++
+    })
+
+
     // let blockSummon = new $AnimBlockSummon(level, Blocks.SAND.defaultBlockState())
     // blockSummon.setColor(0X00c9b5)
     // blockSummon.setPos(player.blockPosition())
