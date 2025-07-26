@@ -143,3 +143,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:cassowary_muscle')
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:flamingo_beak')
     .addDefault(Text.translatable('tooltips.kubejs.flamingo_beak.default.1').gray())
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:urchinkin_stinger')
+    .addDefault(Text.translatable('tooltips.kubejs.urchinkin_stinger.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.urchinkin_stinger.alt.1', Text.gold('10')))
+)

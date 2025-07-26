@@ -71,4 +71,6 @@ const OrganTagMap = {
     'kubejs:entity_death_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_death_only')),
     'kubejs:entity_death': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_death')),
     'kubejs:plants': Text.green(Text.translatable('tooltips.kubejs.tag.kubejs:plants')),
+    'kubejs:organ_add_status_effect_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:organ_add_status_effect_only')),
+    'kubejs:organ_add_status_effect': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:organ_add_status_effect')),
 }

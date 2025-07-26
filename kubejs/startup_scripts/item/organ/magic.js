@@ -24,4 +24,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:koboleton_spine').maxStackSize(1).tag('kubejs:magic').tag('kubejs:spine').texture('kubejs:item/organs/magic/koboleton_spine')
     event.create('kubejs:koboleton_rib').maxStackSize(1).tag('kubejs:magic').tag('kubejs:rib').texture('kubejs:item/organs/magic/koboleton_rib')
     event.create('kubejs:koboleton_coccyx').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/koboleton_coccyx')
+    event.create('kubejs:aptrgangr_soul').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/aptrgangr_soul')
+    event.create('kubejs:draugr_skull').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/draugr_skull')
+     
 })

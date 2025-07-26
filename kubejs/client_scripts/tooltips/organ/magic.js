@@ -26,7 +26,7 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:coral_armor')
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:deepling_star_gem')
     .addDefault(Text.translatable('tooltips.kubejs.deepling_star_gem.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.deepling_star_gem.alt.1', 20, FrozenHover))
+    .addAlt(Text.translatable('tooltips.kubejs.deepling_star_gem.alt.1', Text.gold('20'), FrozenHover))
 )
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:animted_soul')
@@ -52,4 +52,14 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:koboleton_rib')
 )
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:koboleton_coccyx')
     .addDefault(Text.translatable('tooltips.kubejs.koboleton_coccyx.default.1').gray())
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:aptrgangr_soul')
+    .addDefault(Text.translatable('tooltips.kubejs.aptrgangr_soul.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.aptrgangr_soul.alt.1', SoildCoreHover))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:draugr_skull')
+    .addDefault(Text.translatable('tooltips.kubejs.draugr_skull.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.draugr_skull.alt.1', FrozenHover, Text.gold('10')))
 )

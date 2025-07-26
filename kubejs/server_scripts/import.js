@@ -26,7 +26,7 @@ const $ChorusFlowerBlock = Java.loadClass('net.minecraft.world.level.block.Choru
 const $BambooStalkBlock = Java.loadClass('net.minecraft.world.level.block.BambooStalkBlock')
 const $BambooLeaves = Java.loadClass('net.minecraft.world.level.block.state.properties.BambooLeaves')
 const $RandomPos = Java.loadClass('net.minecraft.world.entity.ai.util.RandomPos')
-
+const $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance')
 
 const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
 
