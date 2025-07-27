@@ -1,0 +1,9 @@
+{
+	"powers": [
+	],
+	"icon": {
+		"item": "create:cogwheel"
+	},
+	"order": 1,
+	"impact": 1
+}

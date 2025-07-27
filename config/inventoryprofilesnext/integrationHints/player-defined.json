@@ -4,5 +4,11 @@
     },
     "net.tigereye.chestcavity.ui.ChestCavityItemScreen": {
         "ignore": true
+    },
+    "io.github.mortuusars.exposure.gui.screen.album.AlbumScreen": {
+        "ignore": true
+    },
+    "io.github.mortuusars.exposure.menu.AlbumMenu": {
+        "ignore": true
     }
 }

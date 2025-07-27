@@ -25,6 +25,7 @@ function UrchinkinStingerEntityBeHurt(customData, event, organItem, organIndex, 
     if (harmEffectList.length <= 0) return
     /**@type {Internal.MobEffectInstance} */
     let targetEffect = RandomGet(harmEffectList)
+    if (targetEffect.effect.isInstantenous()) return
     source.potionEffects.add(targetEffect.getEffect(), 10 * 20, targetEffect.getAmplifier())
 }
 

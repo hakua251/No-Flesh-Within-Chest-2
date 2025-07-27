@@ -8,7 +8,6 @@ NetworkEvents.dataReceived('sync_origin_unlock_status', (event) => {
     Object.keys(data).forEach(key => {
         OriginUnlockStatus[key] = data.getBoolean(key)
     })
-    
 })
 
 global.OriginEntityConditionClientEvent = (event) => {

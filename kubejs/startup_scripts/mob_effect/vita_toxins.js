@@ -24,7 +24,7 @@ StartupEvents.registry('mob_effect', event => {
                     vitaToxinsDamage = sourceEntity.getMaxHealth() * vitaToxinsCoe
                     break
             }
-            entity.attack(entity.damageSources().magic(), vitaToxinsDamage * (lvl * 0.5 + 1))
+            entity.attack(entity.damageSources().magic(), vitaToxinsDamage * (lvl * 0.25 + 0.5))
         })
         .color(Color.DARK_RED)
 })

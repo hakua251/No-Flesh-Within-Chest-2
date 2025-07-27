@@ -1,0 +1,10 @@
+{
+    "type": "origins:starting_equipment",
+    "stacks": [
+        {
+            "item": "exposure:camera",
+            "amount": 1,
+            "slot": 1
+        }
+    ]
+}

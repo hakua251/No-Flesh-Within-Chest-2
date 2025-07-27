@@ -9,6 +9,7 @@ const $Rotation = Java.loadClass('net.minecraft.world.level.block.Rotation')
 const $ChunkStatus = Java.loadClass('net.minecraft.world.level.chunk.ChunkStatus')
 const $PalettedContainer = Java.loadClass('net.minecraft.world.level.chunk.PalettedContainer')
 const $StructureMode = Java.loadClass('net.minecraft.world.level.block.state.properties.StructureMode')
+const $MobEffects = Java.loadClass('net.minecraft.world.effect.MobEffects')
 const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
 const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
 const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
@@ -27,7 +28,7 @@ const $BambooStalkBlock = Java.loadClass('net.minecraft.world.level.block.Bamboo
 const $BambooLeaves = Java.loadClass('net.minecraft.world.level.block.state.properties.BambooLeaves')
 const $RandomPos = Java.loadClass('net.minecraft.world.entity.ai.util.RandomPos')
 const $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance')
-
+const $LocationPredicate = Java.loadClass('net.minecraft.advancements.critereon.LocationPredicate')
 const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
 
 const $DamageTypes = Java.loadClass('net.minecraft.world.damagesource.DamageTypes')
@@ -110,3 +111,4 @@ const $LivingDamageEvent = Java.loadClass('net.minecraftforge.event.entity.livin
 const $EffectResolveEventPost = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Post')
 const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Pre')
 const $ShieldBlockEvent = Java.loadClass('net.minecraftforge.event.entity.living.ShieldBlockEvent')
+const $DrunkEffect = Java.loadClass('net.satisfy.brewery.core.effect.DrunkEffect')

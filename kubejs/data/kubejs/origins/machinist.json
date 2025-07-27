@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"kubejs:machinist_fragile_armor",
+		"kubejs:machinist_starting_equipment",
+		"kubejs:handmake_cogwheel",
+		"kubejs:easy_craft_andesite"
+	],
+	"icon": {
+		"item": "create:cogwheel"
+	},
+	"order": 1,
+	"impact": 1
+}

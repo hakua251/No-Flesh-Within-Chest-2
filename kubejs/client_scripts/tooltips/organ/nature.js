@@ -153,3 +153,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:giant_claw')
     .addDefault(Text.translatable('tooltips.kubejs.giant_claw.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.giant_claw.alt.1', Text.gold('20%'), LuckHover, Text.gold('5')))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:cindaria_umbrella')
+    .addDefault(Text.translatable('tooltips.kubejs.cindaria_umbrella.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.cindaria_umbrella.alt.1', Text.gold('10')))
+)

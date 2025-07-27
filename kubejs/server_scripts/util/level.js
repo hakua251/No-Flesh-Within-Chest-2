@@ -62,3 +62,25 @@ function GetChunkStructureResourceKeys(level, chunkPos) {
     })
     return result
 }
+
+/**
+ * 检查目标位置是否在任何结构中
+ * @param {Internal.ServerLevel} level 
+ * @param {BlockPos} targetPos 
+ * @returns
+ */
+function IsInAnySturcture(level, targetPos) {
+    const x = targetPos.getX()
+    const y = targetPos.getY()
+    const z = targetPos.getZ()
+
+    let chunkPos = new $ChunkPos(x >> 4, z >> 4)
+    let structList = level.structureManager().startsForStructure(chunkPos, _ => true)
+    for (let pStruct of structList) {
+        let key = $ResourceKey.create($Registries.STRUCTURE, level.registryAccess().registryOrThrow($Registries.STRUCTURE).getKey(pStruct.getStructure()))
+        if ($LocationPredicate.inStructure(key).matches(level, x, y, z)) {
+            return key
+        }
+    }
+    return null
+}

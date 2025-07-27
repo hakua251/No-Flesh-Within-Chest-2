@@ -1,11 +1,9 @@
 // priority: 1000
+// 工具（具有独立功能的物品）
 StartupEvents.registry('item', event => {
-    event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
-    event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
-    event.create('full_mark').texture('kubejs:item/full_mark')
-
-    event.create('kubejs:chicken_flavor_powder').texture('kubejs:item/chicken_flavor_powder').maxStackSize(64)
-
+    event.create('dungeon_key').maxStackSize(1).texture('kubejs:item/tool/dungeon_key')
+    event.create('chestcavity_injection').maxStackSize(1).texture('kubejs:item/tool/chestcavity_injection')
+    event.create('plastic_stem_cells').maxStackSize(1).texture('kubejs:item/tool/plastic_stem_cells')
 
     event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {
         food.hunger(1).saturation(1).alwaysEdible().eaten(event => {

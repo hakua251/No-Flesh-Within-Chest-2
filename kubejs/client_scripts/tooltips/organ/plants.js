@@ -58,3 +58,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:rootling_ectoplasm')
     .addAlt(Text.translatable('tooltips.kubejs.rootling_ectoplasm.alt.1', Text.gold('9 * 9')))
     .addAlt(Text.translatable('tooltips.kubejs.rootling_ectoplasm.alt.2', Text.gold('5')))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:foliaath_stem')
+    .addDefault(Text.translatable('tooltips.kubejs.foliaath_stem.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.foliaath_stem.alt.1', Text.gold('3')))
+)

@@ -55,7 +55,7 @@ function TwistingWeepingIntestineDoDamage(customData, event, organItem, organInd
     if (!target.hasEffect('kubejs:putrid_toxins')) return
     let effect = target.getEffect('kubejs:putrid_toxins')
 
-    let damage = (effect.getAmplifier() + 1) * GetPutridToxinsDamage(target) * effect.getDuration() / 40
+    let damage = (effect.getAmplifier() * 0.25 + 0.25) * GetPutridToxinsDamage(target) * effect.getDuration() / 40
     event.amount = damage + event.amount
     SetCustomDataMap(chestCavity, 'twistingIntestineAttack', true)
     SetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', false)

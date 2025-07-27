@@ -99,3 +99,16 @@
 		"origins:fragile" = true
 		"origins:phantomize_overlay" = true
 
+	[origins."kubejs:machinist"]
+		enabled = true
+		"kubejs:handmake_cogwheel" = true
+		"kubejs:easy_craft_andesite" = true
+		"kubejs:born_with_mechanical_wolf" = true
+		"kubejs:machinist_fragile_armor" = true
+		"kubejs:machinist_starting_equipment" = true
+
+	[origins."kubejs:photographer"]
+		enabled = true
+		"kubejs:machinist_fragile_armor" = true
+		"kubejs:born_with_mechanical_wolf" = true
+
