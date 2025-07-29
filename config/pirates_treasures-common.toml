@@ -1,0 +1,3 @@
+#Set this to false to disable the trade of coins instead of emeralds.
+villagerCoinsTrade = true
+
