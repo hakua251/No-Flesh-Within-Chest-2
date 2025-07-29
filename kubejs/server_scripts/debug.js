@@ -35,7 +35,6 @@
 //     item.shrink(1)
 // })
 
-
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
@@ -43,7 +42,6 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-
 
     // let blockSummon = new $AnimBlockSummon(level, Blocks.SAND.defaultBlockState())
     // blockSummon.setColor(0X00c9b5)

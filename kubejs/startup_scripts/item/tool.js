@@ -1,9 +1,8 @@
 // priority: 1000
 // 工具（具有独立功能的物品）
 StartupEvents.registry('item', event => {
-    event.create('dungeon_key').maxStackSize(1).texture('kubejs:item/tool/dungeon_key')
-    event.create('chestcavity_injection').maxStackSize(1).texture('kubejs:item/tool/chestcavity_injection')
-    event.create('plastic_stem_cells').maxStackSize(1).texture('kubejs:item/tool/plastic_stem_cells')
+    event.create('dungeon_key').maxStackSize(1).texture('kubejs:item/tools/dungeon_key')
+    event.create('plastic_stem_cells').maxStackSize(1).texture('kubejs:item/tools/plastic_stem_cells')
     event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {
         food.hunger(1).saturation(1).alwaysEdible().eaten(event => {
             if (!event.player) return
@@ -14,14 +13,11 @@ StartupEvents.registry('item', event => {
         })
     }).tag('supplementaries:cookies').maxStackSize(64)
 
-
-    event.create('friend_to_the_end').texture('kubejs:item/friend_to_the_end').maxStackSize(1)
+    event.create('friend_to_the_end').texture('kubejs:item/tools/friend_to_the_end').maxStackSize(1)
         .tag('curios:ring')
         .useAnimation('bow')
         .useDuration(itemStack => 40)
-        .use((level, player, hand) => {
-            return true
-        })
+        .use((level, player, hand) => true)
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
             if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
@@ -41,13 +37,11 @@ StartupEvents.registry('item', event => {
             return itemstack
         })
 
-    event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
+    event.create('blood_extractor').texture('kubejs:item/tools/blood_extractor').maxStackSize(1)
 
-    event.create('glass_vial').texture('kubejs:item/glass_vial').maxStackSize(1)
+    event.create('glass_vial').texture('kubejs:item/tools/glass_vial').maxStackSize(1)
         .useAnimation('bow')
-        .use((level, player, hand) => {
-            return true
-        })
+        .use((level, player, hand) => true)
         .useDuration(itemStack => 20)
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
