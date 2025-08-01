@@ -191,7 +191,6 @@
     "tooltips.kubejs.tag.kubejs:player_tick_only": "唯一玩家刻",
     "tooltips.kubejs.tag.kubejs:player_tick": "玩家刻",
     "tooltips.kubejs.tag.kubejs:key_active": "按键激活",
-    "tooltips.kubejs.tag.kubejs:key_active_only": "唯一按键激活",
     "tooltips.kubejs.tag.kubejs:entity_do_damage_only": "唯一伤害",
     "tooltips.kubejs.tag.kubejs:entity_do_damage": "伤害",
     "tooltips.kubejs.tag.kubejs:chest_cavity_update": "胸腔更新",

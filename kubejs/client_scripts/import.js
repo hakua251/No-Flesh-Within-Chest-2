@@ -3,7 +3,7 @@ const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavi
 const $ClientMagicData = Java.loadClass('io.redspace.ironsspellbooks.player.ClientMagicData')
 const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')
 const $SpellSelectionEvent = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent')
-
+const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $KeyMapping = Java.loadClass("net.minecraft.client.KeyMapping")
 const $GLFWKey = Java.loadClass("org.lwjgl.glfw.GLFW")
 const $KeyMappingRegistry = Java.loadClass("dev.architectury.registry.client.keymappings.KeyMappingRegistry")
@@ -20,3 +20,5 @@ const $WaypointType = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.Waypoint
 const $ScreenshakeInstance = Java.loadClass('team.lodestar.lodestone.systems.screenshake.ScreenshakeInstance')
 const $ScreenshakeHandler = Java.loadClass('team.lodestar.lodestone.handlers.ScreenshakeHandler')
 const $Easing = Java.loadClass('team.lodestar.lodestone.systems.easing.Easing')
+
+const $SkillWheelOverlay = Java.loadClass('net.tigereye.chestcavity.ui.SkillWheelOverlay')

@@ -1,7 +1,6 @@
 // priority: 800
 const EventId2TagId = {
     'item_right_clicked': 'kubejs:item_right_clicked',
-    'key_active': 'kubejs:key_active',
     'entity_do_damage': 'kubejs:entity_do_damage',
     'chest_cavity_update': 'kubejs:chest_cavity_update',
     'food_eaten': 'kubejs:food_eaten',
@@ -26,6 +25,10 @@ const EventId2TagId = {
 ServerEvents.tags('item', event => {
     Object.keys(OrganStrategyMap).forEach(itemId => {
         Object.keys(OrganStrategyMap[itemId].strategyMap).forEach(eventId => {
+            if (eventId == 'key_active') {
+                event.add('kubejs:key_active', itemId)
+                return
+            }
             if (!EventId2TagId[eventId]) return
             let organStrategy = OrganStrategyMap[itemId].strategyMap[eventId]
             if (organStrategy['default'].length > 0) {

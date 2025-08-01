@@ -56,6 +56,13 @@ OrganTakeOffStrategyModel.prototype = {
 
             let itemId = oldItem.id
             let strategyModel = OrganStrategyMap[itemId]
+            if (entity.isPlayer() && oldItem.hasTag('kubejs:key_active')) {
+                let data = new $CompoundTag()
+                data.putString('type', 'delete')
+                data.putInt('slot', i)
+                data.putString('itemId', itemId)
+                EnqueueSendData(entity, 'update_organ_skill_wheel_item', data)
+            }
             if (strategyModel) {
                 Object.keys(strategyModel.strategyMap).forEach(eventId => {
                     ccInstance.removeListener(eventId, i)

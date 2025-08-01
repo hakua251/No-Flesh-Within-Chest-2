@@ -1,13 +1,13 @@
 {
   "common": {
     "rarityTooltip": true,
-    "hungerTooltip": true,
-    "saturationTooltip": true,
+    "hungerTooltip": false,
+    "saturationTooltip": false,
     "effectsTooltip": "WITH_ICON",
     "armorTooltip": "PLAYER",
     "bucketTooltip": true,
     "spawnEggTooltip": true,
-    "durabilityTooltip": "VANILLA_BACKGROUND",
+    "durabilityTooltip": "VANILLA",
     "containerTooltip": true,
     "paintingTooltip": true,
     "bannerTooltip": true,

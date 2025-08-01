@@ -24,11 +24,11 @@ OrganKeyActiveEventModel.prototype = {
     },
     /**
      * @param {Internal.Entity} entity
-     * @param {Internal.ItemStack} item
+     * @param {string} itemId
      * @param {OrganEventCustomData} customData
      * @param {any[]} args 
      */
-    run: function (entity, item, customData, args) {
+    run: function (entity, itemId, customData, args) {
         let optional = $ChestCavityEntity.of(entity)
 
         if (!optional.isPresent()) return
@@ -39,7 +39,6 @@ OrganKeyActiveEventModel.prototype = {
         let ccEntity = optional.get()
         let ccInstance = ccEntity.getChestCavityInstance()
         let ccInv = ccInstance.inventory
-        let itemId = String(item.id)
         const onlyMap = new Map()
         let slotMap = ccInstance.getListenerMap(this.eventId)
         if (slotMap && slotMap.size() > 0) {
