@@ -29,4 +29,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:draugr_skull').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/draugr_skull')
     event.create('kubejs:hippocamtus_scale').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/hippocamtus_scale')
     event.create('kubejs:dream_hippocampus').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/dream_hippocampus')
+    event.create('kubejs:calamity_bone_spur').maxStackSize(1).tag('kubejs:magic').tag('kubejs:rib').texture('kubejs:item/organs/magic/calamity_bone_spur')
+    event.create('kubejs:potion_skin').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/potion_skin')
 })

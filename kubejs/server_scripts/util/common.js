@@ -19,7 +19,7 @@ function RandomGet(list) {
  * @returns {number}
  */
 function RoundFix(value, n) {
-    return Math.round(value * Math.pow(10, n)) / Math.pow(10, n);
+    return Math.round(value * Math.pow(10, n)) / Math.pow(10, n)
 }
 
 
@@ -30,7 +30,16 @@ function RoundFix(value, n) {
  * @returns {number}
  */
 function FloorFix(value, n) {
-    return Math.floor(value * Math.pow(10, n)) / Math.pow(10, n);
+    return Math.floor(value * Math.pow(10, n)) / Math.pow(10, n)
+}
+
+/**
+ * 向下取整并且保证大于0
+ * @param {number} value 
+ * @returns {number}
+ */
+function FloorAboveZero(value) {
+    return Math.max(Math.floor(value), 0)
 }
 
 /**
@@ -41,16 +50,16 @@ function FloorFix(value, n) {
 function Shuffle(arr) {
     var length = arr.length,
         temp,
-        random;
+        random
     while (0 != length) {
         random = Math.floor(Math.random() * length)
-        length--;
+        length--
         // swap
-        temp = arr[length];
-        arr[length] = arr[random];
-        arr[random] = temp;
+        temp = arr[length]
+        arr[length] = arr[random]
+        arr[random] = temp
     }
-    return arr;
+    return arr
 }
 
 /**

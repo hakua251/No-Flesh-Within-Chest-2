@@ -217,6 +217,7 @@ function BurningHeartEntityTickDefer(customData, event, organItem, organIndex, s
             }
         }
         replaceItem.setDamageValue(damageValue)
+        RemoveOrganEffect(chestCavity, 'kubejs:burning_heart')
         SetChestCavityOrgan(customData, event.chestCavity, replaceItem, organIndex, slotType, false)
 
         if (entity instanceof $ServerPlayer) {
