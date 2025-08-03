@@ -26,13 +26,13 @@
 	#Whether or not spells such as Fireball or Fire Breath should destroy terrain or create fire. Default: false
 	spellGriefing = false
 	#Whether or not the wandering trader can have magic related trades, such as ink or scrolls. Default: true
-	additionalWanderingTraderTrades = true
+	additionalWanderingTraderTrades = false
 	#Whether casting spells should be disabled in adventure mode. Default: false
 	disableAdventureModeCasting = false
 
 ["Upgrade Overrides"]
 	#Whether merging scrolls with ink to upgrade them in the Arcane Anvil is enabled.
-	scrollMerging = true
+	scrollMerging = false
 	#Use these lists to change what items can interact with the Arcane Anvil's upgrade system. This can also be done via datapack.
 	#Upgrade Whitelist. Use an item's id to allow it to be upgraded, ex: "minecraft:iron_sword"
 	upgradeWhitelist = []

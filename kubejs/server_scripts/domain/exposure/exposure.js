@@ -25,7 +25,7 @@ ExposureEvents.modifyFrameData(event => {
     let ray = player.rayTrace(32)
     if (!ray.hit) return
     let hitPos = ConvertVec3d2BlockPos(ray.hit)
-    let key = IsInAnySturcture(level, hitPos)
+    let key = GetPosInSturcture(level, hitPos)
     if (!key) return
     let frameData = event.getFrame()
     frameData.putString('aimStructure', key.location().toString())

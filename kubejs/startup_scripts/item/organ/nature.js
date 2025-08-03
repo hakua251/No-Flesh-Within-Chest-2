@@ -31,4 +31,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:giant_claw').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/giant_claw')
     event.create('kubejs:cindaria_umbrella').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/cindaria_umbrella')
     event.create('kubejs:wilden_heart').maxStackSize(1).tag('kubejs:heart').tag('kubejs:nature').texture('kubejs:item/organs/nature/wilden_heart')
+    event.create('kubejs:leech_mouthpart').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/leech_mouthpart')
+    event.create('kubejs:rat_ear').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/rat_ear')
 })

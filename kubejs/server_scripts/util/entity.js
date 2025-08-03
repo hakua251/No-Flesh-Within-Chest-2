@@ -258,6 +258,31 @@ function GetItemEntityWithinRadius(level, pos, radius) {
     return entityList
 }
 
+/**
+ * 获取最近的实体
+ * @param {Internal.Level} level 
+ * @param {BlockPos} pos 
+ * @param {Number} radius 
+ * @param {function(Internal.Level, Internal.Entity):boolean} entityTester 
+ * @returns {Internal.Entity}
+ */
+function GetNearestEntity(level, pos, radius, entityTester) {
+    let area = AABB.of(pos.x - radius, pos.y - radius, pos.z - radius, pos.x + radius, pos.y + radius, pos.z + radius)
+    let entityAABBList = level.getEntitiesWithin(area)
+    if (entityAABBList.size() <= 0) return null
+    let result = null
+    let minDist = Number.MAX_VALUE
+    entityAABBList.forEach(entity => {
+        if (!entity.position()) return
+        if (!entityTester(level, entity)) return
+        let dist = entity.position().distanceTo(pos)
+        if (dist <= radius && dist < minDist) {
+            result = entity
+            minDist = dist
+        }
+    })
+    return result
+}
 
 /**
  * @param {Internal.Level} level 

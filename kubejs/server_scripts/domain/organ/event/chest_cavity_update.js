@@ -36,7 +36,6 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
 
 ChestCavityEvents.evaluateChestCavity(event => {
     const entity = event.entity
-    console.log(entity.type)
     let customData = {}
     if (!entity.isAlive()) return
     // 器官摘下 - 通常用于归位操作

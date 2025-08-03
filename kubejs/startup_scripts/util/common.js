@@ -164,3 +164,12 @@ function UnionArry(arr1, arr2) {
 function Int2Integer(num) {
     return $Integer.valueOf(JavaMath.toIntExact(num))
 }
+
+
+/**
+ * @param {BlockPos} blockPos 
+ * @returns {Vec3d}
+ */
+function ConvertBlockPos2Vec3d(blockPos) {
+    return new Vec3d(blockPos.x, blockPos.y, blockPos.z)
+}

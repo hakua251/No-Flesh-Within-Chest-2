@@ -67,9 +67,9 @@ function GetChunkStructureResourceKeys(level, chunkPos) {
  * 检查目标位置是否在任何结构中
  * @param {Internal.ServerLevel} level 
  * @param {BlockPos} targetPos 
- * @returns
+ * @returns {Internal.ResourceKey}
  */
-function IsInAnySturcture(level, targetPos) {
+function GetPosInSturcture(level, targetPos) {
     const x = targetPos.getX()
     const y = targetPos.getY()
     const z = targetPos.getZ()

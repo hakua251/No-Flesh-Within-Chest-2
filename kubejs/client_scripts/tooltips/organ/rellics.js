@@ -61,6 +61,6 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:dying_heart')
     .addDefault(Text.translatable('tooltips.kubejs.dying_heart.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.dying_heart.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.dying_heart.alt.2'))
-    .addAlt(Text.translatable('tooltips.kubejs.dying_heart.alt.3', MagicOverloadHover))
+    .addAlt(Text.translatable('tooltips.kubejs.dying_heart.alt.3', Text.gold('1'), MagicOverloadHover, Text.gold('1')))
 )
 

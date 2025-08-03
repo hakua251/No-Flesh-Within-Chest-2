@@ -14,7 +14,7 @@ ServerEvents.tags('item', event => {
     event.add('exposure:lenses', ['kubejs:exorcism_lens'])
     event.add('exposure:filters', [])
 
-    event.add('tconplanner:creative_material', ['kubejs:exorcism_lens'])
+    event.add('tconplanner:creative_material', ['kubejs:genesis_tinker_blueprint'])
 })
 
 ServerEvents.tags('entity_type', event => {

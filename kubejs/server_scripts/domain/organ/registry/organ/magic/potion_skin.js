@@ -29,7 +29,6 @@ function CalamityBoneSpurTakeOff(customData, event, organItem, organIndex, slotT
     const { entity, chestCavity } = event
     if (!entity.isPlayer()) return
     RemoveSpellSelectionBySpellId(customData, chestCavity, 'irons_spellbooks:oakskin')
-    console.log('test')
 }
 
 RegistryOrganStrategy(

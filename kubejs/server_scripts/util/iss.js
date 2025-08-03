@@ -50,12 +50,17 @@ function UpdateClientISSSpellDataEvent(customData, entity) {
 function InitClientISSSpellData(entity) {
     const chestCavity = entity.chestCavityInstance
     const entityDataMap = chestCavity.customDataMap
-    if (!entityDataMap || !entityDataMap.containsKey('organ_spell_selection')) return
+    let syncSpellData = new $CompoundTag()
+    let spellNBTList = new $ListTag()
+    if (!entityDataMap || !entityDataMap.containsKey('organ_spell_selection')) {
+        syncSpellData.put('spellList', spellNBTList)
+        syncSpellData.putString('mode', 'refresh')
+        entity.sendData('iss_spell_selection_data', syncSpellData)
+        return
+    }
     /**@type {Map<string, SpellData>} */
     const organSpellSelection = entityDataMap.get('organ_spell_selection')
     entityDataMap.put('old_organ_spell_selection', new Map(organSpellSelection))
-    let syncSpellData = new $CompoundTag()
-    let spellNBTList = new $ListTag()
     organSpellSelection.forEach(/** @param {SpellData} spellData */ spellData => {
         let spellNBT = new $CompoundTag()
         spellNBT.putString('spellId', spellData.getSpell().getSpellId())

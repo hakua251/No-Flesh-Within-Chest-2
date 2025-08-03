@@ -67,7 +67,6 @@ OrganTakeOnStrategyModel.prototype = {
             }
             if (strategyModel) {
                 Object.keys(strategyModel.strategyMap).forEach(eventId => {
-                    console.log(itemId, eventId)
                     ccInstance.addListener(eventId, i)
                 })
                 let organEventStrategy = strategyModel.strategyMap[this.eventId]
