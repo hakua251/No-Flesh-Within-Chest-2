@@ -34,6 +34,7 @@ const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const $DamageTypes = Java.loadClass('net.minecraft.world.damagesource.DamageTypes')
 const $DamageSources = Java.loadClass('net.minecraft.world.damagesource.DamageSources')
+const $GameRules = Java.loadClass('net.minecraft.world.level.GameRules')
 
 const $ModelData = Java.loadClass('noppes.mpm.ModelData')
 const $MpmPartData = Java.loadClass('noppes.mpm.client.parts.MpmPartData')
