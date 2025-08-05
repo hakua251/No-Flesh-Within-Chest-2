@@ -28,13 +28,21 @@ function StandardizeChestLoot(event) {
     const lootTableList = []
     const biomeTemp = biome.getBaseTemperature()
     // 根据温度分配基于温度的战利品表
-    if (biomeTemp <= -0.5) {
-        
-    } 
+    if (biomeTemp <= 0) {
+        lootTableList.push('kubejs:chests/temperature/cold')
+    } else if (biomeTemp < 0.5) {
+        lootTableList.push('kubejs:chests/temperature/cool')
+    } else if (biomeTemp <= 1.0) {
+        lootTableList.push('kubejs:chests/temperature/warm')
+    } else {
+        lootTableList.push('kubejs:chests/temperature/hot')
+    }
 
     // 根据世界高度分配的战利品表
-    if (height < -32) {
-
+    if (height < -30) {
+        lootTableList.push('kubejs:chests/height/deep_rock')
+    } else if (height > 100) {
+        lootTableList.push('kubejs:chests/height/high_sky')
     }
 
     if (dimensionKey) {
