@@ -1,3 +1,6 @@
 {
-	chapter_groups: [{ id: "55565ACB013B836B", title: "1" }]
+	chapter_groups: [
+		{ id: "55565ACB013B836B", title: "主线任务" }
+		{ id: "05E24C74543990BE", title: "支线任务" }
+	]
 }

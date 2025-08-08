@@ -209,7 +209,7 @@ function NavigateWithDegrade(mob, pos, speed) {
 * @param {BlockPos} pos
 * @param {Number} radius
 * @param {function(Internal.Level, Internal.PathfinderMob):boolean} entityTester
-* @returns {Array<Internal.Entity>}
+* @returns {Array<Internal.LivingEntity>}
 */
 function GetLivingWithinRadius(level, pos, radius, entityTester) {
     let area = AABB.of(pos.x - radius, pos.y - radius, pos.z - radius, pos.x + radius, pos.y + radius, pos.z + radius)

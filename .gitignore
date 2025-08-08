@@ -50,3 +50,4 @@ rhino.local.properties
 /tconplanner
 /exposures/
 exposure_catalog_state.json
+config/pin_tooltips.json

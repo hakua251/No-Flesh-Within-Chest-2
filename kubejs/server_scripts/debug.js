@@ -42,9 +42,8 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    let result = Utils.rollChestLoot('kubejs:chests/temperature/warm', player).toArray()
-    player.tell(result.length)
-    SpawnLootAtLocation(level, player.blockPosition(), result)
+    let targetPos = GenSkylandStruct(level, new DungeonAttributeModel(null))
+    player.tell(targetPos)
 
 
     // SetDayDuration(server, 12000)

@@ -25,3 +25,14 @@ const $ScreenshakeHandler = Java.loadClass('team.lodestar.lodestone.handlers.Scr
 const $Easing = Java.loadClass('team.lodestar.lodestone.systems.easing.Easing')
 
 const $SkillWheelOverlay = Java.loadClass('net.tigereye.chestcavity.ui.SkillWheelOverlay')
+const $RenderLevelStageEvent = Java.loadClass("net.minecraftforge.client.event.RenderLevelStageEvent")
+const $RenderLevelStageEventStage = Java.loadClass("net.minecraftforge.client.event.RenderLevelStageEvent$Stage")
+const $RenderSystem = Java.loadClass("com.mojang.blaze3d.systems.RenderSystem")
+const $GameRenderer = Java.loadClass("net.minecraft.client.renderer.GameRenderer")
+const $Tesselator = Java.loadClass("com.mojang.blaze3d.vertex.Tesselator")
+const $VertexFormat = Java.loadClass('com.mojang.blaze3d.vertex.VertexFormat')
+const $DefaultVertexFormat = Java.loadClass('com.mojang.blaze3d.vertex.DefaultVertexFormat')
+const $BufferUploader = Java.loadClass('com.mojang.blaze3d.vertex.BufferUploader')
+
+const $CodecUtils = Java.loadClass('com.chen1335.renderjs.utils.CodecUtils')
+const $UVRange = Java.loadClass('com.chen1335.renderjs.utils.UVRange')

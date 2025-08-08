@@ -82,7 +82,6 @@ BlockEvents.rightClicked('kubejs:dungeon_obelisk', event => {
         case 1:
             break
         case 2:
-
             level.setBlockAndUpdate(blockPos, blockState.setValue(OBELISK_STATE, Int2Integer(3)))
             level.setBlockAndUpdate(upperBlockPos, upperBlockState.setValue(OBELISK_STATE, Int2Integer(3)))
             break

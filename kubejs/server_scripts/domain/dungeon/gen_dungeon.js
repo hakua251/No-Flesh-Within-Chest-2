@@ -2,9 +2,9 @@
 const DUNGEON_DIM = new ResourceLocation('kubejs:dungeon')
 
 // todo 确认是否需要如此大的范围
-const STRUCT_SIDE_LENGTH = 48
-const STRUCT_BUILD_INTERVAL = 128
-const STRUCT_BUILD_RANDOM_OFFSET = 24
+const STRUCT_SIDE_LENGTH = 64
+const STRUCT_BUILD_INTERVAL = 256
+const STRUCT_BUILD_RANDOM_OFFSET = 16
 
 const X_SIDE_MODIFIER = [0, -1, 0, 1]
 const Z_SIDE_MODIFIER = [1, 0, -1, 0]
@@ -84,7 +84,7 @@ function HandleDataBlock(level, template, position, centerPos, placementSettings
  * @returns {BlockPos}
  */
 function calculateStructureBuildPos(n) {
-    if (n == 0) return { x: 0, z: 0 }
+    if (n == 0) return BlockPos.ZERO
     let rad = Math.floor((Math.pow(n, 1 / 2) + 1) / 2)
     let perimeter = 8 * rad
     let sideLength = 2 * rad + 1
@@ -152,15 +152,17 @@ function GenSkylandStruct(level, dungeonAttr) {
     let res = mainSkylandTemplate.placeInWorld(level, mainSkylandPos, mainSkylandSize, mainSkylandSetting, level.getRandom(), 2)
 
     if (!res) return null
-    HandleDataBlock(level, mainSkylandTemplate, mainSkylandPos, mainSkylandCenterPos, mainSkylandSetting, dungeonAttr)
-    level.getPersistentData().putInt('dungeonNum', dungeonNum + 1)
     let y = Math.min(mainSkylandChunk.getHeight('motion_blocking', blockX, blockZ), level.getMaxBuildHeight())
     mainSkylandCenterPos = mainSkylandCenterPos.atY(y)
+
+    HandleDataBlock(level, mainSkylandTemplate, mainSkylandPos, mainSkylandCenterPos, mainSkylandSetting, dungeonAttr)
+    level.getPersistentData().putInt('dungeonNum', dungeonNum + 1)
+
     if (y <= -64) {
         mainSkylandCenterPos = mainSkylandCenterPos.atY(64)
         level.setBlockAndUpdate(mainSkylandCenterPos.atY(62), Blocks.SNOW_BLOCK.defaultBlockState())
     }
-    
+
 
     // 副岛
     for (let i = 0; i < 4; i++) {

@@ -169,3 +169,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:leech_mouthpart')
     .addAlt(Text.translatable('tooltips.kubejs.leech_mouthpart.alt.1', Text.gold('20'), LuckHover, Text.gold('1')))
     .addAlt(Text.translatable('tooltips.kubejs.leech_mouthpart.alt.2', Text.gold('1')))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:rat_ear')
+    .addDefault(Text.translatable('tooltips.kubejs.rat_ear.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.rat_ear.alt.1', Text.gold('16')))
+)

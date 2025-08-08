@@ -1,49 +1,40 @@
-// priority: 998
+// priority, 998
 const IsLoadedKubeloader = Platform.isLoaded('kubeloader')
 
 if (IsLoadedKubeloader) {
-    let type = ContentPacks.type()
-    let serverField = {
-        funcs: {
-            'RegisterTitleJson': RegisterTitleJson,
-            'TitleJsonModel': TitleJsonModel,
-            'RegistryOrganStrategy': RegistryOrganStrategy,
-            'OrganStrategyModel': OrganStrategyModel,
-            'RegistryAttributeIdentifier': RegistryAttributeIdentifier,
-            'AttributeUUIDModel': AttributeUUIDModel,
-            'RegistryOrgan': RegistryOrgan,
-            'RegistryPseudoOrgan': RegistryPseudoOrgan,
-            'OrganItemModel': OrganItemModel,
-            'DungeonWaveModel': DungeonWaveModel,
-            'DungeonEventActionModel': DungeonEventActionModel,
-            'NewKillAmountWave': NewKillAmountWave,
-            'NewContinousKillAmountWave': NewContinousKillAmountWave,
-            'RegisterOrganScoreGoopRenderStrategy': RegisterOrganScoreGoopRenderStrategy,
-            'RegisterOriginChangedStrategy': RegisterOriginChangedStrategy,
-            'SlotStrategyModel': SlotStrategyModel,
-        },
-        consts: {
-            'OrganBlockBrokenEvent': OrganBlockBrokenEvent,
-            'OrganChestCavityUpdateStrategy': OrganChestCavityUpdateStrategy,
-            'OrganTakeOnStrategy': OrganTakeOnStrategy,
-            'OrganTakeOffStrategy': OrganTakeOffStrategy,
-            'SlotChestCavityUpdateStrategy': SlotChestCavityUpdateStrategy,
-            'OrganChestLootEvent': OrganChestLootEvent,
-            'OrganEntityBeHurtEvent': OrganEntityBeHurtEvent,
-            'OrganEntityDeathEvent': OrganEntityDeathEvent,
-            'OrganEntityDoDamageEvent': OrganEntityDoDamageEvent,
-            'OrganEntityLootEvent': OrganEntityLootEvent,
-            'OrganEntityTickEvent': OrganEntityTickEvent,
-            'OrganFoodEatenEvent': OrganFoodEatenEvent,
-            'OrganItemRightClickedEvent': OrganItemRightClickedEvent,
-            'OrganKeyBindEvent': OrganKeyBindEvent,
-            'OrganPlayerEnchantEvent': OrganPlayerEnchantEvent,
-            'PlayerSpellCastEvent': ISSPlayerSpellCastEvent,
-            'OrganSpellLevelModifyEvent': ISSSpellLevelModifyEvent,
-            'OrganSpellSelectionEvent': ISSSpellSelectionEvent,
-            'OrganScoreGoopRenderStrategy': OrganScoreGoopRenderStrategy,
-        },
-    }
-
-    ContentPacks.putShared(type, serverField)
+    ContentPacks.putShared('RegisterTitleJson', RegisterTitleJson)
+    ContentPacks.putShared('TitleJsonModel', TitleJsonModel)
+    ContentPacks.putShared('RegistryOrganStrategy', RegistryOrganStrategy)
+    ContentPacks.putShared('OrganStrategyModel', OrganStrategyModel)
+    ContentPacks.putShared('RegistryAttributeIdentifier', RegistryAttributeIdentifier)
+    ContentPacks.putShared('AttributeUUIDModel', AttributeUUIDModel)
+    ContentPacks.putShared('RegistryOrgan', RegistryOrgan)
+    ContentPacks.putShared('RegistryPseudoOrgan', RegistryPseudoOrgan)
+    ContentPacks.putShared('OrganItemModel', OrganItemModel)
+    ContentPacks.putShared('DungeonWaveModel', DungeonWaveModel)
+    ContentPacks.putShared('DungeonEventActionModel', DungeonEventActionModel)
+    ContentPacks.putShared('NewKillAmountWave', NewKillAmountWave)
+    ContentPacks.putShared('NewContinousKillAmountWave', NewContinousKillAmountWave)
+    ContentPacks.putShared('RegisterOrganScoreGoopRenderStrategy', RegisterOrganScoreGoopRenderStrategy)
+    ContentPacks.putShared('RegisterOriginChangedStrategy', RegisterOriginChangedStrategy)
+    ContentPacks.putShared('SlotStrategyModel', SlotStrategyModel)
+    ContentPacks.putShared('OrganBlockBrokenEvent', OrganBlockBrokenEvent)
+    ContentPacks.putShared('OrganChestCavityUpdateStrategy', OrganChestCavityUpdateStrategy)
+    ContentPacks.putShared('OrganTakeOnStrategy', OrganTakeOnStrategy)
+    ContentPacks.putShared('OrganTakeOffStrategy', OrganTakeOffStrategy)
+    ContentPacks.putShared('SlotChestCavityUpdateStrategy', SlotChestCavityUpdateStrategy)
+    ContentPacks.putShared('OrganChestLootEvent', OrganChestLootEvent)
+    ContentPacks.putShared('OrganEntityBeHurtEvent', OrganEntityBeHurtEvent)
+    ContentPacks.putShared('OrganEntityDeathEvent', OrganEntityDeathEvent)
+    ContentPacks.putShared('OrganEntityDoDamageEvent', OrganEntityDoDamageEvent)
+    ContentPacks.putShared('OrganEntityLootEvent', OrganEntityLootEvent)
+    ContentPacks.putShared('OrganEntityTickEvent', OrganEntityTickEvent)
+    ContentPacks.putShared('OrganFoodEatenEvent', OrganFoodEatenEvent)
+    ContentPacks.putShared('OrganItemRightClickedEvent', OrganItemRightClickedEvent)
+    ContentPacks.putShared('OrganKeyBindEvent', OrganKeyBindEvent)
+    ContentPacks.putShared('OrganPlayerEnchantEvent', OrganPlayerEnchantEvent)
+    ContentPacks.putShared('PlayerSpellCastEvent', ISSPlayerSpellCastEvent)
+    ContentPacks.putShared('OrganSpellLevelModifyEvent', ISSSpellLevelModifyEvent)
+    ContentPacks.putShared('OrganSpellSelectionEvent', ISSSpellSelectionEvent)
+    ContentPacks.putShared('OrganScoreGoopRenderStrategy', OrganScoreGoopRenderStrategy)
 }
