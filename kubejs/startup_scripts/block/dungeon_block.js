@@ -38,8 +38,22 @@ StartupEvents.registry('block', event => {
             if (stage < 3) return
             if (Math.random() < 0.05) return
 
+            
             level.setBlockAndUpdate(pos, blockState.setValue(global.BlockProperties.OBELISK_STATE, Int2Integer(0)))
             level.setBlockAndUpdate(upperPos, upperBlockState.setValue(global.BlockProperties.OBELISK_STATE, Int2Integer(0)))
         })
+})
 
+JadeEvents.onCommonRegistration((event) => {
+    event.blockDataProvider('kubejs:dungeon_obelisk', $BlockEntity).setCallback((tag, accessor) => {
+        const blockEntity = accessor.getBlockEntity()
+        if (!blockEntity) return
+        const blockState = accessor.getBlockState()
+        if (!blockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
+        const half = blockState.getValue(BlockProperties.DOUBLE_BLOCK_HALF)
+        if (half == 'upper') return
+        if (blockEntity.persistentData.contains('purifyAction')) {
+            tag.putString('purifyAction', blockEntity.persistentData.getString('purifyAction'))
+        }
+    })
 })

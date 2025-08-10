@@ -3,7 +3,7 @@
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "kubejs:void",
+      "biome": "kubejs:vita",
       "lakes": false,
       "features": false,
       "layers": [],

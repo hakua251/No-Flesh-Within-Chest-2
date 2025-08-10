@@ -1,5 +1,4 @@
 // priority: 990
-
 /**
  * @type {typeof RegistryOrgan}
  */

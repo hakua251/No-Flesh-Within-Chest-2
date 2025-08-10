@@ -22,16 +22,19 @@ BlockEvents.broken('kubejs:dungeon_obelisk', event => {
 BlockEvents.placed('kubejs:dungeon_obelisk', event => {
     const block = event.block
     const level = event.level
-    if (!block.getBlockState().hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return 
+    if (!block.getBlockState().hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
     const half = block.getBlockState().getValue(BlockProperties.DOUBLE_BLOCK_HALF)
     const pos = block.getPos()
     switch (half) {
         case 'lower':
             level.setBlock(pos.above(), block.blockState.setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.UPPER), 3)
+            let obeliskBlockEntity = level.getBlockEntity(pos)
+            obeliskBlockEntity.persistentData.putString('purifyAction', 'preset_island')
+
             break
         case 'upper':
             level.setBlock(pos.below(), block.getBlockState().set(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.LOWER), 3)
-            break 
+            break
     }
 })
 
@@ -56,7 +59,7 @@ BlockEvents.rightClicked('kubejs:dungeon_obelisk', event => {
         blockState = block.getBlockState()
         if (!blockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF) || blockState.getValue(BlockProperties.DOUBLE_BLOCK_HALF) != $DoubleBlockHalf.LOWER) return
     }
-    
+
     let stage = blockState.getValue(OBELISK_STATE).intValue()
     let upperBlockPos = blockPos.above()
     let upperBlockState = level.getBlockState(upperBlockPos)

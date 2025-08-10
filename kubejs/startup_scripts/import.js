@@ -1,7 +1,7 @@
 // priority: 5000
 const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $ListTag = Java.loadClass('net.minecraft.nbt.ListTag')
-
+const $BlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.BlockEntity')
 const $ChatFromatting = Java.loadClass('net.minecraft.ChatFormatting')
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')

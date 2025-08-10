@@ -1,0 +1,105 @@
+{
+  "name": "king_of_stomach_right_wide_arm",
+  "render_type": "bedrock",
+  "hidden_parts": [],
+  "render_data": {
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+      {
+        "description": {
+          "identifier": "geometry.steve",
+          "texture_width": 64,
+          "texture_height": 64,
+          "visible_bounds_width": 2,
+          "visible_bounds_height": 4,
+          "visible_bounds_offset": [
+            0,
+            1,
+            0
+          ]
+        },
+        "bones": [
+          {
+            "name": "right_arm",
+            "pivot": [
+              -5,
+              -0.5,
+              -0.5
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -9,
+                  0,
+                  -3
+                ],
+                "size": [
+                  5,
+                  3,
+                  6
+                ],
+                "uv": [
+                  36,
+                  0
+                ]
+              },
+              {
+                "origin": [
+                  -10.5,
+                  -4,
+                  -3.5
+                ],
+                "size": [
+                  4,
+                  4,
+                  5
+                ],
+                "pivot": [
+                  -7.5,
+                  -3,
+                  -0.5
+                ],
+                "rotation": [
+                  0,
+                  180,
+                  0
+                ],
+                "uv": [
+                  0,
+                  52
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "texture": "kubejs:textures/mpm/king_of_stomach.png",
+  "body_part": "arms",
+  "menu": "part.arms",
+  "animation_type": "arms",
+  "preview_rotation": 40,
+  "translate": [
+    0,
+    0,
+    0
+  ],
+  "scale": [
+    1.0,
+    1.0,
+    1.1
+  ],
+  "rotate_offset": [
+    0,
+    0,
+    0.0
+  ],
+  "rotate": [
+    0.0,
+    0,
+    0.0
+  ],
+  "can_use_player_skin": false,
+  "author": "野营组 浅色丸子"
+}

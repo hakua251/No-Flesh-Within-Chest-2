@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:rat_ear')
     .addScore('kubejs:attack_dodge', 1)
+    .addScore('chestcavity:speed', 1)
 
 /**
  * @param {OrganEventCustomData} customData
