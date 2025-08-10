@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('example:test')
+_RegistryOrgan('example:test')
     .addScore('chestcavity:defense', 2)
 
 /**
@@ -15,7 +15,7 @@ function TestKeyActive(customData, event, organItem, organIndex, slotType) {
     player.addItemCooldown(organItem, 20 * 2)
 }
 
-RegistryOrganStrategy(
-    new OrganStrategyModel('example:test')
+_RegistryOrganStrategy(
+    new _OrganStrategyModel('example:test')
         .addOnlyStrategy('key_active', TestKeyActive)
 )
