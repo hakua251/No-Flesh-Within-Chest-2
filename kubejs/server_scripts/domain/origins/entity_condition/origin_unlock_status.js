@@ -1,6 +1,6 @@
 // priority: 500
-const DefaultConfigsPath = 'defaultconfigs'
-const OriginUnlockStatusData = 'defaultconfigs/origin_unlock_status.json'
+const DefaultConfigsPath = 'data'
+const OriginUnlockStatusData = 'data/origin_unlock_status.json'
 
 const OriginUnlockStatusUuidMap = {}
 if (!FilesJS.exists(DefaultConfigsPath)) {
@@ -77,7 +77,7 @@ function UnlockOrigin(player, id) {
         OriginUnlockStatusUuidMap[uuidString] = {}
     }
     OriginUnlockStatusUuidMap[uuidString][id] = true
-    syncPlayerOriginUnlockStatus(player)
+    SyncPlayerOriginUnlockStatus(player)
 }
 
 
@@ -108,7 +108,7 @@ function LockOrigin(player, id) {
         OriginUnlockStatusUuidMap[uuidString] = {}
     }
     OriginUnlockStatusUuidMap[uuidString][id] = false
-    syncPlayerOriginUnlockStatus(player)
+    SyncPlayerOriginUnlockStatus(player)
 }
 
 

@@ -54,6 +54,9 @@
   "ars_nouveau": {
     "mob_jar": true
   },
+  "kubejs": {
+    "dungeon_obelisk": true
+  },
   "exposure": {
     "lightroom": true,
     "photograph_frame": true
@@ -77,5 +80,8 @@
   },
   "balm": {
     "jade": true
+  },
+  "custommachinery": {
+    "machine_component_provider": true
   }
 }

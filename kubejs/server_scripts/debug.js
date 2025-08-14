@@ -61,9 +61,6 @@ ItemEvents.rightClicked('stick', event => {
     //     console.log(str)
     // })
     // SetDayDuration(server, 12000)
-    // let info = ParticleEmitterInfo.create(level, new ResourceLocation('kubejs:lightning')).position(new Vec3d(0, 56, 0)).scale(1, 1, 1)
-    // console.log(info.position())
-    // $AAALevel.addParticle(level, true, info)
 
     // let tempSphere = new SphereModel()
     //     .setShellProperties(Block.getBlock('minecraft:glass').defaultBlockState(), 5, 1)

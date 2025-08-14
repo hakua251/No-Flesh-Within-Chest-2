@@ -29,8 +29,7 @@ BlockEvents.placed('kubejs:dungeon_obelisk', event => {
         case 'lower':
             level.setBlock(pos.above(), block.blockState.setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.UPPER), 3)
             let obeliskBlockEntity = level.getBlockEntity(pos)
-            obeliskBlockEntity.persistentData.putString('purifyAction', 'preset_island')
-
+            obeliskBlockEntity.persistentData.putString('purifyAction', 'default')
             break
         case 'upper':
             level.setBlock(pos.below(), block.getBlockState().set(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.LOWER), 3)

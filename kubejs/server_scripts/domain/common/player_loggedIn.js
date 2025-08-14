@@ -6,7 +6,7 @@ PlayerEvents.loggedIn(event => {
     SyncPlayerOriginUnlockStatus(player) // 同步起源解锁信息：服务端记录的起源信息同步到客户端
 
     InitClientISSSpellData(player) // 同步客户端ISSSpellData：同步客户端的ISSSpellData，用于客户端的ISSSpellData初始化
-    $SSyncRestrictionPacket.sync(player) // 同步铁魔法信息：同步特殊添加的铁魔法信息
+    $SSyncRestrictionPacket.sync(player) // 同步区域限制信息
 
     // 延后同步MPM状态
     event.server.scheduleInTicks(20, () => {

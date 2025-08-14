@@ -88,6 +88,7 @@ function dungeonSuccessAction(level, context, areaManager, dungeonEventModel) {
     dungeonEventModel.finishAction(level, context, areaManager, true)
     SetDungeonObeliskState(level, context.area, 2)
     recycleArea(areaManager, context.area)
+    DoPurifyAction(level, context.area)
 }
 
 

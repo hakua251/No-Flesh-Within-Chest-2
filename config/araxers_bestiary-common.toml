@@ -1,13 +1,13 @@
 #Enable the progression system where entity information is gradually revealed as you progress
 enableProgressionSystem = false
 #Number of kills required to unlock spawn locations
-#Range: > 5
+#Range: > 1
 spawnLocationThreshold = 10
 #Number of kills required to unlock loot icons
-#Range: > 10
+#Range: > 1
 lootIconThreshold = 30
 #Number of kills required to unlock loot drop chances
-#Range: > 25
+#Range: > 1
 lootChanceThreshold = 50
 #Hide entities with 0 kills when progression system is enabled (for kill-based progression)
 hideZeroKillEntities = true
@@ -22,10 +22,10 @@ uiType = "modern"
 #Type of progression system to use: "kills" (original system based on kill count) or "ranks" (rank-based system with chance to increase rank)
 progressionSystemType = "ranks"
 #Number of kills required to unlock advanced attributes (knockback resistance, armor, movement speed)
-#Range: > 15
+#Range: > 1
 advancedAttributesThreshold = 30
 #Number of kills required to unlock entity descriptions
-#Range: > 5
+#Range: > 1
 descriptionThreshold = 40
 #Base chance (0.0-1.0) to increase rank when killing an entity
 #Range: 0.01 ~ 1.0
@@ -93,4 +93,7 @@ hideNoRankEntities = true
 forceObfuscation = false
 #List of entities that should be prioritized and included in the bestiary regardless of their category (format: "minecraft:sheep")
 entityIncludeList = []
+#Maximum number of entities to process per dimension for loot generation (hicher value means more precise loot chances but longer loading times)
+#Range: 50 ~ 500
+lootGenerationBatchSize = 100
 
