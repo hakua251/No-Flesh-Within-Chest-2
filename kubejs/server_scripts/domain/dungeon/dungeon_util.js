@@ -99,10 +99,7 @@ function GetAreaPlayerList(level, area) {
 function GetDungeonAttribute(context) {
     const area = context.area
     const persistentData = area.getPersistentData()
-    if (!persistentData.contains('dungeonAttr')) {
-        return new DungeonAttributeModel(null)
-    }
-    return new DungeonAttributeModel(persistentData.get('dungeonAttr'))
+    return new DungeonAttributeModel(persistentData)
 }
 
 /**
@@ -123,17 +120,17 @@ function GetAreaObeliskBlockPos(area) {
 /**
  * 
  * @param {Internal.PathfinderMob} entity 
- * @param {number} tier 
+ * @param {number} difficulty 
  * @returns 
  */
-function CommonDungeonEntityTierModifier(entity, tier) {
+function CommonDungeonEntityDifficultyModifier(entity, difficulty) {
     const attributes = entity.getAttributes()
     if (attributes.hasAttribute('minecraft:generic.max_health')) {
-        entity.setAttributeBaseValue('minecraft:generic.max_health', Math.floor(entity.getAttribute('minecraft:generic.max_health').getValue() * Math.pow(1.2, tier)))
+        entity.setAttributeBaseValue('minecraft:generic.max_health', Math.floor(entity.getAttribute('minecraft:generic.max_health').getValue() * Math.pow(1.2, difficulty)))
         entity.setHealth(entity.getMaxHealth())
     }
     if (attributes.hasAttribute('minecraft:generic.attack_damage')) {
-        entity.setAttributeBaseValue('minecraft:generic.attack_damage', Math.floor(entity.getAttribute('minecraft:generic.attack_damage').getValue() * (1 + tier * 0.05)))
+        entity.setAttributeBaseValue('minecraft:generic.attack_damage', Math.floor(entity.getAttribute('minecraft:generic.attack_damage').getValue() * (1 + difficulty * 0.05)))
     }
     return entity
 }

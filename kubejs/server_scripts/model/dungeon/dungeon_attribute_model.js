@@ -6,14 +6,12 @@
  */
 function DungeonAttributeModel(nbt) {
     /**@type {number} */
-    this.tier = 1
+    this.difficulty = 1
     /**@type {string[]} */
     this.modifierList = []
-    /**@type {string} */
-    this.spawnId = ''
     if (!nbt) return
-    if (nbt.contains('tier')) {
-        this.tier = nbt.getInt('tier')
+    if (nbt.contains('difficulty')) {
+        this.difficulty = nbt.getInt('difficulty')
     }
     if (nbt.contains('modifierList')) {
         let list = nbt.getList('modifierList', GET_STRING_TYPE)
@@ -21,34 +19,35 @@ function DungeonAttributeModel(nbt) {
             this.modifierList.push(modifierName.toString())
         })
     }
-    if (nbt.contains('spawnId')) {
-        this.spawnId = nbt.getString('spawnId')
+    if (nbt.contains('targetBiomeType')) {
+        this.targetBiomeType = nbt.getString('targetBiomeType')
     }
+    if (nbt.contains('purifyActionType')) {
+        this.purifyActionType = nbt.getString('purifyActionType')
+    }
+    if (nbt.contains('actionItemList')) {
+        let itemNbtList = nbt.getList('actionItemList', GET_COMPOUND_TYPE)
+        this.actionItemList = ConvertNBT2ItemStackList(itemNbtList)
+    }
+
     return
 }
 
 
 DungeonAttributeModel.prototype = {
-    /**
-     * 
-     * @param {Internal.CompoundTag} nbt 
-     * @returns 
-     */
-    serializeToNBT: function (nbt) {
-        let dungeonAttrNbt = new $CompoundTag()
-        dungeonAttrNbt.putInt('tier', this.tier)
-        dungeonAttrNbt.put('modifierList', this.modifierList)
-        nbt.put('dungeonAttr', dungeonAttrNbt)
-        nbt.putString('spawnId', this.spawnId)
-        return
-    },
-    getTier: function () {
-        return this.tier
+    getDifficulty: function () {
+        return this.difficulty
     },
     getModifierList: function () {
-        return this.modifierList 
+        return this.modifierList
     },
-    getSpawnId: function () {
-        return this.spawnId  
-    }
+    getTargetBiomeType: function () {
+        return this.targetBiomeType
+    },
+    getPurifyActionType: function () {
+        return this.purifyActionType
+    },
+    getActionItemList: function () {
+        return this.actionItemList
+    },
 }

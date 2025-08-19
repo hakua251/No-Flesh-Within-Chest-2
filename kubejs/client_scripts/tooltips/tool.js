@@ -60,18 +60,48 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced('kubejs:signal_launch_permit', (item, advanced, text) => {
         let lineNum = 1
         lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.signal_launch_permit.default.1`).gray()], lineNum)
+        let nbt = item.getOrCreateTag()
         if (tooltip.isShift()) {
-            let capacity = 0
-            if (item.hasNBT() && item.getNbt().contains('capacity')) {
-                capacity = item.getNbt().getInt('capacity')
-            }
             lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.tool.shift_holding.1`)], lineNum)
             lineNum = AddForTextLines(text, [Text.translatable(`tooltips.kubejs.signal_launch_permit.shift.1`)], lineNum)
             lineNum = AddForTextLines(text, [Text.translatable(`tooltips.kubejs.signal_launch_permit.shift.2`, ExperimentalWorldEditObeliskHover)], lineNum)
             lineNum = AddForTextLines(text, [Text.translatable(`tooltips.kubejs.signal_launch_permit.shift.3`, RepairProtocolHover)], lineNum)
-            lineNum = AddForTextLines(text, [Text.translatable(`tooltips.kubejs.signal_launch_permit.shift.4`, capacity.toFixed(0))], lineNum)
         } else {
             lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.tool.shift.1`)], lineNum)
+        }
+
+        if (tooltip.isAlt()) {
+            lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.tool.alt_holding.1`)], lineNum)
+
+            let capacity = 1
+            if (nbt.contains('capacity')) {
+                capacity = nbt.getInt('capacity')
+            }
+
+            lineNum = AddForTextLines(text, [Text.translatable(`tooltips.kubejs.signal_launch_permit.alt.1`, capacity)], lineNum)
+
+            if (nbt.contains('spawnerIdList')) {
+                let spawnerIdList = nbt.getList('spawnerIdList', GET_STRING_TYPE)
+                if (spawnerIdList.size() > 0) {
+                    lineNum = AddForTextLines(text, [Text.translatable(`tooltips.kubejs.signal_launch_permit.alt.2`)], lineNum)
+                    spawnerIdList.forEach(spawnerId => {
+                        lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.signal_launch_permit.spawn_id.${spawnerId.toString()}`)], lineNum)
+                    })
+                }
+            }
+
+            if (nbt.contains('modifierList')) {
+                let modifierList = nbt.getList('modifierList', GET_STRING_TYPE)
+                if (modifierList.size() > 0) {
+                    lineNum = AddForTextLines(text, [Text.translatable(`tooltips.kubejs.signal_launch_permit.alt.3`)], lineNum)
+                    modifierList.forEach(modifier => {
+                        lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.signal_launch_permit.modifier.${modifier.toString()}`)], lineNum)
+                    })
+                }
+            }
+
+        } else {
+            lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.tool.alt.1`)], lineNum)
         }
     })
 })

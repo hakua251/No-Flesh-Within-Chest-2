@@ -27,11 +27,6 @@ ServerEvents.recipes(event => {
             const level = block.level
             const pos = block.getPos()
 
-            let permitItem = machine.getItemStored('permit_input')
-            let permitLevel = 1
-            if (permitItem.hasNBT() && permitItem.getNbt().contains('level')) {
-                permitLevel = permitItem.getNbt().getInt('level')
-            }
 
             let biomeInput = machine.getItemStored('biome_input')
             let biomeInputStr = biomeInput ? biomeInput.id.toString() : 'random'
@@ -53,18 +48,32 @@ ServerEvents.recipes(event => {
             let area = GenDungeonLevelArea(level, pos)
             if (!area) return ctx.error()
             let areaPersistData = area.getPersistentData()
+
+            let permitItem = machine.getItemStored('permit_input')
+            // 难度和容量呈现出对应关系，因此内部传递该变量使用difficulty而非capacity
+            let spawnerId = 'random'
+            if (permitItem.hasNBT()) {
+                let permitNbt = permitItem.getNbt()
+                areaPersistData.putInt('difficulty', permitNbt.contains('capacity') ? permitNbt.getInt('capacity') : 1)
+                areaPersistData.put('modifierList', permitNbt.contains('modifierList') ? permitNbt.getList('modifierList', GET_STRING_TYPE) : new $ListTag())
+
+                if (permitNbt.contains('spawnerIdList')) {
+                    let possibleSpawnerIdList = permitNbt.getList('spawnerIdList', GET_STRING_TYPE)
+                    spawnerId = possibleSpawnerIdList.getString(Math.floor(Math.random() * possibleSpawnerIdList.size()))
+                }
+            }
+
             areaPersistData.putString('targetBiomeType', targetBiomeType)
             areaPersistData.putString('purifyActionType', purifyActionType)
-            areaPersistData.put('actionInputItem1', ConverItemStack2NBT(customInput1.withCount(1)))
-            areaPersistData.put('actionInputItem2', ConverItemStack2NBT(customInput2.withCount(1)))
-            areaPersistData.put('actionInputItem3', ConverItemStack2NBT(customInput3.withCount(1)))
+
+            areaPersistData.put('actionItemList', ConvertItemStackList2NBT([customInput1.withCount(1), customInput2.withCount(1), customInput3.withCount(1)]))
 
             machine.setItemStored('custom_input_1', customInput1.withCount(customInput1.getCount() - 1))
             machine.setItemStored('custom_input_2', customInput2.withCount(customInput2.getCount() - 1))
             machine.setItemStored('custom_input_3', customInput3.withCount(customInput3.getCount() - 1))
 
             let manager = LoquatAreaManager.of(level)
-            manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'killAmountTask_ZombieGroupTask_1', 1, 0))
+            manager.addEvent(new $SpawnMobAreaKubeEvent(area, spawnerId, 1, 0))
 
             return ctx.success()
         })

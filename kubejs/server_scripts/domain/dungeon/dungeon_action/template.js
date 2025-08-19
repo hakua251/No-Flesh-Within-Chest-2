@@ -12,7 +12,7 @@ new DungeonEventActionModel('killAmountTask_ZombieGroupTask_1')
         for (let i = 0; i < 8; i++) {
             /**@type {Internal.PathfinderMob} */
             let entity = level.createEntity('minecraft:zombie')
-            CommonDungeonEntityTierModifier(entity, dungeonAttr.getTier())
+            CommonDungeonEntityDifficultyModifier(entity, dungeonAttr.getDifficulty())
             ApplyCreateEntityModifier(level, context, areaManager, entity, dungeonAttr)
             DungeonCreateEntity(level, context, entity)
         }
@@ -22,7 +22,7 @@ new DungeonEventActionModel('killAmountTask_ZombieGroupTask_1')
         for (let i = 0; i < 8; i++) {
             /**@type {Internal.PathfinderMob} */
             let entity = level.createEntity('minecraft:zombie')
-            CommonDungeonEntityTierModifier(entity, difficulty)
+            CommonDungeonEntityDifficultyModifier(entity, dungeonAttr.getDifficulty())
             ApplyCreateEntityModifier(level, context, areaManager, entity, dungeonAttr)
             DungeonCreateEntity(level, context, entity)
         }
@@ -46,7 +46,7 @@ new DungeonEventActionModel('killAmountTask_ZombieGroupTask_2')
         for (let i = 0; i < 3; i++) {
             /**@type {Internal.PathfinderMob} */
             let entity = level.createEntity('minecraft:zombie')
-            CommonDungeonEntityTierModifier(entity, dungeonAttr.getTier())
+            CommonDungeonEntityDifficultyModifier(entity, dungeonAttr.getDifficulty())
             ApplyCreateEntityModifier(level, context, areaManager, entity, dungeonAttr)
             DungeonCreateEntity(level, context, entity)
         }
@@ -56,7 +56,7 @@ new DungeonEventActionModel('killAmountTask_ZombieGroupTask_2')
         for (let i = 0; i < 3; i++) {
             /**@type {Internal.PathfinderMob} */
             let entity = level.createEntity('minecraft:zombie')
-            CommonDungeonEntityTierModifier(entity, dungeonAttr.getTier())
+            CommonDungeonEntityDifficultyModifier(entity, dungeonAttr.getDifficulty())
             ApplyCreateEntityModifier(level, context, areaManager, entity, dungeonAttr)
             DungeonCreateEntity(level, context, entity)
         }
