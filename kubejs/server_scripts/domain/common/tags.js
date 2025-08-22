@@ -15,6 +15,9 @@ ServerEvents.tags('item', event => {
     event.add('exposure:filters', [])
 
     event.add('tconplanner:creative_material', ['kubejs:genesis_tinker_blueprint'])
+
+    event.add('lychee:lightning_immune', [])
+    event.add('lychee:lightning_fire_immune', [])
 })
 
 ServerEvents.tags('entity_type', event => {

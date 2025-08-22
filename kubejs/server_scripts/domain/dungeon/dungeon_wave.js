@@ -13,14 +13,19 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
     const customDataMap = context.customDataMap
 
     if (!customDataMap.containsKey('dungeonEventAction')) {
-        if (!DungeonSpawnerIdMap[context.spawnerId]) {
-            // 未知状态，直接回收，但允许重试
-            recycleArea(areaManager, area)
-            return
-        }
+        // if (!DungeonSpawnerIdMap[context.spawnerId]) {
+        //     // 未知状态，直接回收，但允许重试
+        //     recycleArea(areaManager, area)
+        //     return
+        // }
         /**@type {DungeonEventActionModel} */
         let dungeonEventModel = DungeonSpawnerIdMap[context.spawnerId]
+        if (!dungeonEventModel) {
+            let randomSpawnerId = RandomGet(Object.keys(DungeonSpawnerIdMap))
+            dungeonEventModel = DungeonSpawnerIdMap[randomSpawnerId]
+        }
         customDataMap.put('dungeonEventAction', dungeonEventModel)
+        console.log(area.persistentData)
         dungeonEventModel.initAction(level, context, areaManager)
     }
 

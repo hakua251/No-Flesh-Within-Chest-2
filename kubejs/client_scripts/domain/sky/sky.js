@@ -56,3 +56,20 @@
 //     $RenderSystem.disableBlend()
 //     $RenderSystem.depthMask(true)
 // })
+
+// RenderJSEvents.AddWorldRender(event => {
+//     event.addWorldRender((context) => {
+//         // 生成巨型石头
+//         let bufferSource = context.bufferSource
+//         let poseStack = context.poseStack
+//         let playerPos = Client.gameRenderer.getMainCamera().getPosition()
+//         poseStack.pushPose()
+//         let blockPos = new BlockPos(0, 58, 0)
+
+//         poseStack.translate(blockPos.getX() - playerPos.x(), blockPos.getY() - playerPos.y(), blockPos.getZ() - playerPos.z())
+//         poseStack.scale(100, 100, 100)
+
+//         Client.getBlockRenderer().renderSingleBlock(Blocks.STONE.defaultBlockState(), poseStack, bufferSource, 255, $OverlayTexture.NO_OVERLAY, $ModelData.EMPTY, null)
+//         poseStack.popPose()
+//     })
+// })

@@ -102,9 +102,8 @@ function RedWolfBeardEntityKill(customData, event, organItem, organIndex, slotTy
 function RedWolfBeardKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     organItem.setDamageValue(0)
-    player.addItemCooldown('kubejs:koi_fish_scale', 20 * 120)
+    player.addItemCooldown('kubejs:red_wolf_beard', 20 * 120)
 }
-
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:red_wolf_beard')

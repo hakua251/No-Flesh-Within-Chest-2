@@ -16,7 +16,7 @@ function DungeonAttributeModel(nbt) {
     if (nbt.contains('modifierList')) {
         let list = nbt.getList('modifierList', GET_STRING_TYPE)
         list.forEach((modifierName) => {
-            this.modifierList.push(modifierName.toString())
+            this.modifierList.push(modifierName.getAsString())
         })
     }
     if (nbt.contains('targetBiomeType')) {

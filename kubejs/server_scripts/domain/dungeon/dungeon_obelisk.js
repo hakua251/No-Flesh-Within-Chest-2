@@ -21,12 +21,21 @@ function RegisteyDungeonObeliskPurifyActionType(purifyActionInput, purifyAction)
 
 ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:dungeon_obelisk', 180)
+        .requireFunctionOnStart(ctx => {
+            const machine = ctx.machine
+            let permitItem = machine.getItemStored('permit_input')
+            if (permitItem.isEmpty()) return ctx.error('')
+
+            return ctx.success()
+        })
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.machine
             const block = ctx.block
             const level = block.level
             const pos = block.getPos()
 
+            let permitItem = machine.getItemStored('permit_input')
+            if (permitItem.isEmpty()) return ctx.error()
 
             let biomeInput = machine.getItemStored('biome_input')
             let biomeInputStr = biomeInput ? biomeInput.id.toString() : 'random'
@@ -46,10 +55,9 @@ ServerEvents.recipes(event => {
 
 
             let area = GenDungeonLevelArea(level, pos)
-            if (!area) return ctx.error()
+            if (!area) return ctx.error('')
             let areaPersistData = area.getPersistentData()
 
-            let permitItem = machine.getItemStored('permit_input')
             // 难度和容量呈现出对应关系，因此内部传递该变量使用difficulty而非capacity
             let spawnerId = 'random'
             if (permitItem.hasNBT()) {
@@ -71,13 +79,12 @@ ServerEvents.recipes(event => {
             machine.setItemStored('custom_input_1', customInput1.withCount(customInput1.getCount() - 1))
             machine.setItemStored('custom_input_2', customInput2.withCount(customInput2.getCount() - 1))
             machine.setItemStored('custom_input_3', customInput3.withCount(customInput3.getCount() - 1))
+            machine.setItemStored('permit_input', permitItem.withCount(permitItem.getCount() - 1))
 
             let manager = LoquatAreaManager.of(level)
             manager.addEvent(new $SpawnMobAreaKubeEvent(area, spawnerId, 1, 0))
-
             return ctx.success()
         })
-        .requireItem('kubejs:signal_launch_permit', 'permit_input')
         .requireButtonPressed('launch_button')
         .resetOnError()
 })

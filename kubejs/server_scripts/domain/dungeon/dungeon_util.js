@@ -148,7 +148,6 @@ function CommonDungeonFinishAction(level, context, lootList, isWin) {
     let playerList = GetAreaPlayerList(level, area)
     if (isWin) {
         // let obeliskBlockPos = GetAreaObeliskBlockPos(area)
-
         playerList.forEach(player => {
             // todo 本地化
             player.tell('§c§l波次成功')
@@ -184,3 +183,31 @@ function SpawnLootAtLocation(level, blockPos, lootList) {
     })
 }
 
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {Internal.SpawnMobAreaKubeEvent} context 
+ * @param {LoquatAreaManager} area 
+ * @param {Internal.PathfinderMob} entity 
+ * @param {DungeonAttributeModel} dungeonAttr
+ */
+function ApplyCreateEntityModifier(level, context, areaManager, entity, dungeonAttr) {
+    if (dungeonAttr.modifierList.length > 0) {
+        DungeonCreateEntityModifierStrategy.run(dungeonAttr.modifierList, [level, context, areaManager, entity, dungeonAttr], {})
+    }
+}
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {Internal.SpawnMobAreaKubeEvent} context 
+ * @param {LoquatAreaManager} area 
+ * @param {Internal.ItemStack[]} lootList 
+ * @param {DungeonAttributeModel} dungeonAttr
+ */
+function ApplyLootModifier(level, context, areaManager, lootList, dungeonAttr) {
+    if (dungeonAttr.modifierList.length > 0) {
+        DungeonLootModifierStrategy.run(dungeonAttr.modifierList, [level, context, areaManager, lootList, dungeonAttr], {})
+    }
+}
