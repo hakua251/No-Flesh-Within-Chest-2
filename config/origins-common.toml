@@ -107,6 +107,8 @@
 		"kubejs:born_with_mechanical_wolf" = true
 		"kubejs:machinist_fragile_armor" = true
 		"kubejs:machinist_starting_equipment" = true
+		"kubejs:machinist_handmake_cogwheel" = true
+		"kubejs:machinist_easy_craft_andesite" = true
 
 	[origins."kubejs:photographer"]
 		enabled = true
@@ -120,4 +122,11 @@
 
 	[origins."kubejs:normal"]
 		enabled = true
+
+	[origins."kubejs:tinker"]
+		enabled = true
+		"kubejs:tinker_starting_equipment" = true
+		"kubejs:tinker_heart" = true
+		"kubejs:tinker_forge" = true
+		"kubejs:tinker_less_exp_gain" = true
 

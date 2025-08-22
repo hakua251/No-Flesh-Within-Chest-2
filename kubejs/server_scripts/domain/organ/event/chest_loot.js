@@ -3,7 +3,7 @@ const OrganChestLootEvent = new OrganEventModel('chest_loot')
 
 /**
  * 器官箱子战利品事件处理函数
- * @param {Internal.LootModificationEventJS} event 
+ * @param {Internal.LootContextJS} event 
  * @returns 
  */
 function OrganChestLootHandle(event) {

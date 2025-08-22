@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"kubejs:tinker_starting_equipment",
+		"kubejs:tinker_heart",
+		"kubejs:tinker_forge",
+		"kubejs:tinker_less_exp_gain"
+	],
+	"icon": {
+		"item": "tconstruct:materials_and_you"
+	},
+	"order": 4,
+	"impact": 0
+}

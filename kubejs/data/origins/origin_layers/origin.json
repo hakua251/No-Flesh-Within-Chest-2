@@ -6,7 +6,8 @@
 		"kubejs:normal",
 		"kubejs:lich",
 		"kubejs:machinist",
-		"kubejs:photographer"
+		"kubejs:photographer",
+		"kubejs:tinker"
 	],
 	"allow_random": true,
 	"exclude_random": [

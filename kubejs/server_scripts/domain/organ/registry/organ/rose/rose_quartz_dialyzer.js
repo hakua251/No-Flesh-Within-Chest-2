@@ -14,14 +14,13 @@ RegistryOrgan('kubejs:rose_quartz_dialyzer')
 function RoseQuartzDialyzerKeyActiveOnly(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const chestCavity = player.chestCavityInstance
-    let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
+    let repairValue = chestCavity.getOrganScore('kubejs:rosy') * 3
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:filtration') * chestCavity.inventory.countNonEmpty()
+            repairValue = repairValue + chestCavity.getOrganScore('chestcavity:filtration') * chestCavity.inventory.countNonEmpty()
             break
         }
     }
-    let repairValue = rosyValue * 3
     for (let i = 0; i < chestCavity.inventory.getContainerSize(); i++) {
         let item = chestCavity.inventory.getItem(i)
         if (item.getMaxDamage() <= 0) continue
