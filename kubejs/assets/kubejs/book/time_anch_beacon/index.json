@@ -1,0 +1,9 @@
+[
+  {
+    "name": "time_anch_beacon",
+    "data": "sections/time_anch_beacon.json",
+    "icon": {
+      "item": "minecraft:beacon"
+    }
+  }
+]

@@ -1,7 +1,7 @@
 // priority: 999
 StartupEvents.modifyCreativeTab('kubejs:tab', event => {
-	event.icon = 'kubejs:infinity_beats'
-	event.displayName = 'No Flesh Within Chest'
+	event.setIcon('kubejs:candy_heart')
+	event.setDisplayName('No Flesh Within Chest')
 })
 // StartupEvents.registry("creative_mode_tab", event => {
 //     let tab = event.create("chest_thinker:tab");

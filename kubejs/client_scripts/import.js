@@ -37,3 +37,6 @@ const $BufferUploader = Java.loadClass('com.mojang.blaze3d.vertex.BufferUploader
 
 const $CodecUtils = Java.loadClass('com.chen1335.renderjs.utils.CodecUtils')
 const $UVRange = Java.loadClass('com.chen1335.renderjs.utils.UVRange')
+
+const $Float = Java.loadClass('java.lang.Float')
+const $Integer = Java.loadClass('java.lang.Integer')

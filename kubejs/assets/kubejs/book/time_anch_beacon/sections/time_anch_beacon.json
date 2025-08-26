@@ -1,0 +1,17 @@
+[
+  {
+    "name": "doc",
+    "type": "mantle:text",
+    "data": "time_anch_beacon/doc.json"
+  },
+  {
+    "name": "structure",
+    "type": "mantle:structure",
+    "data": "time_anch_beacon/structure.json"
+  },
+  {
+    "name": "doc_2",
+    "type": "mantle:text",
+    "data": "time_anch_beacon/doc_2.json"
+  }
+]

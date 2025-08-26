@@ -13,7 +13,6 @@ const OrganTagMap = {
     'kubejs:spleen': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:spleen')),
     'kubejs:pancreas': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:pancreas')),
     'kubejs:stomach': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:stomach')),
-    'kubejs:infinity': Text.lightPurple(Text.translatable('tooltips.kubejs.tag.kubejs:infinity')),
     'kubejs:machine': Text.gray(Text.translatable('tooltips.kubejs.tag.kubejs:machine')),
     'kubejs:magic': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:magic')).color('#00eded'),
     'kubejs:candy': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:candy')).color('#e8a0dc'),

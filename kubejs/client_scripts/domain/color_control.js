@@ -1,6 +1,7 @@
 // priority: 500
 // NetworkEvents.dataReceived('apply_visual_effect', event => {
-//     VisualJS.applyEffect('creeper', true)
+//     VisualJS.applyEffect('kubejs:color', true)
+//     VisualJS.setUniform(0, 'hideRed', [1.0])
 // })
 
 
