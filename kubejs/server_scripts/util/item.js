@@ -23,3 +23,34 @@ function GetTreaseMapItem(level, pos) {
     $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecorationType.RED_X)
     return mapItem
 }
+
+/**
+ * 
+ * @param {ResourceLocation} lootId 
+ * @returns {Internal.LootTable}
+ */
+function GetLootTable(lootId) {
+    const lootData = Utils.server.getLootData()
+    return lootData.getLootTable(lootId)
+}
+
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {BlockPos} blockPos 
+ * @param {Internal.ItemStack[]} lootList 
+ */
+function SpawnLootAtLocation(level, blockPos, lootList) {
+    /**@type {Internal.ItemStack[][]} */
+    let itemChunks = SliceChunkArray(lootList, 3)
+    let tickCounter = 5
+    itemChunks.forEach(itemChunk => {
+        level.server.scheduleInTicks(tickCounter, callback => {
+            itemChunk.forEach(item => {
+                $Containers.dropItemStack(level, blockPos.x, blockPos.y, blockPos.z, item)
+            })
+        })
+        tickCounter = tickCounter + 10
+    })
+}

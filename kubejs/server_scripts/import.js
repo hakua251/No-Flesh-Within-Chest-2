@@ -23,6 +23,7 @@ const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavi
 const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
 const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')
 const $LootParamsBuilder = Java.loadClass('net.minecraft.world.level.storage.loot.LootParams$Builder')
+const $LootContextParamSets = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParamSets')
 const $Containers = Java.loadClass('net.minecraft.world.Containers')
 const $ChorusFlowerBlock = Java.loadClass('net.minecraft.world.level.block.ChorusFlowerBlock')
 const $BambooStalkBlock = Java.loadClass('net.minecraft.world.level.block.BambooStalkBlock')

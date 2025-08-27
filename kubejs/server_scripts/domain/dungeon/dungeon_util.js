@@ -10,11 +10,11 @@ function DungeonCreateEntity(level, context, entity) {
     const area = context.area
     let spawnPosOpt = area.findSpawnPos(level, 'spawnZone', entity)
     let spawnPos = BlockPos.ZERO
-    if (!spawnPosOpt.isPresent()) {
+    if (spawnPosOpt.isPresent()) {
+        spawnPos = spawnPosOpt.get()
+    } else {
         let center = area.getCenter()
         spawnPos = new BlockPos(center.x(), center.y(), center.z())
-    } else {
-        spawnPos = spawnPosOpt.get()
     }
     entity.getPersistentData().putUUID('relatedArea', area.getUuid())
     entity.setPos(spawnPos.getX(), spawnPos.getY(), spawnPos.getZ())
@@ -119,64 +119,26 @@ function GetAreaObeliskBlockPos(area) {
 
 /**
  * 
- * @param {Internal.PathfinderMob} entity 
- * @param {number} difficulty 
- * @returns 
- */
-function CommonDungeonEntityDifficultyModifier(entity, difficulty) {
-    const attributes = entity.getAttributes()
-    if (attributes.hasAttribute('minecraft:generic.max_health')) {
-        entity.setAttributeBaseValue('minecraft:generic.max_health', Math.floor(entity.getAttribute('minecraft:generic.max_health').getValue() * Math.pow(1.2, difficulty)))
-        entity.setHealth(entity.getMaxHealth())
-    }
-    if (attributes.hasAttribute('minecraft:generic.attack_damage')) {
-        entity.setAttributeBaseValue('minecraft:generic.attack_damage', Math.floor(entity.getAttribute('minecraft:generic.attack_damage').getValue() * (1 + difficulty * 0.05)))
-    }
-    return entity
-}
-
-
-/**
- * 
- * @param {Internal.Level} level 
- * @param {Internal.SpawnMobAreaKubeEvent} context 
- * @param {Internal.ItemStack[]} lootList 
- * @param {Boolean} isWin 
- */
-function CommonDungeonFinishAction(level, context, lootList, isWin) {
-    const area = context.area
-    let playerList = GetAreaPlayerList(level, area)
-    if (isWin) {
-        // let obeliskBlockPos = GetAreaObeliskBlockPos(area)
-        playerList.forEach(player => {
-            // todo 本地化
-            player.tell('§c§l波次成功')
-            level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.player.levelup', player.getSoundSource(), 0.5, 1)
-        })
-    } else {
-        playerList.forEach(player => {
-            // todo 本地化
-            player.tell('§c§l波次失败')
-            level.playSound(null, player.getX(), player.getY(), player.getZ(), 'item.trident.thunder', player.getSoundSource(), 0.5, 1)
-        })
-    }
-}
-
-
-/**
- * 
- * @param {Internal.Level} level 
- * @param {BlockPos} blockPos 
+ * @param {Internal.ServerLevel} level
+ * @param {Internal.Area} area 
  * @param {Internal.ItemStack[]} lootList 
  */
-function SpawnLootAtLocation(level, blockPos, lootList) {
+function SpawnDungeonLoot(level, area, lootList) {
     /**@type {Internal.ItemStack[][]} */
     let itemChunks = SliceChunkArray(lootList, 3)
+    let obeliskBlockPos = GetAreaObeliskBlockPos(area)
     let tickCounter = 5
     itemChunks.forEach(itemChunk => {
         level.server.scheduleInTicks(tickCounter, callback => {
             itemChunk.forEach(item => {
-                $Containers.dropItemStack(level, blockPos.x, blockPos.y, blockPos.z, item)
+                let itemEntity = new $ItemEntity(level, obeliskBlockPos.getX(), obeliskBlockPos.getY() + 10, obeliskBlockPos.getZ(), item)
+                let spawnPosOpt = area.findSpawnPos(level, 'spawnZone', itemEntity)
+                if (spawnPosOpt.isPresent()) {
+                    let spawnPos = spawnPosOpt.get()
+                    itemEntity.setPos(spawnPos.getX(), spawnPos.getY() + 10, spawnPos.getZ())
+                }
+                itemEntity.setDefaultPickUpDelay()
+                level.addFreshEntity(itemEntity)
             })
         })
         tickCounter = tickCounter + 10

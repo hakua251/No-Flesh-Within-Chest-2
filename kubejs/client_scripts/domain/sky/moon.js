@@ -12,5 +12,5 @@
 // RenderJSEvents.bindCustomMoonTexture(event => {
 //     event.setOverride()
 //     const moonTextureId = event.getMoonTextureId()
-//     RenderJSRenderSystem.setShaderTexture(moonTextureId, new ResourceLocation('kubejs:textures/item/organs/infinity/infinity_beats.png'))
+//     RenderJSRenderSystem.setShaderTexture(moonTextureId, new ResourceLocation('kubejs:textures/item/organs/food/beer_gland.png'))
 // })

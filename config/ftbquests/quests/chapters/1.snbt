@@ -8,6 +8,7 @@
 	quest_links: [ ]
 	quests: [{
 		id: "53E89D184A95651F"
+		invisible: true
 		tasks: [{
 			id: "6CC3860B042F8AEB"
 			item: {
@@ -33,7 +34,7 @@
 			}
 			type: "item"
 		}]
-		x: -2.0d
+		x: 0.0d
 		y: 0.0d
 	}]
 	title: "原版"

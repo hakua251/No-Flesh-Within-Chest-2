@@ -17,6 +17,9 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
         if (value < 0) {
             chestCavity.setOrganScore(key, 0)
         }
+        if (value > 3) {
+            chestCavity.setOrganScore(key, 3)
+        }
     })
 }
 
