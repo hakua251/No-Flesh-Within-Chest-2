@@ -1,6 +1,6 @@
 {
   "common": {
-    "rarityTooltip": true,
+    "rarityTooltip": false,
     "hungerTooltip": false,
     "saturationTooltip": false,
     "effectsTooltip": "WITH_ICON",

@@ -13,6 +13,8 @@ ServerEvents.tags('item', event => {
     event.add('kubejs:organ', ['chestcavity:tinker_heart'])
     event.add('tconstruct:modifiable/durability', ['chestcavity:tinker_heart'])
     event.add('tconstruct:modifiable/multipart', ['chestcavity:tinker_heart'])
+    event.add('kubejs:heart', ['chestcavity:tinker_heart'])
+    event.add('kubejs:machine', ['chestcavity:tinker_heart'])
 
     event.add('exposure:flashes', [])
     event.add('exposure:lenses', ['kubejs:exorcism_lens'])

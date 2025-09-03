@@ -717,6 +717,10 @@
     "tooltips.kubejs.leech_mouthpart.default.1": "它向你许诺不会伤害你",
     "tooltips.kubejs.leech_mouthpart.alt.1": "    §6★§r 在造成伤害时，如果伤害来源是玩家，那么有 %s 的%s会恢复玩家 %s 点饱和度",
     "tooltips.kubejs.leech_mouthpart.alt.2": "    §6★§r 如果伤害来源是非玩家，那么固定会恢复 %s 生命值",
+    "tooltips.chestcavity.tinker_heart.default.1": "神造匠艺如浑然天成",
+    "tooltips.chestcavity.tinker_heart.alt.1": "    §6★§r 该器官由§6顶点技艺§r铸造，能够以无生命的构造模拟出生物乃至超越生物的效果",
+    "tooltips.chestcavity.tinker_heart.alt.2": "    §6★§r 根据该工具被组装的具体属性，其胸腔属性会对应进行增减",
+    "tooltips.chestcavity.tinker_heart.ctrl.1": "    ■ 默认",
     "_comment.slot_type": "槽位类型",
     "slot_type.chestcavity.position.relative": "    §6★§r 槽位相对位置：( %s , %s )",
     "slot_type.kubejs.default.1": "    ■ 默认",
@@ -801,7 +805,6 @@
     "item.wishing_fountain.map.wishing_fountain.lapis": "青金石矿脉地图",
     "item.wishing_fountain.map.wishing_fountain.redstone": "红石矿脉地图",
     "item.wishing_fountain.map.wishing_fountain.zinc": "锌矿脉地图",
-
     "item.kubejs.time_anch_beacon_book": "时间彼岸的笔记",
     "item.kubejs.world_edit_magic_book": "时间彼岸的笔记",
     "item.kubejs.sawdust": "锯末",
@@ -820,7 +823,6 @@
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
     "gui.kubejs.title.chestcavity": "胸腔",
-
     "_comment.msg": "消息",
     "msg.kubejs.expansion_content.load_expansion.1": "No Flesh Within Chest已加载 %s 份拓展包。",
     "msg.kubejs.expansion_content.load_expansion.2": "点击此处以查看已安装的扩展包列表。",
