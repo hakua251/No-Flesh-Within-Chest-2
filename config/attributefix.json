@@ -451,17 +451,6 @@
         "value": 1024
       }
     },
-    "tconstruct:generic.safe_fall_distance": {
-      "enabled": false,
-      "min": {
-        "default": -10,
-        "value": -10
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "modulargolems:golem_size": {
       "enabled": false,
       "min": {
@@ -471,6 +460,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "tconstruct:generic.safe_fall_distance": {
+      "enabled": false,
+      "min": {
+        "default": -10,
+        "value": -10
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "potioncore:damage_resistance": {
@@ -539,17 +539,6 @@
         "value": 34
       }
     },
-    "tconstruct:player.jump_count": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "modulargolems:golem_regen": {
       "enabled": false,
       "min": {
@@ -559,6 +548,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "tconstruct:player.jump_count": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "minecraft:generic.flying_speed": {

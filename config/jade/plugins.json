@@ -54,12 +54,12 @@
   "ars_nouveau": {
     "mob_jar": true
   },
-  "kubejs": {
-    "dungeon_obelisk": true
-  },
   "exposure": {
     "lightroom": true,
     "photograph_frame": true
+  },
+  "create_mechanical_spawner": {
+    "spawner_data": true
   },
   "supplementaries": {
     "hat_stand": true
