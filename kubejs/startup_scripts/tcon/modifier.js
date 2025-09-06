@@ -80,4 +80,7 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
+
+    // 猎魂：击杀敌人之后获得对应的灵魂
+    event.createNew('soul_hunter', builder => {})
 })

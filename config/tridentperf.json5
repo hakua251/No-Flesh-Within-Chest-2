@@ -1,0 +1,34 @@
+// TridentPerf Configuration File
+// This file uses JSON5 format - comments and trailing commas are allowed
+{
+  // Global enable/disable toggle
+  enabled: true,
+
+  // CPU Affinity & Priority settings
+  affinity: {
+    enabled: true,
+    profile: "auto",
+  },
+
+  // Shader cache settings
+  shadercache: {
+    enabled: true,
+    prewarmOnDemand: false,
+    cacheDir: "shadercache",
+    maxSizeMB: 512,
+  },
+
+  // Frametime governor settings
+  governor: {
+    enabled: true,
+    targetMs: 10.0,
+    mode: "Balanced",
+    minChangeIntervalMs: 1500,
+  },
+
+  // Diagnostic settings
+  diagnostics: {
+    overlay: false,
+    samplingWindowFrames: 120,
+  },
+}

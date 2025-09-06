@@ -1,0 +1,109 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "tconstruct:ender_slime",
+								"weight": 1,
+								"minCount": 4,
+								"maxCount": 4
+							}
+						]
+					}
+				},
+				"id": "tconstruct:end_slime_island"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "tconstruct:terracube",
+								"weight": 1,
+								"minCount": 2,
+								"maxCount": 4
+							}
+						]
+					}
+				},
+				"id": "tconstruct:clay_island"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "tconstruct:sky_slime",
+								"weight": 1,
+								"minCount": 3,
+								"maxCount": 4
+							}
+						]
+					}
+				},
+				"id": "tconstruct:sky_slime_island"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "underground_decoration",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "minecraft:magma_cube",
+								"weight": 1,
+								"minCount": 4,
+								"maxCount": 6
+							}
+						]
+					}
+				},
+				"id": "tconstruct:blood_island"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "minecraft:slime",
+								"weight": 1,
+								"minCount": 4,
+								"maxCount": 4
+							}
+						]
+					}
+				},
+				"id": "tconstruct:earth_slime_island"
+			}
+		}
+	]
+}
