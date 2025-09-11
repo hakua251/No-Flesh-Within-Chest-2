@@ -31,9 +31,6 @@ NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent}
     OrganEntityBeHurt(event, customData)
     FragileEntityBeHurt(event, customData)
     DragonPowerEntityBeHurt(event, customData)
-    if (amount > 0) {
-        OrganScoreDamagedEffect(event, customData)
-    }
     if (customData.thornsDamage > 0 && event.source.actual) {
         let level = event.entity.level
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)

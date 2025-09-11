@@ -15,7 +15,6 @@ if (IsLoadedKubeloader) {
     ContentPacks.putShared('DungeonEventActionModel', DungeonEventActionModel)
     ContentPacks.putShared('NewKillAmountWave', NewKillAmountWave)
     ContentPacks.putShared('NewContinousKillAmountWave', NewContinousKillAmountWave)
-    ContentPacks.putShared('RegisterOrganScoreGoopRenderStrategy', RegisterOrganScoreGoopRenderStrategy)
     ContentPacks.putShared('RegisterOriginChangedStrategy', RegisterOriginChangedStrategy)
     ContentPacks.putShared('SlotStrategyModel', SlotStrategyModel)
     ContentPacks.putShared('OrganBlockBrokenEvent', OrganBlockBrokenEvent)
@@ -36,5 +35,4 @@ if (IsLoadedKubeloader) {
     ContentPacks.putShared('PlayerSpellCastEvent', ISSPlayerSpellCastEvent)
     ContentPacks.putShared('OrganSpellLevelModifyEvent', ISSSpellLevelModifyEvent)
     ContentPacks.putShared('OrganSpellSelectionEvent', ISSSpellSelectionEvent)
-    ContentPacks.putShared('OrganScoreGoopRenderStrategy', OrganScoreGoopRenderStrategy)
 }

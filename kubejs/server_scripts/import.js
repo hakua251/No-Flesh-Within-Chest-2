@@ -53,13 +53,8 @@ const $ExtraGoopData = Java.loadClass('absolutelyaya.goop.api.ExtraGoopData')
 const $WaterHandling = Java.loadClass('absolutelyaya.goop.api.WaterHandling')
 
 
-const $AABBArea = Java.loadClass('snownee.loquat.core.area.AABBArea')
-const $RestrictInstance = Java.loadClass('snownee.loquat.core.RestrictInstance')
-const $RestrictBehavior = Java.loadClass('snownee.loquat.core.RestrictInstance$RestrictBehavior')
-const $SSyncRestrictionPacket = Java.loadClass('snownee.loquat.network.SSyncRestrictionPacket')
-const $Zone = Java.loadClass('snownee.loquat.core.area.Zone')
 const $MobSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType')
-const $SpawnMobAreaKubeEvent = Java.loadClass('snownee.loquat.spawner.SpawnMobAreaKubeEvent')
+
 
 const $CustomBossEvent = Java.loadClass('net.minecraft.server.bossevents.CustomBossEvent')
 const $BossBarColor = Java.loadClass('net.minecraft.world.BossEvent$BossBarColor')
