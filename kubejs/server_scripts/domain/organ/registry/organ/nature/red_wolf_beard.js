@@ -78,7 +78,7 @@ function RedWolfBeardTakeOn(customData, event, organItem, organIndex, slotType) 
 function RedWolfBeardEntityKill(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.LivingEntity} */
     let damageValue = organItem.getDamageValue()
-    if (damageValue == 0) return
+    if (damageValue == 0 || damageValue == organItem.getMaxDamage()) return
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     if (!sourceEntity.isLiving()) return

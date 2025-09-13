@@ -18,6 +18,7 @@ function OwlVertebraeEntityTick(customData, event, organItem, organIndex, slotTy
         entity.potionEffects.add('minecraft:night_vision', 400)
     }
 }
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:owl_vertebrae')
         .addOnlyStrategy('entity_tick', OwlVertebraeEntityTick)
