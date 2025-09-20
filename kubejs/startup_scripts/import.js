@@ -33,3 +33,4 @@ const $ISSUtils = Java.loadClass('io.redspace.ironsspellbooks.api.util.Utils')
 const $ExtendedEvokerFang = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.ExtendedEvokerFang')
 
 const $AltarBlockEntity = Java.loadClass('net.jrdemiurge.skyarena.block.entity.AltarBlockEntity')
+const $LootContextParams = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParams')

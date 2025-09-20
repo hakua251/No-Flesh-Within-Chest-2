@@ -82,7 +82,16 @@ TConJSEvents.modifierRegistry(event => {
     })
 
     // 猎魂：击杀敌人之后获得对应的灵魂
-    event.createNew('soul_hunter', builder => { })
+    event.createNew('soul_hunter', builder => {
+        builder.processLoot((toolView, lvl, lootList, context) => {
+            const target = context.getParamOrNull($LootContextParams.THIS_ENTITY)
+            if (target != null && Math.random() < lvl * 0.05){
+                lootList.push(Item.of('kubejs:soul_crystal', {
+                    'EntityType': target.type
+                }))
+            }
+        })
+    })
 
     event.createNew('freezing', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
@@ -100,4 +109,18 @@ TConJSEvents.modifierRegistry(event => {
             target.setRemainingFireTicks(fireTicks + 20 * lvl)
         })
     })
+
+    event.createNew('frostbite', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            const source = context.getAttacker()
+            /**@type {Internal.PathfinderMob} */
+            const target = context.target
+            let forzenTicks = target.getTicksFrozen()
+            if (forzenTicks > 0) {
+                let attackDamage = source.getAttributeValue('minecraft:generic.attack_damage')
+                amount = amount + forzenTicks / 100 * lvl * attackDamage
+            }
+        })
+    })
+
 })

@@ -60,5 +60,22 @@ function GetItemMaxStresso(item) {
     return stressoNbt.getInt('Max')
 }
 
-
-
+/**
+ * 
+ * @param {Internal.ItemStack} item 
+ * @param {Number} delta 
+ * @param {Boolean} allowOverMax 
+ */
+function IncreaseItemStresso(item, delta, allowOverMax) {
+    if (!item.hasNBT()) {
+        item.setNbt(new $CompoundTag())
+    }
+    let nbt = item.getNbt()
+    if (!nbt.contains('Stresso')) {
+        nbt.putCompound('Stresso', new $CompoundTag())
+    }
+    let stressoNbt = nbt.getCompound('Stresso')
+    let cur = stressoNbt.contains('Cur') ? stressoNbt.getInt('Cur') : 0
+    let max = stressoNbt.contains('Max') ? stressoNbt.getInt('Max') : 100
+    stressoNbt.putInt('Cur', allowOverMax ? cur + delta : Math.min(cur + delta, max))
+}
