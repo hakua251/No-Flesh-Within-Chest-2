@@ -3,10 +3,190 @@
     "default": {
       "mobSpawnRadius": 20,
       "spawnDistanceFromPlayer": 10,
-      "battleLossDistance": 35,
-      "mobTeleportDistance": 35,
-      "mobGriefingProtectionRadius": 35,
-      "bossBarHideRadius": 35,
+      "battleLossDistance": 48,
+      "mobTeleportDistance": 48,
+      "mobGriefingProtectionRadius": 48,
+      "bossBarHideRadius": 48,
+      "mobCostRatio": 20,
+      "allowDifficultyReset": true,
+      "allowWaterAndAirSpawn": false,
+      "individualPlayerStats": false,
+      "setNight": false,
+      "setRain": false,
+      "disableMobItemDrop": true,
+      "startingPoints": 200,
+      "startingStatMultiplier": 1.0,
+      "difficultyLevelRanges": [
+        {
+          "range": [
+            1,
+            9999
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.2,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common"
+          ]
+        }
+      ],
+      "mobGroups": {
+        "common": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:zombie": 10,
+            "minecraft:skeleton": 30,
+            "minecraft:wither_skeleton": 50
+          }
+        }
+      }
+    },
+    "basic_graveyard": {
+      "mobSpawnRadius": 20,
+      "spawnDistanceFromPlayer": 10,
+      "battleLossDistance": 48,
+      "mobTeleportDistance": 48,
+      "mobGriefingProtectionRadius": 48,
+      "bossBarHideRadius": 48,
+      "mobCostRatio": 20,
+      "allowDifficultyReset": true,
+      "allowWaterAndAirSpawn": false,
+      "individualPlayerStats": false,
+      "setNight": false,
+      "setRain": false,
+      "disableMobItemDrop": true,
+      "startingPoints": 200,
+      "startingStatMultiplier": 1.0,
+      "difficultyLevelRanges": [
+        {
+          "range": [
+            1,
+            9999
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.2,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common"
+          ]
+        }
+      ],
+      "mobGroups": {
+        "common": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:zombie": 10,
+            "minecraft:skeleton": 30,
+            "minecraft:wither_skeleton": 50
+          }
+        }
+      }
+    },
+    "advance_graveyard": {
+      "mobSpawnRadius": 20,
+      "spawnDistanceFromPlayer": 10,
+      "battleLossDistance": 48,
+      "mobTeleportDistance": 48,
+      "mobGriefingProtectionRadius": 48,
+      "bossBarHideRadius": 48,
+      "mobCostRatio": 20,
+      "allowDifficultyReset": true,
+      "allowWaterAndAirSpawn": false,
+      "individualPlayerStats": false,
+      "setNight": false,
+      "setRain": false,
+      "disableMobItemDrop": true,
+      "startingPoints": 200,
+      "startingStatMultiplier": 1.0,
+      "difficultyLevelRanges": [
+        {
+          "range": [
+            1,
+            9999
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.2,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common"
+          ]
+        }
+      ],
+      "mobGroups": {
+        "common": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:zombie": 10,
+            "minecraft:skeleton": 30,
+            "minecraft:wither_skeleton": 50
+          }
+        }
+      }
+    },
+    "basic_nether": {
+      "mobSpawnRadius": 20,
+      "spawnDistanceFromPlayer": 10,
+      "battleLossDistance": 48,
+      "mobTeleportDistance": 48,
+      "mobGriefingProtectionRadius": 48,
+      "bossBarHideRadius": 48,
+      "mobCostRatio": 20,
+      "allowDifficultyReset": true,
+      "allowWaterAndAirSpawn": false,
+      "individualPlayerStats": false,
+      "setNight": false,
+      "setRain": false,
+      "disableMobItemDrop": true,
+      "startingPoints": 200,
+      "startingStatMultiplier": 1.0,
+      "difficultyLevelRanges": [
+        {
+          "range": [
+            1,
+            9999
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.2,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common"
+          ]
+        }
+      ],
+      "mobGroups": {
+        "common": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:zombie": 10,
+            "minecraft:skeleton": 30,
+            "minecraft:wither_skeleton": 50
+          }
+        }
+      }
+    },
+    "advance_nether": {
+      "mobSpawnRadius": 20,
+      "spawnDistanceFromPlayer": 10,
+      "battleLossDistance": 48,
+      "mobTeleportDistance": 48,
+      "mobGriefingProtectionRadius": 48,
+      "bossBarHideRadius": 48,
       "mobCostRatio": 20,
       "allowDifficultyReset": true,
       "allowWaterAndAirSpawn": false,
@@ -46,6 +226,6 @@
       }
     }
   },
-    "keys": {},
-    "trophies": {}
+  "keys": {},
+  "trophies": {}
 }

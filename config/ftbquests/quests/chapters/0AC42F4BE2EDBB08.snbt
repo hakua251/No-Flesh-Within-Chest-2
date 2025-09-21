@@ -15,6 +15,8 @@
 				"现在我们应该步入正轨了，&n请寻找一棵树木，并且左键采集它下方的&6原木&r&n，拾取该物品至物品栏中&r。"
 				""
 				"本任务会定期检测您的背包，如果存在该物品，那么任务会被视作完成。"
+				""
+				"如果一样物品在反复切换显示——这意味着这些物品都被允许作为任务完成的材料。"
 			]
 			icon: "minecraft:oak_log"
 			id: "24C2BCAAAF1E55DE"
@@ -165,7 +167,10 @@
 		}
 		{
 			dependencies: ["18544E5B62DBC5EF"]
+			description: ["在预先设定好的游戏流程中，您需要在世界中向下挖掘，获取到一定量的&n&6铁矿石&r来提高您的挖掘等级。"]
+			icon: "minecraft:iron_ore"
 			id: "24908FF341485C05"
+			subtitle: "挖掘类任务"
 			tasks: [{
 				block: "forge:ores/iron"
 				block_type: 1
