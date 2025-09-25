@@ -12,7 +12,7 @@
     "bucketTooltip": true,
     "spawnEggTooltip": true,
     "durabilityTooltip": "VANILLA",
-    "containerTooltip": "IMAGE",
+    "containerTooltip": "NONE",
     "paintingTooltip": true,
     "bannerTooltip": true,
     "mapTooltip": true,

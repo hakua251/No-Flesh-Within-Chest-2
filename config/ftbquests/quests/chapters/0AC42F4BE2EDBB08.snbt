@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "0AC42F4BE2EDBB08"
 	group: ""
+	hide_quest_until_deps_complete: true
 	icon: "minecraft:oak_log"
 	id: "0AC42F4BE2EDBB08"
 	order_index: 1
@@ -167,9 +168,18 @@
 		}
 		{
 			dependencies: ["18544E5B62DBC5EF"]
-			description: ["在预先设定好的游戏流程中，您需要在世界中向下挖掘，获取到一定量的&n&6铁矿石&r来提高您的挖掘等级。"]
+			description: [
+				"在预先设定好的游戏流程中，您需要在世界中向下挖掘，获取到一定量的&n&6铁矿石&r来提高您的挖掘等级。"
+				""
+				"但稍等. . . 好像这个世界存在一些问题，我会在之后为您查明这些问题，暂且还请您先按照任务的要求挖掘对应数量的矿物。"
+			]
 			icon: "minecraft:iron_ore"
 			id: "24908FF341485C05"
+			rewards: [{
+				id: "66A73E0393E9CA0C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			subtitle: "挖掘类任务"
 			tasks: [{
 				block: "forge:ores/iron"
@@ -182,6 +192,148 @@
 			}]
 			x: 0.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["24908FF341485C05"]
+			description: [
+				"经过确认，这个世界并非跟与程式设定时所预期的世界相符。"
+				""
+				"这种情况的原因复杂，通常涉及到&6新变量引入&r/&6外部环境更新&r/&6数据异常变更&r/&6极端边界场景&r。"
+				""
+				"万幸，在Neo，即“&6我&r”，的程式设计之初，便考虑到了这种情况的出现，因此我会通过我所有的&6能力&r/&6权利&r/&6权限&r/&6功能&r/&6手段&r，确保您的世界流程正常&6演化&r/&6发展&r/&6进行&r/&6驱动&r。"
+				""
+				"但我的所管辖权仅能覆盖任务引导区域，全面的对世界的扫描是&6被禁止&r/&6严格限制&r/&6无法做到&r。但我会尽力以我的方式理解这个世界运行的最新规则，以辅佐您完成应当完成的事。"
+			]
+			icon: "minecraft:cookie"
+			id: "4E805DA2B8D171E4"
+			rewards: [{
+				id: "583D006084ABCBD0"
+				item: {
+					Count: 1
+					id: "supplementaries:jar"
+					tag: {
+						BlockEntityTag: {
+							FluidHolder: {
+								count: 0b
+								id: "moonlight:empty"
+							}
+							ForgeCaps: { }
+							Items: [
+								{
+									Count: 1b
+									Slot: 0b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 1b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 2b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 3b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 4b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 5b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 6b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 7b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 8b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 9b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 10b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 11b
+									id: "minecraft:cookie"
+								}
+							]
+						}
+					}
+				}
+				title: "请不要慌张"
+				type: "item"
+			}]
+			subtitle: "检测到异常"
+			tasks: [{
+				id: "0DC7518EA5C12788"
+				title: "知晓"
+				type: "checkmark"
+			}]
+			title: "计划有变"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4E805DA2B8D171E4"]
+			description: [
+				"尽管世界存在有部分异常，但目前来看，异常所造成的影响并未对旧流程产生较大的影响。"
+				""
+				"因此，请您在获得铁锭后制作铁镐，随后在世界上获取到&6钻石&r。获取钻石的流程可能并非来源于采掘，更有可能来自于世界上的自然生成，因此在这里并不对您的获取方式做任何限制。"
+			]
+			id: "563D136C06E38A60"
+			rewards: [{
+				id: "4A99E34196AB833F"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			subtitle: "前往另一维度"
+			tasks: [{
+				id: "18FA21A0577F4290"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "更高效的采掘方案"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4E805DA2B8D171E4"]
+			description: [
+				"经过物品扫描确认，世界中存在有大量新增的物品，其中绝大多数物品都对您的生存有莫大的帮助。"
+				""
+				"但由于权限较低，我无法得知绝大部分物品的获取方式，因此需要您辅助我进行世界的探索，以了解这部分物品所需的具体技术。"
+				""
+				"除此之外，我还在物品中检测到了一部分被称作“传闻”的物品。这些物品的制作方式同样未知，但是毫无疑问，传闻是您和我探索世界的重要途径之一，因此后续的任务排布我会一定程度上按照您所收集的传闻来开展。"
+			]
+			icon: "minecraft:book"
+			id: "46E78442AD5DB22E"
+			subtitle: "调查传闻"
+			title: "传闻"
+			x: 1.0d
+			y: -7.0d
 		}
 	]
 	title: "壹"
