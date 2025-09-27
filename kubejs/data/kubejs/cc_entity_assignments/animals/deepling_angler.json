@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/deepling_angler.json",
+  "entities": [
+    "cataclysm:deepling_angler"
+  ]
+}

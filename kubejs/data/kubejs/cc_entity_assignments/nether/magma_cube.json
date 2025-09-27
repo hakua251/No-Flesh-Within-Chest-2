@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/nether/magma_cube.json",
+  "entities": [
+    "minecraft:magma_cube"
+  ]
+}

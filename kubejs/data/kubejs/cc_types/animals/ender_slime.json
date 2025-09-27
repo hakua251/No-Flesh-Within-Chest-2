@@ -1,0 +1,21 @@
+{
+  "defaultChestCavity": [
+    {"item":"","position": 0},
+    {"item":"","position": 1},
+    {"item":"tconstruct:ender_slime_ball","position": 2,"count":1},
+    {"item": "","position": 3},
+    {"item": "","position": 4},
+    {"item": "","position": 5},
+    {"item": "","position": 6},
+    {"item": "","position": 7},
+    {"item": "","position": 8},
+    {"item": "","position": 9},
+    {"item": "","position": 10},
+    {"item": "","position": 11},
+    {"item": "","position": 12},
+    {"item": "","position": 13},
+    {"item": "","position": 14}
+  ],
+  "baseOrganScores": [],
+  "inventoryType": "kubejs:cc_inventory_types/small_terra.json"
+}

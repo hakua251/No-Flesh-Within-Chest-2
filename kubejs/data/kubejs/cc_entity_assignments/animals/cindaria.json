@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/cindaria.json",
+  "entities": [
+    "cataclysm:cindaria"
+  ]
+}

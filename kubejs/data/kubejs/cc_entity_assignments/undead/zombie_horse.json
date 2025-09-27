@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/undead/zombie_horse.json",
+  "entities": [
+    "minecraft:zombie_horse"
+  ]
+}

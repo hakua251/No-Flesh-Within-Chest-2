@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/lionfish.json",
+  "entities": [
+    "cataclysm:lionfish"
+  ]
+}

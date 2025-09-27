@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/priest.json",
+  "entities": [
+    "irons_spellbooks:priest"
+  ]
+}

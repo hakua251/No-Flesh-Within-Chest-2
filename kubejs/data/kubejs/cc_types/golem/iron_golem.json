@@ -1,0 +1,11 @@
+{
+  "defaultChestCavity": [
+    {"item":"chestcavity:piston_muscle","position": 0},
+    {"item":"chestcavity:inner_furnace","position": 1},
+    {"item":"chestcavity:golem_core","position": 2},
+    {"item":"chestcavity:golem_plating","position": 3},
+    {"item":"chestcavity:golem_cable","position": 4}
+  ],
+  "baseOrganScores": [],
+  "inventoryType": "kubejs:cc_inventory_types/small_golem.json"
+}

@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/golem/coral_golem.json",
+  "entities": [
+    "cataclysm:coral_golem"
+  ]
+}

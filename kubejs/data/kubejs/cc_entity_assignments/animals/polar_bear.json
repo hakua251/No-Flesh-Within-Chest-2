@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/polar_bear.json",
+  "entities": [
+    "minecraft:polar_bear"
+  ]
+}

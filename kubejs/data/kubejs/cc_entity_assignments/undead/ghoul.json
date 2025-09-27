@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/undead/ghoul.json",
+  "entities": [
+    "graveyard:ghoul"
+  ]
+}

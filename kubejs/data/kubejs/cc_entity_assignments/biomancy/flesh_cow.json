@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/biomancy/flesh_cow.json",
+  "entities": [
+    "biomancy:flesh_cow"
+  ]
+}

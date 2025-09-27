@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/nether/zoglin.json",
+  "entities": [
+    "minecraft:zoglin"
+  ]
+}

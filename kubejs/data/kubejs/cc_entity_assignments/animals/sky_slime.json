@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/sky_slime.json",
+  "entities": [
+    "tconstruct:sky_slime"
+  ]
+}

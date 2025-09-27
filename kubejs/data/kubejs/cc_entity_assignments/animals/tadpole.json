@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/tadpole.json",
+  "entities": [
+    "minecraft:tadpole"
+  ]
+}

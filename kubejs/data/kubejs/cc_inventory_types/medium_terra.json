@@ -1,0 +1,42 @@
+{
+    "slotDefinitions": [
+        {"x": 15, "y": 49},
+        {"x": 51, "y": 49},
+        {"x": 69, "y": 49},
+        {"x": 87, "y": 49},
+        {"x": 105, "y": 49},
+        {"x": 123, "y": 49},
+        {"x": 159, "y": 49},
+        {"x": 15, "y": 67},
+        {"x": 33, "y": 67},
+        {"x": 51, "y": 67},
+        {"x": 69, "y": 67},
+        {"x": 87, "y": 67},
+        {"x": 105, "y": 67},
+        {"x": 123, "y": 67},
+        {"x": 141, "y": 67},
+        {"x": 159, "y": 67},
+        {"x": 69, "y": 85},
+        {"x": 87, "y": 85},
+        {"x": 105, "y": 85}
+    ],
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity/medium_terra.png",
+    "playerInventoryPosition": {
+        "x": 7,
+        "y": 41
+    },
+    "titlePosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    },
+    "backgroundSize": {
+        "x": 187,
+        "y": 211
+    },
+    "inventoryLabelPosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    }
+}

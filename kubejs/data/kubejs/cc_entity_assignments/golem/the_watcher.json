@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/golem/the_watcher.json",
+  "entities": [
+    "cataclysm:the_watcher"
+  ]
+}

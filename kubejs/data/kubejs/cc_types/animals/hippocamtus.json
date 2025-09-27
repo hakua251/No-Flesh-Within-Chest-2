@@ -1,0 +1,25 @@
+{
+  "defaultChestCavity": [
+    {"item": "chestcavity:rib","position": 0},
+    {"item": "chestcavity:spleen","position": 1},
+    {"item": "chestcavity:spine","position": 2},
+    {"item": "chestcavity:heart","position": 3},
+    {"item": "chestcavity:rib","position": 4},
+    {"item": "chestcavity:muscle","position": 5},
+    {"item": "chestcavity:kidney","position": 6},
+    {"item": "chestcavity:lung","position": 7},
+    {"item": "chestcavity:liver","position": 8},
+    {"item": "kubejs:hippocamtus_scale","position": 9},
+    {"item": "chestcavity:stomach","position": 10},
+    {"item": "chestcavity:lung","position": 11},
+    {"item": "chestcavity:kidney","position": 12},
+    {"item": "chestcavity:muscle","position": 13},
+    {"item": "chestcavity:rib","position": 14},
+    {"item": "chestcavity:muscle","position": 15},
+    {"item": "chestcavity:spine","position": 16},
+    {"item": "chestcavity:intestine","position": 17},
+    {"item": "chestcavity:rib","position": 18}
+  ],
+  "baseOrganScores": [],
+  "inventoryType": "kubejs:cc_inventory_types/medium_aquatic.json"
+}

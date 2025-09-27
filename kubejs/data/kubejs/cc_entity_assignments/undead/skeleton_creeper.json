@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/undead/skeleton_creeper.json",
+  "entities": [
+    "graveyard:skeleton_creeper"
+  ]
+}

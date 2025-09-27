@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/ender_slime.json",
+  "entities": [
+    "tconstruct:ender_slime"
+  ]
+}

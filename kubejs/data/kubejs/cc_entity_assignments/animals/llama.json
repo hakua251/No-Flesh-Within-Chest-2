@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/llama.json",
+  "entities": [
+    "minecraft:llama"
+  ]
+}

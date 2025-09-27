@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/elder_guardian.json",
+  "entities": [
+    "minecraft:elder_guardian"
+  ]
+}

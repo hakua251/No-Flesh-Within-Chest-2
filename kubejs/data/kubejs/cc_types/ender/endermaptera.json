@@ -1,0 +1,21 @@
+{
+  "defaultChestCavity": [
+    {"item": "chestcavity:small_animal_rib","position": 0},
+    {"item": "chestcavity:ender_lung","position": 1},
+    {"item": "chestcavity:insect_heart","position": 2},
+    {"item": "chestcavity:ender_lung","position": 3},
+    {"item": "chestcavity:small_animal_rib","position": 4},
+    {"item": "chestcavity:ender_muscle","position": 5},
+    {"item": "chestcavity:insect_intestine","position": 6},
+    {"item": "ckubejs:endermaptera_shell","position": 7},
+    {"item": "chestcavity:insect_stomach","position": 8},
+    {"item": "chestcavity:ender_muscle","position": 9},
+    {"item": "chestcavity:ender_muscle","position": 10},
+    {"item": "chestcavity:insect_intestine","position": 11},
+    {"item": "chestcavity:insect_caeca","position": 12},
+    {"item": "chestcavity:insect_caeca","position": 13},
+    {"item": "chestcavity:ender_muscle","position": 14}
+  ],
+  "baseOrganScores": [],
+  "inventoryType": "kubejs:cc_inventory_types/small_ender.json"
+}

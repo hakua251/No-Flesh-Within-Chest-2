@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/amethyst_crab.json",
+  "entities": [
+    "cataclysm:amethyst_crab"
+  ]
+}

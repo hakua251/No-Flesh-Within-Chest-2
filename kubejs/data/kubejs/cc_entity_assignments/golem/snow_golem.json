@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/golem/snow_golem.json",
+  "entities": [
+    "minecraft:snow_golem"
+  ]
+}

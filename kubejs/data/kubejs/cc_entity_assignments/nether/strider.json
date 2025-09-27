@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/nether/strider.json",
+  "entities": [
+    "minecraft:strider"
+  ]
+}

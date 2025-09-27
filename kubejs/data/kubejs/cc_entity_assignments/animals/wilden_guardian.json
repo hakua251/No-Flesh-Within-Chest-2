@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/wilden_guardian.json",
+  "entities": [
+    "ars_nouveau:wilden_guardian"
+  ]
+}

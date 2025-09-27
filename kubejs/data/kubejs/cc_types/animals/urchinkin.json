@@ -1,0 +1,21 @@
+{
+  "defaultChestCavity": [
+    {"item": "","position": 0},
+    {"item": "chestcavity:small_gills","position": 1},
+    {"item": "","position": 2},
+    {"item": "chestcavity:small_gills","position": 3},
+    {"item": "","position": 4},
+    {"item": "chestcavity:small_aquatic_muscle","position": 5},
+    {"item": "chestcavity:small_carnivore_stomach","position": 6},
+    {"item": "kubejs:urchinkin_stinger","position": 7},
+    {"item": "chestcavity:small_animal_liver","position": 8},
+    {"item": "chestcavity:small_aquatic_muscle","position": 9},
+    {"item": "chestcavity:small_animal_kidney","position": 10},
+    {"item": "chestcavity:small_carnivore_intestine","position": 11},
+    {"item": "","position": 12},
+    {"item": "","position": 13},
+    {"item": "chestcavity:small_animal_kidney","position": 14}
+  ],
+  "baseOrganScores": [],
+  "inventoryType": "kubejs:cc_inventory_types/small_aquatic.json"
+}

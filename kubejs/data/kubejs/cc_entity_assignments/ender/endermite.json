@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/ender/endermite.json",
+  "entities": [
+    "minecraft:endermite"
+  ]
+}

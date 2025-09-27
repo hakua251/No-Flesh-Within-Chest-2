@@ -1,0 +1,24 @@
+{
+  "defaultChestCavity": [
+    {"item": "chestcavity:animal_rib","position": 0},
+    {"item": "chestcavity:animal_muscle","position": 1},
+    {"item": "chestcavity:animal_lung","position": 2},
+    {"item": "chestcavity:animal_heart","position": 3},
+    {"item": "chestcavity:animal_lung","position": 4},
+    {"item": "chestcavity:animal_muscle","position": 5},
+    {"item": "chestcavity:animal_rib","position": 6},
+    {"item": "chestcavity:animal_rib","position": 7},
+    {"item": "chestcavity:animal_spleen","position": 8},
+    {"item": "chestcavity:animal_liver","position": 9},
+    {"item": "chestcavity:herbivore_stomach","position": 10},
+    {"item": "chestcavity:herbivore_rumen","position": 12},
+    {"item": "chestcavity:herbivore_intestine","position": 13},
+    {"item": "chestcavity:herbivore_intestine","position": 14},
+     {"item": "chestcavity:animal_rib","position": 15},
+     {"item": "chestcavity:animal_kidney","position": 16},
+     {"item": "chestcavity:animal_spine","position": 17},
+     {"item": "chestcavity:animal_kidney","position": 18}
+  ],
+  "baseOrganScores": [],
+  "inventoryType": "kubejs:cc_inventory_types/medium_terra.json"
+}

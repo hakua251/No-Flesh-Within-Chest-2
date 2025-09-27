@@ -1,0 +1,25 @@
+{
+  "defaultChestCavity": [
+    {"item": "","position": 0},
+    {"item": "","position": 1},
+    {"item": "","position": 2},
+    {"item": "","position": 3},
+    {"item": "","position": 4},
+    {"item": "","position": 5},
+    {"item": "","position": 6},
+    {"item": "","position": 7},
+    {"item": "","position": 8},
+    {"item": "kubejs:cindaria_umbrella","position": 9},
+    {"item": "","position": 10},
+    {"item": "","position": 11},
+    {"item": "","position": 12},
+    {"item": "","position": 13},
+    {"item": "","position": 14},
+    {"item": "","position": 15},
+    {"item": "","position": 16},
+    {"item": "","position": 17},
+    {"item": "","position": 18}
+  ],
+  "baseOrganScores": [],
+  "inventoryType": "kubejs:cc_inventory_types/medium_aquatic.json"
+}
