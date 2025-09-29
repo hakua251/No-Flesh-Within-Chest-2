@@ -6,7 +6,7 @@
     "": {},
     "hungerTooltip": false,
     "saturationTooltip": false,
-    "effectsTooltip": "WITH_ICON",
+    "effectsTooltip": "NONE",
     "enchantmentTooltip": "SHIFT_DETAIL",
     "armorTooltip": "PLAYER",
     "bucketTooltip": true,

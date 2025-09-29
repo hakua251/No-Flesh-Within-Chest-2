@@ -91,9 +91,6 @@ hideNoRankEntities = true
 forceObfuscation = false
 #List of entities that should be prioritized and included in the bestiary regardless of their category (format: "minecraft:sheep")
 entityIncludeList = []
-#Maximum number of entities to process per dimension for loot generation (higher value means more precise loot chances but longer loading times)
-#Range: 50 ~ 500
-lootGenerationBatchSize = 100
 #Chance (0.0-1.0) used by the /bestiary rank roll command to apply a rolled rank
 #Range: 0.0 ~ 1.0
 commandRolls = 0.15
@@ -172,4 +169,7 @@ dynamicDropWeight = 0.7
 ignoreModifiedDropEvents = true
 #When ignoreModifiedDropEvents is true: If this list is non-empty, only ignore drop events when the killer's held item has any enchantment from this list (e.g., "minecraft:looting"). If empty, any enchantment on the held item will cause the event to be ignored.
 modifiedDropEnchantments = ["minecraft:looting", "minecraft:fire_aspect"]
+#Number of random loot sampling iterations used to estimate initial drop chances from loot tables (higher = more accurate, slower). Applies to initial generation before dynamic refinement.
+#Range: 50 ~ 2000
+initialLootSampleBatches = 300
 
