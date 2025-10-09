@@ -13,6 +13,7 @@
     "rarity.tooltips_reforged.biomancy_common": "普通",
     "_comment.enchantment": "附魔",
     "_comment.organ_score_tooltips": "器官 Score Tooltips",
+    "tooltips.kubejs.no_ues_item": "该物品因部分原因被移除/无作用，被标记为无意义物品",
     "tooltips.kubejs.mpm_type.0": "□ 外观激活状态：未激活",
     "tooltips.kubejs.mpm_type.1": "■ 外观激活状态：已激活",
     "tooltips.kubejs.bind_entity.1": "■ 绑定实体：%s",

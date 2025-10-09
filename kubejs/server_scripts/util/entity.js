@@ -302,3 +302,18 @@ function PopItemFromAirdrop(level, entity, itemList) {
         tickCounter = tickCounter + 10
     })
 }
+
+
+
+/**
+ * 
+ * @param {Internal.ServerPlayer} player 
+ * @param {Internal.Entity} entity
+ * @param {Number} lifeTime
+ */
+function SummonIncarnationEntity(player, entity, lifeTime) {
+    entity.addTag('incarnation')
+    entity.addTag('incarnation_owner_' + player.uuid.toString())
+    entity.potionEffects.add('startres:incarnation_life', lifeTime, 0, false, false)
+    return $IncarnationHelper.setupIncarnation(entity)
+}

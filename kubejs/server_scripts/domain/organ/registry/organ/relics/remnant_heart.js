@@ -15,6 +15,7 @@ RegistryOrgan('kubejs:remnant_heart')
 function RemnantHeartBlockRightClicked(customData, event, organItem, organIndex, slotType) {
     const block = event.block
     const level = event.level
+    if (event.hand != 'main_hand') return
     let blockPos = block.getPos()
     if (block.id != 'minecraft:sand' && block.id != 'minecraft:gravel') return
     let itemAbove = GetItemEntityWithinRadius(level, blockPos.above(), 1)

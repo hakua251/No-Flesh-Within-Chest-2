@@ -6,5 +6,3 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:key_to_infinity')
     .addShift(Text.translatable('tooltips.kubejs.key_to_infinity.shift.1'))
     .addShift(Text.translatable('tooltips.kubejs.key_to_infinity.shift.2'))
 )
-
-FTBQuestsEvents.completed

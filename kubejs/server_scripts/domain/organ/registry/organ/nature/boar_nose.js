@@ -13,6 +13,7 @@ RegistryOrgan('kubejs:boar_nose')
 function BoarNoseBlockRightClicked(customData, event, organItem, organIndex, slotType) {
     const block = event.block
     const player = event.player
+    if (event.hand != 'main_hand') return
     if (!block.hasTag('minecraft:dirt')) return
     let luckRandom = RandomWithPlayerLuck(player)
     event.level.setBlockAndUpdate(block.getPos(), Blocks.SAND.defaultBlockState())

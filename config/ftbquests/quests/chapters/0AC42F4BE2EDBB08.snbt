@@ -151,6 +151,11 @@
 				"&n通过工作台合成出&6熔炉&r&n，将其放置到地面上，使用鼠标右键打开其界面，便可以完成本任务。&r"
 			]
 			id: "18544E5B62DBC5EF"
+			rewards: [{
+				id: "0767A6998B0C358C"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
 			subtitle: "方块使用类任务"
 			tasks: [{
 				block: "minecraft:furnace"
@@ -207,83 +212,9 @@
 			icon: "minecraft:cookie"
 			id: "4E805DA2B8D171E4"
 			rewards: [{
-				id: "583D006084ABCBD0"
-				item: {
-					Count: 1
-					id: "supplementaries:jar"
-					tag: {
-						BlockEntityTag: {
-							FluidHolder: {
-								count: 0b
-								id: "moonlight:empty"
-							}
-							ForgeCaps: { }
-							Items: [
-								{
-									Count: 1b
-									Slot: 0b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 1b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 2b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 3b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 4b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 5b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 6b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 7b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 8b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 9b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 10b
-									id: "minecraft:cookie"
-								}
-								{
-									Count: 1b
-									Slot: 11b
-									id: "minecraft:cookie"
-								}
-							]
-						}
-					}
-				}
-				title: "请不要慌张"
+				count: 16
+				id: "4403F21E0C5B76D2"
+				item: "minecraft:cookie"
 				type: "item"
 			}]
 			subtitle: "检测到异常"
@@ -346,10 +277,25 @@
 			]
 			icon: "minecraft:book"
 			id: "5D90233550E7D188"
+			rewards: [{
+				exclude_from_claim_all: true
+				formula: "+1"
+				icon: "modulargolems:lime_config_card"
+				id: "28B071F661496043"
+				key: "PermissionLevel"
+				team_reward: true
+				title: "权限等级+1"
+				type: "chestcavity:world_data"
+			}]
 			subtitle: "经过确认后的传闻称为认知"
+			tasks: [{
+				id: "7537110BF6E79116"
+				title: "奉行此道"
+				type: "checkmark"
+			}]
 			title: "新认知"
-			x: -1.0d
-			y: -7.0d
+			x: -2.0d
+			y: -6.0d
 		}
 	]
 	title: "壹"
