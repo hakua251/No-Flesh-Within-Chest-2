@@ -20,7 +20,7 @@ function BeeHoneyStomachBlockRightClicked(customData, event, organItem, organInd
     if (damage <= 0) {
         SpawnItemEntityWithMovement(event.level, player.blockPosition(), Item.of('minecraft:honeycomb', Math.floor(Math.random() * 3 + 1)), new Vec3d(0, 0, 0))
         organItem.setDamageValue(organItem.getMaxDamage())
-        damage = 0
+        damage = organItem.getMaxDamage()
     } else {
         damage = damage - 1
         organItem.setDamageValue(damage)

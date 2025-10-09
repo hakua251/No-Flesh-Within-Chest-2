@@ -723,7 +723,6 @@
     "tooltips.chestcavity.tinker_heart.alt.2": "    §6★§r 根据该工具被组装的具体属性，其胸腔属性会对应进行增减",
     "tooltips.chestcavity.tinker_heart.ctrl.1": "    ■ 默认",
     "_comment.slot_type": "槽位类型",
-    "slot_type.chestcavity.position.relative": "    §6★§r 槽位相对位置：( %s , %s )",
     "slot_type.kubejs.default.1": "    ■ 默认",
     "slot_type.chestcavity.default.name": "默认 #%s",
     "slot_type.chestcavity.default.desc": " ■ 最基础的胸腔槽位，为各种器官提供了植入空间",
