@@ -3,7 +3,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:dragon_blood_heart')
     .addDefault(Text.translatable('tooltips.kubejs.dragon_blood_heart.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.dragon_blood_heart.alt.1', KeyActiveHover))
     .addAlt(Text.translatable('tooltips.kubejs.dragon_blood_heart.alt.2', Text.gold('1'), Text.gold('3')))
-    .addAlt(Text.translatable('tooltips.kubejs.dragon_blood_heart.alt.3', Text.gold('60')))
+    .addAlt(Text.translatable('tooltips.kubejs.dragon_blood_heart.alt.3'))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:ender_golem_line')
