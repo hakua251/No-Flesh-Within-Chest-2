@@ -15,4 +15,7 @@ StartupEvents.registry('fluid', event => {
 	event.create('melted_ignitium')
 		.thickTexture(0xdaa45a)
 		.bucketColor(0xdaa45a)	
+	event.create('melted_patterned')
+		.thickTexture(0xdaa45a)
+		.bucketColor(0xdaa45a)	
 })
