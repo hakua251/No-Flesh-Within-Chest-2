@@ -1,0 +1,50 @@
+[
+  {
+    "type": "mantle:blank"
+  },
+  {
+    "name": "note_1",
+    "type": "mantle:text",
+    "data": "notes_of_loot_hunter/note_1.json"
+  },
+  {
+    "name": "note_2",
+    "type": "mantle:text",
+    "data": "notes_of_loot_hunter/note_2.json"
+  },
+  {
+    "name": "note_3",
+    "type": "mantle:text",
+    "data": "notes_of_loot_hunter/note_3.json"
+  },
+  {
+    "name": "note_4",
+    "type": "mantle:text",
+    "data": "notes_of_loot_hunter/note_4.json"
+  },
+  {
+    "name": "note_5",
+    "type": "mantle:text",
+    "data": "notes_of_loot_hunter/note_5.json"
+  },
+  {
+    "name": "note_6",
+    "type": "mantle:text",
+    "data": "notes_of_loot_hunter/note_6.json"
+  },
+  {
+    "name": "note_7",
+    "type": "mantle:text",
+    "data": "notes_of_loot_hunter/note_7.json"
+  },
+  {
+    "name": "note_8",
+    "type": "mantle:text",
+    "data": "notes_of_loot_hunter/note_8.json"
+  },
+  {
+    "name": "note_9",
+    "type": "mantle:text",
+    "data": "notes_of_loot_hunter/note_9.json"
+  }
+]

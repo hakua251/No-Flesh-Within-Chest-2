@@ -1,0 +1,7 @@
+#Set gray screen during freeze time
+isGrayScreen = true
+#Enable Special Shader
+specialShader = true
+#Make you invulnerable during freeze time
+invulnerable = true
+

@@ -1,5 +1,5 @@
 // priority: 999
-const ISSSpellSelectionEvent = new OrganEventModel('iss_spell_selection')
+const OrganISSSpellSelectionEvent = new OrganEventModel('iss_spell_selection')
 
 /**
  * 玩家选择法术节点，使用该方法而不是用ironJs包装的方法用于区分客户端和服务端数据
@@ -20,7 +20,7 @@ NativeEvents.onEvent($SpellSelectionEvent, /** @param {Internal.SpellSelectionMa
  */
 function OrganSpellSelection(event, customData) {
     const entity = event.entity
-    ISSSpellSelectionEvent.run(entity, customData, [event])
+    OrganISSSpellSelectionEvent.run(entity, customData, [event])
     UpdateClientISSSpellDataEvent(customData, entity)
     ApplyPlayerSpellSelection(event)
 }

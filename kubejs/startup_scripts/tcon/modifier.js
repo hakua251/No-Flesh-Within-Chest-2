@@ -35,7 +35,7 @@ TConJSEvents.modifierRegistry(event => {
             const level = context.level
             let damageAmount = entity.getArmorValue() * lvl * 0.5
             source.actual.attack(level.damageSources().mobAttack(entity), damageAmount)
-            TinkerDamageHelper.damageAnimated(toolView, amount, entity, slotType);
+            TinkerDamageHelper.damageAnimated(toolView, amount, entity, slotType)
             return true
         })
     })
@@ -136,4 +136,22 @@ TConJSEvents.modifierRegistry(event => {
         })
     })
 
+    // 盾牌防护：当盾牌受到攻击时，概率会恢复耐久
+    event.createNew('shield_protection', builder => {
+        builder.canBlockAttacked((toolView, lvl, context, slotType, source, amount) => {
+            const entity = context.entity
+            if (!entity.isBlocking()) return false
+            TinkerDamageHelper.repair(toolView, lvl)
+            return true
+        })
+    })
+
+    event.createNew('flame_defense', builder => {
+        builder.armorTakeAttacked((toolView, lvl, context, slotType, source, amount) => {
+            const sourceEntity = source.actual
+            if (!sourceEntity && sourceEntity.isAlive()) return
+            sourceEntity.setRemainingFireTicks(sourceEntity.getRemainingFireTicks() + 20 * lvl)
+            return true
+        })
+    })
 })

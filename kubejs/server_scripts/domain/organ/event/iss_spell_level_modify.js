@@ -1,5 +1,5 @@
 // priority: 999
-const ISSSpellLevelModifyEvent = new OrganEventModel('iss_spell_level_modify')
+const OrganISSSpellLevelModifyEvent = new OrganEventModel('iss_spell_level_modify')
 
 /**
  * 法术等级修正
@@ -18,5 +18,5 @@ NativeEvents.onEvent($ModifySpellLevelEvent, /** @param {Internal.ModifySpellLev
  */
 function OrganModifySpellLevel(event, customData) {
     const entity = event.entity
-    ISSSpellLevelModifyEvent.run(entity, customData, [event])
+    OrganISSSpellLevelModifyEvent.run(entity, customData, [event])
 }

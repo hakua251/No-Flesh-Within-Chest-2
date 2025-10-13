@@ -64,7 +64,7 @@ ItemEvents.rightClicked('stick', event => {
     LongDistancePatrolGoal(entity)
     
 
-    new $CaravanVariation(1000, new $CaravanMember(leader), [new $CaravanMember(entity)]).spawn(level, player.blockPosition())
+    
     // let defaultData = server.persistentData.getInt('default')
     // player.tell('defaultData: ' + defaultData)
 
