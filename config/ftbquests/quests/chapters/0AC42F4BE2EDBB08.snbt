@@ -279,13 +279,11 @@
 			id: "5D90233550E7D188"
 			rewards: [{
 				exclude_from_claim_all: true
-				formula: "+1"
 				icon: "modulargolems:lime_config_card"
 				id: "28B071F661496043"
-				key: "PermissionLevel"
 				team_reward: true
 				title: "权限等级+1"
-				type: "chestcavity:world_data"
+				type: "custom"
 			}]
 			subtitle: "经过确认后的传闻称为认知"
 			tasks: [{

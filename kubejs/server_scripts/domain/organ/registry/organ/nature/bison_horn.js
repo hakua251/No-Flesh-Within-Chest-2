@@ -12,7 +12,7 @@ RegistryOrgan('kubejs:bison_horn')
  */
 function BisonHornEntityDoDamage(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.isSprinting()) {
+    if (entity.isCrouching()) {
         event.amount = event.amount * 1.2
     }
 }

@@ -37,6 +37,11 @@
 //     }
 //     item.shrink(1)
 // })
+
+ItemEvents.entityInteracted('stick', event => {
+    const entity = event.target
+    BloodLustGoal(entity)
+})
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */

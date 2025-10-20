@@ -226,4 +226,16 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
+
+    event.createNew('thunder_caller', builder => {
+        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
+            if (!isSelected) return
+            if (entity.age % 200 != 0) return
+            if (Math.random() > 0.02 * lvl) return
+            let entityPos = entity.blockPosition()
+            if (level.isOverworld() && level.canSeeSky(entityPos)) {
+                entity.block.spawnLightning()
+            }
+        })
+    })
 })

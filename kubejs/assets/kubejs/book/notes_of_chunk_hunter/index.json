@@ -1,9 +1,0 @@
-[
-  {
-    "name": "notes_of_loot_hunter",
-    "data": "sections/notes_of_loot_hunter.json",
-    "icon": {
-      "item": "minecraft:beacon"
-    }
-  }
-]

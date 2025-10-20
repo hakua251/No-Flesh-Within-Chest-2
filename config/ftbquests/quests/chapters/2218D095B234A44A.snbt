@@ -85,17 +85,15 @@
 			id: "4BBA7FA5EE684A98"
 			rewards: [{
 				exclude_from_claim_all: true
-				formula: "+1"
 				icon: {
 					Count: 1
 					id: "chestcavity:heart"
 					tag: { }
 				}
 				id: "6519AE4F0195E810"
-				key: "ChestCavityKnowledge"
 				team_reward: true
 				title: "胸腔认知+1"
-				type: "chestcavity:world_data"
+				type: "custom"
 			}]
 			subtitle: "提升胸腔相关的认知"
 			tasks: [{

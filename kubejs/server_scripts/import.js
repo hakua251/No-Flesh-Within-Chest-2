@@ -97,7 +97,6 @@ const $ItemHelper = Java.loadClass('com.simibubi.create.foundation.item.ItemHelp
 
 const $OpticManager = Java.loadClass('team.creative.opticmanager.OpticManager')
 
-const $PlayerProgressionData = Java.loadClass('com.araxer.araxers_bestiary.data.PlayerProgressionData')
 const $AnimHeadSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimHeadSummon')
 const $AnimBlockSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimBlockSummon')
 

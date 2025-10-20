@@ -21,7 +21,6 @@ function WolfFangKeyActive(customData, event, organItem, organIndex, slotType) {
             pEntity.potionEffects.add('farm_and_charm:dog_food', 20 * 30, 2, false, false)
         }
     })
-
     player.addItemCooldown(organItem, 20 * 60)
 }
 

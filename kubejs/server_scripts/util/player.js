@@ -15,24 +15,3 @@
 //     let outOfCombat = playerPersisted.get('out_of_combat')
 //     return outOfCombat.getInt('outOfCombatTime') == 0
 // }
-
-/**
- * 
- * @param {Internal.ServerLevel} level 
- * @param {Internal.ServerPlayer} player 
- * @param {Internal.EntityType} entityType 
- */
-function GetMobKillCount(level, player, entityType) {
-    let progressionData = GetPlayerProgressionData(level)
-    return progressionData.getKillCount(player.uuid, entityType)
-}
-
-
-
-/**
- * @param {Internal.ServerLevel} level 
- * @returns {Internal.PlayerProgressionData}
- */
-function GetPlayerProgressionData(level) {
-    return $PlayerProgressionData.getOrCreate(level)
-}
