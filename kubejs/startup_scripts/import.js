@@ -38,5 +38,3 @@ const $Serializer = Java.loadClass('net.minecraft.network.chat.Component$Seriali
 const $CaravanMember = Java.loadClass('dev.obscuria.caravans.world.caravans.CaravanMember')
 const $CaravanVariation = Java.loadClass('dev.obscuria.caravans.world.caravans.CaravanVariation')
 const $CaravanSpawner = Java.loadClass('dev.obscuria.caravans.world.caravans.CaravanSpawner')
-
-const $CoinHelper = Java.loadClass('com.warmthdawn.mods.yaoyaocoin.kubejs.CoinHelper')

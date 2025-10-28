@@ -12,13 +12,13 @@ StartupEvents.registry('minecraft:item', event => {
             .onEquip((itemFrom, ctx, itemTo) => {
                 const entity = ctx.entity()
                 if (!entity.isPlayer()) return
-                let helper = $CoinHelper.of(entity)
+                let helper = CoinHelper.of(entity)
                 helper.setEnable(CoinType.of('vow_coin'), true)
             })
             .onUnequip((itemFrom, ctx, itemTo) => {
                 const entity = ctx.entity()
                 if (!entity.isPlayer()) return
-                let helper = $CoinHelper.of(entity)
+                let helper = CoinHelper.of(entity)
                 helper.setEnable(CoinType.of('vow_coin'), false)
             })
         )

@@ -8,10 +8,11 @@ StartupEvents.registry('item', event => {
 })
 
 CoinEvents.registerCoins(event => {
-    event.addCoin('vow_coin', 'diamond')
+    event.addCoin('vow_coin', 'kubejs:vow_coin')
         .group(99)
         .money(1)
         .maxSize(65535)
         .hideDefault()
+        .isGlobal()
         .defaultArea(CoinLayoutArea.TOP_LEFT)
 })
