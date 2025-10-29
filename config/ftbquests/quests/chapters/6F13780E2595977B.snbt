@@ -27,6 +27,12 @@
 				}
 			}
 			id: "428D9599A58515E7"
+			invisible: true
+			rewards: [{
+				id: "2D4A9E5B366964F4"
+				item: "kubejs:chocolate_coins"
+				type: "item"
+			}]
 			subtitle: "灵光一现筑传闻"
 			tasks: [{
 				icon: {
@@ -63,8 +69,8 @@
 				type: "item"
 			}]
 			title: "灵光乍现"
-			x: 0.0d
-			y: 0.0d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]
@@ -76,9 +82,17 @@
 				"同理，如果将这个理论套用到我们现在的场景，我们可以理解为：这些工具被创造的时候具有一个相通的特定用途。"
 				""
 				"您可能觉得这或许没什么大不了的，毕竟事物相通的特性太多了。但是令我真正奇怪的是，这个工具所具备的特殊字段，可以被称作“是否能被创造”。"
+				""
+				"我们需要更多的信息才能推测出这件事的原貌。"
 			]
 			hide_dependency_lines: true
 			id: "474910B463715048"
+			invisible: true
+			rewards: [{
+				id: "739C6BE121441369"
+				item: "kubejs:chocolate_coins"
+				type: "item"
+			}]
 			subtitle: "是神创世还是. . ."
 			tasks: [{
 				icon: {
@@ -114,22 +128,67 @@
 				title: "再试匠魂工具"
 				type: "item"
 			}]
-			title: "创世工匠"
-			x: 0.0d
-			y: -2.5d
+			title: "创造工具的线索"
+			x: -2.0d
+			y: -3.0d
 		}
 		{
-			description: ["创世工匠"]
+			dependencies: ["474910B463715048"]
+			description: [
+				"&6成功了！&r"
+				""
+				"在一系列的信息补全后，我终于拼凑出了事件大致的原貌。"
+				""
+				"这些工具在最初是被一种统一的方法制作而来的——其工序远比我们现在制作工具的方式简单。在原初工序中，材料并不需要从自然中收集，相反，材料是在被使用后才会出现在自然中。"
+				""
+				"我尚且还不清楚到底是何时何人发现/发明了这道工序并且加以运用，也不清楚目的是什么。但毫无疑问，这道工序的影响是如此之大，以至于几乎所有的工具都被打上了这道工序的印记。"
+				""
+				"按照这个理论，也许现在我们所处的整个世界都因为这套工序的反复进行而产生了巨大的变化。这也能很好地解释为什么现在的世界与我系统记录的最初世界相差甚远。"
+				""
+				"无论如何，既然我们观测到了这套工序的存在可能，我们就要尝试去复现它。成功复现这套工序能够为我们后续的发展提供源源不断的动力。"
+				""
+				"基于此，我提议将这套工序称作&6创世蓝图工序&r，而最初发明它的神秘人则提议称作&6创世工匠&r。"
+			]
+			hide_dependency_lines: true
 			id: "21716C6A06EA01F4"
-			subtitle: "人创世"
-			tasks: [{
-				id: "6DE5C13D33B224A5"
-				item: "minecraft:spruce_fence"
+			invisible: true
+			rewards: [{
+				id: "4C4C2FE030DB5D74"
+				item: "kubejs:chocolate_coins"
 				type: "item"
 			}]
-			title: "重现创世蓝图"
-			x: 0.0d
-			y: -4.0d
+			subtitle: "何人何时何创世"
+			tasks: [{
+				icon: "tconstruct:obsidian_pane"
+				id: "74AEF2A87F44C765"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tconstruct:modifiable"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:durability"
+								tag: {
+									value: ">500"
+								}
+							}
+						]
+					}
+				}
+				title: "足够耐用的工具"
+				type: "item"
+			}]
+			title: "创世工匠与创世蓝图"
+			x: -0.5d
+			y: -3.0d
 		}
 	]
 	title: "传闻：创世工匠"

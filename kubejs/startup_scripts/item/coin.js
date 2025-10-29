@@ -1,10 +1,10 @@
 // priority: 1000
 // 注册货币
 StartupEvents.registry('item', event => {
-	event.create('vow_coin')
-		.texture('kubejs:item/vow_coin')
+    event.create('vow_coin')
+        .texture('kubejs:item/vow_coin')
         .burnTime(36000)
-		.fireResistant()
+        .fireResistant()
 })
 
 CoinEvents.registerCoins(event => {

@@ -1,7 +1,7 @@
 // priority: 1000
 StartupEvents.registry('minecraft:item', event => {
     event.create('kubejs:vow_necklace', 'basic')
-        .texture('kubejs:item/curios/world_relics_debris_1')
+        .texture('kubejs:item/curios/vow_necklace')
         .maxStackSize(1)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, ctx) => {
