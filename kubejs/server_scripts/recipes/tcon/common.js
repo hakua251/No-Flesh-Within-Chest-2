@@ -33,5 +33,8 @@ ServerEvents.recipes(event => {
     tconstruct.material('kubejs:wilden_horn','ars_nouveau:wilden_horn')
     tconstruct.material('kubejs:wilden_spike','ars_nouveau:wilden_spike')
     tconstruct.material('kubejs:wilden_wing','ars_nouveau:wilden_wing')
+    tconstruct.material('kubejs:mob_gland','biomancy:mob_gland')
+    tconstruct.material('kubejs:volatile_gland','biomancy:volatile_gland')
+    tconstruct.material('kubejs:toxin_gland','biomancy:toxin_gland')
 })
     
