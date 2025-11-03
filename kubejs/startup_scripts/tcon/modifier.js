@@ -76,7 +76,7 @@ TConJSEvents.modifierRegistry(event => {
             const target = context.target
             const chestCavity = target.chestCavityInstance
             if (!chestCavity.opened) {
-                $ChestCavityUtil.openChestCavity(chestCavity)
+                ChestCavityUtils.openChestCavity(chestCavity)
             }
         })
     })

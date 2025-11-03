@@ -26,7 +26,6 @@ const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.Ab
 
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 
-const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavityUtil')
 const $SummonedZombie = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedZombie')
 const $SummonedSkeleton = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedSkeleton')
 const $ISSUtils = Java.loadClass('io.redspace.ironsspellbooks.api.util.Utils')

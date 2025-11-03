@@ -1,0 +1,11 @@
+{
+    "type": "origins:starting_equipment",
+    "stacks": [
+        {
+            "item": "chestcavity:chest_opener",
+            "tag": "{Enchantments:[{id:'chestcavity:painless_surgery',lvl:1s}]}",
+            "amount": 1,
+            "slot": 1
+        }
+    ]
+}

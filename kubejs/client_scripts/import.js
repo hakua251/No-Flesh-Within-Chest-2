@@ -1,5 +1,4 @@
 // priority: 5000
-const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavityUtil')
 const $ClientMagicData = Java.loadClass('io.redspace.ironsspellbooks.player.ClientMagicData')
 const $Block = Java.loadClass('net.minecraft.world.level.block.Block')
 const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')

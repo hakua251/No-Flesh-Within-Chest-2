@@ -15,7 +15,7 @@ ItemEvents.tooltip(tooltip => {
         }
 
         let scoreTooltipsList = []
-        let organData = $ChestCavityUtil.lookupOrgan(item, null)
+        let organData = ChestCavityUtils.lookupOrgan(item, null)
         if (organData) {
             organData.organScores.forEach((score, value) => {
                 let roundValue = RoundFix(value, 2)
@@ -96,7 +96,7 @@ ItemEvents.tooltip(tooltip => {
 
         let lineNum = 1
         let scoreTooltipsList = []
-        let organData = $ChestCavityUtil.lookupOrgan(item, null)
+        let organData = ChestCavityUtils.lookupOrgan(item, null)
         if (organData) {
             organData.organScores.forEach((score, value) => {
                 let roundValue = RoundFix(value, 2)

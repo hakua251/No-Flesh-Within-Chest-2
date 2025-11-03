@@ -44,7 +44,7 @@ function MutationEyeEntityTick(customData, event, organItem, organIndex, slotTyp
             emptySlotList.push(curIndex)
             continue
         }
-        let organData = $ChestCavityUtil.lookupOrgan(curItem, null)
+        let organData = ChestCavityUtils.lookupOrgan(curItem, null)
         let organTotalScore = 0
         organData.organScores.forEach((key, value) => {
             organTotalScore = organTotalScore + value

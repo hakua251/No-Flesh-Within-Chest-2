@@ -10,7 +10,7 @@ SlotChestCavityUpdateStrategy.addStrategy(HighAdaptabilitySlot, HighAdaptability
  */
 function HighAdaptabilitySlotEvent(customData, event, organItem, organIndex, slotType) {
     const { chestCavity } = event
-    let organData = $ChestCavityUtil.lookupOrgan(organItem, null)
+    let organData = ChestCavityUtils.lookupOrgan(organItem, null)
     organData.organScores.forEach((score, value) => {
         let oriValue = chestCavity.getOrganScore(score)
         chestCavity.setOrganScore(score, oriValue + value * 0.5)
