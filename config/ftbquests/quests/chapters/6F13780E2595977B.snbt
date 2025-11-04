@@ -190,6 +190,16 @@
 			x: -0.5d
 			y: -3.0d
 		}
+		{
+			id: "450F42F9B206AD27"
+			rewards: [{
+				id: "01CFFA0ACEE579F2"
+				type: "xp"
+				xp: 100
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
 	]
 	title: "传闻：创世工匠"
 }
