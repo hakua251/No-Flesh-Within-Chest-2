@@ -34,3 +34,4 @@ const $ExtendedEvokerFang = Java.loadClass('io.redspace.ironsspellbooks.entity.s
 const $AltarBlockEntity = Java.loadClass('net.jrdemiurge.skyarena.block.entity.AltarBlockEntity')
 const $LootContextParams = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParams')
 const $Serializer = Java.loadClass('net.minecraft.network.chat.Component$Serializer')
+const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')

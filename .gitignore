@@ -58,3 +58,4 @@ kubejs/probe/
 *.log
 /config/CSC/Data
 /config/CSC
+*.bak
