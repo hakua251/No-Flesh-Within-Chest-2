@@ -26,7 +26,6 @@ const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.Ab
 
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 
-const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavityUtil')
 const $SummonedZombie = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedZombie')
 const $SummonedSkeleton = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedSkeleton')
 const $ISSUtils = Java.loadClass('io.redspace.ironsspellbooks.api.util.Utils')
@@ -35,6 +34,6 @@ const $ExtendedEvokerFang = Java.loadClass('io.redspace.ironsspellbooks.entity.s
 const $AltarBlockEntity = Java.loadClass('net.jrdemiurge.skyarena.block.entity.AltarBlockEntity')
 const $LootContextParams = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParams')
 const $Serializer = Java.loadClass('net.minecraft.network.chat.Component$Serializer')
-const $CaravanMember = Java.loadClass('dev.obscuria.caravans.world.caravans.CaravanMember')
-const $CaravanVariation = Java.loadClass('dev.obscuria.caravans.world.caravans.CaravanVariation')
-const $CaravanSpawner = Java.loadClass('dev.obscuria.caravans.world.caravans.CaravanSpawner')
+const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
+const $ToolStats = Java.loadClass('slimeknights.tconstruct.library.tools.stat.ToolStats')
+const $ToolStatId = Java.loadClass('slimeknights.tconstruct.library.tools.stat.ToolStatId')

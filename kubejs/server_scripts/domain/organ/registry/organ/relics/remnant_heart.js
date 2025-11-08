@@ -18,7 +18,7 @@ function RemnantHeartBlockRightClicked(customData, event, organItem, organIndex,
     if (event.hand != 'main_hand') return
     let blockPos = block.getPos()
     if (block.id != 'minecraft:sand' && block.id != 'minecraft:gravel') return
-    let itemAbove = GetItemEntityWithinRadius(level, blockPos.above(), 1)
+    let itemAbove = GetItemEntityWithinRadius(level, blockPos.above(), 1, (level, entity) => true)
     if (itemAbove.length <= 0) return
     /**@type {Internal.ItemEntity} */
     let itemHiden = RandomGet(itemAbove)

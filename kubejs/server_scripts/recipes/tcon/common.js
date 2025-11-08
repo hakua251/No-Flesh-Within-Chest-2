@@ -4,9 +4,10 @@ ServerEvents.recipes(event => {
     //无流体物品
     //tconstruct.material('kubejs:','')
     tconstruct.material('kubejs:living_flesh', 'biomancy:living_flesh')
-    tconstruct.material('kubejs:creator_mix', 'biomancy:creator_mix')  
-    tconstruct.material('kubejs:koboleton_bone', 'cataclysm:koboleton_bone') 
-    tconstruct.material('kubejs:mob_marrow', 'biomancy:mob_marrow') 
+    tconstruct.material('kubejs:creator_mix', 'biomancy:creator_mix')
+    tconstruct.material('kubejs:acid_splatter', 'biomancy:acid_splatter')
+    tconstruct.material('kubejs:koboleton_bone', 'cataclysm:koboleton_bone')
+    tconstruct.material('kubejs:mob_marrow', 'biomancy:mob_marrow')
     tconstruct.material('kubejs:bone_fragments', 'biomancy:bone_fragments')
     tconstruct.material('kubejs:tough_fibers', 'biomancy:tough_fibers') 
     tconstruct.material('kubejs:elastic_fibers', 'biomancy:elastic_fibers')  

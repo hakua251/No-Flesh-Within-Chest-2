@@ -76,19 +76,7 @@ TConJSEvents.modifierRegistry(event => {
             const target = context.target
             const chestCavity = target.chestCavityInstance
             if (!chestCavity.opened) {
-                $ChestCavityUtil.openChestCavity(chestCavity)
-            }
-        })
-    })
-
-    // 猎魂：击杀敌人之后获得对应的灵魂
-    event.createNew('soul_hunter', builder => {
-        builder.processLoot((toolView, lvl, lootList, context) => {
-            const target = context.getParamOrNull($LootContextParams.THIS_ENTITY)
-            if (target != null && Math.random() < lvl * 0.05) {
-                lootList.push(Item.of('kubejs:soul_crystal', {
-                    'EntityType': target.type
-                }))
+                ChestCavityUtils.openChestCavity(chestCavity)
             }
         })
     })

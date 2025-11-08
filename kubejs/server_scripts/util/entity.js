@@ -262,6 +262,7 @@ function GetTamedEntityWithinRadius(level, player, radius) {
     return entityList
 }
 
+
 /**
  * 生成一个物品实体
  * @param {Internal.Level} level 
@@ -277,17 +278,20 @@ function SpawnItemEntityWithMovement(level, pos, itemStack, movement) {
 }
 
 /**
-* 获取某个半径内的实体
+* 获取某个半径内的物品实体
 * @param {Internal.Level} level
 * @param {BlockPos} pos
 * @param {Number} radius
+* @param {function(Internal.Level, Internal.ItemEntity):boolean} entityTester
 * @returns {Array<Internal.ItemEntity>}
 */
-function GetItemEntityWithinRadius(level, pos, radius) {
+function GetItemEntityWithinRadius(level, pos, radius, entityTester) {
     let area = AABB.of(pos.x - radius, pos.y - radius, pos.z - radius, pos.x + radius, pos.y + radius, pos.z + radius)
     let entityList = level.getEntitiesOfClass($ItemEntity, area, entity => {
         if (entity.position() && entity.position().distanceTo(pos) <= radius) {
-            return true
+            if (entityTester(level, entity)) {
+                return true
+            }
         }
         return false
     })

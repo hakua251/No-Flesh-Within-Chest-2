@@ -2,7 +2,8 @@
     "name": "常规舞台",
     "icon": "kubejs:soul_cage",
     "category": "patchouli:arena",
-    "read_by_default": false,
+    "advancement": "kubejs:knowledge/arena",
+    "secret": true,
     "sortnum": 0,
     "pages": [
         {

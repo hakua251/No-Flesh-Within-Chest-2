@@ -130,3 +130,7 @@
 		"kubejs:tinker_forge" = true
 		"kubejs:tinker_less_exp_gain" = true
 
+	[origins."kubejs:surgeon"]
+		enabled = true
+		"kubejs:surgeon_starting_equipment" = true
+

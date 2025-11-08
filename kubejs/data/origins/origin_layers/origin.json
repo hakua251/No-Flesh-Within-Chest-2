@@ -12,14 +12,13 @@
 				"kubejs:lich"
 			]
 		},
-		"kubejs:normal",
+		"kubejs:surgeon",
 		"kubejs:machinist",
 		"kubejs:photographer",
 		"kubejs:tinker"
 	],
 	"allow_random": true,
 	"exclude_random": [
-		"kubejs:normal"
 	],
 	"allow_random_unchoosable": false,
 	"hidden": false
