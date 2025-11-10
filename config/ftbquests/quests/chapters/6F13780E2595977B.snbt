@@ -161,16 +161,22 @@
 			}]
 			subtitle: "何人何时何创世"
 			tasks: [{
-				icon: "tconstruct:obsidian_pane"
-				id: "74AEF2A87F44C765"
-				item: {
+				icon: {
 					Count: 1
-					id: "ftbqaa:tcon_tool_stats"
+					id: "tconstruct:tinkers_anvil"
 					tag: {
-						value: "tconstruct:durability > 500.0"
+						texture: "tconstruct:slimesteel_block"
 					}
 				}
-				title: "足够耐用的工具"
+				id: "61B22F218A4240EC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:tinker_anvil"
+					}
+				}
+				title: "工匠砧"
 				type: "item"
 			}]
 			title: "创世工艺"
@@ -182,7 +188,7 @@
 			description: [
 				"&o&7如今我们遇到了瓶颈，只能寄希望于通过此般努力. . .&r&r"
 				""
-				"&o根据日志记载，创世工匠先后按照顺序创造了十三把工具，随后便定下了创世工艺。如果我们按照相同的顺序与要求去打造同样的工具，或许就能在追寻创世技艺的路途上寻得一些方向。&r"
+				"&o根据日志记载，创世工匠先后按照顺序创造了十二把工具，随后便定下了创世工艺。如果我们按照相同的顺序与要求去打造同样的工具，或许就能在追寻创世技艺的路途上寻得一些方向。&r"
 				""
 				"创世工匠打造的第一把工具是一柄&6镐子&r。"
 				""
@@ -747,7 +753,7 @@
 							}
 							{
 								level: 2
-								name: "tconstruct:necrotic"
+								name: "kubejs:mob_marrow"
 							}
 							{
 								level: 1
@@ -760,9 +766,9 @@
 						}
 						tic_persistent: { }
 						tic_stats: {
-							"tconstruct:attack_damage": 6.9299994f
-							"tconstruct:attack_speed": 1.84f
-							"tconstruct:durability": 127.05f
+							"tconstruct:attack_damage": 6.6f
+							"tconstruct:attack_speed": 1.6f
+							"tconstruct:durability": 181.5f
 							"tconstruct:harvest_tier": "minecraft:iron"
 							"tconstruct:mining_speed": 2.75f
 						}
@@ -853,7 +859,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["6D6506F6A7861944"]
+			dependencies: ["350F09D15B9BFAC9"]
 			description: [
 				"好消息！或许我们现在就可以进行创世蓝图的复原！"
 				""
@@ -868,7 +874,7 @@
 			icon: "create:empty_schematic"
 			id: "77B936419DC79A51"
 			rewards: [{
-				id: "32FFB7E9AB13DEAE"
+				id: "11136569800EF17F"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
@@ -879,7 +885,7 @@
 				type: "checkmark"
 			}]
 			title: "创世蓝图再现计划"
-			x: 7.0d
+			x: 9.0d
 			y: -5.0d
 		}
 		{
@@ -909,7 +915,7 @@
 				}
 			]
 			title: "蓝图染料"
-			x: 8.5d
+			x: 10.5d
 			y: -6.5d
 		}
 		{
@@ -942,7 +948,7 @@
 				type: "item"
 			}]
 			title: "清澈晶体"
-			x: 8.5d
+			x: 10.5d
 			y: -5.0d
 		}
 		{
@@ -962,7 +968,7 @@
 				type: "item"
 			}]
 			title: "碳原料"
-			x: 8.5d
+			x: 10.5d
 			y: -3.5d
 		}
 		{
@@ -993,7 +999,7 @@
 				type: "questsadditions:time"
 			}]
 			title: "静候佳音"
-			x: 10.5d
+			x: 12.5d
 			y: -5.0d
 		}
 		{
@@ -1018,18 +1024,162 @@
 				title: "失败的创世蓝图模拟！"
 				type: "checkmark"
 			}]
-			x: 12.5d
+			x: 14.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["5407EA931130C055"]
+			description: [
+				"&o&7来时路漫漫. . .&r&r"
+				""
+				"接下来则是锻造一把&6凿石锹&r。"
+				""
+				"其基础属性要求必须至少有&61500的耐久度&r与&65.0的挖掘速度&r；但与以往不同，这次要求&6禁止使用钻石&r进行耐久强化。"
+			]
 			id: "6EA40DB504D282A9"
-			tasks: [{
-				id: "6ACC06A5F2081A0D"
-				item: "minecraft:stripped_jungle_wood"
+			rewards: [{
+				id: "341E501E6A4417CD"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			title: "工匠研修V"
+			subtitle: "加深对凿石锹的理解"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:pickadze"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:cobalt"
+							"kubejs:black_steel"
+							"tconstruct:amethyst_bronze"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:lightweight"
+							}
+							{
+								level: 1
+								name: "kubejs:soul_hunter"
+							}
+							{
+								level: 1
+								name: "tconstruct:crumbling"
+							}
+							{
+								level: 1
+								name: "tconstruct:pathing"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.4375f
+							"tconstruct:durability": 1.3f
+							"tconstruct:mining_speed": 0.9375f
+						}
+						tic_persistent: {
+							upgrades: -1
+						}
+						tic_stats: {
+							"tconstruct:accuracy": 0.85f
+							"tconstruct:armor_toughness": 1.0f
+							"tconstruct:attack_damage": 2.73125f
+							"tconstruct:attack_speed": 1.391f
+							"tconstruct:draw_speed": 1.03f
+							"tconstruct:durability": 1926.5999f
+							"tconstruct:harvest_tier": "minecraft:diamond"
+							"tconstruct:mining_speed": 5.416875f
+							"tconstruct:velocity": 1.03f
+						}
+						tic_upgrades: [{
+							level: 1
+							name: "tconstruct:emerald"
+						}]
+						tic_volatile_data: {
+							abilities: 1
+							"tconstruct:rarity": 1
+							upgrades: 3
+						}
+					}
+				}
+				id: "448E192F99F977D4"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:mining_speed >= 5.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:diamond < 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:pickadze"
+								tag: {
+									Damage: 0
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+									]
+									tic_modifiers: [
+										{
+											level: 3
+											name: "tconstruct:cultivated"
+										}
+										{
+											level: 1
+											name: "tconstruct:pathing"
+										}
+									]
+									tic_multipliers: {
+										"tconstruct:attack_damage": 1.15f
+										"tconstruct:durability": 1.3f
+										"tconstruct:mining_speed": 0.75f
+									}
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 0.575f
+										"tconstruct:attack_speed": 1.3f
+										"tconstruct:durability": 78.0f
+										"tconstruct:mining_speed": 1.5f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										upgrades: 3
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:durability >= 1500.0"
+								}
+							}
+						]
+					}
+				}
+				title: "精研的证明"
+				type: "item"
+			}]
+			title: "工匠研修VI"
 			x: 2.0d
 			y: -0.5d
 		}
@@ -1062,11 +1212,13 @@
 				type: "checkmark"
 			}]
 			title: "抉择"
-			x: 14.0d
+			x: 16.0d
 			y: -5.0d
 		}
 		{
+			dependencies: ["3C788CBFDB9DBA29"]
 			description: ["尊重您的决定，从现在起，我主要负责帮助您整理、收集相关数据，直到发现能够复现创世工艺的方法。"]
+			hide_dependency_lines: true
 			id: "5407EA931130C055"
 			invisible: true
 			rewards: [{
@@ -1086,6 +1238,1894 @@
 			title: "匠心独具"
 			x: 0.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["6EA40DB504D282A9"]
+			description: [
+				"&o&7越来越近. . .&r&r"
+				""
+				"接下来则是锻造一把&6鹤嘴锄&r。"
+				""
+				"其基础属性要求必须至少有&65.0的挖掘速度&r，并且持有至少&6140的黏液覆层&r。为了保证黏液覆层的持久有效，工具需要具备&6蔓生&r属性，以在闲置时能够自动恢复其黏液覆层的耐久。"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:mattock"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:slimesteel"
+						"tconstruct:slimewood"
+						"tconstruct:slimesteel"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:overslime"
+						}
+						{
+							level: 2
+							name: "tconstruct:overcast"
+						}
+						{
+							level: 1
+							name: "tconstruct:overgrowth"
+						}
+						{
+							level: 1
+							name: "tconstruct:tilling"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.1f
+						"tconstruct:durability": 1.25f
+						"tconstruct:mining_speed": 1.1f
+					}
+					tic_persistent: {
+						"tconstruct:overslime": 0
+					}
+					tic_stats: {
+						"tconstruct:attack_damage": 3.7400002f
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:durability": 1690.0f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:mining_speed": 5.6100006f
+						"tconstruct:overslime": 250.0f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			id: "5D444109BF6F7EE8"
+			rewards: [{
+				id: "5EB79E21C45D5BF0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加深对鹤嘴锄的理解"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:mattock"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:slimesteel"
+							"tconstruct:slimewood"
+							"tconstruct:slimesteel"
+						]
+						tic_modifiers: [
+							{
+								level: 3
+								name: "tconstruct:overslime"
+							}
+							{
+								level: 2
+								name: "tconstruct:overcast"
+							}
+							{
+								level: 1
+								name: "tconstruct:overgrowth"
+							}
+							{
+								level: 1
+								name: "tconstruct:tilling"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.1f
+							"tconstruct:durability": 1.25f
+							"tconstruct:mining_speed": 1.1f
+						}
+						tic_persistent: {
+							"tconstruct:overslime": 0
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 3.7400002f
+							"tconstruct:attack_speed": 0.9f
+							"tconstruct:durability": 1690.0f
+							"tconstruct:harvest_tier": "minecraft:diamond"
+							"tconstruct:mining_speed": 5.6100006f
+							"tconstruct:overslime": 250.0f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+				id: "7EFACC1C185F343B"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:overslime >= 140.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:overgrowth >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:mining_speed >= 5.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:mattock"
+								tag: {
+									Damage: 0
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+									]
+									tic_modifiers: [
+										{
+											level: 3
+											name: "tconstruct:cultivated"
+										}
+										{
+											level: 1
+											name: "tconstruct:tilling"
+										}
+									]
+									tic_multipliers: {
+										"tconstruct:attack_damage": 1.1f
+										"tconstruct:durability": 1.25f
+										"tconstruct:mining_speed": 1.1f
+									}
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 1.6500001f
+										"tconstruct:attack_speed": 0.9f
+										"tconstruct:durability": 75.0f
+										"tconstruct:mining_speed": 2.2f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										upgrades: 3
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "精研的证明"
+				type: "item"
+			}]
+			title: "工匠研修VII"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5D444109BF6F7EE8"]
+			description: [
+				"&o&7道路通明且宽阔. . .&r&r"
+				""
+				"接下来则是锻造一把&6劈刃&r。"
+				""
+				"其需要至少拥有&616的近战伤害&r，并且携带有&6猎魂&r属性。但在锻造过程中该武器禁止使用石英进行过度强化，因此其&6锋利等级不得大于1&r。"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:cleaver"
+				tag: {
+					Damage: 0
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 1b
+					}
+					tic_broken: 0b
+					tic_materials: [
+						"tgears:rose_quartz"
+						"tconstruct:nahuatl"
+						"tconstruct:nahuatl"
+						"kubejs:black_steel"
+					]
+					tic_modifiers: [
+						{
+							level: 2
+							name: "tconstruct:sharpness"
+						}
+						{
+							level: 1
+							name: "tgears:sharpness"
+						}
+						{
+							level: 2
+							name: "tconstruct:lacerating"
+						}
+						{
+							level: 1
+							name: "kubejs:soul_hunter"
+						}
+						{
+							level: 2
+							name: "tconstruct:severing"
+						}
+						{
+							level: 1
+							name: "tconstruct:silky_aoe_shears"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:durability": 3.5f
+						"tconstruct:mining_speed": 0.25f
+					}
+					tic_persistent: {
+						upgrades: -2
+					}
+					tic_stats: {
+						"tconstruct:attack_damage": 14.953125f
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:durability": 484.3125f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 1.28125f
+					}
+					tic_upgrades: [{
+						level: 2
+						name: "tconstruct:sharpness"
+					}]
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			id: "4A6F4DE6B020E177"
+			rewards: [{
+				id: "237BA8475640B39E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加深对劈刃的理解"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:cleaver"
+					tag: {
+						Damage: 0
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 1b
+						}
+						tic_broken: 0b
+						tic_materials: [
+							"tgears:rose_quartz"
+							"tconstruct:nahuatl"
+							"tconstruct:nahuatl"
+							"kubejs:black_steel"
+						]
+						tic_modifiers: [
+							{
+								level: 2
+								name: "tconstruct:sharpness"
+							}
+							{
+								level: 1
+								name: "tgears:sharpness"
+							}
+							{
+								level: 2
+								name: "tconstruct:lacerating"
+							}
+							{
+								level: 1
+								name: "kubejs:soul_hunter"
+							}
+							{
+								level: 2
+								name: "tconstruct:severing"
+							}
+							{
+								level: 1
+								name: "tconstruct:silky_aoe_shears"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.5f
+							"tconstruct:durability": 3.5f
+							"tconstruct:mining_speed": 0.25f
+						}
+						tic_persistent: {
+							upgrades: -2
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 14.953125f
+							"tconstruct:attack_speed": 0.9f
+							"tconstruct:durability": 484.3125f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:mining_speed": 1.28125f
+						}
+						tic_upgrades: [{
+							level: 2
+							name: "tconstruct:sharpness"
+						}]
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+				id: "31D73A1534CAC7C3"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:sharpness <= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "kubejs:soul_hunter >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:attack_damage >= 15.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:cleaver"
+								tag: {
+									Damage: 0
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 1
+										mustEquip: 0b
+										spellWheel: 1b
+									}
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+									]
+									tic_modifiers: [
+										{
+											level: 4
+											name: "tconstruct:cultivated"
+										}
+										{
+											level: 2
+											name: "tconstruct:severing"
+										}
+										{
+											level: 1
+											name: "tconstruct:silky_aoe_shears"
+										}
+									]
+									tic_multipliers: {
+										"tconstruct:attack_damage": 1.5f
+										"tconstruct:durability": 3.5f
+										"tconstruct:mining_speed": 0.25f
+									}
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 4.5f
+										"tconstruct:durability": 210.0f
+										"tconstruct:mining_speed": 0.5f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										upgrades: 2
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "精研的证明"
+				type: "item"
+			}]
+			title: "工匠研修VIII"
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4A6F4DE6B020E177"]
+			description: [
+				"&o&7坚持. . .&r&r"
+				""
+				"接下来则是锻造一把&6开掘铲&r。"
+				""
+				"其需要等级至少为&61的延展&r，等级至少为&62的加固&r，以及最少&64000的耐久度&r。"
+			]
+			id: "7B0BC16952AB640D"
+			rewards: [{
+				id: "4562A1EEBF77E3DB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加深对开掘铲的理解"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:excavator"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:manyullyn"
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:expanded"
+							}
+							{
+								level: 2
+								name: "tconstruct:reinforced"
+							}
+							{
+								level: 1
+								name: "tconstruct:insatiable"
+							}
+							{
+								level: 3
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 2
+								name: "tconstruct:knockback"
+							}
+							{
+								level: 1
+								name: "tconstruct:pathing"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.2f
+							"tconstruct:durability": 3.75f
+							"tconstruct:mining_speed": 0.3f
+						}
+						tic_persistent: {
+							abilities: -1
+							upgrades: -2
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 6.0f
+							"tconstruct:durability": 4687.5f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:mining_speed": 1.95f
+						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:expanded"
+							}
+							{
+								level: 2
+								name: "tconstruct:reinforced"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+				id: "0183001585591691"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:durability >= 4000.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:expanded >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:reinforced >= 2"
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:excavator"
+								tag: {
+									Damage: 0
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+									]
+									tic_modifiers: [
+										{
+											level: 4
+											name: "tconstruct:cultivated"
+										}
+										{
+											level: 2
+											name: "tconstruct:knockback"
+										}
+										{
+											level: 1
+											name: "tconstruct:pathing"
+										}
+									]
+									tic_multipliers: {
+										"tconstruct:attack_damage": 1.2f
+										"tconstruct:durability": 3.75f
+										"tconstruct:mining_speed": 0.3f
+									}
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 1.8000001f
+										"tconstruct:durability": 225.0f
+										"tconstruct:mining_speed": 0.6f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										upgrades: 2
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "精研的证明"
+				type: "item"
+			}]
+			title: "工匠研修IX"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4A6F4DE6B020E177"]
+			description: [
+				"&o&7坚持. . .&r&r"
+				""
+				"接下来则是锻造一把&6大锤&r。"
+				""
+				"其需要等级至少为&61的丝触&r，等级至少为&63的急迫&r，以及最少&64000的耐久度&r。"
+			]
+			id: "49D88D702A69D80F"
+			rewards: [{
+				id: "42C54DA7A86331AA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加深对大锤的理解"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:sledge_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:manyullyn"
+							"kubejs:black_steel"
+							"tconstruct:manyullyn"
+							"tconstruct:wood"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:silky"
+							}
+							{
+								level: 3
+								name: "tconstruct:haste"
+							}
+							{
+								level: 2
+								name: "tconstruct:insatiable"
+							}
+							{
+								level: 1
+								name: "kubejs:soul_hunter"
+							}
+							{
+								level: 1
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 2
+								name: "tconstruct:smite"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.4f
+						}
+						tic_persistent: {
+							abilities: -1
+							upgrades: -3
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 7.59375f
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:durability": 4953.0f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:mining_speed": 6.9500003f
+						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:silky"
+							}
+							{
+								level: 3
+								name: "tconstruct:haste"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+				id: "5E0A03B918101095"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:durability >= 4000.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:haste >= 3"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:silky >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:sledge_hammer"
+								tag: {
+									Damage: 0
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+									]
+									tic_modifiers: [
+										{
+											level: 4
+											name: "tconstruct:cultivated"
+										}
+										{
+											level: 2
+											name: "tconstruct:smite"
+										}
+									]
+									tic_multipliers: {
+										"tconstruct:attack_damage": 1.35f
+										"tconstruct:durability": 4.0f
+										"tconstruct:mining_speed": 0.4f
+									}
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 4.05f
+										"tconstruct:attack_speed": 0.75f
+										"tconstruct:durability": 240.0f
+										"tconstruct:mining_speed": 0.8f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										upgrades: 2
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "精研的证明"
+				type: "item"
+			}]
+			title: "工匠研修X"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B0BC16952AB640D"]
+			description: [
+				"&o&7光芒自上而下透出. . .&r&r"
+				""
+				"接下来则是锻造一把&6板斧&r。"
+				""
+				"其需要等级至少为&61的自动冶炼&r，等级至少为&65的加固&r。同时，其指定了必须使用&e纸板&r作为&6坚韧手柄&r部件。"
+			]
+			id: "02BBF23570157027"
+			rewards: [{
+				id: "25DD50C668680B82"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加深对板斧的理解"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:broad_axe"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:cobalt"
+							"tgears:cardboard"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:autosmelt"
+							}
+							{
+								level: 5
+								name: "tconstruct:reinforced"
+							}
+							{
+								level: 1
+								name: "tconstruct:lightweight"
+							}
+							{
+								level: 1
+								name: "tgears:cardboard"
+							}
+							{
+								level: 1
+								name: "tconstruct:knockback"
+							}
+							{
+								level: 2
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 1
+								name: "tconstruct:stripping"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+							{
+								level: 1
+								name: "tconstruct:harmonious"
+							}
+							{
+								level: 1
+								name: "tconstruct:recapitated"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.65f
+							"tconstruct:durability": 4.25f
+							"tconstruct:mining_speed": 0.3f
+						}
+						tic_persistent: {
+							abilities: -1
+							upgrades: -5
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 5.5171876f
+							"tconstruct:attack_speed": 0.77040005f
+							"tconstruct:draw_speed": 1.03f
+							"tconstruct:durability": 2613.75f
+							"tconstruct:harvest_tier": "minecraft:diamond"
+							"tconstruct:mining_speed": 2.0704503f
+							"tconstruct:velocity": 1.03f
+						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:autosmelt"
+							}
+							{
+								level: 5
+								name: "tconstruct:reinforced"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+							{
+								level: 1
+								name: "tconstruct:harmonious"
+							}
+							{
+								level: 1
+								name: "tconstruct:recapitated"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 5
+						}
+					}
+				}
+				id: "3AD57767097DF650"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_material"
+								tag: {
+									value: "tgears:cardboard;1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:reinforced >= 5"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:autosmelt >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:broad_axe"
+								tag: {
+									Damage: 0
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+									]
+									tic_modifiers: [
+										{
+											level: 4
+											name: "tconstruct:cultivated"
+										}
+										{
+											level: 1
+											name: "tconstruct:stripping"
+										}
+									]
+									tic_multipliers: {
+										"tconstruct:attack_damage": 1.65f
+										"tconstruct:durability": 4.25f
+										"tconstruct:mining_speed": 0.3f
+									}
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 8.25f
+										"tconstruct:attack_speed": 0.6f
+										"tconstruct:durability": 255.0f
+										"tconstruct:mining_speed": 0.6f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										upgrades: 2
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "精研的证明"
+				type: "item"
+			}]
+			title: "工匠研修XI"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["49D88D702A69D80F"]
+			description: [
+				"&o&7光芒自上而下透出. . .&r&r"
+				""
+				"接下来则是锻造一把&6矿脉锤&r。"
+				""
+				"其需要等级至少为&63的幸运&r，并且持有&6下界合金&r升级。同时，其指定了必须使用&e纸板&r作为&6坚韧手柄&r部件。"
+			]
+			id: "1573B00098174E4E"
+			rewards: [{
+				id: "7526F28EAE460BAB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加深对矿脉锤的理解"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:vein_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:cobalt"
+							"tgears:cardboard"
+							"tconstruct:wood"
+							"tconstruct:nahuatl"
+						]
+						tic_modifiers: [
+							{
+								level: 3
+								name: "tconstruct:luck"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 1
+								name: "tconstruct:lightweight"
+							}
+							{
+								level: 1
+								name: "tgears:cardboard"
+							}
+							{
+								level: 1
+								name: "tconstruct:knockback"
+							}
+							{
+								level: 1
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 1
+								name: "tconstruct:lacerating"
+							}
+							{
+								level: 2
+								name: "tconstruct:pierce"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.25f
+							"tconstruct:durability": 5.0f
+							"tconstruct:mining_speed": 0.3f
+						}
+						tic_persistent: {
+							abilities: -1
+							upgrades: -1
+						}
+						tic_stats: {
+							"tconstruct:armor_toughness": 1.0f
+							"tconstruct:attack_damage": 4.828125f
+							"tconstruct:attack_speed": 1.0914001f
+							"tconstruct:draw_speed": 1.03f
+							"tconstruct:durability": 4125.0f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:knockback_resistance": 0.05f
+							"tconstruct:mining_speed": 2.8890002f
+							"tconstruct:velocity": 1.133f
+						}
+						tic_upgrades: [
+							{
+								level: 3
+								name: "tconstruct:luck"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 1
+							"tconstruct:indestructible": 1b
+							"tconstruct:rarity": 2
+							upgrades: 3
+						}
+					}
+				}
+				id: "7EF4CEA71DA3737C"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:netherite >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:luck >= 3"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_material"
+								tag: {
+									value: "tgears:cardboard;1"
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:vein_hammer"
+								tag: {
+									Damage: 0
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+										"tconstruct:wood"
+									]
+									tic_modifiers: [
+										{
+											level: 4
+											name: "tconstruct:cultivated"
+										}
+										{
+											level: 2
+											name: "tconstruct:pierce"
+										}
+									]
+									tic_multipliers: {
+										"tconstruct:attack_damage": 1.25f
+										"tconstruct:durability": 5.0f
+										"tconstruct:mining_speed": 0.3f
+									}
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 5.0f
+										"tconstruct:attack_speed": 0.85f
+										"tconstruct:durability": 300.0f
+										"tconstruct:mining_speed": 0.6f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										upgrades: 2
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "精研的证明"
+				type: "item"
+			}]
+			title: "工匠研修XII"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6D6506F6A7861944"]
+			description: [
+				"&o&7长路漫漫. . .&r&r"
+				""
+				"接下来则是锻造一把&6匕首&r。"
+				""
+				"其基础属性要求必须至少有&64的近战攻击力&r与&62.2的攻击速度&r；同时，其也需要有&6&n玫刃&r&r的属性保证锋利度。"
+			]
+			id: "350F09D15B9BFAC9"
+			rewards: [{
+				id: "3AFD6FEBEDE09C51"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加深对匕首的理解"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:dagger"
+					tag: {
+						Damage: 0
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 1b
+						}
+						tic_broken: 0b
+						tic_materials: [
+							"tgears:rose_quartz"
+							"tconstruct:bone"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tgears:sharpness"
+							}
+							{
+								level: 1
+								name: "tconstruct:pierce"
+							}
+							{
+								level: 1
+								name: "tconstruct:offhand_attack"
+							}
+							{
+								level: 1
+								name: "tconstruct:padded"
+							}
+							{
+								level: 1
+								name: "tconstruct:silky_shears"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 0.65f
+							"tconstruct:durability": 0.75f
+							"tconstruct:mining_speed": 0.75f
+						}
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 4.615f
+							"tconstruct:attack_speed": 2.2f
+							"tconstruct:block_amount": 10.0f
+							"tconstruct:durability": 92.8125f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:mining_speed": 4.125f
+							"tconstruct:use_item_speed": 1.0f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							"tconstruct:duel_wielding": 1b
+							upgrades: 3
+						}
+					}
+				}
+				id: "417B00B3FFFFC357"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tgears:sharpness >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:attack_damage >= 4.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:attack_speed >= 2.2"
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:dagger"
+								tag: {
+									Damage: 0
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 1
+										mustEquip: 0b
+										spellWheel: 1b
+									}
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:wood"
+										"tconstruct:wood"
+									]
+									tic_modifiers: [
+										{
+											level: 2
+											name: "tconstruct:cultivated"
+										}
+										{
+											level: 1
+											name: "tconstruct:offhand_attack"
+										}
+										{
+											level: 1
+											name: "tconstruct:padded"
+										}
+										{
+											level: 1
+											name: "tconstruct:silky_shears"
+										}
+									]
+									tic_multipliers: {
+										"tconstruct:attack_damage": 0.65f
+										"tconstruct:durability": 0.75f
+										"tconstruct:mining_speed": 0.75f
+									}
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 1.9499999f
+										"tconstruct:attack_speed": 2.0f
+										"tconstruct:block_amount": 10.0f
+										"tconstruct:durability": 45.0f
+										"tconstruct:mining_speed": 1.5f
+										"tconstruct:use_item_speed": 1.0f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										"tconstruct:duel_wielding": 1b
+										upgrades: 3
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "精研的证明"
+				type: "item"
+			}]
+			title: "工匠研修V"
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["21716C6A06EA01F4"]
+			description: [
+				"等下，您说这是在世界探索中，从怪物手中获得到的吗？"
+				""
+				"很奇怪，这些工具很明显也是出自创世工匠之手. . .但是为何在工匠砧上不存在. . ."
+			]
+			hide_dependency_lines: true
+			id: "58788ADDABB876B4"
+			invisible: true
+			rewards: [{
+				id: "67678EAE489FFA2C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "等下. . .这是？"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:melting_pan"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:copper"
+							"tgears:andesite_alloy"
+						]
+						tic_modifiers: [
+							{
+								level: 2
+								name: "tconstruct:tank_handler"
+							}
+							{
+								level: 1
+								name: "tconstruct:depth_protection"
+							}
+							{
+								level: 1
+								name: "tgears:topnotch"
+							}
+							{
+								level: 2
+								name: "tconstruct:melting"
+							}
+							{
+								level: 1
+								name: "tconstruct:tank"
+							}
+						]
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:block_amount": 10.0f
+							"tconstruct:draw_speed": 0.8f
+							"tconstruct:durability": 476.69998f
+							"tconstruct:harvest_tier": "minecraft:stone"
+							"tconstruct:knockback_resistance": 0.1f
+							"tconstruct:mining_speed": 6.0f
+							"tconstruct:projectile_damage": 2.1f
+							"tconstruct:tank_capacity": 3000.0f
+							"tconstruct:velocity": 1.1f
+						}
+						tic_volatile_data: {
+							abilities: 2
+							defense: 1
+							"tconstruct:force_melting": 1b
+							"tconstruct:total_tanks": 1
+							upgrades: 1
+						}
+					}
+				}
+				id: "003963B78507ABE8"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tconstruct:melting_pan"
+								tag: {
+									Damage: 0
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:copper"
+										"tgears:andesite_alloy"
+									]
+									tic_modifiers: [
+										{
+											level: 2
+											name: "tconstruct:tank_handler"
+										}
+										{
+											level: 1
+											name: "tconstruct:depth_protection"
+										}
+										{
+											level: 1
+											name: "tgears:topnotch"
+										}
+										{
+											level: 2
+											name: "tconstruct:melting"
+										}
+										{
+											level: 1
+											name: "tconstruct:tank"
+										}
+									]
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:block_amount": 10.0f
+										"tconstruct:draw_speed": 0.8f
+										"tconstruct:durability": 476.69998f
+										"tconstruct:harvest_tier": "minecraft:stone"
+										"tconstruct:knockback_resistance": 0.1f
+										"tconstruct:mining_speed": 6.0f
+										"tconstruct:projectile_damage": 2.1f
+										"tconstruct:tank_capacity": 3000.0f
+										"tconstruct:velocity": 1.1f
+									}
+									tic_volatile_data: {
+										abilities: 2
+										defense: 1
+										"tconstruct:force_melting": 1b
+										"tconstruct:total_tanks": 1
+										upgrades: 1
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:war_pick"
+								tag: {
+									Damage: 0
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:copper"
+										"tconstruct:copper"
+										"kubejs:elastic_fibers"
+									]
+									tic_modifiers: [
+										{
+											level: 1
+											name: "tconstruct:stringy"
+										}
+										{
+											level: 2
+											name: "tconstruct:dwarven"
+										}
+									]
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 0.5f
+										"tconstruct:attack_speed": 1.2f
+										"tconstruct:draw_speed": 0.9f
+										"tconstruct:durability": 420.0f
+										"tconstruct:harvest_tier": "minecraft:iron"
+										"tconstruct:mining_speed": 5.0f
+										"tconstruct:velocity": 1.05f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										upgrades: 3
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "tconstruct:battlesign"
+								tag: {
+									Damage: 0
+									tic_broken: 0b
+									tic_materials: [
+										"tconstruct:copper"
+										"tconstruct:copper"
+									]
+									tic_modifiers: [
+										{
+											level: 1
+											name: "tconstruct:depth_protection"
+										}
+										{
+											level: 1
+											name: "tconstruct:bonking"
+										}
+										{
+											level: 1
+											name: "tconstruct:knockback"
+										}
+										{
+											level: 1
+											name: "tconstruct:dwarven"
+										}
+										{
+											level: 1
+											name: "tconstruct:blocking"
+										}
+									]
+									tic_persistent: { }
+									tic_stats: {
+										"tconstruct:attack_damage": 2.5f
+										"tconstruct:attack_speed": 1.2f
+										"tconstruct:block_amount": 50.0f
+										"tconstruct:durability": 444.0f
+										"tconstruct:harvest_tier": "minecraft:iron"
+										"tconstruct:mining_speed": 5.0f
+									}
+									tic_volatile_data: {
+										abilities: 1
+										defense: 3
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "此物为何？"
+				type: "item"
+			}]
+			title: "此为何物"
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1573B00098174E4E"
+				"02BBF23570157027"
+			]
+			description: [
+				"我们完成了十二工具的打造，但很奇怪，就算精研至此，创世工序仍旧是没有任何的新头绪。"
+				""
+				"不管怎么样，我已经与您约定将追寻创世工匠，就算毫无进展，我也会在您日常探索时注意任何可能跟创世工匠有关的线索。"
+			]
+			icon: "minecraft:oak_button"
+			id: "53F80E84C9F110DC"
+			rewards: [{
+				id: "1250B4D00A7854BC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "奇怪"
+			tasks: [{
+				id: "44370E9F68B436C1"
+				title: "数据仍旧不足"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"58788ADDABB876B4"
+				"53F80E84C9F110DC"
+			]
+			description: [
+				"遗失的制作配方、怪物的持有、无法复现的工艺"
+				""
+				"&6似乎一切都可以联系起来，或许创世工艺所需要的正是这些遗失的物品！&r"
+			]
+			id: "1EDA0E441596EC2C"
+			rewards: [{
+				id: "1A3261970A184280"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "等下，如果是这样. . ."
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "395FD9F61E6379E2"
+				title: "时间演进"
+				type: "questsadditions:time"
+			}]
+			title: "有趣的联想"
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1EDA0E441596EC2C"]
+			description: [
+				"&l&6可行！&r&r"
+				""
+				"您发现的那些工具——我们后面称为&6“远古工具”&r——其原本是创世工匠为创造创世蓝图所创造的工具的一部分。但由于不明的原因，创世工匠自己破坏了其制作方法，并且任由其由世界自由组装它们的数据。"
+				""
+				"通过模拟，我大概推测出了当时创世工匠打造远古工具的指标，尽管现在我们没有方法获得远古工具的部件，但是通过对其他工具极致的追求，或许能够得到等同于远古工具锻造的感悟。"
+				""
+				"&c这注定是一场极其艰难的挑战，但这对于追求极致工匠之路尤为重要。&r"
+			]
+			icon: "minecraft:birch_button"
+			id: "4E5076361FBEEDB5"
+			rewards: [{
+				id: "18E6AEE5F6DF5360"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "原来是这样！我明白了！"
+			tasks: [{
+				id: "373BFC05215093BE"
+				title: "光流了出来！"
+				type: "checkmark"
+			}]
+			title: "创世非我愿"
+			x: 14.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4E5076361FBEEDB5"]
+			description: [
+				"好像结论有些奇特，但事实就是如此。"
+				""
+				"为了完成最后的领悟，你需要臻于极致的工匠技巧，具体表现上需要三样分别符合如下要求的工具："
+				""
+				"1.  要求 任意工具 其 &6耐久度 <= 5&r"
+				""
+				"2. 要求 任意工具 其 &6攻击速度 <= 0.4&r"
+				""
+				"3. 要求 任意工具 其 &6攻击力 <= 1.5&r"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:war_pick"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:copper"
+						"tconstruct:copper"
+						"kubejs:elastic_fibers"
+					]
+					tic_modifiers: [
+						{
+							level: 1
+							name: "tconstruct:stringy"
+						}
+						{
+							level: 2
+							name: "tconstruct:dwarven"
+						}
+					]
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 0.5f
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:draw_speed": 0.9f
+						"tconstruct:durability": 420.0f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 5.0f
+						"tconstruct:velocity": 1.05f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			id: "7618461F4212504F"
+			rewards: [{
+				count: 3
+				id: "4DCADB48D90F216B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "好像不太对"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "tconstruct:battlesign"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:copper"
+								"tconstruct:copper"
+							]
+							tic_modifiers: [
+								{
+									level: 1
+									name: "tconstruct:depth_protection"
+								}
+								{
+									level: 1
+									name: "tconstruct:bonking"
+								}
+								{
+									level: 1
+									name: "tconstruct:knockback"
+								}
+								{
+									level: 1
+									name: "tconstruct:dwarven"
+								}
+								{
+									level: 1
+									name: "tconstruct:blocking"
+								}
+							]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 2.5f
+								"tconstruct:attack_speed": 1.2f
+								"tconstruct:block_amount": 50.0f
+								"tconstruct:durability": 444.0f
+								"tconstruct:harvest_tier": "minecraft:iron"
+								"tconstruct:mining_speed": 5.0f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								defense: 3
+							}
+						}
+					}
+					id: "041335773046D4A8"
+					item: {
+						Count: 1
+						id: "ftbqaa:tcon_tool_stats"
+						tag: {
+							value: "tconstruct:durability <= 5.0"
+						}
+					}
+					title: "耐久低于5"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "tconstruct:war_pick"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:copper"
+								"tconstruct:copper"
+								"kubejs:elastic_fibers"
+							]
+							tic_modifiers: [
+								{
+									level: 1
+									name: "tconstruct:stringy"
+								}
+								{
+									level: 2
+									name: "tconstruct:dwarven"
+								}
+							]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 0.5f
+								"tconstruct:attack_speed": 1.2f
+								"tconstruct:draw_speed": 0.9f
+								"tconstruct:durability": 420.0f
+								"tconstruct:harvest_tier": "minecraft:iron"
+								"tconstruct:mining_speed": 5.0f
+								"tconstruct:velocity": 1.05f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					id: "62EDBF0C1BB8E50E"
+					item: {
+						Count: 1
+						id: "ftbqaa:tcon_tool_stats"
+						tag: {
+							value: "tconstruct:attack_speed <= 0.4"
+						}
+					}
+					title: "攻速低于0.4"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "tconstruct:melting_pan"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:copper"
+								"tgears:andesite_alloy"
+							]
+							tic_modifiers: [
+								{
+									level: 2
+									name: "tconstruct:tank_handler"
+								}
+								{
+									level: 1
+									name: "tconstruct:depth_protection"
+								}
+								{
+									level: 1
+									name: "tgears:topnotch"
+								}
+								{
+									level: 2
+									name: "tconstruct:melting"
+								}
+								{
+									level: 1
+									name: "tconstruct:tank"
+								}
+							]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:block_amount": 10.0f
+								"tconstruct:draw_speed": 0.8f
+								"tconstruct:durability": 476.69998f
+								"tconstruct:harvest_tier": "minecraft:stone"
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:mining_speed": 6.0f
+								"tconstruct:projectile_damage": 2.1f
+								"tconstruct:tank_capacity": 3000.0f
+								"tconstruct:velocity": 1.1f
+							}
+							tic_volatile_data: {
+								abilities: 2
+								defense: 1
+								"tconstruct:force_melting": 1b
+								"tconstruct:total_tanks": 1
+								upgrades: 1
+							}
+						}
+					}
+					id: "75E4CC60945D2512"
+					item: {
+						Count: 1
+						id: "ftbqaa:tcon_tool_stats"
+						tag: {
+							value: "tconstruct:attack_damage <= 0.5"
+						}
+					}
+					title: "伤害低于1.5"
+					type: "item"
+				}
+			]
+			title: "极致. . . 工匠？"
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7618461F4212504F"]
+			description: [
+				"找到了！创世工匠为后人留下的创世之路！"
+				""
+				"他从一开始就计划好了！并且把这条路留给我们！"
+				""
+				"我们一开始就错了，想要从数据上完美复刻创世蓝图根本就是幼稚至极。真正的创世蓝图根本不是一板一眼的工序造物，它来源于工匠极致的努力与钻研，在接近于迷茫顶点时，工具自发的转变。"
+				""
+				"现在，请您为我打造一柄&6不包含不毁&r，&6耐久度高于30000&r的任意工具，我将为您展示，创世工匠对世人的爱怜。"
+			]
+			icon: "create:empty_schematic"
+			id: "1FD2ED9411F12F4F"
+			rewards: [{
+				id: "22A3AA201D1BC82C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这次我们定将征服"
+			title: "再现创世蓝图"
+			x: 18.5d
+			y: -1.5d
 		}
 	]
 	title: "传闻：创世工匠"

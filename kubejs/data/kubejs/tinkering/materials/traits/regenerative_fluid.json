@@ -3,6 +3,10 @@
     {
       "level": 1,
       "name": "kubejs:nausea_cure"
+    },
+    {
+      "level": 1,
+      "name": "tconstruct:overslime"
     }
   ]
 }

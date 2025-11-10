@@ -43,3 +43,5 @@ const $AltarBlock = Java.loadClass('net.jrdemiurge.skyarena.block.custom.AltarBl
 const $AltarBlockTop = Java.loadClass('net.jrdemiurge.skyarena.block.custom.AltarBlockTop')
 
 const $CreateRecipeCategory = Java.loadClass('com.simibubi.create.compat.jei.category.CreateRecipeCategory')
+const $SpyglassAstronomyClient = Java.loadClass('com.nettakrim.spyglass_astronomy.SpyglassAstronomyClient')
+const $SpaceDataManager = Java.loadClass('com.nettakrim.spyglass_astronomy.SpaceDataManager')
