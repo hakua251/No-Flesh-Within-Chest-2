@@ -1198,6 +1198,7 @@
 				""
 				"如若您放弃追寻创世工艺，我会以&b一枚钻石币&r作为补偿。"
 			]
+			icon: "minecraft:chiseled_bookshelf"
 			id: "3C788CBFDB9DBA29"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -3113,7 +3114,7 @@
 				""
 				"我们一开始就错了，想要从数据上完美复刻创世蓝图根本就是幼稚至极。真正的创世蓝图根本不是一板一眼的工序造物，它来源于工匠极致的努力与钻研，在接近于迷茫顶点时，工具自发的转变。"
 				""
-				"现在，请您为我打造一柄&6不包含不毁&r，&6耐久度高于30000&r的任意工具，我将为您展示，创世工匠对世人的爱怜。"
+				"现在，请您为我打造一柄&6不包含不毁和加固&r，&6耐久度高于20000&r的任意工具，我将为您展示，创世工匠对世人的爱怜。"
 			]
 			icon: "create:empty_schematic"
 			id: "1FD2ED9411F12F4F"
@@ -3123,9 +3124,716 @@
 				type: "item"
 			}]
 			subtitle: "这次我们定将征服"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:sledge_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:manyullyn"
+							"kubejs:black_steel"
+							"tconstruct:manyullyn"
+							"tconstruct:manyullyn"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 3
+								name: "tconstruct:insatiable"
+							}
+							{
+								level: 1
+								name: "kubejs:soul_hunter"
+							}
+							{
+								level: 2
+								name: "tconstruct:smite"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.6875f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.5f
+						}
+						tic_persistent: {
+							upgrades: -3
+						}
+						tic_stats: {
+							"tconstruct:accuracy": 0.85f
+							"tconstruct:armor": 1.0f
+							"tconstruct:armor_toughness": 2.0f
+							"tconstruct:attack_damage": 11.340001f
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:durability": 16380.001f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:knockback_resistance": 0.05f
+							"tconstruct:mining_speed": 4.25f
+							"tconstruct:projectile_damage": 2.5f
+							"tconstruct:velocity": 1.1f
+						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 1
+							"tconstruct:indestructible": 1b
+							"tconstruct:rarity": 2
+							upgrades: 3
+						}
+					}
+				}
+				id: "19A57731735B2050"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:unbreakable < 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:durability >= 20000.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:reinforced < 1"
+								}
+							}
+						]
+					}
+				}
+				title: "我已准备就绪"
+				type: "item"
+			}]
 			title: "再现创世蓝图"
 			x: 18.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["1FD2ED9411F12F4F"]
+			description: [
+				"请为该工具赋予“&a研修&r”属性！"
+				""
+				"一切都来源于此——我们之前从未怀疑过，为什么会存在这种东西，它几乎是驳回了&6加固5等于不毁&r的初始设计，它的存在是那么另类——现在答案不证自明了！&a研修&r便是解开一切谜团的关键。"
+				""
+				"&6请您使用携带研修属性的耐久大于20000的工具，将其使用至破损！&r您会发现，正常来说，研修等级并不会提升，但是一旦使用的是20000耐久以上的工具，其工具的研修属性将会随着加固等级提升！"
+				""
+				"是的！这会在最终阶段导向一个结局，您研修努力至今的证明！"
+			]
+			id: "1C8449422BE81C59"
+			rewards: [{
+				id: "130CF90176A3824A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "精研至今"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:sledge_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:manyullyn"
+							"kubejs:black_steel"
+							"tconstruct:manyullyn"
+							"tconstruct:manyullyn"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 3
+								name: "tconstruct:insatiable"
+							}
+							{
+								level: 1
+								name: "kubejs:soul_hunter"
+							}
+							{
+								level: 2
+								name: "tconstruct:smite"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.6875f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.5f
+						}
+						tic_persistent: {
+							upgrades: -3
+						}
+						tic_stats: {
+							"tconstruct:accuracy": 0.85f
+							"tconstruct:armor": 1.0f
+							"tconstruct:armor_toughness": 2.0f
+							"tconstruct:attack_damage": 11.340001f
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:durability": 16380.001f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:knockback_resistance": 0.05f
+							"tconstruct:mining_speed": 4.25f
+							"tconstruct:projectile_damage": 2.5f
+							"tconstruct:velocity": 1.1f
+						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 1
+							"tconstruct:indestructible": 1b
+							"tconstruct:rarity": 2
+							upgrades: 3
+						}
+					}
+				}
+				id: "13DA512CC1B9E916"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:unbreakable < 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:durability >= 20000.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:reinforced < 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "kubejs:study >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "勤学苦练"
+				type: "item"
+			}]
+			title: "原来答案近在咫尺"
+			x: 20.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C8449422BE81C59"]
+			description: [
+				"&c请您坚持！&r"
+				""
+				"随着加固等级的提升，损坏该工具会越来越困难。&6或许有一些方法&r可以迅速消减工具的耐久，但扎实的苦练一定能够解决问题！"
+			]
+			id: "352CFCA690EAAFCE"
+			rewards: [{
+				id: "0613FF5EEF8AA516"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "接近了"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:sledge_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:manyullyn"
+							"kubejs:black_steel"
+							"tconstruct:manyullyn"
+							"tconstruct:manyullyn"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 3
+								name: "tconstruct:insatiable"
+							}
+							{
+								level: 1
+								name: "kubejs:soul_hunter"
+							}
+							{
+								level: 2
+								name: "tconstruct:smite"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.6875f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.5f
+						}
+						tic_persistent: {
+							upgrades: -3
+						}
+						tic_stats: {
+							"tconstruct:accuracy": 0.85f
+							"tconstruct:armor": 1.0f
+							"tconstruct:armor_toughness": 2.0f
+							"tconstruct:attack_damage": 11.340001f
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:durability": 16380.001f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:knockback_resistance": 0.05f
+							"tconstruct:mining_speed": 4.25f
+							"tconstruct:projectile_damage": 2.5f
+							"tconstruct:velocity": 1.1f
+						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 1
+							"tconstruct:indestructible": 1b
+							"tconstruct:rarity": 2
+							upgrades: 3
+						}
+					}
+				}
+				id: "599CC9697E8ACFA8"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:unbreakable < 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:durability >= 20000.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "kubejs:study >= 3"
+								}
+							}
+						]
+					}
+				}
+				title: "勤学苦练"
+				type: "item"
+			}]
+			title: "光芒如丝绸淌下"
+			x: 22.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["352CFCA690EAAFCE"]
+			description: ["&c就要到了！&r属性转换为不毁的那一刻，便是见证研修结果之时！"]
+			id: "4287C253D0FFB805"
+			rewards: [{
+				id: "3AFCB112981CC130"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "疲惫不堪，但意志仍坚"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:sledge_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:manyullyn"
+							"kubejs:black_steel"
+							"tconstruct:manyullyn"
+							"tconstruct:manyullyn"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 3
+								name: "tconstruct:insatiable"
+							}
+							{
+								level: 1
+								name: "kubejs:soul_hunter"
+							}
+							{
+								level: 2
+								name: "tconstruct:smite"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.6875f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.5f
+						}
+						tic_persistent: {
+							upgrades: -3
+						}
+						tic_stats: {
+							"tconstruct:accuracy": 0.85f
+							"tconstruct:armor": 1.0f
+							"tconstruct:armor_toughness": 2.0f
+							"tconstruct:attack_damage": 11.340001f
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:durability": 16380.001f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:knockback_resistance": 0.05f
+							"tconstruct:mining_speed": 4.25f
+							"tconstruct:projectile_damage": 2.5f
+							"tconstruct:velocity": 1.1f
+						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 1
+							"tconstruct:indestructible": 1b
+							"tconstruct:rarity": 2
+							upgrades: 3
+						}
+					}
+				}
+				id: "2600942EAABA9061"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:unbreakable < 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:durability >= 20000.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:tcon_tool_modifier"
+								tag: {
+									value: "kubejs:study >= 5"
+								}
+							}
+						]
+					}
+				}
+				title: "勤学苦练"
+				type: "item"
+			}]
+			title: "将至终点"
+			x: 24.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4287C253D0FFB805"]
+			description: [
+				"&6&l成功了！！！！！&r"
+				""
+				"您的努力，您的精研，您所经历的一切，思考的一切，努力的一切，拥有的一切，现在都得到了证实！！！"
+				""
+				"我为您的努力感到吃惊，&6人类的意志超越了我作为机械能够预料到的一切，这一切正是因为您的坚持才有了结果&r！！！"
+				""
+				"从今天起，您便是创世工匠的又一现世，您的精研之努力将创世工艺化为己用！"
+				""
+				"&6我向您致敬，向人类精神致敬，向创世工匠和现在的创世工匠——也就是您，再次致敬。&r"
+			]
+			id: "33D6D51353372A8F"
+			invisible: true
+			rewards: [{
+				id: "678D6F68454EE504"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			subtitle: "匠工创世创工匠"
+			tasks: [{
+				id: "15EF66640C6D96CF"
+				item: "kubejs:genesis_tinker_blueprint"
+				type: "item"
+			}]
+			title: "塑成&6创世工匠蓝图&r"
+			x: 26.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33D6D51353372A8F"]
+			description: [
+				"不过每次都要使用那么多次工具只为了一个创世蓝图难免有些. . .愚蠢。"
+				""
+				"如果您能够处在这番天地中巅峰的位置，或许会有一些新的感悟，能够便利的使用创世蓝图。"
+				""
+				"成为世界中&6挖掘数量最多&r的人吧，然后成为唯一的创世工匠！"
+				""
+				"{@pagebreak}"
+				"公开配方会使所有人都可以使用创世工匠蓝图改良配方。"
+				""
+				"私有配方会使您成为唯一能够使用创世工匠蓝图改良配方的工匠，如果其他玩家取而代之，并不会影响您创世工匠改良配方的使用。"
+			]
+			hide_dependency_lines: true
+			id: "63C66800297E4CA5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B6184E04BF26065"
+				table_id: 7473441826712129782L
+				type: "choice"
+			}]
+			subtitle: "精研之路漫漫长"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:sledge_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:manyullyn"
+							"kubejs:black_steel"
+							"tconstruct:manyullyn"
+							"tconstruct:manyullyn"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 3
+								name: "tconstruct:insatiable"
+							}
+							{
+								level: 1
+								name: "kubejs:soul_hunter"
+							}
+							{
+								level: 2
+								name: "tconstruct:smite"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.6875f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.5f
+						}
+						tic_persistent: {
+							upgrades: -3
+						}
+						tic_stats: {
+							"tconstruct:accuracy": 0.85f
+							"tconstruct:armor": 1.0f
+							"tconstruct:armor_toughness": 2.0f
+							"tconstruct:attack_damage": 11.340001f
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:durability": 16380.001f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:knockback_resistance": 0.05f
+							"tconstruct:mining_speed": 4.25f
+							"tconstruct:projectile_damage": 2.5f
+							"tconstruct:velocity": 1.1f
+						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:diamond"
+							}
+							{
+								level: 1
+								name: "tconstruct:emerald"
+							}
+							{
+								level: 1
+								name: "tconstruct:writable"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 1
+							"tconstruct:indestructible": 1b
+							"tconstruct:rarity": 2
+							upgrades: 3
+						}
+					}
+				}
+				id: "7E2FA018C11177D8"
+				leaderboard: "leaderboards:total_blocks_mined"
+				min: 1000
+				rank: 1
+				title: "挖掘数量称霸"
+				type: "leaderboards:rank_task"
+			}]
+			title: "改良创世工艺"
+			x: 19.0d
+			y: -5.0d
 		}
 	]
 	title: "传闻：创世工匠"

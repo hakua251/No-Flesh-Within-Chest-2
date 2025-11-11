@@ -1,0 +1,30 @@
+{
+    "type": "tconstruct:modifier",
+    "allow_crystal": true,
+    "check_trait_level": true,
+    "inputs": [
+        {
+            "item": "minecraft:experience_bottle"
+        },
+        {
+            "item": "minecraft:experience_bottle"
+        },
+        {
+            "item": "minecraft:experience_bottle"
+        },
+        {
+            "item": "minecraft:nether_star"
+        },
+        {
+            "item": "minecraft:enchanted_golden_apple"
+        }
+    ],
+    "level": 1,
+    "result": "kubejs:study",
+    "slots": {
+        "abilities": 1
+    },
+    "tools": {
+        "tag": "tconstruct:modifiable/durability"
+    }
+}

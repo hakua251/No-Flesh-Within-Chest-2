@@ -9,4 +9,6 @@
 	"Tick Structure Updating" = 1
 	#Show logs related to dev things!
 	"Enable Logs" = true
+	#Show warning when a stage is not associated to any restriction
+	"Enable Warning" = true
 

@@ -231,7 +231,8 @@ TConJSEvents.modifierRegistry(event => {
     event.createNew('bio_lumens', builder => {
         builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
             if (!isSelected) return
-            entity.potionEffects.add('cataclysm:blessing_of_amethyst', 20 * lvl, lvl, false, false)
+            if (entity.age % 20 != 0) return
+            entity.potionEffects.add('cataclysm:blessing_of_amethyst', 20 * 10, lvl, false, false)
         })
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
@@ -243,64 +244,49 @@ TConJSEvents.modifierRegistry(event => {
     event.createNew('disorganization', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
+            if (entity.age % 200 != 0) return
             if (target && target.isAlive()) {
-                target.potionEffects.add('potioncore:disorganization', 20 * lvl, lvl, false, false)
+                target.potionEffects.add('potioncore:disorganization', 20, lvl, false, false)
             }
         })
     })
     event.createNew('purity', builder => {
         builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
             if (!isCorrectSlot) return
-            let hasArmor = false
-            try {
-                hasArmor = entity.getChestArmorItem() && !entity.getChestArmorItem().isEmpty() ||
-                    entity.getLegsArmorItem() && !entity.getLegsArmorItem().isEmpty() ||
-                    entity.getFeetArmorItem() && !entity.getFeetArmorItem().isEmpty() ||
-                    entity.getHeadArmorItem() && !entity.getHeadArmorItem().isEmpty()
-            } catch (e) {
-                // 如果获取盔甲失败，跳过检查
-                hasArmor = true
+            if (entity.age % 20 != 0) return
+            if (entity.hasEffect('minecraft:wither')) {
+                entity.removeEffect('minecraft:wither')
             }
-            if (!hasArmor) return
-            if (entity.age % 20 !== 0) return
-            entity.potionEffects.add('potioncore:purity', 20 * 5 * lvl, lvl, false, false)
-
         })
     })
     event.createNew('antidote', builder => {
         builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
             if (!isCorrectSlot) return
-            let hasArmor = false
-            try {
-                hasArmor = entity.getChestArmorItem() && !entity.getChestArmorItem().isEmpty() ||
-                    entity.getLegsArmorItem() && !entity.getLegsArmorItem().isEmpty() ||
-                    entity.getFeetArmorItem() && !entity.getFeetArmorItem().isEmpty() ||
-                    entity.getHeadArmorItem() && !entity.getHeadArmorItem().isEmpty()
-            } catch (e) {
-                hasArmor = true
+            if (entity.age % 20 != 0) return
+            if (entity.hasEffect('minecraft:poison')) {
+                entity.removeEffect('minecraft:poison')
             }
-            if (!hasArmor) return
-            if (entity.age % 20 !== 0) return
-            entity.potionEffects.add('potioncore:antidote', 20 * 5 * lvl, lvl, false, false)
-
         })
     })
     event.createNew('mana_regen', builder => {
         builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
             if (!isSelected) return
-            entity.potionEffects.add('ars_nouveau:mana_regen', 20 * lvl, lvl, false, false)
+            if (entity.age % 20 != 0) return
+            entity.potionEffects.add('ars_nouveau:mana_regen', 20 * 10, lvl, false, false)
         })
     })
     event.createNew('spell_damage', builder => {
         builder.onInventoryTick((toolView, lvl, level, entity, index, isSelecte, isCorrectSlot, itemStack) => {
             if (!isSelecte) return
-            entity.potionEffects.add('ars_nouveau:spell_damage', 20 * lvl, lvl, false, false)
+            if (entity.age % 20 != 0) return
+            entity.potionEffects.add('ars_nouveau:spell_damage', 20 * 10, lvl, false, false)
         })
     })
     event.createNew('pintcharisma', builder => {
         builder.onInventoryTick((toolView, lvl, level, entity, index, isSelecte, isCorrectSlot, itemStack) => {
             if (!isSelecte) return
-            entity.potionEffects.add('brewery:pintcharisma', 20 * lvl, lvl, false, false)
+            if (entity.age % 20 != 0) return
+            entity.potionEffects.add('brewery:pintcharisma', 20 * 10, lvl, false, false)
         })
     })
     event.createNew('zombie_spawner', builder => {
@@ -316,42 +302,74 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
+
     event.createNew('hormone_secretion', builder => {
         builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!(entity instanceof $ServerPlayer)) return;
-            if (entity.age % 20 !== 0) return; // 每秒检查一次
-
-            // 统计穿戴的装备数量（必须带有 kubejs:armor_buff_set）
-            let armorCount = 0;
-            const armorSlots = ['head', 'chest', 'legs', 'feet'];
-            armorSlots.forEach(slot => {
-                const item = entity.getItemBySlot(slot);
-                if (item.getId() !== 'minecraft:air' && item.nbt && item.nbt.tic_modifiers) {
-                    if (item.nbt.tic_modifiers.some(mod => mod.name === 'kubejs:armor_buff_set')) {
-                        armorCount++;
-                    }
-                }
-            });
-
-            // 根据装备数量给予不同的增益效果
+            if (!isCorrectSlot) return
+            if (entity.age % 100 != 0) return
+            let armorCount = toolView.persistentData.getInt('hormone_secretion')
             if (armorCount >= 1) {
-                entity.potionEffects.add('brewery:snowwhite', 40, 0, false, false);
+                entity.potionEffects.add('brewery:snowwhite', 200, 0, false, false)
             }
             if (armorCount >= 2) {
-                entity.potionEffects.add('potioncore:love', 40, 0, false, false);
+                entity.potionEffects.add('potioncore:love', 200, 0, false, false)
             }
             if (armorCount >= 3) {
-                entity.potionEffects.add('brewery:renewingtouch', 40, 0, false, false);
+                entity.potionEffects.add('brewery:renewingtouch', 200, 0, false, false)
             }
             if (armorCount >= 4) {
-                entity.potionEffects.add('brewery:healingtouch', 40, 0, false, false);
+                entity.potionEffects.add('brewery:healingtouch', 200, 0, false, false)
             }
-        });
-    });
+        })
+
+        builder.onEquipmentChange((toolView, lvl, context, slot) => {
+            const entity = context.entity
+            let count = 0
+            entity.armorSlots.forEach(pSlotItem => {
+                if (!pSlotItem || pSlotItem.isEmpty()) return
+                if (SimpleTCon.hasModifier(pSlotItem, 'kubejs:hormone_secretion')) {
+                    count++
+                }
+            })
+            toolView.persistentData.putInt('hormone_secretion', count)
+        })
+    })
+
     event.createNew('mob_marrow', builder => {
         builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
             if (!isSelected) return
-            entity.potionEffects.add('tconstruct:calcified', 20 * lvl, lvl, false, false)
+            if (entity.age % 20 != 0) return
+            entity.potionEffects.add('tconstruct:calcified', 20 * 10, lvl, false, false)
+        })
+    })
+
+    event.createNew('study', builder => {
+        builder.getToolDamage((toolView, lvl, amount, entity) => {
+            let maxDamage = toolView.getStats().getInt($ToolStats.DURABILITY)
+            if (maxDamage - toolView.getDamage() <= amount) {
+                let toolItem = SimpleTCon.castToolStack(toolView)
+                let reinforcedId = SimpleTCon.getModifierId('tconstruct:reinforced')
+                let studyId = SimpleTCon.getModifierId('kubejs:study')
+                let reinforcedLevel = toolItem.getModifierLevel(reinforcedId)
+                if (reinforcedLevel < 5) {
+                    toolItem.addModifier(reinforcedId, 1)
+                    if (maxDamage >= 20000) {
+                        toolItem.addModifier(studyId, 1)
+                    }
+                    toolItem.setDamage(0)
+                    amount = 0
+                } else if (reinforcedLevel == 5) {
+                    toolItem.addModifier(SimpleTCon.getModifierId('tconstruct:unbreakable'), 1)
+                    let studyLevel = toolItem.getModifierLevel(studyId)
+                    if (maxDamage >= 20000 && studyLevel >= 6 && entity.isPlayer()) {
+                        toolItem.removeModifier(studyId, studyLevel)
+                        entity.give('kubejs:genesis_tinker_blueprint')
+                    }
+                    toolItem.setDamage(0)
+                    amount = 0
+                }
+            }
+            return amount
         })
     })
 })
