@@ -1,0 +1,17 @@
+{
+    "name": "创世工匠蓝图",
+    "icon": "kubejs:genesis_tinker_blueprint",
+    "category": "patchouli:genesis_tinker",
+    "advancement": "kubejs:knowledge/genesis_tinker",
+    "secret": true,
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:crafting",
+            "name": "创世工匠蓝图",
+            "title": "可能的创世工匠蓝图改良配方",
+            "recipe": "kubejs:genesis_tinker_blueprint_manual_only",
+            "text": "创世工匠是谁，为什么要隐藏远古工具，为什么要将创世蓝图设计成如此获取. . .或许答案我们永远也不会知道了。$(br2)到头来，制作创世工匠蓝图的成本还是远超制作工具本身。而且后世出现的工具和盔甲创世蓝图也无法直接制作，让它的象征意义远大于实际价值。$(br2)但倘若我们能够争取到特殊配方的感悟机会，降低创世蓝图的制作成本，其或许还值得一用。"
+        }
+    ]
+}
