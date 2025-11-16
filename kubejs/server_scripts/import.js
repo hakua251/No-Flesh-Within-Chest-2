@@ -120,3 +120,5 @@ const $BlockInWorld = Java.loadClass('net.minecraft.world.level.block.state.patt
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 const $IncarnationHelper = Java.loadClass("com.example.startres.kubejs.IncarnationKubeJSHelper")
 const $CustomGoal = Java.loadClass('net.liopyu.entityjs.util.ai.CustomGoal')
+
+const $OreDataCapability = Java.loadClass('com.tom.createores.OreDataCapability')

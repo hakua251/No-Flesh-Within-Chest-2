@@ -1,0 +1,20 @@
+{
+  "type": "create_cultivation:cultivating",
+  "crop_block": "minecraft:amethyst_cluster",
+  "ingredients": [
+    {
+      "item": "minecraft:budding_amethyst"
+    }
+  ],
+  "processingDuration": 2400,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:amethyst_shard"
+    }
+  ]
+}

@@ -59,3 +59,4 @@ kubejs/probe/
 /config/CSC/Data
 /config/CSC
 *.bak
+CoinScreenLayout.json

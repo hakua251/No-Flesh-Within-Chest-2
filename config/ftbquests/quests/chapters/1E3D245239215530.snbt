@@ -3,9 +3,168 @@
 	default_quest_shape: ""
 	filename: "1E3D245239215530"
 	group: "0B365C36A50478AA"
+	icon: "create:brass_ingot"
 	id: "1E3D245239215530"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"奇怪，黄铜似乎具有一些极其奇特的属性。"
+				""
+				"除去其适合用于各种精密部件的制造之外，我观察到其展现出一种&6特殊的能量传导&r效应。"
+				""
+				"暂不确定是否这种能量传导效应存在于所有金属中，其具体表现为一种&6逆因果&r作用，即通过该金属的信号在出发前便已经到达了测量处。"
+				""
+				"或许我们可以通过这种效应来做一些事情。"
+			]
+			id: "3059F62A16427246"
+			invisible: true
+			rewards: [{
+				id: "5E90B09BA6AA322A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "不常见的读数"
+			tasks: [{
+				id: "4BF60E34F193C4C6"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "异常金属"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3059F62A16427246"]
+			description: [
+				"逆因果效应是一个非常有趣的话题，其常常牵扯到关于世界本质的讨论。"
+				""
+				"但就应用层面来说，我们或许可以打造一台&6谕示机&r来完全利用它的特性，为我们后续掌控这个世界做好准备。"
+			]
+			id: "42F53C902EE260E2"
+			rewards: [{
+				id: "7F568A4DBBEBD61A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我来替您设计"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "5A7DA0C8AF0563B2"
+				title: "稍等片刻"
+				type: "questsadditions:time"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42F53C902EE260E2"]
+			description: [
+				"这个机械我称为&6大世界计算机&r。"
+				""
+				"其功能很多，最重要的作用是能够突破这个世界本身的限制，与外界沟通。"
+				""
+				"如果利用得当，可以从外部修改这个世界的属性，进而控制整个世界——但这只是理论上的。"
+				""
+				"&6不知您是否愿意陪同我完成大世界计算机的建设？&r"
+				"{@pagebreak}"
+				"大世界计算机的建设并不需要非常高的产线效率，一般来说，只要保证产线存在，大世界计算机就能够正常被建设完成。"
+				""
+				"这意味着您也可以通过完全手动生产的方式完成大世界计算机的建设，但这会非常耗费时间。"
+			]
+			id: "2650CE0D76584853"
+			rewards: [{
+				advancement: "kubejs:knowledge/world_computer_blueprint"
+				criterion: ""
+				id: "5FB9A358EFE5FC9D"
+				type: "advancement"
+			}]
+			subtitle: "从未来截获消息"
+			tasks: [{
+				id: "1FF54461008FC48D"
+				title: "让我看看"
+				type: "checkmark"
+			}]
+			title: "大世界计算机"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2650CE0D76584853"]
+			description: [
+				"为了建造大世界计算机，我们需要难以计数的超量矿石和巨大工厂线。"
+				""
+				"因此，我们必须具有能够从&6虚拟矿脉中提取矿石&r的能力，否则绝对无法完成这样宏伟的工程。"
+				""
+				"您可能需要不止一个矿物钻井，但为了了解具体技术路线，辛苦您先制造一个以完成该任务"
+			]
+			id: "20332EE58C8A8514"
+			subtitle: "为了建设大世界计算机"
+			tasks: [{
+				id: "717A90ECBEF61852"
+				item: "createoreexcavation:drilling_machine"
+				type: "item"
+			}]
+			title: "虚拟矿脉"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2650CE0D76584853"]
+			description: [
+				"为了建造大世界计算机，我们需要难以计数的超量矿石和巨大工厂线。"
+				""
+				"因此，我们必须具有能够从&6虚拟矿脉中提取流体&r的能力，否则绝对无法完成这样宏伟的工程。"
+				""
+				"您可能需要不止一个流体钻井，但为了了解具体技术路线，辛苦您先制造一个以完成该任务。"
+			]
+			id: "35505912A290B591"
+			subtitle: "为了建设大世界计算机"
+			tasks: [{
+				id: "4568F9C091D6343D"
+				item: "createoreexcavation:extractor"
+				type: "item"
+			}]
+			title: "虚拟液泉"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2650CE0D76584853"]
+			description: [
+				"为了建造大世界计算机，我们需要难以计数的超量矿石和巨大工厂线。"
+				""
+				"因此，我们必须具有能够从&6虚拟油田中提取原油&r的能力，否则绝对无法完成这样宏伟的工程。"
+				""
+				"您可能需要不止一个抽油机，但为了了解具体技术路线，辛苦您先制造一个以完成该任务"
+			]
+			icon: "createdieselgenerators:pumpjack_bearing"
+			id: "065F70145D87762D"
+			subtitle: "为了建设大世界计算机"
+			tasks: [
+				{
+					count: 2L
+					id: "737D655E088BF191"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
+				}
+				{
+					id: "449EC42BAFF60A2A"
+					item: "createdieselgenerators:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "0174AD71E810C8BE"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
+			]
+			title: "虚拟油田"
+			x: 5.0d
+			y: 1.5d
+		}
+	]
 	title: "传闻：大世界计算机"
 }

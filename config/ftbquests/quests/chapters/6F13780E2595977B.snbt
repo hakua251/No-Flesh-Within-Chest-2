@@ -181,7 +181,7 @@
 			}]
 			title: "创世工艺"
 			x: -0.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["21716C6A06EA01F4"]
@@ -999,7 +999,7 @@
 				type: "questsadditions:time"
 			}]
 			title: "静候佳音"
-			x: 12.5d
+			x: 12.0d
 			y: -5.0d
 		}
 		{
@@ -1024,7 +1024,7 @@
 				title: "失败的创世蓝图模拟！"
 				type: "checkmark"
 			}]
-			x: 14.5d
+			x: 13.5d
 			y: -5.0d
 		}
 		{
@@ -1213,7 +1213,7 @@
 				type: "checkmark"
 			}]
 			title: "抉择"
-			x: 16.0d
+			x: 15.0d
 			y: -5.0d
 		}
 		{
@@ -2783,7 +2783,7 @@
 				type: "item"
 			}]
 			title: "此为何物"
-			x: 9.5d
+			x: 8.5d
 			y: -3.0d
 		}
 		{
@@ -2837,7 +2837,7 @@
 				type: "questsadditions:time"
 			}]
 			title: "有趣的联想"
-			x: 12.5d
+			x: 11.0d
 			y: -1.5d
 		}
 		{
@@ -2865,7 +2865,7 @@
 				type: "checkmark"
 			}]
 			title: "创世非我愿"
-			x: 14.5d
+			x: 13.0d
 			y: -1.5d
 		}
 		{
@@ -3102,7 +3102,7 @@
 				}
 			]
 			title: "极致. . . 工匠？"
-			x: 16.5d
+			x: 15.0d
 			y: -1.5d
 		}
 		{
@@ -3248,7 +3248,7 @@
 				type: "item"
 			}]
 			title: "再现创世蓝图"
-			x: 18.5d
+			x: 17.0d
 			y: -1.5d
 		}
 		{
@@ -3400,7 +3400,7 @@
 				type: "item"
 			}]
 			title: "原来答案近在咫尺"
-			x: 20.5d
+			x: 19.0d
 			y: -1.5d
 		}
 		{
@@ -3541,7 +3541,7 @@
 				type: "item"
 			}]
 			title: "光芒如丝绸淌下"
-			x: 22.5d
+			x: 21.0d
 			y: -1.5d
 		}
 		{
@@ -3678,7 +3678,7 @@
 				type: "item"
 			}]
 			title: "将至终点"
-			x: 24.5d
+			x: 23.0d
 			y: -1.5d
 		}
 		{
@@ -3708,7 +3708,7 @@
 				type: "item"
 			}]
 			title: "塑成&6创世工匠蓝图&r"
-			x: 26.5d
+			x: 25.0d
 			y: -1.5d
 		}
 		{
