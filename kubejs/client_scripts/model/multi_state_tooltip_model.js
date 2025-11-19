@@ -9,7 +9,6 @@ function MultiStateTooltip(itemId) {
     this.ctrlTooltips = []
     this.shiftTooltips = []
     this.altTooltips = []
-    this.mpmTypeTooltipsMap = new Map()
     this.isBindEntity = false
     this.shiftDescription = Text.translatable('tooltips.kubejs.multi_state.shift.1')
     this.shiftHoldingDescription = Text.translatable('tooltips.kubejs.multi_state.shift_holding.1')
@@ -45,14 +44,6 @@ MultiStateTooltip.prototype = {
      */
     addAlt: function (textComponent) {
         this.altTooltips.push(textComponent)
-        return this
-    },
-    /**
-     * @param {number} type
-     * @param {Internal.MutableComponent} textComponent
-     */
-    addMPMType: function (type, textComponent) {
-        this.mpmTypeTooltipsMap.set(type, textComponent)
         return this
     },
     /**

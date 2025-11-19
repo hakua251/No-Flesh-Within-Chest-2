@@ -39,7 +39,6 @@ OrganTakeOnStrategyModel.prototype = {
         })
         const invTypeData = ccInstance.getInventoryTypeData()
         const onlyMap = new Map()
-        const onlyMPMMap = new Map()
         let oldContainerSize = oldccInv.getContainerSize()
         let newContainerSize = ccInv.getContainerSize()
 
@@ -81,28 +80,6 @@ OrganTakeOnStrategyModel.prototype = {
                         organEventStrategy['default'].forEach(e => {
                             strategyFuncList.push(new PriorityArgsModel(e, args.concat(newItem, i, slotType)))
                         })
-                    }
-                }
-
-
-                // MPM策略
-                if (customData.canLoadMpm) {
-                    let mpmEventStrategy = strategyModel.strategyMap['mpm_render_take_on']
-                    if (mpmEventStrategy) {
-                        if (!customData.modelData) {
-                            customData.modelData = $MPMModelData.get(ccInstance.owner)
-                        }
-                        if (mpmEventStrategy['only'] && !onlyMPMMap.has(itemId)) {
-                            onlyMPMMap.set(itemId, true)
-                            mpmEventStrategy['only'].forEach(e => {
-                                strategyFuncList.push(new PriorityArgsModel(e, args.concat(newItem, i, slotType)))
-                            })
-                        }
-                        if (mpmEventStrategy['default']) {
-                            mpmEventStrategy['default'].forEach(e => {
-                                strategyFuncList.push(new PriorityArgsModel(e, args.concat(newItem, i, slotType)))
-                            })
-                        }
                     }
                 }
             }

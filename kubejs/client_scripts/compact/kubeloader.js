@@ -14,10 +14,6 @@ if (IsLoadedKubeloader) {
     ContentPacks.putShared('ContainerSlotType', ContainerSlotType)
     ContentPacks.putShared('DigestSlotType', DigestSlotType)
 
-    ContentPacks.putShared('OrganItemMPMTypeNotShow', OrganItemMPMTypeNotShow)
-    ContentPacks.putShared('OrganItemMPMTypeNotShowText', OrganItemMPMTypeNotShowText)
-    ContentPacks.putShared('OrganItemMPMTypeShow', OrganItemMPMTypeShow)
-    ContentPacks.putShared('OrganItemMPMTypeShowText', OrganItemMPMTypeShowText)
 
     ContentPacks.putShared('LuckHover', LuckHover)
     ContentPacks.putShared('PointAtHover', PointAtHover)

@@ -40,10 +40,6 @@ const $DamageTypes = Java.loadClass('net.minecraft.world.damagesource.DamageType
 const $DamageSources = Java.loadClass('net.minecraft.world.damagesource.DamageSources')
 const $GameRules = Java.loadClass('net.minecraft.world.level.GameRules')
 
-const $MPMModelData = Java.loadClass('noppes.mpm.ModelData')
-const $MpmPartData = Java.loadClass('noppes.mpm.client.parts.MpmPartData')
-const $MpmPackets = Java.loadClass('noppes.mpm.packets.Packets')
-const $PacketPlayerDataSend = Java.loadClass('noppes.mpm.packets.client.PacketPlayerDataSend')
 const $SimpleMenuProvider = Java.loadClass('net.minecraft.world.SimpleMenuProvider')
 const $ChestCavityScreenHandler = Java.loadClass('net.tigereye.chestcavity.ui.ChestCavityScreenHandler')
 const $ChestCavityEntity = Java.loadClass('net.tigereye.chestcavity.interfaces.ChestCavityEntity')

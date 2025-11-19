@@ -4,8 +4,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:originiums')
     .addAlt(Text.translatable('tooltips.kubejs.originiums.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.originiums.alt.2', Text.gold('10'), Text.gold('3')))
     .addAlt(Text.translatable('tooltips.kubejs.originiums.alt.3'))
-    .addMPMType(OrganItemMPMTypeNotShow, OrganItemMPMTypeNotShowText)
-    .addMPMType(OrganItemMPMTypeShow, OrganItemMPMTypeShowText)
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:whirlisprig_star_gem')

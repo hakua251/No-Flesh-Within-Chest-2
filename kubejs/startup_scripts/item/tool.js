@@ -1,7 +1,6 @@
 // priority: 1000
 // 工具（具有独立功能的物品）
 StartupEvents.registry('item', event => {
-    event.create('plastic_stem_cells').maxStackSize(1).texture('kubejs:item/tools/plastic_stem_cells')
     event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {
         food.hunger(1).saturation(1).alwaysEdible().eaten(event => {
             if (!event.player) return

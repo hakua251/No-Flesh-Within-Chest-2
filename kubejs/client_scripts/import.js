@@ -11,9 +11,6 @@ const $OverlayTexture = Java.loadClass('net.minecraft.client.renderer.texture.Ov
 const $ModelData = Java.loadClass('net.minecraftforge.client.model.data.ModelData')
 const $RenderType = Java.loadClass('net.minecraft.client.renderer.RenderType')
 
-const $MpmPartData = Java.loadClass('noppes.mpm.client.parts.MpmPartData')
-const $MpmPackets = Java.loadClass('noppes.mpm.packets.Packets')
-const $PacketPlayerDataSend = Java.loadClass('noppes.mpm.packets.client.PacketPlayerDataSend')
 
 const $MapDimension = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.MapDimension')
 const $WaypointImpl = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.WaypointImpl')

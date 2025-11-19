@@ -112,62 +112,10 @@ function KingOfStomachTakeOff(customData, event, organItem, organIndex, slotType
 }
 
 
-/**
- * @param {OrganChestCavityUpdateStrategyCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- */
-function KingOfStomachMpmTakeOn(customData, event, organItem, organIndex, slotType) {
-    switch (GetOrganItemMPMType(organItem)) {
-        case OrganItemMPMTypeShow: {
-            let leftArmPartId = 'kubejs:parts/arms/king_of_stomach_left_arm_slim_model.json'
-            let rightArmPartId = 'kubejs:parts/arms/king_of_stomach_right_arm_slim_model.json'
-            let bodyPartId = 'kubejs:parts/body/king_of_stomach_body_model.json'
-            let bodyIndex = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == bodyPartId)
-            if (bodyIndex == -1) {
-                customData.modelData.mpmParts.add(new MpmDataModel(bodyPartId).exportModelData())
-            }
-
-            let leftArmIndex = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == leftArmPartId)
-            if (leftArmIndex == -1) {
-                customData.modelData.mpmParts.add(new MpmDataModel(leftArmPartId).exportModelData())
-            }
-            let rightArmIndex = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == rightArmPartId)
-            if (rightArmIndex == -1) {
-                customData.modelData.mpmParts.add(new MpmDataModel(rightArmPartId).exportModelData())
-            }
-            return
-        }
-        default:
-            return
-    }
-}
-
-/**
- * @param {OrganChestCavityUpdateStrategyCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- */
-function KingOfStomachMpmTakeOff(customData, event, organItem, organIndex, slotType) {
-    let leftArmPartId = 'kubejs:parts/arms/king_of_stomach_left_arm_slim_model.json'
-    let rightArmPartId = 'kubejs:parts/arms/king_of_stomach_right_arm_slim_model.json'
-    let bodyPartId = 'kubejs:parts/body/king_of_stomach_body_model.json'
-    customData.modelData.mpmParts.removeIf(mpmData => (mpmData.partId.toString() == bodyPartId) || (mpmData.partId.toString() == leftArmPartId) || (mpmData.partId.toString() == rightArmPartId))
-
-}
-
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:king_of_stomach')
         .addOnlyStrategy('organ_take_on', KingOfStomachTakeOn)
         .addOnlyStrategy('organ_take_off', KingOfStomachTakeOff)
         .addOnlyStrategy('chest_cavity_update', KingOfStomachChestCavityUpdate)
-        .addOnlyStrategy('mpm_render_take_on', KingOfStomachMpmTakeOn)
-        .addOnlyStrategy('mpm_render_take_off', KingOfStomachMpmTakeOff)
 )
-
-ServerEvents.recipes(event => {
-    event.shapeless(GetOrganItemWithMPMType(Item.of('kubejs:king_of_stomach'), OrganItemMPMTypeShow), ['kubejs:plastic_stem_cells', 'kubejs:king_of_stomach', Ingredient.of('#forge:dyes/white')])
-})

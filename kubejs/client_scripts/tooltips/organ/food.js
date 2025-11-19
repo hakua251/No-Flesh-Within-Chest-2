@@ -19,8 +19,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:king_of_stomach')
     .addCtrl(GulaSlotType)
     .addCtrl(Text.translatable('tooltips.kubejs.king_of_stomach.ctrl.1'))
     .addCtrl(Text.translatable('tooltips.kubejs.king_of_stomach.ctrl.2'))
-    .addMPMType(OrganItemMPMTypeNotShow, OrganItemMPMTypeNotShowText)
-    .addMPMType(OrganItemMPMTypeShow, OrganItemMPMTypeShowText)
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:beer_gland')

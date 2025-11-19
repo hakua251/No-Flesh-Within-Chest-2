@@ -60,3 +60,6 @@ kubejs/probe/
 /config/CSC
 *.bak
 CoinScreenLayout.json
+/config/yes_steve_model/cache
+/config/yes_steve_model/builtin
+/armourers_workshop

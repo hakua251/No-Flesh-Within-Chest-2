@@ -7,10 +7,4 @@ PlayerEvents.loggedIn(event => {
 
     InitClientISSSpellData(player) // 同步客户端ISSSpellData：同步客户端的ISSSpellData，用于客户端的ISSSpellData初始化
 
-    // 延后同步MPM状态
-    event.server.scheduleInTicks(20, () => {
-        let mpmModelDataNBT = GetCustomDataMap(player.chestCavityInstance, 'mpmModelDataNBT', null)
-        if (!mpmModelDataNBT) return
-        $MpmPackets.sendNearby(player, new $PacketPlayerDataSend(player.getUuid(), mpmModelDataNBT))
-    })
 })

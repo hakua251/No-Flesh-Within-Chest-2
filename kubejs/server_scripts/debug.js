@@ -49,7 +49,6 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    console.log(player.getChestCavityInstance().getChestCavityType().getDefaultOrganScores())
     // /**@type {Internal.PathfinderMob} */
     // let leader = level.createEntity('minecraft:zombie')
     // leader.potionEffects.add('minecraft:glowing', 20 * 60, 0)

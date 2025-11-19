@@ -23,56 +23,8 @@ function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organInd
     customData.maxHealth.addAttributeModifier(rosyValue, 'addition', 'base')
 }
 
-/**
- * @param {OrganChestCavityUpdateStrategyCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- */
-function RoseQuartzHeartMpmRender(customData, event, organItem, organIndex, slotType) {
-    let mpmData = new MpmDataModel('kubejs:parts/body/rose_body_model.json').exportModelData()
-    customData.mpmParts.push(mpmData)
-}
-
-/**
- * @param {OrganChestCavityUpdateStrategyCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- */
-function RoseQuartzHeartMpmTakeOn(customData, event, organItem, organIndex, slotType) {
-    switch (GetOrganItemMPMType(organItem)) {
-        case OrganItemMPMTypeShow: {
-            let partId = 'kubejs:parts/body/rose_body_model.json'
-            let index = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == partId)
-            if (index == -1) {
-                customData.modelData.mpmParts.add(new MpmDataModel(partId).exportModelData())
-            }
-            return
-        }
-        default:
-            return
-    }
-}
-
-/**
- * @param {OrganChestCavityUpdateStrategyCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- */
-function RoseQuartzHeartMpmTakeOff(customData, event, organItem, organIndex, slotType) {
-    let partId = 'kubejs:parts/body/rose_body_model.json'
-    customData.modelData.mpmParts.removeIf(mpmData => mpmData.partId.toString() == partId)
-}
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rose_quartz_heart')
         .addStrategy('chest_cavity_update', RoseQuartzHeartChestCavityUpdate)
-        .addOnlyStrategy('mpm_render_take_on', RoseQuartzHeartMpmTakeOn)
-        .addOnlyStrategy('mpm_render_take_off', RoseQuartzHeartMpmTakeOff)
 )
-
-ServerEvents.recipes(event => {
-    event.shapeless(GetOrganItemWithMPMType(Item.of('kubejs:rose_quartz_heart'), OrganItemMPMTypeShow), ['kubejs:plastic_stem_cells', 'kubejs:rose_quartz_heart', Ingredient.of('#forge:dyes/white')])
-})

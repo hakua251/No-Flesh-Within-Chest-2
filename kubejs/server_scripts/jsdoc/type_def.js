@@ -5,7 +5,6 @@
  * @property {AttributeManagerModel} armor
  * @property {AttributeManagerModel} entityReach
  * @property {AttributeManagerModel} blockReach
- * @property {noppes.mpm.ModelData} modelData
  */
 
 /**
