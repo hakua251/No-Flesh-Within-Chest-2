@@ -8,8 +8,6 @@ StartupEvents.registry('item', event => {
     event.create('iron_copper_ore').texture('kubejs:item/material/iron_copper_ore').maxStackSize(1)
     event.create('iron_copper_waste_ore').texture('kubejs:item/material/iron_copper_waste_ore').maxStackSize(1)
 
-    event.create('coal_dense_ore').texture('kubejs:item/material/coal_dense_ore').maxStackSize(1)
-    event.create('coal_diamond_dense_ore').texture('kubejs:item/material/diamond_dense_ore').maxStackSize(1)
 
 })
 

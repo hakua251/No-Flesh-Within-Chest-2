@@ -186,7 +186,7 @@
 			}]
 			title: "甘蔗农场"
 			x: 1.0d
-			y: 3.0d
+			y: 9.0d
 		}
 		{
 			description: [
@@ -267,7 +267,7 @@
 		}
 		{
 			description: [
-				"为了制作电路基板，还需要足够多的灰烬。"
+				"为了自动化后续的红石、荧石和火药，您需要足够多的灰烬以自动化余烬面粉，当然，您也完全可以通过&6沼泽女巫塔&r等方式来解决此类需求。"
 				""
 				"任何能够燃烧的物质被火焰烧尽后都会留下灰烬，通过一套自动化设备，完全可以实现灰烬的自动化生产。"
 				""
@@ -279,7 +279,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为了电路基板"
+			subtitle: "为了余烬面粉"
 			tasks: [{
 				count: 64L
 				id: "395F38FCD4712F33"
@@ -304,7 +304,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为了共振晶体"
+			subtitle: "为了紫水晶共振器"
 			tasks: [{
 				count: 64L
 				id: "3F4E563FC8F1A401"
@@ -312,8 +312,8 @@
 				type: "item"
 			}]
 			title: "紫水晶农场"
-			x: 1.0d
-			y: 8.0d
+			x: 5.5d
+			y: 13.0d
 		}
 		{
 			id: "4F4D84DCAADFE359"
@@ -322,7 +322,7 @@
 				item: "kubejs:stable_substrate"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 8.0d
 			y: 7.0d
 		}
 		{
@@ -332,7 +332,7 @@
 				item: "kubejs:unstable_matter"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 8.0d
 			y: 6.0d
 		}
 		{
@@ -342,7 +342,7 @@
 				item: "kubejs:refined_brass_ingot"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 8.0d
 			y: 4.0d
 		}
 		{
@@ -352,7 +352,7 @@
 				item: "kubejs:redstone_capacitor"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 8.0d
 			y: 5.0d
 		}
 		{
@@ -362,7 +362,7 @@
 				item: "kubejs:simulated_unit"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 11.5d
 			y: 6.0d
 		}
 		{
@@ -372,7 +372,7 @@
 				item: "kubejs:oracle_gate"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 11.5d
 			y: 5.0d
 		}
 		{
@@ -382,7 +382,7 @@
 				item: "kubejs:counterweight_gear"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 10.0d
 			y: 7.0d
 		}
 		{
@@ -392,7 +392,7 @@
 				item: "kubejs:reverse_causality_chip"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 13.0d
 			y: 6.0d
 		}
 		{
@@ -402,7 +402,7 @@
 				item: "kubejs:timing_valve"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 10.0d
 			y: 6.0d
 		}
 		{
@@ -412,7 +412,7 @@
 				item: "kubejs:random_tick_spring"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 10.0d
 			y: 5.0d
 		}
 		{
@@ -422,7 +422,7 @@
 				item: "kubejs:structural_bolt"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 10.0d
 			y: 4.0d
 		}
 		{
@@ -433,8 +433,8 @@
 				type: "checkmark"
 			}]
 			title: "地心流体"
-			x: 1.0d
-			y: 9.0d
+			x: -1.5d
+			y: 13.5d
 		}
 		{
 			id: "239E0F7A9A0E1B24"
@@ -444,8 +444,439 @@
 				type: "checkmark"
 			}]
 			title: "地幔矿藏"
+			x: -1.5d
+			y: 12.5d
+		}
+		{
+			description: ["由于大世界计算机的构建零件中，很多都&6需要药水参与&r，因此一个地狱疣农场是必要的。"]
+			id: "44C3AEC9E214A35F"
+			rewards: [{
+				id: "2F49240A05E35743"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了酿造各种药水"
+			tasks: [{
+				count: 64L
+				id: "0539E63B98BC94DB"
+				item: "minecraft:nether_wart"
+				type: "item"
+			}]
+			title: "下界疣农场"
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["635648F942615025"]
+			description: [
+				"通过&6红石 + 灰烬搅拌&r的方式，可以获得余烬面粉。"
+				""
+				"您也可以通过研磨下界岩的方式来获取余烬面粉，具体可以根据您的实际情况分配。"
+				""
+				"在此过程中消耗的红石，既可以通过&6虚拟矿脉&r或者常规挖矿来补充，也可以通过&6余烬面粉 + 力量药水&r进行自动化量产。"
+				""
+				"为了帮助您理解这个过程，我这里将会采用能够无限自循环生产的路径——即余烬面粉与力量药水的路径为您安排任务。"
+			]
+			id: "2A62739EF5699406"
+			rewards: [{
+				id: "71BCDFDE4DE181C2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了批发红石、荧石和火药"
+			tasks: [{
+				count: 64L
+				id: "0ECA097D0A30E419"
+				item: "create:cinder_flour"
+				type: "item"
+			}]
+			title: "余烬面粉生产"
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			description: [
+				"为了后续酿造药水的方便，您需要一个&6自动获取蜘蛛眼&r的装置。"
+				""
+				"让&n机械臂持有森罗物语的锅铲，对佩戴有&6蜘蛛的头&r的实体右键&r，即可消耗锅铲的耐久度生产 1 蜘蛛眼。"
+				""
+				"此方式生产蜘蛛眼简单快捷高效，但记得即时更换新的锅铲。"
+			]
+			id: "579400015534B141"
+			rewards: [{
+				id: "0C9BC485FC63DD93"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了酿造药水"
+			tasks: [{
+				count: 64L
+				id: "7CDFE152298616B5"
+				item: "minecraft:spider_eye"
+				type: "item"
+			}]
+			title: "蜘蛛眼农场"
 			x: 1.0d
 			y: 10.0d
+		}
+		{
+			dependencies: [
+				"579400015534B141"
+				"4C734EDC56B5A572"
+			]
+			description: [
+				"在获得了足够的蜘蛛眼之后，下一步就是将其发酵成为发酵蛛眼。"
+				""
+				"通过发酵流程，将&6糖和蜘蛛眼发酵&r是最为经济快捷的方案，通过此方案，你可以获取到几乎无穷尽的发酵蛛眼。"
+				""
+				"与此同时，这会带来一种重要的副产物——&6乙醇&r。"
+				""
+				"相比于其他方案，之所以我推荐这个方案，是因为其可以一定程度上补充我们对于乙醇的需要。当然，这并不限制您使用其他的方案，我只是按照我的预估结果进行推荐。"
+			]
+			icon: "minecraft:fermented_spider_eye"
+			id: "2A318E77FFB451CB"
+			rewards: [{
+				id: "2F8941FE4091B920"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了酿造药水和乙醇"
+			tasks: [{
+				count: 64L
+				id: "3C4C74F04B93A4BD"
+				item: "minecraft:fermented_spider_eye"
+				type: "item"
+			}]
+			title: "发酵蛛眼与乙醇"
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["44C3AEC9E214A35F"]
+			description: [
+				"为了后续自动化更多的生产，第一步就是通过下界疣自动化生产粗制药水。"
+				""
+				"这个任务需要您&6使用任务屏幕进行提交&r，通过制作出来的任务屏幕，右键打开设置其对应任务为此任务，即可往屏幕内输入流体来提交此任务。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:awkward"
+				}
+			}
+			id: "5D2CB52419160960"
+			rewards: [{
+				id: "779AAE14D7C62BD7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了酿造药水"
+			tasks: [{
+				amount: 8000L
+				fluid: "create:potion"
+				icon: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:awkward"
+					}
+				}
+				id: "443911910FD52F77"
+				nbt: {
+					Bottle: "REGULAR"
+					Potion: "minecraft:awkward"
+				}
+				type: "fluid"
+			}]
+			title: "粗制药水"
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			description: [
+				"由于后续有酿造各种药水的需求，因此一个混合生产作物的农场是必须的。"
+				""
+				"它不需要有太大的规模，但种类要尽可能多——至少要覆盖&6西瓜和胡萝卜&r这两种重要的酿造原料。"
+			]
+			icon: "minecraft:carrot"
+			id: "07B60A5D339D7C7D"
+			rewards: [{
+				id: "5C85631AF37E4E98"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了酿造药水"
+			tasks: [
+				{
+					count: 64L
+					id: "1194B460D5D5424B"
+					item: "minecraft:melon_slice"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6E674DE43ADCD30D"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+			]
+			title: "混合农场"
+			x: 1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"5D2CB52419160960"
+				"032D43780BB56C1E"
+			]
+			description: [
+				"首要便是自动化生产治疗药水。"
+				""
+				"通过治疗药水，我们可以使位于冶炼炉中的部分实体回血——这意味着我们可以通过&6长期冶炼某几个固定实体来无穷尽的获取足够多的对应资源&r。"
+				""
+				"举例来说，通过治疗药水，您可以通过&n无限冶炼铁傀儡获得铁、村民获得绿宝石、蜜蜂获得蜂蜜. . .甚至您可以通过冶炼熊猫来获取力量药水&r！这可以在后续的部分流程中直接绕过一些自动化！"
+				""
+				"因此，我&6强烈建议您完成治疗药水的自动化&r，并且通过&6动力泵&r缓慢往外泵出流体浇灌到实体身上来高效率利用药水（最高利用场景下，您可能需要设计一个时钟来控制）。进而通过冶炼炉 + 流体网络来完成后续大部分物资的自动化。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:healing"
+				}
+			}
+			id: "1E86CEBD77A8D0B5"
+			rewards: [{
+				id: "3F5F9022B4F79262"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了自动化药水"
+			tasks: [{
+				amount: 8000L
+				fluid: "create:potion"
+				icon: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:healing"
+					}
+				}
+				id: "24E79E31D17D3DA9"
+				nbt: {
+					Bottle: "REGULAR"
+					Potion: "minecraft:healing"
+				}
+				type: "fluid"
+			}]
+			title: "治疗药水"
+			x: 4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["07B60A5D339D7C7D"]
+			description: [
+				"制作金胡萝卜和闪烁的西瓜片供应酿造原料。"
+				""
+				"其中金锭需要从&6虚拟矿脉&r或者&6冶炼僵尸猪灵&r的方式获取，我的建议是通过冶炼僵尸猪灵——只要您后续能够自动化&6瞬间伤害&r药水，就可以通过无休止的冶炼同几个猪人完成资源的全自动获取。"
+			]
+			icon: "minecraft:golden_carrot"
+			id: "032D43780BB56C1E"
+			rewards: [{
+				id: "4CFDD4B35D39C53F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了酿造药水"
+			tasks: [
+				{
+					count: 64L
+					id: "355FD608C1BD4F98"
+					item: "minecraft:glistering_melon_slice"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0FB1F429A7A92971"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"1E86CEBD77A8D0B5"
+				"2A318E77FFB451CB"
+			]
+			description: [
+				"当然您也会发现，很多亡灵生物是无法通过治疗药水治疗的——相反，您需要瞬间伤害药水。"
+				""
+				"使用&6发酵蛛眼&r扭转治疗药水的效果是一个优秀的方案，当然您也可以尝试其他的路线。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:harming"
+				}
+			}
+			id: "59490F6E97372FD0"
+			rewards: [{
+				id: "3AA09E902F9B6C71"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了更多的自动化"
+			tasks: [{
+				amount: 8000L
+				fluid: "create:potion"
+				icon: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				id: "53AF382C42E6A852"
+				nbt: {
+					Bottle: "REGULAR"
+					Potion: "minecraft:harming"
+				}
+				type: "fluid"
+			}]
+			title: "伤害药水"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["59490F6E97372FD0"]
+			description: [
+				"之前的流程里面，我们难免需要使用金作为材料。"
+				""
+				"为了能够解决此资源消耗问题，我强烈建议您&6诱引僵尸猪灵进行实体冶炼&r并且通过瞬间伤害药水保持它的存活，以支持我们金的日常消耗。"
+				""
+				"虽然这有些残忍，但它们只是数据，对于大世界计算机的构建来说，数据如果能够为超越自身而做出贡献，也是尽职尽责了。"
+			]
+			id: "169B9727420A9DFB"
+			rewards: [{
+				id: "7A94EE4F2BF15226"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了自给自足"
+			tasks: [{
+				count: 64L
+				id: "634F0C33F6C3A8D0"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			title: "金锭农场"
+			x: 5.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1E86CEBD77A8D0B5"]
+			description: [
+				"实体冶炼苦力怕可以自动化玻璃的产出，当然，您也可以尝试使用沙子进行烧炼。"
+				""
+				"从效率来说，&6实体冶炼虽然不是最优解&r，但是它的结构简单，维护容易，而且对于您来说，如果维护得当，治疗药水应当已经非常富裕了。"
+			]
+			id: "091F8B668D319E3A"
+			rewards: [{
+				id: "77A3C00679FBF500"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了紫水晶共振器"
+			tasks: [{
+				count: 64L
+				id: "52933E2D353A8029"
+				item: "tconstruct:clear_glass"
+				type: "item"
+			}]
+			title: "通透玻璃农场"
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"091F8B668D319E3A"
+				"183FD350BF7F5A66"
+				"198C8EC7A0F912CC"
+				"21A2EDBEB76F1F31"
+			]
+			description: [
+				"紫水晶有着一种特殊的性质——它作为一种时钟，在整个世界的各个位置均保持同步。"
+				""
+				"您可以将其视作一种&6超距作用&r——或者说，它在游戏中其实是非常常见的一种存在。"
+				""
+				"现在我们要利用它的这种特性，来尝试触摸大世界计算机的边界。"
+			]
+			id: "794800AE680288F1"
+			rewards: [{
+				id: "77E204118027892F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
+			tasks: [{
+				count: 64L
+				id: "0E95DF7495DAF3BE"
+				item: "kubejs:amethyst_resonator"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 11.0d
+		}
+		{
+			description: [
+				"木材在加工流程中必然会出现，因此一个&6林场&r是必须的。"
+				""
+				"林场除了能够提供木材，其还能够提供源源不断的木炭和树苗资源，这对后面的流程都有非常大的帮助。"
+			]
+			id: "198C8EC7A0F912CC"
+			rewards: [{
+				id: "3BD6333D04F478CC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了提供基本材料"
+			tasks: [{
+				count: 64L
+				id: "25E73F47475B3160"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "林场"
+			x: 5.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["59490F6E97372FD0"]
+			description: [
+				"您可以通过&6实体熔炼溺尸&r来无限获取铜锭，或许有些残忍，但这是最优解。"
+				""
+				"当然，您也可以采用一些不残忍的方法，比如开采虚拟矿脉，但虚拟矿脉往往不是无限的，且涉及到远距离运输。"
+			]
+			id: "21A2EDBEB76F1F31"
+			rewards: [{
+				id: "18B2494943987262"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了制作大世界计算机"
+			tasks: [{
+				count: 64L
+				id: "7ACB367AAB3AD484"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			title: "铜锭农场"
+			x: 5.5d
+			y: 12.0d
 		}
 	]
 	title: "传闻：大世界计算机"

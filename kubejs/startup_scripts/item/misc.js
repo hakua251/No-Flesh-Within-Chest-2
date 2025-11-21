@@ -13,4 +13,5 @@ StartupEvents.registry('item', event => {
     event.create('reverse_causality_chip').texture('kubejs:item/misc/reverse_causality_chip').tag('kubejs:unstable')
     event.create('timing_valve').texture('kubejs:item/misc/timing_valve').tag('kubejs:unstable')
     event.create('stable_substrate').texture('kubejs:item/misc/stable_substrate')
+        event.create('amethyst_resonator').texture('kubejs:item/misc/amethyst_resonator')
 })

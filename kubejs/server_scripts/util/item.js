@@ -54,3 +54,18 @@ function SpawnLootAtLocation(level, blockPos, lootList) {
         tickCounter = tickCounter + 10
     })
 }
+
+
+/**
+ * 
+ * @param {Internal.ItemStack} item
+ */
+function DamageItem(item) {
+    let damageValue = item.getDamageValue()
+    let maxDamage = item.getMaxDamage()
+    if (damageValue + 1 >= maxDamage) {
+        item.setCount(0)
+    } else {
+        item.setDamageValue(damageValue + 1)
+    }
+}

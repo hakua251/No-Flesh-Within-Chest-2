@@ -1,0 +1,16 @@
+{
+  "replace": true,
+  "type": "tconstruct:entity_melting",
+  "damage": 4,
+  "entity": {
+    "type": "minecraft:phantom"
+  },
+  "result": {
+    "amount": 25,
+    "fluid": "create:potion",
+    "nbt": {
+      "Potion": "minecraft:slow_falling",
+      "Bottle": "REGULAR"
+    }
+  }
+}
