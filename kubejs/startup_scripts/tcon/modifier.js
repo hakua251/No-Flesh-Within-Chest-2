@@ -50,16 +50,16 @@ TConJSEvents.modifierRegistry(event => {
     //     })
     // })
 
-    // 标记目标；在造成暴击伤害时，对目标施加标记效果，持续 5 * 等级 秒   
-    event.createNew('marking_target', builder => {
-        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
-            /**@type {Internal.LivingEntity} */
-            const target = context.target
-            if (context.isCritical() && target && target.isAlive()) {
-                target.potionEffects.add('kubejs:marked', 20 * 5 * lvl, 0, false, false)
-            }
-        })
-    })
+    // // 标记目标；在造成暴击伤害时，对目标施加标记效果，持续 5 * 等级 秒   
+    // event.createNew('marking_target', builder => {
+    //     builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+    //         /**@type {Internal.LivingEntity} */
+    //         const target = context.target
+    //         if (context.isCritical() && target && target.isAlive()) {
+    //             target.potionEffects.add('kubejs:marked', 20 * 5 * lvl, 0, false, false)
+    //         }
+    //     })
+    // })
 
     // 薄葬
     // event.createNew('shallow_grave', builder => {
@@ -151,6 +151,7 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
+
     event.createNew('blazing_brand', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
@@ -159,6 +160,7 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
+
     //bone_fragments
     // event.createNew('bone_spurs', builder => {
     //     builder.armorTakeAttacked((toolView, lvl, context, slotType, source, amount) => {
@@ -172,6 +174,7 @@ TConJSEvents.modifierRegistry(event => {
     //         return true
     //     })
     // })
+
     event.createNew('abyssal_burn', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
@@ -190,16 +193,6 @@ TConJSEvents.modifierRegistry(event => {
         })
     })
 
-
-    event.createNew('nausea_cure', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isSelected) return
-            entity.potionEffects.add('minecraft:regeneration', 20 * lvl, lvl, false, false)
-            if (Math.random() < 0.1) {
-                entity.potionEffects.add('minecraft:nausea', 20 * lvl, lvl, false, false)
-            }
-        })
-    })
     event.createNew('wetness', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
@@ -208,6 +201,7 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
+
     event.createNew('stun', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
@@ -228,12 +222,8 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
+
     event.createNew('bio_lumens', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isSelected) return
-            if (entity.age % 20 != 0) return
-            entity.potionEffects.add('cataclysm:blessing_of_amethyst', 20 * 10, lvl, false, false)
-        })
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
             if (target && target.isAlive()) {
@@ -241,119 +231,13 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
+
     event.createNew('disorganization', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
-            if (entity.age % 200 != 0) return
             if (target && target.isAlive()) {
                 target.potionEffects.add('potioncore:disorganization', 20, lvl, false, false)
             }
-        })
-    })
-    event.createNew('purity', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isCorrectSlot) return
-            if (entity.age % 20 != 0) return
-            if (entity.hasEffect('minecraft:wither')) {
-                entity.removeEffect('minecraft:wither')
-            }
-        })
-    })
-    event.createNew('antidote', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isCorrectSlot) return
-            if (entity.age % 20 != 0) return
-            if (entity.hasEffect('minecraft:poison')) {
-                entity.removeEffect('minecraft:poison')
-            }
-        })
-    })
-    event.createNew('mana_regen', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isSelected) return
-            if (entity.age % 20 != 0) return
-            entity.potionEffects.add('ars_nouveau:mana_regen', 20 * 10, lvl, false, false)
-        })
-    })
-    event.createNew('spell_damage', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelecte, isCorrectSlot, itemStack) => {
-            if (!isSelecte) return
-            if (entity.age % 20 != 0) return
-            entity.potionEffects.add('ars_nouveau:spell_damage', 20 * 10, lvl, false, false)
-        })
-    })
-    event.createNew('pintcharisma', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelecte, isCorrectSlot, itemStack) => {
-            if (!isSelecte) return
-            if (entity.age % 20 != 0) return
-            entity.potionEffects.add('brewery:pintcharisma', 20 * 10, lvl, false, false)
-        })
-    })
-    event.createNew('zombie_spawner', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isSelected) return
-            if (entity.age % 200 != 0) return
-            if (Math.random() > 0.02 * lvl) return
-            let entityPos = entity.blockPosition()
-            if (level.isOverworld()) {
-                let zombie = level.createEntity('minecraft:zombie')
-                zombie.setPos(entityPos.x, entityPos.y, entityPos.z)
-                level.addFreshEntity(zombie)
-            }
-        })
-    })
-
-    event.createNew('hormone_secretion', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isCorrectSlot) return
-            if (entity.age % 100 != 0) return
-            let armorCount = toolView.persistentData.getInt('hormone_secretion')
-            if (armorCount >= 1) {
-                entity.potionEffects.add('brewery:snowwhite', 200, 0, false, false)
-            }
-            if (armorCount >= 2) {
-                entity.potionEffects.add('potioncore:love', 200, 0, false, false)
-            }
-            if (armorCount >= 3) {
-                entity.potionEffects.add('brewery:renewingtouch', 200, 0, false, false)
-            }
-            if (armorCount >= 4) {
-                entity.potionEffects.add('brewery:healingtouch', 200, 0, false, false)
-            }
-        })
-
-        builder.onEquipmentChange((toolView, lvl, context, slot) => {
-            const entity = context.entity
-            let count = 0
-            entity.armorSlots.forEach(pSlotItem => {
-                if (!pSlotItem || pSlotItem.isEmpty()) return
-                if (SimpleTCon.hasModifier(pSlotItem, 'kubejs:hormone_secretion')) {
-                    count++
-                }
-            })
-            toolView.persistentData.putInt('hormone_secretion', count)
-        })
-    })
-// TODO 这里理应需要一个产生爆炸的modifier给volatile_gland，或者不要爆炸？整点通用的给volatile_gland和volatile_fluid
-    event.createNew('mob_gland', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isSelected) return
-            if (entity.age % 20 != 0) return
-            entity.potionEffects.add('biomancy:Corrosive', 20 * 10, lvl, false, false)
-        })
-    })
-    event.createNew('toxin_gland', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isSelected) return
-            if (entity.age % 20 != 0) return
-            entity.potionEffects.add('minecraft:poison', 20 * 10, lvl, false, false)
-        })
-    })
-    event.createNew('mob_marrow', builder => {
-        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
-            if (!isSelected) return
-            if (entity.age % 20 != 0) return
-            entity.potionEffects.add('tconstruct:calcified', 20 * 10, lvl, false, false)
         })
     })
 

@@ -9,9 +9,6 @@
     "tconstruct:bowstring": [
       {
         "level": 1,
-        "name": "kubejs:bow_strength"
-      },{
-        "level": 1,
         "name": "kubejs:knockback_multiplier"
       }
     ]

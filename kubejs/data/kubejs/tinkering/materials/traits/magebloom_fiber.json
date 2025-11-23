@@ -1,9 +1,5 @@
 {
   "default": [
-    {
-      "level": 1,
-      "name": "kubejs:mana_regen"
-    }
   ],
   "perStat": {
     "tconstruct:skull": [

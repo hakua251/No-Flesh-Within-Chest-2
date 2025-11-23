@@ -17,5 +17,6 @@
   ],
   "autoToggleModItems": [
     "exposure:camera"
-  ]
+  ],
+  "hiddenLayers": []
 }

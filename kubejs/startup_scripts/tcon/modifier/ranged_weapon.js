@@ -1,13 +1,4 @@
 TConJSEvents.modifierRegistry(event => {
-    event.createNew('bow_strength', builder => {
-        builder.addAttributes((view, lvl, slot, attributes) => {
-            attributes.put(
-                'l2damagetracker:bow_strength',
-                builder.getAttributeModifier('819a27e6-aae2-436d-a368-891c73804b2d', 'tcon_elastic_fibers_bow_strength', lvl * 0.1, 'addition')
-            )
-            return attributes
-        })
-    })
     event.createNew('draw_speed', builder => {
         builder.addAttributes((view, lvl, slot, attributes) => {
             attributes.put(
@@ -32,7 +23,6 @@ TConJSEvents.modifierRegistry(event => {
                 'attributeslib:arrow_damage',
                 builder.getAttributeModifier('dde8a2fb-c76b-4349-bb3d-39e010c17446', 'tcon_tough_fibers_arrow_damage', lvl * 0.1, 'addition')
             )
-
             return attributes
         })
     })

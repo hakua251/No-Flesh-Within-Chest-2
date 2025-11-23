@@ -10,6 +10,9 @@
 	#Scale of 1.0 will be drawn at full size, Scale of 0.0 will not draw at all
 	#Can define an item tag instead of an item by formatting as "#namespace:item_tag;SCALE" instead
 	itemScaleOverrides=["#lightmanscurrency:display_half_size;0.5"]
+	#A list of item ids or item tags that should not be rendered by Item Traders at all
+	#Use to hide high-poly item models from being rendered and lagging your game.
+	itemRenderBlacklist=[]
 	#Whether the Gacha Ball should render the item inside
 	#Enabling will double the number of items being rendered, and can cause FPS issues near Gacha Machines if their fancy graphics are enabled
 	#Default: true
