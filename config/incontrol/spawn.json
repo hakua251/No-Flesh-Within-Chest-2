@@ -2,5 +2,9 @@
     {
         "mob": "cataclysm:lionfish",
         "result": "deny"
+    },
+    {
+        "dimension": "kubejs:oath",
+        "result": "deny"
     }
 ]

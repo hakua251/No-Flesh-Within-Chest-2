@@ -7,6 +7,58 @@
 	id: "2EAD82577D152E20"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"在制作传送石时，我突然意识到了一件事情。"
+				""
+				"如果说，&6“商店”&r维度的存在并非偶然，那么他究竟是因为什么而产生的，又是因为什么才产生的。"
+				""
+				"如果说我们能够&6仿照那个维度的创造方式&r，创造我们自己的世界的话. . .或许真的能铸造传说中的&6黄金乡&r！"
+			]
+			id: "7DFD8F39E1AC3083"
+			invisible: true
+			rewards: [{
+				id: "20A8F00CE6DE29FE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "起点亦是终点"
+			tasks: [{
+				id: "35B6AB40A6E08476"
+				item: {
+					Count: 1
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				only_from_crafting: true
+				title: "制作传送石"
+				type: "item"
+			}]
+			title: "通往无尽之钥"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DFD8F39E1AC3083"]
+			id: "4F7C14078B55690B"
+			rewards: [{
+				id: "018D76DA5FBDAB15"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "094F4053916162FB"
+				stat: "infinity:dimensions_opened_stat"
+				type: "stat"
+				value: 1
+			}]
+			title: "一次尝试"
+			x: 1.5d
+			y: 0.0d
+		}
+	]
 	title: "传闻：重返黄金乡"
 }

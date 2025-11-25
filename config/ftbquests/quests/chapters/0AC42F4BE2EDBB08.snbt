@@ -313,6 +313,96 @@
 			x: 0.0d
 			y: -7.0d
 		}
+		{
+			dependencies: ["64C564541E487779"]
+			description: [
+				"为了让您能够安全的抵达目标维度，您需要使用一个名为“&6传送石碑&r”的特殊道具。"
+				""
+				"它不仅在世界中频繁的自然生成，也具有价格稳定的配方。通过制作传送石碑，您可以在各处设置传送点，方便后续进行传送。"
+				""
+				"这同时也是之前说法的证明——其中被引入的大量未知内容都对您的生存具有极大的帮助，因此探索它们并非是冲动之举。"
+			]
+			icon: "waystones:waystone"
+			id: "64C8D52C20B8C0E4"
+			rewards: [{
+				auto: "invisible"
+				id: "2412A5F324233335"
+				ignore_reward_blocking: true
+				name: "Shop"
+				title: "解锁商店传送石碑"
+				type: "ftbqaa:active_way_stone"
+			}]
+			subtitle: "制造传送石碑"
+			tasks: [{
+				id: "0FE986C3B14B4033"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "waystones:warp_stone"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "waystones:waystones"
+								}
+							}
+						]
+					}
+				}
+				title: "传送石碑或传送石"
+				type: "item"
+			}]
+			title: "抵达彼方"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["64C8D52C20B8C0E4"]
+			description: [
+				"前往商店所在的&6特殊维度&r。"
+				""
+				"不知道这里是被谁创造的，也不知道目的为何，但毫无疑问，这里的所有东西都可以对您的生存带来极大的帮助。"
+				""
+				"您可以选择把这里的物资&6全部搬空&r，也可以选择将这里&6保护起来&r. . ."
+			]
+			icon: "lightmanscurrency:display_case"
+			id: "09ED755A64A62187"
+			rewards: [{
+				id: "2C7CD5E1EE63EEB7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "不知何人留此物"
+			tasks: [{
+				dimension: "kubejs:oath"
+				icon: "lightmanscurrency:display_case"
+				id: "7DA2F0FFB403EC18"
+				title: "抵达商店维度"
+				type: "dimension"
+			}]
+			title: "彼方留下的痕迹"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["563D136C06E38A60"]
+			id: "4A1C6C6150E32CEE"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "7337839B31A591B5"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
 	]
 	title: "壹"
 }
