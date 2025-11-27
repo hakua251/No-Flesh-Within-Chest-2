@@ -47,5 +47,50 @@ ServerEvents.recipes(event => {
     )
         .transitionalItem(CommonTransitionalItem)
         .loops(3)
+
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:structural_bolt')
+        ],
+        'minecraft:crying_obsidian',
+        [
+            event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'create:brass_ingot']),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('tconstruct:molten_glass', 50)]),
+            event.recipes.create.cutting(CommonTransitionalItem, CommonTransitionalItem),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(3)
+
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:oracle_gate')
+        ],
+        'kubejs:stable_substrate',
+        [
+            event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'create_connected:control_chip']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:ingots/brass']),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('create:potion', 25, { Bottle: "REGULAR", Potion: "minecraft:fire_resistance" })]),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(16)
+
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:simulated_unit')
+        ],
+        'kubejs:redstone_capacitor',
+        [
+            event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'minecraft:sea_lantern']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:ingots/brass']),
+            event.recipes.create.cutting(CommonTransitionalItem, CommonTransitionalItem),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(3)
 })
 

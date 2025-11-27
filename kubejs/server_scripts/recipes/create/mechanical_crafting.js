@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.recipes.create.mechanical_crafting('kubejs:counterweight_gear',
+    event.recipes.create.mechanical_crafting(Item.of('kubejs:counterweight_gear', 4),
         [
             'RBBBB',
             'B I O',
@@ -29,6 +29,22 @@ ServerEvents.recipes(event => {
             B: 'create:brass_sheet',
             G: '#forge:dusts/glowstone',
             I: '#forge:ingots/iron'
+        }
+    )
+
+    event.recipes.create.mechanical_crafting('kubejs:timing_valve',
+        [
+            'OAO',
+            'BEB',
+            'BPB',
+            'BOB',
+        ],
+        {
+            A: 'minecraft:amethyst_shard',
+            O: '#forge:obsidian',
+            B: 'create:brass_sheet',
+            P: 'minecraft:blaze_powder',
+            E: 'create:electron_tube'
         }
     )
 

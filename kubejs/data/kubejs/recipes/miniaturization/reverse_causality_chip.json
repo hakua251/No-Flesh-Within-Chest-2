@@ -28,7 +28,7 @@
         },
         "B": {
             "type": "compactcrafting:block",
-            "block": "kubejs:main_circuit_board"
+            "block": "kubejs:buffer_circuit"
         },
         "G": {
             "type": "compactcrafting:block",
@@ -36,19 +36,19 @@
         },
         "E": {
             "type": "compactcrafting:block",
-            "block": "kubejs:encrypted_gateway"
+            "block": "kubejs:data_bus"
         },
         "D": {
             "type": "compactcrafting:block",
-            "block": "kubejs:secondary_circuit_board"
+            "block": "kubejs:circuit_board"
         },
         "F": {
             "type": "compactcrafting:block",
-            "block": "kubejs:precision_integrator"
+            "block": "kubejs:timing_module"
         },
         "H": {
             "type": "compactcrafting:block",
-            "block": "kubejs:replicated_command_block"
+            "block": "kubejs:oracle_module"
         }
     },
     "outputs": [

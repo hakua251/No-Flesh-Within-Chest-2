@@ -1,32 +1,32 @@
 // priority: 500
 StartupEvents.registry('block', event => {
-    event.create('kubejs:encrypted_gateway', 'basic')
+    event.create('kubejs:data_bus', 'basic')
         .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/encrypted_gateway')
+        .textureAll('kubejs:block/world_machine/data_bus')
         .property(BlockProperties.HORIZONTAL_FACING)
         .placementState(state => {
             state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
             return state
         })
 
-    event.create('kubejs:main_circuit_board', 'basic')
+    event.create('kubejs:buffer_circuit', 'basic')
         .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/main_circuit_board')
+        .textureAll('kubejs:block/world_machine/buffer_circuit')
         .property(BlockProperties.HORIZONTAL_FACING)
         .placementState(state => {
             state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
             return state
         })
 
-    event.create('kubejs:precision_integrator', 'basic')
+    event.create('kubejs:timing_module', 'basic')
         .stoneSoundType()
-        .texture('particle', 'kubejs:block/world_machine/precision_integrator_top')
-        .textureSide('down', 'kubejs:block/world_machine/precision_integrator_bottom')
-        .textureSide('up', 'kubejs:block/world_machine/precision_integrator_top')
-        .textureSide('north', 'kubejs:block/world_machine/precision_integrator_north')
-        .textureSide('south', 'kubejs:block/world_machine/precision_integrator_south')
-        .textureSide('west', 'kubejs:block/world_machine/precision_integrator_west')
-        .textureSide('east', 'kubejs:block/world_machine/precision_integrator_east')
+        .texture('particle', 'kubejs:block/world_machine/timing_module_top')
+        .textureSide('down', 'kubejs:block/world_machine/timing_module_bottom')
+        .textureSide('up', 'kubejs:block/world_machine/timing_module_top')
+        .textureSide('north', 'kubejs:block/world_machine/timing_module_north')
+        .textureSide('south', 'kubejs:block/world_machine/timing_module_south')
+        .textureSide('west', 'kubejs:block/world_machine/timing_module_west')
+        .textureSide('east', 'kubejs:block/world_machine/timing_module_east')
         .property(BlockProperties.HORIZONTAL_FACING)
         .placementState(state => {
             state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
@@ -42,19 +42,21 @@ StartupEvents.registry('block', event => {
             return state
         })
 
-    event.create('kubejs:replicated_command_block', 'basic')
+    event.create('kubejs:oracle_module', 'basic')
         .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/replicated_command_block')
-    event.create('kubejs:secondary_circuit_board', 'basic')
+        .textureAll('kubejs:block/world_machine/oracle_module')
+    event.create('kubejs:circuit_board', 'basic')
         .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/secondary_circuit_board')
+        .textureAll('kubejs:block/world_machine/circuit_board')
         .property(BlockProperties.HORIZONTAL_FACING)
         .placementState(state => {
             state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
             return state
         })
 
-
+    /**
+     * 大世界计算机本体构件
+     */
     event.create('kubejs:arcanum_core', 'basic')
         .stoneSoundType()
         .texture('particle', 'kubejs:block/world_machine/arcanum_core_top')

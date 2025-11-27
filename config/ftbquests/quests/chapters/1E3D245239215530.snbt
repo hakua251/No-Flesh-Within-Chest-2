@@ -175,6 +175,8 @@
 			description: [
 				"烈焰粉农场的制作方法也有很多，一个简单的方案是通过&6循环工序&r。"
 				""
+				"相较于&6实体冶炼&r来说，其工序更简单，但是需要一定时间启动。当然您也可以在有了成熟实体冶炼技艺后使用实体冶炼方案。"
+				""
 				"烈焰棒可以通过粉碎轮变为&6 3 + 0.5 * 3 烈焰粉&r，也就是预期为 &64.5 的烈焰粉&r。"
 				""
 				"而烈焰粉可以通过加热搅拌，由&6 4 烈焰粉转化为 1 烈焰棒&r，在这套工序中，约为一循环赚&6 0.5 烈焰粉&r。"
@@ -195,8 +197,8 @@
 				type: "item"
 			}]
 			title: "烈焰农场"
-			x: 0.5d
-			y: 10.5d
+			x: 11.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
@@ -274,8 +276,8 @@
 				type: "item"
 			}]
 			title: "稳定基板生产"
-			x: 5.5d
-			y: 12.0d
+			x: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["183FD350BF7F5A66"]
@@ -299,7 +301,7 @@
 			}]
 			title: "不稳定物质生产"
 			x: 8.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -351,13 +353,14 @@
 				type: "item"
 			}]
 			title: "红石电容生产"
-			x: 5.0d
-			y: 9.5d
+			x: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
-				"56E5B7D978622ABB"
-				"3E538F7B30265340"
+				"158FC132127B3644"
+				"0E67DFADB3CDCA82"
+				"6119004524D541AE"
 			]
 			id: "44C94FE229AA4E1B"
 			rewards: [{
@@ -373,27 +376,31 @@
 				type: "item"
 			}]
 			title: "模拟单元生产"
-			x: 11.0d
-			y: 11.5d
+			x: 14.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
-				"794800AE680288F1"
-				"56E5B7D978622ABB"
+				"4F4D84DCAADFE359"
+				"30C023DA44DCA0BC"
+				"6119004524D541AE"
+				"09FE702C25B1EB29"
 			]
+			description: ["它在询问之前就做好了回答答案的准备，现在我们要让他把答案以更大的声音&6“说”&r出来。"]
 			id: "1FF0FAA4AB49D901"
 			rewards: [{
 				id: "0EFC08D1E898A17C"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
 				id: "5034140A3E606812"
 				item: "kubejs:oracle_gate"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 9.5d
+			x: 14.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -422,15 +429,17 @@
 				type: "item"
 			}]
 			title: "偏重齿轮生产"
-			x: 11.5d
-			y: 5.5d
+			x: 14.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
-				"44C94FE229AA4E1B"
-				"1FF0FAA4AB49D901"
-				"56C5CC3C18FB5AC0"
-				"4F4D84DCAADFE359"
+				"233B5C6E50EACA0F"
+				"06D170C6436A82AE"
+				"5E77E1C50CC8353C"
+				"66786E38093D056A"
+				"34FEB80CC16A8163"
+				"54D8F5829B0839BF"
 			]
 			id: "1B23C2E681511D87"
 			rewards: [{
@@ -446,14 +455,18 @@
 				type: "item"
 			}]
 			title: "逆因芯片生产"
-			x: 14.0d
-			y: 10.0d
+			x: 21.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
 				"183FD350BF7F5A66"
 				"706EE5FE04BE06D8"
+				"6C6B5BC7F1510FE9"
+				"67287DA5B6767B9B"
+				"6119004524D541AE"
 			]
+			description: ["一种特殊的阀门，可以将随机产生的信号按照时序进行排序。"]
 			id: "56E5B7D978622ABB"
 			rewards: [{
 				id: "3FCE93B5054B9608"
@@ -468,8 +481,8 @@
 				type: "item"
 			}]
 			title: "时序阀生产"
-			x: 8.5d
-			y: 13.0d
+			x: 14.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -497,14 +510,16 @@
 				type: "item"
 			}]
 			title: "随机刻弹簧生产"
-			x: 9.5d
-			y: 10.0d
+			x: 14.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
-				"7D765D69D05EF9E6"
 				"2081C22249A65EFD"
+				"6119004524D541AE"
+				"483232429CC1EC6A"
 			]
+			description: ["一种&6极其坚固&r的结构部件，刚好可以用于大世界计算机的基本构建。"]
 			id: "56C5CC3C18FB5AC0"
 			rewards: [{
 				id: "1B6049BDA63013FF"
@@ -519,11 +534,16 @@
 				type: "item"
 			}]
 			title: "结构栓生产"
-			x: 12.5d
-			y: 8.0d
+			x: 14.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
+			description: [
+				"通过开采一种叫做地幔矿藏的特殊虚拟矿脉，能够获得地幔矿石。"
+				""
+				"这种矿石可以用于再&6生哭泣的黑曜石&r。"
+			]
 			id: "239E0F7A9A0E1B24"
 			rewards: [{
 				id: "0F4E71DC75D18A2D"
@@ -901,8 +921,8 @@
 				type: "item"
 			}]
 			title: "紫水晶共振器生产"
-			x: 8.5d
-			y: 8.5d
+			x: 14.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
@@ -1175,6 +1195,7 @@
 				""
 				"它不仅可以用于配方，也可以用于可控燃烧室进行燃烧工序，也可以用于产出应力。"
 			]
+			icon: "createdieselgenerators:ethanol_bucket"
 			id: "2117B03C990E1B9B"
 			rewards: [{
 				id: "1DF6BE7A3E4E59CF"
@@ -1213,8 +1234,8 @@
 				type: "item"
 			}]
 			title: "黑曜石生产"
-			x: 10.0d
-			y: 5.5d
+			x: 9.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["1E86CEBD77A8D0B5"]
@@ -1223,6 +1244,7 @@
 				""
 				"这需要您&6实体冶炼岩浆怪&r完成自动化。当然，您也可以试着使用粘液球与烈焰粉的配方进行自动化。"
 			]
+			icon: "tconstruct:magma_bucket"
 			id: "37C0A31212CD0400"
 			rewards: [{
 				id: "71E8C8E70B2966EA"
@@ -1352,7 +1374,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7A1DEDE82EED4BE6"]
+			dependencies: [
+				"7A1DEDE82EED4BE6"
+				"25C3CC580C304AB2"
+			]
 			description: ["通过砂纸磨制玫瑰石英，即可得到磨制玫瑰石英。"]
 			id: "706EE5FE04BE06D8"
 			rewards: [{
@@ -1372,7 +1397,11 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["239E0F7A9A0E1B24"]
+			dependencies: [
+				"239E0F7A9A0E1B24"
+				"3CA1B288B92FE257"
+			]
+			description: ["通过地幔矿石、&5不稳定物质&r、酒精的混合，可以制作出哭泣的黑曜石。"]
 			id: "2081C22249A65EFD"
 			rewards: [{
 				id: "4F0BB4E0F8293A1B"
@@ -1399,6 +1428,7 @@
 				""
 				"我们需要使用柴油用于&6随机刻弹簧&r制作中的降温，因此不得不开采油田。"
 			]
+			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "510293AECD56FF12"
 			rewards: [{
 				id: "1D9A61CC91EE2A27"
@@ -1423,6 +1453,7 @@
 				""
 				"剩余的汽油也可以拿去产生应力或者用于供应燃烧室。"
 			]
+			icon: "createdieselgenerators:diesel_bucket"
 			id: "1356DEE38194F814"
 			rewards: [{
 				id: "2FF7AD5908A4C39A"
@@ -1439,6 +1470,258 @@
 			title: "柴油生产"
 			x: 8.5d
 			y: 15.5d
+		}
+		{
+			dependencies: [
+				"5C190E1E0542DFE6"
+				"4C734EDC56B5A572"
+			]
+			description: ["由于砂纸消耗量其实并不高，因此自动化其实是非必要的。"]
+			id: "25C3CC580C304AB2"
+			rewards: [{
+				id: "4F194D24F49B6B0B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了磨制"
+			tasks: [{
+				id: "2A50CF4FA08C89DD"
+				item: {
+					Count: 1
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "砂纸自动化"
+			x: 4.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["3E538F7B30265340"]
+			id: "34FEB80CC16A8163"
+			rewards: [{
+				id: "4E099DBFCEE89AE9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6909EA1B856143F8"
+				item: "kubejs:data_bus"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["794800AE680288F1"]
+			id: "5E77E1C50CC8353C"
+			rewards: [{
+				id: "7A32AAC1B9B193B1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0124611DE3B38654"
+				item: "kubejs:buffer_circuit"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["56E5B7D978622ABB"]
+			id: "66786E38093D056A"
+			rewards: [{
+				id: "2EA84C7FB6A8904B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B3789350D1103CF"
+				item: "kubejs:timing_module"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["44C94FE229AA4E1B"]
+			id: "54D8F5829B0839BF"
+			rewards: [{
+				id: "22E64C50ACC24C8D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12A5DEEF5F6CBA44"
+				item: "kubejs:spatial_stabilizer"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1FF0FAA4AB49D901"]
+			id: "06D170C6436A82AE"
+			rewards: [{
+				id: "4DED434723688E09"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C5CB83AF0EA8380"
+				item: "kubejs:oracle_module"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"7D765D69D05EF9E6"
+				"56C5CC3C18FB5AC0"
+			]
+			id: "233B5C6E50EACA0F"
+			rewards: [{
+				id: "53C86EACD0A67F2D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机！"
+			tasks: [{
+				id: "410270C8E35CBD00"
+				item: "kubejs:circuit_board"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2650CE0D76584853"]
+			description: ["既可以通过&6实体冶炼&r实现，又可以通过烧炼沙子实现，请根据您的实际情况选择具体方案。"]
+			icon: "minecraft:glass"
+			id: "483232429CC1EC6A"
+			rewards: [{
+				id: "62A0E3E2508099C6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
+			tasks: [{
+				amount: 8000L
+				fluid: "tconstruct:molten_glass"
+				id: "7B8B19BC932529B7"
+				type: "fluid"
+			}]
+			title: "玻璃自动化"
+			x: 11.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2650CE0D76584853"]
+			description: ["青金石并没有什么有效的获取方法，目前最优的方法是通过&6虚拟矿脉&r开采获取。"]
+			id: "7FD4BB658CCB587F"
+			rewards: [{
+				id: "306EBB1282F91B0E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了海晶灯"
+			tasks: [{
+				count: 64L
+				id: "33198DF958F34A75"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			title: "青金石采掘"
+			x: 9.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"706EE5FE04BE06D8"
+				"169B9727420A9DFB"
+			]
+			description: ["一种常见的控制用电路。除了用于制作&6时序控制器&r外，还可以作为大世界计算机的部件。"]
+			id: "30C023DA44DCA0BC"
+			rewards: [{
+				id: "42FFC812A58AAC0A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了模拟单元"
+			tasks: [{
+				count: 64L
+				id: "18B0F964A8328A79"
+				item: "create_connected:control_chip"
+				type: "item"
+			}]
+			title: "控制芯片生产"
+			x: 8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7FD4BB658CCB587F"]
+			description: [
+				"通过缠魂青金石，可以获得海晶沙砾和海晶碎片，可以用于生产海晶灯。"
+				""
+				"不过在这个过程中，&6海晶碎片&r可能会溢出很多，您可以考虑一下如何后续利用。"
+			]
+			id: "158FC132127B3644"
+			rewards: [{
+				id: "2610D404DDC611EE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了模拟单元"
+			tasks: [{
+				count: 64L
+				id: "51A513B656A3C807"
+				item: "minecraft:sea_lantern"
+				type: "item"
+			}]
+			title: "海晶灯生产"
+			x: 11.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["1E86CEBD77A8D0B5"]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:fire_resistance"
+				}
+			}
+			id: "09FE702C25B1EB29"
+			rewards: [{
+				id: "552509CAB79AB13D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				amount: 8000L
+				fluid: "create:potion"
+				icon: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:fire_resistance"
+					}
+				}
+				id: "49B5BD63AF296C47"
+				nbt: {
+					Bottle: "REGULAR"
+					Potion: "minecraft:fire_resistance"
+				}
+				type: "fluid"
+			}]
+			title: "抗火药水"
+			x: 10.0d
+			y: 10.0d
 		}
 	]
 	title: "传闻：大世界计算机"
