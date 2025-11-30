@@ -9,4 +9,5 @@ ItemEvents.tooltip(tooltip => {
         tooltip.add(item, Text.translatable('tooltips.kubejs.no_ues_item').darkRed())
     }
     MarkNoUseItem('beyonddimensions:net_creater')
+    MarkNoUseItem('kaleidoscope_cookery:transmutation_lunch_bag')
 })

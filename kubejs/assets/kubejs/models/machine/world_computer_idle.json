@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/orientable",
+    "textures": {
+        "front": "kubejs:block/world_machine/world_computer_front_idle",
+        "side": "kubejs:block/world_machine/world_computer_side",
+        "top": "kubejs:block/world_machine/world_computer_side",
+        "bottom": "kubejs:block/world_machine/world_computer_bottom"
+    }
+}

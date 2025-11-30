@@ -23,7 +23,6 @@ ServerEvents.recipes(event => {
         [Item.of('minecraft:iron_ingot')],
         [Item.of('graveyard:dark_iron_ingot'), Fluid.of('createdieselgenerators:ethanol', 25)], 20 * 5)
 
-
     event.recipes.create.mixing(
         [Item.of('kubejs:circuit_board', 7), Fluid.of('create:potion', 80, { Bottle: "REGULAR", Potion: "minecraft:fire_resistance" })],
         [Item.of('kubejs:counterweight_gear'), Item.of('kubejs:structural_bolt'), Item.of('create:brass_block'), Fluid.of('create:potion', 80, { Bottle: "REGULAR", Potion: "minecraft:water_breathing" })], 20 * 56).superheated()
@@ -47,4 +46,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(
         [Item.of('kubejs:oracle_module', 1), Fluid.of('create:potion', 560, { Bottle: "REGULAR", Potion: "minecraft:water_breathing" })],
         [Item.of('kubejs:oracle_gate'), Item.of('kubejs:circuit_board'), Fluid.of('create:potion', 560, { Bottle: "REGULAR", Potion: "minecraft:poison" })], 20 * 8).superheated()
+
+    event.recipes.create.mixing(
+        ['create:chromatic_compound'],
+        ['#forge:ingots/iron', '#forge:ingots/copper', '#forge:ingots/gold', '#forge:ingots/zinc', '#forge:gems/emerald', 'minecraft:coal', '#forge:gems/diamond', '#forge:dusts/redstone', '#forge:gems/lapis'], 20 * 20).superheated()
 })

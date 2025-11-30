@@ -852,7 +852,6 @@
     "item.kubejs.mantle_ore": "地幔矿石",
     "tooltips.kubejs.mantle_ore.default.1": "被压力塑成的特殊矿石，具有较高的密度",
     "tooltips.kubejs.mantle_ore.shift.1": "    §6★§r 可以从中提取出一些较为稀有的矿物",
-    
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
     "gui.kubejs.title.chestcavity": "胸腔",
@@ -1195,5 +1194,12 @@
     "block.kubejs.timing_module": "时序模块",
     "block.kubejs.spatial_stabilizer": "空间稳定器",
     "block.kubejs.circuit_board": "电路基板",
-    "block.kubejs.oracle_module": "谕示模块"
+    "block.kubejs.oracle_module": "谕示模块",
+    "block.kubejs.computing_core": "运算核心",
+    "block.kubejs.cerebral_brain_processor": "脑处理器",
+    "block.kubejs.data_compressor": "数据压缩器",
+    "block.kubejs.world_renderer": "世界渲染器",
+    "block.kubejs.entity_simulator": "实体模拟器",
+    "block.kubejs.quantum_dimension_resolver": "量子维度解算器",
+    "block.kubejs.void_diffraction_vault": "虚空衍射室"
 }

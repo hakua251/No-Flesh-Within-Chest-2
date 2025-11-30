@@ -48,5 +48,35 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.recipes.create.mechanical_crafting('compactcrafting:field_projector',
+        [
+            ' S ',
+            'AAA',
+        ],
+        {
+            A: 'createdieselgenerators:asphalt_block',
+            S: 'minecraft:sea_lantern',
+        }
+    )
+    event.recipes.create.mechanical_crafting('compactcrafting:rescan_proxy',
+        [
+            ' S ',
+            'AAA',
+        ],
+        {
+            A: 'createdieselgenerators:asphalt_block',
+            S: 'minecraft:magenta_dye',
+        }
+    )
+    event.recipes.create.mechanical_crafting('compactcrafting:match_proxy',
+        [
+            ' S ',
+            'AAA',
+        ],
+        {
+            A: 'createdieselgenerators:asphalt_block',
+            S: 'minecraft:green_dye',
+        }
+    )
 })
 

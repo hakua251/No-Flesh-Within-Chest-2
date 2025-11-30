@@ -16,5 +16,8 @@
     },
     "io.github.mortuusars.exposure.menu.ItemRenameMenu": {
         "ignore": true
+    },
+    "fr.frinn.custommachinery.client.screen.CustomMachineScreen": {
+        "ignore": true
     }
 }

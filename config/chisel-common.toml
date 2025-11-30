@@ -1,0 +1,51 @@
+#Speed multiplier when walking on concrete blocks
+#Range: 1.0 ~ 2.0
+concreteVelocityMult = 1.35
+#Whether chisel tools take damage when used
+allowChiselDamage = true
+#Maximum durability of the iron chisel
+#Range: 1 ~ 10000
+ironChiselMaxDamage = 512
+#Maximum durability of the diamond chisel
+#Range: 1 ~ 50000
+diamondChiselMaxDamage = 5056
+#Maximum durability of the iChisel (hitech chisel)
+#Range: 1 ~ 100000
+hitechChiselMaxDamage = 10048
+#Cooldown between carving actions in ticks (20 ticks = 1 second, default 4 = 0.2s)
+#Range: 0 ~ 100
+carvingCooldownTicks = 4
+#Whether the iron chisel can left-click chisel blocks in the world
+ironChiselCanLeftClick = false
+#Whether the iron chisel has access to chisel modes
+ironChiselHasModes = false
+#Attack damage of the iron chisel
+#Range: 0 ~ 50
+ironChiselAttackDamage = 2
+#Attack damage of the diamond chisel
+#Range: 0 ~ 50
+diamondChiselAttackDamage = 3
+#Attack damage of the iChisel
+#Range: 0 ~ 50
+hitechChiselAttackDamage = 3
+#Whether the auto chisel accepts Forge Energy (FE)
+autoChiselPowered = true
+#Whether the auto chisel requires power to function
+autoChiselNeedsPower = false
+#Amount of marble veins per chunk (0 to disable)
+#Range: 0 ~ 100
+marbleAmount = 20
+#Amount of limestone veins per chunk (0 to disable)
+#Range: 0 ~ 100
+limestoneAmount = 18
+#Amount of basalt veins per chunk (0 to disable)
+#Range: 0 ~ 100
+basaltVeinAmount = 0
+#Amount of diabase veins per chunk near lava level (0 to disable)
+#Range: 0 ~ 100
+diabaseAmount = 8
+#Enable FTB Ultimine integration (requires FTB Ultimine to be installed)
+enableUltimineCompat = true
+#When using FTB Ultimine with a chisel, select blocks of the same type together
+ultimineGroupVariants = true
+

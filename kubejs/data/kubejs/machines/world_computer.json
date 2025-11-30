@@ -7,40 +7,48 @@
     "running": {
       "custommachinery:block": "kubejs:machine/world_computer"
     },
-    "custommachinery:block": "kubejs:machine/world_computer"
+    "custommachinery:block": "kubejs:machine/world_computer_idle"
   },
   "components": [
+    {
+      "type": "custommachinery:item",
+      "id": "input_1",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input_2",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input_3",
+      "mode": "input"
+    },
     {
       "type": "custommachinery:item",
       "id": "output_1",
       "mode": "output"
     },
     {
-      "type": "custommachinery:item",
-      "id": "output_2",
-      "mode": "output"
-    },
-    {
-      "type": "custommachinery:item",
-      "id": "menu_input",
-      "mode": "input"
-    },
-    {
-      "type": "custommachinery:item",
-      "id": "upgrade_input",
-      "mode": "input"
+      "type": "custommachinery:contraption",
+      "config": {
+        "default": "none",
+        "bottom": "both"
+      },
+      "stress_impact": 32
     }
   ],
   "gui": [
     {
       "type": "custommachinery:status",
-      "texture_running": "kubejs:textures/gui/running_sign.png",
-      "texture_idle": "kubejs:textures/gui/idle_sign.png",
-      "texture_errored": "kubejs:textures/gui/error_sign.png",
-      "width": 49,
-      "height": 16,
-      "x": 0,
-      "y": 0
+      "texture_running": "kubejs:textures/gui/world_computer/runing_icon.png",
+      "texture_idle": "kubejs:textures/gui/world_computer/idle_icon.png",
+      "texture_errored": "kubejs:textures/gui/world_computer/error_icon.png",
+      "width": 5,
+      "height": 5,
+      "x": 2,
+      "y": 2
     },
     {
       "type": "custommachinery:player_inventory",
@@ -48,65 +56,110 @@
       "y": 83,
       "width": 162,
       "height": 76,
-      "texture": "kubejs:textures/gui/player_inventory.png"
+      "texture": "kubejs:textures/gui/world_computer/player_inventory.png"
     },
     {
       "type": "custommachinery:background",
-      "texture": "kubejs:textures/gui/common_store_background.png",
+      "texture": "kubejs:textures/gui/world_computer/background.png",
       "width": 176,
       "height": 166
     },
     {
       "type": "custommachinery:progress",
-      "x": 40,
-      "y": 38,
-      "texture_empty": "kubejs:textures/gui/recipe_loader_empty.png",
-      "texture_filled": "kubejs:textures/gui/recipe_loader_filled.png"
+      "x": 33,
+      "y": 14,
+      "texture_empty": "kubejs:textures/gui/world_computer/processor_empty.png",
+      "texture_filled": "kubejs:textures/gui/world_computer/processor_full.png",
+      "hide_jei": true
     },
     {
       "type": "custommachinery:slot",
       "id": "output_1",
-      "x": 116,
-      "y": 17,
-      "texture": "kubejs:textures/gui/solt_random.png"
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "output_2",
-      "x": 116,
-      "y": 47,
-      "texture": "kubejs:textures/gui/solt_random.png"
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "coin_output",
-      "x": 95,
-      "y": 32,
-      "texture": "kubejs:textures/gui/solt_coin.png"
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "menu_input",
-      "x": 19,
-      "y": 32,
+      "x": 131,
+      "y": 30,
       "texture": "kubejs:textures/gui/solt_transparent.png"
     },
     {
       "type": "custommachinery:slot",
-      "id": "upgrade_input",
-      "x": 60,
-      "y": 32,
+      "id": "input_1",
+      "x": 30,
+      "y": 18,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input_2",
+      "x": 58,
+      "y": 31,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input_3",
+      "x": 30,
+      "y": 44,
       "texture": "kubejs:textures/gui/solt_transparent.png"
     },
     {
       "type": "custommachinery:bar",
-      "x": 155,
-      "y": 11,
-      "id": "exp_bar",
-      "max": 10000,
-      "texture_empty": "kubejs:textures/gui/exp_bar_empty.png",
-      "texture_filled": "kubejs:textures/gui/exp_bar_filled.png",
+      "x": 10,
+      "y": 70,
+      "id": "resouce_bar",
+      "max": 1000000,
+      "texture_empty": "kubejs:textures/gui/world_computer/resource_bar_empty.png",
+      "texture_filled": "kubejs:textures/gui/world_computer/resource_bar_full.png",
       "orientation": "top"
+    }
+  ],
+  "jei": [
+    {
+      "type": "custommachinery:background",
+      "texture": "kubejs:textures/gui/world_computer/background.png",
+      "width": 176,
+      "height": 166
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 33,
+      "y": 14,
+      "texture_empty": "kubejs:textures/gui/world_computer/processor_empty.png",
+      "texture_filled": "kubejs:textures/gui/world_computer/processor_full.png",
+      "hide_jei": true
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "output_1",
+      "x": 131,
+      "y": 30,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input_1",
+      "x": 30,
+      "y": 18,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input_2",
+      "x": 58,
+      "y": 31,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input_3",
+      "x": 30,
+      "y": 44,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:texture",
+      "x": 0,
+      "y": 0,
+      "jei": true,
+      "texture": "kubejs:textures/gui/world_computer/jei_background.png"
     }
   ]
 }
