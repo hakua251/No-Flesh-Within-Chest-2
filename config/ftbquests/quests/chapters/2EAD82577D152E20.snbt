@@ -123,6 +123,70 @@
 			x: 3.0d
 			y: 1.0d
 		}
+		{
+			dependencies: [
+				"509FC63C6A0CF06A"
+				"4449195A34FB718E"
+			]
+			description: [
+				"看来您已经能够学会如何冲洗照片了。"
+				""
+				"现在，我希望您能够通过您的眼睛，来收集这个世界上我们&6错过的一切&r。"
+			]
+			id: "766A21B5DC7F7CF0"
+			rewards: [{
+				id: "55C76C645D76F80E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "记录您所见"
+			tasks: [{
+				advancement: "exposure:adventure/moment_in_time"
+				criterion: ""
+				id: "1661AF732E1606CE"
+				title: "记录一张照片"
+				type: "advancement"
+			}]
+			title: "刹那光阴"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["766A21B5DC7F7CF0"]
+			description: [
+				"这只是一个测试，让您了解到什么叫做&6拍摄到&r。"
+				""
+				"正如本任务所要求，您需要拍摄一张包含&6鸡&r的照片。但是照片中对象不能太远，否则无法获得对应生物的观察信息；也不能拍照过偏，比如说生物只有一半出现在镜头是不合法的。"
+				""
+				"因此在后续的拍摄中，请您尽可能保证&6实体完整出现在镜头&r内，以避免冲洗照片后无功而返的情况。"
+				""
+				"当然，听说这也是人类摄影师最基本的素养之一，还请您不要用一些出人意料的表达手法，这可能影响我后续的数据分析。"
+			]
+			icon: "minecraft:egg"
+			id: "22569BCCD8EFC6CC"
+			rewards: [{
+				id: "33558E9996C0F24E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "先从简单的开始"
+			tasks: [{
+				icon: "minecraft:egg"
+				id: "05FFFCBECFCB595C"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:chicken >= 1"
+					}
+				}
+				title: "拍摄一张“鸡”的照片"
+				type: "item"
+			}]
+			title: "世界上本就存在"
+			x: 6.0d
+			y: 0.0d
+		}
 	]
 	title: "传闻：重返黄金乡"
 }

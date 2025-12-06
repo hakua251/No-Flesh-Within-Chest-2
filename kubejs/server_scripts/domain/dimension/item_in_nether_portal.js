@@ -4,7 +4,6 @@ InfinityEvents.itemInPortal(event => {
     const itemStack = itemEntity.getItem()
     const level = event.getLevel()
     const pos = event.getPos()
-    console.log(itemStack)
     if (itemStack.is('kubejs:key_to_infinity')) {
         let nameString = 'infinity:random'
         if (itemStack.hasCustomHoverName()) {
