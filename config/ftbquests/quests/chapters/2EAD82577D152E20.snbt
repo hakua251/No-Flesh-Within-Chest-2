@@ -13,9 +13,9 @@
 			description: [
 				"在制作传送石时，我突然意识到了一件事情。"
 				""
-				"如果说，&6“商店”&r维度的存在并非偶然，那么他究竟是因为什么而产生的，又是因为什么才产生的。"
+				"&6“商店”&r维度的绝对不是偶然。那么他究竟是因为什么而产生的，又是因为什么才产生的。"
 				""
-				"如果说我们能够&6仿照那个维度的创造方式&r，创造我们自己的世界的话. . .或许真的能铸造传说中的&6黄金乡&r！"
+				"自一开始以来，我们忽略了太多太多关于这个世界的细节，或许我们真的需要好好记录下这一切。"
 			]
 			id: "7DFD8F39E1AC3083"
 			invisible: true
@@ -45,9 +45,9 @@
 		{
 			dependencies: ["7DFD8F39E1AC3083"]
 			description: [
-				"为了寻找到创造维度的方法，我们需要了解当前世界中出现的异常结构是如何产生的。"
+				"在当前世界中，存在有大量和当初我所知世界不同的结构存在。请您制造&6相机&r，并且使用相机记录下这一切，我会对这些数据进行分析处理。"
 				""
-				"在当前世界中，存在有大量和当初我所知世界不同的结构存在。请您制造&6相机&r，并且使用相机记录下这一切，进而我会对这些数据进行分析处理。"
+				"为了让您能够胜任这个任务，我会指导您如何完成照片冲洗，并且进行几个简单的拍照测试。"
 			]
 			id: "3F88ADBD557E73A8"
 			rewards: [{
@@ -61,7 +61,7 @@
 				item: "exposure:camera"
 				type: "item"
 			}]
-			title: "寻找黄金乡"
+			title: "记录身边的一切"
 			x: 1.5d
 			y: 0.0d
 		}
@@ -183,9 +183,789 @@
 				title: "拍摄一张“鸡”的照片"
 				type: "item"
 			}]
-			title: "世界上本就存在"
+			title: "记录您所见之生灵"
 			x: 6.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["22569BCCD8EFC6CC"]
+			description: [
+				"这是另一个测试，用于说明倘若&6拍摄结构&r，对照片的基本需求。"
+				""
+				"您需要拍摄一张村庄的照片，这里的村庄可以是大型、中型、小型的村庄，但必须是一个具有道路、房屋和村民的村庄才能称之为村庄。"
+				""
+				"为了使照片有效，您&6必须站在该结构内拍照&r，照片才会被认为是拍摄了这个建筑。因此我强烈推荐您拍摄该结构内的事物，而不是拍摄整个结构的全景。"
+			]
+			icon: "minecraft:emerald"
+			id: "6E1EA50C5342A5DD"
+			rewards: [{
+				id: "2B48C12B77B624E9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "再稍微复杂些"
+			tasks: [{
+				icon: "minecraft:emerald"
+				id: "663487963991C29E"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_structure"
+					tag: {
+						value: "ctov:small;ctov:medium;ctov:large"
+					}
+				}
+				title: "拍摄一张“村庄”的照片"
+				type: "item"
+			}]
+			title: "记录您所见之地标"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E1EA50C5342A5DD"]
+			description: [
+				"这是最后一样测试。"
+				""
+				"请您拍摄一张包含&6至少一位村民&r，&6在村庄明亮处工作&r的照片。"
+				""
+				"在这个测试中，您需要面对不止一个条件，为了完成这个测试，您需要小心保证这些条件都能得到满足。"
+				""
+				"其“&6明亮&r”代表亮度较高，“&6村庄&r”说明了拍摄地点需要在村庄内，“&6至少一位村民&r”说明了拍摄的实体要求至少一个村民。"
+			]
+			icon: "simplehats:villagernose"
+			id: "5F95F25DAC9FBAAA"
+			rewards: [{
+				id: "32A2158592DDABBC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "村民是我们难得的类人朋友"
+			tasks: [{
+				icon: "simplehats:villagernose"
+				id: "2104BEE70A507E2E"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:villager >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_light_level"
+								tag: {
+									value: " >= 7"
+								}
+							}
+						]
+					}
+				}
+				title: "获得指定照片"
+				type: "item"
+			}]
+			title: "我们的好朋友"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			description: ["&6爬行者&r在&6黑暗&r中慢慢靠近您的世纪性照片。"]
+			id: "14E235C60FC2ECC7"
+			rewards: [{
+				id: "2481023461890763"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它总是悄无声息"
+			tasks: [{
+				icon: "minecraft:creeper_head"
+				id: "23617B72360B0173"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:creeper >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_light_level"
+								tag: {
+									value: " <= 7"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "苦力怕在阴暗中"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F95F25DAC9FBAAA"]
+			description: [
+				"尽管分析完后，这些照片都完全丧失了意义——但那是对我。"
+				""
+				"对您来说，这些照片可能包含的&6不止其代表的信息&r那么简单，因此，希望您可以把照片存放在此处，用以作为你我的故事的链接。"
+			]
+			id: "6B524BB21FC95A01"
+			rewards: [{
+				id: "61CABDBFB62CA9D0"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			subtitle: "回忆存放处"
+			tasks: [{
+				id: "557E526E1772C96A"
+				item: {
+					Count: 1
+					id: "exposure:album"
+					tag: {
+						Pages: [
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "保存这一切"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			description: ["&6监守者&r在&6远古都市&r，因为不安的噪音破土而出的珍稀画面。"]
+			id: "318B5462AAC0EA2C"
+			rewards: [{
+				id: "1D277718484F2B64"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "守卫者循声而至，随后摇头散开"
+			tasks: [{
+				icon: "minecraft:sculk"
+				id: "632E88B2F4E37386"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:warden >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_structure"
+								tag: {
+									value: "minecraft:ancient_city"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "惊扰远古的守卫者"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			description: ["多只&6烈焰人&r环绕四周，紧张刺激的战斗令人肾上腺素飙升。"]
+			id: "61C07953977FBE7D"
+			rewards: [{
+				id: "3DB7CD077CB33313"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "燃烧金属之躯"
+			tasks: [{
+				icon: "minecraft:blaze_powder"
+				id: "59C5755FAC8BD9CC"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:blaze >= 3"
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "身陷烈焰漩涡之中"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			description: ["&6牛&r、&6羊&r、&6鸡&r同时出现在画面上，它们正享受着自己的平凡生活，殊不知这番平凡是被您赐予的。"]
+			id: "5A99F20FF077C796"
+			rewards: [{
+				id: "08102B39D761B89E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "如若饲养生物，那应从牛羊为主"
+			tasks: [{
+				icon: "minecraft:feather"
+				id: "2F73661EC56693DC"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:sheep >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:chicken >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:cow >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定的照片"
+				type: "item"
+			}]
+			title: "鸡牛羊与风之舞"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			description: ["一群&6小猪&r环绕在身边的温馨场景，虽然它们后面遭遇的大概率是残忍的屠刀. . ."]
+			id: "7D8F39C702BAB785"
+			rewards: [{
+				id: "3134962BF5CF043B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了萝卜，或者为了繁衍"
+			tasks: [{
+				icon: "simplehats:pighead"
+				id: "51DEA59AA8846F34"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:pig >= 5"
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "小猪军团的再进发"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			description: ["画面记录下了&6恶魂&r发射&6火焰弹&r的宝贵瞬间，希望您在捕捉这画面时没有受伤。"]
+			id: "7D6B8F4427BDF3D4"
+			rewards: [{
+				id: "3E187C1580CF05B5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它飘浮而来，随后又飘浮而去"
+			tasks: [{
+				icon: "minecraft:fire_charge"
+				id: "3597393F2BDBE3A1"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:ghast >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:fireball >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "灰烬与火焰之舞"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			description: ["&6掠夺者&r在他们的&6蒸汽飞空艇&r上巡视新的征服目标——但是他们忘记了自己并不会使用&6大炮&r。"]
+			id: "38FAE1A100E355A0"
+			rewards: [{
+				id: "7629FB0C19CA912B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它们将大炮指向更远的地方"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:white_banner"
+					tag: {
+						BlockEntityTag: {
+							Patterns: [
+								{
+									Color: 9
+									Pattern: "mr"
+								}
+								{
+									Color: 8
+									Pattern: "bs"
+								}
+								{
+									Color: 7
+									Pattern: "cs"
+								}
+								{
+									Color: 8
+									Pattern: "bo"
+								}
+								{
+									Color: 15
+									Pattern: "ms"
+								}
+								{
+									Color: 8
+									Pattern: "hh"
+								}
+								{
+									Color: 8
+									Pattern: "mc"
+								}
+								{
+									Color: 15
+									Pattern: "bo"
+								}
+							]
+							id: "minecraft:banner"
+						}
+						HideFlags: 32
+						display: {
+							Name: "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
+						}
+					}
+				}
+				id: "142A9DA7F4713F64"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_structure"
+								tag: {
+									value: "create_structures_arise:pillagersteampunkairship"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:pillager >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "飞空艇与掠夺艺术"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			description: ["在&6丛林&r中，偶尔一些&6村民&r会选择在树上&6筑家&r. . .就是这些家看起来并不怎么牢固。"]
+			id: "60F183947BCAB462"
+			rewards: [{
+				id: "3CC31F1FA7B84239"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "他们也不想向下看！"
+			tasks: [{
+				icon: "minecraft:jungle_sapling"
+				id: "067A9638012CBA32"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_structure"
+					tag: {
+						value: "ctov:small/village_jungle_tree;ctov:medium/village_jungle_tree;ctov:large/village_jungle_tree"
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "浮空岛与浮空村"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			description: ["&6铁傀儡&r会和&6村民&r一起出现，村民会和&6猫&r一起出现，因此，他们三者同时都出现也不是没有可能。"]
+			id: "124D19952BE48419"
+			rewards: [{
+				id: "6DBCB490CD68EDBC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "铁傀儡保护村民，村民保护猫，那猫呢"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "modulargolems:golem_facade"
+					tag: {
+						FacadeSkin: "modulargolems:iron"
+					}
+				}
+				id: "78A2BCA4F8315BD7"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:cat >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:iron_golem >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:villager >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "村庄生态的平衡"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F95F25DAC9FBAAA"]
+			description: [
+				"您可以通过&6第三人称切换&r的方式，在开启摄像头的时候拍摄您自己。"
+				""
+				"这很有趣不是吗。"
+			]
+			id: "530B934745125A72"
+			rewards: [{
+				id: "2CCCEE89F6C8D58D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "反观自己"
+			tasks: [{
+				icon: "minecraft:player_head"
+				id: "0B0ABC1EC7DCC75D"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:player >= 1"
+					}
+				}
+				title: "拍摄一张包含“玩家”的照片"
+				type: "item"
+			}]
+			title: "我对我的定义"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			description: ["偶尔会在世界中发现一些承载着大量&6机械物资&r的&6热气球&r，站在上面来一张&6自拍&r或许不错。"]
+			id: "32F948AC9FFEB8B9"
+			rewards: [{
+				id: "2AC3FB316402C970"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "截获机械物资！"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "kubejs:telescopic_arm"
+					tag: { }
+				}
+				id: "156CFFE98AAD88F8"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:player >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_structure"
+								tag: {
+									value: "create_structures_arise:createairdrop"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "我、机械与热气球"
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			description: ["画面描述了在&6恶地&r生态群系下，一只&6犰狳&r蜷缩着身体，静静地等待着你的离开。"]
+			id: "569948788E7E213F"
+			rewards: [{
+				id: "476553248FF2A82D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这些生物很害怕！"
+			tasks: [{
+				icon: "minecraft:armadillo_scute"
+				id: "3DCE3DC18683BC68"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_biome"
+								tag: {
+									value: "minecraft:badlands"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:armadillo >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "越危险越小心！"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			description: ["偶尔您会在世界上发现一些&6位于地下的村庄&r——严格意义上，它们并不算村庄，这仅仅只能算作一个庇护所！"]
+			id: "6171DB7303057149"
+			rewards: [{
+				id: "3AE36D7DE82B4F16"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "环境似乎并不好"
+			tasks: [{
+				icon: "minecraft:stone_bricks"
+				id: "03182472ED2BE504"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_structure"
+					tag: {
+						value: "underground_village:"
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "地下居民们的业余生活"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			description: ["如果您能发现&6蘑菇岛&r，请您一定要留下&6您&r和&6哞菇&r的自拍，这并不是为了分析数据，单纯是因为我很喜欢哞菇这种生物。"]
+			id: "4418CA94AA22BB26"
+			rewards: [{
+				count: 3
+				id: "51AE4AAB6928F220"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "似乎并不是那么难吃"
+			tasks: [{
+				icon: "minecraft:red_mushroom"
+				id: "4062701A01FF24EF"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_biome"
+								tag: {
+									value: "minecraft:mushroom_fields"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:mooshroom >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:player >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "蘑菇遍布的岛屿"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			description: ["您会在海底神殿遇到它的守护者——&6远古守护者&r。请您一定要拍摄一张它的照片！"]
+			id: "4CAA51BAD4982EA2"
+			rewards: [{
+				id: "0AC45FA0044D0659"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "小心！"
+			tasks: [{
+				icon: "minecraft:heart_of_the_sea"
+				id: "46F4FBE2EBD6EF2D"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:elder_guardian >= 1"
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "咕咕从水下涌上的气泡"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			description: ["拍摄一张&6舵背鲸&r和它的&6船只&r的照片！尽量拍全一些！因为它真的很大！"]
+			id: "35796740FDCA3F1A"
+			rewards: [{
+				id: "6DD87FABEAC3A5F1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为他带来解放吧"
+			tasks: [{
+				icon: "whaleborne:helm"
+				id: "4D4E230F3837A80F"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "whaleborne:hullback >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "whaleborne:helm >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "舵背鲸之号"
+			x: 6.0d
+			y: 4.5d
 		}
 	]
 	title: "传闻：重返黄金乡"
