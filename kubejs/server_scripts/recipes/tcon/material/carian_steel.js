@@ -14,19 +14,19 @@ ServerEvents.recipes(event => {
     tconstruct.melting(Fluid.of('kubejs:melted_glintstone', 90), Ingredient.of('kubejs:glintstone'), 800, 100)
     tconstruct.material_fluid('kubejs:glintstone', Fluid.of('kubejs:melted_glintstone', 90), 800)
     tconstruct.alloy(
-        Fluid.of('kubejs:melted_carian_steel', 500),
+        Fluid.of('kubejs:melted_carian_steel', 180),
         [
-            Fluid.of('tconstruct:liquid_soul', 200),
-            Fluid.of('kubejs:melted_glintstone', 600),
-            Fluid.of('tconstruct:molten_cobalt', 200)
+            Fluid.of('tconstruct:liquid_soul', 90),
+            Fluid.of('kubejs:melted_glintstone', 180),
+            Fluid.of('tconstruct:molten_cobalt', 90)
         ],
         1450
     )
     tconstruct.alloy(
-        Fluid.of('kubejs:melted_glintstone', 100),
+        Fluid.of('kubejs:melted_glintstone', 180),
         [
-            Fluid.of('tconstruct:molten_amethyst', 100),
-            Fluid.of('kubejs:melted_lapis_lazuli', 100)
+            Fluid.of('tconstruct:molten_amethyst', 90),
+            Fluid.of('kubejs:melted_lapis_lazuli', 90)
         ],
         800
     )

@@ -14,4 +14,6 @@ StartupEvents.registry('item', event => {
     event.create('carian_steel').texture('kubejs:item/materials/carian_steel').maxStackSize(64)
     // 熔岩合金
     event.create('fire_ingot').texture('kubejs:item/materials/fire_ingot').maxStackSize(64)
+    // 玄铁
+    event.create('dark_steel').texture('kubejs:item/materials/dark_steel').maxStackSize(64)
 })

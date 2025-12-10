@@ -1,28 +1,28 @@
 {
    "default": [
-       {
+        {
             "level": 1,
-            "name": "tconstruct:flame_barrier"
+            "name": "kubejs:freezing_defense"
         }
     ],
   "perStat": {
     "tconstruct:ranged": [
       {
-        "name": "kubejs:hot",
+        "name": "kubejs:frostbite",
         "level": 1
       },
       {
-        "name": "tconstruct:flamestance",
+        "name": "kubejs:deposition",
         "level": 1
       }
     ],
     "tconstruct:melee_harvest": [
       {
-        "name": "kubejs:hot",
+        "name": "kubejs:frostbite",
         "level": 1
       },
       {
-        "name": "tconstruct:flamestance",
+        "name": "kubejs:deposition",
         "level": 1
       }
     ]

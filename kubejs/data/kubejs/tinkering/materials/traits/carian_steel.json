@@ -2,19 +2,19 @@
    "default": [
         {
             "level": 1,
-            "name": "kubejs:magic_back"
+            "name": "tconstruct:magic_protection"
         }
     ],
   "perStat": {
     "tconstruct:ranged": [
       {
-        "name": "kubejs:magic_damage",
+        "name": "kubejs:great_carian",
         "level": 1
       }
     ],
     "tconstruct:melee_harvest": [
       {
-        "name": "kubejs:magic_damage",
+        "name": "kubejs:great_carian",
         "level": 1
       }
     ]

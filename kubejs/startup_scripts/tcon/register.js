@@ -47,7 +47,8 @@ StartupEvents.registry('fluid', event => {
 		.bucketColor(0xB0C4DE)
 	event.create('melted_fire_ingot')
 		.thickTexture(0xFF8000)
-		.bucketColor(0xFF8000)					
-
-		
+		.bucketColor(0xFF8000)
+	event.create('melted_dark_steel')
+		.thickTexture(0x2C303C)
+		.bucketColor(0x2C303C)
 })

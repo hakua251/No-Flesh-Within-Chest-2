@@ -3,9 +3,10 @@
         {
             "level": 1,
             "name": "tconstruct:depth_protection"
-        },{
+        },
+        {
             "level": 1,
-            "name": "kubejs:fire_armor"
+            "name": "kubejs:fire_protection"
         }
     ],
   "perStat": {
@@ -13,18 +14,20 @@
       {
         "name": "tconstruct:dwarven",
         "level": 1
-      },{
+      },
+      {
             "level": 1,
-            "name": "kubejs:fire_quench"
+            "name": "kubejs:quenching"
         }
     ],
     "tconstruct:melee_harvest": [
       {
         "name": "tconstruct:dwarven",
         "level": 1
-      },{
+      },
+      {
             "level": 1,
-            "name": "kubejs:fire_quench"
+            "name": "kubejs:quenching"
         }
     ]
   }

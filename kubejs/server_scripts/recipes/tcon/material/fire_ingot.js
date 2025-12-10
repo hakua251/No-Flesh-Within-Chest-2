@@ -12,10 +12,10 @@ ServerEvents.recipes(event => {
     tconstruct.material_fluid('minecraft:magma_block', Fluid.of('minecraft:lava', 90), 800)
     tconstruct.melting(Fluid.of('minecraft:lava', 90), Ingredient.of('minecraft:magma_block'), 800, 100)
     tconstruct.alloy(
-        Fluid.of('kubejs:melted_fire_ingot', 500),
+        Fluid.of('kubejs:melted_fire_ingot', 90),
         [
-            Fluid.of('minecraft:lava', 200),
-            Fluid.of('tconstruct:molten_netherite', 600)
+            Fluid.of('minecraft:lava', 1000),
+            Fluid.of('tconstruct:molten_netherite', 90)
         ],
         1450
     )
