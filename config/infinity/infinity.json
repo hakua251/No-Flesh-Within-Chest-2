@@ -16,7 +16,7 @@
     "avgDimensionHeight": 256,
     "resetChargeCooldown": 6000
   },
-  "disabledDimensions": ["ant", "bash", "checkerboard", "missing", "notes", "terminal"],
+  "disabledDimensions": ["bash", "checkerboard", "missing", "notes", "terminal", "debug"],
   "salt": "nfwc",
   "rootChances": {
     "dimension_type": {

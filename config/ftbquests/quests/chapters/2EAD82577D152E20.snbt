@@ -16,6 +16,8 @@
 				"&6“商店”&r维度的绝对不是偶然。那么他究竟是因为什么而产生的，又是因为什么才产生的。"
 				""
 				"自一开始以来，我们忽略了太多太多关于这个世界的细节，或许我们真的需要好好记录下这一切。"
+				""
+				"通过这些&6踪迹&r，我们或许能够发现更多能被我们利用的技术。"
 			]
 			id: "7DFD8F39E1AC3083"
 			invisible: true
@@ -1539,19 +1541,20 @@
 				item: "beyonddimensions:net_interface"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 6.5d
+			x: 13.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
 			description: ["用草方块作为引子，您便可以来到一个富有规律山脉的世界。"]
+			hide_dependency_lines: true
 			id: "486E9213485BB076"
 			rewards: [{
 				id: "558060C7F27CFC4F"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "富有规则的世界"
+			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:hills"
 				icon: "minecraft:grass_block"
@@ -1590,13 +1593,14 @@
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
 			description: ["用樱花树叶作为引子，您便可以来到一个呈现螺旋形生成樱花林的世界。"]
+			hide_dependency_lines: true
 			id: "4FE89156D8CDCE29"
 			rewards: [{
 				id: "082F81DB1C6E45F1"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "富有规则的世界"
+			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:spiral"
 				icon: "minecraft:cherry_leaves"
@@ -1608,6 +1612,274 @@
 			x: 1.5d
 			y: 8.5d
 		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["用黑色羊毛作为引子，您便会来到一个黑白羊毛构成的棋盘世界。"]
+			hide_dependency_lines: true
+			id: "2AB48534C195A790"
+			rewards: [{
+				id: "450C3CCCE8DCA94D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:chess"
+				icon: "minecraft:black_wool"
+				id: "63D2314BE3126628"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索棋盘世界"
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: [
+				"用砖块作为引子，您便会来到一个孤独者所在的世界。"
+				""
+				"不知道是谁把它留在了那里，又或者它自己选择了. . .但不管怎么样，我们后面要做的事情跟它无异。"
+			]
+			hide_dependency_lines: true
+			id: "303B0983EE1CEE05"
+			rewards: [{
+				id: "407D6B022AA44BA9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:isolation"
+				icon: "minecraft:bricks"
+				id: "67699D8BC3F364ED"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索孤独者的维度"
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: [
+				"用苔石作为引子，您便可以来到一个极其特殊的世界——这个世界是本游戏早期设计中的世界，其大部分内容在如今的世界中都已不存在。"
+				""
+				"我们无法得知这个世界保留的意义是什么，或许只是单纯的——单纯的因为有无限的维度可以利用罢了。"
+			]
+			hide_dependency_lines: true
+			id: "104E4B71FE7206FB"
+			rewards: [{
+				id: "71652E65E7BED7AD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:classic"
+				icon: "minecraft:mossy_cobblestone"
+				id: "3E307EFB86CC2F20"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索过去的回忆"
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["用海绵作为引子，您便可以访问由海绵分形图案组成的世界。"]
+			hide_dependency_lines: true
+			id: "0E6E3462A96BC570"
+			rewards: [{
+				id: "29CBCB3B64370E56"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:sponge"
+				icon: "minecraft:sponge"
+				id: "08290671BBA83EEA"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索分形海绵世界"
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["以木棍作为引子，则可以将您带入到一个虚空维度之中。在这个维度的中心，应当有前人留下的，为空岛生存所准备的基本物资。"]
+			hide_dependency_lines: true
+			id: "562BC502EA6B3A24"
+			rewards: [{
+				id: "4EE6FAD71D43E0D7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:content"
+				icon: "minecraft:stick"
+				id: "5F9710E31D2DC165"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索空岛维度"
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["以陶瓦为引子，您可以来到一个被陶瓦路分割的世界。"]
+			hide_dependency_lines: true
+			id: "02786AFE7AB7BE1E"
+			rewards: [{
+				id: "0D06B1C6BE5D2370"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:custom"
+				icon: "minecraft:terracotta"
+				id: "040DE7EDC05E5904"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索预留地"
+			x: 10.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: [
+				"以白色混凝土作为引子，您便可以来到存在一只朗顿蚂蚁方块的超平坦维度。"
+				""
+				"右键它便会引发其自发性的行为——如果您对此非常感兴趣，我可以为您提供更多的蚂蚁进行试验。"
+			]
+			hide_dependency_lines: true
+			id: "2455A4DF5434609A"
+			rewards: [
+				{
+					id: "7702009F3EAD9D86"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "3EF99BA8FFF66244"
+					item: "infinity:ant"
+					type: "item"
+				}
+			]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:ant"
+				icon: "minecraft:white_concrete"
+				id: "0551006DF17BDB93"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索朗顿蚂蚁的世界"
+			x: 12.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: [
+				"以世界唯一的龙蛋作为引子，您便可以来到随机生成方块构成的混乱维度。"
+				""
+				"在其中，理论上您可以找到一切——但仅仅是理论上。"
+			]
+			hide_dependency_lines: true
+			id: "28000C5318439D41"
+			rewards: [{
+				id: "3440E9D6FE3018F4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之末"
+			tasks: [{
+				dimension: "infinity:skygrid"
+				icon: "minecraft:dragon_egg"
+				id: "3BF061543E91DBE8"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索网格维度"
+			x: 13.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"486E9213485BB076"
+				"4FE89156D8CDCE29"
+				"2AB48534C195A790"
+				"303B0983EE1CEE05"
+				"104E4B71FE7206FB"
+				"0E6E3462A96BC570"
+				"562BC502EA6B3A24"
+				"02786AFE7AB7BE1E"
+				"2455A4DF5434609A"
+				"28000C5318439D41"
+			]
+			description: [
+				"在长久的寻找之中，我明确了一个事实——这些维度远比想象的还要多得多，它的数量大到使用我的最大数据类型都几乎无法存储。"
+				""
+				"不过尽管如此，寻找到一个目标维度并没有想象的那么难，因为只需要满足几个条件，我便可以宽松的认可它的存在。"
+				""
+				"我在无数的维度中，为您找到了一个物理意义上的“&6黄金乡&r”，通过&6金块&r作为引子，您便可以拜访这番天地。希望您喜欢我为您准备的这份礼物。"
+			]
+			hide_dependency_lines: true
+			id: "051ABDFF508A5451"
+			min_required_dependencies: 5
+			rewards: [{
+				id: "669911F73890B819"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为您准备的礼物"
+			tasks: [{
+				dimension: "infinity:golden"
+				icon: "minecraft:gold_block"
+				id: "24E0659A8994FAF4"
+				title: "访问“黄金乡”"
+				type: "dimension"
+			}]
+			title: "来吧，这“黄金乡”"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["051ABDFF508A5451"]
+			description: [
+				"为了证明我所言非虚，也为了向您解释这番天地的广阔，请您以书本作为引子，来到这番维度。"
+				""
+				"在这个维度中，每个书架都存放着一本写着一页字符的书籍。您可以通过右键书架无限的取出。"
+				""
+				"这个维度是几乎无穷大的——这里正是&6巴别图书馆&r。任何字符长度低于书本一页的文本，在这里都能够得到完美的呈现。"
+				""
+				"而这些维度也是如此——它们并不是遵循了什么规则生成，它们只是在混乱的组合所有的可能性，最后为我们、为&6您&r呈现上不同的奇迹。"
+			]
+			id: "2F9EE70E103CA5D0"
+			rewards: [{
+				id: "2A37AFB8B5164AED"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "来吧，来到这无穷无尽的图书馆"
+			tasks: [{
+				dimension: "infinity:library"
+				icon: "minecraft:book"
+				id: "78B0CB0007A7859F"
+				title: "访问“图书馆”"
+				type: "dimension"
+			}]
+			title: "证明所言非需"
+			x: 1.5d
+			y: 10.5d
+		}
 	]
-	title: "传闻：重返黄金乡"
+	title: "传闻：重现黄金乡"
 }

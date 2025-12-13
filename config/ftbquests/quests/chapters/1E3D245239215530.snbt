@@ -1836,12 +1836,23 @@
 				type: "item"
 			}]
 			subtitle: "为了大世界计算机！"
-			tasks: [{
-				count: 8L
-				id: "72CA149B148FF406"
-				item: { Count: 8, id: "kubejs:world_renderer" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 8L
+					id: "72CA149B148FF406"
+					item: { Count: 8, id: "kubejs:world_renderer" }
+					type: "item"
+				}
+				{
+					id: "1498E1CC66C7F640"
+					item: {
+						Count: 1
+						id: "create:chromatic_compound"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "世界渲染器"
 			x: 24.0d
 			y: 12.5d
@@ -1927,7 +1938,7 @@
 			description: [
 				"制作&6运算核心&r与制作&6虚空衍射器&r是类似的，但区别在于其输出红石信号的规则和最佳比例。"
 				""
-				"在该加工配方下，每秒其会损失当前&61%&r的燃料。其最佳的燃料槽比例是&6完全随机&r的。如果当前燃料数量和目标燃料有差异，其会输出不同强度的红石信号。如果差异很小，则红石信号会归零。"
+				"在该加工配方下，每秒其会损失当前&61%&r的燃料。其最佳的燃料槽比例是&6完全随机&r的。如果当前燃料数量和目标燃料有差异，差异越大，输出越强的红石信号。如果差异很小，则红石信号会归零。"
 				""
 				"但您无法通过红石信号来区分出当前燃料是缺少还是过饱和。"
 				""
@@ -2008,6 +2019,10 @@
 				"因此，这个配方又被称之为“&6世界运算&r”。"
 				""
 				"至此，恭喜您完成了大世界计算机的构建，而我们也已经获得了我们需要的能力——&6一定程度操控世界的能力&r。"
+				""
+				"对于您来说，您可以使用大世界计算机自由的更改一些世界常数，并且制造一些以前&d完全无法想象&r的产物。"
+				""
+				"对于我来说，得益于您的不懈探索，我对于世界的掌控程度又一次得到了提高，这对我们后续的发展有着极其重要的作用。"
 			]
 			id: "133A28D884F01479"
 			rewards: [{
@@ -2053,11 +2068,8 @@
 			tasks: [{
 				icon: "minecraft:crafting_table"
 				id: "7A07B21582545EE3"
-				leaderboard: "leaderboards:total_items_crafted"
-				min: 100
-				rank: 1
 				title: "总手动合成物品数最多"
-				type: "leaderboards:rank_task"
+				type: "custom"
 			}]
 			title: "大世界计算机之后"
 			x: 22.0d

@@ -7,12 +7,16 @@ const InfinityDimItem2DimId = {
     'minecraft:cherry_leaves': 'infinity:spiral',
     'minecraft:sponge': 'infinity:sponge',
     'minecraft:stick': 'infinity:content',
-    'minecraft:stone': 'infinity:classic',
+    'minecraft:mossy_cobblestone': 'infinity:classic',
     'minecraft:bricks': 'infinity:isolation',
-    'minecraft:black_concrete': 'infinity:chess',
+    'minecraft:black_wool': 'infinity:chess',
     'minecraft:book': 'infinity:library',
     'minecraft:glowstone': 'infinity:nexus',
-    'minecraft:redstone': 'infinity:perfection'
+    'minecraft:redstone': 'infinity:perfection',
+    'minecraft:terracotta': 'infinity:custom',
+    'minecraft:white_concrete': 'infinity:ant',
+    'minecraft:dragon_egg': 'infinity:skygrid',
+    'minecraft:gold_block': 'infinity:golden',
 }
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.getEntity()
@@ -45,7 +49,7 @@ InfinityEvents.itemInPortal(event => {
             }
         }
     } else if (itemStack.is('minecraft:diamond_block')) {
-        itemEntity.setItem(Item.of('beyonddimensions:net_pathway'))
+        itemEntity.setItem(Item.of('beyonddimensions:net_pathway', itemStack.getCount()))
     } else {
         let dimId = InfinityDimItem2DimId[itemStack.getId().toString()]
         if (!dimId) return
