@@ -207,7 +207,7 @@
     "ftbquests.quest.min_required_dependencies.tooltip": "如果设置为大于 0，则成为或任务，只需一定数量的依赖项即可解锁",
     "ftbquests.quest.visibility.hide_text_until_complete": "隐藏文本直至任务完成",
     "ftbquests.quest.visibility.hide_text_until_complete.tooltip": "可以打开任务详情，但在任务完成之前不显示描述文本",
-    "ftbquests.quest.misc.disable_jei": "禁用 JEI 食谱",
+    "ftbquests.quest.misc.disable_jei": "禁用 JEI 配方",
     "ftbquests.quest.misc.optional": "可选任务",
     "ftbquests.quest.locked": "锁定：未完成的依赖项",
     "ftbquests.quest.appearance.min_width": "最小开启任务窗口宽度",

@@ -1829,6 +1829,7 @@
 				""
 				"如果该配方在完成时没有输出，说明其燃料量不足。配方结束时燃料的数量越多，其成功概率也会有显著提高。"
 			]
+			icon: "kubejs:world_renderer"
 			id: "2B0834ECB22778B8"
 			rewards: [{
 				id: "1413AEB42326662D"
@@ -2056,6 +2057,8 @@
 				""
 				"私有配方会使您成为唯一能够制作创造马达的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "create:creative_motor"
 			id: "72265CC11B4E1D53"
 			rewards: [{
@@ -2064,12 +2067,16 @@
 				table_id: 5085267122707911832L
 				type: "choice"
 			}]
+			shape: "diamond"
 			subtitle: "大师的领悟"
 			tasks: [{
 				icon: "minecraft:crafting_table"
-				id: "7A07B21582545EE3"
+				id: "02513DC206781A20"
+				leaderboard: "leaderboards:total_items_crafted"
+				min: 100
+				rank: 1
 				title: "总手动合成物品数最多"
-				type: "custom"
+				type: "leaderboards:rank_task"
 			}]
 			title: "大世界计算机之后"
 			x: 22.0d

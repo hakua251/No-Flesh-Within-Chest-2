@@ -1829,7 +1829,7 @@
 				""
 				"不过尽管如此，寻找到一个目标维度并没有想象的那么难，因为只需要满足几个条件，我便可以宽松的认可它的存在。"
 				""
-				"我在无数的维度中，为您找到了一个物理意义上的“&6黄金乡&r”，通过&6金块&r作为引子，您便可以拜访这番天地。希望您喜欢我为您准备的这份礼物。"
+				"我在无数的维度中，为您找到了一个物理意义上的“&6黄金乡&r”，通过&6金块&r作为引子，您便可以拜访这番天地。希望您喜欢我为您准备的&6这份礼物&r。"
 			]
 			hide_dependency_lines: true
 			id: "051ABDFF508A5451"
@@ -1878,6 +1878,93 @@
 			}]
 			title: "证明所言非需"
 			x: 1.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2F9EE70E103CA5D0"]
+			description: [
+				"通过有序的扫描，可以稳定的获得前往较为安全随机维度的方法。"
+				""
+				"但请注意，虽然相对安全，但随机维度本身就可能会招致例如&6世界崩溃&r/&6实体损坏&r的严重问题，在极端情况下，我们的冒险故事都会就此终止，请一定要认识到&c风险&r的存在！"
+				""
+				"通过每小时的扫描，可以稳定获取&6通往无尽之钥&r。您可以将其投入到传送门中开启一个随机维度，也可以通过将其重新命名，以定向的去往某个特定的维度。"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "kubejs:key_to_infinity"
+			id: "0E25E431098EC128"
+			rewards: [{
+				id: "13ADD87D7AA30241"
+				item: "kubejs:key_to_infinity"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "请见证我们的冒险故事"
+			tasks: [{
+				elapsedTime: 3600L
+				icon: "supplementaries:hourglass"
+				id: "53BC87B3E5867EBD"
+				title: "穿越无尽"
+				type: "questsadditions:time"
+			}]
+			title: "&6引领您穿越无尽中的无尽&r"
+			x: 1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2F9EE70E103CA5D0"]
+			description: [
+				"除此之外，我还发现了一个名为“&dnexus&r”（亦可称为&d中转站&r）的特殊维度，但是这个维度可以无限制的访问无限维度. . ."
+				""
+				"这对于整个系统来说，这个维度的存在是极其危险的！会随时导致这个世界的崩溃！"
+				""
+				"因此我通过限制权限，一定程度上限制了这个维度的进入，现在您可以通过投入。"
+				""
+				"关于中转站的使用，我打算仅交付给少部分人，如果您能够在世界上取得&6疾跑距离第一&r的荣誉，那么我愿意让您来抉择是否应当公开中转站维度。"
+				"{@pagebreak}"
+				"共享中转站维度会允许其他所有人进入该维度。"
+				""
+				"私有中转站维度则仅会允许您进入到该维度。"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_star"
+			id: "3F9EFE9B6E8BDAF2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "64BA1F10B3589132"
+					table_id: 2853492654100730961L
+					type: "choice"
+				}
+				{
+					id: "16D1395FAB36C9B4"
+					item: {
+						Count: 1
+						id: "kubejs:key_to_infinity"
+						tag: {
+							display: {
+								Name: "{\"text\":\"nexus\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "无限的冒险故事"
+			tasks: [{
+				icon: "createornithopterglider:elytra_piece"
+				id: "6870FCF50ECAD1D8"
+				leaderboard: "leaderboards:distance_sprinted"
+				min: 0
+				rank: 1
+				title: "疾跑距离称霸"
+				type: "leaderboards:rank_task"
+			}]
+			title: "无限中转站"
+			x: 3.0d
 			y: 10.5d
 		}
 	]

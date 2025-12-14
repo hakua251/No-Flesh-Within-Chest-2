@@ -58,15 +58,4 @@ InfinityEvents.itemInPortal(event => {
     }
 })
 
-
-
-
-
-InfinityEvents.infinityDimAdded(event => {
-    // todo
-    const id = event.getId()
-    const dim = event.getTargetDim()
-    if (id.toString() == 'infinity:test1') {
-        dim.structure_ids.put('ctov:medium/village_plains', ['infinity:medium_village_plains_-1149656568'])
-    }
-})
+AStages.addRestrictionForDimension('infinity/nexus', 'can_enter_nexus', 'infinity:nexus')
