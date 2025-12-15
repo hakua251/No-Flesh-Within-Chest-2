@@ -73,38 +73,6 @@
 			x: 0.0d
 			y: -1.0d
 		}
-		{
-			dependencies: ["6ACBA86B2F8BA384"]
-			description: [
-				"为了进一步能够扫描有关胸腔的信息，我需要更多的&6生物样本&r。"
-				""
-				"在该页面中，我为您提供了一系列有关生物胸腔开启的任务，这将有助于提高我对于这方面知识的&6理解度&r。"
-				""
-				"当理解度提升到某些层次时，我坚信新的认知将会被揭示。"
-			]
-			id: "4BBA7FA5EE684A98"
-			rewards: [{
-				exclude_from_claim_all: true
-				icon: {
-					Count: 1
-					id: "chestcavity:heart"
-					tag: { }
-				}
-				id: "6519AE4F0195E810"
-				team_reward: true
-				title: "胸腔认知+1"
-				type: "custom"
-			}]
-			subtitle: "提升胸腔相关的认知"
-			tasks: [{
-				id: "7DF604B581EBDE44"
-				title: "奉行此道"
-				type: "checkmark"
-			}]
-			title: "基本认知"
-			x: 0.0d
-			y: -2.0d
-		}
 	]
 	title: "认知：胸腔"
 }
