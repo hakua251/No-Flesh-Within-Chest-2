@@ -8,9 +8,6 @@
 	"ftbquests": {
 		"quests": true
 	},
-	"patchoulibutton": {
-		"patchoulibutton": true
-	},
 	"ftblibrary": {
 		"toggle.gamemode": true,
 		"toggle.rain": false,
