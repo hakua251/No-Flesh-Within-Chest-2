@@ -13,7 +13,7 @@ StartupEvents.registry('item', event => {
 
     event.create('blood_extractor').texture('kubejs:item/tools/blood_extractor').maxStackSize(1)
 
-    event.create('key_to_infinity').texture('kubejs:item/tools/key_to_infinity').maxStackSize(1)
+    event.create('key_to_infinity').rarity('epic').texture('kubejs:item/tools/key_to_infinity').maxStackSize(1)
 
     event.create('glass_vial').texture('kubejs:item/tools/glass_vial').maxStackSize(1)
         .useAnimation('bow')

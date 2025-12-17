@@ -10,6 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["46E78442AD5DB22E"]
 			description: [
 				"您似乎也察觉到了——这些工具本身具有一些极其特殊的地方。"
 				""
@@ -3711,7 +3712,7 @@
 				item: "kubejs:genesis_tinker_blueprint"
 				type: "item"
 			}]
-			title: "塑成&6创世工匠蓝图&r"
+			title: "&6庆贺吧！此乃创世工匠蓝图！&r"
 			x: 25.0d
 			y: -1.5d
 		}
@@ -3730,6 +3731,7 @@
 				"私有配方会使您成为唯一能够使用创世工匠蓝图改良配方的工匠，如果其他玩家取而代之，并不会影响您创世工匠改良配方的使用。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "63C66800297E4CA5"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -3737,6 +3739,7 @@
 				table_id: 7473441826712129782L
 				type: "choice"
 			}]
+			shape: "diamond"
 			subtitle: "精研之路漫漫长"
 			tasks: [{
 				icon: {
@@ -3747,90 +3750,42 @@
 						tic_broken: 0b
 						tic_materials: [
 							"tconstruct:manyullyn"
-							"kubejs:black_steel"
+							"tconstruct:manyullyn"
 							"tconstruct:manyullyn"
 							"tconstruct:manyullyn"
 						]
 						tic_modifiers: [
 							{
-								level: 1
-								name: "tconstruct:diamond"
-							}
-							{
-								level: 1
-								name: "tconstruct:emerald"
-							}
-							{
-								level: 1
-								name: "tconstruct:netherite"
-							}
-							{
-								level: 3
+								level: 4
 								name: "tconstruct:insatiable"
-							}
-							{
-								level: 1
-								name: "kubejs:soul_hunter"
 							}
 							{
 								level: 2
 								name: "tconstruct:smite"
 							}
-							{
-								level: 1
-								name: "tconstruct:writable"
-							}
 						]
 						tic_multipliers: {
-							"tconstruct:attack_damage": 1.6875f
+							"tconstruct:attack_damage": 1.35f
 							"tconstruct:durability": 4.0f
-							"tconstruct:mining_speed": 0.5f
+							"tconstruct:mining_speed": 0.4f
 						}
-						tic_persistent: {
-							upgrades: -3
-						}
+						tic_persistent: { }
 						tic_stats: {
-							"tconstruct:accuracy": 0.85f
-							"tconstruct:armor": 1.0f
-							"tconstruct:armor_toughness": 2.0f
-							"tconstruct:attack_damage": 11.340001f
-							"tconstruct:attack_speed": 0.75f
-							"tconstruct:durability": 16380.001f
+							"tconstruct:attack_damage": 10.530001f
+							"tconstruct:attack_speed": 0.7125f
+							"tconstruct:durability": 5500.0f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:knockback_resistance": 0.05f
-							"tconstruct:mining_speed": 4.25f
-							"tconstruct:projectile_damage": 2.5f
-							"tconstruct:velocity": 1.1f
+							"tconstruct:mining_speed": 2.34f
 						}
-						tic_upgrades: [
-							{
-								level: 1
-								name: "tconstruct:diamond"
-							}
-							{
-								level: 1
-								name: "tconstruct:emerald"
-							}
-							{
-								level: 1
-								name: "tconstruct:writable"
-							}
-							{
-								level: 1
-								name: "tconstruct:netherite"
-							}
-						]
 						tic_volatile_data: {
 							abilities: 1
-							"tconstruct:indestructible": 1b
-							"tconstruct:rarity": 2
-							upgrades: 3
+							upgrades: 2
 						}
 					}
 				}
-				id: "7E2FA018C11177D8"
+				id: "35D1BD68E99CDC3E"
 				leaderboard: "leaderboards:total_blocks_mined"
-				min: 1000
+				min: 100
 				rank: 1
 				title: "挖掘数量称霸"
 				type: "leaderboards:rank_task"

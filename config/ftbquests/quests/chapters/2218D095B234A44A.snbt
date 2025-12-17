@@ -23,16 +23,16 @@
 			id: "180947BC2C1A1516"
 			rewards: [{
 				id: "526E751D4A6BA3A2"
-				item: "minecraft:diamond"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "认知:特殊的生物属性"
+			subtitle: "一种特殊的生物属性"
 			tasks: [{
 				id: "4007BD9251408DD1"
 				item: "chestcavity:chest_opener"
 				type: "item"
 			}]
-			title: "引入"
+			title: "生物与胸腔"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -49,12 +49,8 @@
 			]
 			id: "6ACBA86B2F8BA384"
 			rewards: [{
-				id: "2B4B44C3B2B3CF97"
-				item: {
-					Count: 1
-					id: "chestcavity:heart"
-					tag: { }
-				}
+				id: "10B5357BA361C688"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "胸腔开启类任务"
@@ -76,32 +72,43 @@
 		{
 			dependencies: ["6ACBA86B2F8BA384"]
 			description: [
-				"为了进一步能够扫描有关胸腔的信息，我需要更多的&6生物样本&r。"
+				"现在，您可以尝试从胸腔内取出一个器官。"
 				""
-				"在该页面中，我为您提供了一系列有关生物胸腔开启的任务，这将有助于提高我对于这方面知识的&6理解度&r。"
+				"请注意，&n在取出器官的瞬间，你的身体就会感知到胸腔的变化&r，进而产生对应的生理反应。"
 				""
-				"当理解度提升到某些层次时，我坚信新的认知将会被揭示。"
+				"如果您摘取了心脏，那么您会不断损失生命；如果您摘取了肺，您将无法呼吸. . ."
+				""
+				"但这并不代表您必须需要心脏才能够生存。取决您是否能够正常生存的是这些器官上所记录的数据。"
+				""
+				"一般而言，对生物来说，必须要具备有至少为1的&6健康&r和至少为1的&6神经效率&r，前者会保证你不会持续流血，后者可以保证你能移动。"
+				""
+				"其他的属性也都有各自的作用，具体您可以使用&6固定按键&r将物品提示固定住，而后将鼠标放在词条上观察。"
 			]
-			id: "4BBA7FA5EE684A98"
+			icon: {
+				Count: 1
+				id: "chestcavity:muscle"
+				tag: { }
+			}
+			id: "3706063CCC0981B2"
 			rewards: [{
-				exclude_from_claim_all: true
-				icon: {
-					Count: 1
-					id: "chestcavity:heart"
-					tag: { }
-				}
-				id: "6519AE4F0195E810"
-				team_reward: true
-				title: "胸腔认知+1"
-				type: "custom"
+				id: "1743A1957161902C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
-			subtitle: "提升胸腔相关的认知"
+			subtitle: "小心摘取你的器官！"
 			tasks: [{
-				id: "7DF604B581EBDE44"
-				title: "奉行此道"
-				type: "checkmark"
+				id: "5934C16E1C3FE57E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:organ"
+					}
+				}
+				title: "任意一个器官"
+				type: "item"
 			}]
-			title: "基本认知"
+			title: "尝试摘取器官"
 			x: 0.0d
 			y: -2.0d
 		}

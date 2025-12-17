@@ -1,0 +1,25 @@
+{
+	id: "2799A47350DC5451"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "kubejs:key_to_infinity"
+			ignore_reward_blocking: true
+			isServer: true
+			stage: "can_enter_nexus"
+			title: "共享中转站维度"
+			type: "ftbqaa:astages"
+		}
+		{
+			auto: "invisible"
+			icon: "kubejs:key_to_infinity"
+			ignore_reward_blocking: true
+			stage: "can_enter_nexus"
+			title: "私有中转站维度"
+			type: "ftbqaa:astages"
+		}
+	]
+	title: "中转站维度抉择"
+}

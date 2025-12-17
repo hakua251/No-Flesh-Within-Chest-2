@@ -1406,10 +1406,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:debug_stick"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:decorated_pot"
 		},
 		{

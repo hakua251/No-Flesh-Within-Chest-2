@@ -9,12 +9,15 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["46E78442AD5DB22E"]
 			description: [
 				"在制作传送石时，我突然意识到了一件事情。"
 				""
-				"如果说，&6“商店”&r维度的存在并非偶然，那么他究竟是因为什么而产生的，又是因为什么才产生的。"
+				"&6“商店”&r维度的绝对不是偶然。那么他究竟是因为什么而产生的，又是因为什么才产生的。"
 				""
-				"如果说我们能够&6仿照那个维度的创造方式&r，创造我们自己的世界的话. . .或许真的能铸造传说中的&6黄金乡&r！"
+				"自一开始以来，我们忽略了太多太多关于这个世界的细节，或许我们真的需要好好记录下这一切。"
+				""
+				"通过这些&6踪迹&r，我们或许能够发现更多能被我们利用的技术。"
 			]
 			id: "7DFD8F39E1AC3083"
 			invisible: true
@@ -37,28 +40,1933 @@
 				title: "制作传送石"
 				type: "item"
 			}]
-			title: "通往无尽之钥"
+			title: "奇异点的反思"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7DFD8F39E1AC3083"]
-			id: "4F7C14078B55690B"
+			description: [
+				"在当前世界中，存在有大量和当初我所知世界不同的结构存在。请您制造&6相机&r，并且使用相机记录下这一切，我会对这些数据进行分析处理。"
+				""
+				"为了让您能够胜任这个任务，我会指导您如何完成照片冲洗，并且进行几个简单的拍照测试。"
+			]
+			id: "3F88ADBD557E73A8"
 			rewards: [{
-				id: "018D76DA5FBDAB15"
+				id: "66D57577472D7A69"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "用相机来记录一切"
 			tasks: [{
-				id: "094F4053916162FB"
-				stat: "infinity:dimensions_opened_stat"
-				type: "stat"
-				value: 1
+				id: "56781900DF9741E1"
+				item: "exposure:camera"
+				type: "item"
 			}]
-			title: "一次尝试"
+			title: "记录身边的一切"
 			x: 1.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["3F88ADBD557E73A8"]
+			description: [
+				"光制作出相机是无法直接使用的，您至少还需要一个光敏载体——比如说古老的胶卷。"
+				""
+				"胶卷包含&6黑白胶卷&r和&6彩色胶卷&r两种，您可以根据喜好来选择对应的胶卷。"
+				""
+				"两者相比较来说，黑白胶卷的冲洗更为简单直接，因此目标为完成任务的情况下，我更建议您使用黑白胶卷而非彩色胶卷。"
+			]
+			icon: "exposure:black_and_white_film"
+			id: "509FC63C6A0CF06A"
+			rewards: [{
+				id: "4DFAB56842CC722D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "记录载体"
+			tasks: [{
+				id: "2BDD9D9E57382052"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exposure:film_rolls"
+					}
+				}
+				title: "胶卷"
+				type: "item"
+			}]
+			title: "制作胶卷"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3F88ADBD557E73A8"]
+			description: [
+				"假若您拍摄完成，您需要将照片冲洗出来。"
+				""
+				"为了冲洗出照片，您需要使用&6暗房&r作为冲洗工具。将胶卷通过水或者药水&6初步冲洗&r后，在暗房里放入不同的染料即可缓慢完成照片的冲洗。"
+				""
+				"请您熟悉这个工具，我们后面为了记录各种各样的东西，会反复使用它。"
+			]
+			id: "4449195A34FB718E"
+			rewards: [{
+				id: "21297002FB1A05DC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "冲洗工具"
+			tasks: [{
+				id: "32967090AB62EAF4"
+				item: "exposure:lightroom"
+				type: "item"
+			}]
+			title: "制作暗房"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"509FC63C6A0CF06A"
+				"4449195A34FB718E"
+			]
+			description: [
+				"看来您已经能够学会如何冲洗照片了。"
+				""
+				"现在，我希望您能够通过您的眼睛，来收集这个世界上我们&6错过的一切&r。"
+			]
+			id: "766A21B5DC7F7CF0"
+			rewards: [{
+				id: "55C76C645D76F80E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "记录您所见"
+			tasks: [{
+				advancement: "exposure:adventure/moment_in_time"
+				criterion: ""
+				id: "1661AF732E1606CE"
+				title: "记录一张照片"
+				type: "advancement"
+			}]
+			title: "刹那光阴"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["766A21B5DC7F7CF0"]
+			description: [
+				"这只是一个测试，让您了解到什么叫做&6拍摄到&r。"
+				""
+				"正如本任务所要求，您需要拍摄一张包含&6鸡&r的照片。但是照片中对象不能太远，否则无法获得对应生物的观察信息；也不能拍照过偏，比如说生物只有一半出现在镜头是不合法的。"
+				""
+				"因此在后续的拍摄中，请您尽可能保证&6实体完整出现在镜头&r内，以避免冲洗照片后无功而返的情况。"
+				""
+				"当然，听说这也是人类摄影师最基本的素养之一，还请您不要用一些出人意料的表达手法，这可能影响我后续的数据分析。"
+			]
+			icon: "minecraft:egg"
+			id: "22569BCCD8EFC6CC"
+			rewards: [{
+				id: "33558E9996C0F24E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "先从简单的开始"
+			tasks: [{
+				icon: "minecraft:egg"
+				id: "05FFFCBECFCB595C"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:chicken >= 1"
+					}
+				}
+				title: "拍摄一张“鸡”的照片"
+				type: "item"
+			}]
+			title: "记录您所见之生灵"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22569BCCD8EFC6CC"]
+			description: [
+				"这是另一个测试，用于说明倘若&6拍摄结构&r，对照片的基本需求。"
+				""
+				"您需要拍摄一张村庄的照片，这里的村庄可以是大型、中型、小型的村庄，但必须是一个具有道路、房屋和村民的村庄才能称之为村庄。"
+				""
+				"为了使照片有效，您&6必须站在该结构内拍照&r，照片才会被认为是拍摄了这个建筑。因此我强烈推荐您拍摄该结构内的事物，而不是拍摄整个结构的全景。"
+			]
+			icon: "minecraft:emerald"
+			id: "6E1EA50C5342A5DD"
+			rewards: [{
+				id: "2B48C12B77B624E9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "再稍微复杂些"
+			tasks: [{
+				icon: "minecraft:emerald"
+				id: "663487963991C29E"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_structure"
+					tag: {
+						value: "ctov:small;ctov:medium;ctov:large"
+					}
+				}
+				title: "拍摄一张“村庄”的照片"
+				type: "item"
+			}]
+			title: "记录您所见之地标"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E1EA50C5342A5DD"]
+			description: [
+				"这是最后一样测试。"
+				""
+				"请您拍摄一张包含&6至少一位村民&r，&6在村庄明亮处工作&r的照片。"
+				""
+				"在这个测试中，您需要面对不止一个条件，为了完成这个测试，您需要小心保证这些条件都能得到满足。"
+				""
+				"其“&6明亮&r”代表亮度较高，“&6村庄&r”说明了拍摄地点需要在村庄内，“&6至少一位村民&r”说明了拍摄的实体要求至少一个村民。"
+			]
+			icon: "simplehats:villagernose"
+			id: "5F95F25DAC9FBAAA"
+			rewards: [{
+				id: "32A2158592DDABBC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "村民是我们难得的类人朋友"
+			tasks: [{
+				icon: "simplehats:villagernose"
+				id: "2104BEE70A507E2E"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:villager >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_light_level"
+								tag: {
+									value: " >= 7"
+								}
+							}
+						]
+					}
+				}
+				title: "获得指定照片"
+				type: "item"
+			}]
+			title: "我们的好朋友"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["&6爬行者&r在&6黑暗&r中慢慢靠近您的世纪性照片。"]
+			hide_dependency_lines: true
+			id: "14E235C60FC2ECC7"
+			rewards: [{
+				id: "2481023461890763"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它总是悄无声息"
+			tasks: [{
+				icon: "minecraft:creeper_head"
+				id: "23617B72360B0173"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:creeper >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_light_level"
+								tag: {
+									value: " <= 7"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "苦力怕在阴暗中"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F95F25DAC9FBAAA"]
+			description: [
+				"尽管分析完后，这些照片都完全丧失了意义——但那是对我。"
+				""
+				"对您来说，这些照片可能包含的&6不止其代表的信息&r那么简单，因此，希望您可以把照片存放在此处，用以作为你我的故事的链接。"
+			]
+			id: "6B524BB21FC95A01"
+			rewards: [{
+				id: "61CABDBFB62CA9D0"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			subtitle: "回忆存放处"
+			tasks: [{
+				id: "557E526E1772C96A"
+				item: {
+					Count: 1
+					id: "exposure:album"
+					tag: {
+						Pages: [
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "保存这一切"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["&6监守者&r在&6远古都市&r，因为不安的噪音破土而出的珍稀画面。"]
+			hide_dependency_lines: true
+			id: "318B5462AAC0EA2C"
+			rewards: [{
+				id: "1D277718484F2B64"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "守卫者循声而至，随后摇头散开"
+			tasks: [{
+				icon: "minecraft:sculk"
+				id: "632E88B2F4E37386"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:warden >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_structure"
+								tag: {
+									value: "minecraft:ancient_city"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "惊扰远古的守卫者"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["多只&6烈焰人&r环绕四周，紧张刺激的战斗令人肾上腺素飙升。"]
+			hide_dependency_lines: true
+			id: "61C07953977FBE7D"
+			rewards: [{
+				id: "3DB7CD077CB33313"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "燃烧金属之躯"
+			tasks: [{
+				icon: "minecraft:blaze_powder"
+				id: "59C5755FAC8BD9CC"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:blaze >= 3"
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "身陷烈焰漩涡之中"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["&6牛&r、&6羊&r、&6鸡&r同时出现在画面上，它们正享受着自己的平凡生活，殊不知这番平凡是被您赐予的。"]
+			hide_dependency_lines: true
+			id: "5A99F20FF077C796"
+			rewards: [{
+				id: "08102B39D761B89E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "如若饲养生物，那应从牛羊为主"
+			tasks: [{
+				icon: "minecraft:feather"
+				id: "2F73661EC56693DC"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:sheep >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:chicken >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:cow >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定的照片"
+				type: "item"
+			}]
+			title: "鸡牛羊与风之舞"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["一群&6小猪&r环绕在身边的温馨场景，虽然它们后面遭遇的大概率是残忍的屠刀. . ."]
+			hide_dependency_lines: true
+			id: "7D8F39C702BAB785"
+			rewards: [{
+				id: "3134962BF5CF043B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了萝卜，或者为了繁衍"
+			tasks: [{
+				icon: "simplehats:pighead"
+				id: "51DEA59AA8846F34"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:pig >= 5"
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "小猪军团的再进发"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["画面记录下了&6恶魂&r发射&6火焰弹&r的宝贵瞬间，希望您在捕捉这画面时没有受伤。"]
+			hide_dependency_lines: true
+			id: "7D6B8F4427BDF3D4"
+			rewards: [{
+				id: "3E187C1580CF05B5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它飘浮而来，随后又飘浮而去"
+			tasks: [{
+				icon: "minecraft:fire_charge"
+				id: "3597393F2BDBE3A1"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:ghast >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:fireball >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "灰烬与火焰之舞"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["&6掠夺者&r在他们的&6蒸汽飞空艇&r上巡视新的征服目标——但是他们忘记了自己并不会使用&6大炮&r。"]
+			hide_dependency_lines: true
+			id: "38FAE1A100E355A0"
+			rewards: [{
+				id: "7629FB0C19CA912B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它们将大炮指向更远的地方"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:white_banner"
+					tag: {
+						BlockEntityTag: {
+							Patterns: [
+								{
+									Color: 9
+									Pattern: "mr"
+								}
+								{
+									Color: 8
+									Pattern: "bs"
+								}
+								{
+									Color: 7
+									Pattern: "cs"
+								}
+								{
+									Color: 8
+									Pattern: "bo"
+								}
+								{
+									Color: 15
+									Pattern: "ms"
+								}
+								{
+									Color: 8
+									Pattern: "hh"
+								}
+								{
+									Color: 8
+									Pattern: "mc"
+								}
+								{
+									Color: 15
+									Pattern: "bo"
+								}
+							]
+							id: "minecraft:banner"
+						}
+						HideFlags: 32
+						display: {
+							Name: "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
+						}
+					}
+				}
+				id: "142A9DA7F4713F64"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_structure"
+								tag: {
+									value: "create_structures_arise:pillagersteampunkairship"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:pillager >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "飞空艇与掠夺艺术"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["在&6丛林&r中，偶尔一些&6村民&r会选择在树上&6筑家&r. . .就是这些家看起来并不怎么牢固。"]
+			hide_dependency_lines: true
+			id: "60F183947BCAB462"
+			rewards: [{
+				id: "3CC31F1FA7B84239"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "他们也不想向下看！"
+			tasks: [{
+				icon: "minecraft:jungle_sapling"
+				id: "067A9638012CBA32"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_structure"
+					tag: {
+						value: "ctov:small/village_jungle_tree;ctov:medium/village_jungle_tree;ctov:large/village_jungle_tree"
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "浮空岛与浮空村"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["&6铁傀儡&r会和&6村民&r一起出现，村民会和&6猫&r一起出现，因此，他们三者同时都出现也不是没有可能。"]
+			hide_dependency_lines: true
+			id: "124D19952BE48419"
+			rewards: [{
+				id: "6DBCB490CD68EDBC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "铁傀儡保护村民，村民保护猫，那猫呢"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "modulargolems:golem_facade"
+					tag: {
+						FacadeSkin: "modulargolems:iron"
+					}
+				}
+				id: "78A2BCA4F8315BD7"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:cat >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:iron_golem >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:villager >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "村庄生态的平衡"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F95F25DAC9FBAAA"]
+			description: [
+				"您可以通过&6第三人称切换&r的方式，在开启摄像头的时候拍摄您自己。"
+				""
+				"这很有趣不是吗。"
+			]
+			id: "530B934745125A72"
+			rewards: [{
+				id: "2CCCEE89F6C8D58D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "反观自己"
+			tasks: [{
+				icon: "minecraft:player_head"
+				id: "0B0ABC1EC7DCC75D"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:player >= 1"
+					}
+				}
+				title: "拍摄一张包含“玩家”的照片"
+				type: "item"
+			}]
+			title: "我对我的定义"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["偶尔会在世界中发现一些承载着大量&6机械物资&r的&6热气球&r，站在上面来一张&6自拍&r或许不错。"]
+			hide_dependency_lines: true
+			id: "32F948AC9FFEB8B9"
+			rewards: [{
+				id: "2AC3FB316402C970"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "截获机械物资！"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "kubejs:telescopic_arm"
+					tag: { }
+				}
+				id: "156CFFE98AAD88F8"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:player >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_structure"
+								tag: {
+									value: "create_structures_arise:createairdrop"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "我、机械与热气球"
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["画面描述了在&6恶地&r生态群系下，一只&6犰狳&r蜷缩着身体，静静地等待着你的离开。"]
+			hide_dependency_lines: true
+			id: "569948788E7E213F"
+			rewards: [{
+				id: "476553248FF2A82D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这些生物很害怕！"
+			tasks: [{
+				icon: "minecraft:armadillo_scute"
+				id: "3DCE3DC18683BC68"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_biome"
+								tag: {
+									value: "minecraft:badlands"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:armadillo >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "越危险越小心！"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["偶尔您会在世界上发现一些&6位于地下的村庄&r——严格意义上，它们并不算村庄，这仅仅只能算作一个庇护所！"]
+			hide_dependency_lines: true
+			id: "6171DB7303057149"
+			rewards: [{
+				id: "3AE36D7DE82B4F16"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "环境似乎并不好"
+			tasks: [{
+				icon: "minecraft:stone_bricks"
+				id: "03182472ED2BE504"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_structure"
+					tag: {
+						value: "underground_village:"
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "地下居民们的业余生活"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["如果您能发现&6蘑菇岛&r，请您一定要留下&6您&r和&6哞菇&r的自拍，这并不是为了分析数据，单纯是因为我很喜欢哞菇这种生物。"]
+			hide_dependency_lines: true
+			id: "4418CA94AA22BB26"
+			ignore_reward_blocking: true
+			rewards: [{
+				count: 3
+				id: "51AE4AAB6928F220"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "似乎并不是那么难吃"
+			tasks: [{
+				icon: "minecraft:red_mushroom"
+				id: "4062701A01FF24EF"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_biome"
+								tag: {
+									value: "minecraft:mushroom_fields"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:mooshroom >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:player >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "蘑菇遍布的岛屿"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["您会在海底神殿遇到它的守护者——&6远古守护者&r。请您一定要拍摄一张它的照片！"]
+			hide_dependency_lines: true
+			id: "4CAA51BAD4982EA2"
+			rewards: [{
+				id: "0AC45FA0044D0659"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "小心！"
+			tasks: [{
+				icon: "minecraft:heart_of_the_sea"
+				id: "46F4FBE2EBD6EF2D"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:elder_guardian >= 1"
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "咕咕从水下涌上的气泡"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["拍摄一张&6舵背鲸&r和它的&6船只&r的照片！尽量拍全一些！因为它真的很大！"]
+			hide_dependency_lines: true
+			id: "35796740FDCA3F1A"
+			rewards: [{
+				id: "6DD87FABEAC3A5F1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为他带来解放吧"
+			tasks: [{
+				icon: "whaleborne:helm"
+				id: "4D4E230F3837A80F"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "whaleborne:hullback >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "whaleborne:helm >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "舵背鲸之号"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["在&6幽暗&r的&6丛林神庙&r中，危险的陷阱似乎想要将您置于死地. . .请您小心。"]
+			hide_dependency_lines: true
+			id: "7CD76D088A4E820F"
+			rewards: [{
+				id: "18E708BF4A623F64"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这里有点黑"
+			tasks: [{
+				icon: "minecraft:vine"
+				id: "1153B49DF5650D5A"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_structure"
+								tag: {
+									value: "minecraft:trail_ruins"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_light_level"
+								tag: {
+									value: " <= 7"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "幽暗丛林神庙"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["&6狼&r会误以为&6骷髅&r身上的骨头是可以食用的. . .虽然好像确实都是可食用的！"]
+			hide_dependency_lines: true
+			id: "5A38CC02FFCFB4DE"
+			rewards: [{
+				id: "4276A2ED97BA9BEA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "身上全都是骨头呀"
+			tasks: [{
+				icon: "minecraft:bone"
+				id: "7650318646627D51"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						SelectedItem: -1
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:wolf >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:skeleton >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "自由驱逐者"
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["画面记录了4、5. . .至少&68只史莱姆&r在跳跃的场景。虽然史莱姆看起来可爱，但对玩家是极度富有敌意的。"]
+			hide_dependency_lines: true
+			id: "00FA2D477EE7E146"
+			rewards: [{
+				id: "51EE6A05633E3778"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "源源不断"
+			tasks: [{
+				icon: "simplehats:slime_cube_dnd"
+				id: "520F2C2C22FEE5CC"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:slime >= 8"
+					}
+				}
+				title: "获得特定相片"
+				type: "item"
+			}]
+			title: "由史莱姆染成的绿"
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["画面记录了&6企鹅&r在&6冰刺之地&r，在冰面上缓慢行走的场景。"]
+			hide_dependency_lines: true
+			id: "359B8EFE5765385A"
+			rewards: [
+				{
+					id: "508D7B395D3DFC61"
+					item: "simplehats:penguinhat"
+					type: "item"
+				}
+				{
+					id: "6A13A5C7558F1865"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+			]
+			subtitle: "企鹅在这里"
+			tasks: [{
+				icon: "wildernature:penguin_spawn_egg"
+				id: "7E52D3A949AAFE5A"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						SelectedItem: -1
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_biome"
+								tag: {
+									SelectedItem: -1
+									value: "minecraft:ice_spikes"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "wildernature:penguin >= 1"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "凛冬若企鹅毛大雪"
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"569948788E7E213F"
+				"14E235C60FC2ECC7"
+				"318B5462AAC0EA2C"
+				"124D19952BE48419"
+				"7D6B8F4427BDF3D4"
+				"4418CA94AA22BB26"
+				"35796740FDCA3F1A"
+				"4CAA51BAD4982EA2"
+				"5A38CC02FFCFB4DE"
+				"28F29F5D3B3453B7"
+				"60F183947BCAB462"
+				"6171DB7303057149"
+				"61C07953977FBE7D"
+				"32F948AC9FFEB8B9"
+				"5A99F20FF077C796"
+				"7D8F39C702BAB785"
+				"38FAE1A100E355A0"
+				"359B8EFE5765385A"
+				"00FA2D477EE7E146"
+				"7CD76D088A4E820F"
+			]
+			description: ["这个任务没有什么取景地的要求，您只要按照您的想法拍摄出&6最好的照片&r并且&6提交&r即可。"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "42611C6251FAB454"
+			min_required_dependencies: 5
+			rewards: [{
+				id: "04CEEBE8B4953C12"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "拍摄一张惊世之作"
+			tasks: [{
+				consume_items: true
+				id: "1DEE2F3F915C7FFF"
+				item: "exposure:photograph"
+				title: "任意照片"
+				type: "item"
+			}]
+			title: "收官之作"
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["拍摄一张&6您的朋友们&r的照片——当然，您也可以用&6很多村民&r来替代。"]
+			hide_dependency_lines: true
+			id: "28F29F5D3B3453B7"
+			rewards: [{
+				id: "3987BB848091B552"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "只有有人在的世界才是"
+			tasks: [{
+				icon: "minecraft:cake"
+				id: "294FC21CA6A20882"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:villager >= 5"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:player >= 2"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "我们的好时光"
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["42611C6251FAB454"]
+			description: [
+				"感谢您这段时间来的配合，我确实找到了几个&6特殊的维度&r。这些维度显然和&6商店维度&r有些关系。"
+				""
+				"现在请您搭建一个下界传送门，并且将&6黑曜石&r丢到下界门中——它绝对不会穿越到另一个维度的，它将会为您打开一扇通向未知的桥梁。"
+			]
+			id: "05B30D636925E1C1"
+			rewards: [{
+				id: "3AC9D9C888908716"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "踪迹之一"
+			tasks: [{
+				dimension: "infinity:cube"
+				icon: "minecraft:obsidian"
+				id: "77C8EE5D8A23AD00"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探访被发现的牢笼"
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2E7B76E8277B6B60"]
+			description: [
+				"上一个维度不知道您觉得怎么样？在我看来，它可能有些单调。"
+				""
+				"现在请您将&6黏液球&r投掷到传送门中，它将会重新开启一道通向更加混乱世界的通道。"
+			]
+			id: "4329E9383BBF0B7E"
+			rewards: [{
+				id: "1F632E3C299FC7F4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "踪迹之二"
+			tasks: [{
+				dimension: "infinity:slime"
+				icon: "minecraft:slime_ball"
+				id: "57A25EE636520C8B"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探访被发现的原液"
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["05B30D636925E1C1"]
+			description: [
+				"一个无限延伸的，按照16 * 16 * 16构建而成的&6黑曜石维度&r——这绝对是有意而为之的，"
+				""
+				"它非常像一个监牢，用于将各种&6生物囚禁&r在其中的监牢。我不明白为什么会有这样的地方，更不理解它的意义是什么。"
+				""
+				"我们必须前往下一个踪迹所在的位置，了解到真实的意图。"
+			]
+			icon: "supplementaries:cage"
+			id: "2E7B76E8277B6B60"
+			rewards: [{
+				id: "1452FB1939C23526"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "分析结果：监牢"
+			tasks: [{
+				icon: "exposure:photograph"
+				id: "3ADEE502CA6CF28F"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_dimension"
+					tag: {
+						value: "infinity:cube"
+					}
+				}
+				title: "一张证明"
+				type: "item"
+			}]
+			title: "暗无天日的黑曜石监牢"
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4329E9383BBF0B7E"]
+			description: [
+				"这是一片由史莱姆统治的原野，在数据层面，其维度名称正被称作为&6Slime&r。"
+				""
+				"唯一的奇怪点就是这些史莱姆的体内似乎都携带着一个&6随机的方块&r。这个方块的种类横跨之广，以至于我现在都愿意相信所有的方块都可以通过其获得. . ."
+				""
+				"但由于其奇怪的碰撞箱，击杀它可能需要一些时间和技巧。"
+			]
+			icon: "simplehats:slime_head"
+			id: "7862A6B384A0E8B4"
+			rewards: [{
+				id: "61F89A0C26053E72"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "混乱初现"
+			tasks: [{
+				icon: "exposure:photograph"
+				id: "498D4EEEA0FE41C4"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_dimension"
+					tag: {
+						value: "infinity:slime"
+					}
+				}
+				title: "一张证明"
+				type: "item"
+			}]
+			title: "史莱姆构成的原野"
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7862A6B384A0E8B4"]
+			description: [
+				"这是一个还&6未被我完全扫描&r的维度，其需要您使用&6龙息&r作为引信，修改下界传送门的方向。"
+				""
+				"在那之后，辛苦您进入新的维度并且带回它的照片。"
+			]
+			id: "1633AB544EB13336"
+			rewards: [{
+				id: "0E27EDA4B432287C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "踪迹其三"
+			tasks: [{
+				dimension: "infinity:missingno"
+				icon: "minecraft:dragon_breath"
+				id: "17B05FB7564336A2"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索不确定的世界"
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1C316C6505326313"]
+			description: [
+				"历经一段时间的扫描后，我意识到，这些维度的数量很有可能是&c近乎无穷大&r的——当然，在数据上是有限的，但是对于您来说几乎是无穷大。"
+				""
+				"这意味着我们没有办法像之前计划的那样顺着踪迹一点一点调查清楚这一切都是怎么创造出来的。不过好消息是，我们现在就有一个办法能够利用这些宽广诡异的维度。"
+				""
+				"请您将任意一张&6自己拍摄的照片&r投入下界传送门中，随后，您便会创建一个跟您关联的&6维度网络&r。"
+				""
+				"通过&6维度网络开启按键（默认为O）&r，您即可与自己的维度网络交互。它可以理解为绑定在您身上的一个专属维度，您可以在里面存储物品，而无需佩戴任何设备。"
+				"{@pagebreak}"
+				"原理上，这其实是我建立起了一个随机维度和您的关联，当您操作维度网络时，其物品会被存储在那个维度空间中。"
+				""
+				"目前，这个维度空间可能比较有限，您只能存储相当有限的物品（64 * 27个物品）在维度网络中。后续我相信一定有方法可以进一步拓展存储能力，但这需要时间。"
+			]
+			id: "1242839DAB198513"
+			rewards: [{
+				id: "6310D0D7EC13F449"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用无限维度之一"
+			tasks: [{
+				icon: "beyonddimensions:net_creater"
+				id: "1DE85E26AA13670B"
+				slotCapacity: 1L
+				slotMaxSize: 1
+				title: "建立维度联系"
+				type: "ftbqaa:dim_net"
+			}]
+			title: "维度网络"
+			x: 12.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1633AB544EB13336"]
+			description: [
+				"不好！请您尽快离开这个维度！"
+				""
+				"这个维度由&6复杂的迷宫&r组成，稍微探索，便会让人迷失其中. . .更不要谈其无边无尽. . ."
+				""
+				"此维度似乎是&6致敬某些作品&r而筑成，在代码逻辑中，其作为众多踪迹维度的边界存在——如果您未来再次来到这个维度，大概率是我们的穿越方案出了些什么问题。"
+				""
+				"所以，请您完全忘记龙息的方案吧，它显然有些危险。"
+			]
+			icon: "amendments:dragon_charge"
+			id: "20A8A171833B2F50"
+			rewards: [{
+				id: "6BB2439FF1EB701C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这并非我本意！"
+			tasks: [{
+				icon: "exposure:photograph"
+				id: "6A03D98DA1610964"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_dimension"
+					tag: {
+						value: "infinity:missingno"
+					}
+				}
+				title: "一张证明"
+				type: "item"
+			}]
+			title: "错误的导向！"
+			x: 9.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["20A8A171833B2F50"]
+			description: [
+				"由于随意前往没有完全探明的维度还是过于危险了，在最差的情况下，这个世界都有可能因为这些稀奇古怪的维度而&c崩溃&r。"
+				""
+				"因此我决定&6优先进行扫描&r，而后再让您进行探索。请您稍等一段时间。"
+			]
+			id: "1C316C6505326313"
+			rewards: [{
+				id: "11AA7BC2EB546873"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "追寻踪迹至此"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "48FBCB006618B007"
+				title: "静候扫描"
+				type: "questsadditions:time"
+			}]
+			title: "停下脚步"
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1242839DAB198513"]
+			description: [
+				"除此之外，为了最大限度的使用维度网络，您需要一些方块来让维度网络进行世界交互。"
+				""
+				"请您将一块钻石块丢到下界传送门中，其应当会转化成为对应的&6维度网络通道&r。"
+				""
+				"通过维度网络通道，可以制作出各种各样用于和维度网络交互的设备，在后面我会举一个例子作为介绍，向您解释它的基本功能。"
+			]
+			id: "49BCABE5A8123636"
+			rewards: [{
+				id: "1E676F06211B9551"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "维度网络交流信标"
+			tasks: [{
+				id: "2986BE449D72E9E7"
+				item: "beyonddimensions:net_pathway"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["49BCABE5A8123636"]
+			description: [
+				"使用凿子可以将其转换为任意维度网络模块。"
+				""
+				"- 将维度网络通道放置在任意位置，&6潜行右击&r以绑定您的维度网络。"
+				""
+				"- 而后将&6维度网络模块&r（如此处的网络接口）放置在临近通道的位置，即可让通道链接到网络接口。"
+				""
+				"- 在网络接口中标记物品，即可让物品自动的从您的维度网络中输出输入。"
+				""
+				"- 使用其他的模块也是同理，再次请允许我不再赘述。"
+			]
+			id: "1E560E6025CC2C22"
+			rewards: [{
+				id: "2313C40283FAC301"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "物品交互方案"
+			tasks: [{
+				id: "39A038CB34327FBE"
+				item: "beyonddimensions:net_interface"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["用草方块作为引子，您便可以来到一个富有规律山脉的世界。"]
+			hide_dependency_lines: true
+			id: "486E9213485BB076"
+			rewards: [{
+				id: "558060C7F27CFC4F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:hills"
+				icon: "minecraft:grass_block"
+				id: "73119C9F2AEE3F9C"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索间隙山谷"
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1242839DAB198513"]
+			description: [
+				"好了，在插曲之后，我挑选了几个比较&6特殊&r的维度给您探索。"
+				""
+				"其实我大概已经有一些结论了，但只有在您拜访过这些维度之后，您才大概能够理解这个结论。"
+			]
+			icon: "minecraft:writable_book"
+			id: "7ACE1C4CE1A9D896"
+			rewards: [{
+				id: "1A50C721917A4AEA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "踪迹之N"
+			tasks: [{
+				id: "0A19DC62E986C4D7"
+				title: "追寻踪迹"
+				type: "checkmark"
+			}]
+			title: "继续追寻踪迹"
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["用樱花树叶作为引子，您便可以来到一个呈现螺旋形生成樱花林的世界。"]
+			hide_dependency_lines: true
+			id: "4FE89156D8CDCE29"
+			rewards: [{
+				id: "082F81DB1C6E45F1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:spiral"
+				icon: "minecraft:cherry_leaves"
+				id: "2D001BC6B3A282EA"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索螺旋樱花林"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["用黑色羊毛作为引子，您便会来到一个黑白羊毛构成的棋盘世界。"]
+			hide_dependency_lines: true
+			id: "2AB48534C195A790"
+			rewards: [{
+				id: "450C3CCCE8DCA94D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:chess"
+				icon: "minecraft:black_wool"
+				id: "63D2314BE3126628"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索棋盘世界"
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: [
+				"用砖块作为引子，您便会来到一个孤独者所在的世界。"
+				""
+				"不知道是谁把它留在了那里，又或者它自己选择了. . .但不管怎么样，我们后面要做的事情跟它无异。"
+			]
+			hide_dependency_lines: true
+			id: "303B0983EE1CEE05"
+			rewards: [{
+				id: "407D6B022AA44BA9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:isolation"
+				icon: "minecraft:bricks"
+				id: "67699D8BC3F364ED"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索孤独者的维度"
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: [
+				"用苔石作为引子，您便可以来到一个极其特殊的世界——这个世界是本游戏早期设计中的世界，其大部分内容在如今的世界中都已不存在。"
+				""
+				"我们无法得知这个世界保留的意义是什么，或许只是单纯的——单纯的因为有无限的维度可以利用罢了。"
+			]
+			hide_dependency_lines: true
+			id: "104E4B71FE7206FB"
+			rewards: [{
+				id: "71652E65E7BED7AD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:classic"
+				icon: "minecraft:mossy_cobblestone"
+				id: "3E307EFB86CC2F20"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索过去的回忆"
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["用海绵作为引子，您便可以访问由海绵分形图案组成的世界。"]
+			hide_dependency_lines: true
+			id: "0E6E3462A96BC570"
+			rewards: [{
+				id: "29CBCB3B64370E56"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:sponge"
+				icon: "minecraft:sponge"
+				id: "08290671BBA83EEA"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索分形海绵世界"
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["以木棍作为引子，则可以将您带入到一个虚空维度之中。在这个维度的中心，应当有前人留下的，为空岛生存所准备的基本物资。"]
+			hide_dependency_lines: true
+			id: "562BC502EA6B3A24"
+			rewards: [{
+				id: "4EE6FAD71D43E0D7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:content"
+				icon: "minecraft:stick"
+				id: "5F9710E31D2DC165"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索空岛维度"
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["以陶瓦为引子，您可以来到一个被陶瓦路分割的世界。"]
+			hide_dependency_lines: true
+			id: "02786AFE7AB7BE1E"
+			rewards: [{
+				id: "0D06B1C6BE5D2370"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:custom"
+				icon: "minecraft:terracotta"
+				id: "040DE7EDC05E5904"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索预留地"
+			x: 10.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: [
+				"以白色混凝土作为引子，您便可以来到存在一只朗顿蚂蚁方块的超平坦维度。"
+				""
+				"右键它便会引发其自发性的行为——如果您对此非常感兴趣，我可以为您提供更多的蚂蚁进行试验。"
+			]
+			hide_dependency_lines: true
+			id: "2455A4DF5434609A"
+			rewards: [
+				{
+					id: "7702009F3EAD9D86"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "3EF99BA8FFF66244"
+					item: "infinity:ant"
+					type: "item"
+				}
+			]
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:ant"
+				icon: "minecraft:white_concrete"
+				id: "0551006DF17BDB93"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索朗顿蚂蚁的世界"
+			x: 12.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: [
+				"以世界唯一的龙蛋作为引子，您便可以来到随机生成方块构成的混乱维度。"
+				""
+				"在其中，理论上您可以找到一切——但仅仅是理论上。"
+			]
+			hide_dependency_lines: true
+			id: "28000C5318439D41"
+			rewards: [{
+				id: "3440E9D6FE3018F4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量踪迹之末"
+			tasks: [{
+				dimension: "infinity:skygrid"
+				icon: "minecraft:dragon_egg"
+				id: "3BF061543E91DBE8"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索网格维度"
+			x: 13.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"486E9213485BB076"
+				"4FE89156D8CDCE29"
+				"2AB48534C195A790"
+				"303B0983EE1CEE05"
+				"104E4B71FE7206FB"
+				"0E6E3462A96BC570"
+				"562BC502EA6B3A24"
+				"02786AFE7AB7BE1E"
+				"2455A4DF5434609A"
+				"28000C5318439D41"
+			]
+			description: [
+				"在长久的寻找之中，我明确了一个事实——这些维度远比想象的还要多得多，它的数量大到使用我的最大数据类型都几乎无法存储。"
+				""
+				"不过尽管如此，寻找到一个目标维度并没有想象的那么难，因为只需要满足几个条件，我便可以宽松的认可它的存在。"
+				""
+				"我在无数的维度中，为您找到了一个物理意义上的“&6黄金乡&r”，通过&6金块&r作为引子，您便可以拜访这番天地。希望您喜欢我为您准备的&6这份礼物&r。"
+			]
+			hide_dependency_lines: true
+			id: "051ABDFF508A5451"
+			min_required_dependencies: 5
+			rewards: [{
+				id: "669911F73890B819"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为您准备的礼物"
+			tasks: [{
+				dimension: "infinity:golden"
+				icon: "minecraft:gold_block"
+				id: "24E0659A8994FAF4"
+				title: "访问“黄金乡”"
+				type: "dimension"
+			}]
+			title: "来吧，这“黄金乡”"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["051ABDFF508A5451"]
+			description: [
+				"为了证明我所言非虚，也为了向您解释这番天地的广阔，请您以书本作为引子，来到这番维度。"
+				""
+				"在这个维度中，每个书架都存放着一本写着一页字符的书籍。您可以通过右键书架无限的取出。"
+				""
+				"这个维度是几乎无穷大的——这里正是&6巴别图书馆&r。任何字符长度低于书本一页的文本，在这里都能够得到完美的呈现。"
+				""
+				"而这些维度也是如此——它们并不是遵循了什么规则生成，它们只是在混乱的组合所有的可能性，最后为我们、为&6您&r呈现上不同的奇迹。"
+			]
+			id: "2F9EE70E103CA5D0"
+			rewards: [{
+				id: "2A37AFB8B5164AED"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "来吧，来到这无穷无尽的图书馆"
+			tasks: [{
+				dimension: "infinity:library"
+				icon: "minecraft:book"
+				id: "78B0CB0007A7859F"
+				title: "访问“图书馆”"
+				type: "dimension"
+			}]
+			title: "证明所言非需"
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2F9EE70E103CA5D0"]
+			description: [
+				"通过有序的扫描，可以稳定的获得前往较为安全随机维度的方法。"
+				""
+				"但请注意，虽然相对安全，但随机维度本身就可能会招致例如&6世界崩溃&r/&6实体损坏&r的严重问题，在极端情况下，我们的冒险故事都会就此终止，请一定要认识到&c风险&r的存在！"
+				""
+				"通过每小时的扫描，可以稳定获取&6通往无尽之钥&r。您可以将其投入到传送门中开启一个随机维度，也可以通过将其重新命名，以定向的去往某个特定的维度。"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "kubejs:key_to_infinity"
+			id: "0E25E431098EC128"
+			rewards: [{
+				id: "13ADD87D7AA30241"
+				item: "kubejs:key_to_infinity"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "请见证我们的冒险故事"
+			tasks: [{
+				elapsedTime: 3600L
+				icon: "supplementaries:hourglass"
+				id: "53BC87B3E5867EBD"
+				title: "穿越无尽"
+				type: "questsadditions:time"
+			}]
+			title: "&6庆贺吧！此乃通往无尽之钥！&r"
+			x: 1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2F9EE70E103CA5D0"]
+			description: [
+				"除此之外，我还发现了一个名为“&dnexus&r”（亦可称为&d中转站&r）的特殊维度，但是这个维度可以无限制的访问无限维度. . ."
+				""
+				"这对于整个系统来说，这个维度的存在是极其危险的！会随时导致这个世界的崩溃！"
+				""
+				"因此我通过限制权限，一定程度上限制了这个维度的进入，现在您可以通过投入。"
+				""
+				"关于中转站的使用，我打算仅交付给少部分人，如果您能够在世界上取得&6疾跑距离第一&r的荣誉，那么我愿意让您来抉择是否应当公开中转站维度。"
+				"{@pagebreak}"
+				"共享中转站维度会允许其他所有人进入该维度。"
+				""
+				"私有中转站维度则仅会允许您进入到该维度。"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_star"
+			id: "3F9EFE9B6E8BDAF2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "64BA1F10B3589132"
+					table_id: 2853492654100730961L
+					type: "choice"
+				}
+				{
+					id: "16D1395FAB36C9B4"
+					item: {
+						Count: 1
+						id: "kubejs:key_to_infinity"
+						tag: {
+							display: {
+								Name: "{\"text\":\"nexus\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "无限的冒险故事"
+			tasks: [{
+				icon: "createornithopterglider:elytra_piece"
+				id: "6870FCF50ECAD1D8"
+				leaderboard: "leaderboards:distance_sprinted"
+				min: 0
+				rank: 1
+				title: "疾跑距离称霸"
+				type: "leaderboards:rank_task"
+			}]
+			title: "无限中转站"
+			x: 3.0d
+			y: 10.5d
+		}
 	]
-	title: "传闻：重返黄金乡"
+	title: "传闻：重现黄金乡"
 }
