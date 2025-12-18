@@ -62,6 +62,7 @@
 					tag: { }
 				}
 				id: "7C235F5C7B4FC314"
+				title: "打开自己的胸腔"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
@@ -111,6 +112,115 @@
 			title: "尝试摘取器官"
 			x: 0.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["3706063CCC0981B2"]
+			description: [
+				"除了您自己的胸腔之外，您也可以打开其他生物的胸腔。"
+				""
+				"但是打开胸腔需要一定的条件，这包括两部分——“&6生物生命值低于10%或者低于10&r”和“&6生物未穿戴胸甲&r”。"
+				""
+				"很明显，&6猪&r在天然状态下就满足这些条件，并且不会因为开胸造成的伤害一击致命。"
+				""
+				"因此，请您使用开胸器打开猪的胸腔，您可以取出它的任意器官以实验不同属性会导致的效果。"
+			]
+			id: "1D65BF71E2DCA300"
+			rewards: [{
+				id: "52FC369A48FEC100"
+				item: "lightmanscurrency:piggy_bank"
+				type: "item"
+			}]
+			subtitle: "先从简单的生物开始"
+			tasks: [{
+				entity: "minecraft:pig"
+				icon: "simplehats:pighead"
+				id: "47FAF2FB24171CF5"
+				title: "打开猪的胸腔"
+				type: "chestcavity:open_chest_cavity_task"
+				value: 1L
+			}]
+			title: "了解动物"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2322A3BFAC31A4C2"]
+			description: [
+				"等等！在直接使用其他生物器官之前，我还有一件事要提醒您！"
+				""
+				"如果您直接使用其他生物的器官，会因为其原本不属于您，而和您的身体产生&6排异反应&r。"
+				""
+				"为了解决排异反应，我们需要一系列处理工序，当然您也可以硬顶着排异反应使用. . ."
+			]
+			icon: "biomancy:rejuvenation_serum"
+			id: "3546342552F8444E"
+			rewards: [{
+				id: "3C3C0714B038119E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "请不要直接使用他人器官"
+			tasks: [{
+				id: "17F8A0AD1F8FA187"
+				title: "了解了"
+				type: "checkmark"
+			}]
+			title: "排异反应"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3546342552F8444E"]
+			description: [
+				"为了解决排异问题，我们需要想办法唤出这个世界上存在的一种生物——&c肉块&r。"
+				""
+				"它可以食用未经排异的器官，将其处理为&6无主器官&r，进而解决排异问题。"
+				""
+				"而这套工序的第一步就是制作一个&6原初核心&r。"
+				""
+				"动物器官可以从&6动物&r中获得，腐烂器官可以从&6僵尸&r身上获得，而普通的心脏. . .可以从&6村民&r身上获得。"
+			]
+			id: "25AF51750AAA5976"
+			rewards: [{
+				id: "6ECE79C4C24BDF64"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "先从简单的开始"
+			tasks: [{
+				id: "6CB3681058B893A5"
+				item: "biomancy:primordial_core"
+				type: "item"
+			}]
+			title: "制作原初核心"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1D65BF71E2DCA300"]
+			description: [
+				"为了打开血量较高的生物，您需要一定程度上&6压低该生物的血线&r，以便您能够执行开胸操作。"
+				""
+				"一个建议是，对于这种敌对生物，优先摘除其脊椎，使其移动能力完全丧失后慢慢处理。"
+			]
+			id: "2322A3BFAC31A4C2"
+			rewards: [{
+				id: "6D2181271A62806A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "稍微复杂的生物"
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:zombie_head"
+				id: "6598BB079F56E5D4"
+				title: "打开僵尸胸腔"
+				type: "chestcavity:open_chest_cavity_task"
+				value: 1L
+			}]
+			title: "了解怪物"
+			x: 0.0d
+			y: -4.0d
 		}
 	]
 	title: "认知：胸腔"
