@@ -5,7 +5,8 @@
   "appearance": {
     "item": "kubejs:machine/world_computer",
     "running": {
-      "custommachinery:block": "kubejs:machine/world_computer"
+      "custommachinery:block": "kubejs:machine/world_computer",
+      "light": 15
     },
     "custommachinery:block": "kubejs:machine/world_computer_idle"
   },

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "2218D095B234A44A"
 	group: "63198C281F0E9667"
+	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		id: "chestcavity:heart"
@@ -83,7 +84,7 @@
 				""
 				"一般而言，对生物来说，必须要具备有至少为1的&6健康&r和至少为1的&6神经效率&r，前者会保证你不会持续流血，后者可以保证你能移动。"
 				""
-				"其他的属性也都有各自的作用，具体您可以使用&6固定按键&r将物品提示固定住，而后将鼠标放在词条上观察。"
+				"其他的属性也都有各自的作用，具体您可以使用&6固定提示框&r按键将物品提示固定住，而后将鼠标放在词条上观察。"
 			]
 			icon: {
 				Count: 1
@@ -146,9 +147,9 @@
 		{
 			dependencies: ["2322A3BFAC31A4C2"]
 			description: [
-				"等等！在直接使用其他生物器官之前，我还有一件事要提醒您！"
+				"&c等等！在直接使用其他生物器官之前，我还有一件事要提醒您！&r"
 				""
-				"如果您直接使用其他生物的器官，会因为其原本不属于您，而和您的身体产生&6排异反应&r。"
+				"如果您直接使用其他生物的器官，会因为其原本不属于您，而和您的身体产生&6排异反应&r。您可以在物品提示上看到该器官原本应属于谁。"
 				""
 				"为了解决排异反应，我们需要一系列处理工序，当然您也可以硬顶着排异反应使用. . ."
 			]
@@ -176,7 +177,7 @@
 				""
 				"它可以食用未经排异的器官，将其处理为&6无主器官&r，进而解决排异问题。"
 				""
-				"而这套工序的第一步就是制作一个&6原初核心&r。"
+				"而这套工序的第一步就是制作一个&6原初核心&r。它有两种制作路线，我推荐您使用通过心脏制作的方法来获取。"
 				""
 				"动物器官可以从&6动物&r中获得，腐烂器官可以从&6僵尸&r身上获得，而普通的心脏. . .可以从&6村民&r身上获得。"
 			]
@@ -221,6 +222,303 @@
 			title: "了解怪物"
 			x: 0.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["25AF51750AAA5976"]
+			description: [
+				"通过原初摇篮，即可孵化出我们所需的肉块。"
+				""
+				"但直接制作出原初摇篮似乎有些困难. . .因为其需要&6尖牙&r——这是必须要通过&d抽筋剥骨&r附魔才能够获得的特殊战利品。"
+				""
+				"不过好在，在扫描过的胸腔物品中，我找到了一个能够让您迅速获得此类特殊战利品的物品。"
+				""
+				"请使用&6切石机&r打磨您的肋骨，制成&6肋骨牙刃&r。"
+			]
+			id: "04BD8BC9319A7E1C"
+			rewards: [{
+				id: "177FCB0820108AA5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "到最初的路径"
+			tasks: [{
+				id: "17401A697353AE87"
+				item: {
+					Count: 1
+					id: "kubejs:rib_blade"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "从肋骨牙刃开始"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["04BD8BC9319A7E1C"]
+			description: [
+				"接下来说的可能有些残忍，您需要携带该器官的情况下，击杀&6狼&r、&6猫&r、&6蝙蝠&r或者&6疣猪兽&r，来获得他们额外的战利品——&6尖牙&r。"
+				""
+				"您可以通过Alt键来查看器官具体的效果，其中，有一条称作“&a幸运概率&r”的描述，您可以通过将该物品描述通过&6固定提示框&r按键固定，而后通过鼠标阅读它的详细情报。"
+				""
+				"简单来说，在一般情况下，在佩戴该器官的情况下，您有50%的概率会获得额外战利品，如果您的幸运越高，则会有更高的概率获得额外战利品。"
+			]
+			id: "7CCB3B294B86F7AA"
+			rewards: [{
+				id: "71FE5097D7BCC88B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "动物杀手"
+			tasks: [{
+				count: 2L
+				id: "109C099D1C00E8B9"
+				item: "biomancy:mob_fang"
+				type: "item"
+			}]
+			title: "获取尖牙"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7CCB3B294B86F7AA"]
+			description: [
+				"终于，您可以制作原初摇篮了。"
+				""
+				"原初摇篮是一个非常奇怪的东西——它会吃下几乎所有能吃的东西。但它最喜欢的物品是各种生肉。通过右键&6喂食生肉&r，其内部容量会逐渐填满。"
+				""
+				"之后，您需要喂食给它各种治愈性物品以激活它的原初化进程。右键&6使用治疗药水&r、&6再生药水&r或者&6金苹果&r之类的物品，可以使其正面的“眼睛”充满荧光紫色。"
+				""
+				"在两个步骤均完成后，其会进行一次原初化尝试，并且有概率孵化出&c肉块/原初肉块/饥饿肉块&r。"
+				""
+				"如果失败了，您需要重复上述过程，直到孵化出肉块为止。"
+			]
+			id: "714F4F7810E3D89C"
+			rewards: [{
+				id: "4446AC9004A101D0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "从原初开始"
+			tasks: [{
+				id: "623C43EAF3E02C4D"
+				item: "biomancy:primordial_cradle"
+				type: "item"
+			}]
+			title: "养育原初摇篮"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["714F4F7810E3D89C"]
+			description: [
+				"器官排异在这个世界上本质上是一种&6非原初化&r的表现。肉块可以以自身生命为代价将这些器官原初化。"
+				""
+				"您可以将曾经有主的器官&6丢弃在肉块附近&r，肉块会自己寻找可净化的器官食用，并且在&630s&r后，生成一个&6无主的同名器官&r在原地。"
+				""
+				"虽然效率低一些，但考虑到这是完全免费的，多养几个肉块或许就可以解决您的数量焦虑。"
+			]
+			icon: "biomancy:flesh"
+			id: "7EDB195FE22A8D47"
+			rewards: [{
+				id: "7FA4F5BA0463EA2C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "一种古老的生物抗排异方法"
+			tasks: [{
+				id: "1417449A79E0EDFE"
+				type: "checkmark"
+			}]
+			title: "逃离排异反应"
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["714F4F7810E3D89C"]
+			description: [
+				"恶性脉络是一个极其特殊的产物——它具有着无限演化的可能。"
+				""
+				"通过向脉络和脉络关联的原初温床上投入更多的&6生肉&r，可以提高周围脉络进行&6扩散/演化&r的可能。"
+				""
+				"养殖它或许是一个进行世界观测实验的好主意。"
+			]
+			id: "7A2FF567EFD19C5E"
+			rewards: [{
+				id: "0896FAB8983139E6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "无限生命之起源"
+			tasks: [{
+				id: "69802593CAB94D6B"
+				item: "biomancy:malignant_flesh_veins"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7A2FF567EFD19C5E"]
+			description: [
+				"在恶性脉络的增生过程中，一个罕见的结果指向了蕾莓的产生。"
+				""
+				"作为一种极其罕见的产物，其与肉块相似，可以用于器官的&6原初化&r。"
+			]
+			id: "0EBECB93FABABCD6"
+			rewards: [{
+				id: "6AD1DB0DD445726B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "原初精华"
+			tasks: [{
+				id: "7BF6B98D9EACB0CC"
+				item: "biomancy:bloomberry"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0EBECB93FABABCD6"]
+			description: [
+				"酿造&d原初侵蚀药水&r，然后将其倒入&6炼药锅&r中。"
+				""
+				"炼药锅下方需要使用&6热源&r（如营火）加热，待气泡冒出时，将&6器官丢入药水&r中，即可获得无主器官。"
+				""
+				"虽然这个方法造价较高，但是速度快，且蕾莓再生可以依赖于特殊肥料，因此也算一种优质之选。"
+			]
+			id: "4BDC3EB3E3B69CE9"
+			rewards: [{
+				id: "6238345A90DCDD0A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "原初净化之极"
+			tasks: [{
+				id: "55F24286AA932421"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "biomancy:primordial_infestation"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4FBC882804C1F6A9"]
+			description: [
+				"为了生物炼金和生物锻造，您需要大量的生物材料。但有的生物不仅生成稀少，且原料来源不明，难度巨大。"
+				""
+				"&6分解器&r可以解决此类问题。通过放入一些常见物品，即可分解成生物材料。这会大大降低我们对生物资源的依赖程度。"
+			]
+			id: "1D2835C031D8C57F"
+			rewards: [{
+				id: "05FCF5ED2F5F2262"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "除杀戮之外的方法"
+			tasks: [{
+				id: "43079E813DC5C257"
+				item: "biomancy:decomposer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["5CF36FC89AB073E8"]
+			description: [
+				"生物锻造台可以用于各种&6基础生物制品&r的制造。您可以使用一些生物材料制作一些比较稀有的生物&6装备/方块/物品&r。"
+				""
+				"但其需要投入一些&6食物&r以供给营养，否则合成配方将无法正常进行。"
+			]
+			id: "4FBC882804C1F6A9"
+			rewards: [{
+				id: "5EB0261C5F46433C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "规范化血肉生产方案"
+			tasks: [{
+				id: "66D3AB03FC391DFB"
+				item: "biomancy:bio_forge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["4FBC882804C1F6A9"]
+			description: [
+				"正常为生物锻造台等设备提供营养实在是过于浪费食物了。"
+				""
+				"通过&6消化体&r，预消化这些食物进而获得&6营养&r膏，不仅可以有效利用这些食物，还可以让这些物品不那么占据我们的存储空间。"
+			]
+			id: "1DAB27B9EFD466AD"
+			rewards: [{
+				id: "0233880F5A6ECB78"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "有效利用营养"
+			tasks: [{
+				id: "389AC39F7477E2E3"
+				item: "biomancy:digester"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["714F4F7810E3D89C"]
+			description: [
+				"&6肉块&r在死亡时会掉落&6鲜活肉块&r，这是一种相当重要的生物原料。"
+				""
+				"因此，您不需要太过于关注肉块的生理状态——它终归是要归于此的。"
+			]
+			id: "5CF36FC89AB073E8"
+			rewards: [{
+				id: "2B21F7AD843FF0F8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "肉块的遗物"
+			tasks: [{
+				id: "6CB450636A1B360F"
+				item: "biomancy:living_flesh"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["4FBC882804C1F6A9"]
+			description: [
+				"一种特殊的炼金釜，能够用于制作各类生物制剂，其中包含一些效果强力的药剂，类如可以让生物成长的成长药剂。"
+				""
+				"通过与&6生物注射器&r的结合使用，能够发挥出各种各样的效果。"
+			]
+			id: "6668756163C6B317"
+			rewards: [{
+				id: "5AD2655F629BB22F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "生物炼金魔法"
+			tasks: [{
+				id: "33F33D6909F8DC9C"
+				item: "biomancy:bio_lab"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.5d
 		}
 	]
 	title: "认知：胸腔"

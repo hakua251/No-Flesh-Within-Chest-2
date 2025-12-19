@@ -25,6 +25,7 @@ const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob'
 const $AbstractGolem = Java.loadClass('dev.xkmc.modulargolems.content.entity.common.AbstractGolemEntity')
 const $AbstractSpellCastingPet = Java.loadClass('net.alshanex.alshanex_familiars.entity.generic.AbstractSpellCastingPet')
 const $LootParamsBuilder = Java.loadClass('net.minecraft.world.level.storage.loot.LootParams$Builder')
+const $LootContextParams = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParams')
 const $LootContextParamSets = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParamSets')
 const $Containers = Java.loadClass('net.minecraft.world.Containers')
 const $ChorusFlowerBlock = Java.loadClass('net.minecraft.world.level.block.ChorusFlowerBlock')
@@ -124,3 +125,5 @@ const $GateEventWaveEnd = Java.loadClass('dev.shadowsoffire.gateways.event.GateE
 const $GateEventFailed = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$Failed')
 const $GateEventWaveEntitySpawned = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$WaveEntitySpawned')
 
+const $DespoilLootModifier = Java.loadClass('com.github.elenterius.biomancy.loot.DespoilLootModifier')
+const $LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTable')

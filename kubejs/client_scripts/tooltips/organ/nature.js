@@ -171,7 +171,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:wilden_heart')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:leech_mouthpart')
     .addDefault(Text.translatable('tooltips.kubejs.leech_mouthpart.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.leech_mouthpart.alt.1', Text.gold('20'), LuckHover, Text.gold('1')))
+    .addAlt(Text.translatable('tooltips.kubejs.leech_mouthpart.alt.1', Text.gold('20%'), LuckHover, Text.gold('1')))
     .addAlt(Text.translatable('tooltips.kubejs.leech_mouthpart.alt.2', Text.gold('1')))
 )
 
@@ -184,4 +184,9 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:rat_ear')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:wolf_fang')
     .addDefault(Text.translatable('tooltips.kubejs.wolf_fang.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.wolf_fang.alt.1', Text.gold('16')))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:rib_blade')
+    .addDefault(Text.translatable('tooltips.kubejs.rib_blade.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.rib_blade.alt.1', Text.gold('50%'), LuckHover))
 )

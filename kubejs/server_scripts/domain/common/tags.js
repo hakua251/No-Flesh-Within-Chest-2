@@ -12,8 +12,9 @@ ServerEvents.tags('item', event => {
 
     event.add('kubejs:tinker_organ', ['chestcavity:tinker_heart'])
     event.add('kubejs:heart', ['chestcavity:tinker_heart', 'chestcavity:dragon_heart', 'chestcavity:fireproof_heart', 'chestcavity:small_animal_heart', 'chestcavity:rabbit_heart', 'chestcavity:insect_heart', 'chestcavity:ender_heart', 'chestcavity:saltwater_heart', 'chestcavity:rotten_heart', 'chestcavity:animal_heart'])
+    event.add('kubejs:bone', ['chestcavity:withered_rib', 'chestcavity:fireproof_rib', 'chestcavity:small_animal_rib', 'chestcavity:rotten_rib', 'chestcavity:animal_rib', 'chestcavity:dragon_rib', 'chestcavity:rib', 'chestcavity:ender_rib'])
     event.add('kubejs:machine', ['chestcavity:tinker_heart'])
-    
+
     event.add('tconplanner:creative_material', ['kubejs:genesis_tinker_blueprint'])
 
     event.add('tconstruct_js:cannot_mending', ['kubejs:god_tinker_heart', 'kubejs:furnace_core', 'kubejs:burning_heart', 'kubejs:energy_bottle_red', 'kubejs:originiums', 'kubejs:soul_cage', 'kubejs:red_wolf_beard', 'kubejs:raccoon_paw', 'kubejs:boar_nose', 'kubejs:ignited_armour', 'kubejs:pitcher_stomach', 'kubejs:vita_sunflower', 'kubejs:ender_guardian_spine', 'kubejs:embers_liver', 'kubejs:harbinger_lung'])

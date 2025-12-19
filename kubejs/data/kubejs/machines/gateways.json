@@ -5,9 +5,11 @@
   "appearance": {
     "item": "kubejs:machine/gateways",
     "running": {
-      "custommachinery:block": "kubejs:machine/gateways"
+      "custommachinery:block": "kubejs:machine/gateways",
+      "light": 15
     },
-    "custommachinery:block": "kubejs:machine/gateways_idle"
+    "custommachinery:block": "kubejs:machine/gateways",
+    "light": 3
   },
   "components": [
     {

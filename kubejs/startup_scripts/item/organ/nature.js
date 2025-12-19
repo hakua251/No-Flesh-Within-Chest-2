@@ -36,4 +36,6 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:bee_honey_stomach').maxStackSize(1).maxDamage(10).tag('kubejs:nature').texture('kubejs:item/organs/nature/bee_honey_stomach').tag('kubejs:stomach')
     event.create('kubejs:wolf_fang').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/wolf_fang')
+
+    event.create('kubejs:rib_blade').maxStackSize(1).tag('kubejs:nature').tag('kubejs:bone').texture('kubejs:item/organs/nature/rib_blade')
 })
