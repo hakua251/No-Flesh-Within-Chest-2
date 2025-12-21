@@ -3,7 +3,8 @@
     "text": "block.kubejs.gateways"
   },
   "appearance": {
-    "item": "kubejs:machine/gateways",
+    "item": "kubejs:machine/gateways_item",
+    "shape": [[0.0625, 0, 0.0625, 0.9375, 0.8125, 0.9375]],
     "running": {
       "custommachinery:block": "kubejs:machine/gateways",
       "light": 15

@@ -1,8 +1,6 @@
 // priority: 500
 // todo kubeloader加回来
 
-
-
 // ExposureEvents.modifyFrameData(event => {
 //     const player = event.player
 //     const server = event.server
@@ -20,7 +18,6 @@
 //     })
 // })
 // exposure:flashes
-
 
 // ItemEvents.rightClicked('exposure:photograph', event => {
 //     const level = event.level

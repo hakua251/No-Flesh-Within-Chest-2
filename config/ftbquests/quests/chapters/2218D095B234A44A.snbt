@@ -294,11 +294,19 @@
 				"如果失败了，您需要重复上述过程，直到孵化出肉块为止。"
 			]
 			id: "714F4F7810E3D89C"
-			rewards: [{
-				id: "4446AC9004A101D0"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4446AC9004A101D0"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "40129A4453EC182D"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+			]
 			subtitle: "从原初开始"
 			tasks: [{
 				id: "623C43EAF3E02C4D"

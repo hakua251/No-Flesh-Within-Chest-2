@@ -47,3 +47,4 @@ const $EndlessGateway = Java.loadClass('dev.shadowsoffire.gateways.gate.endless.
 const $EndlessModifier = Java.loadClass('dev.shadowsoffire.gateways.gate.endless.EndlessModifier')
 const $EndlessGatewayEntity = Java.loadClass('dev.shadowsoffire.gateways.entity.EndlessGatewayEntity')
 const $WaveEntity = Java.loadClass('dev.shadowsoffire.gateways.gate.WaveEntity')
+const $FleshBlob = Java.loadClass('com.github.elenterius.biomancy.entity.mob.fleshblob.FleshBlob')

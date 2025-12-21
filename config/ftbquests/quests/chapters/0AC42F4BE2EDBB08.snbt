@@ -251,39 +251,54 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["4E805DA2B8D171E4"]
+			dependencies: ["64C564541E487779"]
 			description: [
 				"经过物品扫描确认，世界中存在有&6大量新增的物品&r，其中绝大多数物品都对您的生存有极大的帮助。"
 				""
 				"但由于权限限制，我无法得知绝大部分物品的获取方式，因此需要您辅助我进行世界的探索，以了解这部分物品所需的具体技术。"
 				""
-				"除此之外，我还在物品中检测到了一部分特殊的物品，其具有一个特殊的属性，名为&6“是否关联传闻”&r。这个属性的具体意义暂无进一步的解释，但是毫无疑问，传闻是您和我探索世界的重要途径之一，因此后续的任务排布我会一定程度上按照您所收集的传闻来开展。"
+				"除此之外，我还在物品中检测到了一部分特殊的物品，其具有一个特殊的属性，名为&6“是否关联传闻”&r。这个属性的具体意义暂无进一步的解释，但是毫无疑问，传闻是您和我探索世界的重要途径之一，因此后续的任务我会一定程度上按照您所收集的传闻来开展。"
 			]
-			icon: "minecraft:book"
+			icon: "infinity:book_box"
 			id: "46E78442AD5DB22E"
-			subtitle: "流传于世界的确切不确切"
+			rewards: [{
+				id: "58A7E54C44ECDD37"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "流传于世界之中的说法称为传闻"
+			tasks: [{
+				id: "7F2076B12D9685B0"
+				title: "了解"
+				type: "checkmark"
+			}]
 			title: "传闻"
-			x: -1.0d
-			y: -6.0d
+			x: -2.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["46E78442AD5DB22E"]
+			dependencies: ["64C564541E487779"]
 			description: [
-				"尽管我没有如此高的权限能够了解到世界的全貌，但通过有限的物品扫描，我仍旧能够推测出部分传闻背后的真相。在后续任务中，我会向您灌输有关这部分传闻的知识，以帮助您在后续的传闻中进一步探索。"
+				"尽管我没有如此高的权限能够了解到世界的全貌，但通过有限的物品扫描，我仍旧能够推测出部分传闻背后的真相。"
 				""
-				"由于这部分经过我扫描确认的传闻极大概率是真实存在的，因此后续我会将其称之为&6认知&r。"
+				"由于这部分经过我扫描确认的事物极大概率是真实存在的，因此后续我会将其称之为&6认知&r。"
 				""
 				"在此过程中，我会尽可能用我的权限给您下发生存物资，以保证认知的探索能够正常、有序的进行。"
 			]
-			icon: "minecraft:book"
+			icon: "minecraft:bookshelf"
 			id: "5D90233550E7D188"
-			subtitle: "经过确认后的传闻称为认知"
+			rewards: [{
+				id: "6C38EDD0135696DD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "公众所知即为认知"
 			tasks: [{
 				id: "7537110BF6E79116"
-				title: "奉行此道"
+				title: "了解"
 				type: "checkmark"
 			}]
-			title: "新认知"
+			title: "认知"
 			x: -2.0d
 			y: -6.0d
 		}
@@ -403,6 +418,58 @@
 			}]
 			x: 2.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["64C564541E487779"]
+			description: [
+				"有一部分数据，似乎在“&6躲避&r”我的扫描。"
+				""
+				"这部分数据指向了一些特殊的事件，但凭借我现有的权限，想要知晓他们的详情非常困难。并且这些事物似乎是有意在避开我的搜查，以至于碎片化的信息甚至布满了冲突。"
+				""
+				"此类信息真真假假难以辨别，或许一个错误我们就会走向万劫不复的深渊. . .我把这些事物称之为&6秘闻&r，其背后必然隐藏着什么巨大的阴谋. . ."
+			]
+			icon: "minecraft:chiseled_bookshelf"
+			id: "588B97AAEC0E2385"
+			rewards: [{
+				id: "22599B508D26FC4E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "真假难辨或有隐瞒则为秘闻"
+			tasks: [{
+				id: "1B3AAED2CEF57592"
+				title: "了解"
+				type: "checkmark"
+			}]
+			title: "秘闻"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4E805DA2B8D171E4"]
+			description: [
+				"考虑到这个世界存在太多的未知数，您最好制作一个&6友谊之戒&r。"
+				""
+				"这是在扫描中发现的一个使用频率很高的物品，其造价并不算贵，但效果显著。"
+				""
+				"通过长时间右键，可以使此戒指绑定于您自己；而后，任意玩家使用该戒指长时间右键，均可传送到您所在的位置。"
+				""
+				"同时，如果您自己使用绑定者为自己的戒指，则会&6回到您的出生点&r。"
+			]
+			id: "6DF4D3AE711778B7"
+			rewards: [{
+				id: "100CD6CF9100AC7E"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "誓言"
+			tasks: [{
+				id: "31E1C77D3A7A20DC"
+				item: "ring_of_friendship:ring_of_friendship"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
 		}
 	]
 	title: "壹"

@@ -1,0 +1,272 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	filename: "11A9F33ACEC0E6DC"
+	group: "78F99AC9360F0137"
+	icon: "kaleidoscope_cookery:egg_fried_rice"
+	id: "11A9F33ACEC0E6DC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["588B97AAEC0E2385"]
+			description: [
+				"一场仪式，一场&6盛大的仪式&r。"
+				""
+				"一桌盛宴，一桌&6筹备已久的盛宴&r。"
+				""
+				"仅此而已，没有更多的信息，或许我们也应该从食物出发，寻找这场盛宴的答案。"
+			]
+			id: "2404C834CBCBB197"
+			invisible: true
+			rewards: [{
+				id: "72895F0B7F1A99B6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "何为谢肉祭"
+			tasks: [{
+				id: "23F0F183B25674C4"
+				item: "biomancy:flesh_bits"
+				type: "item"
+			}]
+			title: "谢肉祭秘闻"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2404C834CBCBB197"]
+			description: [
+				"为了举办谢肉祭，我们需要早早的准备好谢肉祭的场地——"
+				""
+				"而这个场地的核心便是&c血肉块&r。"
+				""
+				"将其放在一个足够大的场地中央，我们现在来准备&c谢肉祭&r所需的一切。"
+			]
+			id: "71238C773767E1E8"
+			rewards: [{
+				id: "02FE3E7F496FD29F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "谢肉祭之起始"
+			tasks: [{
+				block: "biomancy:flesh"
+				block_type: 0
+				icon: "biomancy:flesh"
+				id: "4B85E4ECB5A5C660"
+				replace: false
+				replaced: "minecraft:air"
+				title: "放置血肉块"
+				type: "questsadditions:place"
+				value: 1L
+			}]
+			title: "血肉祭坛"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71238C773767E1E8"]
+			description: [
+				"在祭坛同一水平面的9格之内，需要摆放些许展示台，其上需摆放有您所知的各种&6色彩&r。"
+				""
+				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
+			]
+			icon: "supplementaries:pedestal"
+			id: "35BDA508CAF6F5C6"
+			rewards: [{
+				id: "5C0FEECBF4F67100"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "谢肉祭的准备之一"
+			tasks: [
+				{
+					id: "06A7D9C2283D6B6E"
+					item: "supplementaries:pedestal"
+					type: "item"
+				}
+				{
+					id: "72B7559678C9AC0F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:music_discs"
+						}
+					}
+					title: "任意唱片"
+					type: "item"
+				}
+			]
+			title: "极尽狂放之乐曲"
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["71238C773767E1E8"]
+			description: [
+				"在祭坛同一水平面的9格之内，需要摆放些许展示台，其上需摆放有您所知的各种&6宝石&r。"
+				""
+				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
+			]
+			icon: "supplementaries:pedestal"
+			id: "7FFF4ECDCD8F7463"
+			rewards: [{
+				id: "39E0741528662396"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "谢肉祭的准备之一"
+			tasks: [
+				{
+					id: "33C620658D3BA9A8"
+					item: "supplementaries:pedestal"
+					type: "item"
+				}
+				{
+					id: "349D704A6B16B240"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems"
+						}
+					}
+					title: "任意宝石"
+					type: "item"
+				}
+			]
+			title: "极尽闪耀之宝石"
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["71238C773767E1E8"]
+			description: [
+				"在祭坛同一水平面的9格之内，需要摆放些许展示台，其上需摆放有您所知的各种&6花朵&r。"
+				""
+				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
+			]
+			icon: "supplementaries:pedestal"
+			id: "24967E6220EED145"
+			rewards: [{
+				id: "540207528E646C0C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "谢肉祭的准备之一"
+			tasks: [
+				{
+					id: "40A067727D1AF43E"
+					item: "supplementaries:pedestal"
+					type: "item"
+				}
+				{
+					id: "16C2199B66D060A8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:flowers"
+						}
+					}
+					title: "任意花朵"
+					type: "item"
+				}
+			]
+			title: "极尽绚丽之花朵"
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["71238C773767E1E8"]
+			description: [
+				"在祭坛同一水平面的9格之内，需要摆放些许展示台，其上需摆放有您所知的各种&6色彩&r。"
+				""
+				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
+			]
+			icon: "supplementaries:pedestal"
+			id: "482EAB63ECE73A67"
+			rewards: [{
+				id: "1B39F0DB84B15FD5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "谢肉祭的准备之一"
+			tasks: [
+				{
+					id: "5BAC1C45789B1A96"
+					item: "supplementaries:pedestal"
+					type: "item"
+				}
+				{
+					id: "7E155C6E0B1E19C7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dyes"
+						}
+					}
+					title: "任意染料"
+					type: "item"
+				}
+			]
+			title: "极尽鲜明之色彩"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"35BDA508CAF6F5C6"
+				"7FFF4ECDCD8F7463"
+				"24967E6220EED145"
+				"482EAB63ECE73A67"
+			]
+			description: [
+				"在祭坛同一水平面的9格之内，需要摆放些许&6餐桌&r，而后在其上使用潜行按键以方块形式放置&6盛宴&r。"
+				""
+				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
+			]
+			icon: "candlelight:oak_table"
+			id: "71A0EF612534778D"
+			rewards: [{
+				id: "3D4F1E1B451C540A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "谢肉祭的准备之二"
+			tasks: [
+				{
+					id: "48DD3F5130C58E08"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:the_carnival/table"
+						}
+					}
+					title: "任意餐桌"
+					type: "item"
+				}
+				{
+					id: "6F84D9F914ADA865"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "kaleidoscope_cookery:feasts"
+						}
+					}
+					title: "任意盛宴"
+					type: "item"
+				}
+			]
+			title: "无休无止的盛宴"
+			x: 8.5d
+			y: -3.5d
+		}
+	]
+	title: "秘闻：谢肉祭"
+}

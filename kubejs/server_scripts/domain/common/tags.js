@@ -25,8 +25,16 @@ ServerEvents.tags('item', event => {
     event.add('ftbqaa:immune/explosion', [])
     event.add('ftbqaa:immune/fire', [])
     event.add('ftbqaa:immune/cactus', [])
+
+    // 谢肉祭桌子物品标签
+    event.add('kubejs:the_carnival/table', ['kaleidoscope_cookery:table_oak', 'kaleidoscope_cookery:table_spruce', 'kaleidoscope_cookery:table_acacia', 'kaleidoscope_cookery:table_bamboo', 'kaleidoscope_cookery:table_birch', 'kaleidoscope_cookery:table_cherry', 'kaleidoscope_cookery:table_crimson', 'kaleidoscope_cookery:table_dark_oak', 'kaleidoscope_cookery:table_jungle', 'kaleidoscope_cookery:table_mangrove', 'kaleidoscope_cookery:table_warped'])
 })
 
 ServerEvents.tags('entity_type', event => {
     event.add('ars_nouveau:drygmy_blacklist', BossEntityTypeList)
+})
+
+
+ServerEvents.tags('block', event => {
+    event.add('kubejs:the_carnival/feasts', ['kaleidoscope_cookery:fondant_spider_eye', 'kaleidoscope_cookery:crystal_lamb_chop', 'kaleidoscope_cookery:blaze_lamb_chop', 'kaleidoscope_cookery:dark_cuisine', 'kaleidoscope_cookery:suspicious_stir_fry', 'kaleidoscope_cookery:slime_ball_meal', 'kaleidoscope_cookery:dongpo_pork', 'kaleidoscope_cookery:braised_fish', 'kaleidoscope_cookery:pan_seared_knight_steak', 'kaleidoscope_cookery:stargazy_pie', 'kaleidoscope_cookery:golden_salad', 'kaleidoscope_cookery:frost_lamb_chop', 'kaleidoscope_cookery:nether_style_sashimi', 'kaleidoscope_cookery:desert_style_sashimi', 'kaleidoscope_cookery:tundra_style_sashimi', 'kaleidoscope_cookery:fondant_pie', 'kaleidoscope_cookery:chorus_fried_egg', 'kaleidoscope_cookery:yakitori', 'kaleidoscope_cookery:end_style_sashimi', 'kaleidoscope_cookery:spicy_chicken', 'kaleidoscope_cookery:sweet_and_sour_ender_pearls', 'kaleidoscope_cookery:cold_style_sashimi', 'kaleidoscope_cookery:shengjian_mantou'])
 })

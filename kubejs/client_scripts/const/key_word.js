@@ -106,10 +106,35 @@ const RoseTypeHover = Text.translatable('tooltips.kubejs.hover.rose_type.0').col
         Text.translatable('tooltips.kubejs.hover.rose_type.2'),
     ]))
 
-const DefaultTypeHover = Text.translatable('tooltips.kubejs.hover.default_type.0').gray().underlined()
+const Player13TypeHover = Text.translatable('tooltips.kubejs.hover.player_13_type.0').gray().underlined()
     .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.hover.default_type.0').gray(),
-        Text.translatable('tooltips.kubejs.hover.default_type.1'),
+        Text.translatable('tooltips.kubejs.hover.player_13_type.0').gray(),
+        Text.translatable('tooltips.kubejs.hover.player_13_type.1'),
+    ]))
+const Player17TypeHover = Text.translatable('tooltips.kubejs.hover.player_17_type.0').gray().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.player_17_type.0').gray(),
+        Text.translatable('tooltips.kubejs.hover.player_17_type.1'),
+    ]))
+const Player19TypeHover = Text.translatable('tooltips.kubejs.hover.player_19_type.0').gray().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.player_19_type.0').gray(),
+        Text.translatable('tooltips.kubejs.hover.player_19_type.1'),
+    ]))
+const Player21TypeHover = Text.translatable('tooltips.kubejs.hover.player_21_type.0').gray().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.player_21_type.0').gray(),
+        Text.translatable('tooltips.kubejs.hover.player_21_type.1'),
+    ]))
+const Player25TypeHover = Text.translatable('tooltips.kubejs.hover.player_25_type.0').gray().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.player_25_type.0').gray(),
+        Text.translatable('tooltips.kubejs.hover.player_25_type.1'),
+    ]))
+const Player27TypeHover = Text.translatable('tooltips.kubejs.hover.player_27_type.0').gray().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.player_27_type.0').gray(),
+        Text.translatable('tooltips.kubejs.hover.player_27_type.1'),
     ]))
 
 const TimeStabilityHover = Text.translatable('tooltips.kubejs.hover.time_stability.0').gold().underlined()
