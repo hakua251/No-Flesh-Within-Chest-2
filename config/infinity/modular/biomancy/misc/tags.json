@@ -1,0 +1,36 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "biomancy:acid_destructible"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:allow_gas_to_pass_through"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:allow_veins_to_attach"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:decay_destructible"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:disallow_veins_to_attach"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_replaceable"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshy_fences"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:lava_destructible"
+		}
+	]
+}

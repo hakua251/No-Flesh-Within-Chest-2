@@ -4,20 +4,10 @@
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "none",
+				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "red:patheon"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-				},
-				"id": "red:swamp_pillager_mangrove"
+				"id": "red:birch_deforestation"
 			}
 		},
 		{
@@ -27,17 +17,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "red:big_oracle"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "red:jungle_deforestation"
+				"id": "red:beach_house"
 			}
 		},
 		{
@@ -68,7 +48,37 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "red:plains_oracle"
+				"id": "red:herobrine_statue"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+				},
+				"id": "red:swamp_pillager_mangrove"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "red:taiga_deforestation"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "bury",
+				"spawn_overrides": {
+				},
+				"id": "red:jungle_pyramid"
 			}
 		},
 		{
@@ -88,17 +98,27 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "red:flower_oracle"
+				"id": "red:big_oracle"
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "bury",
+				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "red:jungle_pyramid"
+				"id": "red:plains_oracle"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "red:statue2"
 			}
 		},
 		{
@@ -129,37 +149,7 @@
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
 				},
-				"id": "red:swamp_pillager"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "red:taiga_deforestation"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "red:forest_deforestation"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "red:birch_deforestation"
+				"id": "red:desert_pyramid"
 			}
 		},
 		{
@@ -169,7 +159,17 @@
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
 				},
-				"id": "red:desert_pyramid"
+				"id": "red:swamp_pillager"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+				},
+				"id": "red:patheon"
 			}
 		},
 		{
@@ -179,27 +179,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "red:beach_house"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "red:herobrine_statue"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "red:statue"
+				"id": "red:flower_oracle"
 			}
 		},
 		{
@@ -219,7 +199,27 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "red:statue2"
+				"id": "red:jungle_deforestation"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "red:statue"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "red:forest_deforestation"
 			}
 		}
 	]

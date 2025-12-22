@@ -1,0 +1,88 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "minecraft:pillager",
+								"weight": 3,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "illagerinvasion:marauder",
+								"weight": 3,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "illagerinvasion:basher",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "illagerinvasion:provoker",
+								"weight": 3,
+								"minCount": 1,
+								"maxCount": 1
+							}
+						]
+					}
+				},
+				"id": "illagerinvasion:illager_fort"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "illagerinvasion:illusioner_tower"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "illagerinvasion:firecaller_hut"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "illagerinvasion:sorcerer_hut"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "bury",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+						]
+					}
+				},
+				"id": "illagerinvasion:labyrinth"
+			}
+		}
+	]
+}

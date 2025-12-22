@@ -1,4 +1,5 @@
 // priority: 500
+// todo 可能更换生成方式
 LevelEvents.loaded('kubejs:oath', event => {
     if (AStages.serverHasStage('gen_oath', event.server)) return
     /**@type {Internal.ServerLevel} */

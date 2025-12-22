@@ -127,3 +127,5 @@ const $GateEventWaveEntitySpawned = Java.loadClass('dev.shadowsoffire.gateways.e
 
 const $DespoilLootModifier = Java.loadClass('com.github.elenterius.biomancy.loot.DespoilLootModifier')
 const $LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTable')
+
+const $PedestalBlockTile = Java.loadClass('net.mehvahdjukaar.supplementaries.common.block.tiles.PedestalBlockTile')

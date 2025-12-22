@@ -2072,11 +2072,8 @@
 			tasks: [{
 				icon: "minecraft:crafting_table"
 				id: "02513DC206781A20"
-				leaderboard: "leaderboards:total_items_crafted"
-				min: 100
-				rank: 1
 				title: "总手动合成物品数最多"
-				type: "leaderboards:rank_task"
+				type: "custom"
 			}]
 			title: "大世界计算机之后"
 			x: 22.0d
