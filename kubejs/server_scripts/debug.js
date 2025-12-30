@@ -21,7 +21,7 @@
 
 // ItemEvents.entityInteracted('stick', event => {
 //     const entity = event.target
-//     BloodLustGoal(entity)
+//     CarnivalCheckGoal(entity)
 // })
 
 

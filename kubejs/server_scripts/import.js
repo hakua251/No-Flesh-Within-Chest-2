@@ -136,3 +136,5 @@ const $ArmorStand = Java.loadClass('net.minecraft.world.entity.decoration.ArmorS
 const $InstrumentItem = Java.loadClass('immersive_melodies.item.InstrumentItem')
 const $ServerMelodyManager = Java.loadClass('immersive_melodies.resources.ServerMelodyManager')
 const $PacketSplitter = Java.loadClass('immersive_melodies.network.PacketSplitter')
+const $SignBlock = Java.loadClass('net.minecraft.world.level.block.SignBlock')
+const $SignBlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.SignBlockEntity')
