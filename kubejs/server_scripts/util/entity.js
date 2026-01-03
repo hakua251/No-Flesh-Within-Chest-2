@@ -380,3 +380,15 @@ function SummonIncarnationEntity(player, entity, lifeTime) {
     entity.potionEffects.add('startres:incarnation_life', lifeTime, 0, false, false)
     return $IncarnationHelper.setupIncarnation(entity)
 }
+
+
+/**
+ * 获取最近的玩家
+ * @param {Internal.Level} level 
+ * @param {BlockPos} pos 
+ * @param {Number} radius 
+ * @returns {Internal.ServerPlayer}
+ */
+function GetNearestPlayer(level, pos, radius) {
+    return level["getNearestPlayer(double,double,double,double,boolean)"](pos.getX(), pos.getY(), pos.getZ(), radius, false)
+}

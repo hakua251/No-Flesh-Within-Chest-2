@@ -32,15 +32,7 @@ ItemEvents.rightClicked('stick', event => {
     const level = event.level
     const server = event.server
 
-    let waveEntities = GatewayUtils.buildStandardWaveEntity('minecraft:zombie', '', new $CompoundTag(), [], true, 3)
-    let wave = new GatewayWave([waveEntities], [], [], 600, 200)
-    let rule = new GatewayRules(8, 32, true, true, false, true, false, 0, 32, 0)
-    let gatewayNormal = new GatewayNormal(GatewaySize.SMALL, Color.RED, [wave], [new GatewayStackReward('minecraft:oak_button')], [],
-        GatewaySpawnAlgorithm.OPEN_FIELD, rule, new GatewayBossEventSettings(GatewayBossEventSettingsMode.BOSS_BAR, true))
 
-    let gatewayEntity = gatewayNormal.createEntity(level, player)
-    gatewayEntity.setPos(player.getPosition(1.0))
-    gatewayEntity.spawn()
 
     // AddSkinToSlot(player, 'chest', 'burning_heart_arms')
     // SetDaySpeed(0.1)
