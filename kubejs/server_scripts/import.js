@@ -131,10 +131,3 @@ const $LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTa
 const $PedestalBlockTile = Java.loadClass('net.mehvahdjukaar.supplementaries.common.block.tiles.PedestalBlockTile')
 const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleColor')
 const $LightTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.tile.LightTile')
-
-const $ArmorStand = Java.loadClass('net.minecraft.world.entity.decoration.ArmorStand')
-const $InstrumentItem = Java.loadClass('immersive_melodies.item.InstrumentItem')
-const $ServerMelodyManager = Java.loadClass('immersive_melodies.resources.ServerMelodyManager')
-const $PacketSplitter = Java.loadClass('immersive_melodies.network.PacketSplitter')
-const $SignBlock = Java.loadClass('net.minecraft.world.level.block.SignBlock')
-const $SignBlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.SignBlockEntity')
