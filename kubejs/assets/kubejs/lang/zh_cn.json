@@ -466,7 +466,7 @@
     "tooltips.kubejs.parasite_larva.default.1": "它对你产生了依赖",
     "tooltips.kubejs.parasite_larva.alt.1": "    §6★§r 当你食用食物时，根据食物所包含的饥饿度提供给本器官成长进度，根据§6累积饱和度和成长进度的比值§r决定寄生虫的成长质量",
     "tooltips.kubejs.parasite_larva.alt.2": "    §6★§r 成长质量：%s",
-    "item.kubejs.jar_of_vacuum": "一罐真空",
+    "item.kubejs.jar_of_vacuum": "一小罐“真空”",
     "tooltips.kubejs.jar_of_vacuum.default.1": "里面“似乎”什么都没有了",
     "tooltips.kubejs.jar_of_vacuum.alt.1": "    §6★§r 如果%s存在§6食物§r类器官，则会提供 %s 点§6攻击力§r",
     "item.kubejs.mammary_gland": "乳腺",

@@ -1,0 +1,19 @@
+{
+  "type": "farm_and_charm:pot_cooking",
+  "ingredients": [
+    {
+      "tag": "forge:slimeballs"
+    }
+  ],
+  "container": {
+    "required": true,
+    "item": {
+      "item": "bakery:jar"
+    }
+  },
+  "result": {
+    "item": "kubejs:jar_of_vacuum",
+    "count": 1
+  },
+  "requiresLearning": false
+}

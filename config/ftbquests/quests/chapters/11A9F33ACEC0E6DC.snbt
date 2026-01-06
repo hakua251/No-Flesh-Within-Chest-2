@@ -66,9 +66,64 @@
 				}
 			]
 			title: "古老的烹饪技术"
-			x: 3.0d
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E01A8A10DC713E3"]
+			description: [
+				"&a史莱姆&r在罐子里逐渐干结成不可见的白色结晶。"
+				""
+				"现在，罐子里&6几乎&r什么都没有. . .正常来说是这样的。"
+			]
+			id: "43DD1C0BA90A1ACB"
+			rewards: [{
+				id: "5E748FC6EE7E3E7B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "低温慢煮"
+			tasks: [{
+				id: "46CBBACA8BC8FFC1"
+				item: {
+					Count: 1
+					id: "kubejs:jar_of_vacuum"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "一小罐“真空”"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43DD1C0BA90A1ACB"]
+			description: [
+				"通过&6生物炼金釜&r的显像加工，罐子里被隐藏的生物终于浮出水面——它似乎是一种不定形态的生物，恰似一种&6变形虫&r. . .但又似乎是因为显像液所致. . ."
+				""
+				"现在，它还只是一个&6幼体&r。您可以为它提供一个环境使其成长，虽然有些令人厌恶，但这个环境的最优选择便是&c您的胸腔&r。"
+			]
+			id: "1FA97EE58C47666D"
+			rewards: [{
+				id: "36B887E75EC8A9AE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这是什么？"
+			tasks: [{
+				id: "6BA21292CC923295"
+				item: {
+					Count: 1
+					id: "kubejs:jar_of_mystery"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
 			y: 0.0d
 		}
 	]
-	title: "秘闻：罐装神秘"
+	title: "秘闻：罐装美味"
 }

@@ -164,44 +164,44 @@ debugLevel=0
 	#Leave blank ("") to not spawn T1 loot.
 	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":1, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
 	#Default: "lightmanscurrency:coin_copper"
-	lootItemT1="lightmanscurrency:coin_copper"
+	lootItemT1=""
 	#T2 loot item.
 	#Leave blank ("") to not spawn T2 loot.
 	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":2, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
 	#Default: "lightmanscurrency:coin_iron"
-	lootItemT2="lightmanscurrency:coin_iron"
+	lootItemT2=""
 	#T3 loot item.
 	#Leave blank ("") to not spawn T3 loot.
 	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":3, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
 	#Default: "lightmanscurrency:coin_gold"
-	lootItemT3="lightmanscurrency:coin_gold"
+	lootItemT3=""
 	#T4 loot item.
 	#Leave blank ("") to not spawn T4 loot.
 	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":4, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
 	#Default: "lightmanscurrency:coin_emerald"
-	lootItemT4="lightmanscurrency:coin_emerald"
+	lootItemT4=""
 	#T5 loot item.
 	#Leave blank ("") to not spawn T5 loot.
 	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":5, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
 	#Default: "lightmanscurrency:coin_diamond"
-	lootItemT5="lightmanscurrency:coin_diamond"
+	lootItemT5=""
 	#T6 loot item.
 	#Leave blank ("") to not spawn T6 loot.
 	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":6, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
 	#Default: "lightmanscurrency:coin_netherite"
-	lootItemT6="lightmanscurrency:coin_netherite"
+	lootItemT6=""
 	#Entity Loot Settings.
 	[loot.entities]
 		#Whether coins can be dropped by entities.
 		#Default: true
-		enabled=true
+		enabled=false
 		#Whether coins can be dropped by entities that were spawned by the vanilla spawner.
 		#Default: false
 		allowSpawnedDrops=false
 		#Whether modded machines that emulate player behaviour can trigger coin drops from entities.
 		#Set to false to help prevent autmated coin farming.
 		#Default: true
-		allowFakePlayerDrops=true
+		allowFakePlayerDrops=false
 		#Entity Drop Lists. Accepts the following inputs:
 		#Entity IDs. e.g. "minecraft:cow"
 		#Entity Tags. e.g. "#minecraft:skeletons"
@@ -248,11 +248,11 @@ debugLevel=0
 	[loot.chests]
 		#Whether coins can spawn in chests.
 		#Default: true
-		enabled=true
+		enabled=false
 		#Chest Spawn Lists
 		[loot.chests.lists]
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier1" loot table.
-			T1=["minecraft:chests/underwater_ruin_small","minecraft:chests/underwater_ruin_big"]
+			T1=[]
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier2" loot table.
 			T2=[]
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier3" loot table.
