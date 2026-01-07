@@ -16,8 +16,11 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:greedy_throat').maxStackSize(1).texture('kubejs:item/organs/food/greedy_throat').tag('kubejs:food')
 
-    event.create('kubejs:jar_of_mystery').maxStackSize(1).maxDamage(10).texture('kubejs:item/organs/food/jar_of_mystery').tag('kubejs:food')
-    event.create('kubejs:parasite_larva').maxStackSize(1).maxDamage(100).texture('kubejs:item/organs/food/parasite_larva').tag('kubejs:food')
+    event.create('kubejs:worm_larva').maxStackSize(1).maxDamage(100).texture('kubejs:item/organs/food/worm_larva').tag('kubejs:food')
 
-    event.create('kubejs:jar_of_vacuum').maxStackSize(1).texture('kubejs:item/organs/food/jar_of_vacuum').tag('kubejs:food')
+    event.create('kubejs:jar_of_vacuum').maxStackSize(1).texture('kubejs:item/organs/food/jar_of_vacuum')
+    
+    event.create('kubejs:jar_of_mystery').maxStackSize(1).maxDamage(10).texture('kubejs:item/organs/food/jar_of_mystery')
+
+    event.create('kubejs:worm_of_taste').maxStackSize(1).food(food => food.hunger(1).saturation(1)).texture('kubejs:item/organs/food/worm_of_taste').tag('kubejs:food').tag('kubejs:infected')
 })

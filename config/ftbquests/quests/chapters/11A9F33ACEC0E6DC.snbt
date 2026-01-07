@@ -124,6 +124,74 @@
 			x: 5.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["1FA97EE58C47666D"]
+			description: [
+				"终于！在借用了您的&6身体循环&r后，我们得以窥见这神秘生物！"
+				""
+				"其是一种特殊生物的幼体——可以暂时将其称作&6“美味虫”&r。"
+				""
+				"该名称由来自一些来源未知的记录。其详细描述了美味虫广泛存在于各种餐具之中窃取滋味的行为特征，同时也包含了一些&6烹饪美味虫&r的食谱. . .。"
+				""
+				"美味虫的幼体无法从您的胸腔直接取出，待您食用足够多的食物之后，其会自然而然进化为成虫，脱离寄生主体。"
+			]
+			id: "3786F4EF9AB65A30"
+			rewards: [{
+				id: "4CE48D2F169A099E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它破罐而出"
+			tasks: [{
+				id: "3329CE650015AD2C"
+				item: {
+					Count: 1
+					id: "kubejs:worm_larva"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "蠕虫幼体"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3786F4EF9AB65A30"]
+			id: "19FA069801FA43D1"
+			rewards: [{
+				id: "7BD20351064EE1F0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F53EF065D8036BC"
+				item: {
+					Count: 1
+					id: "kubejs:king_of_stomach"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3786F4EF9AB65A30"]
+			id: "4BFD35B09AF6436E"
+			tasks: [{
+				id: "69AA8A29427732E0"
+				item: {
+					Count: 1
+					id: "kubejs:worm_of_taste"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
 	]
 	title: "秘闻：罐装美味"
 }
