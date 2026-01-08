@@ -159,12 +159,22 @@
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
+			description: [
+				"罕见的情况！"
+				""
+				"本来应当成长为成体美味虫的幼体竟然和&6胃器官&r发生了&6共生融合&r！"
+				""
+				"不仅这个现象具有极其高的价值，而且其产生的结果——&d大胃王&r——也具有极高的利用价值。"
+				""
+				"如果我们能够有效利用其力量，或许能颠覆之前对器官体系的基本认知！"
+			]
 			id: "19FA069801FA43D1"
 			rewards: [{
 				id: "7BD20351064EE1F0"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "培育得当"
 			tasks: [{
 				id: "3F53EF065D8036BC"
 				item: {
@@ -179,7 +189,18 @@
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
+			description: [
+				"在&a成长质量&r较低时，幼虫总是倾向于成长为美味虫。"
+				""
+				"美味虫不仅可以作为&6器官&r，根据周围的食物属性触发效果，其本身更是一种独特的食材。经过不同的&6烹饪手段&r得到的美味虫，具有各种奇特的效果。"
+			]
 			id: "4BFD35B09AF6436E"
+			rewards: [{
+				id: "442A46D7431FBD8E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "看起来并不那么美味"
 			tasks: [{
 				id: "69AA8A29427732E0"
 				item: {
@@ -189,8 +210,89 @@
 				}
 				type: "item"
 			}]
+			title: "美味虫"
 			x: 8.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["4BFD35B09AF6436E"]
+			id: "7CD591898F55BC60"
+			subtitle: "简单处理美味虫"
+			tasks: [{
+				id: "1B47E3D3DE60492F"
+				item: {
+					Count: 1
+					id: "minecraft:furnace"
+					tag: {
+						SelectedItem: -1
+					}
+				}
+				type: "item"
+			}]
+			title: "简单烹饪后的美味虫"
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["60C4DE431545D2E6"]
+			id: "07F3216A496D8A62"
+			tasks: [{
+				id: "75A5B12B51EC1CF6"
+				item: {
+					Count: 1
+					id: "kaleidoscope_cookery:millstone"
+					tag: {
+						SelectedItem: -1
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4BFD35B09AF6436E"]
+			id: "60C4DE431545D2E6"
+			tasks: [{
+				id: "5CAED7F4E000E8D6"
+				item: "farm_and_charm:roaster"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4BFD35B09AF6436E"]
+			id: "6CB6F011E7518257"
+			tasks: [{
+				id: "78409C03FEF80904"
+				item: "farm_and_charm:mincer"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6CB6F011E7518257"]
+			id: "5AA498B0084601DC"
+			tasks: [{
+				id: "5C812FBB65A272E8"
+				item: "farm_and_charm:crafting_bowl"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5AA498B0084601DC"]
+			id: "1ED3091F08285EFD"
+			tasks: [{
+				id: "42A9B9774B67C4D2"
+				item: "farm_and_charm:cooking_pot"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.5d
 		}
 	]
 	title: "秘闻：罐装美味"

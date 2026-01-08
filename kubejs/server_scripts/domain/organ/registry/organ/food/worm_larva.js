@@ -45,7 +45,7 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
         }
         // 美味虫
         let replaceItem = Item.of('kubejs:worm_of_taste')
-        SetChestCavityOrgan(customData, player.chestCavityInstance, replaceItem, organIndex, slotType, false)
+        SetChestCavityOrgan(customData, player.chestCavityInstance, replaceItem, organIndex, slotType, true)
     } else {
         organItem.setDamageValue(curDamage)
     }
