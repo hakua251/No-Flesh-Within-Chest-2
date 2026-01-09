@@ -1,0 +1,11 @@
+{
+  "type": "farm_and_charm:drying",
+  "ingredient": {
+    "item": "kubejs:worm_of_taste"
+  },
+  "recipe_type": "MEAT",
+  "result": {
+    "item": "kubejs:dried_taste_worm",
+    "count": 1
+  }
+}
