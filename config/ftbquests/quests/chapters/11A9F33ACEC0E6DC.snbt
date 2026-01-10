@@ -158,7 +158,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3786F4EF9AB65A30"]
 			description: [
 				"罕见的情况！"
 				""
@@ -184,8 +183,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.0d
+			x: 18.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
@@ -416,6 +415,56 @@
 			}]
 			x: 16.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["7466C43484204792"]
+			id: "2DFCF1B70C69B560"
+			rewards: [{
+				id: "706F765050DA4E20"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "新感悟"
+			tasks: [{
+				count: 1L
+				id: "4B110A8C33A0CF7B"
+				item: "kubejs:tasty_bread"
+				title: "品尝美味面包"
+				type: "ftbqaa:eat_item"
+			}]
+			x: 18.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["42DD41219B0D20CC"]
+			description: [
+				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				""
+				"&6——回放中"
+				"&r"
+				"&7**胃. . .请让我们品尝你的胃. . .**&r"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:parasitism_stomach"
+				tag: { }
+			}
+			id: "3CF6A52040DC32FD"
+			rewards: [{
+				id: "2608D91DC6BFF4B6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "新感悟"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:tasty_worm_soup"
+				id: "411253B210587BF5"
+				type: "ftbqaa:eat_item"
+			}]
+			title: "品尝美味虫汤"
+			x: 12.5d
+			y: 3.5d
 		}
 	]
 	title: "秘闻：罐装美味"
