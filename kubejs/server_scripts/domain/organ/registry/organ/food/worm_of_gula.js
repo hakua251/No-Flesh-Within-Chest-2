@@ -14,6 +14,7 @@ RegistryOrgan('kubejs:worm_of_gula')
 function WormOfGulaEntityTick(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
     const player = event.entity
+    if (player.age % 100 != 0) return
     const level = event.level
     if (!player.isPlayer()) return
     const foodData = player.getFoodData()

@@ -63,6 +63,7 @@
 					tag: { }
 				}
 				id: "7C235F5C7B4FC314"
+				inventoryType: "minecraft:empty"
 				title: "打开自己的胸腔"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
@@ -136,6 +137,7 @@
 				entity: "minecraft:pig"
 				icon: "simplehats:pighead"
 				id: "47FAF2FB24171CF5"
+				inventoryType: "minecraft:empty"
 				title: "打开猪的胸腔"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
@@ -215,6 +217,7 @@
 				entity: "minecraft:zombie"
 				icon: "minecraft:zombie_head"
 				id: "6598BB079F56E5D4"
+				inventoryType: "minecraft:empty"
 				title: "打开僵尸胸腔"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L

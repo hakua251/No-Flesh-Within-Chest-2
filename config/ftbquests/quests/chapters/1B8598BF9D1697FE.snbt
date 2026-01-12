@@ -3,9 +3,27 @@
 	default_quest_shape: ""
 	filename: "1B8598BF9D1697FE"
 	group: "78F99AC9360F0137"
+	icon: "kubejs:eternal_altar"
 	id: "1B8598BF9D1697FE"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["588B97AAEC0E2385"]
+		id: "2408DFE03E1133D3"
+		rewards: [{
+			id: "5B113BE309544749"
+			item: "lightmanscurrency:coin_gold"
+			type: "item"
+		}]
+		subtitle: "瞥见永恒一瞥"
+		tasks: [{
+			id: "168747A765573DD0"
+			item: "kubejs:eternal_altar"
+			type: "item"
+		}]
+		title: "永恒祭坛"
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "秘闻：六阶梯"
 }

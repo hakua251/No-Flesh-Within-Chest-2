@@ -3714,6 +3714,7 @@
 				item: "lightmanscurrency:coin_netherite"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "匠工创世创工匠"
 			tasks: [{
 				id: "15EF66640C6D96CF"

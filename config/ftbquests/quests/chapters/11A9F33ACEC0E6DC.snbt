@@ -700,6 +700,81 @@
 			x: 8.5d
 			y: -2.5d
 		}
+		{
+			dependencies: [
+				"19FA069801FA43D1"
+				"7F73D4C9635221D9"
+				"3D71247FDEF412F0"
+				"681B099458A589BD"
+				"7B97DAEAF7EC0C6B"
+			]
+			description: [
+				"&7**你的味道不错**&r"
+				""
+				"&7**或许，将那位寄宿在你的身上是一个好的选择**&r"
+				""
+				"&7**渴望力量的人啊. . .为了你所寻求的滋味，献上你的全部吧。**&r"
+				"{@pagebreak}"
+				"我和您的通讯似乎被&5劫持&r了，不过无需担心，只需要新开一个分页，就不会对我们产生任何影响。"
+				""
+				"经分析，这应该是与之前的数据来源相同。其暗示了一个&c特殊的器官&r。如若能够完成其要求，或许能够得到意料之外的收获。"
+				""
+				"但我并不知晓这会引领向什么，也不知道对方&6为恶为善&r，日志中也没有相关信息的记载，但我会尽可能帮助您以避免类似进度锁定之类的事情发生。"
+				""
+				"&6请您多加小心。&r"
+			]
+			id: "7F02067DAA546C55"
+			min_required_dependencies: 3
+			rewards: [{
+				id: "07F3FF9ABBFEF736"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "现在，我教授你方法"
+			tasks: [{
+				id: "07E4B35BE91A45CE"
+				item: {
+					Count: 1
+					id: "kubejs:worm_of_gula"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "贪婪蠕虫"
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7F02067DAA546C55"]
+			description: [
+				"&7**味道不错，已经很久没有品尝到如此滋味. . .**&r"
+				""
+				"&7**剩下的. . .你可以将其理解为我们的残羹剩饭. . .也可以理解成&5祂&7的实际模样. . .**&r"
+				""
+				"&7**那么就此别过，期待下一次美餐。**&r"
+			]
+			id: "2227580EB38F9126"
+			invisible: true
+			rewards: [{
+				id: "031980599D82D0C5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "这是我们的谢礼"
+			tasks: [{
+				entity: "minecraft:empty"
+				icon: "kubejs:gula_injection"
+				id: "1A9684B086ED2608"
+				inventoryType: "kubejs:cc_inventory_types/gula"
+				title: "开启暴食胸腔"
+				type: "chestcavity:open_chest_cavity_task"
+				value: 1L
+			}]
+			title: "&6庆贺吧！此乃暴食胸腔！&r"
+			x: 7.5d
+			y: -6.0d
+		}
 	]
 	title: "秘闻：罐装美味"
 }
