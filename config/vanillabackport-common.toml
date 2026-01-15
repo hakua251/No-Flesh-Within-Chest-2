@@ -33,9 +33,9 @@
 
 ["Bundles of Bravery"]
 	#toggle the updated controls and UI for bundles
-	has_updated_bundles = true
+	has_updated_bundles = false
 	#allow bundles to generate in village chests
-	bundles_on_villages = true
+	bundles_on_villages = false
 
 ["Spring to Life"]
 	#allow bushes to generate in the overworld
