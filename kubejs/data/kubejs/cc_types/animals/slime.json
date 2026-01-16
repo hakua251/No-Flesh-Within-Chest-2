@@ -23,5 +23,5 @@
     {"id": "chestcavity:detoxification","value": "1"},
     {"id": "chestcavity:filtration","value": "1"}
   ],
-  "inventoryType": "kubejs:cc_inventory_types/small_terra.json"
+  "inventoryType": "kubejs:cc_inventory_types/small_terra"
 }

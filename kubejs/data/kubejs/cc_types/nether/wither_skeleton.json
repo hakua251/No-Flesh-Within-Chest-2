@@ -17,5 +17,5 @@
     {"item": "chestcavity:withered_rib","position": 14}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_undead.json"
+  "inventoryType": "kubejs:cc_inventory_types/small_undead"
 }

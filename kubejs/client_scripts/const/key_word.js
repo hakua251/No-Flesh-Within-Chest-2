@@ -127,10 +127,10 @@ const RoseTypeHover = Text.translatable('tooltips.kubejs.hover.rose_type.0').col
         Text.translatable('tooltips.kubejs.hover.rose_type.2'),
     ]))
 
-const Player13TypeHover = Text.translatable('tooltips.kubejs.hover.player_13_type.0').gray().underlined()
+const Player13TypeHover = Text.translatable('tooltips.kubejs.hover.player_17_type.0').gray().underlined()
     .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.hover.player_13_type.0').gray(),
-        Text.translatable('tooltips.kubejs.hover.player_13_type.1'),
+        Text.translatable('tooltips.kubejs.hover.player_17_type.0').gray(),
+        Text.translatable('tooltips.kubejs.hover.player_17_type.1'),
     ]))
 const Player17TypeHover = Text.translatable('tooltips.kubejs.hover.player_17_type.0').gray().underlined()
     .hover(HoverTextList([

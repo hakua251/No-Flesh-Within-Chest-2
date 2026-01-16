@@ -1,53 +1,69 @@
 {
   "defaultChestCavity": [
     {
-      "item": "chestcavity:muscle",
+      "item": "chestcavity:rib",
       "position": 0
     },
     {
-      "item": "chestcavity:rib",
+      "item": "chestcavity:lung",
       "position": 1
     },
     {
-      "item": "chestcavity:appendix",
-      "position": 2
-    },
-    {
-      "item": "chestcavity:lung",
+      "item": "chestcavity:heart",
       "position": 3
     },
     {
-      "item": "chestcavity:heart",
+      "item": "chestcavity:lung",
       "position": 4
     },
     {
-      "item": "chestcavity:lung",
+      "item": "chestcavity:rib",
       "position": 5
     },
     {
-      "item": "chestcavity:rib",
-      "position": 7
-    },
-    {
-      "item": "chestcavity:muscle",
-      "position": 8
-    },
-    {
-      "item": "chestcavity:muscle",
-      "position": 9
-    },
-    {
-      "item": "chestcavity:rib",
-      "position": 10
+      "item": "chestcavity:appendix",
+      "position": 6
     },
     {
       "item": "chestcavity:spleen",
+      "position": 7
+    },
+    {
+      "item": "chestcavity:spine",
+      "position": 8
+    },
+    {
+      "item": "chestcavity:stomach",
+      "position": 9
+    },
+    {
+      "item": "chestcavity:liver",
+      "position": 10
+    },
+    {
+      "item": "chestcavity:muscle",
       "position": 11
     },
     {
-      "item": "chestcavity:kidney",
+      "item": "chestcavity:intestine",
       "position": 12
+    },
+    {
+      "item": "chestcavity:kidney",
+      "position": 13
+    },
+    {
+      "item": "chestcavity:kidney",
+      "position": 14
+    },
+    {
+      "item": "chestcavity:intestine",
+      "position": 15
+    },
+    {
+      "item": "chestcavity:muscle",
+      "position": 16
     }
   ],
-  "inventoryType": "kubejs:cc_inventory_types/player_13.json"
+  "inventoryType": "kubejs:cc_inventory_types/player_17"
 }

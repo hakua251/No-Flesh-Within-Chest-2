@@ -1,9 +1,9 @@
 // priority: 800
-ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:player_13_injection')
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:player_17_injection')
     .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
     .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
-    .addDefault(Text.translatable('tooltips.kubejs.player_13_injection.default.1').gray())
-    .addShift(Text.translatable('tooltips.kubejs.player_13_injection.shift.1', ChestcavityTypeHover, Player13TypeHover))
+    .addDefault(Text.translatable('tooltips.kubejs.player_17_injection.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.player_17_injection.shift.1', ChestcavityTypeHover, Player13TypeHover))
 )
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:player_21_injection')
     .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))

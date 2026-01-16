@@ -1,3 +1,4 @@
+// priority: 1000
 ServerEvents.recipes(event => {
     const { tconstruct } = event.recipes
     //黑钢（灾变）

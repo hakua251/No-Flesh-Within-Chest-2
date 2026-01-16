@@ -37,7 +37,7 @@ StartupEvents.registry('item', event => {
     RegistryChestCavityInjection(event, 'functional_entity', 'kubejs:cc_inventory_types/functional_entity')
     RegistryChestCavityInjection(event, 'gula', 'kubejs:cc_inventory_types/gula')
     RegistryChestCavityInjection(event, 'rose', 'kubejs:cc_inventory_types/rose')
-    RegistryChestCavityInjection(event, 'player_13', 'kubejs:cc_inventory_types/player_13')
+    RegistryChestCavityInjection(event, 'player_17', 'kubejs:cc_inventory_types/player_17')
     RegistryChestCavityInjection(event, 'player_21', 'kubejs:cc_inventory_types/player_21')
     RegistryChestCavityInjection(event, 'player_25', 'kubejs:cc_inventory_types/player_25')
     RegistryChestCavityInjection(event, 'player_27', 'kubejs:cc_inventory_types/player_27')

@@ -20,5 +20,5 @@
     {"item": "chestcavity:kidney","position": 18}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/medium_terra.json"
+  "inventoryType": "kubejs:cc_inventory_types/medium_terra"
 }

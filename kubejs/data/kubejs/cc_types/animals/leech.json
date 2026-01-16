@@ -17,5 +17,5 @@
     {"item": "chestcavity:insect_intestine","position": 14}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_terra.json"
+  "inventoryType": "kubejs:cc_inventory_types/small_terra"
 }

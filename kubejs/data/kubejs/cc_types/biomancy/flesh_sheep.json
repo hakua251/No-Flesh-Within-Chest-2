@@ -17,5 +17,5 @@
     {"item": "kubejs:intestine_template","position": 14}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_vita.json"
+  "inventoryType": "kubejs:cc_inventory_types/small_vita"
 }

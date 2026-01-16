@@ -16,5 +16,5 @@
     {"item": "chestcavity:ender_muscle","position": 14}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_ender.json"
+  "inventoryType": "kubejs:cc_inventory_types/small_ender"
 }

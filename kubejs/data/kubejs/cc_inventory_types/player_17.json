@@ -2,6 +2,8 @@
   "slotDefinitions": [
     {"x": 16, "y": 24},
     {"x": 34, "y": 24},
+    {"x": 70, "y": 24},
+    {"x": 106, "y": 24},
     {"x": 142, "y": 24},
     {"x": 160, "y": 24},
     {"x": 34, "y": 42},
@@ -11,10 +13,12 @@
     {"x": 142, "y": 42},
     {"x": 16, "y": 60},
     {"x": 34, "y": 60},
+    {"x": 70, "y": 60},
+    {"x": 106, "y": 60},
     {"x": 142, "y": 60},
     {"x": 160, "y": 60}
   ],
-  "backgroundTexture": "kubejs:textures/gui/chest_cavity/player_13.png",
+  "backgroundTexture": "kubejs:textures/gui/chest_cavity/player_17.png",
   "playerInventoryPosition": {
     "x": 8,
     "y": 6

@@ -11,5 +11,5 @@
     {"item":"chestcavity:golem_plating","position": 8}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/medium_golem.json"
+  "inventoryType": "kubejs:cc_inventory_types/medium_golem"
 }

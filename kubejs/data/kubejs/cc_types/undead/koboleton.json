@@ -18,5 +18,5 @@
 
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_undead.json"
+  "inventoryType": "kubejs:cc_inventory_types/small_undead"
 }

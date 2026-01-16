@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 1000
 ServerEvents.recipes(event => {
     const { tconstruct } = event.recipes
     //无流体物品
