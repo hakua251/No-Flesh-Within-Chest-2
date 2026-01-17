@@ -7,12 +7,41 @@
  */
 function HadSetAnyWardrobeSkin(entity, type) {
     let wardrobe = entity.getWardrobe()
-    return wardrobe.getFreeSize(type) < wardrobe.getMaximumSize(type)
+    for (let i = 0; i < wardrobe.getUnlockedSize(type); i++) {
+        let curItem = wardrobe.getItem(type, i)
+        if (curItem && !curItem.isEmpty()) return true
+    }
+    return false
 }
 
+/**
+ * 
+ * @param {Internal.Entity} entity 
+ * @param {string} type 
+ * @param {string} skin 
+ */
+function OrganSkinAdd(entity, type, skin) {
+    if (!entity.isPlayer()) return
+    if (!HadSetAnyWardrobeSkin(entity, type)) {
+        AddSkinToSlot(entity, type, skin)
+    }
+}
 
 /**
- * 判断是否在对应槽位已经有皮肤了
+ * 
+ * @param {Internal.Entity} entity 
+ * @param {string} type 
+ * @param {string} skin 
+ */
+function OrganSkinRemove(entity, type, skin) {
+    if (!entity.isPlayer()) return
+    if (HadSetAnyWardrobeSkin(entity, type)) {
+        RemoveSkinFromSlot(entity, type, skin)
+    }
+}
+
+/**
+ * 向某个生物的某个位置添加皮肤
  * @param {Internal.Entity} entity 
  * @param {string} type 
  * @param {string} skin 
@@ -34,7 +63,7 @@ function AddSkinToSlot(entity, type, skin) {
 }
 
 /**
- * 
+ * 从某个生物的某个位置移除皮肤
  * @param {Internal.Entity} entity 
  * @param {string} type 
  * @param {string} skin 
@@ -44,10 +73,13 @@ function RemoveSkinFromSlot(entity, type, skin) {
     let wardrobe = entity.getWardrobe()
     for (let i = 0; i < wardrobe.getUnlockedSize(type); i++) {
         let curItem = wardrobe.getItem(type, i)
-        if (curItem && wardrobe.loadSkinByItem(curItem).getIdentifier() == skin) {
-            wardrobe.setItem(type, i, Item.empty)
-            wardrobe.broadcast()
-            return true
+        if (curItem && !curItem.isEmpty()) {
+            let itemSkin = wardrobe.loadSkinByItem(curItem)
+            if (itemSkin && itemSkin.getIdentifier() == skin) {
+                wardrobe.setItem(type, i, Item.empty)
+                wardrobe.broadcast()
+                return true
+            }
         }
     }
     return false

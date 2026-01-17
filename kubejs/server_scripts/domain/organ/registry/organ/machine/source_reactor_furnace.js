@@ -28,7 +28,3 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:source_reactor_furnace')
         .addOnlyStrategy('entity_tick', SourceReactorFurnaceEntityTick)
 )
-
-FTBTeamsEvents.playerJoinedParty(event => {
-    
-})

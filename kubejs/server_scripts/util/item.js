@@ -85,3 +85,22 @@ function SourceJarItemAddSource(sourceJarItem, count) {
     blockEntityNbt.putInt('source', Math.min(sourceCount + count, SourceJarMax))
     sourceJarItem.setNbt(nbt)
 }
+
+/**
+ * 
+ * @param {Internal.ItemStack} sourceJarItem 
+ * @param {number} count 
+ * @returns {boolean}
+ */
+function SourceJarItemConsumeSource(sourceJarItem, count) {
+    if (!sourceJarItem.hasNBT()) return false
+    let nbt = sourceJarItem.getNbt()
+    if (!nbt.contains('BlockEntityTag')) return false
+    let blockEntityNbt = nbt.getCompound('BlockEntityTag')
+    if (!blockEntityNbt.contains('source')) return false
+    let sourceCount = blockEntityNbt.getInt('source')
+    if (sourceCount < count) return false
+    blockEntityNbt.putInt('source', sourceCount - count)
+    sourceJarItem.setNbt(nbt)
+    return true
+}

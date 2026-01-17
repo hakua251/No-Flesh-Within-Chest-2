@@ -11,7 +11,6 @@ RegistryOrgan('kubejs:soul_cage')
  * @param {string} slotType
  */
 function SoulCageEntityKill(customData, event, organItem, organIndex, slotType) {
-    /**@type {Internal.LivingEntity} */
     let damageValue = organItem.getDamageValue()
     if (damageValue == 0) return
     const sourceEntity = event.source.actual

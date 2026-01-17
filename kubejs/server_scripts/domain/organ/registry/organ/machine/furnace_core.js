@@ -115,6 +115,7 @@ function FurnaceCoreTakeOff(customData, event, organItem, organIndex, slotType) 
     if (entity instanceof $ServerPlayer) {
         RemoveOrganEffect(chestCavity, 'kubejs:furnace_core')
     }
+    OrganSkinRemove(entity, 'chest', 'burning_heart_arms')
 }
 
 /**
@@ -130,6 +131,7 @@ function FurnaceCoreTakeOn(customData, event, organItem, organIndex, slotType) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
+    OrganSkinAdd(entity, 'chest', 'burning_heart_arms')
 }
 
 
@@ -241,6 +243,7 @@ function BurningHeartTakeOff(customData, event, organItem, organIndex, slotType)
     if (entity instanceof $ServerPlayer) {
         RemoveOrganEffect(chestCavity, 'kubejs:burning_heart')
     }
+    OrganSkinRemove(entity, 'chest', 'burning_heart_arms')
 }
 
 /**
@@ -256,6 +259,7 @@ function BurningHeartTakeOn(customData, event, organItem, organIndex, slotType) 
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
+    OrganSkinAdd(entity, 'chest', 'burning_heart_arms')
 }
 
 

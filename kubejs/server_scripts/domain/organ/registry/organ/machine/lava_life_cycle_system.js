@@ -45,7 +45,6 @@ function LavaLifeCycleSystemEntityTick(customData, event, organItem, organIndex,
             }
         }
     }
-
     entity.setAbsorptionAmount(curAbsorptionAmount)
 }
 
