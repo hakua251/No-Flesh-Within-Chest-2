@@ -17,3 +17,12 @@
  * @typedef {Object} AirdropDeathEventCustomData
  * @property {Internal.List<Internal.ItemStack>} lootList
  */
+
+
+/**
+ * @typedef {Object} GatewaysCustomData
+ * @property {Internal.List<Internal.Reward>} rewardList
+ * @property {number} levelIndicator
+ * @property {number} chaosIndicator
+ * @property {number} typeIndicator
+ */

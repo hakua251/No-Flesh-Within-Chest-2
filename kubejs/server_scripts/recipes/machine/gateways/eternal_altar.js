@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
             const chaosIndicator = Math.round(data.getFloat('chaos_indicator'))
             const typeIndicator = Math.round(data.getFloat('type_indicator'))
             const extractantItem = machine.getItemStored('input_extractant')
+            const auxiliaryItem = machine.getItemStored('input_auxiliary')
 
             let gatewayColor = GatewayColorMapping.getFirstValue(typeIndicator)
             let gatewaySize = GatewaySizeMapping.getFirstValue(levelIndicator)
@@ -57,10 +58,8 @@ ServerEvents.recipes(event => {
                 gatewaySize ? gatewaySize : GatewaySize.SMALL,
                 gatewayColor ? gatewayColor : Color.RED,
                 waves,
-                EternalAltarGatewayReward(machine),
-                [
-                    EternalAltarGatewayFailure(machine)
-                ],
+                EternalAltarGatewayReward(machine, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
+                EternalAltarGatewayFailure(machine, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
                 GatewaySpawnAlgorithm.OPEN_FIELD,
                 GatewayDefaultRule,
                 GatewayDefaultBossEventSettings)
@@ -81,19 +80,3 @@ ServerEvents.recipes(event => {
         .requireItemTag('#kubejs:gateways_awake_stone', 1, 'input_awake')
         .resetOnError()
 })
-
-
-
-/**
- * 
- * @param {CustomMachine} machine 
- */
-function EternalAltarGatewayFailure(machine) {
-    let data = machine.getData()
-    let pLevelIndicator = data.getFloat('level_indicator')
-    let levelIndicator = RoundFix(Math.max(pLevelIndicator * 0.9, 0), 2)
-    data.remove('levelModifier')
-    return new GatewayFunctionFailure((ctx) => {
-        if (data) data.putFloat('level_indicator', levelIndicator)
-    })
-}
