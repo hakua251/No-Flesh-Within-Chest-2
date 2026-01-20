@@ -1502,6 +1502,7 @@
 		}
 		{
 			dependencies: ["3E538F7B30265340"]
+			description: ["&7某种联系似乎存在于这之中. . .&r"]
 			id: "34FEB80CC16A8163"
 			rewards: [{
 				id: "4E099DBFCEE89AE9"
@@ -1519,6 +1520,7 @@
 		}
 		{
 			dependencies: ["794800AE680288F1"]
+			description: ["&7某种联系似乎存在于这之中. . .&r"]
 			id: "5E77E1C50CC8353C"
 			rewards: [{
 				id: "7A32AAC1B9B193B1"
@@ -1536,6 +1538,7 @@
 		}
 		{
 			dependencies: ["56E5B7D978622ABB"]
+			description: ["&7某种联系似乎存在于这之中. . .&r"]
 			id: "66786E38093D056A"
 			rewards: [{
 				id: "2EA84C7FB6A8904B"
@@ -1553,6 +1556,7 @@
 		}
 		{
 			dependencies: ["44C94FE229AA4E1B"]
+			description: ["&7某种联系似乎存在于这之中. . .&r"]
 			id: "54D8F5829B0839BF"
 			rewards: [{
 				id: "22E64C50ACC24C8D"
@@ -1570,6 +1574,7 @@
 		}
 		{
 			dependencies: ["1FF0FAA4AB49D901"]
+			description: ["&7某种联系似乎存在于这之中. . .&r"]
 			id: "06D170C6436A82AE"
 			rewards: [{
 				id: "4DED434723688E09"
@@ -1590,6 +1595,7 @@
 				"7D765D69D05EF9E6"
 				"56C5CC3C18FB5AC0"
 			]
+			description: ["&7某种联系似乎存在于这之中. . .&r"]
 			id: "233B5C6E50EACA0F"
 			rewards: [{
 				id: "53C86EACD0A67F2D"

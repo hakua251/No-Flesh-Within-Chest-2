@@ -135,69 +135,6 @@ ServerEvents.recipes(event => {
 
         .resetOnError()
 
-
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
-        .requireFunctionEachTick(ctx => {
-            const machine = ctx.getMachine()
-            const data = machine.getData()
-            const tile = ctx.getTile()
-            const block = ctx.getBlock()
-            const level = block.getLevel()
-            let needUpdate = false
-            let resourceBar = data.getInt('resource_bar')
-            let ccItem = machine.getItemStored('input_2')
-            if (ccItem.is('create:chromatic_compound')) {
-                let ccCount = ccItem ? ccItem.getCount() : 0
-                resourceBar = resourceBar + ccCount * 1024
-                machine.setItemStored('input_2', Item.empty)
-                needUpdate = true
-            }
-            if (ctx.remainingTime % 20 == 0) {
-                resourceBar = Math.floor(resourceBar * 0.99)
-                needUpdate = true
-            }
-            if (needUpdate) {
-                data.putInt('resource_bar', Math.min(resourceBar, 1000000))
-                tile.setPowerLevel(Math.floor(resourceBar / 1000000 * 16))
-                level.updateNeighborsAt(block.getPos(), block.blockState.getBlock())
-            }
-
-            return ctx.success()
-        })
-        .requireFunctionOnStart(ctx => {
-            const machine = ctx.getMachine()
-            const data = machine.getData()
-            const tile = ctx.getTile()
-            const block = ctx.getBlock()
-            const level = block.getLevel()
-            tile.setPowerLevel(0)
-            level.updateNeighborsAt(block.getPos(), block.blockState.getBlock())
-            data.putInt('resource_bar', 8192)
-            return ctx.success()
-        })
-        .requireSU(128)
-        .requireFunctionOnEnd(ctx => {
-            const machine = ctx.getMachine()
-            const data = machine.getData()
-            const tile = ctx.getTile()
-            const block = ctx.getBlock()
-            const level = block.getLevel()
-            let resourceBar = data.getInt('resource_bar')
-            data.putInt('resource_bar', 0)
-            tile.setPowerLevel(0)
-            level.updateNeighborsAt(block.getPos(), block.blockState.getBlock())
-            if (Math.random() < Math.pow((resourceBar > 500000) ? (2 - resourceBar / 500000) : (resourceBar / 500000), 2)) {
-                return ctx.success()
-            }
-            return ctx.error('Error')
-        })
-        .requireItem(Item.of('kubejs:reverse_causality_chip'), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound'), 'input_2')
-        .requireItem(Item.of('createprism:brass_glass_casing'), 'input_1')
-        .produceItem(Item.of('kubejs:void_diffraction_vault', 1), 'output_1')
-        .resetOnError()
-
-
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireFunctionEachTick(ctx => {
             const machine = ctx.getMachine()

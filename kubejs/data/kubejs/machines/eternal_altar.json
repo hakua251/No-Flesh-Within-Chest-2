@@ -62,7 +62,7 @@
       "y": 0,
       "texture_empty": "kubejs:textures/gui/eternal_altar/processor_empty.png",
       "texture_filled": "kubejs:textures/gui/eternal_altar/processor_full.png",
-      "direction": "top",
+      "direction": "bottom",
       "hide_jei": true
     },
     {

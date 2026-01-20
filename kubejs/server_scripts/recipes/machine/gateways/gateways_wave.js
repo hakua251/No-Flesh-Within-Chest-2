@@ -6,13 +6,13 @@ const GatewayDefaultRule = new GatewayRules(8, 32, true, true, false, true, fals
 const GatewayAwakeStoneLevelMap = {
     'kubejs:gateways_awake_stone_1': 0,
     'kubejs:gateways_awake_stone_2': 1,
-    'kubejs:gateways_awake_stone_3': 3,
-    'kubejs:gateways_awake_stone_4': 5,
-    'kubejs:gateways_awake_stone_5': -1,
-    'kubejs:gateways_awake_stone_6': -3,
-    'kubejs:gateways_awake_stone_7': -5,
-    'kubejs:gateways_awake_stone_8': 20,
-    'kubejs:gateways_awake_stone_9': -20,
+    'kubejs:gateways_awake_stone_3': 2,
+    'kubejs:gateways_awake_stone_4': 3,
+    'kubejs:gateways_awake_stone_5': 5,
+    'kubejs:gateways_awake_stone_6': -1,
+    'kubejs:gateways_awake_stone_7': -2,
+    'kubejs:gateways_awake_stone_8': -3,
+    'kubejs:gateways_awake_stone_9': -5,
 }
 
 const GatewayAuxiliaryMaterialTypeMap = {
@@ -35,7 +35,7 @@ const GatewayAuxiliaryMaterialChaosMap = {
     'kubejs:gateways_auxiliary_material_6': 1,
     'kubejs:gateways_auxiliary_material_7': 2,
     'kubejs:gateways_auxiliary_material_8': 5,
-    'kubejs:gateways_auxiliary_material_9': 10,
+    'kubejs:gateways_auxiliary_material_9': -100,
 }
 
 const GatewayColorMapping = new PiecewiseMappingModel().addPiece(0, 10, Color.GREEN).addPiece(10, 20, Color.YELLOW).addPiece(20, 30, Color.RED).addPiece(30, 40, Color.LIGHT_PURPLE).addPiece(40, 50, Color.DARK_PURPLE).addPiece(50, 60, Color.AQUA)

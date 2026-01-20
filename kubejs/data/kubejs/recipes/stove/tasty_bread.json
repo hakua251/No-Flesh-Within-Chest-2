@@ -2,14 +2,17 @@
   "type": "farm_and_charm:stove",
   "ingredients": [
     {
-      "tag": "farm_and_charm:cabbage"
+      "tag": "forge:eggs"
     },
     {
-      "item": "farm_and_charm:lamb_ham"
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "kubejs:tasty_dough"
     }
   ],
   "result": {
-    "item": "farm_and_charm:baked_lamb_ham",
+    "item": "kubejs:tasty_bread",
     "count": 1
   },
   "experience": 0.5,

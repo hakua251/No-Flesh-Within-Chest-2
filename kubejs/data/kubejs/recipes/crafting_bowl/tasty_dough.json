@@ -1,0 +1,21 @@
+{
+  "type": "farm_and_charm:crafting_bowl",
+  "ingredients": [
+    {
+      "item": "kubejs:taste_worm_powder"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "tag": "forge:eggs"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "kubejs:tasty_dough",
+    "count": 1
+  }
+}

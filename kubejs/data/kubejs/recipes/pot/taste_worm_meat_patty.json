@@ -1,0 +1,19 @@
+{
+  "type": "kaleidoscope_cookery:pot",
+  "ingredients": [
+    {
+      "tag": "farm_and_charm:flour"
+    },
+    {
+      "item": "kubejs:taste_worm_meat_filling"
+    },
+    {
+      "item": "kaleidoscope_cookery:oil"
+    }
+  ],
+  "result": {
+    "item": "kubejs:taste_worm_meat_patty"
+  },
+  "stir_fry_count": 6,
+  "time": 400
+}

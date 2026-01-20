@@ -39,7 +39,7 @@ function EternalAltarGatewayReward(machine, levelIndicator, chaosIndicator, type
     GatewayExtractantStrategy.run([extractantItem.getId()], [machine, extractantItem, auxiliaryItem], customData)
     DamageItem(extractantItem)
 
-    rewardList.push(...customData.rewardList)
+    rewardList.push(customData.rewardList)
     return rewardList
 }
 
@@ -61,5 +61,6 @@ RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_1', Extra
  * @param {Internal.ItemStack} auxiliaryItem 
  */
 function ExtractantMaterialStrategy(customData, machine, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem) {
+    
     customData.rewardList.push(new GatewayStackListReward([]))
 }

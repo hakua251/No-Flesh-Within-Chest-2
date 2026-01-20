@@ -1,0 +1,10 @@
+{
+  "type": "kaleidoscope_cookery:millstone",
+  "ingredient": {
+    "item": "kubejs:dried_taste_worm"
+  },
+  "result": {
+    "count": 3,
+    "item": "kubejs:taste_worm_powder"
+  }
+}

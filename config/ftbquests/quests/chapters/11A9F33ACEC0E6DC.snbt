@@ -348,7 +348,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["4BFD35B09AF6436E"]
+			dependencies: ["7F29416AEF85DA75"]
 			id: "42DD41219B0D20CC"
 			rewards: [{
 				id: "76A3EF94F25D7B29"
@@ -360,8 +360,8 @@
 				item: "kubejs:tasty_worm_soup"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 3.5d
+			x: 14.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7F29416AEF85DA75"]
@@ -581,7 +581,7 @@
 				item: "kubejs:tasty_hamburg"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 16.0d
 			y: 0.5d
 		}
 		{

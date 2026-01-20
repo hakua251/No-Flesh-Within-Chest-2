@@ -1,0 +1,39 @@
+{
+  "type": "kaleidoscope_cookery:stockpot",
+  "carrier": {
+    "item": "minecraft:bowl"
+  },
+  "cooking_bubble_color": 16772291,
+  "cooking_texture": "kaleidoscope_cookery:stockpot/default_cooking",
+  "finished_bubble_color": 16034443,
+  "finished_texture": "kaleidoscope_cookery:stockpot/default_finished",
+  "ingredients": [
+    {
+      "item": "kubejs:worm_of_taste"
+    },
+    {
+      "item": "kubejs:taste_worm_powder"
+    },
+    {
+      "tag": "farm_and_charm:tomato"
+    },
+    {
+      "tag": "farm_and_charm:onion"
+    },
+    {
+      "item": "kaleidoscope_cookery:red_chili"
+    },
+    {
+      "item": "kaleidoscope_cookery:caterpillar"
+    },
+    {
+      "item": "minecraft:poisonous_potato"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "kubejs:tasty_worm_soup"
+  },
+  "soup_base": "minecraft:water",
+  "time": 1200
+}
