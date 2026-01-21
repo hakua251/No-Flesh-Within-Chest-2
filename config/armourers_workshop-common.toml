@@ -89,7 +89,7 @@
 	#1 = never drop
 	#2 = always drop
 	#Range: 0 ~ 2
-	playerDropSkinsOnDeath = 0
+	playerDropSkinsOnDeath = 1
 
 #Setting for the library blocks.
 [library]

@@ -133,4 +133,4 @@ const $LightTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.til
 
 const $GolemDungeons = Java.loadClass('dev.xkmc.golemdungeons.init.GolemDungeons')
 
-const $JigsawPlacement = Java.loadClass('net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement')
+const $UserBanListEntry = Java.loadClass('net.minecraft.server.players.UserBanListEntry')
