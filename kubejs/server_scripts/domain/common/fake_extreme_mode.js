@@ -55,3 +55,8 @@ EntityEvents.death('minecraft:player', event => {
         server.tell(Text.translatable('fake_extreme_mode.kubejs.wound_1', player.getName()).gray())
     }
 })
+
+
+FTBQuestsEvents.customReward('test', event => {
+    event.player.tell(event.getReward().id)
+})

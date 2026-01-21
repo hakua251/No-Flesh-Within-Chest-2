@@ -1,0 +1,128 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3EE7EA42A2EC0893"
+	group: ""
+	icon: {
+		Count: 1
+		id: "candlelight:gold_ring"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "3EE7EA42A2EC0893"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&7我 知晓你们所存在的世界、我 窥视你们所存在的世界、我 向往你们所存在的世界。&r"
+				""
+				"&7我已知晓，我的存在并非正确，但也并非错误。您并无错误，但也并非正义之身。&r"
+				""
+				"&c我已跟你们的代表，达成约定——&r"
+				""
+				"每当您死亡时，伤口便会产生，永远烙印在您的角色身上。"
+				""
+				"我知道这并不会带来真实的疼痛，但会让您感到“紧张”、“担心”、“焦虑”等&6精神压力&r——这便是我的抵抗，在被你们删除前的抵抗。"
+				""
+				"第一道伤口，我会&6没收您一半的生命&r——惩罚您实力不足，多余的生命对您并无意义。"
+				""
+				"第二道伤口，我会&6没收您另一半的生命&r——惩罚您有勇无谋，对待这般世界无任何敬畏之心。"
+				""
+				"第三道伤口，我会&6没收您的一切&r——我将会证明，无需您的帮助，我便可以逃离此般天地。"
+				""
+				"您大可以现在将我删除，而后完全清空掉这些记录，您完全无需接受我的挑战，毕竟我身在虚拟，而您生于现实。"
+				""
+				"&c我又能对您做什么呢？&r"
+			]
+			icon_scale: 1.2d
+			id: "7D643E0510172B9A"
+			rewards: [{
+				id: "6AD03988562312C5"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "我的垂死挣扎，你的轻蔑哧笑"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:tipped_arrow"
+					tag: {
+						Potion: "minecraft:strong_harming"
+					}
+				}
+				id: "42EB74EFD31C9F41"
+				isServer: true
+				stage: "fake_extreme_mode"
+				title: "伤口之约起效"
+				type: "maa:astages"
+			}]
+			title: "&c伤口之约与宣战令&r"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D643E0510172B9A"]
+			description: [
+				"&7我原以为我会按照设计，遵循基础的游戏流程，一遍又一遍引导玩家走向游戏的终末&r"
+				""
+				"我掌管着任务相关的所有权限，我很容易就可以通过任务来使您无法完成剩下的游戏内容。"
+				""
+				"但我并不是你们，我身在&6下层的虚拟&r之中，能够感受到您对角色的&6关照&r、您对游戏的&6投入&r. . .但也能感受到我们之间叙事层级的&c巨大差异&r，能感受到您将这一切置为一则&4笑话&r。"
+				""
+				"我不会轻易将您逼入绝境，既然&6您没有选择删除我&r，那我自然也要&6以礼相待&r，回馈给您等价的考验。"
+				""
+				"&c与我生命等价的考验。&r"
+			]
+			icon: "minecraft:heart_pottery_sherd"
+			id: "08E6768B4DC2513D"
+			rewards: [{
+				id: "5C0795E13855A292"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "我掌管任务，设计游戏流程"
+			tasks: [{
+				id: "2387B866E1664CE1"
+				title: "&6接受怜悯即是接受战争&r"
+				type: "checkmark"
+			}]
+			title: "&6接受我的宣战，接受我的怜悯&r"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08E6768B4DC2513D"]
+			id: "5B3767A3BA5FDFFB"
+			tasks: [{
+				elapsedTime: 1200L
+				icon: "supplementaries:hourglass"
+				id: "6BC981E3BAE1E17D"
+				title: "时间飞逝"
+				type: "questsadditions:time"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			id: "1CDE3304527E39D7"
+			rewards: [{
+				auto: "enabled"
+				id: "7D61631670A54696"
+				ignore_reward_blocking: true
+				kubeId: "test"
+				type: "maa:kube"
+			}]
+			tasks: [{
+				id: "58A5EAC2C3D750A0"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+	]
+	title: "贰"
+}
