@@ -1,5 +1,5 @@
 {
     "debug": {
-        "packCache": false
+        "packCache": true
     }
 }

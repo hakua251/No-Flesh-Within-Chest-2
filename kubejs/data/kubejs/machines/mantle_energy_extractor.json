@@ -110,8 +110,8 @@
       "y": 12,
       "id": "depth_indicator",
       "max": 60,
-      "texture_empty": "kubejs:textures/gui/mantle_energy_extractor/type_indicator_empty.png",
-      "texture_filled": "kubejs:textures/gui/mantle_energy_extractor/type_indicator_full.png",
+      "texture_empty": "kubejs:textures/gui/mantle_energy_extractor/depth_bar_empty.png",
+      "texture_filled": "kubejs:textures/gui/mantle_energy_extractor/depth_bar_full.png",
       "orientation": "top",
       "highlight": false
     }
