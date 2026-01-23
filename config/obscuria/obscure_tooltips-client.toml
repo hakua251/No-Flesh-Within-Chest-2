@@ -1,10 +1,5 @@
 #Whether Obscure Tooltips should be active at all.
 enabled = true
-#The margin (in pixels) between the tooltip frame and its content.
-#Range: 0 ~ 16
-contentMargin = 3
-#List of item IDs that should be ignored by Obscure Tooltips.
-ignoredItems = ["quality_equipment:reforge_gui_button"]
 #Whether Obscure Tooltips should display the second line in the tooltip header.
 labelsEnabled = true
 #Whether Obscure Tooltips should display drop shadows.
@@ -12,9 +7,14 @@ shadowsEnabled = true
 #The opacity of the drop shadows.
 #Range: 0.0 ~ 1.0
 shadowOpacity = 0.3
+#The margin (in pixels) between the tooltip frame and its content.
+#Range: 0 ~ 16
+contentMargin = 2
 #Whether to show a hint about enabling the built-in Vibrant Tooltips resource pack on game start.
 #Automatically disabled after being shown once.
 showVibrantTooltipsHint = false
+#List of item IDs that should be ignored by Obscure Tooltips.
+ignoredItems = ["quality_equipment:reforge_gui_button"]
 
 [Sounds]
 	#Whether Obscure Tooltips should play sound effects.

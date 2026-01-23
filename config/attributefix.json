@@ -187,17 +187,6 @@
         "value": 128
       }
     },
-    "alshanex_familiars:sound_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "additionalentityattributes:lung_capacity": {
       "enabled": false,
       "min": {
@@ -207,6 +196,17 @@
       "max": {
         "default": 40000,
         "value": 40000
+      }
+    },
+    "alshanex_familiars:sound_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "l2damagetracker:fire_damage": {

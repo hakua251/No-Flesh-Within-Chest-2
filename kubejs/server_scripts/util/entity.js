@@ -273,12 +273,6 @@ function GetTamedEntityWithinRadius(level, player, radius) {
                 }
                 return
             }
-            if (pEntity instanceof $AbstractSpellCastingPet) {
-                if (pEntity.getOwnerUUID().equals(player.getUuid())) {
-                    entityList.push(pEntity)
-                }
-                return
-            }
         }
     })
     return entityList
