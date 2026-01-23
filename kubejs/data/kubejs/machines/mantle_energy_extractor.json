@@ -24,9 +24,10 @@
   "components": [
     {
       "type": "custommachinery:item",
-      "id": "input_source_crystal",
+      "id": "input_crystal",
       "filter": [
-        "kubejs:source_crystal"
+        "kubejs:source_focus_crystal",
+        "kubejs:exhausted_source_focus_crystal"
       ],
       "whitelist": true,
       "mode": "input"
@@ -43,7 +44,7 @@
     },
     {
       "type": "custommachinery:item",
-      "id": "output_blazing_ingredients",
+      "id": "output_blazing",
       "mode": "output"
     },
     {
@@ -55,8 +56,8 @@
   "gui": [
     {
       "type": "custommachinery:player_inventory",
-      "x": 10,
-      "y": 130,
+      "x": 18,
+      "y": 166,
       "width": 162,
       "height": 76,
       "texture": "kubejs:textures/gui/mantle_energy_extractor/player_inventory.png"
@@ -64,13 +65,13 @@
     {
       "type": "custommachinery:background",
       "texture": "kubejs:textures/gui/mantle_energy_extractor/background.png",
-      "width": 182,
-      "height": 211
+      "width": 192,
+      "height": 248
     },
     {
       "type": "custommachinery:progress",
-      "x": 64,
-      "y": 0,
+      "x": 31,
+      "y": 130,
       "texture_empty": "kubejs:textures/gui/mantle_energy_extractor/processor_empty.png",
       "texture_filled": "kubejs:textures/gui/mantle_energy_extractor/processor_full.png",
       "direction": "top",
@@ -78,38 +79,38 @@
     },
     {
       "type": "custommachinery:slot",
-      "id": "input_source_crystal",
-      "x": 43,
-      "y": 19,
+      "id": "input_crystal",
+      "x": 91,
+      "y": 33,
       "texture": "kubejs:textures/gui/solt_transparent.png"
     },
     {
       "type": "custommachinery:slot",
       "id": "input_target",
-      "x": 83,
-      "y": 58,
+      "x": 158,
+      "y": 136,
       "texture": "kubejs:textures/gui/solt_transparent.png"
     },
     {
       "type": "custommachinery:slot",
       "id": "output_extract",
-      "x": 123,
-      "y": 19,
+      "x": 25,
+      "y": 80,
       "texture": "kubejs:textures/gui/solt_transparent.png"
     },
     {
       "type": "custommachinery:slot",
-      "id": "output_blazing_ingredients",
-      "x": 123,
-      "y": 19,
+      "id": "output_blazing",
+      "x": 156,
+      "y": 80,
       "texture": "kubejs:textures/gui/solt_transparent.png"
     },
     {
       "type": "custommachinery:bar",
-      "x": 0,
-      "y": 12,
-      "id": "depth_indicator",
-      "max": 60,
+      "x": 90,
+      "y": 48,
+      "id": "depth_bar",
+      "max": 100,
       "texture_empty": "kubejs:textures/gui/mantle_energy_extractor/depth_bar_empty.png",
       "texture_filled": "kubejs:textures/gui/mantle_energy_extractor/depth_bar_full.png",
       "orientation": "top",

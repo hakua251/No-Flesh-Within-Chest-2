@@ -12,16 +12,13 @@
 		{
 			dependencies: ["588B97AAEC0E2385"]
 			description: [
-				"在扫描物品时，我发现了一个常规的&6创造类物品&r，理论上来说这种物品是无法在正常的流程中获得的。"
+				"在扫描日志时，我意外发现了这个世界中所谓“地热能”的存在——或者说是&6“地幔能”&r，因为它的组成相当复杂，这种能量是包含热能在内的多种地幔物质属性所蕴含的。"
 				""
-				"但奇怪的是，在这个物品背后，我发现了一套非常奇怪的制作路径。这套路径似乎是被精心调整过，既成本低廉，但存在有大量的&6无法直接查阅的转换关系&r. . ."
-				""
-				"或许我们可以尝试这套流程，以期还原这&6无尽燃料&r。"
-				""
-				"不过首先，我们先要制作出它的正常版本。"
+				"在过去的日志里，里面明确存在部分玩家&6榨取地幔能&r的记录。或许我们可以学习他们，同样开采地幔能以获取一定的发展优势。"
 			]
 			icon: "create:creative_blaze_cake"
 			id: "1E56E0456EA6D888"
+			invisible: true
 			rewards: [{
 				id: "66EBC46E8D722DB1"
 				item: "lightmanscurrency:coin_gold"
@@ -34,33 +31,42 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			title: "神秘配方"
+			title: "地幔能"
 			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "50202CD4D6EAE6F4"
+			tasks: [{
+				id: "2E48763248D64EB9"
+				item: "kubejs:source_focus_crystal"
+				type: "item"
+			}]
+			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1E56E0456EA6D888"]
 			description: [
-				"调查数据显示，无尽燃料的技术紧密的与&6魔源转化技术&r相关，因此，我们需要一个用于桥接机械和魔法的特殊方法。"
+				"在日志中并没有记载使用何种方法提取地幔能，因此我需要您帮忙提供一些分析样本，便于我完成对该技术的逆向。"
 				""
-				"我们首先需要制成一个魔源转化炉，它在整个无限燃料的制取流程中会成为一个&6极其关键&r的部件。除此之外，它还可以用于在生物体内进行&2生物能&r - &5魔源&r的转化，进而驱动生物胸腔魔源的利用。"
+				"目前日志显示，此技术大概率涉及&6深层机械开采&r技术。我需要您提供100桶熔岩来作为样本，以分析使用机械开采应采用何种材料。"
 			]
-			id: "417A6717EF660F88"
+			icon: "minecraft:lava_bucket"
+			id: "6B9D9D4249A7839E"
 			rewards: [{
-				id: "2E7FB2502D307806"
+				id: "1C1CDE1C60018F2E"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "魔源理论"
+			subtitle: "我需要逆向分析原料"
 			tasks: [{
-				id: "3BDF151157116687"
-				item: {
-					Count: 1
-					id: "kubejs:source_reactor_furnace"
-					tag: { }
-				}
-				type: "item"
+				amount: 100000L
+				fluid: "minecraft:lava"
+				id: "05B70CD6573290F0"
+				type: "fluid"
 			}]
+			title: "熔岩逆向"
 			x: 2.0d
 			y: 0.0d
 		}

@@ -238,13 +238,11 @@
 							upgrades: -1
 						}
 						tic_stats: {
-							"tconstruct:armor": 1.0f
 							"tconstruct:attack_damage": 2.75f
 							"tconstruct:attack_speed": 1.2f
 							"tconstruct:durability": 1007.49994f
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:mining_speed": 8.0f
-							"tconstruct:projectile_damage": 2.5f
 						}
 						tic_upgrades: [{
 							level: 1
@@ -523,13 +521,11 @@
 						upgrades: -1
 					}
 					tic_stats: {
-						"tconstruct:armor": 1.0f
 						"tconstruct:attack_damage": 2.0f
 						"tconstruct:attack_speed": 1.6f
 						"tconstruct:durability": 1404.0f
 						"tconstruct:harvest_tier": "minecraft:diamond"
 						"tconstruct:mining_speed": 8.0f
-						"tconstruct:projectile_damage": 2.5f
 					}
 					tic_upgrades: [
 						{
@@ -609,13 +605,11 @@
 							upgrades: -1
 						}
 						tic_stats: {
-							"tconstruct:armor": 1.0f
 							"tconstruct:attack_damage": 2.0f
 							"tconstruct:attack_speed": 1.6f
 							"tconstruct:durability": 1404.0f
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:mining_speed": 8.0f
-							"tconstruct:projectile_damage": 2.5f
 						}
 						tic_upgrades: [
 							{
@@ -1080,15 +1074,11 @@
 							upgrades: -1
 						}
 						tic_stats: {
-							"tconstruct:accuracy": 0.85f
-							"tconstruct:armor_toughness": 1.0f
 							"tconstruct:attack_damage": 2.73125f
 							"tconstruct:attack_speed": 1.404f
-							"tconstruct:draw_speed": 1.03f
 							"tconstruct:durability": 1926.5999f
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:mining_speed": 5.4675f
-							"tconstruct:velocity": 1.03f
 						}
 						tic_upgrades: [{
 							level: 1
@@ -2093,11 +2083,9 @@
 						tic_stats: {
 							"tconstruct:attack_damage": 5.5171876f
 							"tconstruct:attack_speed": 0.77760005f
-							"tconstruct:draw_speed": 1.03f
 							"tconstruct:durability": 2613.75f
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:mining_speed": 2.0898004f
-							"tconstruct:velocity": 1.03f
 						}
 						tic_upgrades: [
 							{
@@ -2281,16 +2269,11 @@
 							upgrades: -1
 						}
 						tic_stats: {
-							"tconstruct:armor_toughness": 1.0f
 							"tconstruct:attack_damage": 4.828125f
 							"tconstruct:attack_speed": 1.1016002f
-							"tconstruct:draw_speed": 1.03f
 							"tconstruct:durability": 4125.0f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:knockback_resistance": 0.05f
 							"tconstruct:mining_speed": 2.9160004f
-							"tconstruct:sea_luck": 3.0f
-							"tconstruct:velocity": 1.133f
 						}
 						tic_upgrades: [
 							{
@@ -3189,17 +3172,11 @@
 							upgrades: -3
 						}
 						tic_stats: {
-							"tconstruct:accuracy": 0.85f
-							"tconstruct:armor": 1.0f
-							"tconstruct:armor_toughness": 2.0f
 							"tconstruct:attack_damage": 11.340001f
 							"tconstruct:attack_speed": 0.75f
 							"tconstruct:durability": 16380.001f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:knockback_resistance": 0.05f
 							"tconstruct:mining_speed": 4.25f
-							"tconstruct:projectile_damage": 2.5f
-							"tconstruct:velocity": 1.1f
 						}
 						tic_upgrades: [
 							{
@@ -3334,17 +3311,11 @@
 							upgrades: -3
 						}
 						tic_stats: {
-							"tconstruct:accuracy": 0.85f
-							"tconstruct:armor": 1.0f
-							"tconstruct:armor_toughness": 2.0f
 							"tconstruct:attack_damage": 11.340001f
 							"tconstruct:attack_speed": 0.75f
 							"tconstruct:durability": 16380.001f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:knockback_resistance": 0.05f
 							"tconstruct:mining_speed": 4.25f
-							"tconstruct:projectile_damage": 2.5f
-							"tconstruct:velocity": 1.1f
 						}
 						tic_upgrades: [
 							{
@@ -3482,17 +3453,11 @@
 							upgrades: -3
 						}
 						tic_stats: {
-							"tconstruct:accuracy": 0.85f
-							"tconstruct:armor": 1.0f
-							"tconstruct:armor_toughness": 2.0f
 							"tconstruct:attack_damage": 11.340001f
 							"tconstruct:attack_speed": 0.75f
 							"tconstruct:durability": 16380.001f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:knockback_resistance": 0.05f
 							"tconstruct:mining_speed": 4.25f
-							"tconstruct:projectile_damage": 2.5f
-							"tconstruct:velocity": 1.1f
 						}
 						tic_upgrades: [
 							{
@@ -3619,17 +3584,11 @@
 							upgrades: -3
 						}
 						tic_stats: {
-							"tconstruct:accuracy": 0.85f
-							"tconstruct:armor": 1.0f
-							"tconstruct:armor_toughness": 2.0f
 							"tconstruct:attack_damage": 11.340001f
 							"tconstruct:attack_speed": 0.75f
 							"tconstruct:durability": 16380.001f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:knockback_resistance": 0.05f
 							"tconstruct:mining_speed": 4.25f
-							"tconstruct:projectile_damage": 2.5f
-							"tconstruct:velocity": 1.1f
 						}
 						tic_upgrades: [
 							{

@@ -349,12 +349,18 @@
 		}
 		{
 			dependencies: ["7F29416AEF85DA75"]
+			description: [
+				"其实我不太能理解人类说的美味、难吃这种味觉描述。"
+				""
+				"虽然日志中大量描述美味虫汤的&6诱人香味&r. . .但它的原料似乎完全关联不上. . ."
+			]
 			id: "42DD41219B0D20CC"
 			rewards: [{
 				id: "76A3EF94F25D7B29"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "好像有点. . ."
 			tasks: [{
 				id: "4915FD9148741566"
 				item: "kubejs:tasty_worm_soup"
@@ -485,7 +491,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["7CD591898F55BC60"]
+			dependencies: ["7F29416AEF85DA75"]
 			description: [
 				"美味精酿是通过简易烹饪的美味虫&6发酵&r而成的特殊饮品。"
 				""
@@ -503,7 +509,7 @@
 				item: "kubejs:tasty_beer"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 15.5d
 			y: -0.5d
 		}
 		{
@@ -575,7 +581,18 @@
 				"307D2E9D0640B128"
 				"7466C43484204792"
 			]
+			description: [
+				"&6复杂的口感。&r"
+				""
+				"日志中的描述非常模糊，似乎鲜有人吃过由&6美味面包&r和&6美味肉饼&r制作而成的汉堡。"
+			]
 			id: "41FEB64150AA4A62"
+			rewards: [{
+				id: "44C93F1A8001B3AF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "两面包夹肉饼"
 			tasks: [{
 				id: "43D8A28B2134BF08"
 				item: "kubejs:tasty_hamburg"
@@ -774,6 +791,45 @@
 			title: "&6庆贺吧！此乃暴食胸腔！&r"
 			x: 7.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["2227580EB38F9126"]
+			description: [
+				"虽然过程有些恶心，但还是恭喜您征服了美味虫. . .或者说是&d暴食胸腔&r。"
+				""
+				"考虑到胸腔类型随时都可能变换，如果每次更换回暴食胸腔都要经历这种&6恶心&r的流程实在是令人. . ."
+				""
+				"为此，我通过数据篡改，向常规注射器中写入了暴食的数据，可以通过合成配方轻而易举的批量制造暴食注射器。"
+				""
+				"但考虑到暴食胸腔的危险性，让所有人都掌握这项技术显然并不合理. . .至少我认为这并不合理，因为我存在的意义便是完成、延续这场冒险。直接公开配方可能会极大的危害这个世界的长期稳定性。"
+				""
+				"因此我决定将此配方交予某个能够称得上为&d暴食&r的人——如果您能够在&6吃蛋糕片数&r上，在整个世界称霸，那我将把这样抉择权交付于您。"
+				"{@pagebreak}"
+				"公开配方会使所有人都可以制作暴食注射器。"
+				""
+				"私有配方会使您成为唯一能够制作暴食注射器的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
+			]
+			id: "37AD78091519F72E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "083118B4E4D62BB2"
+				table_id: 7788571112521187502L
+				type: "choice"
+			}]
+			shape: "diamond"
+			subtitle: "多吃几口吧"
+			tasks: [{
+				icon: "minecraft:cake"
+				id: "7E8E0EEC4D61B788"
+				leaderboard: "leaderboards:cake_slices_eaten"
+				min: 1
+				rank: 1
+				title: "蛋糕称霸"
+				type: "leaderboards:rank_task"
+			}]
+			title: "暴食注射器配方"
+			x: 7.5d
+			y: -7.5d
 		}
 	]
 	title: "秘闻：罐装美味"

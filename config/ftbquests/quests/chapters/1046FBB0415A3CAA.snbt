@@ -67,6 +67,7 @@
 			]
 			icon: "candlelight:note_paper_writeable"
 			id: "028470DB13C00215"
+			invisible: true
 			rewards: [{
 				id: "6688486CF5EF4AD0"
 				item: "lightmanscurrency:coin_copper"
@@ -184,6 +185,7 @@
 				"&c你能不能也给我尝尝？&r"
 			]
 			id: "2678AE772D365B92"
+			invisible: true
 			rewards: [{
 				id: "01DF4680B22D85A4"
 				item: "lightmanscurrency:coin_copper"
@@ -201,7 +203,7 @@
 				leaderboard: "infinity:dimensions_opened_stat"
 				title: "？"
 				type: "leaderboards:server_achieve_stat"
-				value: 1L
+				value: 32L
 			}]
 			title: "&6好吃&r"
 			x: -0.5d

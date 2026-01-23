@@ -1,4 +1,24 @@
 // priority: 501
+ServerEvents.recipes(event => {
+    event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 180)
+        .requireItem('kubejs:source_focus_crystal', 'input_crystal')
+        .requireFunctionOnEnd(ctx => {
+            const machine = ctx.getMachine()
+            const data = machine.getData()
+            const block = ctx.getBlock()
+            const level = block.getLevel()
+            const pos = block.getPos()
+            const depthBar = Math.round(data.getFloat('depth_bar'))
+            const biomeTemp = level.getBiome(pos).get().getBaseTemperature()
+            if (biomeTemp <= -0.5) return ctx.error('')
+            
+
+            return ctx.success()
+        })
+        
+        .resetOnError()
+})
+
 
 /**
  * 
@@ -26,5 +46,5 @@ function ChangeBiome2LowerTemperature(baseTemp, downFall) {
             return 'minecraft:snowy_plains'
         }
     }
-    return 'minecraft:snowy_taiga'
+    return 'minecraft:snowy_taiga' // -0.5
 }

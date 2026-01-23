@@ -1,0 +1,26 @@
+{
+	icon: "kubejs:gula_injection"
+	id: "6C16902945B1C0AE"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "kubejs:gula_injection"
+			ignore_reward_blocking: true
+			stage: "gula_injection_recipe"
+			title: "私有暴食注射器配方"
+			type: "maa:astages"
+		}
+		{
+			auto: "invisible"
+			icon: "kubejs:gula_injection"
+			ignore_reward_blocking: true
+			isServer: true
+			stage: "gula_injection_recipe"
+			title: "公开暴食注射器配方"
+			type: "maa:astages"
+		}
+	]
+	title: "暴食注射器配方"
+}
