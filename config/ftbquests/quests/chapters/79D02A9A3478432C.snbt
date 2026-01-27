@@ -256,9 +256,9 @@
 				""
 				"在使用地幔能提取器时，&6每次钻探都会有概率使魔源汇聚晶体损毁&r。且魔源汇聚晶体损毁后无法重新充能，会直接变为废品。"
 				""
-				"因此在使用时请您多加关注，避免进行无意义钻探浪费魔源汇聚晶体。"
+				"因此在使用时请您多加关注，避免进行无意义暴力钻探浪费魔源汇聚晶体。"
 				""
-				"要驱动地幔能提取器，您还需要为这台机器&6提供魔源&r，这需要您使用支配之杖来绑定一个魔源提供方式，为其提供能量。"
+				"除此之外，暴力开采还会消耗&6大量的魔源&r，因此您需要极其强大的魔源生产方式。"
 			]
 			id: "6EEE9F6B86438970"
 			rewards: [{
@@ -273,14 +273,15 @@
 				type: "item"
 			}]
 			title: "魔源汇聚晶体"
-			x: 21.0d
-			y: 2.5d
+			x: 26.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["3377828AA207E85A"]
 			description: [
-				"经检测，您需要&d魔源汇聚晶体&r来启动地幔能提取器。"
+				"为了开启暴力开采流程，您需要寻找一件称作&d魔源汇聚晶体&r的特殊魔能物品。"
 				""
-				"但魔源汇聚晶体是一种不会在世界上自然生成，且无法通过制作获得的特殊物品。您需要使用&6锦鲤鳞片&r，在空投补给中获得 魔源汇聚晶体。"
+				"但魔源汇聚晶体是一种不会在世界上自然生成，且无法通过制作获得的特殊物品。一种简单的获取方式是使用&6锦鲤鳞片&r，在空投补给中获得魔源汇聚晶体。"
 				""
 				"为此，您需要寻找&6锦鲤&r并且开胸，获取锦鲤鳞片。"
 			]
@@ -301,17 +302,17 @@
 				type: "item"
 			}]
 			title: "锦鲤鳞片与特殊战利品"
-			x: 17.0d
-			y: 2.5d
+			x: 22.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["312C7EC9561496C4"]
 			description: [
-				"但仅仅通过锦鲤鳞片生成的空投中，战利品表并不会包含魔源汇聚晶体。"
+				"但仅仅通过&6锦鲤鳞片&r定位的空投中，战利品表并不会包含魔源汇聚晶体。"
 				""
-				"您需要再制作一个&6魔源共鸣器&r。通过同时佩戴魔源共鸣器和锦鲤鳞片，使用主动技能触发锦鲤鳞片获得空投位置后，破坏空投气球。"
+				"您需要再制作一个&6魔源共鸣器&r，它会往战利品表中新增关于&6魔源汇聚晶体&r的相关战利品。"
 				""
-				"这将大概率从空投中会获得到含有魔源汇聚晶体的战利品。"
+				"通过同时佩戴魔源共鸣器和锦鲤鳞片，使用主动技能触发锦鲤鳞片获得空投位置后，破坏空投气球。这将大概率从空投中获得到&6魔源汇聚晶体&r。"
 			]
 			id: "704C3BF028E0283A"
 			rewards: [{
@@ -329,8 +330,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.0d
-			y: 2.5d
+			x: 24.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["12E7C53A56C43097"]
@@ -341,6 +342,7 @@
 				""
 				"随着深度的增加，您能够复制的物品种类会逐渐增多，最终或许能够复制任何物品！"
 			]
+			icon: "minecraft:raw_iron"
 			id: "6A448983C7C3821F"
 			rewards: [{
 				id: "0DF13BC590543E7C"
@@ -348,24 +350,488 @@
 				type: "item"
 			}]
 			subtitle: "地幔能的正确用法"
-			tasks: [{
-				id: "1CE95E6818584B9E"
-				item: "minecraft:raw_iron"
-				type: "item"
-			}]
-			title: "一阶地幔能利用"
+			tasks: [
+				{
+					id: "1CE95E6818584B9E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials"
+						}
+					}
+					title: "任意粗矿"
+					type: "item"
+				}
+				{
+					count: 1L
+					icon: "kubejs:mantle_energy_extractor"
+					id: "279EDFC7D82DBD1D"
+					kubeId: "mantle_energy_1"
+					title: "打开一阶地幔能提取器"
+					type: "maa:kube"
+				}
+			]
+			title: "一阶地幔能应用"
 			x: 16.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["2F229123DEDB0987"]
+			description: [
+				"但是通过此种方式开采存在&6几个问题&r："
+				""
+				"1. 目前的开采深度具有限制——我们&6无法开采到深度大于2000&r的更加自由的地幔能。"
+				""
+				"2. 每次工序需要30秒，且仅能复制物品一次，&6效率太低&r。"
+				""
+				"3. 当前深度下，&6能够复制的物品意义并不大&r，真正有价值的，理论存在的&6超自由地幔能&r可能存在在远比2000要深的地幔最深处。"
+				""
+				"因此，我在您挖掘的过程中，进行了一项特殊的研究。只需要您能够搞到&d那样物品&r，我们就可以暴力开采地幔能，极大的提高我们的效率！"
+			]
+			icon: "kubejs:exhausted_source_focus_crystal"
 			id: "3377828AA207E85A"
+			rewards: [{
+				id: "4E798C60C19C3E35"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "到达深度限制"
 			tasks: [{
 				id: "112A3F150C00C907"
-				title: "暴力开采"
+				title: "执行暴力开采"
 				type: "checkmark"
 			}]
-			x: 17.0d
-			y: 1.0d
+			title: "临界状态"
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A448983C7C3821F"]
+			description: [
+				"地幔能被称作为一种&6数据&r——这只是对于我和您意义上来说的。"
+				""
+				"在游戏中了，其表现形式仍然为一种&6复杂的能量&r，只是我们所使用的地幔能提取器并非是一种常规的游戏机器，更像是介于游戏本身和数据层面之间的一种设备。"
+				""
+				"正因如此，一部分无法利用的地幔能，会以游戏逻辑溢出并转变为一种称作为&6烈焰裂片&r的物品，其可以提供大量热值，能够用于各种各样的特异加工中。"
+			]
+			id: "2F229123DEDB0987"
+			rewards: [{
+				id: "6C89772B5AE94DE5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "纯粹的能量漏出"
+			tasks: [{
+				id: "1C5C24E6298CA712"
+				item: "kubejs:flame_fragment"
+				type: "item"
+			}]
+			title: "地幔能量泄露"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A448983C7C3821F"]
+			description: ["在挖掘深度超过200之后，您可以在标靶位置放置&6宝石类&r物品，以转换地幔能成为各种宝石。"]
+			icon: "minecraft:diamond"
+			id: "5698C2BCBD15755E"
+			rewards: [{
+				id: "58145E1EE5F2354A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "挖掘深度超过200"
+			tasks: [
+				{
+					id: "0261F66C79972539"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems"
+						}
+					}
+					title: "任意宝石"
+					type: "item"
+				}
+				{
+					count: 1L
+					icon: "kubejs:mantle_energy_extractor"
+					id: "66EBD34DD1D8900D"
+					kubeId: "mantle_energy_2"
+					title: "打开二阶地幔能提取器"
+					type: "maa:kube"
+				}
+			]
+			title: "二阶地幔能应用"
+			x: 16.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5698C2BCBD15755E"]
+			description: ["在挖掘深度超过500之后，您可以在标靶位置放置&6花类&r物品，以转换地幔能成为各种花。"]
+			icon: "minecraft:blue_orchid"
+			id: "6C072BC0C779A842"
+			rewards: [{
+				id: "57B0600835F2520B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "挖掘深度超过500"
+			tasks: [
+				{
+					id: "612C8E6C50E4E4BB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:flowers"
+						}
+					}
+					title: "任意花"
+					type: "item"
+				}
+				{
+					count: 1L
+					icon: "kubejs:mantle_energy_extractor"
+					id: "2A82CF0A8C44849D"
+					kubeId: "mantle_energy_3"
+					title: "打开三阶地幔能提取器"
+					type: "maa:kube"
+				}
+			]
+			title: "三阶地幔能应用"
+			x: 16.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6EEE9F6B86438970"]
+			description: [
+				"在挖掘深度超过2000之后，您可以在标靶位置放置&6书籍类&r物品，进而进行地幔能转化。"
+				""
+				"这允许您复制任意等级任意种类的&6附魔书&r。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "09984D1A3CED172D"
+			rewards: [{
+				id: "164960CCA8216C19"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "挖掘深度超过2000"
+			tasks: [
+				{
+					id: "4C4DF7504C8E444E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:books"
+						}
+					}
+					title: "任意书籍"
+					type: "item"
+				}
+				{
+					count: 1L
+					icon: "kubejs:mantle_energy_extractor"
+					id: "6520EBEC5B147103"
+					kubeId: "mantle_energy_5"
+					title: "打开五阶地幔能提取器"
+					type: "maa:kube"
+				}
+			]
+			title: "五阶地幔能应用"
+			x: 28.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C072BC0C779A842"]
+			description: ["在挖掘深度超过1000之后，您可以在标靶位置放置&6任意可食用类物品&r，以转换地幔能成为各种食物。"]
+			icon: "minecraft:enchanted_golden_apple"
+			id: "35B97602E1EF9998"
+			rewards: [{
+				id: "7E338842343A052E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "挖掘深度超过1000"
+			tasks: [
+				{
+					id: "294BC07AEA9283E6"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					count: 1L
+					icon: "kubejs:mantle_energy_extractor"
+					id: "0EF19C4B53B845C5"
+					kubeId: "mantle_energy_4"
+					title: "打开四阶地幔能提取器"
+					type: "maa:kube"
+				}
+			]
+			title: "四阶地幔能应用"
+			x: 16.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["09984D1A3CED172D"]
+			description: [
+				"在挖掘深度超过3000之后，您可以在标靶位置放置&6药水&r，进而进行地幔能转化。"
+				""
+				"这允许您复制任意等级任意种类和复杂度的&6药水&r。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:strength"
+				}
+			}
+			id: "2D3B9F0DC2C2E9A6"
+			rewards: [{
+				id: "523657267999D0AF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "挖掘深度超过3000"
+			tasks: [
+				{
+					id: "492DDD7834C8CB4D"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strength"
+						}
+					}
+					match_nbt: false
+					title: "任意种类药水"
+					type: "item"
+				}
+				{
+					count: 1L
+					icon: "kubejs:mantle_energy_extractor"
+					id: "5AFE6AF77042F9ED"
+					kubeId: "mantle_energy_6"
+					title: "打开六阶地幔能提取器"
+					type: "maa:kube"
+				}
+			]
+			title: "六阶地幔能应用"
+			x: 28.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1102A6F1A9DDBE96"]
+			description: [
+				"在挖掘深度超过7500之后，您可以在标靶位置放置&6任意可强化匠魂工具&r，进而进行地幔能转化。"
+				""
+				"这允许您复制任意等级任意种类和复杂度的&6匠魂工具&r，并且携带其强化属性。"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:pickaxe"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:copper"
+						"tconstruct:copper"
+						"tconstruct:copper"
+					]
+					tic_modifiers: [
+						{
+							level: 1
+							name: "tconstruct:pierce"
+						}
+						{
+							level: 3
+							name: "tconstruct:dwarven"
+						}
+					]
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 1.5749999f
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:durability": 168.0f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 5.5f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			id: "4A18DD9C6C5C3D20"
+			rewards: [{
+				id: "62207A06234A7F56"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "挖掘深度超过7500"
+			tasks: [
+				{
+					id: "4561651CE43429B1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:modifiable"
+						}
+					}
+					title: "任意匠魂工具"
+					type: "item"
+				}
+				{
+					count: 1L
+					icon: "kubejs:mantle_energy_extractor"
+					id: "6C1779BEC9AAB170"
+					kubeId: "mantle_energy_8"
+					title: "打开八阶地幔能提取器"
+					type: "maa:kube"
+				}
+			]
+			title: "八阶地幔能应用"
+			x: 28.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2D3B9F0DC2C2E9A6"]
+			description: [
+				"在挖掘深度超过5000之后，您可以在标靶位置放置&6任意原版物品&r，进而进行地幔能转化。"
+				""
+				"这允许您复制任意等级任意种类和复杂度的&6原版物品&r，甚至包括高级附魔盔甲。"
+			]
+			icon: "minecraft:dragon_egg"
+			id: "1102A6F1A9DDBE96"
+			rewards: [{
+				id: "2F305F50E37789F1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "挖掘深度超过5000"
+			tasks: [
+				{
+					id: "558360FF0BBA99B0"
+					item: {
+						Count: 1
+						id: "itemfilters:mod"
+						tag: {
+							value: "minecraft"
+						}
+					}
+					title: "任意原版物品"
+					type: "item"
+				}
+				{
+					count: 1L
+					icon: "kubejs:mantle_energy_extractor"
+					id: "728F705B3AB9CFA6"
+					kubeId: "mantle_energy_7"
+					title: "打开七阶地幔能提取器"
+					type: "maa:kube"
+				}
+			]
+			title: "七阶地幔能应用"
+			x: 28.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["09984D1A3CED172D"]
+			description: [
+				"&c似乎有点不对劲. . .&r"
+				""
+				"我建议您暂时先停止进行地幔能的利用，因为我收到了一系列不详的信号。"
+				""
+				"提取地幔能似乎&6会导致区块内的生态群系发生不可逆的寒冷化转变&r。当一个区块完全寒冷时，将无法进行地幔能的进一步提取。"
+				""
+				"我暂不清楚这是否会导致其他的一些问题，但目前最好的方案就是——暂时停止地幔能开采。"
+			]
+			id: "152583E592C60A6D"
+			rewards: [{
+				id: "291D82114DFE0B25"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "区块变冷. . ."
+			tasks: [{
+				biome: "minecraft:snowy_taiga"
+				icon: "minecraft:spruce_sapling"
+				id: "6EC82CFD9DF7FF58"
+				title: "积雪针叶林"
+				type: "biome"
+			}]
+			title: "热能提取的代价"
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F229123DEDB0987"]
+			description: [
+				"您可以人工将烈焰裂片&6压缩成晶体&r，也可以通过一些更加暴力的方式来直接从地幔中提取此种晶体。"
+				""
+				"这种晶体具有一些极其特殊的性质，其可以有效辅助&6部分小型机械的运行&r。"
+			]
+			id: "3C0B5BB105DAC17C"
+			rewards: [{
+				id: "51C3691535F6F750"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "将碎裂的地幔能压缩成块"
+			tasks: [{
+				id: "12AC157D6421FFC5"
+				item: "kubejs:flame_crystal"
+				type: "item"
+			}]
+			title: "人工制烈焰水晶"
+			x: 18.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C0B5BB105DAC17C"]
+			description: [
+				"&6熔火核心&r，作为地幔能利用到极致的一种产物，其拥有着&6生物自升温&r的特性。即，该器官会对生物的行为做出对应的升温反应。"
+				""
+				"随着熔火核心的温度升高，佩戴该器官的生物的攻击力也会逐渐提升，当温度升至最高时，其会转变成为&c心火核心&r。"
+				""
+				"心火核心状态下，会有着额外的攻击倍率加成，但温度会快速减少。等到温度归为零时，其将重新变为&6熔火核心&r。"
+				""
+				"&6倘若不是开采地幔能，或许我们永远无法制成这样的产物。&r"
+			]
+			id: "00EC549EA51DF850"
+			rewards: [{
+				id: "6BC79161FCB8D6D3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "极致热能的产物"
+			tasks: [{
+				id: "2E42903DC1747450"
+				item: {
+					Count: 1
+					id: "kubejs:furnace_core"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 3.0d
 		}
 	]
 	title: "秘闻：无尽燃料"

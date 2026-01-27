@@ -2548,7 +2548,7 @@
 			description: [
 				"等下，您说这是在世界探索中，从怪物手中获得到的吗？"
 				""
-				"很奇怪，这些工具很明显也是出自创世工匠之手. . .但是为何在工匠砧上不存在. . ."
+				"很奇怪，这些工具很明显也是出自&6创世工匠之手&r. . .但是为何在工匠砧上不存在. . ."
 			]
 			hide_dependency_lines: true
 			id: "58788ADDABB876B4"
@@ -2850,261 +2850,132 @@
 		}
 		{
 			dependencies: ["4E5076361FBEEDB5"]
-			description: [
-				"好像结论有些奇特，但事实就是如此。"
-				""
-				"为了完成最后的领悟，你需要臻于极致的工匠技巧，具体表现上需要三样分别符合如下要求的工具："
-				""
-				"1.  要求 任意工具 其 &6耐久度 <= 5&r"
-				""
-				"2. 要求 任意工具 其 &6攻击速度 <= 0.4&r"
-				""
-				"3. 要求 任意工具 其 &6攻击力 <= 1.5&r"
-			]
+			description: ["为了完成最后的领悟，你需要臻于极致的工匠技巧，您需要制作出一把 &6耐久度 小于等于 5&r的任意工具。"]
 			icon: {
 				Count: 1
-				id: "tconstruct:war_pick"
+				id: "tconstruct:battlesign"
 				tag: {
 					Damage: 0
 					tic_broken: 0b
 					tic_materials: [
 						"tconstruct:copper"
 						"tconstruct:copper"
-						"kubejs:elastic_fibers"
 					]
 					tic_modifiers: [
 						{
 							level: 1
-							name: "kubejs:draw_speed"
+							name: "tconstruct:depth_protection"
 						}
 						{
 							level: 1
-							name: "kubejs:arrow_velocity"
+							name: "tconstruct:bonking"
 						}
 						{
 							level: 1
-							name: "tconstruct:war_charge"
+							name: "tconstruct:knockback"
 						}
 						{
-							level: 2
+							level: 1
 							name: "tconstruct:dwarven"
+						}
+						{
+							level: 1
+							name: "tconstruct:blocking"
 						}
 					]
 					tic_persistent: { }
 					tic_stats: {
-						"tconstruct:attack_damage": 0.5f
+						"tconstruct:attack_damage": 2.5f
 						"tconstruct:attack_speed": 1.2f
-						"tconstruct:draw_speed": 0.9f
-						"tconstruct:durability": 420.0f
+						"tconstruct:block_amount": 50.0f
+						"tconstruct:durability": 444.0f
 						"tconstruct:harvest_tier": "minecraft:iron"
 						"tconstruct:mining_speed": 5.0f
-						"tconstruct:velocity": 1.05f
 					}
 					tic_volatile_data: {
 						abilities: 1
-						upgrades: 3
+						defense: 3
 					}
 				}
 			}
 			id: "7618461F4212504F"
 			rewards: [{
-				count: 3
 				id: "4DCADB48D90F216B"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "好像不太对"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "tconstruct:battlesign"
-						tag: {
-							Damage: 0
-							tic_broken: 0b
-							tic_materials: [
-								"tconstruct:copper"
-								"tconstruct:copper"
-							]
-							tic_modifiers: [
-								{
-									level: 1
-									name: "tconstruct:depth_protection"
-								}
-								{
-									level: 1
-									name: "tconstruct:bonking"
-								}
-								{
-									level: 1
-									name: "tconstruct:knockback"
-								}
-								{
-									level: 1
-									name: "tconstruct:dwarven"
-								}
-								{
-									level: 1
-									name: "tconstruct:blocking"
-								}
-							]
-							tic_persistent: { }
-							tic_stats: {
-								"tconstruct:attack_damage": 2.5f
-								"tconstruct:attack_speed": 1.2f
-								"tconstruct:block_amount": 50.0f
-								"tconstruct:durability": 444.0f
-								"tconstruct:harvest_tier": "minecraft:iron"
-								"tconstruct:mining_speed": 5.0f
+			subtitle: "足够低的耐久"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:battlesign"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:copper"
+							"tconstruct:copper"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:depth_protection"
 							}
-							tic_volatile_data: {
-								abilities: 1
-								defense: 3
+							{
+								level: 1
+								name: "tconstruct:bonking"
 							}
+							{
+								level: 1
+								name: "tconstruct:knockback"
+							}
+							{
+								level: 1
+								name: "tconstruct:dwarven"
+							}
+							{
+								level: 1
+								name: "tconstruct:blocking"
+							}
+						]
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 2.5f
+							"tconstruct:attack_speed": 1.2f
+							"tconstruct:block_amount": 50.0f
+							"tconstruct:durability": 444.0f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:mining_speed": 5.0f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							defense: 3
 						}
 					}
-					id: "041335773046D4A8"
-					item: {
-						Count: 1
-						id: "maa:tcon_tool_stats"
-						tag: {
-							value: "tconstruct:durability <= 5.0"
-						}
-					}
-					title: "耐久低于5"
-					type: "item"
 				}
-				{
-					icon: {
-						Count: 1
-						id: "tconstruct:war_pick"
-						tag: {
-							Damage: 0
-							tic_broken: 0b
-							tic_materials: [
-								"tconstruct:copper"
-								"tconstruct:copper"
-								"kubejs:elastic_fibers"
-							]
-							tic_modifiers: [
-								{
-									level: 1
-									name: "kubejs:draw_speed"
-								}
-								{
-									level: 1
-									name: "kubejs:arrow_velocity"
-								}
-								{
-									level: 1
-									name: "tconstruct:war_charge"
-								}
-								{
-									level: 2
-									name: "tconstruct:dwarven"
-								}
-							]
-							tic_persistent: { }
-							tic_stats: {
-								"tconstruct:attack_damage": 0.5f
-								"tconstruct:attack_speed": 1.2f
-								"tconstruct:draw_speed": 0.9f
-								"tconstruct:durability": 420.0f
-								"tconstruct:harvest_tier": "minecraft:iron"
-								"tconstruct:mining_speed": 5.0f
-								"tconstruct:velocity": 1.05f
-							}
-							tic_volatile_data: {
-								abilities: 1
-								upgrades: 3
-							}
-						}
+				id: "041335773046D4A8"
+				item: {
+					Count: 1
+					id: "maa:tcon_tool_stats"
+					tag: {
+						value: "tconstruct:durability <= 5.0"
 					}
-					id: "62EDBF0C1BB8E50E"
-					item: {
-						Count: 1
-						id: "maa:tcon_tool_stats"
-						tag: {
-							value: "tconstruct:attack_speed <= 0.4"
-						}
-					}
-					title: "攻速低于0.4"
-					type: "item"
 				}
-				{
-					icon: {
-						Count: 1
-						id: "tconstruct:melting_pan"
-						tag: {
-							Damage: 0
-							tic_broken: 0b
-							tic_materials: [
-								"tconstruct:copper"
-								"tgears:andesite_alloy"
-							]
-							tic_modifiers: [
-								{
-									level: 2
-									name: "tconstruct:tank_handler"
-								}
-								{
-									level: 1
-									name: "tconstruct:depth_protection"
-								}
-								{
-									level: 1
-									name: "tgears:topnotch"
-								}
-								{
-									level: 2
-									name: "tconstruct:melting"
-								}
-								{
-									level: 1
-									name: "tconstruct:tank"
-								}
-							]
-							tic_persistent: { }
-							tic_stats: {
-								"tconstruct:block_amount": 10.0f
-								"tconstruct:draw_speed": 0.8f
-								"tconstruct:durability": 476.69998f
-								"tconstruct:harvest_tier": "minecraft:stone"
-								"tconstruct:knockback_resistance": 0.1f
-								"tconstruct:mining_speed": 6.0f
-								"tconstruct:projectile_damage": 2.1f
-								"tconstruct:tank_capacity": 3000.0f
-								"tconstruct:velocity": 1.1f
-							}
-							tic_volatile_data: {
-								abilities: 2
-								defense: 1
-								"tconstruct:force_melting": 1b
-								"tconstruct:total_tanks": 1
-								upgrades: 1
-							}
-						}
-					}
-					id: "75E4CC60945D2512"
-					item: {
-						Count: 1
-						id: "maa:tcon_tool_stats"
-						tag: {
-							value: "tconstruct:attack_damage <= 0.5"
-						}
-					}
-					title: "伤害低于1.5"
-					type: "item"
-				}
-			]
-			title: "极致. . . 工匠？"
+				title: "耐久低于5的任意工具"
+				type: "item"
+			}]
+			title: "&6极致工匠之路&r"
 			x: 15.0d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["7618461F4212504F"]
+			dependencies: [
+				"7618461F4212504F"
+				"1E2D18E684B7A342"
+				"29D505CBB2A37FE8"
+			]
 			description: [
-				"找到了！创世工匠为后人留下的创世之路！"
+				"&6找到了！创世工匠为后人留下的创世之路！&r"
 				""
 				"他从一开始就计划好了！并且把这条路留给我们！"
 				""
@@ -3759,8 +3630,8 @@
 				type: "leaderboards:rank_task"
 			}]
 			title: "改良创世工艺"
-			x: 19.0d
-			y: -5.0d
+			x: 25.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -3786,6 +3657,151 @@
 			}]
 			x: 27.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["4E5076361FBEEDB5"]
+			description: ["为了完成最后的领悟，你需要臻于极致的工匠技巧，您需要制作出一把&6攻击速度 小于等于 0.4&r的任意工具。"]
+			id: "1E2D18E684B7A342"
+			rewards: [{
+				id: "59F644EE0E5D4C22"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "足够低的攻速"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:war_pick"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:copper"
+							"tconstruct:copper"
+							"tconstruct:string"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:stringy"
+							}
+							{
+								level: 1
+								name: "tconstruct:war_charge"
+							}
+							{
+								level: 2
+								name: "tconstruct:dwarven"
+							}
+						]
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 0.5f
+							"tconstruct:attack_speed": 1.2f
+							"tconstruct:draw_speed": 0.9f
+							"tconstruct:durability": 420.0f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:mining_speed": 5.0f
+							"tconstruct:velocity": 1.05f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+				id: "6D739445B4CB5FF8"
+				item: {
+					Count: 1
+					id: "maa:tcon_tool_stats"
+					tag: {
+						value: "tconstruct:attack_speed <= 0.4"
+					}
+				}
+				title: "攻击速度低于0.4的任意工具"
+				type: "item"
+			}]
+			title: "&6极致工匠之路&r"
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4E5076361FBEEDB5"]
+			description: ["为了完成最后的领悟，你需要臻于极致的工匠技巧，您需要制作出一把 &6攻击力 小于等于 1.5&r的任意工具。"]
+			id: "29D505CBB2A37FE8"
+			rewards: [{
+				id: "3D0A4823135F101B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "足够低的攻击"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:melting_pan"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:copper"
+							"tconstruct:copper"
+						]
+						tic_modifiers: [
+							{
+								level: 2
+								name: "tconstruct:tank_handler"
+							}
+							{
+								level: 1
+								name: "tconstruct:depth_protection"
+							}
+							{
+								level: 2
+								name: "tconstruct:melting"
+							}
+							{
+								level: 1
+								name: "tconstruct:tank"
+							}
+							{
+								level: 1
+								name: "tconstruct:dwarven"
+							}
+						]
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:block_amount": 10.0f
+							"tconstruct:draw_speed": 0.9f
+							"tconstruct:durability": 444.0f
+							"tconstruct:harvest_tier": "minecraft:stone"
+							"tconstruct:knockback_resistance": 0.1f
+							"tconstruct:mining_speed": 6.0f
+							"tconstruct:tank_capacity": 3000.0f
+							"tconstruct:velocity": 1.05f
+						}
+						tic_volatile_data: {
+							abilities: 2
+							defense: 1
+							"tconstruct:force_melting": 1b
+							"tconstruct:total_tanks": 1
+							upgrades: 1
+						}
+					}
+				}
+				id: "7EE4A68B8E3B4656"
+				item: {
+					Count: 1
+					id: "maa:tcon_tool_stats"
+					tag: {
+						value: "tconstruct:attack_damage <= 0.5"
+					}
+				}
+				title: "攻击力低于1.5的任意工具"
+				type: "item"
+			}]
+			title: "&6极致工匠之路&r"
+			x: 15.0d
+			y: 0.0d
 		}
 	]
 	title: "传闻：创世工匠"

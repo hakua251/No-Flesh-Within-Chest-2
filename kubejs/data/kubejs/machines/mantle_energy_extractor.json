@@ -100,7 +100,7 @@
     },
     {
       "type": "custommachinery:slot",
-      "id": "output_blazing",
+      "id": "output_flame",
       "x": 156,
       "y": 80,
       "texture": "kubejs:textures/gui/solt_transparent.png"
@@ -110,7 +110,7 @@
       "x": 90,
       "y": 48,
       "id": "depth_bar",
-      "max": 100,
+      "max": 10000,
       "texture_empty": "kubejs:textures/gui/mantle_energy_extractor/depth_bar_empty.png",
       "texture_filled": "kubejs:textures/gui/mantle_energy_extractor/depth_bar_full.png",
       "orientation": "top",

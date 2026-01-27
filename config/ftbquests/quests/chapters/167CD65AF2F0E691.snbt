@@ -20,6 +20,7 @@
 		icon: "minecraft:diamond_block"
 		id: "473AA9B909ED8EB0"
 		rewards: [{
+			icon: "minecraft:diamond_block"
 			id: "61A70F01F50A20E9"
 			item: "minecraft:oak_sapling"
 			type: "item"

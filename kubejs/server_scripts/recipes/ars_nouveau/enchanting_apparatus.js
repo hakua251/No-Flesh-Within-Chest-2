@@ -15,4 +15,12 @@ ServerEvents.recipes(event => {
         2000,
         false
     )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        ['ars_nouveau:abjuration_essence', 'ars_nouveau:source_gem', 'ars_nouveau:magebloom_fiber', 'kubejs:flame_fragment'],
+        'kubejs:amethyst_resonator',
+        'kubejs:source_resonator',
+        1000,
+        false
+    )
 })

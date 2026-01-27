@@ -1,6 +1,40 @@
 // priority: 501
 ServerEvents.recipes(event => {
+    // 低深度默认配方
     event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 600)
+        .requireFunctionOnEnd(ctx => {
+            const machine = ctx.getMachine()
+            const data = machine.getData()
+            const depthBar = data.getInt('depth_bar')
+            data.putInt('depth_bar', depthBar + 1)
+            const outputExtract = machine.getItemStored('output_extract')
+            const inputTarget = machine.getItemStored('input_target')
+            if (!validInputTarget(inputTarget, depthBar)) return ctx.success()
+            let outputItem = inputTarget.withCount(1)
+            if (!outputExtract || outputExtract.isEmpty()) {
+                machine.setItemStored('output_extract', outputItem)
+            } else if (outputExtract.is(outputItem) && outputExtract.getCount() < outputItem.getMaxStackSize()) {
+                machine.setItemStored('output_extract', outputItem.withCount(Math.min(outputExtract.getCount() + 1, outputItem.getMaxStackSize())))
+            }
+            return ctx.success()
+        })
+        .produceItem('kubejs:flame_fragment', 'output_flame')
+        .requireSourcePerTick(8)
+        .requireSource(250)
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            const data = machine.getData()
+            const depthBar = Math.round(data.getFloat('depth_bar'))
+            if (depthBar >= 2000) return ctx.error('')
+            let crystal = machine.getItemStored('input_crystal')
+            if (!crystal || crystal.isEmpty()) {
+                return ctx.success()
+            }
+            return ctx.error('')
+        })
+        .resetOnError()
+    // 高深度钻取配方
+    event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 1200)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
@@ -9,31 +43,25 @@ ServerEvents.recipes(event => {
             const level = block.getLevel()
             const pos = block.getPos()
             const depthBar = Math.round(data.getFloat('depth_bar'))
-            data.putFloat('depth_bar', depthBar + 0.05)
+            data.putInt('depth_bar', depthBar + 100)
+            const biome = level.getBiome(pos).get()
+            const biomeTemp = biome.getBaseTemperature()
+            if (biomeTemp <= -0.5) return ctx.success()
+
+            const outputExtract = machine.getItemStored('output_extract')
+            const inputTarget = machine.getItemStored('input_target')
+            if (!validInputTarget(inputTarget, depthBar)) return ctx.success()
+            let outputItem = inputTarget.withCount(inputTarget.getMaxStackSize())
+            if (!outputExtract || outputExtract.isEmpty() || outputExtract.is(outputItem)) {
+                machine.setItemStored('output_extract', outputItem)
+            }
+
+            if (Math.random() < 1 - depthBar / 10000) {
+                let targetBiome = getBiome2LowerTemperature(biomeTemp, biome.getDownfall())
+            }
 
             return ctx.success()
         })
-
-        .produceItem('kubejs:flame_fragment', 'output_flame')
-        .requireSourcePerTick(16)
-        .requireSource(500)
-        .requireFunctionToStart(ctx => {
-            const machine = ctx.getMachine()
-            const data = machine.getData()
-            const depthBar = Math.round(data.getFloat('depth_bar'))
-            if (depthBar > 20) return ctx.error('')
-            let crystal = machine.getItemStored('input_crystal')
-            if (!crystal || crystal.isEmpty()) {
-                return ctx.success()
-            }
-            return ctx.error('')
-        })
-        .resetOnError()
-
-    event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 600)
-        .produceItem('kubejs:flame_crystal', 'output_flame')
-        .requireSourcePerTick(128)
-        .requireSource(1000)
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             let crystal = machine.getItemStored('input_crystal')
@@ -42,22 +70,35 @@ ServerEvents.recipes(event => {
             }
             return ctx.error('')
         })
-        .requireFunctionOnEnd(ctx => {
-            const machine = ctx.getMachine()
-            const data = machine.getData()
-            const block = ctx.getBlock()
-            /**@type {Internal.ServerLevel} */
-            const level = block.getLevel()
-            const pos = block.getPos()
-            const depthBar = Math.round(data.getFloat('depth_bar'))
-            const biomeTemp = level.getBiome(pos).get().getBaseTemperature()
-            if (biomeTemp <= -0.5) return ctx.error('')
-
-
-            return ctx.success()
-        })
+        .produceItem('kubejs:flame_crystal', 'output_flame')
+        .requireSourcePerTick(128)
+        .requireSource(1000)
         .resetOnError()
 })
+
+/**
+ * 
+ * @param {Internal.ItemStack} input 
+ * @param {number} depth 
+ */
+function validInputTarget(input, depth) {
+    if (input.hasTag('forge:raw_materials')) return true
+    if (depth < 200) return false
+    if (input.hasTag('forge:gems')) return true
+    if (depth < 500) return false
+    if (input.hasTag('minecraft:flowers')) return true
+    if (depth < 1000) return false
+    if (input.isEdible()) return true
+    if (depth < 2000) return false
+    if (input.hasTag('forge:books')) return true
+    if (depth < 3000) return false
+    if (String(input.id) == 'minecraft:potion') return true
+    if (depth < 5000) return false
+    if (input.getMod() == 'minecraft') return true
+    if (depth < 7500) return false
+    if (input.hasTag('tconstruct:modifiable')) return true
+    return false
+}
 
 
 /**
@@ -65,7 +106,7 @@ ServerEvents.recipes(event => {
  * @param {number} baseTemp 
  * @returns {String}
  */
-function changeBiome2LowerTemperature(baseTemp, downFall) {
+function getBiome2LowerTemperature(baseTemp, downFall) {
     if (baseTemp >= 2) {
         return 'minecraft:stony_peaks' // 1.0, 0.3
     }

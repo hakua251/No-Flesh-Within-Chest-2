@@ -92,5 +92,20 @@ ServerEvents.recipes(event => {
     )
         .transitionalItem(CommonTransitionalItem)
         .loops(3)
+
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:furnace_core')
+        ],
+        'chestcavity:golem_core',
+        [
+            event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'kubejs:flame_crystal']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:ingots/brass']),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('tconstruct:blazing_blood', 250)]),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(3)
 })
 
