@@ -25,7 +25,7 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
     let weightRandomModel = new WeightRandomModel()
     /**@type {Map<string, WeightRandomItem[]>} */
     const koiFishPool = GetCustomDataMap(player.chestCavityInstance, 'koiFishPool', new Map())
-    const koiFishPoolCount = GetCustomDataMap(player.chestCavityInstance, 'koiFishPoolCount', 1)
+    const koiFishPoolCount = Math.max(Math.floor(player.getLuck() / 10) + 1, 1)
     weightRandomModel.addWeightRandom('koi_fish', 1)
     koiFishPool.forEach((value, _) => {
         weightRandomModel.weightRandomList = weightRandomModel.weightRandomList.concat(value)
@@ -42,7 +42,7 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
     level.playSound(null, player.getX(), player.getY(), player.getZ(), 'item.book.page_turn', player.getSoundSource(), 0.5, 1)
     // 增强功能
     // CreateWaypoint(player, airdropPos, new Date().toLocaleString(), 0xFC4C00)
-    player.addItemCooldown('kubejs:koi_fish_scale', 20 * 300)
+    player.addItemCooldown('kubejs:koi_fish_scale', 20 * 180)
 }
 
 RegistryOrganStrategy(

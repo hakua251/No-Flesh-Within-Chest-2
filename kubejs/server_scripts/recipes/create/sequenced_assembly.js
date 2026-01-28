@@ -107,5 +107,20 @@ ServerEvents.recipes(event => {
     )
         .transitionalItem(CommonTransitionalItem)
         .loops(3)
+
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:revolution_reinforcement')
+        ],
+        'minecraft:magma_cream',
+        [
+            event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'create:iron_sheet']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'minecraft:redstone_torch']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:ingots/brass']),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(5)
 })
 

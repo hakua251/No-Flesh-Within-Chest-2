@@ -1,4 +1,5 @@
 // priority: 501
+const MantleEnergyExtractorMaxDepth = 10000
 ServerEvents.recipes(event => {
     // 低深度默认配方
     event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 600)
@@ -24,6 +25,11 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
+            const block = ctx.getBlock()
+            /**@type {Internal.ServerLevel} */
+            const level = block.getLevel()
+            const server = level.getServer()
+            if (HadUnderEternalWinter(server)) return
             const depthBar = Math.round(data.getFloat('depth_bar'))
             if (depthBar >= 2000) return ctx.error('')
             let crystal = machine.getItemStored('input_crystal')
@@ -33,17 +39,24 @@ ServerEvents.recipes(event => {
             return ctx.error('')
         })
         .resetOnError()
+
     // 高深度钻取配方
     event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 1200)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
+            let crystal = machine.getItemStored('input_crystal')
+            if (!crystal || !crystal.is('kubejs:source_focus_crystal')) return ctx.error('')
             const data = machine.getData()
             const block = ctx.getBlock()
             /**@type {Internal.ServerLevel} */
             const level = block.getLevel()
+            const server = level.getServer()
             const pos = block.getPos()
             const depthBar = Math.round(data.getFloat('depth_bar'))
-            data.putInt('depth_bar', depthBar + 100)
+            data.putInt('depth_bar', depthBar + 200)
+            if (Math.random() < 0.1) {
+                machine.setItemStored('input_crystal', 'kubejs:exhausted_source_focus_crystal')
+            }
             const biome = level.getBiome(pos).get()
             const biomeTemp = biome.getBaseTemperature()
             if (biomeTemp <= -0.5) return ctx.success()
@@ -56,22 +69,60 @@ ServerEvents.recipes(event => {
                 machine.setItemStored('output_extract', outputItem)
             }
 
-            if (Math.random() < 1 - depthBar / 10000) {
+            if (Math.random() < 1 - depthBar / MantleEnergyExtractorMaxDepth) {
                 let targetBiome = getBiome2LowerTemperature(biomeTemp, biome.getDownfall())
+                SetBiomeByChunk(level, GetChunkAccess(level, pos), targetBiome)
+                IncreaseEternalWinterCounter(server, 2)
             }
-
             return ctx.success()
         })
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
+            const block = ctx.getBlock()
+            /**@type {Internal.ServerLevel} */
+            const level = block.getLevel()
+            const server = level.getServer()
+            if (HadUnderEternalWinter(server)) return
             let crystal = machine.getItemStored('input_crystal')
-            if (crystal && !crystal.isEmpty()) {
+            if (crystal && crystal.is('kubejs:source_focus_crystal')) {
                 return ctx.success()
             }
             return ctx.error('')
         })
         .produceItem('kubejs:flame_crystal', 'output_flame')
         .requireSourcePerTick(128)
+        .requireSource(1000)
+        .resetOnError()
+
+    // 深钻配方
+    event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 200)
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            let crystal = machine.getItemStored('input_crystal')
+            if (crystal && crystal.is('kubejs:source_focus_crystal')) {
+                return ctx.success()
+            }
+            return ctx.error('')
+        })
+        .requireFunctionOnEnd(ctx => {
+            const machine = ctx.getMachine()
+            const block = ctx.getBlock()
+            /**@type {Internal.ServerLevel} */
+            const level = block.getLevel()
+            const server = level.getServer()
+            const data = machine.getData()
+            let crystal = machine.getItemStored('input_crystal')
+            if (!crystal || !crystal.is('kubejs:source_focus_crystal')) return ctx.error('')
+            if (Math.random() < 0.1) {
+                machine.setItemStored('input_crystal', 'kubejs:exhausted_source_focus_crystal')
+            }
+            const depthBar = data.getInt('depth_bar')
+            data.putInt('depth_bar', Math.min(depthBar * 2, MantleEnergyExtractorMaxDepth))
+            IncreaseEternalWinterCounter(server, 5)
+            return ctx.success()
+        })
+        .requireItem('kubejs:flame_crystal', 'input_target')
+        .requireSourcePerTick(8)
         .requireSource(1000)
         .resetOnError()
 })
@@ -82,6 +133,8 @@ ServerEvents.recipes(event => {
  * @param {number} depth 
  */
 function validInputTarget(input, depth) {
+    // 禁用容器复制
+    if (input.hasTag('minecraft:bundles') || input.hasTag('minecraft:shulker_boxes')) return false
     if (input.hasTag('forge:raw_materials')) return true
     if (depth < 200) return false
     if (input.hasTag('forge:gems')) return true

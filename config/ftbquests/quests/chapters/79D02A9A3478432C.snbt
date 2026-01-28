@@ -12,12 +12,13 @@
 		{
 			dependencies: ["588B97AAEC0E2385"]
 			description: [
-				"在扫描日志时，我意外发现了这个世界中所谓“地热能”的存在——或者说是&6“地幔能”&r，因为它的组成相当复杂，这种能量是包含热能在内的多种地幔物质属性所蕴含的。"
+				"在扫描日志时，我意外发现了这个世界中所谓“地热能”的存在——或者说是&6“地幔能”&r，因为它的组成相当复杂，不过我们并不需要利用这些物质——我们可以利用组成这些物质的数据，进行随意的操控。"
 				""
-				"在过去的日志里，里面明确存在部分玩家&6榨取地幔能&r的记录。或许我们可以学习他们，同样开采地幔能以获取一定的发展优势。"
+				"在过去的日志里，里面明确存在极少部分玩家&6榨取地幔能&r的记录。或许我们可以学习他们，同样开采地幔能以获取一定的发展优势。"
 			]
 			icon: "create:creative_blaze_cake"
 			id: "1E56E0456EA6D888"
+			incompatible: ["238304E64039192F"]
 			invisible: true
 			rewards: [{
 				id: "66EBC46E8D722DB1"
@@ -273,7 +274,7 @@
 				type: "item"
 			}]
 			title: "魔源汇聚晶体"
-			x: 26.0d
+			x: 21.0d
 			y: 0.0d
 		}
 		{
@@ -302,7 +303,7 @@
 				type: "item"
 			}]
 			title: "锦鲤鳞片与特殊战利品"
-			x: 22.0d
+			x: 17.5d
 			y: 0.0d
 		}
 		{
@@ -330,7 +331,7 @@
 				}
 				type: "item"
 			}]
-			x: 24.0d
+			x: 19.0d
 			y: 0.0d
 		}
 		{
@@ -373,11 +374,11 @@
 				}
 			]
 			title: "一阶地幔能应用"
-			x: 16.0d
-			y: 0.0d
+			x: 14.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["2F229123DEDB0987"]
+			dependencies: ["12E7C53A56C43097"]
 			description: [
 				"但是通过此种方式开采存在&6几个问题&r："
 				""
@@ -403,17 +404,21 @@
 				type: "checkmark"
 			}]
 			title: "临界状态"
-			x: 20.0d
+			x: 16.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["6A448983C7C3821F"]
+			dependencies: [
+				"12E7C53A56C43097"
+				"288DA5451A36194F"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"地幔能被称作为一种&6数据&r——这只是对于我和您意义上来说的。"
 				""
 				"在游戏中了，其表现形式仍然为一种&6复杂的能量&r，只是我们所使用的地幔能提取器并非是一种常规的游戏机器，更像是介于游戏本身和数据层面之间的一种设备。"
 				""
-				"正因如此，一部分无法利用的地幔能，会以游戏逻辑溢出并转变为一种称作为&6烈焰裂片&r的物品，其可以提供大量热值，能够用于各种各样的特异加工中。"
+				"正因如此，一部分无法利用的地幔能，会按照游戏逻辑，溢出并转变为一种称作为&6烈焰裂片&r的物品，其可以提供大量热值，能够用于各种各样的特异加工中。"
 			]
 			id: "2F229123DEDB0987"
 			rewards: [{
@@ -428,8 +433,8 @@
 				type: "item"
 			}]
 			title: "地幔能量泄露"
-			x: 18.0d
-			y: 0.0d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6A448983C7C3821F"]
@@ -465,8 +470,8 @@
 				}
 			]
 			title: "二阶地幔能应用"
-			x: 16.0d
-			y: -1.5d
+			x: 14.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5698C2BCBD15755E"]
@@ -502,8 +507,8 @@
 				}
 			]
 			title: "三阶地幔能应用"
-			x: 16.0d
-			y: -3.0d
+			x: 14.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6EEE9F6B86438970"]
@@ -552,8 +557,8 @@
 				}
 			]
 			title: "五阶地幔能应用"
-			x: 28.0d
-			y: 0.0d
+			x: 21.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6C072BC0C779A842"]
@@ -582,8 +587,8 @@
 				}
 			]
 			title: "四阶地幔能应用"
-			x: 16.0d
-			y: -4.5d
+			x: 14.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["09984D1A3CED172D"]
@@ -630,8 +635,8 @@
 				}
 			]
 			title: "六阶地幔能应用"
-			x: 28.0d
-			y: -1.5d
+			x: 21.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1102A6F1A9DDBE96"]
@@ -705,13 +710,13 @@
 				}
 			]
 			title: "八阶地幔能应用"
-			x: 28.0d
-			y: -4.5d
+			x: 21.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2D3B9F0DC2C2E9A6"]
 			description: [
-				"在挖掘深度超过5000之后，您可以在标靶位置放置&6任意原版物品&r，进而进行地幔能转化。"
+				"在挖掘深度超过5000之后，您可以在标靶位置放置&6任意原版非容器类物品&r，进而进行地幔能转化。"
 				""
 				"这允许您复制任意等级任意种类和复杂度的&6原版物品&r，甚至包括高级附魔盔甲。"
 			]
@@ -728,12 +733,46 @@
 					id: "558360FF0BBA99B0"
 					item: {
 						Count: 1
-						id: "itemfilters:mod"
+						id: "itemfilters:and"
 						tag: {
-							value: "minecraft"
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "minecraft:bundles"
+											}
+										}]
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "minecraft:shulker_boxes"
+											}
+										}]
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:mod"
+									tag: {
+										value: "minecraft"
+									}
+								}
+							]
 						}
 					}
-					title: "任意原版物品"
+					title: "任意原版非容器类物品"
 					type: "item"
 				}
 				{
@@ -746,11 +785,11 @@
 				}
 			]
 			title: "七阶地幔能应用"
-			x: 28.0d
-			y: -3.0d
+			x: 21.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["09984D1A3CED172D"]
+			dependencies: ["6EEE9F6B86438970"]
 			description: [
 				"&c似乎有点不对劲. . .&r"
 				""
@@ -758,9 +797,10 @@
 				""
 				"提取地幔能似乎&6会导致区块内的生态群系发生不可逆的寒冷化转变&r。当一个区块完全寒冷时，将无法进行地幔能的进一步提取。"
 				""
-				"我暂不清楚这是否会导致其他的一些问题，但目前最好的方案就是——暂时停止地幔能开采。"
+				"我暂不清楚这是否会导致其他的一些问题，但目前最好的方案就是——&c暂时停止地幔能开采&r。"
 			]
 			id: "152583E592C60A6D"
+			invisible: true
 			rewards: [{
 				id: "291D82114DFE0B25"
 				item: "lightmanscurrency:coin_gold"
@@ -771,12 +811,12 @@
 				biome: "minecraft:snowy_taiga"
 				icon: "minecraft:spruce_sapling"
 				id: "6EC82CFD9DF7FF58"
-				title: "积雪针叶林"
+				title: "访问积雪针叶林生态群系"
 				type: "biome"
 			}]
-			title: "热能提取的代价"
-			x: 30.0d
-			y: 0.0d
+			title: "&c热能提取的代价&r"
+			x: 21.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2F229123DEDB0987"]
@@ -798,8 +838,8 @@
 				type: "item"
 			}]
 			title: "人工制烈焰水晶"
-			x: 18.0d
-			y: 1.5d
+			x: 8.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3C0B5BB105DAC17C"]
@@ -830,9 +870,585 @@
 				}
 				type: "item"
 			}]
-			x: 18.0d
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6EEE9F6B86438970"]
+			description: ["地幔能富集在&6沙漠&r等温度较高的生态群系，在温度低的生态群系，&6地幔能提取器甚至无法正常运作&r，因此您需要适当的调整地幔能提取器的工作位置。"]
+			id: "3B9B37AD2559F7DE"
+			rewards: [{
+				id: "0E2AA5C2F81D87C3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "热量证明"
+			tasks: [{
+				biome: "minecraft:desert"
+				icon: "minecraft:sand"
+				id: "3E9490D79F92D23B"
+				title: "访问沙漠生态群系"
+				type: "biome"
+			}]
+			title: "最佳地幔能提取地点"
+			x: 23.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EEE9F6B86438970"]
+			description: [
+				"某些时候我们需要&6移动地幔能提取器&r，这会导致地幔能提取器的深度数据丢失，缓慢逐个提取增加深度的速度太慢，使用&6魔源汇聚水晶&r提取的速度虽然快，但是会经常损耗掉本就稀有的水晶. . ."
+				""
+				"因此，您可以尝试在右下目标输入槽位中，放置烈焰水晶执行&6超深钻取配方&r。"
+				""
+				"这个配方虽然不会产出任何物资，但是烈焰水晶会有效促进&6魔源汇聚水晶&r的钻探效率，在理想状态下，其可以一次性挖掘与当前所处深度相同的深度，即使当前的&6深度翻倍&r。"
+				""
+				"因此，可以使用此配方迅速启动机器，短时间内到达极深的深度，但代价就是会有大量的自由&6地幔能流失&r。"
+			]
+			id: "2432BC777BE5C4CC"
+			rewards: [{
+				id: "42429D273171924D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "错觉. . .？"
+			tasks: [{
+				id: "594CF5D077F651D3"
+				item: "kubejs:flame_crystal"
+				type: "item"
+			}]
+			title: "最大功率挖掘方案"
+			x: 23.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["152583E592C60A6D"]
+			description: [
+				"&c请您暂时停止地幔能提取！这很重要！&r"
+				""
+				"经过分析，我发现钻取深度超过2000的地幔能，会直接导致区块发生&6群系退化&r亦或者更准确些——区块的&b生态群系会发生降温&r。"
+				""
+				"我需要一些时间来分析，如果过度使用这种能源会导致什么样的结果。"
+				""
+				"在此期间请您&c不要再使用任何形式的地幔能&r，以避免事件走向不可逆转的方向！"
+			]
+			id: "314B2A11D139BA06"
+			rewards: [{
+				id: "2DDA2512F2622A55"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我们的未来"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "70E0F201C2EAA909"
+				title: "静候佳音"
+				type: "questsadditions:time"
+			}]
+			title: "地幔能提取危害分析"
+			x: 21.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["314B2A11D139BA06"]
+			description: [
+				"经过计算，若对世界执行&650次深层开采&r后，世界会因为自由地幔能的局部流失，&c引发全局性的地幔能全局平衡&r。"
+				""
+				"&b作为地幔能内部平衡的代价，所有生态群系、所有维度、所有世界的温度将会被降低至0℃以下，并且将会迎来永久的降雪天气。&r"
+				""
+				"目前，我们没有办法去主动避免这件事的发生——我们所能做的一切，就是尽可能不要&c进行深度超过2000的深层开采&r以及会严重影响地幔能平衡的&c最大功率采掘&r。"
+				""
+				"&6请您答应我，为了这次旅程，请您和您的同伴，不要再使用上述的两种采集模式。&r"
+			]
+			icon: "candlelight:note_paper"
+			id: "3E82624D0543D113"
+			rewards: [{
+				id: "3778E4DD6D87D9C3"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			subtitle: "为了守护我们的明天"
+			tasks: [{
+				id: "1FA46ECD2B77B4C4"
+				title: "我将信守诺言"
+				type: "checkmark"
+			}]
+			title: "思考后的结论"
+			x: 21.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C0B5BB105DAC17C"]
+			description: [
+				"借由对自由地幔能数据模式的分析，我定位到了一系列由过去玩家打造的一系列机械器官。"
+				""
+				"这系列器官被称作&6革命器官&r。"
+				""
+				"革命器官可以对&c熔火类器官&r进行定向强化，并且本身与机械类器官相性极佳，是不可多得的上等物件。"
+				""
+				"您可以通过制作我定制的&6革命增援&r，定向的让&6锦鲤鳞片&r定位包含革命器官战利品池的空投。"
+			]
+			id: "45C0687630120F65"
+			rewards: [{
+				id: "408DA41693085FB7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "已定位到新的力量"
+			tasks: [{
+				id: "36CDA3A812F87769"
+				item: {
+					Count: 1
+					id: "kubejs:revolution_reinforcement"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "革命之力"
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3C0B5BB105DAC17C"]
+			description: [
+				"通过烈焰水晶，我们还可以还原一些遗失的技艺——&c烈焰加压器&r便是其中之一。"
+				""
+				"烈焰加压器可以&6有效提高您在心火状态下的输出能力&r，亦或者是&6加快下一次进入心火状态的速度&r。"
+			]
+			id: "2C1B075E75130280"
+			rewards: [{
+				id: "5D47D6FC511CE4FD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "烈火超压！"
+			tasks: [{
+				id: "7EF2DD9D30FDB959"
+				item: {
+					Count: 1
+					id: "kubejs:blaze_pressurizer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3C0B5BB105DAC17C"]
+			description: [
+				"通过烈焰水晶，我们还可以还原一些遗失的技艺——&c满溢能量瓶&r便是其中之一。"
+				""
+				"满溢能量瓶可以&6有效提高您在心火状态下的输出能力&r。且允许同时佩戴多个能量瓶，能瞬间达到难以想象的巨大输出能力。"
+			]
+			id: "6EF04F7A837C5858"
+			rewards: [{
+				id: "5022D7BB3114471D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "心火中烧"
+			tasks: [{
+				id: "186DD97F1DA826A0"
+				item: {
+					Count: 1
+					id: "kubejs:energy_bottle_red"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["45C0687630120F65"]
+			description: ["革命继电器可以&6有效提高熔火积累耐久度的速度&r，进而更快的使您进入到心火阶段。"]
+			id: "47E4236EF5E0A69A"
+			rewards: [{
+				id: "67B2163E9201AA53"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加速熔火"
+			tasks: [{
+				id: "63C89E1BD72D8CB9"
+				item: {
+					Count: 1
+					id: "kubejs:revolution_relay"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["45C0687630120F65"]
+			description: ["革命线缆可以有效的为机械器官提供&6少量最大生命值&r，保证机械器官使用者的基本生存能力。"]
+			id: "5A523568EA436E1E"
+			rewards: [{
+				id: "545D60114CF03923"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "提高韧性"
+			tasks: [{
+				id: "1A1A261C9151C03E"
+				item: {
+					Count: 1
+					id: "kubejs:revolution_cable"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["45C0687630120F65"]
+			description: ["革命断路器可以&6有效延长心火状态的持续时间&r，使每次心火状态发挥更加强大的作用。"]
+			id: "3572DAA906773CCD"
+			rewards: [{
+				id: "10589921DEAE491E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "减缓心火"
+			tasks: [{
+				id: "1EFDA651AAC987BB"
+				item: {
+					Count: 1
+					id: "kubejs:revolution_delay"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["45C0687630120F65"]
+			description: [
+				"革命之钟可以在切换到心火状态时，&6自动启动烈焰加压器&r。"
+				""
+				"其不仅降低了您的操作需求，更重要的是，它的加入允许&6非玩家类生物&r享受烈焰加压器的效果。"
+			]
+			id: "7B8FD2D02BA5BCA3"
+			rewards: [{
+				id: "62B12947F986420A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "器官自动化"
+			tasks: [{
+				id: "6E4F5126F3EA2876"
+				item: {
+					Count: 1
+					id: "kubejs:revolution_bell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1E56E0456EA6D888"]
+			description: [
+				"&7. . . 通讯重建中&r"
+				""
+				"&6有一件非常糟糕的消息需要通知您。&r"
+				""
+				"&b现在，这个世界、其他的世界、其他您所知道的任何世界，现在都被严寒所笼罩。&r"
+				""
+				"从数据信息来看，这应当是过度开采地幔能导致的. . .事到如今，再去后悔已经来不及了，我们需要迅速找出&6补救方案&r！"
+			]
+			icon: "minecraft:powder_snow_bucket"
+			id: "6EAC98701F6297E7"
+			invisible: true
+			rewards: [{
+				id: "4305FBD8DB3DA852"
+				item: "lightmanscurrency:coin_copper"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "[通讯中断]"
+			tasks: [{
+				icon: "minecraft:powder_snow_bucket"
+				id: "1E8C811581637DDE"
+				isServer: true
+				stage: "ftb_under_eternal_winter"
+				title: "凛冬已至"
+				type: "maa:astages"
+			}]
+			title: "&b凛冬已至&r"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6EAC98701F6297E7"]
+			description: [
+				"现在我大概能明白为什么如此简单的提取方法，在过去的日志中却仅有极少部分玩家使用——&6因为地幔能的重新平衡是一件非常“亏本”的事情&r。"
+				""
+				"为了平衡地幔能，我们需要巨大量的常规燃料，以平衡之前所使用的那部分地幔能。"
+				""
+				"我们至少要完成这样的平衡工作100次，才有可能能解除掉目前所面临的&b永恒寒冬&r问题。"
+			]
+			id: "4A6163EABA119B99"
+			rewards: [{
+				icon: "kubejs:flame_fragment"
+				id: "53444D56D0829A49"
+				ignore_reward_blocking: true
+				kubeId: "balance_mantle_energy"
+				title: "平衡部分地幔能"
+				type: "maa:kube"
+			}]
+			shape: "gear"
+			subtitle: "平衡地幔能之法"
+			tasks: [{
+				count: 64L
+				id: "58755CD452227639"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
+			title: "&6地幔能平衡：煤炭块&r"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6EAC98701F6297E7"]
+			description: [
+				"使用熔岩可能会稍微划算一些. . .因为我们可以从&6下界&r或者其他地方大量的抽取这种燃料. . ."
+				""
+				"但这一切真的值得吗？或者说&b现在的寒冬真的会影响到什么吗？&r"
+			]
+			icon: "minecraft:lava_bucket"
+			id: "470BBE519FAFAC9B"
+			rewards: [{
+				icon: "kubejs:flame_fragment"
+				id: "1404A25D3EEDDACA"
+				ignore_reward_blocking: true
+				kubeId: "balance_mantle_energy"
+				title: "平衡部分地幔能"
+				type: "maa:kube"
+			}]
+			shape: "gear"
+			subtitle: "平衡地幔能之法"
+			tasks: [{
+				amount: 1000000L
+				fluid: "minecraft:lava"
+				id: "700E798626A15D5C"
+				type: "fluid"
+			}]
+			title: "&6地幔能平衡：熔岩&r"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6EAC98701F6297E7"]
+			description: [
+				"倘若这样的冬日其实并不会对我们的生活造成什么影响——而我们又&b没有办法避免有人再步后尘&r. . ."
+				""
+				"我们拯救这个世界还有意义吗？或者说，保持这样的冬日不也可以吗？"
+			]
+			id: "0030F907B76DF60A"
+			rewards: [{
+				icon: "kubejs:flame_fragment"
+				id: "37CA58E636244BE9"
+				ignore_reward_blocking: true
+				kubeId: "balance_mantle_energy"
+				title: "平衡部分地幔能"
+				type: "maa:kube"
+			}]
+			shape: "gear"
+			subtitle: "平衡地幔能之法"
+			tasks: [{
+				count: 256L
+				id: "1BA844D34F285354"
+				item: { Count: 256, id: "create:blaze_cake" }
+				type: "item"
+			}]
+			title: "&6地幔能平衡：烈焰蛋糕&r"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6EAC98701F6297E7"]
+			description: [
+				"&o&7[通讯中断]&r"
+				""
+				"&o&7[恢复中]&r"
+				""
+				"&6我为什么会抱有那样的想法. . .向您道歉. . .我们应当全力以赴，来维护我们所珍惜的这个世界！&r"
+			]
+			id: "422C30F050C2356E"
+			rewards: [{
+				icon: "kubejs:flame_fragment"
+				id: "50B2493AD545A91F"
+				ignore_reward_blocking: true
+				kubeId: "balance_mantle_energy"
+				title: "平衡部分地热能"
+				type: "maa:kube"
+			}]
+			shape: "gear"
+			subtitle: "平衡地幔能之法"
+			tasks: [{
+				count: 8L
+				id: "751344437AF6A829"
+				item: "cataclysm:lava_power_cell"
+				type: "item"
+			}]
+			title: "&6地幔能平衡：熔岩动力电池&r"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["588B97AAEC0E2385"]
+			description: [
+				"&b曾经，一场巨大的冰雪灾难降临到这片世界. . .&r"
+				""
+				"这场危机曾经威胁到了我们的旅程. . .不过幸好，&6勇敢的人们及时发现了问题&r，并且挽救了整场危机。"
+				""
+				"正因他们，我们现在才能够享受此等静谧、温暖、灿烂的阳光。"
+				""
+				"&6尽管有人因贪婪而犯错，但最终一切还是回到正轨——请允许我向他们致敬。&r"
+			]
+			id: "238304E64039192F"
+			incompatible: ["1E56E0456EA6D888"]
+			invisible: true
+			rewards: [{
+				id: "6F3E753B786DA66C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "封存地幔能后的世界"
+			tasks: [{
+				icon: "create:creative_blaze_cake"
+				id: "6C681FA151D7FE8E"
+				isServer: true
+				stage: "ftb_after_eternal_winter"
+				title: "凛冬之后"
+				type: "maa:astages"
+			}]
+			title: "凛冬之后的新故事"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6EAC98701F6297E7"]
+			id: "636CDD764ADFA00D"
+			invisible: true
+			rewards: [{
+				id: "0751316EE02F7F6A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "tgears:bar_of_blazing_chocolate"
+				id: "32A772C5B1E93BB2"
+				isServer: true
+				stage: "ftb_after_eternal_winter"
+				title: "地幔能暂时稳定"
+				type: "maa:astages"
+			}]
+			title: "照耀温暖的大地"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["238304E64039192F"]
+			description: [
+				"请原谅我上一个任务的多愁善感。"
+				""
+				"简单说，&b这个世界曾经因为某些人随意提取地幔能，进而引发了一场永恒冰雪的世界级灾难&r。"
+				""
+				"但他们最终还是想办法解决了这些问题，且从那以后，&c我决定彻底封存地幔能，杜绝同样的事情再度发生&r。"
+				""
+				"因此，您现在看到的任务，其实是经过优化后，&c不包含地幔能提取部分的美化版任务&r。"
+				""
+				"我的使命是保证您的旅途能够正常结束，因此，在各种权衡利弊下，只有通过此等方案，才能杜绝任何人步入后尘。"
+			]
+			icon: "create:blaze_cake"
+			id: "67967AFA0EECD984"
+			rewards: [{
+				id: "0B0484DA0EFDA3A0"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			subtitle: "向后人讲述"
+			tasks: [{
+				id: "0822FD4343D3A7D8"
+				title: "好吧. . ."
+				type: "checkmark"
+			}]
+			title: "地幔能的故事"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["67967AFA0EECD984"]
+			description: [
+				"由于过去的地幔能提取方式已经无法使用。如今倘若想要获取&6烈焰裂片&r和&6烈焰水晶&r，仅能够通过&6锦鲤鳞片&r定位空投的方式获得。"
+				""
+				"因此，您的首要工作，便是开胸一只锦鲤，随后从其胸腔中获取&6锦鲤鳞片&r。"
+			]
+			id: "224669ADAF1640C2"
+			rewards: [{
+				id: "14D5826079AAA405"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "定向搜索战利品"
+			tasks: [{
+				id: "3972B7FCC757A393"
+				item: {
+					Count: 1
+					id: "kubejs:koi_fish_scale"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "如今的烈焰如何升起"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["224669ADAF1640C2"]
+			description: [
+				"但仅仅通过&6锦鲤鳞片&r定位的空投中，战利品表并不会包含魔源汇聚晶体。"
+				""
+				"您需要再制作一个&6魔源共鸣器&r，它会往战利品表中新增关于&6烈焰 水晶&r的相关战利品。"
+				""
+				"通过同时佩戴魔源共鸣器和锦鲤鳞片，使用主动技能触发锦鲤鳞片获得空投位置后，破坏空投气球。这将大概率从空投中获得到&6烈焰水晶&r。"
+				""
+				"后续任务则与&b灾难前&r基本相同，因此为了节约算力开销，我会将您的任务线与灾难前的任务线合并，望您理解。"
+			]
+			id: "288DA5451A36194F"
+			rewards: [{
+				id: "5FB4E9949D4A907D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "定向战利品表"
+			tasks: [{
+				id: "07A47B6DD3E9BF0E"
+				item: {
+					Count: 1
+					id: "kubejs:source_resonator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
 	]
-	title: "秘闻：无尽燃料"
+	title: "秘闻：地幔燃料"
 }

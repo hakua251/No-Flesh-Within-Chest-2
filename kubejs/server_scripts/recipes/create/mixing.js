@@ -50,4 +50,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(
         ['create:chromatic_compound'],
         ['#forge:ingots/iron', '#forge:ingots/copper', '#forge:ingots/gold', '#forge:ingots/zinc', '#forge:gems/emerald', 'minecraft:coal', '#forge:gems/diamond', '#forge:dusts/redstone', '#forge:gems/lapis'], 20 * 20).superheated()
+
+    event.recipes.create.mixing(
+        ['tconstruct:steel_ingot'],
+        ['minecraft:iron_ingot', 'minecraft:coal'], 20 * 30).superheated()
 })

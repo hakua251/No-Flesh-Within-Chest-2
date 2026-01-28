@@ -78,5 +78,49 @@ ServerEvents.recipes(event => {
             S: 'minecraft:green_dye',
         }
     )
+    event.recipes.create.mechanical_crafting('kubejs:lava_life_cycle_system',
+        [
+            'IBAB',
+            'ISRS',
+            'IGCG',
+            'SSSS',
+        ],
+        {
+            G: 'minecraft:glass',
+            I: 'minecraft:iron_bars',
+            R: 'minecraft:blaze_rod',
+            C: 'chestcavity:blaze_core',
+            S: 'tconstruct:steel_ingot',
+            A: 'minecraft:redstone',
+            B: 'create:iron_sheet'
+        }
+    )
+
+    event.recipes.create.mechanical_crafting('kubejs:energy_bottle_red', [
+        ' AAA ',
+        'ABEBA',
+        'ABDBA',
+        'ABEBA',
+        'AAAAA'
+    ], {
+        A: 'minecraft:redstone_block',
+        B: 'tconstruct:steel_ingot',
+        D: 'kubejs:flame_crystal',
+        E: 'minecraft:netherite_ingot',
+    })
+
+    event.recipes.create.mechanical_crafting('kubejs:blaze_pressurizer', [
+        ' AAA ',
+        '  E  ',
+        ' ADA ',
+        ' AFA ',
+        'BBBBB'
+    ], {
+        A: 'minecraft:magma_block',
+        B: 'tconstruct:steel_ingot',
+        D: 'kubejs:flame_crystal',
+        E: 'minecraft:netherite_ingot',
+        F: 'minecraft:fire_charge',
+    })
 })
 

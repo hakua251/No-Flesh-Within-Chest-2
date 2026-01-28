@@ -9,9 +9,7 @@ RegistryOrgan('kubejs:source_resonator')
 */
 function SourceResonatorAirdropStrategy(customData, event) {
     let lootList = [Item.of('kubejs:source_focus_crystal')]
-    if (Math.random() < 0.5) {
-        lootList.push(Item.of('kubejs:flame_fragment', Math.floor(Math.random() * 3)))
-    }
+    lootList.push(Item.of('kubejs:flame_fragment', Math.floor(Math.random() * 12)))
     customData.lootList = customData.lootList.concat(lootList)
 }
 RegistryAirDropDeathStrategy('source_resonator', SourceResonatorAirdropStrategy)
