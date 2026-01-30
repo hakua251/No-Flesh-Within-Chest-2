@@ -1,0 +1,90 @@
+// priority: 500
+RegistryOrgan('kubejs:void_stomach_pouch')
+    .addScore('chestcavity:digestion', 2)
+    .addScore('chestcavity:nutrition', -0.5)
+    .addScore('chestcavity:endurance', -3)
+// todo 美化和Tooltips
+/**
+* @param {OrganChestCavityUpdateStrategyCustomData} customData
+* @param {Internal.FoodEatenEventJS} event
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function VoidStomachPouchFoodEaten(customData, event, organItem, organIndex, slotType) {
+    const player = event.player
+    const foodItem = event.item
+    if (!foodItem) return
+    let foodItemId = String(foodItem.id)
+    if (!organItem.hasNBT()) organItem.setNbt(new $CompoundTag())
+    let nbt = organItem.getNbt()
+    if (organItem.getDamageValue() <= 0 && !nbt.getBoolean('start')) nbt.putBoolean('start', true)
+    let foodTypeMap = nbt.getCompound('foodTypeMap')
+    let eatCount = foodTypeMap.getInt(foodItemId) + 1
+    foodTypeMap.putInt(foodItemId, eatCount)
+    let comboList = nbt.getList('comboList', GET_STRING_TYPE)
+    if (comboList.contains(NBT.stringTag(foodItemId))) {
+        comboList.clear()
+    }
+    comboList.add(NBT.stringTag(foodItemId))
+    nbt.put('comboList', comboList)
+    let statusMsg = Text.translatable('status_msg.kubejs.void_stomach_pouch.item_info', Text.translatable(foodItem.getDescriptionId()))
+    let comboCount = comboList.size()
+    statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.combo_info', comboCount.toFixed(0)))
+
+    let foodProp = foodItem.getFoodProperties(player)
+    let capIncr = Math.floor(foodProp.getSaturationModifier() * foodProp.getNutrition())
+    let sizeIncr = Math.floor(comboCount / 2)
+
+    if (sizeIncr > 0) {
+        nbt.putInt('sizeIncr', nbt.getInt('sizeIncr') + sizeIncr)
+        statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.size_info', sizeIncr.toFixed(0)))
+    }
+
+    if (capIncr > 0) {
+        nbt.putInt('capIncr', nbt.getInt('capIncr') + capIncr)
+        statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.cap_info', capIncr.toFixed(0)))
+    }
+    console.log(statusMsg)
+    player.setStatusMessage(statusMsg)
+}
+
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.OpenedEntityTickJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function VoidStomachPouchEntityTick(customData, event, organItem, organIndex, slotType) {
+    /**@type {Internal.ServerPlayer} */
+    const player = event.entity
+    if (!player.isPlayer()) return
+    if (!organItem.hasNBT()) return
+    let nbt = organItem.getNbt()
+    if (!nbt.getBoolean('start')) return
+    let curDamage = organItem.getDamageValue() + 1
+    if (curDamage >= organItem.getMaxDamage()) {
+        let dimNet = DimensionsNet.getNetFromPlayer(player)
+        if (!dimNet) {
+            player.setStatusMessage(Text.translatable('status_msg.kubejs.void_stomach_pouch.no_dimnet'))
+            RemoveChestCavityOrgan(customData, event.chestCavity, organIndex, slotType, true)
+            return
+        }
+        let unifiedStorage = dimNet.getUnifiedStorage()
+        let sizeIncr = nbt.getInt('sizeIncr')
+        let capIncr = nbt.getInt('capIncr')
+        unifiedStorage.setSlotMaxSize(unifiedStorage.slotMaxSize + sizeIncr)
+        unifiedStorage.setSlotCapacity(unifiedStorage.slotCapacity + capIncr)
+        player.setStatusMessage(Text.translatable('status_msg.kubejs.void_stomach_pouch.summary', sizeIncr.toFixed(0), capIncr.toFixed(0)))
+        RemoveChestCavityOrgan(customData, event.chestCavity, organIndex, slotType, true)
+    } else {
+        organItem.setDamageValue(curDamage)
+    }
+}
+
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:void_stomach_pouch')
+        .addOnlyStrategy('food_eaten', VoidStomachPouchFoodEaten)
+        .addOnlyStrategy('entity_tick', VoidStomachPouchEntityTick)
+)

@@ -193,7 +193,7 @@
 			}]
 			subtitle: "好吃、好吃、好吃、好吃、好吃、好. . ."
 			tasks: [{
-				icon: "kubejs:free_entropy"
+				icon: "kubejs:dimensional_worm"
 				id: "2F2BF166FE51FF44"
 				leaderboard: "infinity:dimensions_opened_stat"
 				title: "？"
@@ -217,7 +217,7 @@
 				""
 				"** 请您为了世界的稳定，构造&6次元稳定锚&r。 **"
 			]
-			icon: "kubejs:free_entropy"
+			icon: "kubejs:dimensional_worm"
 			id: "2E34A2B03950E15E"
 			rewards: [{
 				id: "69D204D8537F0967"
@@ -247,7 +247,7 @@
 				""
 				"** 搭建次元稳定锚至生效需要大量时间，为争取时间，我将启动&c隔离策略&r，请您放心完成此任务，我将保护您免受侵害。 **"
 			]
-			icon: "kubejs:free_entropy"
+			icon: "kubejs:dimensional_worm"
 			id: "74E1C83962A64BB7"
 			rewards: [
 				{

@@ -44,8 +44,9 @@ InfinityEvents.itemInPortal(event => {
         if (nbt.contains('PhotographerId')) {
             let phtographerId = nbt.getUUID('PhotographerId')
             let targetPlayer = level.getPlayerByUUID(phtographerId)
+            if (!targetPlayer) return
             if (!DimensionsNet.getNetFromPlayer(targetPlayer)) {
-                DimensionsNet.createNewNetForPlayer(targetPlayer, 64, 27)
+                DimensionsNet.createNewNetForPlayer(targetPlayer, 1024, 27)
             }
         }
     } else if (itemStack.is('minecraft:diamond_block')) {

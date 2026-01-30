@@ -1486,14 +1486,29 @@
 				"3C0B5BB105DAC17C"
 				"133A28D884F01479"
 			]
+			description: [
+				"经检测，大世界计算机也可以进行类似的&6复制演算&r，通过凭空创造具有少量自由度的数据来满足类似于地幔能复制的要求。"
+				""
+				"但是大世界计算机的规模有限，目前只能够制造六阶及其以下的&6类地幔能&r以供复制使用，且效率较低。"
+				""
+				"通过在构建完成的大世界计算机中，在材料槽中输入异彩化合物和魔源汇聚水晶，即可通过&6消耗魔源汇聚水晶&r的能量来进行一次复制工作。"
+			]
+			icon: "kubejs:world_computer"
 			id: "5BFA9E175D1944CF"
-			subtitle: "todo 没做完"
+			rewards: [{
+				id: "2A383940B154C593"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "大世界计算机对地幔能的模拟"
 			tasks: [{
 				id: "700A3083AAAF8B82"
-				title: "局部复制计划"
+				title: "我已了解"
 				type: "checkmark"
 			}]
-			x: 11.0d
+			title: "&6领域交差：大世界地幔能&r"
+			x: 10.5d
 			y: 3.5d
 		}
 	]

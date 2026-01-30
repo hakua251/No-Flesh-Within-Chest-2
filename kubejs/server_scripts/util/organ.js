@@ -137,7 +137,7 @@ function OrganItemCoolDown(player, item) {
         if (!cooldownInstance) return
         let endTime = cooldownInstance.endTime
         let leftTime = endTime - cooldowns.tickCount
-        player.setStatusMessage(Text.translatable('status_msg.kubejs.warden_core.key_active.cooldown', Text.gold(item.getHoverName()), leftTime / 20))
+        player.setStatusMessage(Text.translatable('status_msg.kubejs.key_active.cooldown', Text.gold(item.getHoverName()), leftTime / 20))
         return true
     }
     return false

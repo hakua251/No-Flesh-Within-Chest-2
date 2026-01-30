@@ -23,7 +23,7 @@ ServerEvents.tags('item', event => {
 
     event.add('tconplanner:creative_material', ['kubejs:genesis_tinker_blueprint'])
 
-    event.add('maa:cannot_mending', ['kubejs:god_tinker_heart', 'kubejs:furnace_core', 'kubejs:burning_heart', 'kubejs:energy_bottle_red', 'kubejs:originiums', 'kubejs:soul_cage', 'kubejs:red_wolf_beard', 'kubejs:raccoon_paw', 'kubejs:boar_nose', 'kubejs:ignited_armour', 'kubejs:pitcher_stomach', 'kubejs:vita_sunflower', 'kubejs:ender_guardian_spine', 'kubejs:embers_liver', 'kubejs:harbinger_lung'])
+    event.add('maa:cannot_mending', ['kubejs:god_tinker_heart', 'kubejs:furnace_core', 'kubejs:burning_heart', 'kubejs:energy_bottle_red', 'kubejs:originiums', 'kubejs:soul_cage', 'kubejs:red_wolf_beard', 'kubejs:raccoon_paw', 'kubejs:boar_nose', 'kubejs:ignited_armour', 'kubejs:pitcher_stomach', 'kubejs:vita_sunflower', 'kubejs:ender_guardian_spine', 'kubejs:embers_liver', 'kubejs:harbinger_lung', 'kubejs:void_stomach_pouch'])
 
     event.add('kubejs:tinker_anvil', ['tconstruct:tinkers_anvil', 'tconstruct:scorched_anvil'])
 
@@ -31,8 +31,7 @@ ServerEvents.tags('item', event => {
     event.add('maa:immune/explosion', [])
     event.add('maa:immune/fire', [])
     event.add('maa:immune/cactus', [])
-    event.add('chestcavity:cannot_remove', ['kubejs:worm_larva', 'kubejs:worm_of_gula', 'kubejs:gula_worm_nest'])
-
+    event.add('chestcavity:cannot_remove', [])
 })
 
 ServerEvents.tags('entity_type', event => {

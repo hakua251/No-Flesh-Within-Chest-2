@@ -407,12 +407,11 @@ ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireFunctionOnEnd(ctx => {
             console.log('Congratulations.')
-            console.log('World Computer Completed.')
-            console.log('I will keep promise and explore the world that you can\'t be.')
-            const machine = ctx.getMachine()
-            const owner = machine.getOwner()
-            if (owner.isPlayer() && !AStages.playerHasStage('world_computer_2', owner.getPlayer())) {
-                AStages.addStageToPlayer('world_computer_2', owner.getPlayer())
+            console.log('New Horizon Establish.')
+            console.log('Keep promise and explore the world you can\'t arrive.')
+            const server = ctx.block.level.server
+            if (owner.isPlayer() && !AStages.serverHasStage('world_computer_2', server)) {
+                AStages.addStageToServer('world_computer_2', server)
             }
         })
         .requireFunctionToStart(ctx => {
@@ -490,4 +489,51 @@ ServerEvents.recipes(event => {
         .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
         .requireItem(Item.of('minecraft:emerald', 16), 'input_1')
         .resetOnError()
+
+
+    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
+        .requireFunctionOnEnd(ctx => {
+            const machine = ctx.getMachine()
+            let crystal = machine.getItemStored('input_3')
+            if (!crystal || !crystal.is('kubejs:source_focus_crystal')) return ctx.error('')
+            if (Math.random() < 0.1) {
+                machine.setItemStored('input_3', 'kubejs:exhausted_source_focus_crystal')
+            }
+            const outputExtract = machine.getItemStored('output_1')
+            const inputTarget = machine.getItemStored('input_1')
+            if (!validWorldMantleInputTarget(inputTarget)) return ctx.success()
+            let outputItem = inputTarget.withCount(1)
+            if (!outputExtract || outputExtract.isEmpty()) {
+                machine.setItemStored('output_1', outputItem)
+            } else if (outputExtract.is(outputItem) && outputExtract.getCount() < outputItem.getMaxStackSize()) {
+                machine.setItemStored('output_1', outputItem.withCount(Math.min(outputExtract.getCount() + 1, outputItem.getMaxStackSize())))
+            }
+            return ctx.success()
+        })
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            let crystal = machine.getItemStored('input_3')
+            if (crystal && crystal.is('kubejs:source_focus_crystal')) {
+                return ctx.success()
+            }
+            return ctx.error('')
+        })
+        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
+        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
+        .resetOnError()
 })
+
+
+/**
+ * 
+ * @param {Internal.ItemStack} input 
+ */
+function validWorldMantleInputTarget(input) {
+    if (input.hasTag('forge:raw_materials')) return true
+    if (input.hasTag('forge:gems')) return true
+    if (input.hasTag('minecraft:flowers')) return true
+    if (input.isEdible()) return true
+    if (input.hasTag('forge:books')) return true
+    if (String(input.id) == 'minecraft:potion') return true
+    return false
+}

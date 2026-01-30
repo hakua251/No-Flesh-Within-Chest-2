@@ -2032,6 +2032,7 @@
 				""
 				"请注意，大世界计算机的配方显示并不完全——这是因为大世界计算机本身并不是用于生产材料的——其主要功能是用于修改一些&c世界规律&r，其具体效果可能需要您进行试验分析。"
 			]
+			icon: "kubejs:world_computer"
 			id: "133A28D884F01479"
 			rewards: [{
 				id: "317E5F07D06A2233"
@@ -2042,10 +2043,11 @@
 			subtitle: "倘若星不再依照星轨行进，那我又该将航线驶向何方"
 			tasks: [{
 				icon: "kubejs:world_computer"
-				id: "03478360DF22DDBE"
+				id: "124AF04D5E9729EB"
+				isServer: true
 				stage: "world_computer_2"
-				title: "执行世界计算"
-				type: "gamestage"
+				title: "完成世界注入"
+				type: "maa:astages"
 			}]
 			title: "&6庆贺吧！此乃大世界计算机！&r"
 			x: 22.0d

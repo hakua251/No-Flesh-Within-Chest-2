@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
             data.putInt('depth_bar', depthBar + 1)
             const outputExtract = machine.getItemStored('output_extract')
             const inputTarget = machine.getItemStored('input_target')
-            if (!validInputTarget(inputTarget, depthBar)) return ctx.success()
+            if (!validMantleInputTarget(inputTarget, depthBar)) return ctx.success()
             let outputItem = inputTarget.withCount(1)
             if (!outputExtract || outputExtract.isEmpty()) {
                 machine.setItemStored('output_extract', outputItem)
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
 
             const outputExtract = machine.getItemStored('output_extract')
             const inputTarget = machine.getItemStored('input_target')
-            if (!validInputTarget(inputTarget, depthBar)) return ctx.success()
+            if (!validMantleInputTarget(inputTarget, depthBar)) return ctx.success()
             let outputItem = inputTarget.withCount(inputTarget.getMaxStackSize())
             if (!outputExtract || outputExtract.isEmpty() || outputExtract.is(outputItem)) {
                 machine.setItemStored('output_extract', outputItem)
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
  * @param {Internal.ItemStack} input 
  * @param {number} depth 
  */
-function validInputTarget(input, depth) {
+function validMantleInputTarget(input, depth) {
     // 禁用容器复制
     if (input.hasTag('minecraft:bundles') || input.hasTag('minecraft:shulker_boxes')) return false
     if (input.hasTag('forge:raw_materials')) return true
