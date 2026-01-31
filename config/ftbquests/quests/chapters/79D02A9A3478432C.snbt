@@ -235,11 +235,19 @@
 				"每次开采后，机器的&6提取深度会加深&r，其体现在机器中间的深度槽中。"
 			]
 			id: "12E7C53A56C43097"
-			rewards: [{
-				id: "10C0F6B25D03447E"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "10C0F6B25D03447E"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "6554736ED8ED1CAB"
+					titleId: "kubejs:mantle_extractor"
+					type: "titles:title"
+				}
+			]
 			subtitle: "魔科学的最佳应用"
 			tasks: [{
 				id: "7A9E166AA017CCB5"
@@ -1170,11 +1178,19 @@
 			icon: "minecraft:powder_snow_bucket"
 			id: "6EAC98701F6297E7"
 			invisible: true
-			rewards: [{
-				id: "4305FBD8DB3DA852"
-				item: "lightmanscurrency:coin_copper"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4305FBD8DB3DA852"
+					item: "lightmanscurrency:coin_copper"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "712D571209E7461D"
+					titleId: "kubejs:eternal_winter"
+					type: "titles:title"
+				}
+			]
 			shape: "square"
 			subtitle: "[通讯中断]"
 			tasks: [{
@@ -1331,11 +1347,19 @@
 			id: "238304E64039192F"
 			incompatible: ["1E56E0456EA6D888"]
 			invisible: true
-			rewards: [{
-				id: "6F3E753B786DA66C"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6F3E753B786DA66C"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "328E0F032A8AB679"
+					titleId: "kubejs:sun_flower"
+					type: "titles:title"
+				}
+			]
 			subtitle: "封存地幔能后的世界"
 			tasks: [{
 				icon: "create:creative_blaze_cake"
@@ -1364,11 +1388,19 @@
 			]
 			id: "636CDD764ADFA00D"
 			invisible: true
-			rewards: [{
-				id: "0751316EE02F7F6A"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0751316EE02F7F6A"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "2806BE4A2329B4B3"
+					titleId: "kubejs:heart_warm"
+					type: "titles:title"
+				}
+			]
 			subtitle: "[通讯恢复]"
 			tasks: [{
 				icon: "tgears:bar_of_blazing_chocolate"

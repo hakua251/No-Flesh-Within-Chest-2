@@ -49,11 +49,19 @@
 				"现在，当务之急就是&6&n打开您自己的胸腔&r，进而验证该传闻的真实性。"
 			]
 			id: "6ACBA86B2F8BA384"
-			rewards: [{
-				id: "10B5357BA361C688"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "10B5357BA361C688"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "5836B87D444ED6DC"
+					titleId: "kubejs:chest_opener"
+					type: "titles:title"
+				}
+			]
 			subtitle: "胸腔开启类任务"
 			tasks: [{
 				entity: "minecraft:player"

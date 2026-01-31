@@ -78,12 +78,19 @@
 			]
 			hide_dependent_lines: true
 			id: "2650CE0D76584853"
-			rewards: [{
-				advancement: "kubejs:knowledge/world_computer_blueprint"
-				criterion: ""
-				id: "5FB9A358EFE5FC9D"
-				type: "advancement"
-			}]
+			rewards: [
+				{
+					icon: "titles:title_scroll_common"
+					id: "48452ACE1367FB41"
+					titleId: "kubejs:assembly_line_builder"
+					type: "titles:title"
+				}
+				{
+					id: "5C549B071AC9360D"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+			]
 			subtitle: "从未来截获消息"
 			tasks: [{
 				id: "1FF54461008FC48D"
@@ -2034,11 +2041,19 @@
 			]
 			icon: "kubejs:world_computer"
 			id: "133A28D884F01479"
-			rewards: [{
-				id: "317E5F07D06A2233"
-				item: "lightmanscurrency:coin_netherite"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "317E5F07D06A2233"
+					item: "lightmanscurrency:coin_netherite"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "288EEBFD56A66F65"
+					titleId: "kubejs:world_machine_builder"
+					type: "titles:title"
+				}
+			]
 			shape: "square"
 			subtitle: "倘若星不再依照星轨行进，那我又该将航线驶向何方"
 			tasks: [{

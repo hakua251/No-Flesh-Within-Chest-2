@@ -314,11 +314,19 @@
 			]
 			icon: "lightmanscurrency:coin_gold"
 			id: "64C564541E487779"
-			rewards: [{
-				id: "724E009CBF96BB5F"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "724E009CBF96BB5F"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "7522AAD8EC3DBCD7"
+					titleId: "kubejs:beginner"
+					type: "titles:title"
+				}
+			]
 			subtitle: "约定"
 			tasks: [{
 				id: "671735A4ECD0060F"

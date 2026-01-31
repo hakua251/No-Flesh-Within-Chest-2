@@ -1263,11 +1263,19 @@
 				"现在请您搭建一个下界传送门，并且将&6黑曜石&r丢到下界门中——它绝对不会穿越到另一个维度的，它将会为您打开一扇通向未知的桥梁。"
 			]
 			id: "05B30D636925E1C1"
-			rewards: [{
-				id: "3AC9D9C888908716"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3AC9D9C888908716"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "013958312F0D29FA"
+					titleId: "kubejs:explore_multiworld"
+					type: "titles:title"
+				}
+			]
 			subtitle: "踪迹之一"
 			tasks: [{
 				dimension: "infinity:cube"
@@ -1861,14 +1869,22 @@
 				""
 				"这个维度是几乎无穷大的——这里正是&6巴别图书馆&r。任何字符长度低于书本一页的文本，在这里都能够得到完美的呈现。"
 				""
-				"而这些维度也是如此——它们并不是遵循了什么规则生成，它们只是在混乱的组合所有的可能性，最后为我们、为&6您&r呈现上不同的奇迹。"
+				"而这些维度也是如此——它们并不是遵循了什么规则生成，它们只是在混乱的组合所有的可能性，&6最后为我们、为您呈现上不同的奇迹！！&r"
 			]
 			id: "2F9EE70E103CA5D0"
-			rewards: [{
-				id: "2A37AFB8B5164AED"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2A37AFB8B5164AED"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "40D2D8E0C8F17379"
+					titleId: "kubejs:multiworld_future"
+					type: "titles:title"
+				}
+			]
 			subtitle: "来吧，来到这无穷无尽的图书馆"
 			tasks: [{
 				dimension: "infinity:library"

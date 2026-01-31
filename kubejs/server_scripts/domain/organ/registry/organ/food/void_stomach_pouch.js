@@ -45,7 +45,6 @@ function VoidStomachPouchFoodEaten(customData, event, organItem, organIndex, slo
         nbt.putInt('capIncr', nbt.getInt('capIncr') + capIncr)
         statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.cap_info', capIncr.toFixed(0)))
     }
-    console.log(statusMsg)
     player.setStatusMessage(statusMsg)
 }
 

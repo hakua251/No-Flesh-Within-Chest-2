@@ -1184,12 +1184,20 @@
 			]
 			icon: "minecraft:chiseled_bookshelf"
 			id: "3C788CBFDB9DBA29"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6C0E3EE640F1C699"
-				table_id: 3651736726024610907L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6C0E3EE640F1C699"
+					table_id: 3651736726024610907L
+					type: "choice"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "1BD2FD4822704B5B"
+					titleId: "kubejs:tinker_study"
+					type: "titles:title"
+				}
+			]
 			subtitle: "是否放弃创世蓝图"
 			tasks: [{
 				id: "37147D450AECD2EC"
@@ -3539,11 +3547,19 @@
 			]
 			id: "33D6D51353372A8F"
 			invisible: true
-			rewards: [{
-				id: "678D6F68454EE504"
-				item: "lightmanscurrency:coin_netherite"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "678D6F68454EE504"
+					item: "lightmanscurrency:coin_netherite"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "0440DEA59DCDAB5F"
+					titleId: "kubejs:my_genesis"
+					type: "titles:title"
+				}
+			]
 			shape: "square"
 			subtitle: "匠工创世创工匠"
 			tasks: [{
