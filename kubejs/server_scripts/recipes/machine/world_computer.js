@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             const machine = ctx.getMachine()
             const data = machine.getData()
             data.putInt('resource_bar', 512)
-            return ctx.success()
+            return ctx.error('')
         })
         .requireFunctionEachTick(ctx => {
             const machine = ctx.getMachine()
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             if (Math.random() < Math.pow(resourceBar / 1000000, 2)) {
                 return ctx.success()
             }
-            return ctx.error('Error')
+            return ctx.error('')
         })
         .requireItem(Item.of('kubejs:reverse_causality_chip'), 'input_3')
         .requireItem(Item.of('create:chromatic_compound'), 'input_2')
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
             if (Math.random() < Math.pow(resourceBar / 1000000, 2)) {
                 return ctx.success()
             }
-            return ctx.error('Error')
+            return ctx.error('')
         })
         .requireItem(Item.of('kubejs:reverse_causality_chip'), 'input_3')
         .requireItem(Item.of('create:chromatic_compound'), 'input_2')
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
                 resourceBar = Math.floor(resourceBar - 1024)
                 if (resourceBar <= 0) {
                     data.putInt('resource_bar', 0)
-                    return ctx.error('Error')
+                    return ctx.error('')
                 }
                 needUpdate = true
             }
@@ -126,13 +126,12 @@ ServerEvents.recipes(event => {
             if (Math.random() < Math.pow(resourceBar / 1000000, 2)) {
                 return ctx.success()
             }
-            return ctx.error('Error')
+            return ctx.error('')
         })
         .requireItem(Item.of('kubejs:reverse_causality_chip'), 'input_3')
         .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
         .requireItem(Item.of('biomancy:flesh'), 'input_1')
         .produceItem(Item.of('kubejs:cerebral_brain_processor', 1), 'output_1')
-
         .resetOnError()
 
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
@@ -187,7 +186,7 @@ ServerEvents.recipes(event => {
             if (Math.random() < Math.pow((resourceBar > 500000) ? (2 - resourceBar / 500000) : (resourceBar / 500000), 2)) {
                 return ctx.success()
             }
-            return ctx.error('Error')
+            return ctx.error('')
         })
         .requireItem(Item.of('kubejs:reverse_causality_chip'), 'input_3')
         .requireItem(Item.of('create:chromatic_compound'), 'input_2')
@@ -251,7 +250,7 @@ ServerEvents.recipes(event => {
             if (Math.random() < Math.pow((resourceBar > targetResource) ? (1000000 - resourceBar) / (1000000 - targetResource) : (resourceBar / targetResource), 2)) {
                 return ctx.success()
             }
-            return ctx.error('Error')
+            return ctx.error('')
         })
         .requireItem(Item.of('kubejs:reverse_causality_chip'), 'input_3')
         .requireItem(Item.of('create:chromatic_compound'), 'input_2')
@@ -286,7 +285,7 @@ ServerEvents.recipes(event => {
                     data.putInt('resource_bar', 0)
                     tile.setPowerLevel(0)
                     level.updateNeighborsAt(block.getPos(), block.blockState.getBlock())
-                    return ctx.error('Error')
+                    return ctx.error('')
                 }
                 data.putInt('target_resource', targetResource + Math.floor(Math.random() * 300000) - 150000)
                 needUpdate = true
@@ -326,7 +325,7 @@ ServerEvents.recipes(event => {
             if (Math.random() < Math.pow((resourceBar > targetResource) ? (1000000 - resourceBar) / (1000000 - targetResource) : (resourceBar / targetResource), 2)) {
                 return ctx.success()
             }
-            return ctx.error('Error')
+            return ctx.error('')
         })
         .requireItem(Item.of('kubejs:reverse_causality_chip'), 'input_3')
         .requireItem(Item.of('create:chromatic_compound'), 'input_2')
@@ -396,7 +395,7 @@ ServerEvents.recipes(event => {
             if (Math.random() < Math.pow((resourceBar > targetResource) ? (1000000 - resourceBar) / (1000000 - targetResource) : (resourceBar / targetResource), 2)) {
                 return ctx.success()
             }
-            return ctx.error('Error')
+            return ctx.error('')
         })
         .requireItem(Item.of('kubejs:reverse_causality_chip'), 'input_3')
         .requireItem(Item.of('create:chromatic_compound'), 'input_2')
@@ -419,7 +418,7 @@ ServerEvents.recipes(event => {
             let bookItem = machine.getItemStored('input_1')
             if (bookItem.hasNBT()) {
                 let nbt = bookItem.getNbt()
-                let pages = nbt.getList('pages', GET_STRING_TYPE)
+                let pages = nbt.getList('pages', $Tag.TAG_STRING)
                 for (let page of pages) {
                     console.warn(page.getAsString())
                 }
@@ -444,6 +443,7 @@ ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireFunctionOnEnd(ctx => {
             ctx.block.level.setRainLevel(2)
+            return ctx.success()
         })
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
         .requireItem(Item.of('kubejs:reverse_causality_chip', 1), 'input_3')
@@ -457,6 +457,7 @@ ServerEvents.recipes(event => {
             const level = block.getLevel()
             let res = level.gameRules.kjs$getBoolean('doInsomnia')
             level.gameRules.set('doInsomnia', res ? 'false' : 'true')
+            return ctx.success()
         })
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
         .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
@@ -470,6 +471,7 @@ ServerEvents.recipes(event => {
             const level = block.getLevel()
             let res = level.gameRules.kjs$getBoolean('doPatrolSpawning')
             level.gameRules.set('doPatrolSpawning', res ? 'false' : 'true')
+            return ctx.success()
         })
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
         .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
@@ -483,6 +485,7 @@ ServerEvents.recipes(event => {
             const level = block.getLevel()
             let res = level.gameRules.kjs$getBoolean('doTraderSpawning')
             level.gameRules.set('doTraderSpawning', res ? 'false' : 'true')
+            return ctx.success()
         })
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
         .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')

@@ -13,6 +13,7 @@ RegistryOrgan('kubejs:worm_larva')
 function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.getPlayer()
     const item = event.getItem()
+    const level = event.getLevel()
     if (!organItem.hasNBT()) {
         organItem.setNbt(new $CompoundTag())
     }
@@ -27,15 +28,19 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
     let curDamage = organItem.getDamageValue() - foodHunger
     if (curDamage <= 0) {
         let ratio = curSaturation / (organItem.getMaxDamage() - curDamage)
-        if (ratio >= 1) {
+        if (ratio >= 0.5) {
             let chestCavity = player.getChestCavityInstance()
             if (!chestCavity) return
             let invTypeData = chestCavity.getInventoryTypeData()
             let ccInv = chestCavity.inventory
             let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, EightDirectionOffset)
+            let emptyItemCount = 0
             for (let slotDefinition of aroundRelativeSlots) {
                 let pItem = ccInv.getStackInSlot(slotDefinition.getId())
-                if (pItem.isEmpty()) continue
+                if (!pItem || pItem.isEmpty()) {
+                    emptyItemCount++
+                    continue
+                }
                 let replaceItem
                 if (pItem.hasTag('kubejs:heart')) {
                     replaceItem = Item.of('kubejs:king_of_stomach')
@@ -51,6 +56,13 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
                 if (!replaceItem) continue
                 RemoveChestCavityOrgan(customData, player.chestCavityInstance, organIndex, slotType, true)
                 SetChestCavityOrgan(customData, player.chestCavityInstance, replaceItem, slotDefinition.getId(), slotDefinition.getType(), true)
+                level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.player.burp', player.getSoundSource(), 1, 1)
+                return
+            }
+            // 虚空胃袋转化
+            if (emptyItemCount >= aroundRelativeSlots.length) {
+                SetChestCavityOrgan(customData, player.chestCavityInstance, Item.of('kubejs:void_stomach_pouch'), organIndex, slotType, true)
+                level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.player.burp', player.getSoundSource(), 1, 1)
                 return
             }
         }

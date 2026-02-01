@@ -17,6 +17,6 @@ function DreamFilmStrategy(customData, event) {
     if (!nbt.contains('Frames')) {
         nbt.put('Frames', new $ListTag())
     }
-    let frameList = nbt.getList('Frames', GET_COMPOUND_TYPE)
+    let frameList = nbt.getList('Frames', $Tag.TAG_COMPOUND)
     frameList.add(new $CompoundTag())
 }

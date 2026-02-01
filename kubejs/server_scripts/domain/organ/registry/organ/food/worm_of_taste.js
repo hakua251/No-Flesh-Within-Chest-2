@@ -30,5 +30,5 @@ function WormOfTasteChestCavityUpdate(customData, event, organItem, organIndex, 
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:worm_of_taste')
-        .addOnlyStrategy('food_eaten', WormOfTasteChestCavityUpdate)
+        .addStrategy('chest_cavity_update', WormOfTasteChestCavityUpdate)
 )

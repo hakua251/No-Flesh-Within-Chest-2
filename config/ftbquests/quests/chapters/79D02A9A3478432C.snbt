@@ -16,7 +16,7 @@
 				""
 				"在过去的日志里，里面明确存在极少部分玩家&6榨取地幔能&r的记录。或许我们可以学习他们，同样开采地幔能以获取一定的发展优势。"
 			]
-			icon: "create:creative_blaze_cake"
+			icon: "create:blaze_cake"
 			id: "1E56E0456EA6D888"
 			incompatible: ["238304E64039192F"]
 			invisible: true
@@ -32,7 +32,7 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			title: "地幔能"
+			title: "地幔能开采企划"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -1344,6 +1344,7 @@
 				""
 				"&6尽管有人因贪婪而犯错，但最终一切还是回到正轨——请允许我向他们致敬。&r"
 			]
+			icon: "minecraft:snowball"
 			id: "238304E64039192F"
 			incompatible: ["1E56E0456EA6D888"]
 			invisible: true
@@ -1362,7 +1363,7 @@
 			]
 			subtitle: "封存地幔能后的世界"
 			tasks: [{
-				icon: "create:creative_blaze_cake"
+				icon: "minecraft:snowball"
 				id: "6C681FA151D7FE8E"
 				isServer: true
 				stage: "ftb_after_eternal_winter"
@@ -1502,18 +1503,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["00EC549EA51DF850"]
-			id: "76630369238A7D72"
-			subtitle: "todo 没做完"
-			tasks: [{
-				id: "2F4D92DD98511C0F"
-				title: "寻找最热的极点"
-				type: "checkmark"
-			}]
-			x: 8.0d
-			y: 8.0d
-		}
-		{
 			dependencies: [
 				"3C0B5BB105DAC17C"
 				"133A28D884F01479"
@@ -1523,7 +1512,7 @@
 				""
 				"但是大世界计算机的规模有限，目前只能够制造六阶及其以下的&6类地幔能&r以供复制使用，且效率较低。"
 				""
-				"通过在构建完成的大世界计算机中，在材料槽中输入异彩化合物和魔源汇聚水晶，即可通过&6消耗魔源汇聚水晶&r的能量来进行一次复制工作。"
+				"通过在构建完成的大世界计算机中，在材料槽中输入异彩化合物和魔源汇聚水晶，即可通过&6魔源汇聚水晶&r的能量来进行一次复制工作。"
 			]
 			icon: "kubejs:world_computer"
 			id: "5BFA9E175D1944CF"
@@ -1542,6 +1531,30 @@
 			title: "&6领域交差：大世界地幔能&r"
 			x: 10.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["00EC549EA51DF850"]
+			description: [
+				"或许，我们能够找到更加炽热的东西来&6进一步强化这些器官&r的力量。"
+				""
+				"目前根据定位的结果，这个世界上最为炽热的物品便是&d创造烈焰蛋糕&r。虽然其名为创造，但在追求可能性之路上我们从未尝过失败之味。"
+			]
+			icon: "create:creative_blaze_cake"
+			id: "09A0F90FEBC6966C"
+			rewards: [{
+				id: "07DCBB5BD72676F2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "熔火力量的极限"
+			tasks: [{
+				id: "160221067E78DA79"
+				title: "启程吧"
+				type: "checkmark"
+			}]
+			title: "寻找最为炽热的力量"
+			x: 8.0d
+			y: 8.0d
 		}
 	]
 	title: "秘闻：地幔燃料"

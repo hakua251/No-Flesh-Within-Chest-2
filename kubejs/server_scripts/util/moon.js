@@ -17,7 +17,7 @@ function SetMoonData(server, size, r, g, b) {
     moonNbt.put('moonShaderColor', colorData)
     server.persistentData.put('moonData', moonNbt)
 
-    server.getPlayers().forEach(player => {
+    server.getPlayers().forEach(/**@param {Internal.ServerPlayer} player */ player => {
         player.sendData('modify_moon', moonNbt)
     })
 }
@@ -28,7 +28,7 @@ function SetMoonData(server, size, r, g, b) {
  */
 function SyncClientMoonEvent(player) {
     if (player.server.persistentData.contains('moonData')) {
-        let moonNbt = player.server.persistentData.get('moonData')
-        player.sendData('moonData', moonNbt)
+        let moonNbt = player.server.persistentData.getCompound('moonData')
+        player.sendData('modify_moon', moonNbt)
     }
 }

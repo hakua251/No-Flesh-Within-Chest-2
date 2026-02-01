@@ -11,10 +11,11 @@ const ExcretionSlot = 'excretion_slot'
  * @param {boolean} needUpdate
  */
 function SetChestCavityOrgan(customData, ccInstance, organItem, organIndex, slotType, needUpdate) {
+    let inventory = ccInstance.inventory
     if (needUpdate) {
-        ccInstance.inventory.setItem(organIndex, organItem)
+        inventory.setItem(organIndex, organItem)
     } else {
-        ccInstance.inventory.setItemNoUpdate(organIndex, organItem)
+        inventory.setItemNoUpdate(organIndex, organItem)
     }
 
     if (slotType == ExcretionSlot) {

@@ -15,7 +15,7 @@ EntityEvents.death(event => {
     let customData = {
         lootList: []
     }
-    let typeListTag = entity.persistentData.getList('types', GET_STRING_TYPE)
+    let typeListTag = entity.persistentData.getList('types', $Tag.TAG_STRING)
     let types = []
     typeListTag.forEach(type => types.push(type.getAsString()))
     AirdropDeathStrategy.run(types, [event], customData)

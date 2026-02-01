@@ -134,3 +134,4 @@ const $UserBanListEntry = Java.loadClass('net.minecraft.server.players.UserBanLi
 const $CoinValue = Java.loadClass('io.github.lightman314.lightmanscurrency.api.money.value.builtin.CoinValue')
 const $MachineJS = Java.loadClass('fr.frinn.custommachinery.common.integration.kubejs.function.MachineJS')
 const $CustomMachineTile = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineTile')
+const $Tag = Java.loadClass('net.minecraft.nbt.Tag')

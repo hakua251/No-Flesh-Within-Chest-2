@@ -3,6 +3,7 @@ const MantleEnergyExtractorMaxDepth = 10000
 ServerEvents.recipes(event => {
     // 低深度默认配方
     event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 600)
+        .produceItem('kubejs:flame_fragment', 'output_flame')
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
@@ -19,7 +20,6 @@ ServerEvents.recipes(event => {
             }
             return ctx.success()
         })
-        .produceItem('kubejs:flame_fragment', 'output_flame')
         .requireSourcePerTick(8)
         .requireSource(250)
         .requireFunctionToStart(ctx => {
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
             /**@type {Internal.ServerLevel} */
             const level = block.getLevel()
             const server = level.getServer()
-            if (HadUnderEternalWinter(server)) return
+            if (HadUnderEternalWinter(server)) return ctx.error('')
             const depthBar = Math.round(data.getFloat('depth_bar'))
             if (depthBar >= 2000) return ctx.error('')
             let crystal = machine.getItemStored('input_crystal')
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
             /**@type {Internal.ServerLevel} */
             const level = block.getLevel()
             const server = level.getServer()
-            if (HadUnderEternalWinter(server)) return
+            if (HadUnderEternalWinter(server)) return ctx.error('')
             let crystal = machine.getItemStored('input_crystal')
             if (crystal && crystal.is('kubejs:source_focus_crystal')) {
                 return ctx.success()

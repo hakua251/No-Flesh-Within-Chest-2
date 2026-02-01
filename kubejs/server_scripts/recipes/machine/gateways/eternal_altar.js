@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             const level = block.getLevel()
             const gatewayPos = block.getPos().above()
             const player = GetNearestPlayer(level, gatewayPos, 32)
-            if (!player) return ctx.error('Error')
+            if (!player) return ctx.error('')
 
             const levelIndicator = Math.round(data.getFloat('level_indicator'))
             const chaosIndicator = Math.round(data.getFloat('chaos_indicator'))

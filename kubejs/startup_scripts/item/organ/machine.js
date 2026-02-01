@@ -18,5 +18,49 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:prowler_rotating_shaft').maxStackSize(1).texture('kubejs:item/organs/machine/prowler_rotating_shaft').tag('kubejs:machine')
     event.create('kubejs:watcher_probe').maxStackSize(1).texture('kubejs:item/organs/machine/watcher_probe').tag('kubejs:machine')
 
-    event.create('kubejs:source_reactor_furnace').maxStackSize(1).texture('kubejs:item/organs/machine/source_reactor_furnace').tag('kubejs:machine').tag('kubejs:magic')
+    // todo 效果没变，需要变server的效果
+    event.create('kubejs:source_reactor_furnace')
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if (stack.getCount() != 1 || action != $ClickAction.SECONDARY || !slot.allowModification(player)) return false
+            if (oStack.isEmpty()) {
+                RemoveBundleOneStack(stack).ifPresent(pStack => {
+                    PlayBundleRemoveSound(player)
+                    access.set(pStack)
+                })
+            } else if (oStack.is('ars_nouveau:source_jar')) {
+                let added = AddItemIntoBundle(stack, oStack, 4, (pStack) => 1)
+                if (added > 0) {
+                    PlayerBundleInsertSound(player)
+                    oStack.shrink(added)
+                }
+            }
+            return true
+        })
+        .overrideStackedOnOther((stack, slot, action, player) => {
+            if (stack.getCount() != 1 || action != $ClickAction.SECONDARY) return false
+            let oStack = slot.getItem()
+            if (oStack.isEmpty()) {
+                PlayBundleRemoveSound(player)
+                RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
+            } else if (oStack.is('ars_nouveau:source_jar')) {
+                let added = AddItemIntoBundle(stack, slot.safeTake(oStack.getCount(), 65535, player), 4, (pStack) => 1)
+                if (added > 0) PlayerBundleInsertSound(player)
+            }
+            return true
+        })
+        .barWidth((stack) => {
+            let stackList = GetBundleContents(stack)
+            return Math.min(1 + 12 * stackList.length / 4, 13)
+        })
+        .barColor(() => Color.DARK_BLUE)
+        .tooltipImage((stack) => {
+            let itemList = $NonNullList.create()
+            GetBundleContents(stack).forEach((pStack) => itemList.add(pStack))
+            return Optional.of(new $BundleTooltip(itemList, GetBundleCountentWeight(stack, (pStack) => 1)))
+        })
+        .canFitInsideContainerItems(false)
+        .maxStackSize(1)
+        .texture('kubejs:item/organs/machine/source_reactor_furnace')
+        .tag('kubejs:machine')
+        .tag('kubejs:magic')
 })

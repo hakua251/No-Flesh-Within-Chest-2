@@ -66,7 +66,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:worm_larva')
         let nbt = item.getOrCreateTag()
         let saturation = nbt.getFloat('saturation')
         let avgSaturation = saturation / (item.getMaxDamage() - item.getDamageValue())
-        return [Text.translatable('tooltips.kubejs.worm_larva.alt.2', avgSaturation > 1 ? Text.gold(avgSaturation) : Text.green(avgSaturation))]
+        return [Text.translatable('tooltips.kubejs.worm_larva.alt.2', avgSaturation > 1 ? Text.gold(avgSaturation.toFixed(2)) : Text.green(avgSaturation.toFixed(2)))]
     })
 )
 
@@ -120,4 +120,11 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:mashed_potato_pancreas')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:living_beef_wellington')
     .addDefault(Text.translatable('tooltips.kubejs.living_beef_wellington.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.living_beef_wellington.alt.1', Text.gold('1'), ExtremeStrengthHover))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:void_stomach_pouch')
+    .addDefault(Text.translatable('tooltips.kubejs.void_stomach_pouch.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.void_stomach_pouch.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.void_stomach_pouch.alt.2'))
+    .addAlt(Text.translatable('tooltips.kubejs.void_stomach_pouch.alt.3'))
 )

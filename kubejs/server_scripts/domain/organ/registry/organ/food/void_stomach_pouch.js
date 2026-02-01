@@ -3,7 +3,6 @@ RegistryOrgan('kubejs:void_stomach_pouch')
     .addScore('chestcavity:digestion', 2)
     .addScore('chestcavity:nutrition', -0.5)
     .addScore('chestcavity:endurance', -3)
-// todo 美化和Tooltips
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.FoodEatenEventJS} event
@@ -14,6 +13,7 @@ RegistryOrgan('kubejs:void_stomach_pouch')
 function VoidStomachPouchFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const foodItem = event.item
+    const level = event.level
     if (!foodItem) return
     let foodItemId = String(foodItem.id)
     if (!organItem.hasNBT()) organItem.setNbt(new $CompoundTag())
@@ -22,30 +22,30 @@ function VoidStomachPouchFoodEaten(customData, event, organItem, organIndex, slo
     let foodTypeMap = nbt.getCompound('foodTypeMap')
     let eatCount = foodTypeMap.getInt(foodItemId) + 1
     foodTypeMap.putInt(foodItemId, eatCount)
-    let comboList = nbt.getList('comboList', GET_STRING_TYPE)
+    let comboList = nbt.getList('comboList', $Tag.TAG_STRING)
     if (comboList.contains(NBT.stringTag(foodItemId))) {
         comboList.clear()
     }
     comboList.add(NBT.stringTag(foodItemId))
     nbt.put('comboList', comboList)
-    let statusMsg = Text.translatable('status_msg.kubejs.void_stomach_pouch.item_info', Text.translatable(foodItem.getDescriptionId()))
+    let statusMsg = Text.translatable('status_msg.kubejs.void_stomach_pouch.item_info', Text.translatable(foodItem.getDescriptionId())).gold()
     let comboCount = comboList.size()
-    statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.combo_info', comboCount.toFixed(0)))
+    statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.combo_info', comboCount.toFixed(0)).gold())
 
     let foodProp = foodItem.getFoodProperties(player)
     let capIncr = Math.floor(foodProp.getSaturationModifier() * foodProp.getNutrition())
-    let sizeIncr = Math.floor(comboCount / 2)
-
-    if (sizeIncr > 0) {
-        nbt.putInt('sizeIncr', nbt.getInt('sizeIncr') + sizeIncr)
-        statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.size_info', sizeIncr.toFixed(0)))
-    }
-
     if (capIncr > 0) {
         nbt.putInt('capIncr', nbt.getInt('capIncr') + capIncr)
-        statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.cap_info', capIncr.toFixed(0)))
+        statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.cap_info', capIncr.toFixed(0)).yellow())
+    }
+
+    let sizeIncr = Math.floor(comboCount / 2)
+    if (sizeIncr > 0) {
+        nbt.putInt('sizeIncr', nbt.getInt('sizeIncr') + sizeIncr)
+        statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.size_info', sizeIncr.toFixed(0)).aqua())
     }
     player.setStatusMessage(statusMsg)
+    level.playSound(null, player.getX(), player.getY(), player.getZ(), 'block.amethyst_block.break', player.getSoundSource(), 1, 1)
 }
 
 /**
@@ -58,6 +58,7 @@ function VoidStomachPouchFoodEaten(customData, event, organItem, organIndex, slo
 function VoidStomachPouchEntityTick(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
     const player = event.entity
+    const level = event.level
     if (!player.isPlayer()) return
     if (!organItem.hasNBT()) return
     let nbt = organItem.getNbt()
@@ -75,8 +76,10 @@ function VoidStomachPouchEntityTick(customData, event, organItem, organIndex, sl
         let capIncr = nbt.getInt('capIncr')
         unifiedStorage.setSlotMaxSize(unifiedStorage.slotMaxSize + sizeIncr)
         unifiedStorage.setSlotCapacity(unifiedStorage.slotCapacity + capIncr)
-        player.setStatusMessage(Text.translatable('status_msg.kubejs.void_stomach_pouch.summary', sizeIncr.toFixed(0), capIncr.toFixed(0)))
+        player.setStatusMessage(Text.translatable('status_msg.kubejs.void_stomach_pouch.summary', sizeIncr.toFixed(0), capIncr.toFixed(0)).gold())
         RemoveChestCavityOrgan(customData, event.chestCavity, organIndex, slotType, true)
+        // todo 要是有粒子效果会更好，优先级靠后
+        level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.player.burp', player.getSoundSource(), 1, 1)
     } else {
         organItem.setDamageValue(curDamage)
     }
