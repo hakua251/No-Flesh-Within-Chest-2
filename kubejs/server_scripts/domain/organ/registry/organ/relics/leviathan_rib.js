@@ -12,15 +12,15 @@ RegistryOrgan('kubejs:leviathan_rib')
  * @param {string} slotType
  */
 function LeviathanRibEntityBeHurt(customData, event, organItem, organIndex, slotType) {
-    let thornsDamage = 1
+    let thornsDamage = 3
     const entity = event.entity
     if (entity.hasEffect('minecraft:darkness')) {
-        thornsDamage = 3
+        thornsDamage = 1
     }
     customData.thornsDamage = customData.thornsDamage + thornsDamage
 }
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:leviathan_rib')
-        .addStrategy('entity_be_hurt', LeviathanRibEntityBeHurt)
+        .addOnlyStrategy('entity_be_hurt', LeviathanRibEntityBeHurt)
 )

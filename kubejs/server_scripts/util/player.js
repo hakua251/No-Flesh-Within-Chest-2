@@ -15,3 +15,14 @@
 //     let outOfCombat = playerPersisted.get('out_of_combat')
 //     return outOfCombat.getInt('outOfCombatTime') == 0
 // }
+
+/**
+ * 不结算持续的火焰伤害以及不显示火焰渲染
+ * @param {Internal.ServerPlayer} player 
+ */
+function SetPlayerNoFireDamage(player) {
+    player.setNoFireDamage(true)
+    let data = new $CompoundTag()
+    data.putBoolean('noFireRender', true)
+    player.sendData('fire_render', data)
+}

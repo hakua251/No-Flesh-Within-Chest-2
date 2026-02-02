@@ -1535,26 +1535,166 @@
 		{
 			dependencies: ["00EC549EA51DF850"]
 			description: [
-				"或许，我们能够找到更加炽热的东西来&6进一步强化这些器官&r的力量。"
+				"经确认，这些器官还有极高的可拓展空间。如果我们能够寻找到这&6世界上最为炽热的东西&r，或许能够让它们的力量完全解放。"
 				""
-				"目前根据定位的结果，这个世界上最为炽热的物品便是&d创造烈焰蛋糕&r。虽然其名为创造，但在追求可能性之路上我们从未尝过失败之味。"
+				"在我的认知中，不灭的火山岩便是一个值得怀疑的对象，其可以让玩家一直保持在燃烧状态中，完全可以被称得上&c“最为炽热之物”&r。"
+				""
+				"为了获得它，您需要击败&6焰魔&r，并且在焰魔将死之时，将器官从它的胸腔中取出。"
 			]
-			icon: "create:creative_blaze_cake"
-			id: "09A0F90FEBC6966C"
+			id: "0C90052BA156B5F4"
 			rewards: [{
-				id: "07DCBB5BD72676F2"
+				id: "1E6A259E9853FEB9"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "熔火力量的极限"
+			subtitle: "焰魔之魂"
 			tasks: [{
-				id: "160221067E78DA79"
-				title: "启程吧"
-				type: "checkmark"
+				id: "6E33FF0F198F70DD"
+				item: {
+					Count: 1
+					id: "kubejs:immortal_volcanic_rock"
+					tag: { }
+				}
+				type: "item"
 			}]
-			title: "寻找最为炽热的力量"
+			title: "永恒燃烧之物"
 			x: 8.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["1E9E00D7BCF6405B"]
+			description: [
+				"还不够. . .目前为止，这些物品仅仅能够提供&c永恒燃烧&r的力量，但对于燃烧而言，温度也必不可少。"
+				""
+				"在维持燃烧时间的基础上，您需要想尽办法让燃烧时间延长得足够长。当这个时间长到某种程度的时候，或许就会产生意想不到的质变。"
+				""
+				"我们的第一个尝试可以从余烬肝脏开始。其能够在您受到攻击时，为您提供额外的&6燃烧持续时间&r。"
+			]
+			id: "6AA1CAF275057D26"
+			rewards: [{
+				id: "38B2D61E91C4A4B3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "更加炽热！"
+			tasks: [{
+				id: "381304D9786C1574"
+				item: {
+					Count: 1
+					id: "kubejs:embers_liver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "寻找更加炽热的东西"
+			x: 8.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0C90052BA156B5F4"]
+			description: [
+				"为了驾驭足够强大的烈焰，我们需要一些防护烈焰的方法。"
+				""
+				"通过烈焰人胸腔中的物品，我们可以制成&6赤核&r，其可以让您&6免受持续的火焰灼烧&r。"
+				""
+				"但是这并不代表您可以免疫火焰或者岩浆的直接伤害，其仅仅会让您不会被持续的火焰伤害烦扰。"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:fiery_core"
+				tag: { }
+			}
+			id: "6B24B7537EE0151A"
+			rewards: [{
+				id: "59E3121327C43290"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "烈焰缠身"
+			tasks: [
+				{
+					entity: "minecraft:blaze"
+					icon: {
+						Count: 1
+						id: "chestcavity:blaze_shell"
+						tag: { }
+					}
+					id: "0E15DAF52512E93B"
+					inventoryType: "minecraft:empty"
+					type: "chestcavity:open_chest_cavity_task"
+					value: 1L
+				}
+				{
+					id: "2DC762F8755B7ECE"
+					item: {
+						Count: 1
+						id: "kubejs:fiery_core"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "烈焰防护"
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6B24B7537EE0151A"]
+			description: [
+				"使用赤核会使得我们&c丧失对火焰的感知能力&r，因此，我们最好在胸腔中配备一个&6温度计&r，以随时查看我们被烤焦的程度。"
+				""
+				"温度计会在物品栏右侧的器官效果栏中显示您当前的火焰效果持续时间，方便用于您评估当前的情形。"
+			]
+			id: "1E9E00D7BCF6405B"
+			rewards: [{
+				id: "7921115DD62B6959"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "烈焰计量器"
+			tasks: [{
+				id: "71DAF9F5A48E8265"
+				item: {
+					Count: 1
+					id: "kubejs:thermometer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "烈焰中的自我"
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6AA1CAF275057D26"]
+			description: [
+				"尽管烈焰脊柱无法提高您自身的燃烧持续时间，但是其可以高效率的将您身上所持有的&6燃烧时间完美复制&r到另一个单位身上。"
+				""
+				"在某些情况下，虽然您自己无法达到极高的燃烧持续时间，但是让其他生物达到极高的燃烧持续时间再想办法转化到您的身上或许也是一个不错的主意。"
+				""
+				"除此之外，烈焰脊柱也是一个&6有效提高您输出&r的方式。其可以让对面持有&6相当长时间的异常状态&r，可以配合某些依赖于异常状态的攻击方式发挥出极强的效果。"
+			]
+			id: "471AE5AA85D6A899"
+			rewards: [{
+				id: "0B80AED3597A0F97"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "灼热炎魂"
+			tasks: [{
+				id: "3D5BBA3F6E44152F"
+				item: {
+					Count: 1
+					id: "kubejs:blaze_spine"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "将炽热赠予所有人"
+			x: 8.0d
+			y: 11.0d
 		}
 	]
 	title: "秘闻：地幔燃料"

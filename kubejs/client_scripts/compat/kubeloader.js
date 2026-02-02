@@ -8,7 +8,7 @@ if (IsLoadedKubeloader) {
     ContentPacks.putShared('DefaultSlotType', DefaultSlotType)
     ContentPacks.putShared('HighAdaptabilitySlotType', HighAdaptabilitySlotType)
     ContentPacks.putShared('RosyExplosionSlotType', RosyExplosionSlotType)
-    ContentPacks.putShared('EternalFlameSlotType', EternalFlameSlotType)
+    ContentPacks.putShared('RevolutionFlameType', RevolutionFlameType)
     ContentPacks.putShared('MachinaryLubricantSlotType', MachinaryLubricantSlotType)
     ContentPacks.putShared('GulaSlotType', GulaSlotType)
     ContentPacks.putShared('ContainerSlotType', ContainerSlotType)
