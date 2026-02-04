@@ -56,19 +56,194 @@
 				}
 			]
 			title: "泵取水资源"
-			x: 1.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5D90233550E7D188"]
+			description: [
+				"相信您在挖矿时遇到了一些从来没有见到过的矿物——比如说&6锌矿&r。"
+				""
+				"锌矿是用于发展机械的重要矿物，为了能够顺利完成机械知识的学习，我建议您尽可能收集您所见到的所有锌矿。"
+			]
 			id: "3D02CAC6C9FF9512"
-			tasks: [{
-				id: "7A7AB235828405CA"
-				item: "create:zinc_ingot"
+			rewards: [{
+				id: "1A4F9B1C42810F32"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "了解锌矿"
+			tasks: [{
+				id: "7A7AB235828405CA"
+				item: "create:raw_zinc"
+				type: "item"
+			}]
+			title: "新矿物新启示"
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["3D02CAC6C9FF9512"]
+			description: [
+				"为了发展机械，我们需要足够多的安山岩来大量制作安山合金。"
+				""
+				"因此我强烈建议您把安山岩提升到与锌矿同等重要的地位上，且&6其需求量可能比锌矿要大的多&r。"
+			]
+			id: "7FAD357E92A68A9D"
+			rewards: [{
+				id: "6367F8E05389C050"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "多多积累安山岩"
+			tasks: [{
+				id: "06E5488C5FAD6216"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "不常见的材料"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7FAD357E92A68A9D"]
+			description: [
+				"通过&6锌粒/铁粒&r与&6安山岩&r进行合成，可以制成制造机械的基础材料——安山合金。"
+				""
+				"在后面的发展流程中，您需要大量安山合金，因此您需要多多储备安山岩。"
+			]
+			id: "6ED1A20AB0BEA658"
+			rewards: [{
+				id: "72F5363A95F81DB1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "多多储备"
+			tasks: [{
+				id: "41ECBEF08D187E12"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "机械基础材料"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6ED1A20AB0BEA658"]
+			description: [
+				"为了驱动机械，我们需要动力源。"
+				""
+				"动力源的选取多种多样，但为了尽可能让您以最简洁的方式理解这些知识，我们先以手动动力源——&6手摇曲柄&r开始。"
+				""
+				"当您制作出后，鼠标指向该物品&6长按思索按键&r，即可在前人精心准备的幻灯片中了解如何正确使用它。"
+			]
+			id: "678E67B0D26DAF91"
+			rewards: [{
+				id: "12FABE48508DAD1E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "最简单的动力源"
+			tasks: [{
+				id: "645E920DE816FD0A"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			title: "从生产动力开始"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["678E67B0D26DAF91"]
+			description: [
+				"首先，我们要明确前提——为什么要制造动力机械。"
+				""
+				"这个前提可以解释得很复杂，但基于我的理解，作为玩家的您、或者您们，&6制作动力机械的主要目的是“使用这个机械达成某个预先想好的目标”&r。"
+				""
+				"与常规的武器锻造等不同，机械往往需要多个组件配合才能够产生效果。大部分精通于机械的玩家会&6预先决定好“要做什么”，进而回推“需要什么”&r。"
+				""
+				"对于普通没有接受过此种思路熏陶的玩家，其很难理解为什么要制作某个短期内无法见到收益/自己完全意识不到收益的物品。"
+				""
+				"&6因此，在本认知中，我会以一个最为常见的“要做什么”的目标，作为我们的线索。&r"
+				""
+				"但在此之前，&6请您先制作动力冲压机&r，来提高您基本的机械认知水平。"
+			]
+			id: "4559E83BDFE139FF"
+			rewards: [{
+				id: "6C741AB4A8DD3576"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "将物质压片"
+			tasks: [{
+				id: "475E8C19255B3E50"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "到第一个动力机械"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4559E83BDFE139FF"]
+			description: [
+				"您可以通过查看配方按键来查看如何制成铁板——最常见的方法便是使用动力冲压机，冲压下方的铁锭获得。"
+				""
+				"因此，您需要将&6动力冲压机冲压面朝下放置&r，并保证其&6下方一格是空出来的空气方块&r，以保证您能够将铁锭投入该位置。"
+				""
+				"之后，您需要将&6手摇曲柄插放到冲压机侧面具有传动杆的位置上&r，使曲柄的动力能够通过传动杆驱动冲压机运动。"
+				""
+				"在一切准备就绪后，将一块&6铁锭丢入到冲压机正下方&r，而后对着&6曲柄长按右键摇动&r——您应当就可以看到对应的冲压机动画，和物品产出。"
+				""
+				"这便是最简单的机械生产流程。在这个流程中，我们的目标是铁板，需要使用冲压机来获取。使用的动力源则是最简单的手摇动力。"
+			]
+			id: "6BCFA180CF3AF597"
+			rewards: [{
+				id: "0083C4C1ABFFFB68"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "一套流程"
+			tasks: [{
+				id: "088EC77D9963A577"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
+			title: "最后驱动动力机械"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6BCFA180CF3AF597"]
+			description: [
+				"前文也有所提到——为了让您更好的理解机械构建的流程，我们需要预先制定一个目标，而后逆推流程，进而完成我们的建设工作。"
+				""
+				"我们的目标便是&6建造一个全自动，无人值守的林场&r。"
+				""
+				"这是一个非常简单的目标，在历史日志中，其显示大部分玩家都会建造一个&6简单的林场&r来满足自己日常木材的需求。"
+				""
+				"因此，我认为这是一个非常适合我们的课题——无论从难度上还是实用度上。"
+				""
+				"所谓林场，其需要有的基本能力便是——&6伐木、种植、收集&r。满足这几样的需求之后，便是尽可能高的产量以及尽可能多的满足我们日常使用木材的基本需求。"
+				""
+				"接下来，我会针对林场的基本能力诉求，拆分具体所要做的事情，辛苦您仔细阅读并且费心理解。"
+			]
+			icon: "minecraft:oak_sapling"
+			id: "6B7A5AE2D8EFD037"
+			rewards: [{
+				id: "48D31D8FD92CFEB8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "一个最简单的目标"
+			tasks: [{
+				id: "3E9087B42BB66A9A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "目标，成为林业专家"
+			x: 4.5d
+			y: -3.0d
 		}
 	]
 	title: "认知：机械"
