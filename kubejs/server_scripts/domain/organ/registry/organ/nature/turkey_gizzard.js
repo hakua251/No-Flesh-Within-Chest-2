@@ -13,6 +13,7 @@ RegistryOrgan('kubejs:turkey_gizzard')
  */
 function TurkeyGizzardFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.player
+    if (!player) return
     const level = event.level
     const item = event.item
     let foodProperties = item.getFoodProperties(player)

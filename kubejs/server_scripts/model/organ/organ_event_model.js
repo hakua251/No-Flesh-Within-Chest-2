@@ -33,7 +33,6 @@ OrganEventModel.prototype = {
         let ccInstance = ccEntity.getChestCavityInstance()
         // 往往是Client事件导致
         if (!ccInstance) return
-        
         if (!optional.isPresent()) return
         args.unshift(customData)
         this.inits.forEach(init => {

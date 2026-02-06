@@ -6,4 +6,6 @@ StartupEvents.registry('block', event => {
         .machine('kubejs:eternal_altar')
     event.create('kubejs:mantle_energy_extractor', 'custommachinery')
         .machine('kubejs:mantle_energy_extractor')
+    event.create('kubejs:growth_vat', 'custommachinery')
+        .machine('kubejs:growth_vat')
 })

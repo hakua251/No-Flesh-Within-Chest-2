@@ -14,6 +14,7 @@ RegistryOrgan('kubejs:greedy_throat')
 */
 function GreedyThroatFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.player
+    if (!player) return
     const chestCavity = player.chestCavityInstance
     const ccInv = chestCavity.inventory
     const foodItem = event.item

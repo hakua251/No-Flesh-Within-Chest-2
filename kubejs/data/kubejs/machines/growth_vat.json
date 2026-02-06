@@ -1,0 +1,41 @@
+{
+  "name": {
+    "text": "block.kubejs.growth_vat"
+  },
+  "appearance": {
+    "item": "kubejs:machine/growth_vat_item",
+    "shape": [[0, 0, 0, 1, 0.8125, 1]],
+    "running": {
+      "custommachinery:block": "kubejs:machine/growth_vat",
+      "light": 15
+    },
+    "custommachinery:block": "kubejs:machine/growth_vat_idle"
+  },
+  "components": [
+  ],
+  "gui": [
+    {
+      "type": "custommachinery:player_inventory",
+      "x": 10,
+      "y": 130,
+      "width": 162,
+      "height": 76,
+      "texture": "kubejs:textures/gui/eternal_altar/player_inventory.png"
+    },
+    {
+      "type": "custommachinery:background",
+      "texture": "kubejs:textures/gui/eternal_altar/background.png",
+      "width": 182,
+      "height": 211
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 64,
+      "y": 0,
+      "texture_empty": "kubejs:textures/gui/eternal_altar/processor_empty.png",
+      "texture_filled": "kubejs:textures/gui/eternal_altar/processor_full.png",
+      "direction": "bottom",
+      "hide_jei": true
+    }
+  ]
+}

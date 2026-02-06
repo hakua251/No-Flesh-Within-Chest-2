@@ -1075,6 +1075,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "一次友好的沟通"
 			tasks: [{
 				id: "6415C74DA344C336"

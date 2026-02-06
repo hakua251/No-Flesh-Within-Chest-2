@@ -6,27 +6,11 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:infected')
 
     event.create('kubejs:tumor')
-        .food(food => {
-            food.hunger(2).saturation(1)
-            food.alwaysEdible()
-        })
         .texture('kubejs:item/organs/infected/tumor')
         .maxStackSize(1)
         .tag('kubejs:organ')
         .tag('kubejs:infected')
 
-    event.create('kubejs:mana_medium_tumor')
-        .food(food => {
-            food.hunger(2).saturation(1)
-            food.alwaysEdible()
-        })
-        .texture('kubejs:item/organs/infected/mana_medium_tumor')
-        .maxStackSize(1)
-        .tag('kubejs:organ')
-        .tag('kubejs:infected')
-        .tag('kubejs:magic')
-
-    event.create('kubejs:mutation_eye').maxStackSize(1).texture('kubejs:item/organs/infected/mutation_eye').tag('kubejs:infected')
 
     event.create('kubejs:symbiotic_cavity').maxStackSize(1).texture('kubejs:item/organs/infected/symbiotic_cavity').tag('kubejs:infected')
 })

@@ -139,11 +139,19 @@
 				"当您制作出后，鼠标指向该物品&6长按思索按键&r，即可在前人精心准备的幻灯片中了解如何正确使用它。"
 			]
 			id: "678E67B0D26DAF91"
-			rewards: [{
-				id: "12FABE48508DAD1E"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "12FABE48508DAD1E"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "create:cogwheel"
+					id: "12403FEE5FCA5124"
+					titleId: "kubejs:gearsmith"
+					type: "titles:title"
+				}
+			]
 			subtitle: "最简单的动力源"
 			tasks: [{
 				id: "645E920DE816FD0A"

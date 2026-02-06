@@ -12,6 +12,7 @@ RegistryOrgan('kubejs:worm_larva')
  */
 function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.getPlayer()
+    if (!player) return
     const item = event.getItem()
     const level = event.getLevel()
     if (!organItem.hasNBT()) {

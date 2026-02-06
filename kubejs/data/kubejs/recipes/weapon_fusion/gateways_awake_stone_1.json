@@ -1,0 +1,12 @@
+{
+    "type": "cataclysm:weapon_fusion",
+    "base": {
+        "item": "minecraft:obsidian"
+    },
+    "addition": {
+        "item": "minecraft:ender_eye"
+    },
+    "result": {
+        "item": "kubejs:gateways_awake_stone_1"
+    }
+}

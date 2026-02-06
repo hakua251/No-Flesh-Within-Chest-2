@@ -1,0 +1,13 @@
+{
+    "type": "cataclysm:weapon_fusion",
+    "base": {
+        "item": "ars_nouveau:arcane_pedestal"
+    },
+    "addition": {
+        "item": "minecraft:netherite_ingot"
+    },
+    "result": {
+        "item": "kubejs:eternal_altar"
+    }
+}
+

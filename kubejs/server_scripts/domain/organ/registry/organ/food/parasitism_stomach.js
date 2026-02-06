@@ -12,6 +12,7 @@ RegistryOrgan('kubejs:parasitism_stomach')
  */
 function ParasitismStomachFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.player
+    if (!player) return
     if (OrganItemCoolDown(player, organItem)) return
     const chestCavity = player.chestCavityInstance
     const ccInv = chestCavity.inventory

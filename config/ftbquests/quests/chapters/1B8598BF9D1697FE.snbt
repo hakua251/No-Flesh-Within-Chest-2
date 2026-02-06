@@ -8,23 +8,426 @@
 	id: "1B8598BF9D1697FE"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["588B97AAEC0E2385"]
-		id: "2408DFE03E1133D3"
-		rewards: [{
-			id: "5B113BE309544749"
-			item: "lightmanscurrency:coin_gold"
-			type: "item"
-		}]
-		subtitle: "瞥见永恒一瞥"
-		tasks: [{
-			id: "168747A765573DD0"
-			item: "kubejs:eternal_altar"
-			type: "item"
-		}]
-		title: "永恒祭坛"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["588B97AAEC0E2385"]
+			description: [
+				"首先，请允许我恭喜您击败了先驱者，获取了重要的材料——&6凋灵合金锭&r。"
+				""
+				"之所以我称之为“重要”，是因为在历经长久的扫描中，我发现经由凋灵合金锭，我们可以构成一种特殊的设备，其允许我们无限制的探索这个世界背后的一面。"
+				""
+				"其不仅能够为我们&6提供一些正常极其难以获得的资源&r，更重要的是能够极大的&6扩展我们对于现在世界的基本认知&r。"
+			]
+			id: "2408DFE03E1133D3"
+			rewards: [{
+				id: "5B113BE309544749"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "向永恒一瞥"
+			tasks: [{
+				id: "168747A765573DD0"
+				item: "cataclysm:witherite_ingot"
+				type: "item"
+			}]
+			title: "唤醒深渊"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2408DFE03E1133D3"]
+			description: ["通过制成用于特殊配方的工作台——&6机械融合砧&r，我们可以有效强化一些武器，除此之外，我们还可以制作一种极其特殊的机械. . ."]
+			id: "2ECB864E310C8FC8"
+			rewards: [{
+				id: "0A2EB6E106524D46"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "武装融合"
+			tasks: [{
+				id: "5F65A85886B79813"
+				item: "cataclysm:mechanical_fusion_anvil"
+				type: "item"
+			}]
+			title: "前往永恒的道路"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2ECB864E310C8FC8"]
+			description: [
+				"通过在机械融合砧上组成奥术基座和下界合金锭，我们可以真正获得能够朝世界另一面窥探的能力。"
+				""
+				"永恒祭坛是一种特殊的机械，其能够借由部分材料激活所谓&6“门扉”&r的存在，并且根据材料的确定门扉的具体性质。"
+				""
+				"在永恒祭坛上具有三项指标，分别代表了门扉的&6阶级&r、&b类型&r和&d混乱度&r。"
+				""
+				"在唤醒门扉时，门扉会根据这三项指标，确认能够通过门扉获取的资源。同时，由于门扉的窥探，不可避免的会吸引一部分生物穿越门扉。"
+				""
+				"在门扉唤醒时，&6您需要在有限时间内处理掉这些从门扉另一侧到来的生物&r。完成指定的波次后您便可以取出本次门扉携带而来的物资奖励。"
+			]
+			id: "5FCBCB78FDA46E87"
+			rewards: [{
+				id: "05AA46D35300E645"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "通道"
+			tasks: [{
+				id: "71903DD46F1CBE6B"
+				item: "kubejs:eternal_altar"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FCBCB78FDA46E87"]
+			description: [
+				"为了启动永恒祭坛，唤醒门扉，我们必须准备特定的门扉唤醒材料。"
+				""
+				"&6门扉唤醒材料&r的种类很多，部分唤醒材料会在门扉被成功压制后对&6祭坛的阶级产生修正&r。"
+				""
+				"随着祭坛阶级的升高，从门扉另一侧而来的&6生物属性&r和&6数量&r会显著增加，但相应的，门扉的&6物资携带能力也会有显著提升&r。"
+				""
+				"因此，请您合理规划祭坛的阶级水平，以保证您的战斗能力能够稳定处理从门扉另一侧而来的生物。"
+			]
+			id: "78BB4CF7005B2CD0"
+			rewards: [{
+				id: "2273036697215058"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "启动门扉所需"
+			tasks: [{
+				id: "0E752749AD09CF33"
+				item: "kubejs:gateways_awake_stone_1"
+				type: "item"
+			}]
+			title: "唤醒门扉所需"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FCBCB78FDA46E87"]
+			description: [
+				"另一侧的世界仍旧巨大无比，为了控制门扉所在位置，我们需要通过使用辅助材料，控制门扉的移动。"
+				""
+				"大部分的&6辅助材料&r会在门扉唤醒时给予门扉&b类型&r和&d混乱度&r的修正。"
+				""
+				"随着&b门扉类型&r的变动，其会标定不同位置的生物和战利品。"
+				""
+				"门扉&d混乱度&r的提升，则会一定程度上让门扉的引诱而来的生物变得&d不可预测&r，这可能会使得部分生物具有极大的威胁性。"
+				""
+				"在不配置辅助材料时完成门扉的压制，即可一定程度上降低祭坛的&d混乱度&r。"
+				""
+				"辅助材料并非唤醒门扉所必须之物，&6但辅助材料在门扉唤醒时并不会消耗&r，因此，若您拥有了门扉辅助材料后不妨多多尝试。"
+			]
+			id: "41A06FE07B4D9EF4"
+			rewards: [{
+				id: "483154A752478A01"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "定向门扉所需"
+			tasks: [{
+				id: "403B7F9EBB857645"
+				item: "kubejs:gateways_auxiliary_material_1"
+				type: "item"
+			}]
+			title: "确认门扉位置"
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5FCBCB78FDA46E87"]
+			description: [
+				"由于门扉另一侧能够提取的物资相当之多，但门扉本身的携带能力有限，因此往往需要使用萃取材料来定向获取我们所需要的物资。"
+				""
+				"不同的&6门扉萃取材料&r会使门扉指向不同的物资，萃取资源会以额外的战利品附加在基础门扉位置的战利品资源上。"
+				""
+				"萃取材料并非唤醒门扉所必须之物，&6但萃取材料在门扉唤醒时并不会消耗&r，因此，若您拥有了门扉萃取材料后不妨多多尝试。"
+			]
+			id: "0BA1BDD70C07EEE3"
+			rewards: [{
+				id: "599AF1FBF7FBAD79"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "最大化利用门扉所需"
+			tasks: [{
+				id: "0D3CD8B1821FC5E5"
+				item: {
+					Count: 1
+					id: "kubejs:gateways_extractant_material_1"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "定向提取门扉资源"
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["78BB4CF7005B2CD0"]
+			description: [
+				"恭喜，您成功压制了一次&6门扉入侵&r。"
+				""
+				"门扉在成功压制时，会依据使用的唤醒材料的种类增长其门扉阶级。对于&6壹型&r材料而言，其并&6没有提高门扉阶级的作用&r，只是能够作为反复稳定召唤门扉的一种方式存在。"
+				""
+				"在门扉被成功压制时，其会大概率掉落数个&6门扉唤醒材料&r，其中大概率会包含能够提升阶级的唤醒材料。"
+				""
+				"我建议您最好根据您当前的具体实力，决定使用何种唤醒材料，以最快达到最大收益的阶级。"
+			]
+			id: "75DAA4C33470DC2C"
+			rewards: [
+				{
+					id: "580B0FCF3650DF63"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "kubejs:gateways_awake_stone_2"
+					id: "2E50E22459AF95C3"
+					titleId: "kubejs:gate_observer"
+					type: "titles:title"
+				}
+			]
+			subtitle: "门扉压制成功"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:gateways_awake_stone_2"
+				id: "0099D23C3A6B78DE"
+				kubeId: "eternal_altar_level_1"
+				title: "成功关闭一次门扉"
+				type: "maa:kube"
+			}]
+			title: "门扉窥探者"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75DAA4C33470DC2C"]
+			description: [
+				"应召门扉而来的怪物会随着门扉阶级的提升&6显著变强&r。"
+				""
+				"根据敌人类型不同，其属性变化也会有所差异，具体来说，部分敌人可能由于自身特性，&6完全放弃某几个方面的属性成长&r，进而导致在高阶级下，可能会出现部分敌人的属性出现非常极端的&6偏科&r现象。"
+				""
+				"举例而言，对于僵尸来说，其本身更加专注于生命和攻击的均衡性提升，而对于女巫这种功能性生物，其更偏向于进行生命相关的成长。"
+			]
+			id: "54B1D1C9D191E46D"
+			rewards: [
+				{
+					id: "708C517F0FBD7D0A"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "kubejs:gateways_awake_stone_3"
+					id: "65E21934FCA762D1"
+					titleId: "kubejs:gate_conqueror"
+					type: "titles:title"
+				}
+			]
+			subtitle: "压制略微强大的门扉"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:gateways_awake_stone_3"
+				id: "085F429F22339D69"
+				kubeId: "eternal_altar_level_2"
+				title: "压制阶级超过5的门扉"
+				type: "maa:kube"
+			}]
+			title: "门扉征服者"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54B1D1C9D191E46D"]
+			description: [
+				"随着阶级的提升，&6门扉的怪物数量也会有明显增加&r。"
+				""
+				"不同的生物具有着不同的“价值”，&6随着门扉阶级的提升，其能够唤来的生物的“总价值”就越高&r。"
+				""
+				"但每波门扉总倾向于选择固定几种生物进行生成，因此并不会出现各种生物一锅乱炖的情况。"
+				""
+				"随着门扉阶级的提高，其战斗波次也会有所提升，因此您需要结合您的自身状况，决定是否要挑战更高阶级的门扉。"
+			]
+			id: "0F1FA88C45434DA3"
+			rewards: [
+				{
+					id: "27D6D76DB0E66020"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "kubejs:gateways_awake_stone_4"
+					id: "45ECB383519B245C"
+					titleId: "kubejs:gate_buster"
+					type: "titles:title"
+				}
+			]
+			subtitle: "压制更为强大的门扉"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:gateways_awake_stone_4"
+				id: "08D6A9AB38B5F24C"
+				kubeId: "eternal_altar_level_3"
+				title: "压制阶级超过10的门扉"
+				type: "maa:kube"
+			}]
+			title: "门扉破坏者"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F1FA88C45434DA3"]
+			description: [
+				"随着门扉阶级的提升，其固有掉落和类型掉落的数量会显著得到提升。"
+				""
+				"同时，&6部分特有资源仅会在阶级超过30的门扉掉落&r。"
+				""
+				"举例来说，对于肆型、伍型的唤醒材料，其仅会出现在阶级超过30的门扉中，因此为了获取较为稀有的特殊道具，您需要维持较高的阶级。"
+			]
+			id: "36429F32806F3FCD"
+			rewards: [
+				{
+					id: "280B422E5ED5D662"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "kubejs:gateways_awake_stone_5"
+					id: "17EC4FD5A2CF8E0D"
+					titleId: "kubejs:gate_smasher"
+					type: "titles:title"
+				}
+			]
+			subtitle: "压制足够强大的门扉"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:gateways_awake_stone_5"
+				id: "1830BD59ABD4656D"
+				kubeId: "eternal_altar_level_4"
+				title: "压制阶级超过30的门扉"
+				type: "maa:kube"
+			}]
+			title: "门扉粉碎者"
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36429F32806F3FCD"]
+			description: [
+				"&6恭喜您压制了最为强大的一批门扉&r。"
+				""
+				"您应该已经对门扉的敌人了如指掌了，但还请允许我再唠叨几句。"
+				""
+				"随着&d混乱度&r的提高，在高阶级的门扉中非常容易出现&6极其强大的敌人&r，因此您最好在高阶级中保持一个低的混乱度，以降低这种不确定因素的影响。"
+			]
+			id: "39AF789AC5C949D7"
+			rewards: [
+				{
+					id: "4FB0302414C20837"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "kubejs:gateways_awake_stone_6"
+					id: "67A309F886741801"
+					titleId: "kubejs:gate_ruler"
+					type: "titles:title"
+				}
+			]
+			subtitle: "压制最为强大的门扉"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:gateways_awake_stone_6"
+				id: "56741B550D253C76"
+				kubeId: "eternal_altar_level_5"
+				title: "压制阶级超过50的门扉"
+				type: "maa:kube"
+			}]
+			title: "门扉统御者"
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41A06FE07B4D9EF4"]
+			description: ["当门扉类型处于0~10之间时，门扉定位的位置将会处于一类不确定的沼泽中。"]
+			id: "031621CE02DADBFA"
+			rewards: [{
+				id: "2C360542F75801C4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "被引诱到沼泽一端"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:gateways_auxiliary_material_2"
+				id: "0CE497449C3819F9"
+				kubeId: "eternal_altar_type_1"
+				title: "门扉类型处于0~10"
+				type: "maa:kube"
+			}]
+			title: "定位：沼泽类门扉"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41A06FE07B4D9EF4"]
+			id: "60BAE197B51FBE86"
+			tasks: [{
+				count: 1L
+				id: "0E164C90581747CF"
+				kubeId: "eternal_altar_type_2"
+				title: "掠夺者"
+				type: "maa:kube"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41A06FE07B4D9EF4"]
+			id: "0D94A3028D0413F1"
+			tasks: [{
+				count: 1L
+				id: "3646ED9A2A35E491"
+				kubeId: "eternal_altar_type_3"
+				title: "下界"
+				type: "maa:kube"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41A06FE07B4D9EF4"]
+			id: "3E00CE17373B4A43"
+			tasks: [{
+				count: 1L
+				id: "6E00DB54054E8385"
+				kubeId: "eternal_altar_type_4"
+				title: "不死"
+				type: "maa:kube"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41A06FE07B4D9EF4"]
+			id: "1664B32474D6AFDC"
+			tasks: [{
+				count: 1L
+				id: "55EE65505AA960F5"
+				kubeId: "eternal_altar_type_5"
+				title: "寒带"
+				type: "maa:kube"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+	]
 	title: "秘闻：永恒门扉"
 }

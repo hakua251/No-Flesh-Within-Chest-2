@@ -12,6 +12,7 @@ RegistryOrgan('kubejs:jar_of_mystery')
  */
 function JarOfMysteryFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.getPlayer()
+    if (!player) return
     let curDamage = organItem.getDamageValue() + 1
     player.potionEffects.add('minecraft:absorption', 20 * 20, 0)
     if (curDamage >= organItem.getMaxDamage()) {

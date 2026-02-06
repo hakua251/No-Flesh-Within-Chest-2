@@ -25,8 +25,13 @@ TitlesEvent.onTitleRegistry(event => {
     regsitryTitleSimple('my_genesis', 'epic')
     regsitryTitleSimple('new_tinker', 'uncommon') // todo 匠魂教程初始的几个任务里
     regsitryTitleSimple('tinker_study', 'rare')
-    regsitryTitleSimple('gearsmith', 'uncommon') // todo 机械动力教程初始的几个任务里
+    regsitryTitleSimple('gearsmith', 'uncommon')
     regsitryTitleSimple('eternal_winter', 'epic')
     regsitryTitleSimple('heart_warm', 'epic')
     regsitryTitleSimple('sun_flower', 'epic')
+    regsitryTitleSimple('gate_observer', 'uncommon')
+    regsitryTitleSimple('gate_conqueror', 'rare')
+    regsitryTitleSimple('gate_smasher', 'rare')
+    regsitryTitleSimple('gate_buster', 'rare')
+    regsitryTitleSimple('gate_ruler', 'epic')
 })
