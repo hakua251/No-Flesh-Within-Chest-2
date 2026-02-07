@@ -8,7 +8,7 @@
 			auto: "invisible"
 			icon: "kubejs:gula_injection"
 			ignore_reward_blocking: true
-			stage: "gula_injection_recipe"
+			stage: "ftb_gula_injection_recipe"
 			title: "私有暴食注射器配方"
 			type: "maa:astages"
 		}
@@ -17,7 +17,7 @@
 			icon: "kubejs:gula_injection"
 			ignore_reward_blocking: true
 			isServer: true
-			stage: "gula_injection_recipe"
+			stage: "ftb_gula_injection_recipe"
 			title: "公开暴食注射器配方"
 			type: "maa:astages"
 		}

@@ -1,0 +1,23 @@
+{
+	icon: "create:wrench"
+	id: "65DCE666979CE476"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{
+			icon: "create:wrench"
+			title: "我完全明白，我能独立完成"
+			type: "xp"
+			xp: 50
+		}
+		{
+			auto: "invisible"
+			icon: "minecraft:slime_ball"
+			ignore_reward_blocking: true
+			stage: "mechanical_tutorial_1"
+			title: "感觉没听懂，独立完成有点难"
+			type: "maa:astages"
+		}
+	]
+	title: "机械认知抉择"
+}

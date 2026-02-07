@@ -1,5 +1,5 @@
 // priority: 1000
-AStages.addRestrictionForRecipe('revolution_machine/revolution_machine_injection_recipe', 'revolution_machine_injection_recipe', 'minecraft:crafting', 'kubejs:revolution_machine_injection_manual_only')
+AStages.addRestrictionForRecipe('revolution_machine/revolution_machine_injection_recipe', 'ftb_revolution_machine_injection_recipe', 'minecraft:crafting', 'kubejs:revolution_machine_injection_manual_only')
 
 ServerEvents.recipes(event => {
     event.shaped('kubejs:revolution_machine_injection', [

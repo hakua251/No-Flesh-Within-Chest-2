@@ -65,7 +65,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:worm_larva')
     .addAlt((text, item) => {
         let nbt = item.getOrCreateTag()
         let saturation = nbt.getFloat('saturation')
-        let avgSaturation = saturation / (item.getMaxDamage() - item.getDamageValue())
+        let pDamage = item.getMaxDamage() - item.getDamageValue()
+        let avgSaturation = pDamage != 0 ? saturation / pDamage : 0
         return [Text.translatable('tooltips.kubejs.worm_larva.alt.2', avgSaturation > 1 ? Text.gold(avgSaturation.toFixed(2)) : Text.green(avgSaturation.toFixed(2)))]
     })
 )

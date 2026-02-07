@@ -272,6 +272,7 @@
 				""
 				"在具体使用时，动力锯需要对准树木的最底层方块，进而可以&6连锁破坏整棵树木&r。您可以使用思索来查看具体使用该动力机械的案例。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "35D80EB805BF79B0"
 			rewards: [{
@@ -287,7 +288,7 @@
 			}]
 			title: "事项 1：如何收割木材"
 			x: 4.5d
-			y: -10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -346,34 +347,59 @@
 			}]
 			title: "事项 3：如何提供动力"
 			x: 4.5d
-			y: -6.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
+			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "788A9985BFF98038"
+			rewards: [{
+				id: "53943D3E2A7DFBEE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "42301B4D9066A3A5"
 				item: "create:shaft"
 				type: "item"
 			}]
 			x: 2.5d
-			y: -6.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["560A05CD905A3EBA"]
+			description: [
+				"在一切准备就绪之后，您需要保持烈焰人燃烧室处于加热状态，随后向工作盆中置入&6铜锭&r和&6锌锭&r作为材料，一段时间后便可以获得黄铜。"
+				""
+				"黄铜也是一种非常常见的加工材料，因此我非常推荐您在空闲时多多制造以备不时之需。"
+			]
 			hide_until_deps_complete: false
 			id: "7AD07D5DBC62292C"
+			rewards: [{
+				id: "1D83A32D84352887"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "新世纪材料"
 			tasks: [{
 				id: "074D1B995591F509"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
+			title: "制成黄铜"
 			x: 2.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["69EF81C377807656"]
+			description: [
+				"在拥有了动力燃烧室后，您就拥有了能够进行&6加热配方&r和&b超级加热配方&r的能力。"
+				""
+				"为了制作黄铜，您需要&6将烈焰人燃烧室放置在工作盆下方提供热源&r，随后&6将动力搅拌器其搅拌具朝向工作盆摆放在工作盆上方&r，提供动力进行加工"
+				""
+				"但默认状态下的烈焰人燃烧室是无法提供热量的，为了提供“加热”的条件，您需要&6为烈焰人燃烧室提供常规燃料（如手持煤炭右键）&r，使其进入燃烧状态，才能够让黄铜制作配方正常完成。"
+			]
 			hide_until_deps_complete: false
 			icon: "create:mechanical_mixer"
 			id: "560A05CD905A3EBA"
@@ -382,6 +408,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "高温搅拌法"
 			tasks: [
 				{
 					id: "361E4EE09EED0669"
@@ -394,14 +421,31 @@
 					type: "item"
 				}
 			]
+			title: "进行动力搅拌"
 			x: 0.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
+			description: [
+				"为了制作机械手，我们需要基本的黄铜材料。"
+				""
+				"而黄铜则需要通过&6动力搅拌器&r在&6工作盆&r中，在&6加热条件&r下搅拌而成。"
+				""
+				"为了满足加热的条件，我们需要一样特殊的加热手段——即&6烈焰人燃烧室&r。"
+				""
+				"您需要制成&6空的烈焰人燃烧室框架&r，而后&6手持框架右键活着的烈焰人或者烈焰人刷怪笼&r，将其转化成为烈焰人燃烧室。"
+			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			icon: "create:blaze_burner"
 			id: "69EF81C377807656"
+			rewards: [{
+				id: "3CDFFDB11F0515C9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "制成烈焰人燃烧室"
 			tasks: [
 				{
 					id: "749AFA72D122217D"
@@ -414,20 +458,33 @@
 					type: "item"
 				}
 			]
+			title: "高级加热手段"
 			x: -1.5d
 			y: -8.0d
 		}
 		{
-			dependencies: ["6B7A5AE2D8EFD037"]
+			dependencies: ["39798147F6F5CD1D"]
+			description: [
+				"为了使玫瑰石英的表面能够光滑到满足电子管制程的基本要求，您需要&6制作一些砂纸&r，随后一手持砂纸，另一手持玫瑰石英，&6对其进行磨制&r。"
+				""
+				"在磨制后，玫瑰石英则可以参与到各种各样的机械制作流程中来。"
+			]
 			hide_until_deps_complete: false
-			icon: "create:polished_rose_quartz"
-			id: "1EE5D53FCD3BCA32"
-			tasks: [
-				{
-					id: "233D525D2B69486A"
-					item: "create:rose_quartz"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "create:sand_paper"
+				tag: {
+					Damage: 0
 				}
+			}
+			id: "1EE5D53FCD3BCA32"
+			rewards: [{
+				id: "62582834B4E6FA4C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "打磨玫瑰石英"
+			tasks: [
 				{
 					id: "0B3D8F3A247A3715"
 					item: {
@@ -446,8 +503,263 @@
 					type: "item"
 				}
 			]
+			title: "精修打磨技艺"
 			x: 2.5d
 			y: -9.5d
+		}
+		{
+			dependencies: ["6B7A5AE2D8EFD037"]
+			description: ["为了制成电子管，您需要准备一些&6玫瑰石英&r。但通过合成而来的&6粗制玫瑰石&r英无法满足电子管的精度需求。"]
+			hide_dependency_lines: true
+			id: "39798147F6F5CD1D"
+			rewards: [{
+				id: "33EB58C64DEB458F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "隐隐温热的特殊晶簇"
+			tasks: [{
+				id: "7F7B4CF49983E5CE"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			title: "红色晶体"
+			x: 0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"079B9E3B196A43B6"
+				"460C9F19E6BA2781"
+				"70E5C09736584D90"
+			]
+			description: [
+				"恭喜，您在引导下成功搭建了一台能够&6完全无人看守的自动化动力机械结构&r。"
+				""
+				"尽管它可能非常粗糙，或者甚至无法达到无人值守的要求，但重要的并非是搭建出来的机器是否有用，而是您学会了这种先&6拆分目标而后推导所需物品的基本能力&r。"
+				""
+				"在拥有了这种能力后，&6任何所谓建造机械或者其他的困难都无法能够再阻挡您的探究之路&r。"
+				""
+				"对于我们的机械教学之路来说，这可能是一个终点站。但对于您的探究之路，这可能、或者说&6这一定是一个起点&r。"
+				""
+				"如果遇到无法解决的问题，您也可以选择咨询您的同伴，我作为引导系统，所能做的事情极其有限。最终能够影响事情成败的要素还是取决于您作为人的主观能动性。"
+			]
+			icon: "minecraft:oak_log"
+			id: "001D8E839A9D730C"
+			rewards: [
+				{
+					id: "4D05FB1DE9112DFD"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "create:large_cogwheel"
+					id: "288D903B8EFE4DA1"
+					titleId: "kubejs:mechanics_scholar"
+					type: "titles:title"
+				}
+			]
+			shape: "square"
+			subtitle: "长远旅程的起点"
+			tasks: [{
+				count: 64L
+				id: "001CAD1CF4095EF9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "任意种类原木"
+				type: "item"
+			}]
+			title: "建成属于您的第一座“奇迹”"
+			x: 13.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["213A5C217F398F0D"]
+			description: [
+				"在决定好了该如何摆放这些机械后，为了让几个这些机械形成一个整体，您需要使用&6强力胶右键框选您提前建造摆放好的机械&r，将其粘合成一个整体。"
+				""
+				"强力胶可以广泛用于动力结构的粘合，因此在您明确要构造动力结构时，请备足强力胶。"
+			]
+			id: "47637031D6C57B8A"
+			rewards: [
+				{
+					id: "567C6A870B737221"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "155EB3C212E51A35"
+					table_id: 7339994821011760246L
+					type: "choice"
+				}
+			]
+			subtitle: "使用强力胶粘合一切"
+			tasks: [{
+				id: "2408C20A41A8E481"
+				item: {
+					Count: 1
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "组装动力结构"
+			x: 8.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"35D80EB805BF79B0"
+				"3F5BB167BF4FF06B"
+				"39DDD2962FC52646"
+			]
+			description: [
+				"&b如果您没有理解下文所说的内容，请您一定要告知我！"
+				"&r"
+				"在拥有了所有的部件后，我们要考虑如何将这些物品组合以满足我们的需求。这里我们需要明确一个特性作为大前提，即&6动力结构在运动时，本身是可以穿过任何方块和实体的&r。"
+				""
+				"首先，树木是需要种植在泥土等基质上的，因此&6机械手必定是朝下放置且高于基质2格&r的位置才能够正常种植树苗。"
+				""
+				"其次，由于动力锯的特殊结构，您需要使其面向侧面，才能够正确使其收割到树木。由于动力锯只能连锁收割其上方的木材，因此&6其摆放位置必须位于基质上1格，与树苗相同的高度&r。"
+				""
+				"最后，对于如何让这些结构运动起来，只要保证&6这些方块能够在动力轴承的驱动下，一体按照圆周轨迹运动&r，即可满足要求。动力轴承本身的动力来源则可以是水车等常见的基本动力源。"
+			]
+			icon: "create:crafting_blueprint"
+			id: "213A5C217F398F0D"
+			rewards: [
+				{
+					id: "4346894F3E901CCD"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A027F43677C8861"
+					table_id: 7339994821011760246L
+					type: "choice"
+				}
+			]
+			subtitle: "组合的必要条件"
+			tasks: [{
+				id: "2023702EFCD15513"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "动力结构组合方式"
+			x: 6.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["213A5C217F398F0D"]
+			description: [
+				"不结合实例的去完成前文所述的操作确实有些强人所难。"
+				""
+				"所幸，前人留下了一些能够让我们快速借鉴前人经验的方法——蓝图加农炮。"
+				""
+				"&6请您制作一门蓝图加农炮&r，我会将前人留存下的实例给予您，并且向您展示如何使用这些经验。"
+			]
+			id: "3E8E055CA54AFDA5"
+			rewards: [{
+				id: "54BD4A0043246585"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "更简单的方式 // todo"
+			tasks: [{
+				id: "5AF3DAF34D6A99B2"
+				item: "create:schematicannon"
+				type: "item"
+			}]
+			title: "借前人之鉴"
+			x: 8.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["3E8E055CA54AFDA5"]
+			description: [
+				"所谓蓝图加农炮，即是&6能够将前人留下的蓝图打印出来的强力工具&r。"
+				""
+				"请您手持蓝图，选择世界上一个您觉得放置这个蓝图内存储的结构合适的地方进行部署。部署的操作相对比较简单，只需您&6手持蓝图&r，&6选择一个您中意的地方右键&r，并且&6使用滚轮选择确认部署&r，即可让该蓝图绑定在对应的位置。"
+				""
+				"随后，请您将该&6部署过的蓝图放置在蓝图加农炮内&r。蓝图加农炮会统计构建该蓝图所需的材料数量，您只需要&6按照蓝图加农炮的要求补全这些材料&r，并且为其提供发射加农炮的火药。"
+				""
+				"在准备完全时，&6点击蓝图加农炮的启动按钮&r，即可完美一比一复刻前人经验的结晶。"
+				""
+				"对于其他任意的机械，您都可以采用此种方法——毕竟人类最伟大的智慧，便是一代一代累计而来的知识，而非刻板教条的闭门造车。"
+				""
+				"但独立的思考仍旧是被推荐的，请您在构建完成后，仔细观察其运行的状态，以便未来某天，您也能够创造出如此机构。"
+			]
+			id: "079B9E3B196A43B6"
+			rewards: [{
+				id: "0574FE31C1F4EE05"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "部署蓝图"
+			tasks: [{
+				id: "2F8E789246AAAFCA"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			title: "将前人的经验实体化"
+			x: 10.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["47637031D6C57B8A"]
+			description: [
+				"对于驱动动态结构来说，动力源并不一定要选择最快、最大的。相反，能够适配动力结构的速度，&6体积最小，维护成本最低的动力源反而会是更优的选择&r。"
+				""
+				"在本项目中，选择&6水车&r一般来说便是一个最优的方案。其转速不仅能够满足一般树场的要求，且不需要特殊人为维护，体积非常小巧。"
+			]
+			id: "460C9F19E6BA2781"
+			rewards: [{
+				id: "5CFA19BED2200405"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "选择一个合适的动力源"
+			tasks: [{
+				id: "75D60376707FBFCE"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "选择动力源"
+			x: 10.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["47637031D6C57B8A"]
+			description: [
+				"在动态结构运行时，倘若动态结构没有存储空间，动力锯砍伐而下的木材会散落在地面上，难以收集。并且机械手也无法得到长久的树苗补充和回收利用。"
+				""
+				"因此，您可以&6将木桶或者任意存储设施一齐粘合在动态结构上&r。这样，动力锯便可以将所有的收割产物全部纳入该容器中，机械手也可以直接取用容器中的树苗出来种植。"
+				""
+				"但值得注意的是，您需要&6使用树苗在机械手上标记树苗白名单过滤器&r，以保证机械手只会放置树苗出来，而不会放置其他的一些奇怪的东西。"
+			]
+			id: "70E5C09736584D90"
+			rewards: [{
+				id: "4AC5F4F78AD10300"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "如何临时存储"
+			tasks: [{
+				id: "3B3521E6D54DB7AB"
+				item: "minecraft:barrel"
+				type: "item"
+			}]
+			title: "动态结构的存储问题"
+			x: 10.5d
+			y: -7.5d
 		}
 	]
 	title: "认知：机械"

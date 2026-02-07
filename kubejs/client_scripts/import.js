@@ -12,10 +12,6 @@ const $MapDimension = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.MapDimen
 const $WaypointImpl = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.WaypointImpl')
 const $WaypointType = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.WaypointType')
 
-const $ScreenshakeInstance = Java.loadClass('team.lodestar.lodestone.systems.screenshake.ScreenshakeInstance')
-const $ScreenshakeHandler = Java.loadClass('team.lodestar.lodestone.handlers.ScreenshakeHandler')
-const $Easing = Java.loadClass('team.lodestar.lodestone.systems.easing.Easing')
-
 const $RenderLevelStageEvent = Java.loadClass('net.minecraftforge.client.event.RenderLevelStageEvent')
 const $RenderLevelStageEventStage = Java.loadClass('net.minecraftforge.client.event.RenderLevelStageEvent$Stage')
 const $GameRenderer = Java.loadClass('net.minecraft.client.renderer.GameRenderer')

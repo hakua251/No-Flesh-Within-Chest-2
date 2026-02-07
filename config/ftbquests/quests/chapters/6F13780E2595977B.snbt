@@ -1224,7 +1224,7 @@
 				icon: "kubejs:genesis_tinker_blueprint"
 				id: "77359DE9B0F637C5"
 				isServer: false
-				stage: "genesis_tinker_1"
+				stage: "ftb_genesis_tinker_1"
 				title: "踏向前路"
 				type: "maa:astages"
 			}]
@@ -2839,7 +2839,11 @@
 				""
 				"&c这注定是一场极其艰难的挑战，但这对于追求极致工匠之路尤为重要。&r"
 			]
-			icon: "minecraft:birch_button"
+			icon: {
+				Count: 1
+				id: "ars_nouveau:stable_warp_scroll"
+				tag: { }
+			}
 			id: "4E5076361FBEEDB5"
 			rewards: [{
 				id: "18E6AEE5F6DF5360"

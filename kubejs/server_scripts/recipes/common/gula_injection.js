@@ -1,5 +1,5 @@
 // priority: 1000
-AStages.addRestrictionForRecipe('gula/gula_injection_recipe', 'gula_injection_recipe', 'minecraft:crafting', 'kubejs:gula_injection_manual_only')
+AStages.addRestrictionForRecipe('gula/gula_injection_recipe', 'ftb_gula_injection_recipe', 'minecraft:crafting', 'kubejs:gula_injection_manual_only')
 
 ServerEvents.recipes(event => {
     event.shaped('kubejs:gula_injection', [

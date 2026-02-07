@@ -123,6 +123,7 @@
 				""
 				"辅助材料并非唤醒门扉所必须之物，&6但辅助材料在门扉唤醒时并不会消耗&r，因此，若您拥有了门扉辅助材料后不妨多多尝试。"
 			]
+			icon: "kubejs:gateways_auxiliary_material_1"
 			id: "41A06FE07B4D9EF4"
 			rewards: [{
 				id: "483154A752478A01"
@@ -132,7 +133,14 @@
 			subtitle: "定向门扉所需"
 			tasks: [{
 				id: "403B7F9EBB857645"
-				item: "kubejs:gateways_auxiliary_material_1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:gateways_auxiliary_material"
+					}
+				}
+				title: "任意门扉辅助材料"
 				type: "item"
 			}]
 			title: "确认门扉位置"
@@ -148,6 +156,13 @@
 				""
 				"萃取材料并非唤醒门扉所必须之物，&6但萃取材料在门扉唤醒时并不会消耗&r，因此，若您拥有了门扉萃取材料后不妨多多尝试。"
 			]
+			icon: {
+				Count: 1
+				id: "kubejs:gateways_extractant_material_1"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "0BA1BDD70C07EEE3"
 			rewards: [{
 				id: "599AF1FBF7FBAD79"
@@ -159,11 +174,12 @@
 				id: "0D3CD8B1821FC5E5"
 				item: {
 					Count: 1
-					id: "kubejs:gateways_extractant_material_1"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "kubejs:gateways_extractant_material"
 					}
 				}
+				title: "任意门扉萃取材料"
 				type: "item"
 			}]
 			title: "定向提取门扉资源"
@@ -356,14 +372,18 @@
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
-			description: ["当门扉类型处于0~10之间时，门扉定位的位置将会处于一类不确定的沼泽中。"]
+			description: [
+				"当门扉类型处于&60~10&r之间时，门扉将会被定位在一类&6沼泽生态群系&r中。"
+				""
+				"在此类生态群系中，生物以沼泽中频繁出现的诸如&6史莱姆&r、&6女巫&r等生物构成，并且伴随有常见的&6僵尸&r、&6骷髅&r及其&6变种&r。"
+			]
 			id: "031621CE02DADBFA"
 			rewards: [{
 				id: "2C360542F75801C4"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "被引诱到沼泽一端"
+			subtitle: "被引诱到林地沼泽"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_auxiliary_material_2"
@@ -372,61 +392,284 @@
 				title: "门扉类型处于0~10"
 				type: "maa:kube"
 			}]
-			title: "定位：沼泽类门扉"
+			title: "定位：异类沼泽"
 			x: 7.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
+			description: [
+				"当门扉类型处于&610~20&r之间时，门扉将会被定位在另一侧世界中&6秩序与规则的边缘地带&r。"
+				""
+				"在此类位置上，其敌人由类同与我们世界相同的&6掠夺者相关生物&r构成，其包含有近战输出、远程输出及肉盾单位，非常难以应对。"
+			]
 			id: "60BAE197B51FBE86"
+			rewards: [{
+				id: "5DC096F96AA25D93"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "被诱导到秩序边缘"
 			tasks: [{
 				count: 1L
+				icon: "kubejs:gateways_auxiliary_material_3"
 				id: "0E164C90581747CF"
 				kubeId: "eternal_altar_type_2"
-				title: "掠夺者"
+				title: "门扉类型处于10~20"
 				type: "maa:kube"
 			}]
+			title: "定位：异类边境"
 			x: 8.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
+			description: [
+				"当门扉类型处于&620~30&r之间时，门扉将会被定位在另一侧世界中&6最为炎热的地带&r。"
+				""
+				"在此类位置上，其唤来的敌人将由&6下界生物&r构成，其不仅包含&6烈焰人&r、&6凋零骷髅&r、&6岩浆怪&r等常见生物，还包含&6部分结构中生成的特殊生物&r。"
+			]
 			id: "0D94A3028D0413F1"
+			rewards: [{
+				id: "16CF513F7A660B03"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "被诱导到酷热地域"
 			tasks: [{
 				count: 1L
+				icon: "kubejs:gateways_auxiliary_material_4"
 				id: "3646ED9A2A35E491"
 				kubeId: "eternal_altar_type_3"
-				title: "下界"
+				title: "门扉类型处于20~30"
 				type: "maa:kube"
 			}]
+			title: "定位：异类下界"
 			x: 10.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
+			description: [
+				"当门扉类型处于&630~40&r之间时，门扉将会被定位在另一侧世界中&6最为残酷的领地&r。"
+				""
+				"经调查，此位置附近驻扎有大批的&6掠夺者&r及其&6变种生物&r，其敌人数量和变种远超其他任何类型。"
+			]
 			id: "3E00CE17373B4A43"
+			rewards: [{
+				id: "11B9B342986EE33B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "被诱导到敌军腹地"
 			tasks: [{
 				count: 1L
+				icon: "kubejs:gateways_auxiliary_material_5"
 				id: "6E00DB54054E8385"
 				kubeId: "eternal_altar_type_4"
-				title: "不死"
+				title: "门扉类型处于30~40"
 				type: "maa:kube"
 			}]
+			title: "定位：异类哨站"
 			x: 11.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
+			description: [
+				"当门扉类型处于&640~50&r之间时，门扉将会被定位在另一侧世界&6一处荒凉至极的坟墓&r。"
+				""
+				"在坟墓中会吸引而来大量类如&6食尸鬼&r、&6梦魇&r之类的纯粹不死生物，同时也会伴随有部分&6腐化生物&r从门扉中批量出现。"
+			]
 			id: "1664B32474D6AFDC"
+			rewards: [{
+				id: "5B7F1087AABF7728"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "被诱导到荒芜之所"
 			tasks: [{
 				count: 1L
+				icon: "kubejs:gateways_auxiliary_material_6"
 				id: "55EE65505AA960F5"
 				kubeId: "eternal_altar_type_5"
-				title: "寒带"
+				title: "门扉类型处于40~50"
 				type: "maa:kube"
 			}]
+			title: "定位：异类坟墓"
 			x: 13.0d
-			y: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["41A06FE07B4D9EF4"]
+			description: [
+				"当门扉类型处于&650~60&r之间时，门扉将会被定位在另一侧世界的&6冻洋之上&r。"
+				""
+				"冻洋中会出现多种&6海洋中才能够见到的罕见敌对物种&r，但由于部分在冻洋中生存的生物无法在地表生存，因此应召而来的都是其中能够两栖生存的精英物种。"
+			]
+			id: "5A92AF4ABE1CCBD0"
+			rewards: [{
+				id: "28E9CF8386C7D8B5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "被诱导到严寒之地"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:gateways_auxiliary_material_7"
+				id: "1C13716616D54237"
+				kubeId: "eternal_altar_type_6"
+				title: "门扉类型处于50~60"
+				type: "maa:kube"
+			}]
+			title: "定位：异类冻海"
+			x: 14.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0BA1BDD70C07EEE3"]
+			description: [
+				"壹型的萃取原料允许您从门扉中获得&6额外的矿物&r。"
+				""
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家防护能力的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+			]
+			id: "3A942972733C15B5"
+			rewards: [{
+				id: "6DD4797A09F380C4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "门扉萃取计划之一"
+			tasks: [{
+				id: "67B8CEE288C0017B"
+				item: {
+					Count: 1
+					id: "kubejs:gateways_extractant_material_1"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "壹型萃取方案"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0BA1BDD70C07EEE3"]
+			description: [
+				"贰型的萃取原料允许您从门扉中获得&6少量的稀有金属&r。"
+				""
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家攻击力的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+			]
+			id: "729B3FB855E22A03"
+			rewards: [{
+				id: "29C7DB54974262D0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "门扉萃取计划之二"
+			tasks: [{
+				id: "2BBB65B9304067A3"
+				item: {
+					Count: 1
+					id: "kubejs:gateways_extractant_material_2"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "贰型萃取材料"
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0BA1BDD70C07EEE3"]
+			description: [
+				"叁型的萃取原料允许您从门扉中低概率获得&6各类型工具强化水晶&r。"
+				""
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家暴击性能的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+			]
+			id: "5577DD4A37FBEE9C"
+			rewards: [{
+				id: "79E14D9F5F530B00"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "门扉萃取计划之三"
+			tasks: [{
+				id: "769D968F29611736"
+				item: {
+					Count: 1
+					id: "kubejs:gateways_extractant_material_3"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "叁型萃取材料"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0BA1BDD70C07EEE3"]
+			description: [
+				"肆型的萃取原料允许您从门扉中高概率获得&6各种附魔书&r。"
+				""
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家经验获取率的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+			]
+			id: "1FE2D1AFBFD0699F"
+			rewards: [{
+				id: "112F18EF55D03172"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "门扉萃取计划之四"
+			tasks: [{
+				id: "4FC948F9B3729E91"
+				item: {
+					Count: 1
+					id: "kubejs:gateways_extractant_material_4"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "肆型萃取材料"
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0BA1BDD70C07EEE3"]
+			description: [
+				"伍型的萃取原料允许您从门扉中获得&6少量各类宝石&r。"
+				""
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家幸运的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+			]
+			id: "74CB9D5D1794F069"
+			rewards: [{
+				id: "58976CD00349AE07"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "门扉萃取计划之伍"
+			tasks: [{
+				id: "26411F162BF4727C"
+				item: {
+					Count: 1
+					id: "kubejs:gateways_extractant_material_5"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "伍型萃取材料"
+			x: 13.0d
+			y: -1.0d
 		}
 	]
 	title: "秘闻：永恒门扉"

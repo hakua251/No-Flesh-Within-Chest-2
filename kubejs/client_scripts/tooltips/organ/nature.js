@@ -41,9 +41,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:jumping_spider_leg')
     .addAlt(Text.translatable('tooltips.kubejs.jumping_spider_leg.alt.1'))
 )
 
-RegistryOrganTooltip(new MultiStateTooltip('crittersandcompanions:dragonfly_wing')
-    .addDefault(Text.translatable('tooltips.crittersandcompanions.dragonfly_wing.default.1').gray())
-)
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:koi_fish_scale')
     .addDefault(Text.translatable('tooltips.kubejs.koi_fish_scale.default.1').gray())

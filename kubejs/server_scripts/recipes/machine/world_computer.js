@@ -409,8 +409,8 @@ ServerEvents.recipes(event => {
             console.log('New Horizon Establish.')
             console.log('Keep promise and explore the world you can\'t arrive.')
             const server = ctx.block.level.server
-            if (owner.isPlayer() && !AStages.serverHasStage('world_computer_2', server)) {
-                AStages.addStageToServer('world_computer_2', server)
+            if (owner.isPlayer() && !AStages.serverHasStage('ftb_world_computer_2', server)) {
+                AStages.addStageToServer('ftb_world_computer_2', server)
             }
         })
         .requireFunctionToStart(ctx => {

@@ -34,4 +34,5 @@ TitlesEvent.onTitleRegistry(event => {
     regsitryTitleSimple('gate_smasher', 'rare')
     regsitryTitleSimple('gate_buster', 'rare')
     regsitryTitleSimple('gate_ruler', 'epic')
+    regsitryTitleSimple('mechanics_scholar', 'epic')
 })

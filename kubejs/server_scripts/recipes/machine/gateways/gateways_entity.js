@@ -411,6 +411,15 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
+        .addPiece(50, 60, new StandardWaveEntityItemModel(30, 'minecraft:drowned')
+            .setModifier((levelIndicator, chaosIndicator) => {
+                return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', 1 + levelIndicator * 0.1),
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator / 4),
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator / 10)
+                ]
+            })
+        )
         .addPiece(50, 60, new StandardWaveEntityItemModel(150, 'cataclysm:coral_golem')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [

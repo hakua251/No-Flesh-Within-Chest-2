@@ -8,8 +8,6 @@ ServerEvents.tags('item', event => {
 
     event.add('kubejs:wine', ['vinery:jo_special_mixture', 'vinery:eiswein', 'vinery:glowing_wine', 'vinery:apple_wine', 'vinery:red_wine', 'vinery:apple_cider', 'vinery:solaris_wine', 'vinery:mellohi_wine', 'vinery:mead', 'vinery:chorus_wine', 'vinery:villagers_fright', 'vinery:cherry_wine', 'vinery:chenet_wine', 'vinery:clark_wine', 'vinery:magnetic_wine', 'vinery:stal_wine', 'vinery:jellie_wine', 'vinery:bottle_mojang_noir', 'vinery:noir_wine', 'vinery:strad_wine', 'vinery:bolvar_wine', 'vinery:aegis_wine', 'vinery:cristel_wine', 'vinery:creepers_crush', 'vinery:kelp_cider', 'vinery:lilitu_wine',])
 
-    event.add('kubejs:nature', ['crittersandcompanions:dragonfly_wing'])
-
     event.add('kubejs:tinker_organ', ['chestcavity:tinker_heart'])
     event.add('kubejs:heart', ['chestcavity:heart', 'chestcavity:tinker_heart', 'chestcavity:dragon_heart', 'chestcavity:fireproof_heart', 'chestcavity:small_animal_heart', 'chestcavity:rabbit_heart', 'chestcavity:insect_heart', 'chestcavity:ender_heart', 'chestcavity:saltwater_heart', 'chestcavity:rotten_heart', 'chestcavity:animal_heart'])
     event.add('kubejs:muscle', ['chestcavity:muscle', 'chestcavity:rotten_muscle', 'chestcavity:animal_muscle', 'chestcavity:aquatic_muscle', 'chestcavity:fish_muscle', 'chestcavity:brutish_muscle', 'chestcavity:swift_muscle', 'chestcavity:springy_muscle', 'chestcavity:fireproof_muscle', 'chestcavity:small_animal_muscle', 'chestcavity:insect_muscle', 'chestcavity:ender_muscle', 'chestcavity:dragon_muscle', 'chestcavity:piston_muscle', 'chestcavity:small_aquatic_muscle', 'chestcavity:small_fish_muscle', 'chestcavity:small_springy_muscle', 'chestcavity:saltwater_muscle'])

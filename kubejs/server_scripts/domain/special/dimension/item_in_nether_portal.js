@@ -59,4 +59,4 @@ InfinityEvents.itemInPortal(event => {
     }
 })
 
-AStages.addRestrictionForDimension('infinity/nexus', 'can_enter_nexus', 'infinity:nexus')
+AStages.addRestrictionForDimension('infinity/nexus', 'ftb_can_enter_nexus', 'infinity:nexus')

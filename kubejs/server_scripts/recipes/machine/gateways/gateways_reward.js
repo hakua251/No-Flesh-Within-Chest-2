@@ -91,6 +91,14 @@ function RegistryGatewayExtractantStrategy(id, func) {
 }
 
 RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_1', ExtractantMaterialStrategy)
+RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_2', ExtractantMaterialStrategy)
+RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_3', ExtractantMaterialStrategy)
+RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_4', ExtractantMaterialStrategy)
+RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_5', ExtractantMaterialStrategy)
+RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_6', ExtractantMaterialStrategy)
+RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_7', ExtractantMaterialStrategy)
+RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_8', ExtractantMaterialStrategy)
+RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_9', ExtractantMaterialStrategy)
 /**
  * @param {GatewaysCustomData} customData 
  * @param {CustomMachine} machine 

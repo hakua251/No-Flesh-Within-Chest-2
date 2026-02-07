@@ -1,26 +1,73 @@
 // priority: 1000
-// StartupEvents.registry('minecraft:item', event => {
-//     event.create('kubejs:world_relics_debris_1', 'basic')
-//         .texture('kubejs:item/curios/world_relics_debris_1')
-//         .maxStackSize(1)
-//         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
-//             .canEquip(() => true)
-//             .onEquip((itemFrom, ctx, itemTo) => {
-//                 const entity = ctx.entity()
-//                 const level = entity.level
-//                 if (level.isClientSide()) return
-//             })
-//             .onUnequip((itemFrom, ctx, itemTo) => {
-//                 const entity = ctx.entity()
-//                 const level = entity.level
-//                 if (level.isClientSide()) return
-//             })
-//             .curioTick((item, ctx) => {
-//                 const entity = ctx.entity()
-//                 const level = entity.level
-//                 if (level.isClientSide()) return
+StartupEvents.registry('minecraft:item', event => {
+    event.create('kubejs:armor_ring', 'basic')
+        .texture('kubejs:item/curios/armor_ring')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('minecraft:generic.armor', 'ArmorRingArmorAddition', RoundFix(nbt.getFloat('armor'), 2), 'addition')
+            })
+        )
+        .tag('curios:ring')
 
-//             })
-//         )
-//         .tag('curios:head')
-// })
+    event.create('kubejs:experience_ring', 'basic')
+        .texture('kubejs:item/curios/experience_ring')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('tconstruct:player.experience_multiplier', 'ExperienceRingExperienceMultiplier', RoundFix(nbt.getFloat('experienceMultiplier'), 2), 'addition')
+            })
+        )
+        .tag('curios:ring')
+
+    event.create('kubejs:crit_chance_ring', 'basic')
+        .texture('kubejs:item/curios/crit_chance_ring')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('attributeslib:crit_chance', 'CritChanceRingCritChanceAddition', RoundFix(nbt.getFloat('critChance'), 2), 'addition')
+            })
+        )
+        .tag('curios:ring')
+
+    event.create('kubejs:crit_damage_ring', 'basic')
+        .texture('kubejs:item/curios/crit_damage_ring')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('attributeslib:crit_damage', 'CritDamageRingCritDamageAddition', RoundFix(nbt.getFloat('critDamage'), 2), 'addition')
+            })
+        )
+        .tag('curios:ring')
+
+    event.create('kubejs:arrow_damage_ring', 'basic')
+        .texture('kubejs:item/curios/arrow_damage_ring')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('attributeslib:arrow_damage', 'ArrowDamageRingArrowDamageAddition', RoundFix(nbt.getFloat('arrowDamage'), 2), 'addition')
+            })
+        )
+        .tag('curios:ring')
+    // todo 永恒祭坛最终目标、唯一饰品、无限成长、收集类、后续简化配方、能够提供任务线流程
+})

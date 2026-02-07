@@ -29,6 +29,7 @@
 			}]
 			subtitle: "不常见的读数"
 			tasks: [{
+				count: 8L
 				id: "4BF60E34F193C4C6"
 				item: "create:brass_ingot"
 				type: "item"
@@ -873,7 +874,7 @@
 				type: "fluid"
 			}]
 			title: "伤害药水"
-			x: 4.0d
+			x: 4.5d
 			y: 6.0d
 		}
 		{
@@ -1013,8 +1014,8 @@
 				type: "fluid"
 			}]
 			title: "力量药水"
-			x: 5.0d
-			y: 5.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1170,8 +1171,8 @@
 				type: "fluid"
 			}]
 			title: "夜视药水"
-			x: 4.0d
-			y: 7.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
@@ -1822,7 +1823,7 @@
 				icon: "kubejs:world_computer"
 				id: "174026B5CABD1263"
 				isServer: false
-				stage: "world_computer_1"
+				stage: "ftb_world_computer_1"
 				title: "踏向前路"
 				type: "maa:astages"
 			}]

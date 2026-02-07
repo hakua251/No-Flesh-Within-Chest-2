@@ -1,5 +1,5 @@
 // priority: 1000
-AStages.addRestrictionForRecipe('tcon/genesis_blueprint_recipe', 'genesis_tinker_2', 'minecraft:crafting', 'kubejs:genesis_tinker_blueprint_manual_only')
+AStages.addRestrictionForRecipe('tcon/genesis_blueprint_recipe', 'ftb_genesis_tinker_2', 'minecraft:crafting', 'kubejs:genesis_tinker_blueprint_manual_only')
 
 ServerEvents.recipes(event => {
     event.shaped('kubejs:genesis_tinker_blueprint', [
