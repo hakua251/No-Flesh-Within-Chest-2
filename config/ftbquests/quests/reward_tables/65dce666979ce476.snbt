@@ -14,6 +14,8 @@
 			auto: "invisible"
 			icon: "minecraft:slime_ball"
 			ignore_reward_blocking: true
+			isServer: false
+			remove: false
 			stage: "mechanical_tutorial_1"
 			title: "感觉没听懂，独立完成有点难"
 			type: "maa:astages"

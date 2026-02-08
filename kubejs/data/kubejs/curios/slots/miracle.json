@@ -1,0 +1,6 @@
+{
+    "add_cosmetic": false,
+    "order": 1049,
+    "icon": "kubejs:slot/miracle",
+    "validators": ["curios:tag"]
+}

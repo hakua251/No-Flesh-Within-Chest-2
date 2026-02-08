@@ -354,6 +354,7 @@
 				id: "2412A5F324233335"
 				ignore_reward_blocking: true
 				name: "Shop"
+				remove: false
 				title: "解锁商店传送石碑"
 				type: "maa:active_way_stone"
 			}]

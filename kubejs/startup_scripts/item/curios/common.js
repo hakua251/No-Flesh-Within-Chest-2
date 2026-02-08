@@ -1,7 +1,7 @@
 // priority: 1000
 StartupEvents.registry('minecraft:item', event => {
-    event.create('kubejs:armor_ring', 'basic')
-        .texture('kubejs:item/curios/armor_ring')
+    event.create('kubejs:dark_witness_memory', 'basic')
+        .texture('kubejs:item/curios/dark_witness_memory')
         .maxStackSize(1)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip(() => true)
@@ -9,13 +9,13 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('minecraft:generic.armor', 'ArmorRingArmorAddition', RoundFix(nbt.getFloat('armor'), 2), 'addition')
+                ctx.modify('minecraft:generic.armor', 'DarkWitnessMemoryArmorAddition', RoundFix(nbt.getFloat('armor'), 2), 'addition')
             })
         )
-        .tag('curios:ring')
+        .tag('curios:memory')
 
-    event.create('kubejs:experience_ring', 'basic')
-        .texture('kubejs:item/curios/experience_ring')
+    event.create('kubejs:reunion_memory', 'basic')
+        .texture('kubejs:item/curios/reunion_memory')
         .maxStackSize(1)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip(() => true)
@@ -23,13 +23,13 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('tconstruct:player.experience_multiplier', 'ExperienceRingExperienceMultiplier', RoundFix(nbt.getFloat('experienceMultiplier'), 2), 'addition')
+                ctx.modify('tconstruct:player.experience_multiplier', 'ReunionMemoryExperienceMultiplier', RoundFix(nbt.getFloat('experienceMultiplier'), 2), 'addition')
             })
         )
-        .tag('curios:ring')
+        .tag('curios:memory')
 
-    event.create('kubejs:crit_chance_ring', 'basic')
-        .texture('kubejs:item/curios/crit_chance_ring')
+    event.create('kubejs:fear_memory', 'basic')
+        .texture('kubejs:item/curios/fear_memory')
         .maxStackSize(1)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip(() => true)
@@ -37,13 +37,13 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('attributeslib:crit_chance', 'CritChanceRingCritChanceAddition', RoundFix(nbt.getFloat('critChance'), 2), 'addition')
+                ctx.modify('attributeslib:crit_damage', 'FearMemoryCritDamageAddition', RoundFix(nbt.getFloat('critDamage'), 2), 'addition')
             })
         )
-        .tag('curios:ring')
+        .tag('curios:memory')
 
-    event.create('kubejs:crit_damage_ring', 'basic')
-        .texture('kubejs:item/curios/crit_damage_ring')
+    event.create('kubejs:cheat_death_memory', 'basic')
+        .texture('kubejs:item/curios/cheat_death_memory')
         .maxStackSize(1)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip(() => true)
@@ -51,13 +51,13 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('attributeslib:crit_damage', 'CritDamageRingCritDamageAddition', RoundFix(nbt.getFloat('critDamage'), 2), 'addition')
+                ctx.modify('minecraft:generic.luck', 'CheatDeathMemoryLuckAddition', RoundFix(nbt.getFloat('luck'), 2), 'addition')
             })
         )
-        .tag('curios:ring')
+        .tag('curios:memory')
 
-    event.create('kubejs:arrow_damage_ring', 'basic')
-        .texture('kubejs:item/curios/arrow_damage_ring')
+    event.create('kubejs:eternal_miracle', 'basic')
+        .texture('kubejs:item/curios/fear_memory')
         .maxStackSize(1)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip(() => true)
@@ -65,9 +65,9 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('attributeslib:arrow_damage', 'ArrowDamageRingArrowDamageAddition', RoundFix(nbt.getFloat('arrowDamage'), 2), 'addition')
+                ctx.modify('minecraft:generic.attack_damage', 'EternalMiracleAttackDamageAddition', RoundFix(nbt.getFloat('attackDamage'), 2), 'addition')
             })
         )
-        .tag('curios:ring')
+        .tag('curios:miracle')
     // todo 永恒祭坛最终目标、唯一饰品、无限成长、收集类、后续简化配方、能够提供任务线流程
 })

@@ -8,6 +8,8 @@
 			auto: "invisible"
 			icon: "kubejs:genesis_tinker_blueprint"
 			ignore_reward_blocking: true
+			isServer: false
+			remove: false
 			stage: "ftb_genesis_tinker_1"
 			title: "继续追寻创世工匠"
 			type: "maa:astages"

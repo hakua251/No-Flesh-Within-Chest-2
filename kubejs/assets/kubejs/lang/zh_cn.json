@@ -1432,5 +1432,8 @@
     "fake_extreme_mode.kubejs.wound_2": "应伤口之约，将没收 %s 另一半生命，以满足考验之欲",
     "fake_extreme_mode.kubejs.wound_1": "应伤口之约，将没收 %s 的一半生命，以满足考验之欲",
     "_comment.map": "地图自定义描述",
-    "map.kubejs.airdrop": "空投地点"
+    "map.kubejs.airdrop": "空投地点",
+    "_comment.curios": "饰品",
+    "curios.identifier.memory": "回忆",
+    "curios.identifier.miracle": "奇迹"
 }

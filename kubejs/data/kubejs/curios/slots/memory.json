@@ -1,0 +1,6 @@
+{
+    "add_cosmetic": false,
+    "order": 1050,
+    "icon": "kubejs:slot/memory",
+    "validators": ["curios:tag"]
+}

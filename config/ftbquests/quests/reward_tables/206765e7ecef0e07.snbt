@@ -8,6 +8,8 @@
 			auto: "invisible"
 			icon: "kubejs:world_computer"
 			ignore_reward_blocking: true
+			isServer: false
+			remove: false
 			stage: "ftb_world_computer_1"
 			title: "继续项目"
 			type: "maa:astages"

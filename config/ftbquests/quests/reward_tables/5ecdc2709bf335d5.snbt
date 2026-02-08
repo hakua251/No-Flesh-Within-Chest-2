@@ -7,6 +7,8 @@
 			auto: "invisible"
 			icon: "kubejs:revolution_machine_injection"
 			ignore_reward_blocking: true
+			isServer: false
+			remove: false
 			stage: "ftb_revolution_machine_injection_recipe"
 			title: "私有革命机械注射器配方"
 			type: "maa:astages"
@@ -16,6 +18,7 @@
 			icon: "kubejs:revolution_machine_injection"
 			ignore_reward_blocking: true
 			isServer: true
+			remove: false
 			stage: "ftb_revolution_machine_injection_recipe"
 			title: "公开革命机械注射器配方"
 			type: "maa:astages"

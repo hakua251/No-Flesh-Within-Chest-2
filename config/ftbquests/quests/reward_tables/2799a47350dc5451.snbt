@@ -8,6 +8,7 @@
 			icon: "kubejs:key_to_infinity"
 			ignore_reward_blocking: true
 			isServer: true
+			remove: false
 			stage: "ftb_can_enter_nexus"
 			title: "共享中转站维度"
 			type: "maa:astages"
@@ -16,6 +17,8 @@
 			auto: "invisible"
 			icon: "kubejs:key_to_infinity"
 			ignore_reward_blocking: true
+			isServer: false
+			remove: false
 			stage: "ftb_can_enter_nexus"
 			title: "私有中转站维度"
 			type: "maa:astages"
