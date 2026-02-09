@@ -9,7 +9,7 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('minecraft:generic.armor', 'DarkWitnessMemoryArmorAddition', RoundFix(nbt.getFloat('armor'), 2), 'addition')
+                ctx.modify('minecraft:generic.armor', 'DarkWitnessMemoryArmorAddition', RoundFix(nbt.getFloat('attriValue'), 2), 'addition')
             })
         )
         .tag('curios:memory')
@@ -23,7 +23,7 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('tconstruct:player.experience_multiplier', 'ReunionMemoryExperienceMultiplier', RoundFix(nbt.getFloat('experienceMultiplier'), 2), 'addition')
+                ctx.modify('tconstruct:player.experience_multiplier', 'ReunionMemoryExperienceMultiplier', RoundFix(nbt.getFloat('attriValue'), 2), 'addition')
             })
         )
         .tag('curios:memory')
@@ -37,7 +37,7 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('attributeslib:crit_damage', 'FearMemoryCritDamageAddition', RoundFix(nbt.getFloat('critDamage'), 2), 'addition')
+                ctx.modify('attributeslib:crit_damage', 'FearMemoryCritDamageAddition', RoundFix(nbt.getFloat('attriValue'), 2), 'addition')
             })
         )
         .tag('curios:memory')
@@ -51,7 +51,21 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('minecraft:generic.luck', 'CheatDeathMemoryLuckAddition', RoundFix(nbt.getFloat('luck'), 2), 'addition')
+                ctx.modify('minecraft:generic.luck', 'CheatDeathMemoryLuckAddition', RoundFix(nbt.getFloat('attriValue'), 2), 'addition')
+            })
+        )
+        .tag('curios:memory')
+
+    event.create('kubejs:desperate_memory', 'basic')
+        .texture('kubejs:item/curios/desperate_memory')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('minecraft:generic.attack_damage', 'DesperateMemoryAttackDamageAddition', RoundFix(nbt.getFloat('attriValue'), 2), 'addition')
             })
         )
         .tag('curios:memory')
@@ -65,9 +79,8 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('minecraft:generic.attack_damage', 'EternalMiracleAttackDamageAddition', RoundFix(nbt.getFloat('attackDamage'), 2), 'addition')
+                ctx.modify('minecraft:generic.attack_damage', 'EternalMiracleAttackDamageAddition', RoundFix(nbt.getFloat('attriValue'), 2), 'addition')
             })
         )
         .tag('curios:miracle')
-    // todo 永恒祭坛最终目标、唯一饰品、无限成长、收集类、后续简化配方、能够提供任务线流程
 })

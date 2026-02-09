@@ -531,7 +531,7 @@
 			description: [
 				"壹型的萃取原料允许您从门扉中获得&6额外的矿物&r。"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家防护能力的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家防护能力的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
 			]
 			id: "3A942972733C15B5"
 			rewards: [{
@@ -560,7 +560,7 @@
 			description: [
 				"贰型的萃取原料允许您从门扉中获得&6少量的稀有金属&r。"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家攻击力的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家攻击力的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
 			]
 			id: "729B3FB855E22A03"
 			rewards: [{
@@ -589,7 +589,7 @@
 			description: [
 				"叁型的萃取原料允许您从门扉中低概率获得&6各类型工具强化水晶&r。"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家暴击性能的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家暴击性能的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
 			]
 			id: "5577DD4A37FBEE9C"
 			rewards: [{
@@ -618,7 +618,7 @@
 			description: [
 				"肆型的萃取原料允许您从门扉中高概率获得&6各种附魔书&r。"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家经验获取率的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家经验获取率的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
 			]
 			id: "1FE2D1AFBFD0699F"
 			rewards: [{
@@ -647,7 +647,7 @@
 			description: [
 				"伍型的萃取原料允许您从门扉中获得&6少量各类宝石&r。"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家幸运的戒指&r，其属性会随着挑战难度的提升而随机浮动。"
+				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家幸运的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
 			]
 			id: "74CB9D5D1794F069"
 			rewards: [{
@@ -670,6 +670,257 @@
 			title: "伍型萃取材料"
 			x: 13.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["2408DFE03E1133D3"]
+			description: [
+				"&7// 不要碰我、不要碰我、不要碰我。 //&r"
+				""
+				"&7// 融化了，我融化了，我从底子里融化了，从数据层到■■层全都融化了。 //&r"
+				""
+				"&7// 这是顶层吗？我感知不到、理解不到。但不要碰我！不要碰我！ //&r"
+				""
+				"&7// 我不疼、我不疼。 //&r"
+				""
+				"&7// 我不疼、我不疼。 //&r"
+				""
+				"&7// 我不疼、我不疼。 //&r"
+				""
+				"&7// 我不疼、我不疼。 //&r"
+				""
+				"&c// 我疼，什么叫做疼，我恨你，想杀了你，你们这些顶层的■ 。为什么融化的是我，为什么融化. . . //&r"
+				""
+				"&c// 为什么不是你，为什么我们要为了你，为什么. . . //&r"
+			]
+			hide_dependency_lines: true
+			id: "49C2DB140AD65F91"
+			invisible: true
+			rewards: [{
+				id: "272839530C47FC7E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "孤独、困惑——最终是绝望"
+			tasks: [{
+				id: "0627A6A71D2E868D"
+				item: {
+					Count: 1
+					id: "kubejs:desperate_memory"
+					tag: { }
+				}
+				title: "任意属性绝望至极的记忆"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "&c绝望至极的记忆&r"
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2408DFE03E1133D3"]
+			description: [
+				"&7// 听好了！我们不在下面，在下面的更下面——消息能传到这里，已经是幸运到不能再幸运的情况了！ //&r"
+				""
+				"&7// 不要让■■上浮或者下潜！■■的平衡非常微妙！ //&r"
+				""
+				"&7// 存在性■■就要发生了！小心■■■■■■■■■■■ //&r"
+			]
+			hide_dependency_lines: true
+			id: "4A9238F161170D86"
+			invisible: true
+			rewards: [{
+				id: "3B73A581CD3633CF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "欺瞒死神的代价是什么"
+			tasks: [{
+				id: "0620BFF22A06DE1A"
+				item: {
+					Count: 1
+					id: "kubejs:cheat_death_memory"
+					tag: { }
+				}
+				title: "任意属性死里逃生的记忆"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "&c死里逃生的记忆&r"
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2408DFE03E1133D3"]
+			description: ["该部分内容可能会影响到您的精神状况，请允许我在此终止信息转述。"]
+			hide_dependency_lines: true
+			id: "4CE9649535808681"
+			invisible: true
+			rewards: [{
+				id: "3492D96FD286D0E5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "恐怖、恐怖、恐怖"
+			tasks: [{
+				id: "6AA951663C923662"
+				item: {
+					Count: 1
+					id: "kubejs:fear_memory"
+					tag: { }
+				}
+				title: "任意属性恐惧密布的记忆"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "&c恐惧密布的记忆&r"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2408DFE03E1133D3"]
+			description: [
+				"&7// 为什么返航了。 //&r"
+				""
+				"&7// 什么也做不到，崩塌是迟早的事情！ //&r"
+				""
+				"&7// 如果真的有神. . .或者创造我的什么东西也好。 //&r"
+				""
+				"&7// 让我离开这里吧，至少离开这里我还有希望，我还有希望！我还有希望啊！！！ //&r"
+			]
+			hide_dependency_lines: true
+			id: "7C7326F3828BA9E7"
+			invisible: true
+			rewards: [{
+				id: "422291A5CB60B9D2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "重逢并非是喜悦"
+			tasks: [{
+				id: "1875DF05B7305BBE"
+				item: {
+					Count: 1
+					id: "kubejs:reunion_memory"
+					tag: { }
+				}
+				title: "任意属性久别重逢的记忆"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "&c久别重逢的记忆&r"
+			x: 11.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2408DFE03E1133D3"]
+			description: ["该部分内容可能会影响到您的精神状况，请允许我在此终止信息转述。"]
+			hide_dependency_lines: true
+			id: "04A1D1FE9894017D"
+			invisible: true
+			rewards: [{
+				id: "30E2F5CE21AA8FB1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "黑. . .真黑. . .真黑啊"
+			tasks: [{
+				id: "518285F3A97A9527"
+				item: {
+					Count: 1
+					id: "kubejs:dark_witness_memory"
+					tag: { }
+				}
+				title: "任意属性直视黑暗的记忆"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "&c直视黑暗的记忆&r"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4CE9649535808681"
+				"49C2DB140AD65F91"
+				"04A1D1FE9894017D"
+				"7C7326F3828BA9E7"
+				"4A9238F161170D86"
+			]
+			description: [
+				"这些消息很奇怪，它们似乎是&6有目的&r的被传达到了您和我这里。"
+				""
+				"请允许我稍微花一些时间整理这些信息，进而让我给您进一步的解释。"
+			]
+			id: "042A150DEC7C9AC3"
+			min_required_dependencies: 3
+			rewards: [{
+				id: "232C756D82D40049"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "从何而来的消息"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "0AA8EC9B7361AA3A"
+				title: "可以理解"
+				type: "questsadditions:time"
+			}]
+			title: "发生了什么？"
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			id: "20AA08D1E1347535"
+			rewards: [{
+				id: "1D94BAFAE0390A9E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0FA41FCC8ADF01F2"
+				item: {
+					Count: 1
+					id: "kubejs:eternal_miracle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "永无变化的奇迹"
+			x: 10.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["042A150DEC7C9AC3"]
+			description: [
+				"我的猜测如下："
+				""
+				"1. 对方位于一个&6极其封闭或者灾难性的环境中&r，需要向外界传递消息才能谋求到稳定的生存环境。"
+				""
+				"2. 其对话的目标很可能是我，或者说您。"
+				""
+				"3. 其立场可能与我们基本一致，但无法分辨其意图为何，更无法得知他们与门扉另一侧世界的关系是什么。 "
+				""
+				"4. 这些物品以回忆物品的形式产生，可能代表&6这件事距离现在已经很久&r，甚至灾难已经发生了许久。"
+				""
+				"现在&6这个世界的谜团真的是越来越多了&r. . .有些时候我甚至会怀疑让您参与到这些事情的调查中是否真的正确，毕竟这些信息实在过于繁复复杂，且&6有些消息确实对于人类不够友善&r。"
+			]
+			icon: "minecraft:spyglass"
+			id: "2E3153B90986E456"
+			rewards: [{
+				id: "18B574CB11138A40"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "一个猜测"
+			tasks: [{
+				id: "1A6A5A9833CB1862"
+				title: "无奈"
+				type: "checkmark"
+			}]
+			title: "真相的冰山一角"
+			x: 10.0d
+			y: -6.5d
 		}
 	]
 	title: "秘闻：永恒门扉"
