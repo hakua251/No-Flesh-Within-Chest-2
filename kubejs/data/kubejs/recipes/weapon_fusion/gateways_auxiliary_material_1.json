@@ -1,0 +1,12 @@
+{
+    "type": "cataclysm:weapon_fusion",
+    "base": {
+        "item": "minecraft:iron_block"
+    },
+    "addition": {
+        "item": "minecraft:shulker_shell"
+    },
+    "result": {
+        "item": "kubejs:gateways_auxiliary_material_1"
+    }
+}

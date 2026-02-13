@@ -1,0 +1,12 @@
+{
+    "type": "cataclysm:weapon_fusion",
+    "base": {
+        "item": "ars_nouveau:source_gem_block"
+    },
+    "addition": {
+        "item": "minecraft:shulker_shell"
+    },
+    "result": {
+        "item": "kubejs:gateways_auxiliary_material_5"
+    }
+}
