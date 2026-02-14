@@ -11,6 +11,9 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:organ')
         .tag('kubejs:infected')
 
-
-    event.create('kubejs:symbiotic_cavity').maxStackSize(1).texture('kubejs:item/organs/infected/symbiotic_cavity').tag('kubejs:infected')
+    event.create('kubejs:unformed_tumor')
+        .texture('kubejs:item/organs/infected/unformed_tumor')
+        .maxStackSize(1)
+        .tag('kubejs:organ')
+        .tag('kubejs:infected')
 })

@@ -1,0 +1,218 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "30B3D092011ABE08"
+	group: "78F99AC9360F0137"
+	icon: "kubejs:player_27_injection"
+	id: "30B3D092011ABE08"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["19E83624556F5D0A"]
+			description: [
+				"为了进一步探索生物技术，我们需要制作一些&6特殊的药剂&r。"
+				""
+				"这些药剂由于其本身的活跃特性，需要被放置在特殊的&6有机试管&r中。为了在后续的生物炼金技术中迅速取得突破，您最好提前多准备一些有机试管。"
+			]
+			id: "518A9614F706B9F3"
+			invisible: true
+			rewards: [{
+				id: "53649BF0F092B6C7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "基础针剂容器"
+			tasks: [{
+				id: "58A772A2562FCCBA"
+				item: "biomancy:vial"
+				type: "item"
+			}]
+			title: "探寻生物技术的极限"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5915C77B5C546047"]
+			description: [
+				"在整理过后，我大概知晓了如何&6初步进行胸腔的扩容&r。"
+				""
+				"为了扩容胸腔，我们需要制作&2小型酸液罐&r。而为了制作小型酸液罐，则需要一系列生物技术的突破. . ."
+				""
+				"因此，请您先在生物炼金釜中制成&6有机化合物&r，以好进行后续的炼金配方。"
+			]
+			id: "348CF124F966D213"
+			rewards: [{
+				id: "52F776F91DC6A447"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "攀升之路"
+			tasks: [{
+				id: "1CB6E180909F17EA"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			title: "生物技术的精进"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["348CF124F966D213"]
+			description: [
+				"接下来，我们需要制作&6配种兴奋剂&r。"
+				""
+				"通过使用配种兴奋剂，可以&6让生物无视生殖冷却进行交配&r，进而迅速获得对应生物的幼崽。"
+				""
+				"但是，我们并不是为了搞畜牧业而来制作配种兴奋剂的——我们需要它造成的副产物，即那些&6具有基因缺陷的生物后代&r。"
+			]
+			id: "599ED9E67C252EC4"
+			rewards: [{
+				id: "73EE5B4331AFBC81"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "攀升于此"
+			tasks: [{
+				id: "13407778724F20FC"
+				item: "biomancy:breeding_stimulant"
+				type: "item"
+			}]
+			title: "生物技术对生物的影响"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["599ED9E67C252EC4"]
+			description: [
+				"通过向鸡注射育种兴奋剂，其在交配时，有低概率会产生具有严重基因缺陷的后代，其名为&c“血肉鸡”&r。"
+				""
+				"血肉鸡并不会正常产出鸡蛋，而是会产出&6“酸化鸡蛋”&r。其特性能够在分解器中被分解为胃液，进而有助于我们制成&6小型酸液罐&r。"
+			]
+			id: "247428B28C49C651"
+			rewards: [{
+				id: "0F34E8CC8C0E8EAB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "血肉技术成型"
+			tasks: [{
+				id: "4BCE93F948069A7F"
+				item: "biomancy:acidic_egg"
+				type: "item"
+			}]
+			title: "诱导基因缺陷"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["247428B28C49C651"]
+			description: [
+				"通过对酸化鸡蛋的分解，可以获得少量的&6胃液&r。"
+				""
+				"这就是我们所需要的全部了，&6第一次胸腔扩容计划已经准备就绪&r！"
+			]
+			id: "66338DC20A34B58D"
+			rewards: [{
+				id: "0705C1EE52756D38"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "不会危及生命的酸性"
+			tasks: [{
+				id: "0068141E61CB65E0"
+				item: "biomancy:acid_extract"
+				type: "item"
+			}]
+			title: "生物之酸"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66338DC20A34B58D"]
+			description: [
+				"在生物锻炉中，您可以制成&6小型酸液罐&r。"
+				""
+				"小心酸液罐处在胸腔中时会在胸腔环境的影响下，不停的损失自身的耐久度。"
+				""
+				"在此期间，如果您进行了移动，则会因酸液的影响，受到少量伤害。"
+				""
+				"&6当酸液罐的耐久归零时，您的胸腔便会完成第一次扩容&r。"
+			]
+			id: "2B8F82F33E55703A"
+			rewards: [{
+				id: "1095B3F3533DB922"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "忍受慢性痛苦"
+			tasks: [{
+				id: "77747E78D5B1CE49"
+				item: {
+					Count: 1
+					id: "kubejs:small_acid_tank"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "第一次胸腔扩容"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["518A9614F706B9F3"]
+			description: [
+				"请稍等下！在您打算制作炼金制剂之前，我似乎发现了过去&6有关胸腔技术的记录&r。"
+				""
+				"其中表明，可能存在某些方法，能够使得我们&6扩展现有胸腔&r的大小，进而容纳更多的器官，有效增强您的生存与战斗能力。"
+				""
+				"但是为了整理这些记录，我需要一些时间，请您稍加等待。"
+			]
+			id: "5915C77B5C546047"
+			rewards: [{
+				id: "65121B1D5CF4CE4E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "胸腔技术改进"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "5CEB1A494AE05826"
+				title: "稍等片刻"
+				type: "questsadditions:time"
+			}]
+			title: "探寻胸腔与生物技术的关联"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5915C77B5C546047"]
+			description: [
+				"由于在胸腔扩容后，您的基因可能都会发生不可逆的转变，因此&6很有必要保留您当前的基因样本&r，以避免后续有其他需要。"
+				""
+				"通过制作空注射器，您可以抽取自身的血液样本，进而&6保存当前的胸腔类型到注射器&r中。"
+				""
+				"如果后续需要变化胸腔类型到之前的版本，则&6通过注射预留好的注射器即可&r。"
+			]
+			id: "24BF83CE3C6ABE54"
+			rewards: [{
+				id: "5FF35EF184965BA2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "以备不时之需"
+			tasks: [{
+				id: "63A9D50FBAEC19B0"
+				item: "kubejs:empty_injection"
+				type: "item"
+			}]
+			title: "保存现有的胸腔"
+			x: 3.0d
+			y: -1.5d
+		}
+	]
+	title: "秘闻：苦痛登阶"
+}

@@ -21,6 +21,7 @@
 			item: "kubejs:growth_vat"
 			type: "item"
 		}]
+		title: "人工器官培养"
 		x: 0.0d
 		y: 0.0d
 	}]

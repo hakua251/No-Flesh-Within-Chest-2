@@ -430,7 +430,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["4FBC882804C1F6A9"]
+			dependencies: ["70010BB6C23E4927"]
 			description: [
 				"为了生物炼金和生物锻造，您需要大量的生物材料。但有的生物不仅生成稀少，且原料来源不明，难度巨大。"
 				""
@@ -448,8 +448,8 @@
 				item: "biomancy:decomposer"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -13.5d
+			x: -3.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5CF36FC89AB073E8"]
@@ -493,7 +493,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -13.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["714F4F7810E3D89C"]
@@ -522,7 +522,7 @@
 			description: [
 				"一种特殊的炼金釜，能够用于制作各类生物制剂，其中包含一些效果强力的药剂，类如可以让生物成长的成长药剂。"
 				""
-				"通过与&6生物注射器&r的结合使用，能够发挥出各种各样的效果。"
+				"通过与&6生物注射器&r的结合使用，能够发挥出各种各样的效果，大部分生物制剂需要使用&6有机试管&r来进行保存。"
 			]
 			id: "6668756163C6B317"
 			rewards: [{
@@ -537,6 +537,87 @@
 				type: "item"
 			}]
 			x: 0.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["1D2835C031D8C57F"]
+			description: [
+				"在某些分解配方中，我们可以获得到在自然中&6无法正常获取的特殊生物材料&r。"
+				""
+				"通过这些生物材料，我们可以&6制作更多种类的生物制品&r。"
+				""
+				"其中，一个重要的生物材料便是&6弹性纤维&r。"
+			]
+			id: "19E83624556F5D0A"
+			rewards: [{
+				id: "382E1F789B51405C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "分解而来的罕见材料"
+			tasks: [{
+				id: "218162F0D78485A4"
+				item: "biomancy:elastic_fibers"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7CCB3B294B86F7AA"]
+			description: [
+				"通过击杀诸如&6牛&r、&6猪&r、&6马&r等常见生物，您可以获得胆汁腺。"
+				""
+				"该生物材料能够有效分解各种物质，因此极适合用于制作一种特殊的生物设备——&6分解体&r。"
+			]
+			id: "70010BB6C23E4927"
+			rewards: [{
+				id: "7EF42C8AB22D0443"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "分解一切生物的能力"
+			tasks: [{
+				id: "5480485CEDB62B8F"
+				item: "biomancy:mob_gland"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6668756163C6B317"]
+			description: ["为了能够有效注射炼金药剂，您需要制作&6生物注射器&r，以使用由&6有机试管&r装载的各类生物制剂。"]
+			id: "33146F235883D459"
+			rewards: [{
+				id: "68AA4AE64BEAF7E5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "注射炼金药剂"
+			tasks: [{
+				id: "08F566606181B7CE"
+				item: {
+					Count: 1
+					id: "biomancy:injector"
+					tag: {
+						CurrentHostId: 5
+						CurrentVictimId: 219
+						Damage: 0
+						GeckoLibID: 1L
+						IsInjectionSuccess: 1b
+						inventory: {
+							Item: {
+								Count: 16b
+								id: "biomancy:breeding_stimulant"
+							}
+							ItemAmount: 16s
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
 			y: -13.5d
 		}
 	]

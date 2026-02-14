@@ -22,4 +22,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:tasty_worm_soup').maxStackSize(1).food(food => food.hunger(6).saturation(1.5)).texture('kubejs:item/food/tasty_worm_soup')
 
     event.create('kubejs:tasty_hamburg').maxStackSize(1).food(food => food.hunger(8).saturation(2)).texture('kubejs:item/food/tasty_hamburg')
+
+    // 维度虫
+    event.create('dimensional_worm').texture('kubejs:item/materials/dimensional_worm').maxStackSize(1)
 })

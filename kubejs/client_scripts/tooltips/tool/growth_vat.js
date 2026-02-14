@@ -1,0 +1,8 @@
+// priority: 800
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:simple_culture_medium')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.simple_culture_medium.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.simple_culture_medium.shift.1'))
+)
+

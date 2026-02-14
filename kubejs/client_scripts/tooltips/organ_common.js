@@ -72,7 +72,6 @@ ItemEvents.tooltip(tooltip => {
         if (item.hasTag('chestcavity:cannot_remove')) {
             lineNum = AddTextLines(text, [Text.translatable('tooltips.kubejs.cannot_remove_organ')], lineNum)
         }
-        
     })
 
 
