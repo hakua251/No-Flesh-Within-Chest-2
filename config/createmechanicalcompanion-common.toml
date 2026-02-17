@@ -1,3 +1,0 @@
-#List of entities the wolf won't attack
-wolfBlacklist = ["minecraft:creeper", "minecraft:ghast", "mekanism:robit"]
-
