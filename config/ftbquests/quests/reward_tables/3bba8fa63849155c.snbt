@@ -1,0 +1,29 @@
+{
+	icon: "biomancy:bloomberry"
+	id: "3BBA8FA63849155C"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "biomancy:bloomberry"
+			ignore_reward_blocking: true
+			isServer: false
+			remove: false
+			stage: "ftb_primal_bloom_plant"
+			title: "私有蕾莓种植技术"
+			type: "maa:astages"
+		}
+		{
+			auto: "invisible"
+			icon: "biomancy:bloomberry"
+			ignore_reward_blocking: true
+			isServer: true
+			remove: false
+			stage: "ftb_primal_bloom_plant"
+			title: "公开蕾莓种植技术"
+			type: "maa:astages"
+		}
+	]
+	title: "蕾莓种植技术"
+}

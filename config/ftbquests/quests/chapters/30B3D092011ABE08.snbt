@@ -231,7 +231,7 @@
 			}]
 			title: "保存血液样本"
 			x: 10.5d
-			y: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["24BF83CE3C6ABE54"]
@@ -284,7 +284,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["2B8F82F33E55703A"]
+			dependencies: ["25E39232CC1DA79B"]
 			description: [
 				"根据日志显示，在历史上有人&6最多进行了三次胸腔扩容&r。"
 				""
@@ -497,6 +497,297 @@
 			title: "失活神经元肿瘤"
 			x: 0.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["172FA7DB23FEF315"]
+			description: [
+				"通过获得的失活神经元肿瘤在生物锻造台上进行加工，您便可以制取用于第二次胸腔扩容的&6贰阶注射器&r。"
+				""
+				"&6贰阶注射器&r并不需要您处在壹阶胸腔的状态下才能够使用——您可以在任何胸腔类型的情况下通过注射贰阶注射器来将自己的胸腔&6修改为贰阶胸腔&r。"
+				""
+				"同样的，您在获得了贰阶胸腔后，请尽量保留几份注射器血样，因为我们很快就要踏上&6第三次扩容&r的道路了。"
+			]
+			id: "2D04772D78C4E72F"
+			rewards: [{
+				id: "534C2793C3F76211"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "失活神经元肿瘤血样提取"
+			tasks: [{
+				id: "39C34260411CFDD2"
+				item: "kubejs:player_25_injection"
+				type: "item"
+			}]
+			title: "制成贰型注射器"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2D04772D78C4E72F"]
+			description: [
+				"为了进行第三次胸腔扩容，我们需要&6培育恶性脉络&r，以获得一种特殊的血肉“作物”——&d蕾莓&r。"
+				""
+				"恶性脉络是一个极其特殊的血肉产物——它具有着无限演化的可能。"
+				""
+				"您需要在一个足够安全的地方&6部署原初摇篮&r，并且喂养它直到其在周围生成&6恶性脉络&r以便开展下一步我们的培养计划。"
+			]
+			id: "7A2FF567EFD19C5E"
+			rewards: [{
+				id: "0896FAB8983139E6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "无限生命之起源"
+			tasks: [{
+				id: "69802593CAB94D6B"
+				item: "biomancy:malignant_flesh_veins"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["234F6E06965E6BEA"]
+			description: [
+				"在获取了蕾光体后，您可以通过&6分解器分解蕾光体&r概率获得&d蕾莓&r。"
+				""
+				"蕾莓是用于第三次胸腔扩容的重要原料，&6请您不要误食掉它&r。"
+			]
+			id: "0EBECB93FABABCD6"
+			rewards: [{
+				id: "6AD1DB0DD445726B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "原初精华"
+			tasks: [{
+				id: "7BF6B98D9EACB0CC"
+				item: "biomancy:bloomberry"
+				type: "item"
+			}]
+			title: "恶性血肉精华"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0EBECB93FABABCD6"]
+			description: [
+				"酿造&d原初侵蚀药水&r，然后将其倒入&6炼药锅&r中。"
+				""
+				"炼药锅下方需要使用&6热源&r（如营火）加热，待气泡冒出时，将&6器官丢入药水&r中，即可获得无主器官。"
+				""
+				"该方法效率高且没有被肉团误食器官的风险，但需要大量的蕾莓来酿造药水，成本相对较高。"
+			]
+			id: "4BDC3EB3E3B69CE9"
+			rewards: [{
+				id: "6238345A90DCDD0A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "原初净化之极"
+			tasks: [{
+				id: "55F24286AA932421"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "biomancy:primordial_infestation"
+					}
+				}
+				type: "item"
+			}]
+			title: "高效器官净化法"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A2FF567EFD19C5E"]
+			description: [
+				"恶性脉络如原初温床类似，能够吞噬在其上方的&6生肉类食物&r并且将其转换为自己的“营养”。"
+				""
+				"为了培育出足够大型的血肉结构，我们需要&6准备极其大量的生肉&r以为其作为营养来源。"
+				""
+				"当营养充足时，恶性脉络会尝试向周围进行扩散。当周围有大量恶性脉络时，&6位于中心位置的恶性脉络会尝试分化成不同的方块&r。"
+				""
+				"我们所需要的就是提供足够多的食物以及&6足够多的耐心&r。"
+			]
+			icon: "minecraft:mutton"
+			id: "57B7B0D11A6D00D6"
+			rewards: [{
+				id: "034350E3845E9D68"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "血肉人工培育"
+			tasks: [{
+				id: "5706FA5778095B89"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "biomancy:raw_meats"
+					}
+				}
+				title: "任意生肉"
+				type: "item"
+			}]
+			title: "喂养恶性脉络"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["57B7B0D11A6D00D6"]
+			description: [
+				"稍等！在刚才的调查中，我发现实际育成蕾莓所需的生肉量可能远超我们一开始所预计的！"
+				""
+				"由于蕾莓是在血肉结构后期才会极少量产生的结构，而在到达此阶段前，我们需要近万的生肉——这几乎是不可接受的！"
+				""
+				"好在在日志中有所提到曾经的人们&6使用下界之星作为肉类的代替&r，来让原初摇篮附近的恶性脉络获得大量营养。"
+				""
+				"因此，我建议您设法获取下界之星，随后&6手持下界之星右键&r放置于结构中心的原初摇篮，而后&6使用该摇篮完成一次喂养&r。"
+				""
+				"这样，下界之星中异常的生命能量就能够被原初摇篮和周围的恶性脉络吸收，进而大大的减少对生肉的需求。"
+			]
+			id: "62A4D12B41CFF4B5"
+			rewards: [{
+				id: "2ADEAC4B5477FA57"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "节约生肉的方案"
+			tasks: [{
+				id: "0DCD50B51496DF01"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			title: "异质的吸引"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["62A4D12B41CFF4B5"]
+			description: [
+				"随着日志内容的进一步破解，我了解到&c直接通过培养血肉获取蕾莓是极其困难的一件事&r。"
+				""
+				"好在，我们还有备选方案，即通过&6分解器分解蕾光体进而获得蕾莓&r。"
+				""
+				"相较于蕾莓生成的不稳定性，蕾光体的生成较有规律。其会&6在恶性血肉方块构成类似房间的结构后，若房间内部亮度低于5，则会将其分化为蕾光体&r。"
+				""
+				"也就是说，您只要保证有一个由恶性血肉块构成的房间，其内部亮度低于5，则会不停的有血肉方块分化为蕾光体。"
+				""
+				"在实际操作中，可能出现很长时间都无法封顶的情况。您可以采取&6人工建造一个非血肉块的屋顶来营造低亮度环境，诱导蕾光体形成&r，这会极大的减少蕾光体的培育周期。"
+				""
+				"在蕾光体形成后，您便可以进行“采摘”，进行更为重要的下一步骤。"
+				""
+				"在采摘后的血肉结构中，由于亮度会重新低于阈值，很快便会有新的蕾光体生成。"
+			]
+			id: "234F6E06965E6BEA"
+			rewards: [{
+				id: "7DBAEF88F22181DE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "获取蕾莓的快捷道路"
+			tasks: [{
+				id: "4987E24C5FFE701B"
+				item: "biomancy:bloomlight"
+				type: "item"
+			}]
+			title: "定向培养蕾光体"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0EBECB93FABABCD6"]
+			description: [
+				"由于蕾莓本身性质特殊，直接使用蕾莓对贰阶血清进行改造会对您的身体产生极大的副作用。因此我们需要&6制作狂化药剂&r作为辅助材料，进行叁型血清的制作。"
+				""
+				"狂化药剂的制作方法与之前的药剂相类似，但是工序相对复杂。"
+			]
+			id: "5A5D9E78BE6A9095"
+			rewards: [{
+				id: "5DB04EAD0ED623B7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "制作狂化药剂"
+			tasks: [{
+				id: "666B6425490BDFA4"
+				item: "biomancy:frenzy_serum"
+				type: "item"
+			}]
+			title: "血清兼容药剂"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5A5D9E78BE6A9095"]
+			description: [
+				"&6恭喜您，成功制作出了叁型注射器，完成了目前已知的所有胸腔扩容方案。&r"
+				""
+				"但由于我们的路途仍然遥远，我们对于世界本身的了解仍旧浅薄，尚不知道未来是否会有更宽广的胸腔——或者说更宽广的世界在等待着我们。"
+				""
+				"但至少现在，我们已经取得了我们应该得到的成功。"
+				""
+				"在早期的日志中，有部分记录称&6叁型胸腔&r为&c原初胸腔&r，或许我们现在所到达的终点仅仅是曾经人们的起点。"
+				""
+				"但不管怎么样，恭喜您完成了这一系列荒诞的任务。"
+			]
+			id: "23D00C1EBDF3036C"
+			rewards: [{
+				id: "69D5B9365393BEBC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "重归于此"
+			tasks: [{
+				id: "43CB531CB644894F"
+				item: "kubejs:player_27_injection"
+				type: "item"
+			}]
+			title: "&6庆贺吧！此乃胸腔原本之模样！&r"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["23D00C1EBDF3036C"]
+			description: [
+				"在各类垃圾信息中，我筛选出了后人所留下的一种特殊技术——即&6蕾莓快速扩产技术&r。"
+				""
+				"在这种扩产技术加持下，您只需要&6手持蕾莓右键恶性血肉块，就可以在对应位置创造一颗原始肉蕾&r。"
+				""
+				"但原始肉蕾具有相当不稳定的特性，其在成熟后还会将蕾莓抛射到其他位置，尝试产生新的血肉结构。如果将这份技术交予不了解内情的人，&c可能会导致世界不可逆的走向无止境的血肉化&r。"
+				""
+				"因此，如果您能够在这方世界中取得&6繁殖动物数第一名的成绩&r，我便可以将这种特殊的蕾莓培养技术交予您。至于后续您是否要公开这种技术则完全取决于您对形势的判断。"
+				"{@pagebreak}"
+				"公开技术会使所有人只要手持蕾莓右键恶性血肉块就可以创造原始肉蕾。"
+				""
+				"私有配方会使您成为唯一能够使用这样技术的人，如果其他玩家取而代之，并不会影响您已获得技术的使用。"
+			]
+			id: "5C16EB8056E262E1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "032619FD2BE17674"
+				table_id: 4303910337977587036L
+				type: "choice"
+			}]
+			shape: "diamond"
+			subtitle: "人造原始肉蕾"
+			tasks: [{
+				icon: "minecraft:wheat"
+				id: "019003C08356D47A"
+				leaderboard: "leaderboards:animals_bred"
+				min: 10
+				rank: 1
+				title: "繁殖动物数称霸"
+				type: "leaderboards:rank_task"
+			}]
+			title: "蕾莓快速扩产技术"
+			x: 10.5d
+			y: 4.5d
 		}
 	]
 	title: "传闻：胸腔扩容"

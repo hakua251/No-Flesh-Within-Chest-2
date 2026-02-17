@@ -1,27 +1,10 @@
 // priority: 500
 // todo kubeloader加回来
-
-// ExposureEvents.modifyFrameData(event => {
-//     const player = event.player
-//     const server = event.server
-//     let entityInFrame = event.getEntitiesInFrame()
-//     let frameData = event.getFrame()
-
-//     let target = entityInFrame.get(0)
-
-//     let targetNbt = target.getNbt()
-//     let targetId = target.type
-//     frameData.putString('type', targetId)
-//     frameData.put('entityNbt', targetNbt)
-//     server.scheduleInTicks(2, () => {
-//         target.discard()
-//     })
-// })
-// exposure:flashes
-
-// ItemEvents.entityInteracted('stick', event => {
-//     const entity = event.target
-// })
+BlockEvents.rightClicked('biomancy:malignant_flesh_veins', event => {
+    const block = event.block
+    const level = event.level
+    block.blockState.randomTick(level, block.pos, level.random)
+})
 
 
 // todo 调试方法

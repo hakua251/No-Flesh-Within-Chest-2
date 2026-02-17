@@ -12,4 +12,8 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'modulargolems:metal_golem_template' })
     event.recipes.biomancy.bio_forging([Item.of('minecraft:clay_ball', 4), Item.of('biomancy:flesh_bits', 1), Ingredient.of('#forge:ingots/copper', 1)], Item.of('modulargolems:metal_golem_template'), 'biomancy:components', 2)
+
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:player_21_injection', 1), Item.of('kubejs:inactivated_neuron_tumor', 1), Item.of('biomancy:healing_additive', 1)], Item.of('kubejs:player_25_injection'), 'biomancy:components', 20)
+
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:player_25_injection', 1), Item.of('biomancy:bloomberry', 1), Item.of('biomancy:frenzy_serum', 1)], Item.of('kubejs:player_27_injection'), 'biomancy:components', 50)
 })
