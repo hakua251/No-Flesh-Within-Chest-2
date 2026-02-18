@@ -18,7 +18,7 @@ ownerPickupOnly = true
 #When enabled, the following features will be disabled when player holds item in hand:
 #- give item to golem or take items from golem by right click
 #- order dog golem to seat
-strictInteract = false
+strictInteract = true
 #Allow command wand to edit curios of other mobs you own
 allowEditCuriosForOthers = true
 #Max golem activity radius before following player in follow mode

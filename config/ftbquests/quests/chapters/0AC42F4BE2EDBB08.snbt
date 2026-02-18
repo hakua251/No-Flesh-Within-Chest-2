@@ -11,6 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["473AA9B909ED8EB0"]
 			description: [
 				"很抱歉在上一个任务采用了特殊的图标来吸引您点击。在数据统计上，具有吸引力的图标和误导性的副标题可以极大的提高您点击的可能性。"
 				""
@@ -479,6 +480,47 @@
 				type: "item"
 			}]
 			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4A1C6C6150E32CEE"]
+			description: [
+				"某些时候，我可能需要您&6提交流体&r来完成任务，作为一类相对麻烦的任务类型，您需要按照以下步骤来完成流体的提交。"
+				""
+				"&71. &r 制造&6任务屏幕&r，将任务屏幕放置在任意位置，右键任务屏幕打开界面，选择当前您需要提交的流体任务。"
+				""
+				"&72.&r  在选择完毕后，将&6水龙头&r放置在&6任务屏幕上方&r，将&6流体源&r/&6装有流体的储罐&r放置在水龙头的另一端。"
+				""
+				"&73.&r 打开水龙头，如果任务是可进行的，则流体会被缓慢的抽取到任务屏幕中，用于提交任务。 "
+			]
+			icon: "minecraft:lava_bucket"
+			id: "07EF7BB4192A11D0"
+			rewards: [{
+				id: "3738D3492A7B36F9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "流体检测类任务"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "minecraft:lava"
+					id: "783EED89DD910463"
+					type: "fluid"
+				}
+				{
+					id: "6BD375E9A4FBFF4E"
+					item: "ftbquests:screen_1"
+					type: "item"
+				}
+				{
+					id: "5808B93D6A0B415B"
+					item: "supplementaries:faucet"
+					type: "item"
+				}
+			]
+			title: "将岩浆带回家"
+			x: 2.0d
 			y: -7.0d
 		}
 	]

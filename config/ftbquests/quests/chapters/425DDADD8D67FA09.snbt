@@ -10,57 +10,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3D02CAC6C9FF9512"]
-			description: [
-				"某些时候，我可能需要您&6提交流体&r来完成任务，作为一类相对麻烦的任务类型，您需要按照以下步骤来完成流体的提交。"
-				""
-				"&71. &r 制造&6任务屏幕&r，将任务屏幕放置在任意位置，右键任务屏幕打开界面，选择当前您需要提交的流体任务。"
-				""
-				"&72.&r  在选择完毕后，使用&6动力泵&r将流体从储罐或者其他管道中泵送到任务屏幕中。"
-				""
-				"&73.&r  如果流体需求量不大，您可以选择使用&6曲柄&r手动驱动动力泵以完成任务。"
-			]
-			icon: "minecraft:water_bucket"
-			id: "07EF7BB4192A11D0"
-			rewards: [{
-				id: "3738D3492A7B36F9"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "流体检测类任务"
-			tasks: [
-				{
-					amount: 10000L
-					fluid: "minecraft:water"
-					id: "41716DBC4D322343"
-					type: "fluid"
-				}
-				{
-					id: "33D224E8324F572A"
-					item: "create:mechanical_pump"
-					type: "item"
-				}
-				{
-					id: "435824E09D2CAE76"
-					item: "create:fluid_tank"
-					type: "item"
-				}
-				{
-					id: "6BD375E9A4FBFF4E"
-					item: "ftbquests:screen_1"
-					type: "item"
-				}
-				{
-					id: "267CB2C603219BC1"
-					item: "create_connected:crank_wheel"
-					type: "item"
-				}
-			]
-			title: "泵取水资源"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["5D90233550E7D188"]
 			description: [
 				"相信您在挖矿时遇到了一些从来没有见到过的矿物——比如说&6锌矿&r。"

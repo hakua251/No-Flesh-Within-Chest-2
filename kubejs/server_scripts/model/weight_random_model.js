@@ -1,4 +1,4 @@
-// priority: 2000
+// priority: 2001
 /**
  * 权重随机对象
  * @param {any} obj 
@@ -32,7 +32,7 @@ WeightRandomModel.prototype = {
     /**
      * 非重复取出多个权重随机对象
      * @param {number} count 
-     * @returns 
+     * @returns {any[]}
      */
     getWeightRandomObjs: function (count) {
         let objs = []

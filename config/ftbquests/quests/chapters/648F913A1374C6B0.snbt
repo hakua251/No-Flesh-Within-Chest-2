@@ -8,22 +8,77 @@
 	id: "648F913A1374C6B0"
 	order_index: 3
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["588B97AAEC0E2385"]
-		id: "2FBC5269D17457E9"
-		rewards: [{
-			id: "45000E1BBA4FDE8B"
-			item: "lightmanscurrency:coin_gold"
-			type: "item"
-		}]
-		tasks: [{
-			id: "62B6BA6957772466"
-			item: "kubejs:growth_vat"
-			type: "item"
-		}]
-		title: "人工器官培养"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["588B97AAEC0E2385"]
+			description: [
+				"似乎&c肿瘤神经元&r在胸腔中产生了一些特殊的物品。"
+				""
+				"这些未成型肿瘤具有一些&6隐藏的属性&r，但是这些属性似乎并不能够通过常规方法来得以显现。"
+				""
+				"结合它们&6“未成型”&r的名称来看，很有可能有某种方法可以让这些肿瘤成长为&6“成型”&r的状态，进而揭示这些隐藏属性。"
+			]
+			id: "2FBC5269D17457E9"
+			rewards: [{
+				id: "45000E1BBA4FDE8B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "肿瘤的形成"
+			tasks: [{
+				id: "62B6BA6957772466"
+				item: {
+					Count: 1
+					id: "kubejs:unformed_tumor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "异常发育组织"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FBC5269D17457E9"]
+			description: [
+				"我相信在曾经的记录中会保留有&6肿瘤培养相关的知识&r，这是一种直觉。"
+				""
+				"现在请您稍等片刻，我将重新设置关键字扫描过去的日志，以了解与&6肿瘤&r、&6潜在属性&r等信息相关的日志。"
+			]
+			id: "05800BE06814E4E8"
+			rewards: [{
+				id: "7F65C1064C64BD0C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "调查肿瘤相关信息"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "23F232F04DBA3F74"
+				title: "稍等片刻"
+				type: "questsadditions:time"
+			}]
+			title: "收集器官培养相关资料"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05800BE06814E4E8"]
+			id: "2A309A1975C86D4A"
+			rewards: [{
+				id: "6608444B9CCAF6AF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D55D02A399C15F2"
+				item: "kubejs:growth_vat"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+	]
 	title: "秘闻：体外培养"
 }

@@ -26,3 +26,10 @@
  * @property {number} chaosIndicator
  * @property {number} typeIndicator
  */
+
+
+/**
+ * @typedef {Object} TumorOrganDataWeight
+ * @property {string} name
+ * @property {number} max
+ */

@@ -4,31 +4,6 @@ RegistryOrgan('kubejs:worm_neuron')
     .addScore('chestcavity:metabolism', 1)
     .addScore('chestcavity:endurance', -1)
 
-
-const UnformedTumorAttributeWeigthModel = new WeightRandomModel()
-    .addWeightRandom({ name: 'chestcavity:defense', max: 5 }, 30)
-    .addWeightRandom({ name: 'chestcavity:strength', max: 5 }, 30)
-    .addWeightRandom({ name: 'chestcavity:health', max: 2 }, 10)
-    .addWeightRandom({ name: 'chestcavity:nerves', max: 2 }, 10)
-    .addWeightRandom({ name: 'chestcavity:endurance', max: 3 }, 10)
-    .addWeightRandom({ name: 'chestcavity:breath_recovery', max: 2 }, 8)
-    .addWeightRandom({ name: 'chestcavity:breath_capacity', max: 2 }, 8)
-    .addWeightRandom({ name: 'chestcavity:detoxification', max: 2 }, 8)
-    .addWeightRandom({ name: 'chestcavity:filtration', max: 2 }, 5)
-    .addWeightRandom({ name: 'chestcavity:nutrition', max: 3 }, 5)
-    .addWeightRandom({ name: 'chestcavity:digestion', max: 3 }, 5)
-    .addWeightRandom({ name: 'chestcavity:metabolism', max: 2 }, 5)
-    .addWeightRandom({ name: 'chestcavity:fire_resistant', max: 2 }, 3)
-    .addWeightRandom({ name: 'chestcavity:knockback_resistant', max: 2 }, 3)
-
-const TumorAttributeWeigthModel = new WeightRandomModel()
-    .addWeightRandom({ name: 'kubejs:extreme_fitness', max: 3 }, 30)
-    .addWeightRandom({ name: 'kubejs:extreme_strength', max: 3 }, 30)
-    .addWeightRandom({ name: 'kubejs:dragon_blood', max: 2 }, 5)
-    .addWeightRandom({ name: 'kubejs:crit_damage', max: 2 }, 10)
-    .addWeightRandom({ name: 'kubejs:crit_chance', max: 2 }, 10)
-
-
 /**
  * 
  * @param {number} maxValue 
@@ -54,14 +29,14 @@ function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType
 
     // 随机两条属性
     let organData = new $CompoundTag()
-    let attributeList = UnformedTumorAttributeWeigthModel.getWeightRandomObjs(2)
+    let attributeList = WormNeuronOrganDataWeightModel.getWeightRandomObjs(2)
     attributeList.forEach((attri) => {
         organData.putDouble(attri.name, RandomTumorAttirbute(attri.max))
     })
 
     // 随机一条潜在属性
     let potentialOrganData = new $CompoundTag()
-    let potentialAttribute = TumorAttributeWeigthModel.getWeightRandomObj()
+    let potentialAttribute = WormNeuronPotentialOrganDataWeightModel.getWeightRandomObj()
     potentialOrganData.putDouble(potentialAttribute.name, RandomTumorAttirbute(potentialAttribute.max))
 
     let nbt = new $CompoundTag()

@@ -16,4 +16,6 @@ ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_forging([Item.of('kubejs:player_21_injection', 1), Item.of('kubejs:inactivated_neuron_tumor', 1), Item.of('biomancy:healing_additive', 1)], Item.of('kubejs:player_25_injection'), 'biomancy:components', 20)
 
     event.recipes.biomancy.bio_forging([Item.of('kubejs:player_25_injection', 1), Item.of('biomancy:bloomberry', 1), Item.of('biomancy:frenzy_serum', 1)], Item.of('kubejs:player_27_injection'), 'biomancy:components', 50)
+
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:small_acid_tank', 1), Item.of('biomancy:bloomberry', 1), Item.of('biomancy:frenzy_serum', 1)], Item.of('kubejs:growth_vat'), 'biomancy:machines', 50)
 })
