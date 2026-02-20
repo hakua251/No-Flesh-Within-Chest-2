@@ -30,16 +30,9 @@ function SpawnUnformedTumor(machine, fluid, slotId) {
     let fluidId = String(fluid.id)
     if (!UnformedTumorFluidConfigMap.has(fluidId)) return
 
-    let organData = new $CompoundTag()
     let organDataConfig = UnformedTumorFluidConfigMap.get(fluidId)
-    organDataConfig.getOrganDataAttri().forEach((attri) => {
-        organData.putDouble(attri.name, RandomTumorAttirbute(attri.max))
-    })
-
-    let potentialOrganData = new $CompoundTag()
-    organDataConfig.getPotentialOrganDataAttri().forEach((attri) => {
-        potentialOrganData.putDouble(attri.name, RandomTumorAttirbute(attri.max))
-    })
+    let organData = organDataConfig.genOrganData()
+    let potentialOrganData = organDataConfig.genPotentialOrganData()
 
     let nbt = new $CompoundTag()
     nbt.put('potentialOrganData', potentialOrganData)

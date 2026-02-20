@@ -29,7 +29,8 @@
 
 
 /**
- * @typedef {Object} TumorOrganDataWeight
+ * @typedef {Object} TumorOrganDataConfig
  * @property {string} name
- * @property {number} max
+ * @property {number} mean
+ * @property {number} sigma
  */

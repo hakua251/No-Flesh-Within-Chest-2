@@ -6,7 +6,16 @@ PlayerEvents.loggedIn(event => {
     SyncPlayerOriginUnlockStatus(player) // 同步起源解锁信息：服务端记录的起源信息同步到客户端
 
     InitClientISSSpellData(player) // 同步客户端ISSSpellData：同步客户端的ISSSpellData，用于客户端的ISSSpellData初始化
-
+    InitClientOrganSkill(player) // 同步客户端SkillWheel：刷新器官轮盘展示，避免切换存档客户端数据错误
     SyncClientMoonEvent(player) // 同步客户端月亮显示：用于客户端的MoonEvent显示同步
 })
 
+/**
+ * 
+ * @param {Internal.ServerPlayer} player 
+ */
+function InitClientOrganSkill(player) {
+    let data = new $CompoundTag()
+    data.putString('type', 'refresh')
+    player.sendData('update_organ_skill_wheel_item', data)
+}

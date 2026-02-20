@@ -95,39 +95,6 @@ function RandomGetN(arr, count) {
 
 
 /**
- * 权重随机对象
- * @param {any} obj 
- * @param {Number} weight
- * @returns 
- */
-function WeightRandomItem(obj, weight) {
-    this.obj = obj
-    this.weight = weight
-    this.startWeight = 0
-    this.endWeight = 0
-}
-
-function WeightRandomModel() {
-    this.weightRandomList = []
-}
-WeightRandomModel.prototype = {
-    addWeightRandom: function (obj, weight) {
-        this.weightRandomList.push(new WeightRandomItem(obj, weight))
-        return this
-    },
-    getWeightRandomObj: function () {
-        let totalWeight = this.weightRandomList.reduce(function (pre, cur, index) {
-            cur.startWeight = pre
-            return cur.endWeight = pre + cur.weight
-        }, 0)
-        let random = Math.ceil(Math.random() * totalWeight)
-        let randomObj = this.weightRandomList.find(weightObj => weightObj.startWeight < random && weightObj.endWeight >= random)
-        return randomObj.obj
-    }
-}
-
-
-/**
  * 幸运重roll
  * @param {number} luck 
  * @returns 
@@ -227,4 +194,25 @@ function SliceChunkArray(array, chunkSize) {
  */
 function Clamp(num, min, max) {
     return Math.min(Math.max(num, min), max)
+}
+
+/**
+ * 生成一个服从标准正态分布 N(0,1) 的随机数
+ * @returns {number} 标准正态分布随机数
+ */
+function StandardNormalRandom() {
+    let u = 0, v = 0
+    while (u == 0) u = Math.random() // 避免 u = 0，因为 ln(0) 无定义
+    while (v == 0) v = Math.random() // v 可为零，但 cos/sin 没问题，此处为对称处理
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * JavaMath.PI * v)
+}
+
+/**
+ * 生成服从正态分布 N(mean, sigma^2) 的随机数
+ * @param {number} mean    均值 μ
+ * @param {number} sigma   标准差 σ
+ * @returns {number} 正态分布随机数
+ */
+function NormalRandom(mean, sigma) {
+    return mean + sigma * StandardNormalRandom()
 }

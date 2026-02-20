@@ -34,5 +34,8 @@ NetworkEvents.dataReceived('update_organ_skill_wheel_item', event => {
             })
             SkillWheelOverlay.instance.setSkillItems(curSkillItems)
             break
+        case 'refresh':
+            OrganSkillWheelMap.clear()
+            SkillWheelOverlay.instance.setSkillItems(curSkillItems)
     }
 })

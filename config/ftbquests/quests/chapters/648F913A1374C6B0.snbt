@@ -242,28 +242,48 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["423AEF7EC222CA7F"]
+			dependencies: ["07B051220DE15756"]
 			id: "3C112008E390B113"
+			rewards: [{
+				id: "49FAE0A12B25D9DF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "肿瘤复制技术"
 			tasks: [{
 				id: "49BA38CFE9834A72"
 				item: "kubejs:proliferation_culture_medium"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -1.0d
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["07B051220DE15756"]
+			description: [
+				"为了能够利用&6铁基提纯效率&r进行资源的提取，您需要使用&6纯化培养基&r激活这些属性。"
+				""
+				"在培养仓中心的绿色区域使用&6纯化培养基&r，即可在当前培养周期中启动周围肿瘤的&6铁基提纯效率&r，这使得这些肿瘤可以从铁基营养素中提取大量的铁锭并生成在空白的槽位中。"
+				""
+				"但是，肿瘤进行提纯流程的时候会概率使自身的基因发生&c劣化&r，劣化时肿瘤的属性会随机的进行增减。为了降低这种情况出生的可能性，将&6基因稳定性&r较高的肿瘤用于提纯是非常优良的决定。"
+			]
+			id: "06774B10A942D09D"
+			rewards: [{
+				id: "73DFFA2AB2EEAE09"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "将资源肿瘤加以利用"
+			tasks: [{
+				id: "0DF8293C4C46A02B"
+				item: "kubejs:refined_culture_medium"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
-			id: "06774B10A942D09D"
-			tasks: [{
-				id: "2340CE193E593DCC"
-				item: "kubejs:purified_culture_medium"
-				type: "item"
-			}]
-			x: 14.5d
-			y: -3.5d
-		}
-		{
 			icon: "kubejs:rose_nutrients_fluid_bucket"
 			id: "30DFADD41A73DC07"
 			rewards: [{
@@ -278,9 +298,40 @@
 				id: "789E7FDD5D5C663D"
 				type: "fluid"
 			}]
-			title: "玫瑰营养素"
-			x: 14.5d
-			y: 1.0d
+			title: "特殊培养素：玫瑰"
+			x: 14.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["423AEF7EC222CA7F"]
+			description: [
+				"使用不同的营养液可以让肿瘤发生可控的定向变异。"
+				""
+				"以&6铁基营养素&r为例，铁基营养素是一种可以用于培育&6特殊资源肿瘤&r的营养素。"
+				""
+				"其在培育未成型肿瘤时，会生成&63个显性属性&r和&61个隐性属性&r，且其中存在有3个特殊属性，分别为&6增殖效率&r、&6基因稳定性&r和&6铁基提纯效率&r。"
+				""
+				"增殖效率会影响到肿瘤自我进行复制时的效率，基因稳定性会影响肿瘤在进行提纯和自我复制时的属性劣化概率，而后面的铁基提纯效率则是能够&6允许该肿瘤在特殊的培养基上进行资源的生产&r。"
+				""
+				"后续的具体信息我还在解读，请您先制作铁基营养素，并且尝试用铁基营养素培养出一批未成型肿瘤。"
+			]
+			icon: "kubejs:iron_nutrients_fluid_bucket"
+			id: "07B051220DE15756"
+			rewards: [{
+				id: "223D8D765E66434B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "铁质化肿瘤"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:iron_nutrients_fluid"
+				id: "3A18F07D9D4EE63F"
+				type: "fluid"
+			}]
+			title: "特殊培养素：铁基"
+			x: 14.0d
+			y: -3.0d
 		}
 	]
 	title: "秘闻：体外培养"

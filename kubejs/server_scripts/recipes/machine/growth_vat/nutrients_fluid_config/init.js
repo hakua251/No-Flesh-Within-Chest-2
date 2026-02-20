@@ -1,4 +1,4 @@
-// priority: 502
+// priority: 503
 /**
  * @type {Map<string, UnformedTumorFluidConfigModel>}
  */
@@ -9,5 +9,3 @@ const UnformedTumorFluidConfigMap = new Map()
 function registryUnformedTumorFluidConfig(organDataConfig) {
     UnformedTumorFluidConfigMap.set(organDataConfig.fluidId, organDataConfig)
 }
-registryUnformedTumorFluidConfig(new UnformedTumorFluidConfigModel('kubejs:nutrients_fluid'))
-

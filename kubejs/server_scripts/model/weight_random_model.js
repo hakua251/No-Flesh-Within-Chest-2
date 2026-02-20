@@ -21,38 +21,43 @@ WeightRandomModel.prototype = {
         return this
     },
     getWeightRandomObj: function () {
-        let totalWeight = this.weightRandomList.reduce(function (pre, cur, index) {
-            cur.startWeight = pre
-            return cur.endWeight = pre + cur.weight
+        let totalWeight = this.weightRandomList.reduce(function (pre, cur) {
+            return pre + cur.weight
         }, 0)
-        let random = Math.ceil(Math.random() * totalWeight)
-        let randomObj = this.weightRandomList.find(weightObj => weightObj.startWeight < random && weightObj.endWeight >= random)
-        return randomObj.obj
+        let random = Math.random() * totalWeight
+        let currentWeight = 0
+        for (let i = 0; i < this.weightRandomList.length; i++) {
+            currentWeight += this.weightRandomList[i].weight
+            if (random < currentWeight) {
+                return this.weightRandomList[i].obj
+            }
+        }
+        return null
     },
-    /**
-     * 非重复取出多个权重随机对象
-     * @param {number} count 
-     * @returns {any[]}
-     */
     getWeightRandomObjs: function (count) {
         let objs = []
         let tempWeightRandomList = this.weightRandomList.slice()
         if (count > tempWeightRandomList.length) {
             count = tempWeightRandomList.length
         }
-        let totalWeight = this.weightRandomList.reduce(function (pre, cur, index) {
-            cur.startWeight = pre
-            return cur.endWeight = pre + cur.weight
+        let totalWeight = tempWeightRandomList.reduce(function (pre, cur) {
+            return pre + cur.weight
         }, 0)
         for (let i = 0; i < count; i++) {
-            let random = Math.ceil(Math.random() * totalWeight)
+            let random = Math.random() * totalWeight
+            let currentWeight = 0
+            let selectedIndex = -1
             for (let j = 0; j < tempWeightRandomList.length; j++) {
-                if (tempWeightRandomList[j].startWeight < random && tempWeightRandomList[j].endWeight >= random) {
-                    objs.push(tempWeightRandomList[j].obj)
-                    totalWeight = totalWeight - tempWeightRandomList[j].weight
-                    tempWeightRandomList.splice(j, 1)
+                currentWeight += tempWeightRandomList[j].weight
+                if (random < currentWeight) {
+                    selectedIndex = j
                     break
                 }
+            }
+            if (selectedIndex >= 0) {
+                objs.push(tempWeightRandomList[selectedIndex].obj)
+                totalWeight -= tempWeightRandomList[selectedIndex].weight
+                tempWeightRandomList.splice(selectedIndex, 1)
             }
         }
         return objs
