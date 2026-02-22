@@ -38,6 +38,7 @@ StartupEvents.registry('item', event => {
             }
             let oNbt = oStack.getNbt()
             oNbt.put('organData', organDataNbt)
+            oNbt.putBoolean('Infected', true)
             stack.setCount(0)
             return true
         })

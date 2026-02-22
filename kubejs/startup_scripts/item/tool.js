@@ -16,7 +16,7 @@ StartupEvents.registry('item', event => {
     event.create('blood_extractor')
         .texture('kubejs:item/tools/blood_extractor')
         .maxStackSize(1)
-        .useDuration(itemStack => 65)
+        .useDuration(itemStack => 30)
         .useAnimation('bow')
         .use((level, player, hand) => true)
         .releaseUsing((itemstack, level, entity) => {

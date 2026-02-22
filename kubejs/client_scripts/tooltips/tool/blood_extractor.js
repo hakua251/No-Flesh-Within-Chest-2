@@ -6,9 +6,10 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:blood_extractor')
     .addDefault(Text.translatable('tooltips.kubejs.blood_extractor.default.1').gray())
     .addShift((text, item) => {
         let nbt = item.getOrCreateTag()
-        if (!nbt.contains('organScores')) return [Text.translatable('tooltips.kubejs.blood_extractor.shift.0')]
+        if (!nbt.contains('organScores')) return [Text.translatable('tooltips.kubejs.blood_extractor.shift.empty')]
         let tooltipsList = []
         let organScores = nbt.getCompound('organScores')
+        if (organScores.size() <= 0) return [Text.translatable('tooltips.kubejs.blood_extractor.shift.invalid')]
         organScores.tags.forEach((score, value) => {
             let roundValue = FloorFix(value.getAsFloat(), 2)
             let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`)
