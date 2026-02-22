@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
             return ctx.success()
         })
         .requireItem('kubejs:simple_culture_medium', 'input_slot')
-        .requireFluidTagPerTick('kubejs:nutrients_fluid', 1, 'nutrient_solution')
+        .requireFluidTag('kubejs:nutrients_fluid', 1000, 'nutrient_solution')
 
     event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 60)
         .requireFunctionOnEnd(ctx => {
@@ -30,5 +30,5 @@ ServerEvents.recipes(event => {
             return ctx.success()
         })
         .requireItem('kubejs:culture_medium', 'input_slot')
-        .requireFluidTagPerTick('kubejs:nutrients_fluid', 1, 'nutrient_solution')
+        .requireFluidTag('kubejs:nutrients_fluid', 1000, 'nutrient_solution')
 })

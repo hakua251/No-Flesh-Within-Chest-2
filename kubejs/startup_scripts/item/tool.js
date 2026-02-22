@@ -11,26 +11,31 @@ StartupEvents.registry('item', event => {
         })
     }).tag('supplementaries:cookies').maxStackSize(64)
 
-    event.create('blood_extractor').texture('kubejs:item/tools/blood_extractor').maxStackSize(1)
-
     event.create('key_to_infinity').rarity('epic').texture('kubejs:item/tools/key_to_infinity').maxStackSize(1)
 
-    event.create('glass_vial').texture('kubejs:item/tools/glass_vial').maxStackSize(1)
+    event.create('blood_extractor')
+        .texture('kubejs:item/tools/blood_extractor')
+        .maxStackSize(1)
+        .useDuration(itemStack => 65)
         .useAnimation('bow')
         .use((level, player, hand) => true)
-        .useDuration(itemStack => 20)
-        .finishUsing((itemstack, level, entity) => {
-            if (level.isClientSide()) return itemstack
-            if (!itemstack.nbt?.organScores) return itemstack
-
-            itemstack.nbt.organScores.getAllKeys().forEach(key => {
-                let roundValue = RoundFix(itemstack.nbt.organScores[key], 2)
-                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${key}`).getString()
-                let scoreTooltips = Text.translatable('tooltips.kubejs.glass_vial.4', Text.yellow(scoreString), Text.yellow(roundValue)).hover(Text.translate(`tooltips.kubejs.score_tag.hover.${key}`))
-                entity.tell(scoreTooltips)
-            })
-
-            entity.addItemCooldown(itemstack, 20 * 5)
+        .releaseUsing((itemstack, level, entity) => {
             return itemstack
         })
+        .finishUsing((itemstack, level, entity) => {
+            let nbt = itemstack.getOrCreateTag()
+            let organScores = new $CompoundTag()
+            let ray = entity.rayTrace(4, false)
+            let target = entity
+            if (ray.entity && ray.entity.isAlive()) target = ray.entity
+            let targetCC = target.getChestCavityInstance()
+            if (!targetCC) return itemstack
+            targetCC.getOrganScores().forEach((key, value) => {
+                organScores.putFloat(key, value)
+            })
+            nbt.put('organScores', organScores)
+            itemstack.setNbt(nbt)
+            return itemstack
+        })
+
 })

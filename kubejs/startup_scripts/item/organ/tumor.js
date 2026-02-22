@@ -23,4 +23,27 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
         .tag('kubejs:organ')
         .tag('kubejs:infected')
+
+    event.create('kubejs:parasitic_tumor')
+        .overrideStackedOnOther((stack, slot, action, player) => {
+            if (stack.getCount() != 1 || action != $ClickAction.SECONDARY) return false
+            let nbt = stack.getOrCreateTag()
+            if (!nbt.contains('organData')) return false
+            let oStack = slot.getItem()
+            if (oStack.isEmpty()) return false
+            if (!oStack.hasTag('kubejs:organ')) return false
+            let organDataNbt = nbt.getCompound('organData')
+            if (!oStack.hasNBT()) {
+                oStack.setNbt(new $CompoundTag())
+            }
+            let oNbt = oStack.getNbt()
+            oNbt.put('organData', organDataNbt)
+            stack.setCount(0)
+            return true
+        })
+        .texture('kubejs:item/organs/infected/parasitic_tumor')
+        .maxStackSize(1)
+        .tag('kubejs:organ')
+        .tag('kubejs:infected')
+
 })
