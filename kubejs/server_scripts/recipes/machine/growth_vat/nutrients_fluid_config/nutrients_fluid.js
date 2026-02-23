@@ -1,4 +1,4 @@
 // priority: 502
-registryUnformedTumorFluidConfig(
+RegistryUnformedTumorFluidConfig(
     new UnformedTumorFluidConfigModel('kubejs:nutrients_fluid')
 )

@@ -40,3 +40,7 @@ ServerEvents.tags('entity_type', event => {
 ServerEvents.tags('block', event => {
 
 })
+
+ServerEvents.tags('fluid', event => {
+    event.add('kubejs:nutrients_fluid', ['tconstruct:meat_soup'])
+})

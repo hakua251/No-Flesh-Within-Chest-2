@@ -1,0 +1,26 @@
+// priority: 502
+const VenomOrganDataWeightModel = new WeightRandomModel()
+    .addWeightRandom({ name: 'chestcavity:detoxification', mean: 1, sigma: 1 }, 15)
+    .addWeightRandom({ name: 'chestcavity:filtration', mean: 1, sigma: 1 }, 15)
+    .addWeightRandom({ name: 'chestcavity:health', mean: -1, sigma: 0.5 }, 15)
+
+const VenomPotentialOrganDataWeightModel = new WeightRandomModel()
+    .addWeightRandom({ name: 'chestcavity:defense', mean: 0, sigma: 1 }, 10)
+    .addWeightRandom({ name: 'chestcavity:strength', mean: 0, sigma: 1 }, 10)
+    .addWeightRandom({ name: 'chestcavity:nerves', mean: 0, sigma: 0.5 }, 10)
+    .addWeightRandom({ name: 'chestcavity:endurance', mean: 0, sigma: 0.5 }, 10)
+    .addWeightRandom({ name: 'chestcavity:breath_recovery', mean: 0, sigma: 0.5 }, 10)
+    .addWeightRandom({ name: 'chestcavity:breath_capacity', mean: 0, sigma: 0.5 }, 10)
+    .addWeightRandom({ name: 'chestcavity:nutrition', mean: 0, sigma: 0.5 }, 5)
+    .addWeightRandom({ name: 'chestcavity:digestion', mean: 0, sigma: 0.5 }, 5)
+    .addWeightRandom({ name: 'chestcavity:metabolism', mean: 0, sigma: 0.5 }, 5)
+    .addWeightRandom({ name: 'chestcavity:fire_resistant', mean: 0, sigma: 0.5 }, 5)
+    .addWeightRandom({ name: 'chestcavity:knockback_resistant', mean: 0, sigma: 0.5 }, 5)
+
+RegistryUnformedTumorFluidConfig(
+    new UnformedTumorFluidConfigModel('tconstruct:venom')
+        .setOrganDataModel(VenomOrganDataWeightModel)
+        .setPotentialOrganDataModel(VenomPotentialOrganDataWeightModel)
+        .setOrganDataCount(1)
+        .setPotentialOrganDataCount(1)
+)

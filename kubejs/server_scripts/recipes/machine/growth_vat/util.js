@@ -41,6 +41,8 @@ function SpawnUnformedTumor(machine, fluid, slotId) {
     machine.setItemStored(slotId, Item.of('kubejs:unformed_tumor', nbt))
 }
 
+
+
 /**
  * 未成型肿瘤变异生长逻辑
  * @param {CustomMachine} machine 
@@ -60,31 +62,14 @@ function UnformedTumorMutationGrowth(machine, fluid, item, slotId) {
         organData = organData.merge(unformedTumorNbt.getCompound('potentialOrganData'))
     }
 
-    let outputItem
-    // todo 今天记得改成策略方法，不然器官加进来代码会乱糟糟的
-    if (organData.getFloat('chestcavity:health') < 0 && Math.random() > 0.5) {
-        // 寄生肿瘤
-        organData.putFloat('chestcavity:health', Math.abs(organData.getFloat('chestcavity:health')))
-        let targetOrganData = new $CompoundTag()
-        let keys = RandomGetN(organData.allKeys.toArray(), 1)
-        keys.forEach(key => {
-            targetOrganData.putFloat(key, FloorFix(organData.getFloat(key) * 0.5, 2))
-        })
-        tumorNbt.put('organData', targetOrganData)
-        outputItem = Item.of('kubejs:parasitic_tumor', tumorNbt)
-    } else if (organData.getFloat('kubejs:rosy') >= 1.0 && Math.random() > 0.5) {
-        // 玫瑰肿瘤
-        let targetOrganData = new $CompoundTag()
-        organData.tags.forEach((key, value) => {
-            targetOrganData.putFloat(key, key == 'kubejs:rosy' ? value.getAsFloat() : value.getAsFloat() * 2)
-        })
-        tumorNbt.put('organData', targetOrganData)
-        outputItem = Item.of('kubejs:rosy_tumor', tumorNbt)
-    } else {
-        tumorNbt.put('organData', organData)
-        outputItem = Item.of('kubejs:tumor', tumorNbt)
+    tumorNbt.put('organData', organData)
+    let outputItem = Item.of('kubejs:tumor', tumorNbt)
+    for (let config of TumorMutationConfigList) {
+        if (config.isMatch(machine, fluid, item, slotId, organData)) {
+            outputItem = config.apply(machine, fluid, item, slotId, organData)
+            break
+        }
     }
-
     machine.setItemStored(slotId, outputItem)
 }
 

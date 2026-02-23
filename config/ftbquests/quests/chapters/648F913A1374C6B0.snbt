@@ -337,7 +337,7 @@
 						]
 					}
 				}
-				title: "玫瑰化大于等于0的肿瘤"
+				title: "玫瑰化≥0的肿瘤"
 				type: "item"
 			}]
 			title: "深入了解玫瑰"
@@ -345,8 +345,21 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1C15A9AE23C757B4"]
+			dependencies: ["743893C0E06CF624"]
+			description: [
+				"通过将&6玫瑰化属性≥1&r且&6力量≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英肌肉&r。"
+				""
+				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育力量较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高力量肿瘤&r上以获得符合要求的未成型肿瘤。"
+				""
+				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+			]
 			id: "7B17BE1E914B20B8"
+			rewards: [{
+				id: "0087482713EDE545"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为吾证明"
 			tasks: [{
 				id: "51269334ED0402FA"
 				item: {
@@ -356,27 +369,55 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
-			y: 0.0d
+			title: "芬芳考验课题之一"
+			x: 24.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["1C15A9AE23C757B4"]
+			dependencies: ["743893C0E06CF624"]
+			description: [
+				"通过将&6玫瑰化属性≥1&r且&6防御≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英肋骨&r。"
+				""
+				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育防御较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高防御肿瘤&r上以获得符合要求的未成型肿瘤。"
+				""
+				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+			]
 			id: "17CDACFF66B94C57"
+			rewards: [{
+				id: "3777C22C36535688"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为吾证明"
 			tasks: [{
-				id: "05E22392BE95F906"
+				id: "75968220DB41D1CA"
 				item: {
 					Count: 1
-					id: "kubejs:rose_quartz_dialyzer"
+					id: "kubejs:rose_quartz_rib"
 					tag: { }
 				}
 				type: "item"
 			}]
-			x: 22.0d
-			y: 1.5d
+			title: "芬芳考验课题之三"
+			x: 24.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["1C15A9AE23C757B4"]
+			dependencies: ["743893C0E06CF624"]
+			description: [
+				"通过将&6玫瑰化属性≥1&r且&6解毒效率≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英肝脏&r。"
+				""
+				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育解毒效率较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高解毒效率肿瘤&r上以获得符合要求的未成型肿瘤。"
+				""
+				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+			]
 			id: "099F508626A998A8"
+			rewards: [{
+				id: "644F8057796A2D17"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为吾证明"
 			tasks: [{
 				id: "541C5961F38DC5C4"
 				item: {
@@ -386,12 +427,26 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
+			title: "芬芳考验课题之五"
+			x: 24.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["1C15A9AE23C757B4"]
+			dependencies: ["743893C0E06CF624"]
+			description: [
+				"通过将&6玫瑰化属性≥1&r且&6健康≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英心脏&r。"
+				""
+				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育健康较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高健康肿瘤&r上以获得符合要求的未成型肿瘤。"
+				""
+				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+			]
 			id: "6A23271F6A2023D0"
+			rewards: [{
+				id: "0FE979FDAB69F6FB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为吾证明"
 			tasks: [{
 				id: "13A3C03E304A2681"
 				item: {
@@ -401,12 +456,26 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
+			title: "芬芳考验课题之二"
+			x: 24.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["1C15A9AE23C757B4"]
+			dependencies: ["743893C0E06CF624"]
+			description: [
+				"通过将&6玫瑰化属性≥1&r且&6血液过滤效率≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英透析器&r。"
+				""
+				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育血液过滤效率较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高血液过滤效率肿瘤&r上以获得符合要求的未成型肿瘤。"
+				""
+				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+			]
 			id: "663B39864DB186A8"
+			rewards: [{
+				id: "44EC76BF340A91F1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为吾证明"
 			tasks: [{
 				id: "39F9ED0485E7DD8F"
 				item: {
@@ -416,22 +485,48 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
-			y: -3.0d
+			title: "芬芳考验课题之四"
+			x: 24.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5A2C4544B9011D4F"]
+			description: [
+				"经模式确认，我现在已能够将&6玫瑰胸腔&r的模式装填入注射器中，以供后续快速切换胸腔类型使用。"
+				""
+				"但由于玫瑰胸腔的力量较为强大，且其中还蕴含着包含肿瘤突变相关的&6未知议题&r，贸然将这种技术公开可能导致一些不可预料的结果。"
+				""
+				"这种心境，或许经历了&6芬芳考验&r的您能够理解。因此，我决定将制作玫瑰注射器的方案以及其分发的权力赋予在当前世界中最能理解“芬芳”含义的玩家，即在&6花盆中种植过最多植物的玩家&r。"
+				"{@pagebreak}"
+				"公开配方会使所有人都可以制作玫瑰注射器。"
+				""
+				"私有配方会使您成为唯一能够制作玫瑰注射器的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
+			]
 			id: "59B331E95DB82528"
-			shape: "diamond"
-			tasks: [{
-				id: "519A3984A36F4B8B"
-				item: "kubejs:rose_injection"
-				type: "item"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2E0E167C00E737BF"
+				table_id: 6150984717852836336L
+				type: "choice"
 			}]
-			x: 27.0d
+			shape: "diamond"
+			subtitle: "芬芳魔术"
+			tasks: [{
+				icon: "minecraft:flower_pot"
+				id: "214DA6683064BB20"
+				leaderboard: "leaderboards:flowers_potted"
+				min: 1
+				rank: 1
+				title: "种植花盆数称霸"
+				type: "leaderboards:rank_task"
+			}]
+			title: "玫瑰注射器配方"
+			x: 33.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["4EEBDB6CCA1410B8"]
+			description: ["&7** 汝心已证，芬芳既铸 **&r"]
 			icon: "kubejs:rose_injection"
 			id: "5A2C4544B9011D4F"
 			rewards: [{
@@ -451,7 +546,7 @@
 				value: 1L
 			}]
 			title: "&6庆贺吧！此乃玫瑰胸腔！&r"
-			x: 25.5d
+			x: 31.0d
 			y: 0.0d
 		}
 		{
@@ -499,15 +594,20 @@
 						]
 					}
 				}
-				title: "培育力量大于等于1的肿瘤"
+				title: "培育力量≥1的肿瘤"
 				type: "item"
 			}]
 			title: "简单选育肿瘤"
-			x: 14.0d
-			y: -2.0d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
+			description: [
+				"在各类营养素中，存在一种名为“&6腐烂营养素&r”的特殊营养素。"
+				""
+				"虽然腐烂营养素培育出的&6大量属性均为负面属性&r，但其能够稳定提供显性的&6力量相关属性&r，因此能够为您提升攻击力提供一个非常稳定的保障。"
+			]
 			icon: "kubejs:rotten_nutrients_fluid_bucket"
 			id: "7212143D1F0B4FFC"
 			rewards: [{
@@ -524,12 +624,12 @@
 			}]
 			title: "特殊培养素：腐烂"
 			x: 14.0d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4E86FD2718C02061"]
 			description: [
-				"通过&6将玫瑰化属性大于等于1的未成型肿瘤使用突变培养基培育&r，即可概率获得&c玫瑰肿瘤&r。"
+				"通过&6将玫瑰化属性≥1的未成型肿瘤使用突变培养基培育&r，即可概率获得&c玫瑰肿瘤&r。"
 				""
 				"由于未成型肿瘤突变为概率现象，其中免不了要损失大量的未能成功突变而自然长大的肿瘤，因此您可以在进行突变培养前&6事先增殖一部分符合标准的肿瘤&r。"
 			]
@@ -555,24 +655,59 @@
 		}
 		{
 			dependencies: ["6475C1A0B29D8110"]
+			description: [
+				"我有一个关于玫瑰肿瘤的猜测，其根源可能于一类由&6玫瑰石英&r构成的器官有关。"
+				""
+				"为了补充缺失的那部分猜测信息，请您为我提供&6少量玫瑰相关物质&r以进行进一步的实物考察。"
+				""
+				"在通过进一步确认后，我应该能提供给您证明这一系列器官存在的具体方法。"
+			]
+			icon: "create:polished_rose_quartz"
 			id: "1C15A9AE23C757B4"
 			rewards: [{
 				id: "05A7674901839682"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			tasks: [{
-				id: "6C309FE6428AEB40"
-				item: "create:polished_rose_quartz"
-				type: "item"
-			}]
-			title: "玫瑰的启示"
+			subtitle: "玫瑰的启示"
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "6C309FE6428AEB40"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "0717CF68DAF3E62E"
+					item: { Count: 8, id: "candlelight:rose" }
+					type: "item"
+				}
+			]
+			title: "一个可能的猜测"
 			x: 20.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7212143D1F0B4FFC"]
+			description: [
+				"经腐烂营养素的启发，我发现了一种名为“&6寄生肿瘤&r”的特殊肿瘤类型，其可以通过健康＜0的肿瘤在突变培养基中概率突变而成。"
+				""
+				"在突变过程中，&6肿瘤属性和属性条数会出现大规模减少&r，但寄生肿瘤&6允许其自身寄生在其他的非肿瘤器官上&r，以提供额外的基础属性。"
+				""
+				"例如，原本一根肋骨可能仅能提供 1 的防御属性，但经过一个拥有 1.5 力量的寄生肿瘤寄生后，其属性可以达到 1.5 力量和 1 防御，即&6两者的加和&r。"
+				""
+				"因此，您可以通过大量培育寄生肿瘤来&6普遍的提高您的胸腔基础属性&r，间接提升您的战斗力。"
+			]
 			id: "5E5B7FBDC663F063"
+			rewards: [{
+				id: "0752632855258408"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "寄生型肿瘤"
 			tasks: [{
 				id: "03EB9F562E4CF881"
 				item: {
@@ -582,8 +717,179 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
+			title: "寄生肿瘤"
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1C15A9AE23C757B4"]
+			description: [
+				"经确认，存在一系列被冠名为&6玫瑰&r的特殊器官，其存在于肿瘤的一类&6特殊突变路线&r中。"
+				""
+				"通过培育具有&6玫瑰化&r且在&6力量、健康、防御、血液过滤效率、解毒效率其中任一方面有特长&r的肿瘤即可通过突变培养基将其突变为具有对应特长的玫瑰器官。"
+				""
+				"请您按照指引，帮助我完成具体的&c芬芳考验&r。"
+			]
+			icon: "candlelight:rose"
+			id: "743893C0E06CF624"
+			rewards: [{
+				id: "53E29C8A86238094"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我已确认证明方法"
+			tasks: [{
+				id: "0ADB0D2E600311A4"
+				title: "我将证明"
+				type: "checkmark"
+			}]
+			title: "芬芳考验"
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7B17BE1E914B20B8"
+				"6A23271F6A2023D0"
+				"17CDACFF66B94C57"
+				"663B39864DB186A8"
+				"099F508626A998A8"
+			]
+			description: [
+				"历经三次证明，我不仅意识到&6玫瑰系列器官&r的存在——在其背后，还存在着名为“&c玫瑰胸腔&r”的专有胸腔强化。"
+				""
+				"玫瑰器官借由&c玫瑰化&r属性，与其他属性建立起极其坚固的链接。据目前信息显示，经玫瑰胸腔强化后的玫瑰器官更能使这种链接从单向变为双向，可以有效的使某些属性成长到正常难以企及的位置。"
+				""
+				"现在我们只需要搞清楚如何获取到这种力量，请您稍给我些时间，以便得到更多相关信息。"
+			]
+			id: "16909BBBA99EE3A7"
+			min_required_dependencies: 3
+			rewards: [{
+				id: "0CC4BC1C12A0D07A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "予汝玫瑰"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "26B0D2E6227019A0"
+				title: "稍等片刻"
+				type: "questsadditions:time"
+			}]
+			title: "芬芳启示"
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16909BBBA99EE3A7"]
+			description: [
+				"&6已确认。&r"
+				""
+				"您需要准备&c熔融玫瑰石英流体&r，在自己&6玫瑰化≥10&r的状态下，将自己置于该熔融流体中至&6窒息致死的前一刻&r，奇迹便会发生。"
+				""
+				"请您务必小心，尽管情报表明的结果非常确认此番行动的可靠性，但为保万一，您一定要保留有脱身手段。"
+			]
+			icon: "kubejs:melted_rose_quartz_bucket"
+			id: "4EEBDB6CCA1410B8"
+			rewards: [{
+				id: "70DE8F91A78A00E1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "见证汝心"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:melted_rose_quartz_bucket"
+				id: "026AFB7C1947E7C6"
+				kubeId: "rose_cc_convert"
+				title: "在熔融玫瑰石英中窒息至临界"
+				type: "maa:kube"
+			}]
+			title: "不证自明的课题"
+			x: 29.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["423AEF7EC222CA7F"]
+			description: [
+				"尽管理论上来说，只有经过特制的营养素才能发挥最好的肿瘤培育效果。不过部分流体虽然没有经过加工，却一定程度上仍可以担任营养素的功能。"
+				""
+				"&6肉汁&r是一种常见的冶炼炉产物，其可以直接&6作为营养素&r用于肿瘤的培养。"
+				""
+				"使用肉汁培养出的肿瘤拥有&6较好的健康状态&r，但由于其并非是专业的营养素，所以其他属性大都会有所缺失。"
+			]
+			icon: "tconstruct:meat_soup_bucket"
+			id: "68820765EDB72C40"
+			rewards: [{
+				id: "6E0D943897E15695"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "健康的营养素"
+			tasks: [{
+				amount: 1000L
+				fluid: "tconstruct:meat_soup"
+				id: "4F3495952922D332"
+				type: "fluid"
+			}]
+			title: "特殊培养素：肉汤"
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["423AEF7EC222CA7F"]
+			description: [
+				"尽管理论上来说，只有经过特制的营养素才能发挥最好的肿瘤培育效果。不过部分流体虽然没有经过加工，却一定程度上仍可以担任营养素的功能。"
+				""
+				"&6毒液&r是一种罕见的冶炼炉产物，其可以直接&6作为营养素&r用于肿瘤的培养。"
+				""
+				"使用毒液培养出的肿瘤普遍具有较高的&6血液过滤效率&r和&6解毒效率&r，但在其他方面都有着明显不足。"
+			]
+			icon: "tconstruct:venom_bucket"
+			id: "698B2A2E588DE4E4"
+			rewards: [{
+				id: "6C8D266172AC2CF7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "剧毒物质"
+			tasks: [{
+				amount: 1000L
+				fluid: "tconstruct:venom"
+				id: "5E1620645E1208E0"
+				type: "fluid"
+			}]
+			title: "特殊培养素：毒液"
+			x: 14.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["423AEF7EC222CA7F"]
+			description: [
+				"尽管理论上来说，只有经过特制的营养素才能发挥最好的肿瘤培育效果。不过部分流体虽然没有经过加工，却一定程度上仍可以担任营养素的功能。"
+				""
+				"&6酸液&r是一种罕见的血肉产物，通常见于&6原始孔洞&r分泌，其可以直接&6作为营养素&r用于肿瘤的培养。"
+				""
+				"使用酸液培养出的肿瘤拥有&6优良的防御能力&r，但由于其并非是专业的营养素，所以其他属性大都会有所缺失。"
+			]
+			icon: "biomancy:acid_bucket"
+			id: "25F8A6FFEE54F329"
+			rewards: [{
+				id: "6B6886DC663882E3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "酸性环境"
+			tasks: [{
+				amount: 1000L
+				fluid: "biomancy:acid"
+				id: "08DC94523BB7B1C4"
+				type: "fluid"
+			}]
+			title: "特殊培养素：酸液"
+			x: 14.0d
+			y: -5.0d
 		}
 	]
 	title: "秘闻：体外培养"

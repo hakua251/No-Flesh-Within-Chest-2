@@ -1818,8 +1818,8 @@
 			}]
 			subtitle: "准备充分！改造开始！"
 			tasks: [{
-				id: "2B049CFC2572B005"
-				item: "create:blaze_cake"
+				id: "4CA838E24EFD33BB"
+				item: "tconstruct:magma_cake"
 				type: "item"
 			}]
 			title: "打响信号"

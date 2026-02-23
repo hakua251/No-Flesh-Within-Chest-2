@@ -26,6 +26,7 @@ NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent}
     let customData = {
         thornsDamage: 0
     }
+    RosyChestCavityConvert(event)
     SweetDreamEntityBeHurt(event, customData)
     OrganEntityBeHurt(event, customData)
     FragileEntityBeHurt(event, customData)

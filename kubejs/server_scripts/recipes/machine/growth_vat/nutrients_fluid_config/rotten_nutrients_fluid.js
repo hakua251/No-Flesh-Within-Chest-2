@@ -15,7 +15,7 @@ const RottenNutrientsPotentialOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'kubejs:crit_chance', mean: 0.5, sigma: 0.5 }, 5)
     .addWeightRandom({ name: 'chestcavity:water_breath', mean: 1, sigma: 0.5 }, 5)
 
-registryUnformedTumorFluidConfig(
+RegistryUnformedTumorFluidConfig(
     new UnformedTumorFluidConfigModel('kubejs:rotten_nutrients_fluid')
         .setOrganDataModel(RottenNutrientsOrganDataWeightModel)
         .setPotentialOrganDataModel(RottenNutrientsPotentialOrganDataWeightModel)

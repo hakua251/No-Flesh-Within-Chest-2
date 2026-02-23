@@ -18,7 +18,7 @@ const RoseNutrientsPotentialOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'chestcavity:fire_resistant', mean: 0.5, sigma: 0.5 }, 5)
     .addWeightRandom({ name: 'chestcavity:knockback_resistant', mean: 0.5, sigma: 0.5 }, 5)
 
-registryUnformedTumorFluidConfig(
+RegistryUnformedTumorFluidConfig(
     new UnformedTumorFluidConfigModel('kubejs:rose_nutrients_fluid')
         .setOrganDataModel(RoseNutrientsOrganDataWeightModel)
         .setPotentialOrganDataModel(RoseNutrientsPotentialOrganDataWeightModel)

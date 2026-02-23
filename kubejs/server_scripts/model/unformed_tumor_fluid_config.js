@@ -18,9 +18,10 @@ const WormNeuronOrganDataWeightModel = new WeightRandomModel()
 const WormNeuronPotentialOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'kubejs:extreme_fitness', mean: 1, sigma: 0.5 }, 30)
     .addWeightRandom({ name: 'kubejs:extreme_strength', mean: 1, sigma: 0.5 }, 30)
-    .addWeightRandom({ name: 'kubejs:dragon_blood', mean: 0.5, sigma: 0.5 }, 5)
     .addWeightRandom({ name: 'kubejs:crit_damage', mean: 0.5, sigma: 0.5 }, 10)
     .addWeightRandom({ name: 'kubejs:crit_chance', mean: 0.5, sigma: 0.5 }, 10)
+    .addWeightRandom({ name: 'kubejs:dragon_blood', mean: 0.5, sigma: 0.5 }, 5)
+
 /**
  * @param {string} fluidId 
  */

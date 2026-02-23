@@ -1,0 +1,28 @@
+{
+	id: "555CB002F67981F0"
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "kubejs:rose_injection"
+			ignore_reward_blocking: true
+			isServer: false
+			remove: false
+			stage: "ftb_rose_injection_recipe"
+			title: "私有玫瑰注射器配方"
+			type: "maa:astages"
+		}
+		{
+			auto: "invisible"
+			icon: "kubejs:rose_injection"
+			ignore_reward_blocking: true
+			isServer: true
+			remove: false
+			stage: "ftb_rose_injection_recipe"
+			title: "公开玫瑰注射器配方"
+			type: "maa:astages"
+		}
+	]
+	title: "玫瑰注射器配方"
+}
