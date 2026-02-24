@@ -13,5 +13,4 @@ ItemEvents.entityInteracted('kaleidoscope_cookery:kitchen_shovel', event => {
             }
         }
     }
-
 })

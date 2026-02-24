@@ -1,5 +1,5 @@
 // priority: 1000
-AmendmentJS.cauldronCraft(event => {
+MAAEvents.cauldronCraft(event => {
     const fluidStack = event.getFluidStack()
     const items = event.getItems()
     const boiling = event.isBoiling()

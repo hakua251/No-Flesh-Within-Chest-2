@@ -491,7 +491,7 @@
 				""
 				"&71. &r 制造&6任务屏幕&r，将任务屏幕放置在任意位置，右键任务屏幕打开界面，选择当前您需要提交的流体任务。"
 				""
-				"&72.&r  在选择完毕后，将&6水龙头&r放置在&6任务屏幕上方&r，将&6流体源&r/&6装有流体的储罐&r放置在水龙头的另一端。"
+				"&72.&r  在选择完毕后，将&6水龙头&r放置在&6任务屏幕上方&r，将&6流体源&r/&6装有流体的储罐&r放置在水龙头的另一端。如果是&6浇筑口&r则也可以通过类似方法使用，在此不赘述。"
 				""
 				"&73.&r 打开水龙头，如果任务是可进行的，则流体会被缓慢的抽取到任务屏幕中，用于提交任务。 "
 			]
@@ -516,8 +516,29 @@
 					type: "item"
 				}
 				{
-					id: "5808B93D6A0B415B"
-					item: "supplementaries:faucet"
+					icon: "supplementaries:faucet"
+					id: "0FC38646311F05C3"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "supplementaries:faucet"
+								}
+								{
+									Count: 1b
+									id: "tconstruct:seared_faucet"
+								}
+								{
+									Count: 1b
+									id: "tconstruct:scorched_faucet"
+								}
+							]
+						}
+					}
+					title: "水龙头或浇筑口"
 					type: "item"
 				}
 			]

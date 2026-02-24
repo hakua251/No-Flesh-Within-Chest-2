@@ -292,7 +292,7 @@
 			}]
 			title: "特殊培养素：玫瑰"
 			x: 14.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["30DFADD41A73DC07"]
@@ -342,7 +342,7 @@
 			}]
 			title: "深入了解玫瑰"
 			x: 16.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
@@ -371,7 +371,7 @@
 			}]
 			title: "芬芳考验课题之一"
 			x: 24.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
@@ -400,7 +400,7 @@
 			}]
 			title: "芬芳考验课题之三"
 			x: 24.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
@@ -429,7 +429,7 @@
 			}]
 			title: "芬芳考验课题之五"
 			x: 24.5d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
@@ -458,7 +458,7 @@
 			}]
 			title: "芬芳考验课题之二"
 			x: 24.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
@@ -487,7 +487,7 @@
 			}]
 			title: "芬芳考验课题之四"
 			x: 24.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5A2C4544B9011D4F"]
@@ -522,7 +522,7 @@
 			}]
 			title: "玫瑰注射器配方"
 			x: 33.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4EEBDB6CCA1410B8"]
@@ -547,7 +547,7 @@
 			}]
 			title: "&6庆贺吧！此乃玫瑰胸腔！&r"
 			x: 31.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
@@ -624,7 +624,7 @@
 			}]
 			title: "特殊培养素：腐烂"
 			x: 14.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4E86FD2718C02061"]
@@ -651,7 +651,7 @@
 			}]
 			title: "炼就玫瑰肿瘤"
 			x: 18.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6475C1A0B29D8110"]
@@ -688,7 +688,7 @@
 			]
 			title: "一个可能的猜测"
 			x: 20.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7212143D1F0B4FFC"]
@@ -719,7 +719,7 @@
 			}]
 			title: "寄生肿瘤"
 			x: 16.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1C15A9AE23C757B4"]
@@ -745,7 +745,7 @@
 			}]
 			title: "芬芳考验"
 			x: 22.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -779,7 +779,7 @@
 			}]
 			title: "芬芳启示"
 			x: 27.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["16909BBBA99EE3A7"]
@@ -808,7 +808,7 @@
 			}]
 			title: "不证自明的课题"
 			x: 29.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
@@ -835,7 +835,7 @@
 			}]
 			title: "特殊培养素：肉汤"
 			x: 14.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
@@ -862,7 +862,7 @@
 			}]
 			title: "特殊培养素：毒液"
 			x: 14.0d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
@@ -889,7 +889,7 @@
 			}]
 			title: "特殊培养素：酸液"
 			x: 14.0d
-			y: -5.0d
+			y: -4.5d
 		}
 	]
 	title: "秘闻：体外培养"
