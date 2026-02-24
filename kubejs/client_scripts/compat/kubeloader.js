@@ -3,6 +3,7 @@ const IsLoadedKubeloader = Platform.isLoaded('kubeloader')
 
 if (IsLoadedKubeloader) {
     ContentPacks.putShared('RegistryOrganTooltip', RegistryOrganTooltip)
+    ContentPacks.putShared('ApplyMultiStateTooltip', ApplyMultiStateTooltip)
     ContentPacks.putShared('MultiStateTooltip', MultiStateTooltip)
 
     ContentPacks.putShared('DefaultSlotType', DefaultSlotType)
@@ -16,7 +17,10 @@ if (IsLoadedKubeloader) {
 
 
     ContentPacks.putShared('LuckHover', LuckHover)
-    ContentPacks.putShared('PointAtHover', PointAtHover)
+    ContentPacks.putShared('AlwaysEatHover', AlwaysEatHover)
+    ContentPacks.putShared('DirectlyNearbyOrganHover', DirectlyNearbyOrganHover)
+    ContentPacks.putShared('NearbyOrganHover', NearbyOrganHover)
+    ContentPacks.putShared('DiagonalOrganHover', DiagonalOrganHover)
     ContentPacks.putShared('KeyActiveHover', KeyActiveHover)
     ContentPacks.putShared('FrozenHover', FrozenHover)
     ContentPacks.putShared('SoildCoreHover', SoildCoreHover)
@@ -28,6 +32,15 @@ if (IsLoadedKubeloader) {
     ContentPacks.putShared('FunctionalEntityTypeHover', FunctionalEntityTypeHover)
     ContentPacks.putShared('GulaTypeHover', GulaTypeHover)
     ContentPacks.putShared('RoseTypeHover', RoseTypeHover)
-    ContentPacks.putShared('DefaultTypeHover', DefaultTypeHover)
+    ContentPacks.putShared('Player17TypeHover', Player17TypeHover)
+    ContentPacks.putShared('Player21TypeHover', Player21TypeHover)
+    ContentPacks.putShared('Player25TypeHover', Player25TypeHover)
+    ContentPacks.putShared('Player27TypeHover', Player27TypeHover)
     ContentPacks.putShared('TimeStabilityHover', TimeStabilityHover)
+    ContentPacks.putShared('UnstableHover', UnstableHover)
+    ContentPacks.putShared('ExtremeStrengthHover', ExtremeStrengthHover)
+    ContentPacks.putShared('ExtremeFitnessHover', ExtremeFitnessHover)
+    ContentPacks.putShared('FrostShieldHover', FrostShieldHover)
+    ContentPacks.putShared('BasicTumorScoreHover', BasicTumorScoreHover)
+    ContentPacks.putShared('PotentialTumorScoreHover', PotentialTumorScoreHover)
 }

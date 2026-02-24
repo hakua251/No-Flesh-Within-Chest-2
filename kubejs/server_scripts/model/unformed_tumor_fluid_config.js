@@ -1,4 +1,9 @@
 // priority: 2000
+/**
+ * @type {Map<string, UnformedTumorFluidConfigModel>}
+ */
+const UnformedTumorFluidConfigMap = new Map()
+
 const WormNeuronOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'chestcavity:defense', mean: 2, sigma: 1 }, 30)
     .addWeightRandom({ name: 'chestcavity:strength', mean: 2, sigma: 1 }, 30)
@@ -94,4 +99,11 @@ UnformedTumorFluidConfigModel.prototype = {
         })
         return organData
     }
+}
+
+/**
+ * @param {UnformedTumorFluidConfigModel} organDataConfig 
+ */
+function RegistryUnformedTumorFluidConfig(organDataConfig) {
+    UnformedTumorFluidConfigMap.set(organDataConfig.fluidId, organDataConfig)
 }

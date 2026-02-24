@@ -1,4 +1,5 @@
-// priority: 503
+// priority: 2000
+/**@type {TumorMutationConfigModel[]} */
 const TumorMutationConfigList = []
 
 function TumorMutationConfigModel() {

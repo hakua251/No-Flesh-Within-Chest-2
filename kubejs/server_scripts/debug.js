@@ -1,5 +1,4 @@
 // priority: 500
-// todo kubeloader加回来
 BlockEvents.rightClicked('biomancy:malignant_flesh_veins', event => {
     const block = event.block
     const level = event.level

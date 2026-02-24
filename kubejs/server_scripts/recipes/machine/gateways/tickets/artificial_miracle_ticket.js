@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
                 gatewaySize ? gatewaySize : GatewaySize.SMALL,
                 gatewayColor ? gatewayColor : Color.RED,
                 waves,
-                EternalAltarGatewayArtificialTicketReward(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
+                eternalAltarGatewayArtificialTicketReward(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
                 EternalAltarGatewayArtificialTicketFailure(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
                 GatewaySpawnAlgorithm.OPEN_FIELD,
                 GatewayDefaultRule,
@@ -81,3 +81,68 @@ ServerEvents.recipes(event => {
         .requireItem(Item.of('kubejs:artificial_miracle_ticket'), 'input_awake')
         .resetOnError()
 })
+
+
+/**
+ * @param {CustomMachine} machine 
+ * @param {Player} player
+ * @param {Number} levelIndicator 
+ * @param {Number} chaosIndicator 
+ * @param {Number} typeIndicator 
+ * @param {Internal.List<Internal.Reward>} rewardList 
+ */
+function artificalTicketConvert(machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList) {
+    for (let config of ArtificalTicketConvertConfigList) {
+        if (config.isMatch(machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList)) {
+            rewardList.push(config.apply(machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList))
+            break
+        }
+    }
+}
+
+
+/**
+ * 
+ * @param {CustomMachine} machine 
+ * @param {Player} player
+ * @param {Number} levelIndicator 
+ * @param {Number} chaosIndicator 
+ * @param {Number} typeIndicator 
+ * @param {Internal.ItemStack} extractantItem 
+ * @param {Internal.ItemStack} auxiliaryItem 
+ * @returns {Internal.List<Internal.Reward>}
+ */
+function eternalAltarGatewayArtificialTicketReward(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem) {
+    const rewardList = []
+    const data = machine.getData()
+    if (!data) return rewardList
+    // 应用auxiliaryItem
+    if (auxiliaryItem && !auxiliaryItem.isEmpty()) {
+        let typeModifier = GatewayAuxiliaryMaterialTypeMap[auxiliaryItem.getId()]
+        let chaosModifier = GatewayAuxiliaryMaterialChaosMap[auxiliaryItem.getId()]
+        rewardList.push(new GatewayFunctionReward((ctx) => {
+            let targetChaos = Clamp(chaosIndicator + chaosModifier, 0, 60)
+            data.put('chaos_indicator', targetChaos)
+
+            let targetType = Clamp(typeIndicator + typeModifier, 0, 60)
+            data.put('type_indicator', targetType)
+        }))
+    } else {
+        data.put('chaos_indicator', Clamp(chaosIndicator - levelModifier - 1, 0, 60))
+    }
+    eternalAltarSubmitQuest(player, levelIndicator, chaosIndicator, typeIndicator)
+    // Ticket特殊掉落物
+    // todo 后续有需要改造成策略
+    artificalTicketConvert(machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList)
+
+    // 应用extractantItem策略
+    if (!extractantItem || extractantItem.isEmpty()) return rewardList
+    const customData = {}
+    customData.rewardList = []
+    customData.levelIndicator = levelIndicator
+    customData.chaosIndicator = chaosIndicator
+    customData.typeIndicator = typeIndicator
+    GatewayExtractantStrategy.run([extractantItem.getId()], [machine, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem], customData)
+    DamageItem(extractantItem)
+    return rewardList.concat(customData.rewardList)
+}

@@ -1,10 +1,10 @@
 {
     "id": "example-pack",
     "name": "Example Content Pack",
-    "description": "An example content pack demonstrating metadata format",
+    "description": "Example Content Pack for No Flesh Within Chest-2",
     "version": "1.0.0",
     "authors": [
-        ""
+        "YoruNina"
     ],
     "dependencies": [
         {

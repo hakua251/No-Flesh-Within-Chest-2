@@ -1,18 +1,42 @@
-// priority: 998
+// priority: 500
 const IsLoadedKubeloader = Platform.isLoaded('kubeloader')
 
 if (IsLoadedKubeloader) {
-    ContentPacks.putShared('RegistryTitleJson', RegistryTitleJson)
-    ContentPacks.putShared('TitleJsonModel', TitleJsonModel)
     ContentPacks.putShared('RegistryOrganStrategy', RegistryOrganStrategy)
     ContentPacks.putShared('OrganStrategyModel', OrganStrategyModel)
-    ContentPacks.putShared('RegistryAttributeIdentifier', RegistryAttributeIdentifier)
+    ContentPacks.putShared('OrganEventModel', OrganEventModel)
+    ContentPacks.putShared('SlotStrategyModel', SlotStrategyModel)
     ContentPacks.putShared('AttributeUUIDModel', AttributeUUIDModel)
+    ContentPacks.putShared('AttributeManagerModel', AttributeManagerModel)
+    ContentPacks.putShared('PiecewiseMappingModel', PiecewiseMappingModel)
+    ContentPacks.putShared('PriorityStrategyModel', PriorityStrategyModel)
+    ContentPacks.putShared('StrategyModel', StrategyModel)
+    ContentPacks.putShared('StandardWaveEntityItemModel', StandardWaveEntityItemModel)
+    ContentPacks.putShared('WeightRandomItem', WeightRandomItem)
+    ContentPacks.putShared('WeightRandomModel', WeightRandomModel)
+
+    ContentPacks.putShared('RegistryAttributeIdentifier', RegistryAttributeIdentifier)
     ContentPacks.putShared('RegistryOrgan', RegistryOrgan)
     ContentPacks.putShared('RegistryPseudoOrgan', RegistryPseudoOrgan)
-    ContentPacks.putShared('OrganItemModel', OrganItemModel)
     ContentPacks.putShared('RegistryOriginChangedStrategy', RegistryOriginChangedStrategy)
-    ContentPacks.putShared('SlotStrategyModel', SlotStrategyModel)
+    ContentPacks.putShared('RegistryOrganScoreAttribute', RegistryOrganScoreAttribute)
+
+    ContentPacks.putShared('TumorMutationConfigModel', TumorMutationConfigModel)
+    ContentPacks.putShared('RegistryTumorMutationConfig', RegistryTumorMutationConfig)
+    ContentPacks.putShared('UnformedTumorFluidConfigModel', UnformedTumorFluidConfigModel)
+    ContentPacks.putShared('RegistryUnformedTumorFluidConfig', RegistryUnformedTumorFluidConfig)
+
+    ContentPacks.putShared('GatewawyTypeStackRewardMappingModel', GatewawyTypeStackRewardMappingModel)
+    ContentPacks.putShared('GatewawyExtractantMaterialWeightModel', GatewawyExtractantMaterialWeightModel)
+    ContentPacks.putShared('GatewawyAuxiliaryMaterialWeightModel', GatewawyAuxiliaryMaterialWeightModel)
+    ContentPacks.putShared('GatewawySpecialAwakeStoneWeightModel', GatewawySpecialAwakeStoneWeightModel)
+    ContentPacks.putShared('RegistryGatewayExtractantStrategy', RegistryGatewayExtractantStrategy)
+    ContentPacks.putShared('ArtificalTicketConvertConfigModel', ArtificalTicketConvertConfigModel)
+    ContentPacks.putShared('RegistryArtificalTicketConvertConfig', RegistryArtificalTicketConvertConfig)
+    ContentPacks.putShared('GatewayWaveEntityMapping', GatewayWaveEntityMapping)
+    ContentPacks.putShared('GatewayChaosModifierMapping', GatewayChaosModifierMapping)
+
+
     ContentPacks.putShared('OrganArsEffectResolvePre', OrganArsEffectResolvePre)
     ContentPacks.putShared('OrganArsEffectResolvePost', OrganArsEffectResolvePost)
     ContentPacks.putShared('OrgaDecorateChatEvent', OrgaDecorateChatEvent)
@@ -23,6 +47,7 @@ if (IsLoadedKubeloader) {
     ContentPacks.putShared('OrganShieldBlockEvent', OrganShieldBlockEvent)
     ContentPacks.putShared('OrganAddStatusEffectEvent', OrganAddStatusEffectEvent)
     ContentPacks.putShared('OrganBlockBrokenEvent', OrganBlockBrokenEvent)
+    ContentPacks.putShared('OrganBlockRightClickedEvent', OrganBlockRightClickedEvent)
     ContentPacks.putShared('OrganChestCavityUpdateStrategy', OrganChestCavityUpdateStrategy)
     ContentPacks.putShared('OrganTakeOnStrategy', OrganTakeOnStrategy)
     ContentPacks.putShared('OrganTakeOffStrategy', OrganTakeOffStrategy)
@@ -30,6 +55,7 @@ if (IsLoadedKubeloader) {
     ContentPacks.putShared('OrganChestLootEvent', OrganChestLootEvent)
     ContentPacks.putShared('OrganEntityBeHurtEvent', OrganEntityBeHurtEvent)
     ContentPacks.putShared('OrganEntityDeathEvent', OrganEntityDeathEvent)
+    ContentPacks.putShared('OrganEntityKillEvent', OrganEntityKillEvent)
     ContentPacks.putShared('OrganEntityDoDamageEvent', OrganEntityDoDamageEvent)
     ContentPacks.putShared('OrganEntityLootEvent', OrganEntityLootEvent)
     ContentPacks.putShared('OrganEntityTickEvent', OrganEntityTickEvent)
@@ -37,4 +63,7 @@ if (IsLoadedKubeloader) {
     ContentPacks.putShared('OrganItemRightClickedEvent', OrganItemRightClickedEvent)
     ContentPacks.putShared('OrganKeyBindEvent', OrganKeyBindEvent)
     ContentPacks.putShared('OrganPlayerEnchantEvent', OrganPlayerEnchantEvent)
+    ContentPacks.putShared('OrganEntityInteractEvent', OrganEntityInteractEvent)
+    ContentPacks.putShared('OrganEntityBeInteractedEvent', OrganEntityBeInteractedEvent)
+    ContentPacks.putShared('ExposureModifyFrame', ExposureModifyFrame)
 }

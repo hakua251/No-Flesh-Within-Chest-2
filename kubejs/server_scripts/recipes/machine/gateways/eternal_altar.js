@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
                 gatewaySize ? gatewaySize : GatewaySize.SMALL,
                 gatewayColor ? gatewayColor : Color.RED,
                 waves,
-                EternalAltarGatewayReward(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
+                eternalAltarGatewayReward(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
                 EternalAltarGatewayFailure(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
                 GatewaySpawnAlgorithm.OPEN_FIELD,
                 GatewayDefaultRule,
@@ -86,3 +86,54 @@ ServerEvents.recipes(event => {
         .requireItemTag('#kubejs:gateways_awake_stone', 1, 'input_awake')
         .resetOnError()
 })
+
+/**
+ * 
+ * @param {CustomMachine} machine 
+ * @param {Player} player
+ * @param {Number} levelIndicator 
+ * @param {Number} chaosIndicator 
+ * @param {Number} typeIndicator 
+ * @param {Internal.ItemStack} extractantItem 
+ * @param {Internal.ItemStack} auxiliaryItem 
+ * @returns {Internal.List<Internal.Reward>}
+ */
+function eternalAltarGatewayReward(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem) {
+    const rewardList = []
+    const data = machine.getData()
+    if (!data) return rewardList
+    // 应用LevelModifier
+    let levelModifier = data.getFloat('levelModifier')
+    data.remove('levelModifier')
+    rewardList.push(new GatewayFunctionReward((ctx) => {
+        let targetLevel = Clamp(levelIndicator + levelModifier, 0, 60)
+        data.putFloat('level_indicator', targetLevel)
+    }))
+    // 应用auxiliaryItem
+    if (auxiliaryItem && !auxiliaryItem.isEmpty()) {
+        let typeModifier = GatewayAuxiliaryMaterialTypeMap[auxiliaryItem.getId()]
+        let chaosModifier = GatewayAuxiliaryMaterialChaosMap[auxiliaryItem.getId()]
+        rewardList.push(new GatewayFunctionReward((ctx) => {
+            let targetChaos = Clamp(chaosIndicator + chaosModifier, 0, 60)
+            data.put('chaos_indicator', targetChaos)
+
+            let targetType = Clamp(typeIndicator + typeModifier, 0, 60)
+            data.put('type_indicator', targetType)
+        }))
+    } else {
+        data.put('chaos_indicator', Clamp(chaosIndicator - levelModifier - 1, 0, 60))
+    }
+    eternalAltarSubmitQuest(player, levelIndicator, chaosIndicator, typeIndicator)
+
+    // 应用extractantItem策略
+    rewardList.push(eternalAltarGatewayTypeStackReward(levelIndicator, chaosIndicator, typeIndicator))
+    if (!extractantItem || extractantItem.isEmpty()) return rewardList
+    const customData = {}
+    customData.rewardList = []
+    customData.levelIndicator = levelIndicator
+    customData.chaosIndicator = chaosIndicator
+    customData.typeIndicator = typeIndicator
+    GatewayExtractantStrategy.run([extractantItem.getId()], [machine, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem], customData)
+    DamageItem(extractantItem)
+    return rewardList.concat(customData.rewardList)
+}
