@@ -96,7 +96,10 @@ const $BlockInWorld = Java.loadClass('net.minecraft.world.level.block.state.patt
 const $CustomGoal = Java.loadClass('net.liopyu.entityjs.util.ai.CustomGoal')
 
 const $OreDataCapability = Java.loadClass('com.tom.createores.OreDataCapability')
-const $CameraItem = Java.loadClass('io.github.mortuusars.exposure.item.CameraItem')
+const $CameraItem = Java.loadClass('io.github.mortuusars.exposure.world.item.camera.CameraItem')
+const $FrameAddedEvent = Java.loadClass('io.github.mortuusars.exposure.forge.api.event.FrameAddedEvent')
+const $ModifyEntityInFrameDataEvent = Java.loadClass('io.github.mortuusars.exposure.forge.api.event.ModifyEntityInFrameDataEvent')
+const $ModifyFrameExtraDataEvent = Java.loadClass('io.github.mortuusars.exposure.forge.api.event.ModifyFrameExtraDataEvent')
 const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer')
 
 const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')

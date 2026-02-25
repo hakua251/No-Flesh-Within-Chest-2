@@ -16,7 +16,7 @@ const EventId2TagId = {
     'entity_interact': 'kubejs:entity_interact',
     'block_right_clicked': 'kubejs:block_right_clicked',
     'organ_add_status_effect': 'kubejs:organ_add_status_effect',
-    'exposure_modify_frame': 'kubejs:exposure_modify_frame',
+    'exposure_frame_added': 'kubejs:exposure_frame_added',
     'shield_block': 'kubejs:shield_block',
     'entity_death': 'kubejs:entity_death',
 }

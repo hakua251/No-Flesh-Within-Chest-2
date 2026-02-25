@@ -3,13 +3,13 @@ RegistryExposureAttachmentStrategy('kubejs:exorcism_lens', ExorcismLensStrategy)
 
 /**
  * @param {any} customData 
- * @param {Internal.ModifyFrameDataEventJS} event 
+ * @param {Internal.FrameAddedEvent} event 
  */
 function ExorcismLensStrategy(customData, event) {
-    const player = event.player
-
+    const cameraHolderEntity = event.cameraHolderEntity
+    if (!cameraHolderEntity) return
     const entityList = event.getEntitiesInFrame()
     entityList.forEach(pEntity => {
-        pEntity.attack(player.damageSources().magic(), 5)
+        pEntity.attack(cameraHolderEntity.damageSources().magic(), 5)
     })
 }

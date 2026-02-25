@@ -1,6 +1,6 @@
 {
-    "item": {
-        "item": "kubejs:wide_angle_lens"
+    "predicate": {
+        "items": ["kubejs:wide_angle_lens"]
     },
     "focal_range": {
         "min": 4,

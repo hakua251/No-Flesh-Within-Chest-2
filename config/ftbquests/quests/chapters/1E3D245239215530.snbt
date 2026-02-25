@@ -372,7 +372,7 @@
 				"0E67DFADB3CDCA82"
 				"6119004524D541AE"
 			]
-			description: ["每个模拟单元"]
+			description: ["每个模拟单元 // todo"]
 			id: "44C94FE229AA4E1B"
 			rewards: [{
 				id: "560AED6F58F6220E"

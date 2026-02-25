@@ -1,8 +1,9 @@
 // priority: 999
-const ExposureModifyFrame = new OrganEventModel('exposure_modify_frame')
+const ExposureFrameAdded = new OrganEventModel('exposure_frame_added')
 
-ExposureEvents.modifyFrameData(event => {
-    const player = event.player
+NativeEvents.onEvent($FrameAddedEvent, /** @param {Internal.FrameAddedEvent} event */ event => {
+    const cameraHolderEntity = event.cameraHolderEntity
+    if (!cameraHolderEntity) return
     let customData = {}
-    ExposureModifyFrame.run(player, customData, [event])
+    ExposureFrameAdded.run(cameraHolderEntity, customData, [event])
 })

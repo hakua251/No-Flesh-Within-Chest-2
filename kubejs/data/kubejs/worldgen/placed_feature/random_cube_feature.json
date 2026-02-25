@@ -1,0 +1,15 @@
+{
+  "feature": "kubejs:random_cube_feature",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 4
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "above_bottom": 0
+      }
+    }
+  ]
+}

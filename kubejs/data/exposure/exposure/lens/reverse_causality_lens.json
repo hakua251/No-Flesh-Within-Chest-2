@@ -1,6 +1,6 @@
 {
-    "item": {
-        "item": "kubejs:reverse_causality_lens"
+    "predicate": {
+        "items": ["kubejs:reverse_causality_lens"]
     },
     "focal_range": {
         "min": 8,

@@ -1,6 +1,6 @@
 {
-    "item": {
-        "item": "kubejs:frost_lens"
+    "predicate": {
+        "items": ["kubejs:frost_lens"]
     },
     "focal_range": {
         "min": 12,

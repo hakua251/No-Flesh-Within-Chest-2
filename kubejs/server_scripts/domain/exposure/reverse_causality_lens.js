@@ -3,10 +3,12 @@ RegistryExposureAttachmentStrategy('kubejs:reverse_causality_lens', ReverseCausa
 
 /**
  * @param {any} customData 
- * @param {Internal.ModifyFrameDataEventJS} event 
+ * @param {Internal.FrameAddedEvent} event 
  */
 function ReverseCausalityLensStrategy(customData, event) {
-    const level = event.level
+    const cameraHolderEntity = event.cameraHolderEntity
+    if (!cameraHolderEntity) return
+    const level = cameraHolderEntity.level
     const entityList = event.getEntitiesInFrame()
     entityList.forEach(pEntity => {
         level.createExplosion(pEntity.x, pEntity.y, pEntity.z).explode()

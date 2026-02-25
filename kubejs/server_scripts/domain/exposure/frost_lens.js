@@ -3,7 +3,7 @@ RegistryExposureAttachmentStrategy('kubejs:frost_lens', FrostLensStrategy)
 
 /**
  * @param {any} customData 
- * @param {Internal.ModifyFrameDataEventJS} event 
+ * @param {Internal.FrameAddedEvent} event 
  */
 function FrostLensStrategy(customData, event) {
     const entityList = event.getEntitiesInFrame()

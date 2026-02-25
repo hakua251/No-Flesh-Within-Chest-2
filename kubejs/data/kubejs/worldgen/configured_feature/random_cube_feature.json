@@ -1,0 +1,12 @@
+{
+  "type": "maa:random_cube_feature",
+  "config": {
+    "size": 12,
+    "structures": [
+      {
+        "structure": "kubejs:room_32x",
+        "weight": 1
+      }
+    ]
+  }
+}

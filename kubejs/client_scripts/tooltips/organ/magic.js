@@ -61,10 +61,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:hippocamtus_scale')
     .addAlt(Text.translatable('tooltips.kubejs.hippocamtus_scale.alt.1', FrozenHover, Text.gold('2'), FrozenHover, FrozenHover, Text.gold('3s')))
 )
 
-RegistryOrganTooltip(new MultiStateTooltip('kubejs:dream_hippocampus')
-    .addDefault(Text.translatable('tooltips.kubejs.dream_hippocampus.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.dream_hippocampus.alt.1'))
-)
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:drygmy_star_gem')
     .addDefault(Text.translatable('tooltips.kubejs.drygmy_star_gem.default.1').gray())

@@ -70,8 +70,8 @@ const OrganTagMap = {
     'kubejs:plant': Text.green(Text.translatable('tooltips.kubejs.tag.kubejs:plant')),
     'kubejs:organ_add_status_effect_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:organ_add_status_effect_only')),
     'kubejs:organ_add_status_effect': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:organ_add_status_effect')),
-    'kubejs:exposure_modify_frame_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_modify_frame_only')),
-    'kubejs:exposure_modify_frame': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_modify_frame')),
+    'kubejs:exposure_frame_added_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_frame_added_only')),
+    'kubejs:exposure_frame_added': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_frame_added')),
     'kubejs:shield_block_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block_only')),
     'kubejs:shield_block': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block')),
 }

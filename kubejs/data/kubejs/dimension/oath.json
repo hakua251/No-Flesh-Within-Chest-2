@@ -3,9 +3,9 @@
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "minecraft:plains",
+      "biome": "kubejs:oath_biome",
       "lakes": false,
-      "features": false,
+      "features": true,
       "layers": [],
       "structure_overrides": []
     }

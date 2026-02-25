@@ -1,6 +1,6 @@
 {
-    "item": {
-        "item": "kubejs:exorcism_lens"
+    "predicate": {
+        "items": ["kubejs:exorcism_lens"]
     },
     "focal_range": {
         "min": 10,
