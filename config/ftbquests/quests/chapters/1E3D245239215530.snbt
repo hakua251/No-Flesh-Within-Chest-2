@@ -372,7 +372,7 @@
 				"0E67DFADB3CDCA82"
 				"6119004524D541AE"
 			]
-			description: ["每个模拟单元 // todo"]
+			description: ["一个模拟单元可以模拟一个小周期——即&6 1 分钟&r，而我们的目标是&6模拟至少3600年&r。"]
 			id: "44C94FE229AA4E1B"
 			rewards: [{
 				id: "560AED6F58F6220E"
