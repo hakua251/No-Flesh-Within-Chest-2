@@ -2045,6 +2045,30 @@
 			x: 7.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["4449195A34FB718E"]
+			description: [
+				"使用暗房打印照片在某些时候还是太慢了，您可以选择使用&6拍立得&r来快速获得相片以查看是否满足对应的拍摄条件。"
+				""
+				"不过拍立得需要使用&6对应的相纸&r，其造价相比于胶卷更加昂贵。且拍立得无法安装滤镜、闪光灯等附加设备，功能相对有限。"
+			]
+			icon: "exposure_polaroid:instant_camera"
+			id: "0D0F8F2985EF7CC8"
+			rewards: [{
+				id: "701FFF2FD54B14DD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "快捷照片生产设备"
+			tasks: [{
+				id: "46BFAAF9116D4783"
+				item: "exposure_polaroid:instant_camera"
+				type: "item"
+			}]
+			title: "所见即所得"
+			x: 4.5d
+			y: 1.5d
+		}
 	]
 	title: "传闻：重现黄金乡"
 }

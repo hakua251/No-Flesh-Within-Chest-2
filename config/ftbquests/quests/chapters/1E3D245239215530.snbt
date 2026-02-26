@@ -12,7 +12,7 @@
 		{
 			dependencies: ["46E78442AD5DB22E"]
 			description: [
-				"奇怪，黄铜似乎具有一些极其奇特的属性。"
+				"奇怪，黄铜及其相关造物似乎都具有一些极其奇特的属性。"
 				""
 				"除去其适合用于各种精密部件的制造之外，我观察到其展现出一种&6特殊的能量传导&r效应。"
 				""
@@ -29,14 +29,13 @@
 			}]
 			subtitle: "不常见的读数"
 			tasks: [{
-				count: 8L
-				id: "4BF60E34F193C4C6"
-				item: "create:brass_ingot"
+				id: "6F47495E2E94AE47"
+				item: "create:brass_casing"
 				type: "item"
 			}]
 			title: "异常金属"
 			x: 0.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3059F62A16427246"]
@@ -60,7 +59,7 @@
 				type: "questsadditions:time"
 			}]
 			x: 1.5d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["42F53C902EE260E2"]
@@ -100,7 +99,7 @@
 			}]
 			title: "大世界计算机"
 			x: 3.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]

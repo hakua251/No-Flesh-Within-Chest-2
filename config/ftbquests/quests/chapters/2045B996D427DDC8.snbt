@@ -493,35 +493,131 @@
 		{
 			dependencies: ["73D2FE1F39B7EED4"]
 			description: [
-				"在解锁了更多的材料后，您肯定有想过制作更多类型的工具，为此，您需要花费材料制作一个&6工匠砧&r。"
+				"当您搭建好冶炼炉后，&6向燃料储罐中填入岩浆&r即可使用其进行常规的冶炼操作。"
 				""
-				"工匠砧的制作配方有很多，您可以随便选择一种&6较为便宜的材料制作&r。"
+				"冶炼炉能够熔炼几乎所有你能够看到的金属，并且随着冶炼炉的体积扩展，其允许同时加工的配方数量也会迅速提升。因此您可以根据您的实际需求&6提高冶炼炉的尺寸&r，进而满足冶炼的需求。"
 				""
-				"通过工匠砧，您可以&6解锁更多的工具类型&r，其中不乏有专门用于某种工作的&6特化型工具&r。"
+				"为了完成本任务，您需要完成对应的进度“&6全能冶炼&r”，只需要&6打开建设好的冶炼炉界面&r即可完成。"
 			]
-			icon: "tconstruct:tinkers_anvil"
-			id: "3D5CC9006C65CC92"
+			id: "79B2204E2C22BE59"
 			rewards: [{
-				id: "193FBD588214ED02"
+				id: "634A07B74E3966C2"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "真正的工匠站"
+			subtitle: "我们的冶炼之路"
 			tasks: [{
-				id: "67B8179277C30354"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "kubejs:tinker_anvil"
+				advancement: "tconstruct:smeltery/structure"
+				criterion: ""
+				id: "054B4C9706901CB2"
+				title: "完成成就“&6全能熔炼&r”"
+				type: "advancement"
+			}]
+			title: "冶炼工匠"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79B2204E2C22BE59"]
+			description: [
+				"在拥有了冶炼炉后，您可以轻松加工任何金属使其熔融成流体。"
+				""
+				"将&6熔融金属导出到放置有金铸模的铸件台&r上，即可获得对应类型的金属配件。"
+				""
+				"之后您便可以像常规部件一样，&6使用金属部件去组装自己的工具&r。"
+				""
+				"因此，请您组装一个&6配件中包含铁的工具&r，以证明您已经掌握了这项技术。"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:pickaxe"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 1
+							name: "tconstruct:pierce"
+						}
+					]
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 3.0f
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:durability": 275.0f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 6.0f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
 					}
 				}
-				title: "任意工匠砧"
+			}
+			id: "1C5FDF4810216922"
+			rewards: [{
+				id: "3951EBE017AADE18"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			title: "制成工匠砧"
+			subtitle: "使用金属材料"
+			tasks: [{
+				id: "37E15631064169DD"
+				item: {
+					Count: 1
+					id: "maa:tcon_tool_material"
+					tag: {
+						value: "tconstruct:iron"
+					}
+				}
+				title: "制作配件包含铁的工具"
+				type: "item"
+			}]
+			title: "高级工具材料"
 			x: 3.0d
-			y: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C5FDF4810216922"]
+			description: [
+				"您可以在工匠站上对工具进行强化。"
+				""
+				"将工匠站切换到&6修复与强化&r的页面上，您可以将已制好的工具放置在其中，在其他的槽位放入材料进行工具强化。"
+				""
+				"工具强化的方式多种多样，您可以&6在之前的手册&r中查看到能够进行的工具强化类型，但现在我希望您能够使用&b钻石&r&6对您的工具进行强化&r，以获得耐久度增强。"
+			]
+			id: "0D61EF61C1DCB70F"
+			rewards: [{
+				id: "387E3807C93A66BD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "尝试进行工匠强化"
+			tasks: [{
+				icon: "minecraft:diamond"
+				id: "17DEA856B5A269B9"
+				item: {
+					Count: 1
+					id: "maa:tcon_tool_modifier"
+					tag: {
+						value: "tconstruct:diamond>=1"
+					}
+				}
+				title: "被钻石强化过的工具"
+				type: "item"
+			}]
+			title: "工匠强化"
+			x: 4.5d
+			y: 0.0d
 		}
 	]
 	title: "认知：匠艺"

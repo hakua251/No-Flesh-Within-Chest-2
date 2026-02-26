@@ -24,8 +24,34 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
     customData.attackDamage.addAttributeModifier(rosyValue, 'addition', 'base')
 }
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function RoseQuartzMuscleTakeOn(customData, event, organItem, organIndex, slotType) {
+    const { entity } = event
+    OrganSkinAdd(entity, 'chest', 'rose_arm')
+}
+
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function RoseQuartzMuscleTakeOff(customData, event, organItem, organIndex, slotType) {
+    const { entity } = event
+    OrganSkinRemove(entity, 'chest', 'rose_arm')
+}
+
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rose_quartz_muscle')
         .addStrategy('chest_cavity_update', RoseQuartzMuscleChestCavityUpdate)
+        .addOnlyStrategy('organ_take_on', RoseQuartzMuscleTakeOn)
+        .addOnlyStrategy('organ_take_off', RoseQuartzMuscleTakeOff)
 )

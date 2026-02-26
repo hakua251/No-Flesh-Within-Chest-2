@@ -7,14 +7,16 @@
     "spawners": {},
     "carvers": {},
     "effects": {
-        "sky_color": 7907327,
+        "sky_color": 7039851,
         "water_color": 4159204,
         "water_fog_color": 329011,
-        "fog_color": 12638463
+        "fog_color": 13750737
     },
     "creature_spawn_probability": 0,
     "features": [
-        ["kubejs:place_cube"],
+        [
+            "kubejs:place_cube"
+        ],
         [],
         [],
         [],

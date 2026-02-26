@@ -4,7 +4,15 @@
     "size": 12,
     "structures": [
       {
-        "structure": "kubejs:room_32x",
+        "structure": "kubejs:shop01",
+        "weight": 1
+      },
+      {
+        "structure": "kubejs:shop02",
+        "weight": 1
+      },
+      {
+        "structure": "kubejs:shop_factory",
         "weight": 1
       }
     ]

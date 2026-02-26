@@ -601,7 +601,7 @@
     "tooltips.kubejs.minisheep_gland.alt.1": "    §6★§r  被交互时，如果自身不处于虚弱状态，则会给予交互者羊毛，自身被附加一定时长的虚弱效果",
     "item.kubejs.squirrel_tail": "松鼠尾巴",
     "tooltips.kubejs.squirrel_tail.default.1": "还不够多",
-    "tooltips.kubejs.squirrel_tail.alt.1": "    §6★§r  根据胸腔内物品的数量提供额外的攻击力",
+    "tooltips.kubejs.squirrel_tail.alt.1": "    §6★§r  根据胸腔内物品的数量提供§6数量 * 0.1§r的额外的攻击力",
     "item.kubejs.pelican_larynx": "鹈鹕喉囊",
     "tooltips.kubejs.pelican_larynx.default.1": "啊呜，你不要乱动！",
     "tooltips.kubejs.pelican_larynx.alt.1": "    §6★§r  右键交互其他生物时，如果自身的最大生命值大于对方的最大生命值，可以将其收入到喉囊中",

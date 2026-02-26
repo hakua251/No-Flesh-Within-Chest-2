@@ -22,117 +22,76 @@
 			]
 			icon: {
 				Count: 1
-				id: "tconstruct:pick_head"
+				id: "tconstruct:pickaxe"
 				tag: {
-					Material: "tconstruct:flint"
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:rock"
+						"tconstruct:rock"
+						"tconstruct:rock"
+					]
+					tic_modifiers: [
+						{
+							level: 1
+							name: "tconstruct:diamond"
+						}
+						{
+							level: 1
+							name: "tconstruct:pierce"
+						}
+						{
+							level: 3
+							name: "tconstruct:stonebound"
+						}
+					]
+					tic_persistent: {
+						upgrades: -1
+					}
+					tic_stats: {
+						"tconstruct:attack_damage": 2.5f
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:durability": 567.0f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:mining_speed": 6.2999997f
+					}
+					tic_upgrades: [{
+						level: 1
+						name: "tconstruct:diamond"
+					}]
+					tic_volatile_data: {
+						abilities: 1
+						"tconstruct:rarity": 1
+						upgrades: 3
+					}
 				}
 			}
 			id: "428D9599A58515E7"
 			invisible: true
 			rewards: [{
-				id: "7FDB06D02D4ADB33"
-				item: "lightmanscurrency:coin_iron"
+				id: "71801311A94D2398"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "灵光一现筑传闻"
 			tasks: [{
-				icon: {
-					Count: 1
-					id: "tconstruct:pick_head"
-					tag: {
-						Material: "tconstruct:flint"
-					}
-				}
-				id: "096A49456BFA9835"
+				id: "0E99CBA19DB238C7"
 				item: {
 					Count: 1
-					id: "itemfilters:and"
+					id: "maa:tcon_tool_stats"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "tconstruct:modifiable"
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:damage"
-								tag: {
-									value: ">10%"
-								}
-							}
-						]
+						value: "tconstruct:durability>=800.0"
 					}
 				}
-				title: "工具略微磨损时"
+				title: "耐久>=800的工具"
 				type: "item"
 			}]
 			title: "灵光乍现"
-			x: -3.5d
-			y: -3.0d
+			x: -2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]
-			description: [
-				"随着对匠艺的逐渐深入，我发现了一个惊人的事实——这些工匠物品在数据上均携带有一个特殊的无用键值对，这非常奇怪，就好像是为了某个&6特殊用途&r而预留的一个字段。"
-				""
-				"对于我这种寄宿在数据的生命而言，其意义非凡，就类似于因为知道会下雨所以提前备好了伞一样——这些工具被创造的时候具有一个相通的特定用途。"
-				""
-				"您可能觉得这或许没什么大不了的，毕竟事物相通的特性太多了。但是令我真正奇怪的是，这个工具所具备的特殊字段，可以被称作“&6是否能被创造&r”。"
-				""
-				"我们需要更多的信息才能推测出这件事的原貌。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "474910B463715048"
-			rewards: [{
-				id: "739C6BE121441369"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "工具逐渐破碎. . ."
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "tconstruct:small_axe_head"
-					tag: {
-						Material: "tconstruct:copper"
-					}
-				}
-				id: "451C1A265EF36AED"
-				item: {
-					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "tconstruct:modifiable"
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:damage"
-								tag: {
-									value: ">30%"
-								}
-							}
-						]
-					}
-				}
-				title: "随着工具磨损加剧"
-				type: "item"
-			}]
-			title: "创造工具的线索"
-			x: -2.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["474910B463715048"]
 			description: [
 				"&6成功了！&r"
 				""
@@ -148,24 +107,17 @@
 				""
 				"基于此，我提议将这套工序称作&6创世工艺&r。"
 			]
-			hide_dependency_lines: true
 			hide_until_deps_complete: true
+			icon: "tconstruct:tinkers_anvil"
 			id: "21716C6A06EA01F4"
 			rewards: [{
-				id: "4C4C2FE030DB5D74"
-				item: "lightmanscurrency:coin_iron"
+				id: "6D54951F05F7DA56"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "何人何时何创世"
 			tasks: [{
-				icon: {
-					Count: 1
-					id: "tconstruct:tinkers_anvil"
-					tag: {
-						texture: "tconstruct:slimesteel_block"
-					}
-				}
-				id: "61B22F218A4240EC"
+				id: "17577C4119847CB0"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
@@ -173,7 +125,7 @@
 						value: "kubejs:tinker_anvil"
 					}
 				}
-				title: "工匠砧"
+				title: "任意工匠砧"
 				type: "item"
 			}]
 			title: "创世工艺"
@@ -2771,7 +2723,7 @@
 				type: "item"
 			}]
 			title: "此为何物"
-			x: 8.5d
+			x: 9.0d
 			y: -3.0d
 		}
 		{
