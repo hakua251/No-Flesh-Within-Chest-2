@@ -398,34 +398,28 @@
 		}
 		{
 			dependencies: ["75962868AC80D343"]
+			description: [
+				"首先，为了制造&c“维度同步控制系统”&r我需要大量的&6维度碎片&r。"
+				""
+				"维度碎片通常漂泊在各个维度之间的裂缝之中，一般来说极难获取。但部分&6以魔源为生的生物&r能够将部分维度碎片的能量提取出来，也正式因此您可以从这些生物身上&6间接获取到维度碎片&r。"
+				""
+				"我需要&6至少一组维度碎片&r，以供后续的&6维度破坏性实验&r。"
+			]
 			id: "00C0ABA6D807D15F"
 			rewards: [{
 				id: "463EC4D9ECE06BBA"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "6C20AFCF3AC049CD"
-					item: "ars_nouveau:starbuncle_shards"
-					type: "item"
-				}
-				{
-					id: "4F81EC21BBDEC708"
-					item: "ars_nouveau:whirlisprig_shards"
-					type: "item"
-				}
-				{
-					id: "2C29468D9EC3E49F"
-					item: "ars_nouveau:wixie_shards"
-					type: "item"
-				}
-				{
-					id: "447E70FD480E0363"
-					item: "ars_nouveau:drygmy_shard"
-					type: "item"
-				}
-			]
+			subtitle: "将维度加以保护"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "3E8B0C6A1D90F1FD"
+				item: "kubejs:dimension_shards"
+				type: "item"
+			}]
+			title: "将维度打上属于我们的补丁"
 			x: 3.5d
 			y: 4.0d
 		}

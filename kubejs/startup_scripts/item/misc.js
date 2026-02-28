@@ -7,5 +7,4 @@ StartupEvents.registry('item', event => {
     event.create('inactivated_neuron_tumor').texture('kubejs:item/materials/inactivated_neuron_tumor').maxStackSize(1)
 
     event.create('dimension_shards').texture('kubejs:item/materials/dimension_shards').maxStackSize(1)
-    // event.create('dimension_shards').texture('kubejs:item/materials/dimension_shards').maxStackSize(1)
 })
