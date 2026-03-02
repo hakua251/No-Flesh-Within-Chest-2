@@ -19,7 +19,7 @@ JEIAddedEvents.registerCategories((event) => {
             $AllGuiTextures.JEI_ARROW.render(guiGraphics, 67, 33)
             guiGraphics.blit(new ResourceLocation('kubejs:textures/particle/heart.png'), 92, 26, 0, 0, 0, 8, 8, 8, 8)
             guiGraphics.drawWordWrap(Client.font, Text.of(`${(data.damage / 2).toFixed(1)} x`), 75, 26, 30, 0)
-            $RenderHelper.renderEntity(guiGraphics, 35, 42, 20, 38 - mouseX, 85 - mouseY, Client.instance.level.createEntity(data.entityType))
+            RenderHelper.renderEntity(guiGraphics, 35, 42, 20, 35 - mouseX, 42 - mouseY, Client.instance.level.createEntity(data.entityType))
         })
     })
 })
