@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         [
             event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'create:brass_ingot']),
-            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('tconstruct:molten_glass', 50)]),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'minecraft:glass']),
             event.recipes.create.cutting(CommonTransitionalItem, CommonTransitionalItem),
         ]
     )
@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
             event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'kubejs:flame_crystal']),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:ingots/brass']),
-            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('tconstruct:blazing_blood', 250)]),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('minecraft:lava', 1000)]),
         ]
     )
         .transitionalItem(CommonTransitionalItem)

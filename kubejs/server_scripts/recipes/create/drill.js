@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         .id('kubejs:vein/mantle_ore')
 
 
-    event.recipes.createoreexcavation.drilling([Item.of('minecraft:bone'), Item.of('minecraft:bone').withChance(0.8), Item.of('minecraft:bone_block').withChance(0.3), Item.of('minecraft:bone_block', 64).withChance(0.01), Item.of('biomancy:primal_bone_block').withChance(0.05), Item.of('cataclysm:koboleton_bone').withChance(0.01), Item.of('tconstruct:necrotic_bone').withChance(0.01)], 'kubejs:vein/ancient_remains', 320).id('kubejs:drill/ancient_remains')
+    event.recipes.createoreexcavation.drilling([Item.of('minecraft:bone'), Item.of('minecraft:bone').withChance(0.8), Item.of('minecraft:bone_block').withChance(0.3), Item.of('minecraft:bone_block', 64).withChance(0.01), Item.of('biomancy:primal_bone_block').withChance(0.05), Item.of('cataclysm:koboleton_bone').withChance(0.01)], 'kubejs:vein/ancient_remains', 320).id('kubejs:drill/ancient_remains')
 
     event.recipes.createoreexcavation.drilling([Item.of('kubejs:mantle_ore'), Item.of('create:scoria').withChance(0.8)], 'kubejs:vein/mantle_ore', 640).id('kubejs:drill/mantle_ore')
 

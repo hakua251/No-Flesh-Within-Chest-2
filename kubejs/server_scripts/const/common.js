@@ -7,6 +7,3 @@ const FourDiagonalDirectionOffset = [[1, 1], [1, -1], [-1, 1], [-1, -1]]
 const EquimentSlotList = ['mainhand', 'offhand', 'head', 'chest', 'legs', 'feet']
 
 const SourceJarMax = 10000
-
-// 匠魂水晶列表
-const TconModifierCrystalList = SimpleTCon.getAllModifierCrystalItems()

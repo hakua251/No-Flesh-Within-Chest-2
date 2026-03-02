@@ -1264,7 +1264,7 @@
 			subtitle: "为了黑曜石"
 			tasks: [{
 				amount: 8000L
-				fluid: "tconstruct:magma"
+				fluid: "minecraft:water"
 				id: "5EEE57296FCE8143"
 				type: "fluid"
 			}]
@@ -1633,7 +1633,7 @@
 			subtitle: "为了大世界计算机"
 			tasks: [{
 				amount: 8000L
-				fluid: "tconstruct:molten_glass"
+				fluid: "minecraft:water"
 				id: "7B8B19BC932529B7"
 				type: "fluid"
 			}]

@@ -89,31 +89,6 @@
 		{
 			dependencies: ["6B9D9D4249A7839E"]
 			description: [
-				"倘若只是熔岩的话，开采并没有特别大的难度——但地幔的组成成分复杂，其中除了融化的岩石，还包含有大量铁。"
-				""
-				"我需要您帮忙提取一些&6熔融铁&r用于进一步逆向分析。"
-			]
-			icon: "tconstruct:molten_iron_bucket"
-			id: "29453698A69EE84E"
-			rewards: [{
-				id: "3885C35D5CB260A7"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "我需要逆向分析原料"
-			tasks: [{
-				amount: 100000L
-				fluid: "tconstruct:molten_iron"
-				id: "7399E8D2E46377D1"
-				type: "fluid"
-			}]
-			title: "逆向分析熔融铁"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["29453698A69EE84E"]
-			description: [
 				"在地幔中存在有大量由复杂物质构成的熔融矿石。"
 				""
 				"若是想通过常规方式从&6临界点开采矿石&r倒是容易，但为了提取地幔能，我们需要一种能够穿过这种&6庞大熔融流体洪流&r的强大材料，其不仅能够刺穿地幔的高密流体，还能够抵抗高温。"
@@ -650,43 +625,26 @@
 		{
 			dependencies: ["1102A6F1A9DDBE96"]
 			description: [
-				"在挖掘深度超过7500之后，您可以在标靶位置放置&6任意可强化匠魂工具&r，进而进行地幔能转化。"
+				"在挖掘深度超过7500之后，您可以在标靶位置放置&6任意工匠物品&r，进而进行地幔能转化。"
 				""
-				"这允许您复制任意等级任意种类和复杂度的&6匠魂工具&r，并且携带其强化属性。"
+				"这允许您复制任意等级任意种类和复杂度的&6工匠工具&r，并且携带其强化属性。"
 			]
 			icon: {
 				Count: 1
-				id: "tconstruct:pickaxe"
+				id: "tetra:modular_sword"
 				tag: {
 					Damage: 0
-					tic_broken: 0b
-					tic_materials: [
-						"tconstruct:copper"
-						"tconstruct:copper"
-						"tconstruct:copper"
-					]
-					tic_modifiers: [
-						{
-							level: 1
-							name: "tconstruct:pierce"
-						}
-						{
-							level: 3
-							name: "tconstruct:dwarven"
-						}
-					]
-					tic_persistent: { }
-					tic_stats: {
-						"tconstruct:attack_damage": 1.5749999f
-						"tconstruct:attack_speed": 1.2f
-						"tconstruct:durability": 168.0f
-						"tconstruct:harvest_tier": "minecraft:iron"
-						"tconstruct:mining_speed": 5.5f
-					}
-					tic_volatile_data: {
-						abilities: 1
-						upgrades: 3
-					}
+					HideFlags: 1
+					honing_progress: 240
+					id: "9e709bd1-0aef-423c-a337-dbe67095b9ec"
+					"sword/basic_blade_material": "basic_blade/iron"
+					"sword/basic_hilt_material": "basic_hilt/stick"
+					"sword/blade": "sword/basic_blade"
+					"sword/decorative_pommel_material": "decorative_pommel/diamond"
+					"sword/guard": "sword/makeshift_guard"
+					"sword/hilt": "sword/basic_hilt"
+					"sword/makeshift_guard_material": "makeshift_guard/diamond"
+					"sword/pommel": "sword/decorative_pommel"
 				}
 			}
 			id: "4A18DD9C6C5C3D20"
@@ -698,15 +656,47 @@
 			subtitle: "挖掘深度超过7500"
 			tasks: [
 				{
-					id: "4561651CE43429B1"
-					item: {
+					icon: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "tetra:modular_sword"
 						tag: {
-							value: "tconstruct:modifiable"
+							Damage: 0
+							HideFlags: 1
+							honing_progress: 240
+							id: "9e709bd1-0aef-423c-a337-dbe67095b9ec"
+							"sword/basic_blade_material": "basic_blade/iron"
+							"sword/basic_hilt_material": "basic_hilt/stick"
+							"sword/blade": "sword/basic_blade"
+							"sword/decorative_pommel_material": "decorative_pommel/diamond"
+							"sword/guard": "sword/makeshift_guard"
+							"sword/hilt": "sword/basic_hilt"
+							"sword/makeshift_guard_material": "makeshift_guard/diamond"
+							"sword/pommel": "sword/decorative_pommel"
 						}
 					}
-					title: "任意匠魂工具"
+					id: "5F9F480E44CED7B5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:mod"
+									tag: {
+										value: "geotetraarmor"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:mod"
+									tag: {
+										value: "tetra"
+									}
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -1404,7 +1394,7 @@
 			]
 			subtitle: "[通讯恢复]"
 			tasks: [{
-				icon: "tgears:bar_of_blazing_chocolate"
+				icon: "simplehats:snowmanbaby"
 				id: "32A772C5B1E93BB2"
 				isServer: true
 				stage: "ftb_after_eternal_winter"
@@ -1805,11 +1795,11 @@
 		{
 			dependencies: ["0384E110704AD648"]
 			description: [
-				"当您在&6燃烧时间超过十分钟&r，且&6胸腔准备有充足的改造材料&r时，通过&6食用岩浆蛋糕&r，革命烈焰的力量便会主导您的胸腔。"
+				"当您在&6燃烧时间超过十分钟&r，且&6胸腔准备有充足的改造材料&r时，通过&6手持烈焰蛋糕右键&r，革命烈焰的力量便会主导您的胸腔。"
 				""
 				"您的胸腔类型在改造中会转变成为&c“革命机械”&r类型，进而完全解放各种器官的潜能。"
 			]
-			icon: "tconstruct:magma_cake"
+			icon: "create:blaze_cake"
 			id: "6F796E363ED07C81"
 			rewards: [{
 				id: "42F00EA5B14AB290"
@@ -1818,8 +1808,9 @@
 			}]
 			subtitle: "准备充分！改造开始！"
 			tasks: [{
+				icon: "create:blaze_cake"
 				id: "4CA838E24EFD33BB"
-				item: "tconstruct:magma_cake"
+				item: "create:blaze_cake"
 				type: "item"
 			}]
 			title: "打响信号"

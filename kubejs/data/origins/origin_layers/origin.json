@@ -14,8 +14,7 @@
 		},
 		"kubejs:surgeon",
 		"kubejs:machinist",
-		"kubejs:photographer",
-		"kubejs:tinker"
+		"kubejs:photographer"
 	],
 	"allow_random": true,
 	"exclude_random": [

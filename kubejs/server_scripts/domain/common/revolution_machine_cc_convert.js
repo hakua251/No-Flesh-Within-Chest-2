@@ -1,5 +1,5 @@
 // priority: 500
-BlockEvents.rightClicked('tconstruct:magma_cake', event => {
+ItemEvents.rightClicked('create:blaze_cake', event => {
     const level = event.level
     const entity = event.entity
     let fireTicks = entity.getRemainingFireTicks()

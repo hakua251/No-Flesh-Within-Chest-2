@@ -43,6 +43,7 @@ function ExtractantMaterial1Strategy(customData, machine, levelIndicator, chaosI
 }
 
 /**
+ * todo
  * @param {GatewaysCustomData} customData 
  * @param {CustomMachine} machine 
  * @param {Number} levelIndicator 
@@ -65,6 +66,7 @@ function ExtractantMaterial2Strategy(customData, machine, levelIndicator, chaosI
 }
 
 /**
+ * todo
  * @param {GatewaysCustomData} customData 
  * @param {CustomMachine} machine 
  * @param {Number} levelIndicator 

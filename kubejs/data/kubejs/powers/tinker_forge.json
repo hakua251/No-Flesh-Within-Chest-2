@@ -1,8 +1,0 @@
-{
-    "type": "origins:modify_crafting",
-    "recipe": "tconstruct:smeltery/seared/grout_multiple",
-    "result": {
-        "item": "tconstruct:grout",
-        "amount": 16
-    }
-}

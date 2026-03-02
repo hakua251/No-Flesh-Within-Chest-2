@@ -41,16 +41,4 @@ RegistryOrganStrategy(
 )
 
 const MammaryGlandRecipes = {
-    'minecraft:slime': {
-        'item': Item.of('tconstruct:earth_slime_bucket'),
-        'damage': 2,
-    },
-    'tconstruct:sky_slime': {
-        'item': Item.of('tconstruct:sky_slime_bucket'),
-        'damage': 2,
-    },
-    'tconstruct:ender_slime': {
-        'item': Item.of('tconstruct:ender_slime_bucket'),
-        'damage': 2,
-    },
 }

@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
             I: 'minecraft:iron_bars',
             R: 'minecraft:blaze_rod',
             C: 'chestcavity:blaze_core',
-            S: 'tconstruct:steel_ingot',
+            S: 'minecraft:iron_ingot',
             A: 'minecraft:redstone',
             B: 'create:iron_sheet'
         }
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         'AAAAA'
     ], {
         A: 'minecraft:redstone_block',
-        B: 'tconstruct:steel_ingot',
+        B: 'minecraft:iron_ingot',
         D: 'kubejs:flame_crystal',
         E: 'minecraft:netherite_ingot',
     })
@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
         'BBBBB'
     ], {
         A: 'minecraft:magma_block',
-        B: 'tconstruct:steel_ingot',
+        B: 'minecraft:iron_ingot',
         D: 'kubejs:flame_crystal',
         E: 'minecraft:netherite_ingot',
         F: 'minecraft:fire_charge',

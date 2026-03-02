@@ -149,7 +149,7 @@ function validMantleInputTarget(input, depth) {
     if (depth < 5000) return false
     if (input.getMod() == 'minecraft') return true
     if (depth < 7500) return false
-    if (input.hasTag('tconstruct:modifiable')) return true
+    if (input.getMod() == 'geotetraarmor' || input.getMod() == 'tetra') return true
     return false
 }
 

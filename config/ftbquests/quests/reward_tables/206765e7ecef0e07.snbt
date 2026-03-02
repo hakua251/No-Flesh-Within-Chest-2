@@ -2,7 +2,7 @@
 	icon: "kubejs:world_computer"
 	id: "206765E7ECEF0E07"
 	loot_size: 1
-	order_index: 2
+	order_index: 0
 	rewards: [
 		{
 			auto: "invisible"

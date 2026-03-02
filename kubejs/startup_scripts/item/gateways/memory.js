@@ -14,6 +14,7 @@ StartupEvents.registry('minecraft:item', event => {
         )
         .tag('curios:memory')
 
+    // todo
     event.create('kubejs:reunion_memory', 'basic')
         .texture('kubejs:item/curios/reunion_memory')
         .maxStackSize(1)
@@ -23,7 +24,7 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('tconstruct:player.experience_multiplier', 'ReunionMemoryExperienceMultiplier', FloorFix(nbt.getFloat('attriValue'), 2), 'addition')
+                ctx.modify('additionalentityattributes:dropped_experience', 'ReunionMemoryExperienceMultiplier', FloorFix(nbt.getFloat('attriValue'), 2), 'addition')
             })
         )
         .tag('curios:memory')

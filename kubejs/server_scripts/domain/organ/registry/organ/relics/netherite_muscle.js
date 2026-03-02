@@ -7,6 +7,4 @@ RegistryOrgan('kubejs:netherite_muscle')
 
 ServerEvents.recipes(event => {
     event.recipes.create.crushing([Item.of('minecraft:netherite_scrap'), Item.of('minecraft:netherite_scrap').withChance(0.7), Item.of('minecraft:netherite_scrap').withChance(0.3)], 'kubejs:netherite_muscle').processingTime(400)
-
-    event.smelting('tconstruct:netherite_nugget', 'kubejs:netherite_muscle', '5.0')
 })

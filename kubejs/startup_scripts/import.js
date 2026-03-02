@@ -33,8 +33,6 @@ const $ExtendedEvokerFang = Java.loadClass('io.redspace.ironsspellbooks.entity.s
 const $LootContextParams = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParams')
 const $Serializer = Java.loadClass('net.minecraft.network.chat.Component$Serializer')
 const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
-const $ToolStats = Java.loadClass('slimeknights.tconstruct.library.tools.stat.ToolStats')
-const $ToolStatId = Java.loadClass('slimeknights.tconstruct.library.tools.stat.ToolStatId')
 
 const $FleshBlob = Java.loadClass('com.github.elenterius.biomancy.entity.mob.fleshblob.FleshBlob')
 const $BundleTooltip = Java.loadClass('net.minecraft.world.inventory.tooltip.BundleTooltip')
