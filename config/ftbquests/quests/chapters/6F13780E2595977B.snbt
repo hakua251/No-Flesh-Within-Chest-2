@@ -89,8 +89,8 @@
 			shape: "square"
 			subtitle: "匠工创世创工匠"
 			title: "&6庆贺吧！此乃创世工匠蓝图！&r"
-			x: 25.0d
-			y: -1.5d
+			x: 11.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -112,8 +112,8 @@
 			shape: "diamond"
 			subtitle: "精研之路漫漫长"
 			title: "改良创世工艺"
-			x: 25.0d
-			y: -3.0d
+			x: 11.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -137,8 +137,8 @@
 				title: "疑虑"
 				type: "checkmark"
 			}]
-			x: 27.0d
-			y: -1.5d
+			x: 13.0d
+			y: -3.0d
 		}
 	]
 	title: "传闻：创世工匠"

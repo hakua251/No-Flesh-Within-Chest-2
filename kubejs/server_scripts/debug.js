@@ -1,11 +1,15 @@
 // priority: 500
-BlockEvents.rightClicked('biomancy:malignant_flesh_veins', event => {
-    const block = event.block
-    const level = event.level
-    block.blockState.randomTick(level, block.pos, level.random)
+TetraJSEvents.workbenchTileUpdateSchematicList(event => {
+    event.player.tell(event.schematicList.size())
+    event.schematicList.clear()
+    event.player.tell(event.schematicList.size())
+    event.needUpdate()
 })
+
+
+
 // todo 调试方法
-ItemEvents.rightClicked(event => {
+ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
@@ -13,22 +17,23 @@ ItemEvents.rightClicked(event => {
     const server = event.server
     const itemStack = event.item
 
-    /**@type {Internal.ModularItem} */
-    const item = itemStack.getItem()
-    if (!itemStack.getId().startsWith('tetra:modular_')) return
-    let effectData = item.getEffectData(itemStack)
-    effectData.levelMap.forEach((pEffect, num) => {
-        console.log(pEffect.key, num)
-    })
-    effectData.efficiencyMap.forEach((pEffect, num) => {
-        console.log(pEffect.key, num)
-    })
-    item.getImprovements(itemStack).forEach(pImprove => {
-        console.log(pImprove.key, pImprove.level)
-    })
-    item.getAllModules(itemStack).forEach(itemModule => {
-        console.log(itemModule.key, itemModule.slot)
-    })
+
+    // /**@type {Internal.ModularItem} */
+    // const item = itemStack.getItem()
+    // if (!itemStack.getId().startsWith('tetra:modular_')) return
+    // let effectData = item.getEffectData(itemStack)
+    // effectData.levelMap.forEach((pEffect, num) => {
+    //     console.log(pEffect.key, num)
+    // })
+    // effectData.efficiencyMap.forEach((pEffect, num) => {
+    //     console.log(pEffect.key, num)
+    // })
+    // item.getImprovements(itemStack).forEach(pImprove => {
+    //     console.log(pImprove.key, pImprove.level)
+    // })
+    // item.getAllModules(itemStack).forEach(itemModule => {
+    //     console.log(itemModule.key, itemModule.slot)
+    // })
 
     // item.getAttributeModifiers('mainhand').forEach((attri, modifier) => {
     //     console.log(attri.descriptionId, modifier.getName())

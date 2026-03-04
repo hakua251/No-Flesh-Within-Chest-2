@@ -1,6 +1,6 @@
 {
 	"ftbteams": {
-		"my_team": true
+		"my_team": false
 	},
 	"leaderboards": {
 		"leaderboards": true
@@ -10,7 +10,7 @@
 	},
 	"ftblibrary": {
 		"toggle.gamemode": true,
-		"toggle.rain": true,
+		"toggle.rain": false,
 		"toggle.day": true,
 		"toggle.night": true
 	},
