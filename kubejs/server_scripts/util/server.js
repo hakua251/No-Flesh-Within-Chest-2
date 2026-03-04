@@ -7,14 +7,14 @@
 function SetEternalWinterState(server, state) {
     server.persistentData.putInt('isEternalWinter', state)
     if (state == 1) {
-        $EternalWinterUtil.setEternalWinterEnabled(true)
+        MAAUtils.setEternalWinterEnabled(true)
         AStages.addStageToServer('ftb_under_eternal_winter', server)
     } else if (state == 2) {
-        $EternalWinterUtil.setEternalWinterEnabled(false)
+        MAAUtils.setEternalWinterEnabled(false)
         AStages.removeStageFromServer('ftb_under_eternal_winter', server)
         AStages.addStageToServer('ftb_after_eternal_winter', server)
     } else {
-        $EternalWinterUtil.setEternalWinterEnabled(false)
+        MAAUtils.setEternalWinterEnabled(false)
         AStages.removeStageFromServer('ftb_under_eternal_winter', server)
         AStages.removeStageFromServer('ftb_after_eternal_winter', server)
     }
