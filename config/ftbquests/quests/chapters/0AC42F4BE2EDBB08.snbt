@@ -573,6 +573,29 @@
 			x: -2.0d
 			y: -5.0d
 		}
+		{
+			dependencies: ["563D136C06E38A60"]
+			id: "183701E5F614F6AD"
+			tasks: [{
+				id: "26152F644B5DB041"
+				item: {
+					Count: 1
+					id: "mbtool:mbtool"
+					tag: {
+						recipe: 1
+						uuid: [I;
+							-1179567197
+							-952283390
+							-1380651549
+							867839259
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
 	]
 	title: "壹"
 }

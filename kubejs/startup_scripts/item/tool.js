@@ -37,5 +37,4 @@ StartupEvents.registry('item', event => {
             itemstack.setNbt(nbt)
             return itemstack
         })
-
 })

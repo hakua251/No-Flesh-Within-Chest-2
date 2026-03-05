@@ -1319,6 +1319,7 @@
     "golem_material.biomancy.living_flesh": "鲜活肉块",
     "_comment.jei": "JEI兼容",
     "jei.category.kubejs.mammary_gland.name": "乳腺取奶",
+    "jei.category.kubejs.lightning_channeling.name": "闪电合成",
     "_comment.tetra_material": "Tetra材料",
     "tetra.material.dark_cherry_wood": "深色樱桃木",
     "tetra.material.dark_cherry_wood.prefix": "深色樱桃木",
@@ -1332,5 +1333,6 @@
     "_comment.tetra_stats": "Tetra统计数据",
     "_comment.mbtool_structure": "mbtool结构",
     "mbtool.structure.world_computer": "大世界计算机",
-    "mbtool.structure.dracolotl_altar": "美西龙祭坛"
+    "mbtool.structure.dracolotl_altar": "美西龙祭坛",
+    "mbtool.structure.nether_portal": "下界传送门"
 }

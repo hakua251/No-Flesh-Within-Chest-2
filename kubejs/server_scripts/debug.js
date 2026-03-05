@@ -1,13 +1,4 @@
 // priority: 500
-TetraJSEvents.workbenchTileUpdateSchematicList(event => {
-    event.player.tell(event.schematicList.size())
-    event.schematicList.clear()
-    event.player.tell(event.schematicList.size())
-    event.needUpdate()
-})
-
-
-
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */

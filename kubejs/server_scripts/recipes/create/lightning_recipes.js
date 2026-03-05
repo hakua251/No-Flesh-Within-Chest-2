@@ -17,6 +17,10 @@ EntityEvents.spawned('minecraft:lightning_bolt', event => {
          itemEntity.discard()
          return
       }
+      if (itemEntity.getItem().is('tetra:thermal_cell')) {
+         itemEntity.getItem().setDamageValue(0)
+         return
+      }
    })
    
    let resultCount = Math.min(brassIngotCount, amethystShardCount)

@@ -6,4 +6,5 @@ ServerEvents.recipes(event => {
 
     event.remove({ mod: 'infinity' })
     event.remove({ mod: 'gateways' })
+    event.remove({ id: 'wormhole_artifact:wormhole_remote' })
 })
