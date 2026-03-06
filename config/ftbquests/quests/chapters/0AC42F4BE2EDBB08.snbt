@@ -240,8 +240,8 @@
 			]
 			id: "563D136C06E38A60"
 			rewards: [{
-				id: "5E4208E603D662A5"
-				item: "minecraft:obsidian"
+				id: "6B1C2ECDCA3E1E1A"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "前往另一维度"
@@ -424,6 +424,11 @@
 		{
 			dependencies: ["563D136C06E38A60"]
 			id: "4A1C6C6150E32CEE"
+			rewards: [{
+				id: "35FE1E0C7ADC68BD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "7337839B31A591B5"
@@ -575,7 +580,22 @@
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
+			description: [
+				"在某些时候，您可能会需要建造一些&6指定类型的复杂结构&r——由于我只能通过极其有限的文字交流方式与您沟通，因此我并不能有效的向您表达如何构造这些结构。"
+				""
+				"所幸，在种种物品之中，我找到了一个名为&6手持打印机&r的物品，您可以通过&6潜行右键&r打开这个手持打印机的&6内部存储空间&r。"
+				""
+				"在左侧，您可以存储一些其建造复杂结构所需要使用的方块——而在右侧，您可以&6选择您现在已知的结构种类&r，进而来标定该打印机的打印目标。"
+				""
+				"当您选择完成后，即可手持该打印机，在世界中预览到该结构最终的放置效果。在&6打印机内部资源充足&r的情况下，您可以直接&6通过右键放置复杂结构&r。"
+			]
 			id: "183701E5F614F6AD"
+			rewards: [{
+				id: "089245EBF2888F1C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "将记忆打印"
 			tasks: [{
 				id: "26152F644B5DB041"
 				item: {
@@ -593,6 +613,7 @@
 				}
 				type: "item"
 			}]
+			title: "知识打印器"
 			x: 2.0d
 			y: -5.0d
 		}

@@ -103,6 +103,10 @@
 			id: "63C66800297E4CA5"
 			shape: "diamond"
 			subtitle: "精研之路漫漫长"
+			tasks: [{
+				id: "5D053E389CD787CB"
+				type: "checkmark"
+			}]
 			title: "改良创世工艺"
 			x: 11.0d
 			y: -4.5d
