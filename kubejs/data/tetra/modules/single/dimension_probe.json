@@ -1,0 +1,48 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": [ "single/head" ],
+    "improvements": [
+        "tetra:single/head/dimension_probe/",
+        "tetra:single/shared_head/",
+        "tetra:single/head/shared/",
+        "tetra:single/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:metal/", "tetra:bone/", "tetra:gem/" ],
+            "key": "dimension_probe/",
+            "attributes": {
+                "generic.attack_damage": 3,
+                "generic.attack_speed": -3,
+                "generic.movement_speed": -1
+            },
+            "aspects": {
+                "pointy_weapon": 1,
+                "breakable": 2
+            },
+            "durability": 50,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 2
+                },
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.5,
+                    "generic.attack_damage": 0.1,
+                    "generic.movement_speed": -0.05
+                },
+                "durability": 1,
+                "integrity": 0,
+                "magicCapacity": 1.5,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 16,
+                    "textureY": 0
+                },
+                "availableTextures": [ "gem", "metal", "shiny" ],
+                "models": [{ "location": "tetra:item/module/single/head/dimension_probe/" }]
+            }
+        }
+    ]
+}

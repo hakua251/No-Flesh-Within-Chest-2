@@ -1,18 +1,22 @@
 // priority: 500
 // todo 调试方法
-ItemEvents.rightClicked('stick', event => {
+ItemEvents.rightClicked(event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
     const itemStack = event.item
+    
 
-
-    // /**@type {Internal.ModularItem} */
-    // const item = itemStack.getItem()
-    // if (!itemStack.getId().startsWith('tetra:modular_')) return
-    // let effectData = item.getEffectData(itemStack)
+    /**@type {Internal.ModularItem} */
+    const item = itemStack.getItem()
+    if (!itemStack.getId().startsWith('tetra:modular_')) return
+    let effectData = item.getEffectData(itemStack)
+    let toolData = item.getToolData(itemStack)
+    toolData.levelMap.forEach((pEffect, num) => {
+        console.log(pEffect.name(), num)
+    })
     // effectData.levelMap.forEach((pEffect, num) => {
     //     console.log(pEffect.key, num)
     // })
@@ -23,7 +27,10 @@ ItemEvents.rightClicked('stick', event => {
     //     console.log(pImprove.key, pImprove.level)
     // })
     // item.getAllModules(itemStack).forEach(itemModule => {
-    //     console.log(itemModule.key, itemModule.slot)
+    //     let aspectData = itemModule.getAspects(itemStack)
+    //     aspectData.levelMap.forEach((pEffect, num) => {
+    //         console.log(pEffect.key, num)
+    //     })
     // })
 
     // item.getAttributeModifiers('mainhand').forEach((attri, modifier) => {

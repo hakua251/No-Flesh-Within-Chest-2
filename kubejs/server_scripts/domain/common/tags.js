@@ -21,9 +21,9 @@ ServerEvents.tags('item', event => {
 
     event.add('maa:cannot_mending', ['kubejs:furnace_core', 'kubejs:burning_heart', 'kubejs:energy_bottle_red', 'kubejs:soul_cage', 'kubejs:red_wolf_beard', 'kubejs:raccoon_paw', 'kubejs:boar_nose', 'kubejs:ignited_armour', 'kubejs:pitcher_stomach', 'kubejs:vita_sunflower', 'kubejs:ender_guardian_spine', 'kubejs:harbinger_lung', 'kubejs:void_stomach_pouch'])
 
-    event.add('maa:immune/lightning', ['kubejs:unstable_matter'])
-    event.add('maa:immune/explosion', [])
-    event.add('maa:immune/fire', [])
+    event.add('maa:immune/lightning', ['kubejs:unstable_matter', 'tetra:thermal_cell'])
+    event.add('maa:immune/explosion', ['tetra:thermal_cell'])
+    event.add('maa:immune/fire', ['tetra:thermal_cell'])
     event.add('maa:immune/cactus', [])
     event.add('chestcavity:cannot_remove', [])
 })

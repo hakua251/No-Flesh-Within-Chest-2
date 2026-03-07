@@ -1,0 +1,25 @@
+{
+    "replace": true,
+    "slots": [
+        "single/head"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 16,
+        "textureY": 0
+    },
+    "outcomes": [
+        {
+            "materials": [
+                "tetra:metal/",
+                "tetra:gem/",
+                "tetra:bone/"
+            ],
+            "countFactor": 2,
+            "moduleKey": "single/dimension_probe",
+            "moduleVariant": "dimension_probe/"
+        }
+    ]
+}

@@ -80,6 +80,10 @@
 			]
 			shape: "square"
 			subtitle: "匠工创世创工匠"
+			tasks: [{
+				id: "1A6C4A9D0BC0C366"
+				type: "checkmark"
+			}]
 			title: "&6庆贺吧！此乃创世工匠蓝图！&r"
 			x: 11.0d
 			y: -3.0d

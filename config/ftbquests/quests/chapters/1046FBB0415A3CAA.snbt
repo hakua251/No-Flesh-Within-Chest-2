@@ -592,97 +592,24 @@
 				}
 			}
 			id: "3F59D410E064D734"
-			rewards: [{
-				id: "27F9712E033598DB"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "27F9712E033598DB"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "1838B232810A832E"
+					ignore_reward_blocking: true
+					isServer: false
+					remove: false
+					stage: "ftb_dimension_probe_craft_allow"
+					title: "维度探针原理图使用许可"
+					type: "maa:astages"
+				}
+			]
 			subtitle: "制成维度探针实体"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "tconstruct:javelin"
-					tag: {
-						Damage: 0
-						tic_broken: 0b
-						tic_materials: [
-							"tconstruct:nahuatl"
-							"tconstruct:nahuatl"
-							"tconstruct:bone"
-							"tconstruct:bone"
-						]
-						tic_modifiers: [
-							{
-								level: 1
-								name: "tconstruct:throwing"
-							}
-							{
-								level: 2
-								name: "tconstruct:lacerating"
-							}
-							{
-								level: 2
-								name: "tconstruct:pierce"
-							}
-						]
-						tic_persistent: { }
-						tic_stats: {
-							"tconstruct:accuracy": 0.85f
-							"tconstruct:attack_damage": 10.3125f
-							"tconstruct:attack_speed": 0.99f
-							"tconstruct:block_amount": 10.0f
-							"tconstruct:draw_speed": 1.05f
-							"tconstruct:durability": 292.5f
-							"tconstruct:harvest_tier": "minecraft:diamond"
-							"tconstruct:mining_speed": 4.5f
-							"tconstruct:velocity": 0.95f
-						}
-						tic_volatile_data: {
-							abilities: 1
-							upgrades: 2
-						}
-					}
-				}
-				id: "5E742F77BC28D896"
-				item: {
-					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "maa:tcon_tool_stats"
-								tag: {
-									value: "tconstruct:durability>=2000.0"
-								}
-							}
-							{
-								Count: 1b
-								id: "maa:tcon_tool_stats"
-								tag: {
-									value: "tconstruct:attack_damage>=20.0"
-								}
-							}
-							{
-								Count: 1b
-								id: "maa:tcon_tool_modifier"
-								tag: {
-									value: "tconstruct:pierce>=2"
-								}
-							}
-							{
-								Count: 1b
-								id: "maa:tcon_tool_modifier"
-								tag: {
-									value: "tconstruct:lacerating>=2"
-								}
-							}
-						]
-					}
-				}
-				title: "维度探针实体"
-				type: "item"
-			}]
 			title: "最为坚硬的探针"
 			x: 3.5d
 			y: 5.5d

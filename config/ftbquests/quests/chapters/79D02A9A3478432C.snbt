@@ -677,26 +677,12 @@
 					id: "5F9F480E44CED7B5"
 					item: {
 						Count: 1
-						id: "itemfilters:or"
+						id: "maa:kube_custom"
 						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "itemfilters:mod"
-									tag: {
-										value: "geotetraarmor"
-									}
-								}
-								{
-									Count: 1b
-									id: "itemfilters:mod"
-									tag: {
-										value: "tetra"
-									}
-								}
-							]
+							value: "is_tetra_modular_item:[]"
 						}
 					}
+					title: "任意模块化工具"
 					type: "item"
 				}
 				{
@@ -954,7 +940,7 @@
 			description: [
 				"经过计算，若对世界执行&650次深层开采&r后，世界会因为自由地幔能的局部流失，&c引发全局性的地幔能全局平衡&r。"
 				""
-				"&b作为地幔能内部平衡的代价，所有生态群系、所有维度、所有世界的温度将会被降低至0℃以下，并且将会迎来永久的降雪天气。&r"
+				"&c作为地幔能内部平衡的代价，所有生态群系、所有维度、所有世界的温度将会被降低至0℃以下，并且将会迎来永久的降雪天气。&r"
 				""
 				"目前，我们没有办法去主动避免这件事的发生——我们所能做的一切，就是尽可能不要&c进行深度超过2000的深层开采&r以及会严重影响地幔能平衡的&c最大功率采掘&r。"
 				""

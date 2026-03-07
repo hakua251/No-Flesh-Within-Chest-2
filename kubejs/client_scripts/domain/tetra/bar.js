@@ -1,10 +1,4 @@
 // priority: 500
-// TetraJSEvents.workbenchTileUpdateSchematicList(event => {
-//     if (AStagesClient.getPlayerClientStages().contains('test')) {
-//         event.schematicList.clear()
-//         event.needUpdate()
-//     }
-// })
 
 TetraJSEvents.registerStatBar(event => {
     // event.registerEffectBar('source_leech')

@@ -434,7 +434,7 @@
 				id: "7337839B31A591B5"
 				type: "dimension"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: -6.0d
 		}
 		{
@@ -548,8 +548,8 @@
 				}
 			]
 			title: "将岩浆带回家"
-			x: 2.0d
-			y: -7.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			can_repeat: true
@@ -616,6 +616,34 @@
 			title: "知识打印器"
 			x: 2.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["6DF4D3AE711778B7"]
+			description: [
+				"某些情况下，您和您的朋友互相联系就已经非常困难，更别提交换友谊之戒。"
+				""
+				"此时，您需要一个&6虫洞神器&r，其使用&6末影珍珠母&r进行充能。右键使用时，您可以&6选中任何一个位于同一维度的玩家进行传送&r。"
+			]
+			id: "58681C6EE5964352"
+			rewards: [{
+				id: "4BC68D1F53B6D156"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "快捷传送"
+			tasks: [{
+				id: "04FEC07172EF042C"
+				item: {
+					Count: 1
+					id: "wormhole_artifact:wormhole_artifact"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.5d
 		}
 	]
 	title: "壹"
