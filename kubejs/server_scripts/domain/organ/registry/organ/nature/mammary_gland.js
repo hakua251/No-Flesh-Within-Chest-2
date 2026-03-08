@@ -83,3 +83,5 @@ registryMammaryGlandRecipe('minecraft:drowned', Item.of('minecraft:bucket'), Ite
 registryMammaryGlandRecipe('minecraft:iron_golem', Item.of('minecraft:bucket'), Item.of('kubejs:molten_iron_fluid_bucket'), 20)
 registryMammaryGlandRecipe('minecraft:magma_cube', Item.of('minecraft:slime_ball'), Item.of('minecraft:magma_cream'), 1)
 registryMammaryGlandRecipe('minecraft:villager', Item.of('minecraft:bucket'), Item.of('kubejs:molten_emerald_fluid_bucket'), 10)
+registryMammaryGlandRecipe('minecraft:ender_dragon', Item.of('minecraft:glass_bottle'), Item.of('minecraft:dragon_breath'), 10)
+registryMammaryGlandRecipe('dracolotl:dracolotl', Item.of('minecraft:glass_bottle'), Item.of('minecraft:dragon_breath'), 1)

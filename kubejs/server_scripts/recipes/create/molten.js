@@ -61,12 +61,12 @@ ServerEvents.recipes(event => {
         [Fluid.of('kubejs:molten_diamond_fluid', 90)], 'createdieselgenerators:bar')
     /** 绿宝石 */
     event.recipes.create.mixing(
-        [Fluid.of('kubejs:molten_emerald_fluid', 90)],
+        [Fluid.of('kubejs:molten_emerald_fluid', 100)],
         [Item.of('minecraft:emerald')], 20 * 10).superheated()
     event.recipes.create.mixing(
-        [Fluid.of('kubejs:molten_emerald_fluid', 810)],
+        [Fluid.of('kubejs:molten_emerald_fluid', 900)],
         [Item.of('minecraft:emerald_block')], 20 * 90).superheated()
     event.recipes.createdieselgenerators.compression_molding(
         [Item.of('minecraft:emerald')],
-        [Fluid.of('kubejs:molten_emerald_fluid', 90)], 'createdieselgenerators:bar')
+        [Fluid.of('kubejs:molten_emerald_fluid', 100)], 'createdieselgenerators:bar')
 })

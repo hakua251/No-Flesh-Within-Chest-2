@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"nfwc_punch_animation": {
+		"punch_animation": {
 			"animation_length": 1.5833,
 			"bones": {
 				"left_arm": {

@@ -12,9 +12,9 @@
 		{
 			dependencies: ["46E78442AD5DB22E"]
 			description: [
-				"在制作传送石时，我突然意识到了一件事情。"
+				"在您使用传送石碑进行传送时，我想到了一个问题。"
 				""
-				"&6“商店”&r维度的绝对不是偶然。那么他究竟是因为什么而产生的，又是因为什么才产生的。"
+				"&6“商店”&r维度的绝对不是偶然。那么他究竟是因为什么而产生的，又是因为什么才产生的？"
 				""
 				"自一开始以来，我们忽略了太多太多关于这个世界的细节，或许我们真的需要好好记录下这一切。"
 				""
@@ -29,17 +29,14 @@
 			}]
 			subtitle: "起点亦是终点"
 			tasks: [{
-				id: "35B6AB40A6E08476"
-				item: {
-					Count: 1
-					id: "waystones:warp_stone"
-					tag: {
-						Damage: 0
-					}
-				}
-				only_from_crafting: true
-				title: "制作传送石"
-				type: "item"
+				block: "waystones:waystone"
+				block_type: 0
+				checkItem: false
+				id: "192C8B08294B5504"
+				isItemInteraction: false
+				title: "使用一次传送石碑"
+				type: "questsadditions:use"
+				value: 1L
 			}]
 			title: "奇异点的反思"
 			x: 0.0d

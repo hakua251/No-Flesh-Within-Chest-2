@@ -24,21 +24,12 @@
 	quests: [
 		{
 			dependencies: ["46E78442AD5DB22E"]
-			description: [""]
-			icon: {
-				Count: 1
-				id: "tetra:holo"
-				tag: {
-					"holo/core": "holo/core"
-					"holo/core_material": "frame/dim"
-					"holo/frame": "holo/frame"
-					"holo/frame_material": "core/ancient"
-					"holo/repo": "holo/repo"
-					"holo/repo_material": "repo/default"
-					"holo/scanner": "holo/scanner"
-					"holo/scanner_material": "scanner/default"
-				}
-			}
+			description: [
+				"请等下！在驱动锻锤进行锻造的时候，我发现了一串&6特殊的数据标记&r，它似乎暗示了一种&6极其特殊的加工工序&r！"
+				""
+				"这种加工工序被层层掩盖，只有具有足够经验的工匠在锻造时才可能让工具的属性中包含这个标签。"
+			]
+			icon: "tetra:hammer_base"
 			id: "428D9599A58515E7"
 			invisible: true
 			rewards: [{
@@ -47,6 +38,14 @@
 				type: "item"
 			}]
 			subtitle: "灵光一现筑传闻"
+			tasks: [{
+				count: 1L
+				icon: "tetra:hammer_base"
+				id: "4648330C698D02AB"
+				kubeId: "tetra_hammer_craft"
+				title: "使用锻锤锻造"
+				type: "maa:kube"
+			}]
 			title: "灵光乍现"
 			x: -2.0d
 			y: -5.0d
@@ -139,6 +138,79 @@
 			}]
 			x: 13.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["428D9599A58515E7"]
+			description: [
+				"顺着这个数据标记，我理应可以在汪洋数据之海中获取到更多关于它的信息，但这&6需要些许时间&r。"
+				""
+				"在此期间，请允许我向您解释这种探索的必要性。"
+				""
+				"根据大量日志表示，这个世界是&6继承于某些玩家之手&r，其中有大量的技术来源于各类玩家——或者并非玩家的，跟您类似的上层实体——的创造。"
+				""
+				"这些技术中不仅是原本我记载数据的扩充，更是这些玩家对于这个世界本身理解的表达。其中不乏大量&6对于生存有巨大帮助的技术&r。"
+				""
+				"因此，对于此类需要隐藏的内容，我认为需要格外注意，一方面是获取此种技术&6有利于推进我们的故事&r，另一方面则是能够避免某些隐藏的灾难的发生。"
+			]
+			id: "698564A81054C487"
+			rewards: [{
+				id: "4071A170B9510E41"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我需要收集更多的信息"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "5FD51CB999EA8CCC"
+				title: "稍等片刻"
+				type: "questsadditions:time"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["698564A81054C487"]
+			description: [
+				"经过确认，标签的用途为标记工具是否满足进行&6创世工序&r的要求。"
+				""
+				"所谓创世工序，在记载中是用于&6在工具改良基础之上进行进一步工具改良的超常方法，能够极大限度的提高工具本身的属性和状态&r——在许多的日志中，创世工序被当作一种非常普遍的工具改良方式，广泛应用。"
+				""
+				"但可惜的是，目前已扫描的日志中，并没有关于创世工序的任何信息记载，理论上，我们并没有一个明确的途径来还原创世工序. . ."
+				""
+				"不过好消息是，创世工序的创作者——我们姑且称其为创世工匠——在研发创世工序时，进行了多种&6启发性工具锻造&r，&6倘若我们能够还原这些创世工匠所创造的启发性工具，或许就能够独立的重新发现创世工序&r！"
+				""
+				"不知道您是否对此事感兴趣，愿意与我一同探索创世工匠所遗留的宝藏？"
+			]
+			id: "585F5FEF231F0B44"
+			rewards: [{
+				id: "00242F63ECEAB2B4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "其名为创世工序"
+			tasks: [{
+				id: "5027FA81042BCFAD"
+				title: "奉身创世之道"
+				type: "checkmark"
+			}]
+			title: "传世工匠传匠艺"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["585F5FEF231F0B44"]
+			id: "602B926C44DEAF04"
+			tasks: [{
+				icon: "cataclysm:altar_of_fire"
+				id: "6D5002B0E08C2F66"
+				observe_type: 0
+				timer: 0L
+				to_observe: "cataclysm:altar_of_fire"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: -7.0d
 		}
 	]
 	title: "传闻：创世工匠"

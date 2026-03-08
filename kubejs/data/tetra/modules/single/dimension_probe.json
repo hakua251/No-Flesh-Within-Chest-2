@@ -11,12 +11,12 @@
     ],
     "variants": [
         {
-            "materials": [ "tetra:metal/", "tetra:bone/", "tetra:gem/" ],
+            "materials": [ "tetra:metal/", "tetra:gem/" ],
             "key": "dimension_probe/",
             "attributes": {
                 "generic.attack_damage": 3,
-                "generic.attack_speed": -3,
-                "generic.movement_speed": -1
+                "generic.attack_speed": -1,
+                "generic.movement_speed": -0.05
             },
             "aspects": {
                 "pointy_weapon": 1,
@@ -25,12 +25,11 @@
             "durability": 50,
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 2
+                    "generic.attack_damage": 0.5
                 },
                 "secondaryAttributes": {
                     "generic.attack_speed": -0.5,
-                    "generic.attack_damage": 0.1,
-                    "generic.movement_speed": -0.05
+                    "generic.attack_damage": 1
                 },
                 "durability": 1,
                 "integrity": 0,
@@ -40,7 +39,7 @@
                     "textureX": 16,
                     "textureY": 0
                 },
-                "availableTextures": [ "gem", "metal", "shiny" ],
+                "availableTextures": [ "gem", "metal"],
                 "models": [{ "location": "tetra:item/module/single/head/dimension_probe/" }]
             }
         }

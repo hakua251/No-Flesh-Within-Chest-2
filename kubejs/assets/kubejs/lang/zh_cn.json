@@ -1330,6 +1330,8 @@
     "tetra.material.archwood.prefix": "至高木",
     "tetra.material.source_gem": "魔源宝石",
     "tetra.material.source_gem.prefix": "魔源宝石",
+    "tetra.material.socket_source_gem": "魔源宝石",
+    "tetra.material.socket_source_gem.prefix": "魔源宝石",
     "_comment.mbtool_structure": "mbtool结构",
     "mbtool.structure.world_computer": "大世界计算机",
     "mbtool.structure.dracolotl_altar": "美西龙祭坛",
@@ -1350,5 +1352,13 @@
     "tetra.module.single/dimension_probe.name": "维度探针",
     "tetra.module.single/dimension_probe.description": "维度探针是被定制用于进行特殊项目的工具",
     "tetra.module.single/dimension_probe.material_name": "%s维度探针",
-    "tetra.module.single/dimension_probe.prefix": "%s"
+    "tetra.module.single/dimension_probe.prefix": "%s",
+    "tetra/schematic/sword/flamberge/flamberge_blade.name": "焰形剑剑刃",
+    "tetra/schematic/sword/flamberge/flamberge_blade.description": "将当前剑刃替换为焰形剑剑刃\n \n材料§f硬度§r增加§f伤害§r",
+    "tetra/schematic/sword/flamberge/flamberge_blade.slot1": "剑刃材料",
+    "tetra.module.sword/flamberge_blade.item_name": "焰形剑",
+    "tetra.module.sword/flamberge_blade.name": "焰形剑剑刃",
+    "tetra.module.sword/flamberge_blade.description": "一种强力的波浪形剑刃",
+    "tetra.module.sword/flamberge_blade.material_name": "%s焰形剑剑刃",
+    "tetra.module.sword/flamberge_blade.prefix": "%s"
 }

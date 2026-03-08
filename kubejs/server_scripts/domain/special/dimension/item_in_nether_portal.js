@@ -42,13 +42,16 @@ InfinityEvents.itemInPortal(event => {
         InfinityPortalCreator.tryCreatePortalById('kubejs:oath', level, pos)
     } else if (itemStack.is('exposure:photograph') && itemStack.hasNBT()) {
         let nbt = itemStack.getNbt()
-        if (nbt.contains('PhotographerId')) {
-            let phtographerId = nbt.getUUID('PhotographerId')
-            let targetPlayer = level.getPlayerByUUID(phtographerId)
-            if (!targetPlayer) return
-            if (!DimensionsNet.getNetFromPlayer(targetPlayer)) {
-                DimensionsNet.createNewNetForPlayer(targetPlayer, 1024, 27)
-            }
+        if (!nbt.contains('photograph_frame')) return
+        let frameNbt = nbt.getCompound('photograph_frame')
+        if (!frameNbt.contains('photographer')) return
+        let photographerNbt = frameNbt.getCompound('photographer')
+        let phtographerId = photographerNbt.getUUID('uuid')
+        let targetPlayer = level.getPlayerByUUID(phtographerId)
+        if (!targetPlayer) return
+        if (!DimensionsNet.getNetFromPlayer(targetPlayer)) {
+            DimensionsNet.createNewNetForPlayer(targetPlayer, 1024, 27)
+            level.playSound(null, targetPlayer.getX(), targetPlayer.getY(), targetPlayer.getZ(), 'ui.toast.challenge_complete', targetPlayer.getSoundSource(), 0.25, 1)
         }
     } else if (itemStack.is('minecraft:diamond_block')) {
         itemEntity.setItem(Item.of('beyonddimensions:net_pathway', itemStack.getCount()))

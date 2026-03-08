@@ -1,5 +1,6 @@
 {
     "replace": true,
+    "rarity": "temporary",
     "slots": [
         "single/head"
     ],
@@ -14,8 +15,7 @@
         {
             "materials": [
                 "tetra:metal/",
-                "tetra:gem/",
-                "tetra:bone/"
+                "tetra:gem/"
             ],
             "countFactor": 2,
             "moduleKey": "single/dimension_probe",

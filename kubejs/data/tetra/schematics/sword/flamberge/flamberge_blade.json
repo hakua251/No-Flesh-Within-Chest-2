@@ -1,0 +1,36 @@
+{
+	"replace": true,
+	"slots": [ "sword/blade" ],
+	"materialSlotCount": 1,
+	"rarity": "temporary",
+	"displayType": "major",
+	"glyph": {
+		"textureLocation": "tetra:textures/gui/custom_glyph.png",
+		"textureX": 32
+	},
+	"translation": {
+		"primaryAttributes": {
+			"generic.attack_damage": 3
+		},
+		"primaryEffects": {
+			"armorPenetration": 1
+		},
+		"secondaryEffects": {
+			"puncture": 1
+		},
+		"tertiaryEffects": {
+			"sweeping": 1
+		},
+		"durability": 4,
+		"integrity": -3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
+			"countFactor": 2,
+			"moduleKey": "sword/flamberge_blade",
+			"moduleVariant": "flamberge_blade/"
+		}
+	]
+}

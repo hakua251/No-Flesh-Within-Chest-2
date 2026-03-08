@@ -12,7 +12,7 @@ function RegistryChestCavityInjection(event, typeName, typeLocation) {
         .useAnimation('none')
         .use((level, player, hand) => {
             if (level.isClientSide()) return true
-            if (player.isPlayer()) player.triggerAnimation('kubejs:inject_animation', 3.25, 'linear', true, false)
+            if (player.isPlayer()) player.triggerAnimation('kubejs:inject_animation', 3.25, 'linear', true, true)
             return true
         })
         .releaseUsing((itemstack, level, entity) => {
@@ -46,7 +46,7 @@ StartupEvents.registry('item', event => {
             let inventoryType = player.chestCavityInstance.getInventoryType()
             if (player.hasEffect('minecraft:weakness')) return false
             if (!inventoryType.getPath().startsWith('cc_inventory_types/player')) return false
-            if (player.isPlayer()) player.triggerAnimation('kubejs:inject_animation', 3.25, 'linear', true, false)
+            if (player.isPlayer()) player.triggerAnimation('kubejs:inject_animation', 3.25, 'linear', true, true)
             return true
         })
         .releaseUsing((itemstack, level, entity) => {

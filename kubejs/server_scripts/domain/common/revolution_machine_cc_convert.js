@@ -42,5 +42,5 @@ ItemEvents.rightClicked('create:blaze_cake', event => {
     }
     chestCavity.setInventoryType('kubejs:cc_inventory_types/revolution_machine')
     entity.setRemainingFireTicks(fireTicks - 11980)
-    level.playSound(null, player.getX(), player.getY(), player.getZ(), 'ui.toast.challenge_complete', player.getSoundSource(), 0.5, 1)
+    level.playSound(null, player.getX(), player.getY(), player.getZ(), 'ui.toast.challenge_complete', player.getSoundSource(), 0.25, 1)
 })

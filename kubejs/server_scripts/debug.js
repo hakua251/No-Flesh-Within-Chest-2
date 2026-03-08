@@ -11,12 +11,16 @@ ItemEvents.rightClicked(event => {
 
     /**@type {Internal.ModularItem} */
     const item = itemStack.getItem()
-    if (!itemStack.getId().startsWith('tetra:modular_')) return
-    let effectData = item.getEffectData(itemStack)
-    let toolData = item.getToolData(itemStack)
-    toolData.levelMap.forEach((pEffect, num) => {
-        console.log(pEffect.name(), num)
-    })
+    
+    if (!TetraJSUtils.isModularItem(item)) return
+    // item.getModuleAttributes(itemStack).forEach((attri, modifier) => {
+    //     console.log(attri.descriptionId, modifier.name, modifier.getAmount())
+    // })
+    // let effectData = item.getEffectData(itemStack)
+    // let toolData = item.getToolData(itemStack)
+    // toolData.levelMap.forEach((pEffect, num) => {
+    //     console.log(pEffect.name(), num)
+    // })
     // effectData.levelMap.forEach((pEffect, num) => {
     //     console.log(pEffect.key, num)
     // })
