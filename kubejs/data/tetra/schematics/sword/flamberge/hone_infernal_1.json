@@ -20,7 +20,7 @@
                 "type": "tetra:not",
                 "requirement": {
                     "type": "tetra:improvement",
-                    "improvement": "blade/infernal"
+                    "improvement": "blade/burns"
                 }
             }
         ]
@@ -31,7 +31,7 @@
                 "hammer_dig": "minecraft:gold"
             },
             "improvements": {
-                "blade/infernal": 1
+                "blade/burns": 1
             }
         }
     ]

@@ -95,6 +95,15 @@
     {
       "weight": 50,
       "element": {
+        "location": "kubejs:flesh",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
         "location": "kubejs:forest_guard_workshop",
         "processors": "minecraft:empty",
         "projection": "rigid",

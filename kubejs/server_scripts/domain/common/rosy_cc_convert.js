@@ -1,8 +1,5 @@
 // priority: 500
-/**
- * @param {Internal.LivingDamageEvent} event 
- */
-function RosyChestCavityConvert(event) {
+NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent} event */ event => {
     if (!event.source.is($DamageTypes.DROWN)) return
     const entity = event.entity
     if (!entity.isPlayer() || entity.getHealth() > 4) return
@@ -15,4 +12,4 @@ function RosyChestCavityConvert(event) {
     
     MAAUtils.onKubeTaskFinish('rose_cc_convert', entity, (task, pPlayer, teamData) => teamData.addProgress(task, 1))
     entity.potionEffects.add('minecraft:water_breathing', 20 * 60)
-}
+})

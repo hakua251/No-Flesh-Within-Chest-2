@@ -17,10 +17,9 @@
 				"generic.attack_damage": 0.75
 			},
 			"effects": {
-				"armorPenetration": 6,
+				"kubejs:burns": [1, 5],
 				"sweeping": 1,
-				"puncture": [ 3, 8 ],
-				"bleeding": 1
+				"puncture": [ 3, 8 ]
 			},
 			"tools": {
 				"cut": [ 1, 0.5 ]
@@ -38,14 +37,14 @@
 					"generic.attack_damage": 1
 				},
 				"primaryEffects": {
-					"armorPenetration": 2
+					"kubejs:burns": [0, 10]
 				},
 				"secondaryEffects": {
-					"puncture": 2
+					"puncture": 2,
+					"kubejs:burns": [1, -5]
 				},
 				"tertiaryEffects": {
 					"sweeping": 1,
-					"armorPenetration": -1,
 					"puncture": -0.3
 				},
 				"durability": 0.9,

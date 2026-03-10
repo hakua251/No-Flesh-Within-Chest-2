@@ -11,7 +11,7 @@
     },
     "requirement": {
         "type": "tetra:improvement",
-        "improvement": "blade/infernal",
+        "improvement": "blade/burns",
         "level": 2
     },
     "outcomes": [
@@ -20,7 +20,7 @@
                 "hammer_dig": "minecraft:gold"
             },
             "improvements": {
-                "blade/infernal": 3
+                "blade/burns": 3
             }
         }
     ]

@@ -13,7 +13,7 @@
 			"generic.attack_damage": 3
 		},
 		"primaryEffects": {
-			"armorPenetration": 1
+			"kubejs:burns": [1, 10]
 		},
 		"secondaryEffects": {
 			"puncture": 1

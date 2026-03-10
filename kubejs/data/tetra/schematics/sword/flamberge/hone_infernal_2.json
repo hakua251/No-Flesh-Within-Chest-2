@@ -6,12 +6,12 @@
     "rarity": "hone",
     "displayType": "major",
     "glyph": {
-        "textureLocation": "tetra:textures/gui/custom_glyphaof_glyph.png",
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
 		"textureX": 32
     },
     "requirement": {
         "type": "tetra:improvement",
-        "improvement": "blade/infernal",
+        "improvement": "blade/burns",
         "level": 1
     },
     "outcomes": [
@@ -20,7 +20,7 @@
                 "hammer_dig": "minecraft:gold"
             },
             "improvements": {
-                "blade/infernal": 2
+                "blade/burns": 2
             }
         }
     ]
