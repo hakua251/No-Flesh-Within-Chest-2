@@ -43,7 +43,7 @@
             "materials": [ "tetra:gem/" ],
             "countFactor": 2,
             "moduleKey": "single/cane_head",
-            "moduleVariant": "cane_head/gem"
+            "moduleVariant": "cane_head/"
         }
     ]
 }

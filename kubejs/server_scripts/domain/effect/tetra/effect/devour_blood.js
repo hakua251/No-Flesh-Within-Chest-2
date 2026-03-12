@@ -5,8 +5,8 @@
 NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} event */ event => {
     /**@type {Player} */
     const sourceEntity = event.source.actual
-    const targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isPlayer()) return
+    if (sourceEntity.getAttackStrengthScale(0) < 0.9) return
     let heldItem = sourceEntity.mainHandItem
     /**@type {Internal.ModularItem} */
     let modularItem = heldItem.getItem()
@@ -15,7 +15,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     let effectEfficiency = modularItem.getEffectEfficiency(heldItem, 'kubejs:devour_blood')
     if (effectEfficiency <= 0 || effectLevel <= 0) return
     
-    if (Math.random() > effectLevel * 0.05) return
+    if (Math.random() > effectLevel * 0.025) return
     const foodData = sourceEntity.getFoodData()
     let saturationLevel = foodData.getSaturationLevel()
     foodData.setSaturation(saturationLevel + effectEfficiency * 0.1)

@@ -21,9 +21,9 @@ ItemEvents.rightClicked(event => {
     // toolData.levelMap.forEach((pEffect, num) => {
     //     console.log(pEffect.name(), num)
     // })
-    effectData.levelMap.forEach((pEffect, num) => {
-        console.log(pEffect.key, num)
-    })
+    // effectData.levelMap.forEach((pEffect, num) => {
+    //     console.log(pEffect.key, num)
+    // })
     // effectData.efficiencyMap.forEach((pEffect, num) => {
     //     console.log(pEffect.key, num)
     // })
@@ -36,10 +36,10 @@ ItemEvents.rightClicked(event => {
     //         console.log(pEffect.key, num)
     //     })
     // })
-
-    // item.getAttributeModifiers('mainhand').forEach((attri, modifier) => {
-    //     console.log(attri.descriptionId, modifier.getName())
-    // })
+    console.log(item.getAttributeValue(itemStack, 'generic.attack_speed'))
+    item.getAttributeModifiers(itemStack).forEach((attri, modifier) => {
+        console.log(attri.descriptionId, modifier.getAmount())
+    })
 
     // level.playSound(null, player.getX(), player.getY(), player.getZ(), 'ui.toast.challenge_complete', player.getSoundSource(), 0.5, 1)
     // AddSkinToSlot(player, 'chest', 'burning_heart_arms')

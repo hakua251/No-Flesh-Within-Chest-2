@@ -34,8 +34,8 @@
             },
             {
                 "type": "tetra:improvement",
-                "improvement": "scythe/devour_blood",
-                "level": 1
+                "improvement": "scythe/hunger_strike",
+                "level": 2
             }
         ]
     },
@@ -45,7 +45,7 @@
                 "hammer_dig": "minecraft:gold"
             },
             "improvements": {
-                "scythe/devour_blood": 2
+                "scythe/hunger_strike": 3
             }
         }
     ]

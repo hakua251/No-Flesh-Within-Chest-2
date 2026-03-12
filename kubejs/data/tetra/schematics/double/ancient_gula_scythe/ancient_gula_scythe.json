@@ -10,7 +10,7 @@
     ],
     "materialSlotCount": 1,
     "materialRevealSlot": 0,
-    "rarity": "temporary",
+	"rarity": "ancient",
     "displayType": "major",
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
@@ -18,16 +18,16 @@
     },
     "outcomes": [
         {
-			"materials": ["tetra:gem/", "tetra:wood/", "tetra:stone/" , "tetra:metal/"],
+			"materials": ["tetra:gem/", "tetra:wood/", "tetra:stone/", "tetra:metal/"],
 			"countFactor": 2,
-			"moduleKey": "double/gula_scythe",
-			"moduleVariant": "gula_scythe/"
+			"moduleKey": "double/ancient_gula_scythe",
+			"moduleVariant": "ancient_gula_scythe/"
 		},
         {
 			"materials": [ "tetra:bone/" ],
 			"countFactor": 2,
-			"moduleKey": "double/gula_scythe",
-			"moduleVariant": "gula_scythe/"
+			"moduleKey": "double/ancient_gula_scythe",
+			"moduleVariant": "ancient_gula_scythe/"
 		}
     ]
 }

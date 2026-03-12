@@ -7,6 +7,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     const sourceEntity = event.source.actual
     const targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isLiving()) return
+    if (sourceEntity.isPlayer() && sourceEntity.getAttackStrengthScale(0) < 0.9) return
     let heldItem = sourceEntity.mainHandItem
     /**@type {Internal.ModularItem} */
     let modularItem = heldItem.getItem()
@@ -18,6 +19,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     let needTicks = effectLevel * 20 * 10
     if (fireTicks <= needTicks) return
     let damage =  fireTicks / 20 * effectEfficiency * 0.5
+    targetEntity.invulnerableTime = 0
     targetEntity.attack(targetEntity.damageSources().onFire(), damage)
     targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() - needTicks)
 })

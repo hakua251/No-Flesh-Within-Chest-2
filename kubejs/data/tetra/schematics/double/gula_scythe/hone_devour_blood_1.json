@@ -36,7 +36,7 @@
                 "type": "tetra:not",
                 "requirement": {
                     "type": "tetra:improvement",
-                    "improvement": "gula_hone/devour_blood"
+                    "improvement": "scythe/devour_blood"
                 }
             }
         ]
@@ -47,7 +47,7 @@
                 "hammer_dig": "minecraft:gold"
             },
             "improvements": {
-                "gula_hone/devour_blood": 1
+                "scythe/devour_blood": 1
             }
         }
     ]

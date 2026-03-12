@@ -24,18 +24,20 @@
                 "requirements": [
                     {
                         "type": "tetra:module",
-                        "module": "double/gula_scythe_right"
+                        "module": "double/ancient_gula_scythe_right"
                     },
                     {
                         "type": "tetra:module",
-                        "module": "double/gula_scythe_left"
+                        "module": "double/ancient_gula_scythe_left"
                     }
                 ]
             },
             {
-                "type": "tetra:improvement",
-                "improvement": "scythe/devour_blood",
-                "level": 1
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "scythe/hunger_strike"
+                }
             }
         ]
     },
@@ -45,7 +47,7 @@
                 "hammer_dig": "minecraft:gold"
             },
             "improvements": {
-                "scythe/devour_blood": 2
+                "scythe/hunger_strike": 1
             }
         }
     ]

@@ -7,6 +7,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     const sourceEntity = event.source.actual
     const targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isLiving()) return
+    if (sourceEntity.getAttackStrengthScale(0) < 0.9) return
     let heldItem = sourceEntity.mainHandItem
     /**@type {Internal.ModularItem} */
     let modularItem = heldItem.getItem()

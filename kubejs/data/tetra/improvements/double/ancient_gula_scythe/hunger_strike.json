@@ -1,34 +1,34 @@
 [
     {
-        "key": "scythe/devour_blood",
+        "key": "scythe/hunger_strike",
         "level": 1,
         "integrity": -1,
         "effects": {
-            "kubejs:devour_blood": [ 0, 1 ]
+            "kubejs:hunger_strike": [ 0, 1 ]
         }
     },
     {
-        "key": "scythe/devour_blood",
+        "key": "scythe/hunger_strike",
         "level": 2,
         "integrity": -1,
         "effects": {
-            "kubejs:devour_blood": [ 0, 2 ]
+            "kubejs:hunger_strike": [ 0, 2 ]
         }
     },
     {
-        "key": "scythe/devour_blood",
+        "key": "scythe/hunger_strike",
         "level": 3,
         "integrity": -1,
         "effects": {
-            "kubejs:devour_blood": [ 0, 3 ]
+            "kubejs:hunger_strike": [ 0, 3 ]
         }
     },
     {
-        "key": "scythe/devour_blood",
+        "key": "scythe/hunger_strike",
         "level": 4,
         "integrity": -1,
         "effects": {
-            "kubejs:devour_blood": [ 0, 5 ]
+            "kubejs:hunger_strike": [ 0, 5 ]
         }
     }
 ]

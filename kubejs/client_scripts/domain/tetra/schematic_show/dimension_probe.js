@@ -2,10 +2,10 @@
 /**
  * @param {SchematicShowStrategyCustomData} customData 
  * @param {Internal.WorkbenchTileUpdateSchematicListJS} event 
- * @param {Internal.ItemStack} targetItemStack 
+ * @param {Internal.ItemStack} stack 
  * @param {Internal.Schematic} schematic 
  */
-function SchematicShowDimensionProbe(customData, event, targetItemStack, schematic) {
+function SchematicShowDimensionProbe(customData, event, stack, schematic) {
     const stages = AStagesClient.getServerAndPlayerClientStages()
     if (stages.contains('ftb_dimension_probe_craft_allow')) return customData.resList.push(schematic)
 }

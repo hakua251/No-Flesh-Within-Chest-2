@@ -34,7 +34,7 @@
             },
             {
                 "type": "tetra:improvement",
-                "improvement": "soul_fire_hone/soul_fire",
+                "improvement": "scythe/devour_blood",
                 "level": 2
             }
         ]
@@ -45,7 +45,7 @@
                 "hammer_dig": "minecraft:gold"
             },
             "improvements": {
-                "gula_hone/devour_blood": 3
+                "scythe/devour_blood": 3
             }
         }
     ]
