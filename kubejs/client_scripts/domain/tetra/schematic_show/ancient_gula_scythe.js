@@ -11,7 +11,6 @@ function SchematicShowAncientGulaScythe(customData, event, stack, schematic) {
     /**@type {Internal.ModularItem} */
     const modularItem = stack.getItem()
     // 非传古武器吸收血肉效率大于10且攻速大于1，理念是需要一个头不是饕餮镰而是其他工具头
-    if (!TetraJSUtils.isModularItem(modularItem)) return
     let devourBloodEfficiency = modularItem.getEffectEfficiency(stack, 'kubejs:devour_blood')
     if (devourBloodEfficiency < 10) return
     let attackSpeedAttributeValue = modularItem.getAttributeValue(stack, 'generic.attack_speed')
@@ -19,4 +18,3 @@ function SchematicShowAncientGulaScythe(customData, event, stack, schematic) {
     event.setResult(true)
 }
 RegistrySchematicShowStrategy('double/ancient_gula_scythe/ancient_gula_scythe', SchematicShowAncientGulaScythe)
-

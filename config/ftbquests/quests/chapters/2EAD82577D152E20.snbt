@@ -1971,32 +1971,9 @@
 			tasks: [{
 				icon: {
 					Count: 1
-					id: "tconstruct:slime_chestplate"
+					id: "brewery:brewfest_shoes"
 					tag: {
 						Damage: 0
-						tic_broken: 0b
-						tic_modifiers: [
-							{
-								level: 1
-								name: "tconstruct:overslime_friend"
-							}
-							{
-								level: 1
-								name: "tconstruct:wings"
-							}
-						]
-						tic_multipliers: {
-							"tconstruct:attack_damage": 0.4f
-						}
-						tic_persistent: { }
-						tic_stats: {
-							"tconstruct:durability": 672.0f
-						}
-						tic_volatile_data: {
-							abilities: 1
-							"tconstruct:elyta": 1b
-							upgrades: 5
-						}
 					}
 				}
 				id: "0B37AF5C30D97CFD"

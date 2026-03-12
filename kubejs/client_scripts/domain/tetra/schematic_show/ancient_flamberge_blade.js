@@ -10,7 +10,7 @@ function SchematicShowAncientFlambergeBlade(customData, event, stack, schematic)
     if (stages.contains('ftb_genesis_process_done')) return customData.resList.push(schematic)
     /**@type {Internal.ModularItem} */
     const modularItem = stack.getItem()
-    // 非传古武器烧伤技能效率需要大于等于15，对应打磨4的改良属性
+    // 非传古武器烧伤技能效率需要大于等于20，对应打磨4的改良属性
     let burnsEfficiency = modularItem.getEffectEfficiency(stack, 'kubejs:burns')
     if (burnsEfficiency < 20) return
     let attackDamageAttributeValue = modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage')

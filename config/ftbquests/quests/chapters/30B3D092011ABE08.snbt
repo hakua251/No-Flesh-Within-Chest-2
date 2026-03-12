@@ -5,7 +5,7 @@
 	group: "0B365C36A50478AA"
 	icon: "kubejs:player_27_injection"
 	id: "30B3D092011ABE08"
-	order_index: 3
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

@@ -92,7 +92,7 @@ function eternalAltarGatewayTypeStackReward(levelIndicator, chaosIndicator, type
     if (Math.random() < 0.2 + 0.01 * levelIndicator) stackList.push(GatewayExtractantMaterialWeightModel.getWeightRandomObj())
     
     let typeStackRewardFunc = GatewayTypeStackRewardMappingModel.getFirstValue(typeIndicator)
-    if (typeStackRewardFunc) stackList.push(typeStackRewardFunc(levelIndicator, chaosIndicator, typeIndicator))
+    if (typeStackRewardFunc) stackList = stackList.concat(typeStackRewardFunc(levelIndicator, chaosIndicator, typeIndicator))
 
     return new GatewayStackListReward(stackList)
 }

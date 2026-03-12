@@ -14,13 +14,15 @@ function RegistrySchematicShowStrategy(key, func) {
 
 TetraJSEvents.workbenchTileUpdateSchematicList(event => {
     const workbenchTile = event.workbenchTile
-    const targetItemStack = workbenchTile.getTargetItemStack()
+    const stack = workbenchTile.getTargetItemStack()
+    if (!stack || stack.isEmpty()) return
+    if (!TetraJSUtils.isModularItem(stack.getItem())) return
     const schematicList = event.schematicList
     const customData = { resList: [] }
     schematicList.forEach(schematic => {
         let key = schematic.key
         if (!SchematicShowStrategy.contains(key)) return customData.resList.push(schematic)
-        SchematicShowStrategy.strategyMap[key].apply(null, [customData, event, targetItemStack, schematic])
+        SchematicShowStrategy.strategyMap[key].apply(null, [customData, event, stack, schematic])
     })
     event.schematicList = customData.resList
 })
