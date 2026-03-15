@@ -14,7 +14,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     if (!TetraJSUtils.isModularItem(modularItem)) return
     let effectLevel = modularItem.getEffectLevel(heldItem, 'kubejs:burns')
     let effectEfficiency = modularItem.getEffectEfficiency(heldItem, 'kubejs:burns')
-    if (effectEfficiency <= 0) return
+    if (effectEfficiency <= 0 || effectLevel <= 0) return
     if (effectLevel >= 10) {
         targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() + Math.floor(effectEfficiency * (effectLevel / 10)) * 20)
     } else if (effectLevel > 0 && effectLevel * 10 > Math.random() * 100) {

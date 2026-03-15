@@ -63,3 +63,5 @@ config/.infinity-temp.json
 /backups
 /visual_keybinder
 config/quick boot.properties
+config/ModernUI/bootstrap.properties
+/holographic_keybinds/

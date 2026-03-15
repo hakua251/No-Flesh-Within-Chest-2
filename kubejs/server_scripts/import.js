@@ -35,8 +35,6 @@ const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const $DamageTypes = Java.loadClass('net.minecraft.world.damagesource.DamageTypes')
 const $GameRules = Java.loadClass('net.minecraft.world.level.GameRules')
 
-const $SimpleMenuProvider = Java.loadClass('net.minecraft.world.SimpleMenuProvider')
-const $ChestCavityScreenHandler = Java.loadClass('net.tigereye.chestcavity.ui.ChestCavityScreenHandler')
 const $ChestCavityEntity = Java.loadClass('net.tigereye.chestcavity.interfaces.ChestCavityEntity')
 
 const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')
@@ -49,7 +47,7 @@ const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellD
 const $TitleManager = Java.loadClass('aurilux.titles.common.core.TitleManager')
 const $TamableAnimal = Java.loadClass('net.minecraft.world.entity.TamableAnimal')
 const $AlcoholManager = Java.loadClass('net.satisfy.brewery.core.effect.alcohol.AlcoholManager')
-const $DoubleBlockHalf = Java.loadClass('net.minecraft.world.level.block.state.properties.DoubleBlockHalf')
+
 const $EvaluateChestCavityJS = Java.loadClass('net.tigereye.chestcavity.compat.kubejs.events.EvaluateChestCavityJS')
 const $WineYears = Java.loadClass('net.satisfy.vinery.core.util.WineYears')
 
@@ -93,20 +91,15 @@ const $Containers = Java.loadClass('net.minecraft.world.Containers')
 const $CustomMachineContainer = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineContainer')
 const $MachineTile = Java.loadClass('fr.frinn.custommachinery.api.machine.MachineTile')
 
-const $BlockPatternBuilder = Java.loadClass('net.minecraft.world.level.block.state.pattern.BlockPatternBuilder')
-const $BlockInWorld = Java.loadClass('net.minecraft.world.level.block.state.pattern.BlockInWorld')
 const $CustomGoal = Java.loadClass('net.liopyu.entityjs.util.ai.CustomGoal')
 
-const $OreDataCapability = Java.loadClass('com.tom.createores.OreDataCapability')
 const $CameraItem = Java.loadClass('io.github.mortuusars.exposure.world.item.camera.CameraItem')
 const $FrameAddedEvent = Java.loadClass('io.github.mortuusars.exposure.forge.api.event.FrameAddedEvent')
 const $ModifyEntityInFrameDataEvent = Java.loadClass('io.github.mortuusars.exposure.forge.api.event.ModifyEntityInFrameDataEvent')
 const $ModifyFrameExtraDataEvent = Java.loadClass('io.github.mortuusars.exposure.forge.api.event.ModifyFrameExtraDataEvent')
 const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer')
 
-const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')
 const $HourglassConfig = Java.loadClass('net.lavabucket.hourglass.config.HourglassConfig')
-
 
 const $DespoilLootModifier = Java.loadClass('com.github.elenterius.biomancy.loot.DespoilLootModifier')
 const $LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTable')
@@ -123,3 +116,5 @@ const $IModularItem = Java.loadClass('se.mickelus.tetra.items.modular.IModularIt
 
 const $FueledToolItem = Java.loadClass('com.jesz.createdieselgenerators.content.tools.FueledToolItem')
 const $AreaEffectCloud = Java.loadClass('net.minecraft.world.entity.AreaEffectCloud')
+const $SimpleContainer = Java.loadClass('net.minecraft.world.SimpleContainer')
+const $ExperienceOrb = Java.loadClass('net.minecraft.world.entity.ExperienceOrb')

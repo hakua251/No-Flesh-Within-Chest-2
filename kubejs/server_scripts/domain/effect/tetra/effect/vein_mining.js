@@ -64,16 +64,18 @@ BlockEvents.broken(event => {
         let veinMiningTarget = veinMiningList.shift()
         let pPos = veinMiningTarget.pos
         let pBlockState = level.getBlockState(pPos)
-        if (pBlockState.is(block) && pBlockState.canHarvestBlock(level, pPos, player)) {
-            heldItem.mineBlock(level, pBlockState, pPos, player)
-            let pEntity = level.getBlockEntity(pPos)
-            pBlockState.block.playerDestroy(level, player, pPos, pBlockState, pEntity, heldItem)
-            pBlockState.onDestroyedByPlayer(level, pPos, player, true, level.getFluidState(pPos))
-            minedBlockCount++
-            if (veinMiningTarget.depth < maxVeinRange) {
-                addValidNeighbors(veinMiningList, new VeinMiningBlockDepthModel(pPos, 0))
-            }
+        if (pBlockState.isAir()) continue
+        if (!pBlockState.is(block.id)) continue
+        if (!pBlockState.canHarvestBlock(level, pPos, player)) continue
+        heldItem.mineBlock(level, pBlockState, pPos, player)
+        let pEntity = level.getBlockEntity(pPos)
+        pBlockState.block.playerDestroy(level, player, pPos, pBlockState, pEntity, heldItem)
+        pBlockState.onDestroyedByPlayer(level, pPos, player, true, level.getFluidState(pPos))
+        minedBlockCount++
+        if (veinMiningTarget.depth < maxVeinRange) {
+            addValidNeighbors(veinMiningList, new VeinMiningBlockDepthModel(pPos, 0))
         }
+
     }
     player.addExhaustion(minedBlockCount * 0.1)
     veinMiningLockMap.delete(uuidStr)
