@@ -2,21 +2,21 @@
     "replace": true,
     "type": "tetra:basic_major_module",
     "slots": [
-        "single/handle"
+        "double/handle"
     ],
     "renderLayer": "lower",
     "improvements": [
-        "tetra:single/rough_handle/",
-        "tetra:single/shared_handle/",
-        "tetra:single/shared/",
+        "tetra:double/grinding_handle/",
+        "tetra:double/shared_handle/",
+        "tetra:double/shared/",
         "tetra:shared/"
     ],
     "variants": [
         {
             "materials": [ "tetra:wood/", "tetra:metal/", "tetra:bone/", "tetra:rod/" ],
-            "key": "rough_handle/",
+            "key": "grinding_handle/",
             "attributes": {
-                "generic.attack_speed": -1.1
+                "generic.attack_speed": -0.5
             },
             "effects": {
                 "kubejs:auto_smash": 1
@@ -40,7 +40,7 @@
                 "availableTextures": [ "default", "metal", "bone", "bright" ],
                 "models": [
                     {
-                        "location": "tetra:item/module/single/handle/basic/"
+                        "location": "tetra:item/module/double/handle/basic/"
                     }
                 ]
             }

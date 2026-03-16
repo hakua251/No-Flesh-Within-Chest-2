@@ -1492,7 +1492,7 @@
   "tetra.stats.puncture_overextend.tooltip": "当饱食度满时，刺穿额外减少护甲 §e%s%%§r 并使流血效果延长 §e%s§r 秒，但使用时总是消耗大量食物/饱和度",
   "tetra.stats.puncture_revenge": "逆转",
   "tetra.stats.puncture_revenge.tooltip": "如果目标护甲高于持有者，则同时施加护甲减少和流血效果",
-  "tetra.stats.quickStrike": "快速打击",
+  "tetra.stats.quickStrike": "迅捷",
   "tetra.stats.quickStrike.tooltip": "将攻击冷却期间造成的最小伤害降低至 §e%s§r",
   "tetra.stats.quick_charge": "快速装填魔咒",
   "tetra.stats.quick_charge.tooltip": "装填时间减少§e%s§r秒",

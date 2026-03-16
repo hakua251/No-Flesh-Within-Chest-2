@@ -1,5 +1,5 @@
 // priority: 500
-MAAEvents.ftbCustomItemFilter('fit_heat_rough_handle', event => {
+MAAEvents.ftbCustomItemFilter('fit_heat_grinding_handle', event => {
     const stack = event.testItem
     const modularItem = stack.getItem()
     if (!TetraJSUtils.isModularItem(modularItem)) return

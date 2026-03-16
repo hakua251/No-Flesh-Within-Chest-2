@@ -24,7 +24,7 @@
             "integrity": 1,
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 0.2
+                    "generic.attack_damage": 0.3
                 },
                 "secondaryAttributes": {
                     "generic.attack_speed": -0.15
@@ -32,8 +32,8 @@
                 "tertiaryEffects": {
 					"generic.attack_speed": 0.1
 				},
-                "durability": 2,
-                "integrity": 1,
+                "durability": 1,
+                "integrity": 0.8,
                 "magicCapacity": 0.5,
                 "glyph": {
                     "textureX": 16

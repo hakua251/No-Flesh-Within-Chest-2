@@ -84,8 +84,8 @@
 				type: "checkmark"
 			}]
 			title: "&6庆贺吧！此乃创世工匠蓝图！&r"
-			x: 20.0d
-			y: 0.0d
+			x: 30.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -111,8 +111,8 @@
 				type: "checkmark"
 			}]
 			title: "改良创世工艺"
-			x: 18.5d
-			y: 0.0d
+			x: 32.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -136,8 +136,8 @@
 				title: "疑虑"
 				type: "checkmark"
 			}]
-			x: 22.0d
-			y: 0.0d
+			x: 32.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]
@@ -1023,7 +1023,7 @@
 				""
 				"我经过发想后，得到的第一个可行工具改良方案为&6耦合器&r。"
 				""
-				"耦合器是一种将绑定结进行现代强化的部件。您需要&6优先为双头工具制作绑定&r，才能够在绑定的基础上进行耦合器的制作。"
+				"耦合器是一种将绑定结进行现代强化的部件。您需要&6优先为双头工具制作绑定&r，才能从中得到耦合器的启发。"
 				""
 				"为了解锁绑定的制作原理图，您需要制作&6织布机&r并将其放在加工台的周围。"
 			]
@@ -1048,9 +1048,9 @@
 			description: [
 				"&7您无法看到日志实属可惜，虽然我可以将日志内容同步到任务系统中，但由于文本量过大，且我尚未明确是何部分会引发此种发想，因此请允许我擅自主张，将自己受日志启发而出的工具类型授予给您，用于创世工序的再现。&r"
 				""
-				"我经过发想后，得到的第二个可行工具改良方案为&6热能手柄&r和&6粗糙手柄&r。"
+				"我经过发想后，得到的第二个可行工具改良方案为&6热能手柄&r和&6研磨手柄&r。"
 				""
-				"这两种手柄是一种将手柄进行现代强化的部件。您需要&6优先为双头工具制作手柄，并且为其进行裹柄&r，才能够在手柄的基础上进行现代化改良。"
+				"这两种手柄是一种将手柄进行现代强化的部件。您需要&6优先为双头工具制作手柄，并且为其进行裹柄&r，才能够在手柄的基础上得到现代化启发。"
 				""
 				"为了解锁裹柄的制作原理图，您需要制作&6高炉&r并将其放在加工台的周围。"
 			]
@@ -1072,11 +1072,28 @@
 		}
 		{
 			dependencies: ["75096F8EF539CB29"]
+			description: [
+				"&7您无法看到日志实属可惜，虽然我可以将日志内容同步到任务系统中，但由于文本量过大，且我尚未明确是何部分会引发此种发想，因此请允许我擅自主张，将自己受日志启发而出的工具类型授予给您，用于创世工序的再现。&r"
+				""
+				"我经过发想后，得到的第三个可行工具改良方案为&6斩首锯齿&r。"
+				""
+				"这是一种将加固件进行现代化强化的技艺。您需要&6优先为剑类工具进行血槽加固&r，才能启发得到斩首锯齿的原理图。"
+				""
+				"为了解锁强化血槽的原理图，您需要制作&6铁砧&r并将其放在加工台的周围。"
+			]
 			id: "573B18502C8359B2"
-			tasks: [{
-				id: "33A396DA9BB68C3A"
-				type: "checkmark"
+			rewards: [{
+				id: "3B3443863F5A11E0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
+			subtitle: "从血槽工艺开始"
+			tasks: [{
+				id: "5418B5A5FF4AD6BD"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			title: "血槽启发"
 			x: 16.5d
 			y: -3.0d
 		}
@@ -1163,7 +1180,7 @@
 			description: [
 				"当您放置了高炉后，在加工台中应已经可见了双头工具手柄特有的&6裹柄&r改进。"
 				""
-				"请将任意双头工具进行裹柄改良，接下来我会告诉您具体如何制作&6热能手柄&r和&6粗糙手柄&r。"
+				"请将任意双头工具进行裹柄改良，接下来我会告诉您具体如何制作&6热能手柄&r和&6研磨手柄&r。"
 			]
 			id: "7F90D10E3909F105"
 			rewards: [{
@@ -1209,11 +1226,52 @@
 		}
 		{
 			dependencies: ["573B18502C8359B2"]
+			description: [
+				"当您放置了铁砧后，在加工台中应已经可见了武器特有的&6强化血槽&r部件。"
+				""
+				"请为任意武器安装强化血槽，接下来我会告诉您具体如何制作&6斩首锯齿&r。"
+			]
 			id: "45FD19BF9DBC0B90"
-			tasks: [{
-				id: "1FD7324183722CFA"
-				type: "checkmark"
+			rewards: [{
+				id: "31D0ACAE08623B4B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
+			subtitle: "为武器进行血槽加固"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						honing_progress: 240
+						id: "b4074ba2-a3a4-42cd-8075-02b1a87b687e"
+						"sword/basic_blade_material": "basic_blade/diamond"
+						"sword/basic_hilt_material": "basic_hilt/stick"
+						"sword/blade": "sword/basic_blade"
+						"sword/blade:arrested": 0
+						"sword/decorative_pommel_material": "decorative_pommel/diamond"
+						"sword/fuller": "sword/reinforced_fuller"
+						"sword/guard": "sword/makeshift_guard"
+						"sword/hilt": "sword/basic_hilt"
+						"sword/makeshift_guard_material": "makeshift_guard/diamond"
+						"sword/pommel": "sword/decorative_pommel"
+						"sword/reinforced_fuller_material": "reinforced_fuller/iron"
+					}
+				}
+				id: "5DE658B7A0CC183E"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[sword/fuller]:[sword/reinforced_fuller]"
+					}
+				}
+				title: "任意完成强化血槽加固的武器"
+				type: "item"
+			}]
+			title: "精研血槽制作技艺"
 			x: 18.5d
 			y: -3.0d
 		}
@@ -1274,7 +1332,7 @@
 			description: [
 				"为了能够让被改造的双头工具承受住手柄的特殊能效，需要&6工具至少具有1000点耐久度&r，但&6工具的攻击力不得高于1&r。"
 				""
-				"这意味着，您可能需要精挑细选材料，并且合理规划工具类型，以保证耐久度何攻击力能够满足要求。"
+				"这意味着，您可能需要精挑细选材料，并且合理规划工具类型，以保证耐久度和攻击力能够满足要求。"
 			]
 			id: "084C51CDAE64FED4"
 			rewards: [{
@@ -1305,7 +1363,7 @@
 					Count: 1
 					id: "maa:kube_custom"
 					tag: {
-						value: "fit_heat_rough_handle:[]"
+						value: "fit_heat_grinding_handle:[]"
 					}
 				}
 				title: "耐久度≥1000且攻击力≤1的双头工具"
@@ -1317,11 +1375,55 @@
 		}
 		{
 			dependencies: ["45FD19BF9DBC0B90"]
+			description: [
+				"为了能够让被改造的武器承受住新加固部件的特殊能效，需要&6武器至少具有2000点耐久度&r，但&6工具的攻击力不得低于9&r。"
+				""
+				"这意味着，您可能需要精挑细选材料，并且合理规划打磨，以保证耐久度和攻击力能够满足要求。"
+			]
 			id: "5A86A72AFC55DF20"
+			rewards: [{
+				id: "14344FB7F765069E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "现代工匠之启迪"
 			tasks: [{
-				id: "39AEB8B2B16F1EFC"
-				type: "checkmark"
+				icon: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						honing_count: 5
+						honing_progress: 435
+						id: "26d48fd7-f851-41c4-8ee8-6c58003b7ef4"
+						repairCount: 1
+						"sword/basic_blade_material": "basic_blade/diamond"
+						"sword/basic_hilt_material": "basic_hilt/stick"
+						"sword/blade": "sword/basic_blade"
+						"sword/blade:arrested": 0
+						"sword/blade:blade_hone/damage": 4
+						"sword/decorative_pommel_material": "decorative_pommel/diamond"
+						"sword/fuller": "sword/reinforced_fuller"
+						"sword/guard": "sword/makeshift_guard"
+						"sword/hilt": "sword/basic_hilt"
+						"sword/hilt:hilt/wrap/dragon_sinew": 0
+						"sword/hilt:hilt_hone/damage": 1
+						"sword/makeshift_guard_material": "makeshift_guard/diamond"
+						"sword/pommel": "sword/decorative_pommel"
+						"sword/reinforced_fuller_material": "reinforced_fuller/iron"
+					}
+				}
+				id: "23E5516CF76A41FB"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "fit_beheading_sawtooth:[]"
+					}
+				}
+				title: "耐久度≥2000且攻击力≥9的武器"
+				type: "item"
 			}]
 			title: "匠艺我所执"
 			x: 20.5d
@@ -1406,7 +1508,7 @@
 		{
 			dependencies: ["084C51CDAE64FED4"]
 			description: [
-				"在达成了之前的条件后，您便可以进行&6热能手柄&r和&6粗糙手柄&r的制造。"
+				"在达成了之前的条件后，您便可以进行&6热能手柄&r和&6研磨手柄&r的制造。"
 				""
 				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
 				""
@@ -1464,7 +1566,7 @@
 								Count: 1b
 								id: "maa:tetra_module"
 								tag: {
-									value: "[double/handle]:[double/rough_handle]"
+									value: "[double/handle]:[double/grinding_handle]"
 								}
 							}
 							{
@@ -1477,11 +1579,98 @@
 						]
 					}
 				}
-				title: "装有热能手柄/粗糙手柄的双头工具"
+				title: "装有热能手柄/研磨手柄的双头工具"
 				type: "item"
 			}]
-			title: "安装热能手柄/粗糙手柄"
+			title: "安装热能手柄/研磨手柄"
 			x: 22.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5A86A72AFC55DF20"]
+			description: [
+				"在达成了之前的条件后，您便可以进行&6斩首锯齿&r的制造。"
+				""
+				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
+				""
+				"只要&6再完成剩余两种发想部件&r，我们便具备了进行创世工序复原的全部资质！"
+			]
+			id: "5AE1E539302CD778"
+			rewards: [{
+				id: "378EECAFC60AA85A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "继创世工匠后"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						honing_count: 5
+						honing_progress: 435
+						id: "f0224125-0439-4d93-8cb6-9aa3664c466e"
+						repairCount: 1
+						"sword/basic_blade_material": "basic_blade/diamond"
+						"sword/basic_hilt_material": "basic_hilt/stick"
+						"sword/beheading_sawtooth_material": "beheading_sawtooth/iron"
+						"sword/blade": "sword/basic_blade"
+						"sword/blade:arrested": 0
+						"sword/blade:blade_hone/damage": 4
+						"sword/decorative_pommel_material": "decorative_pommel/diamond"
+						"sword/fuller": "sword/beheading_sawtooth"
+						"sword/guard": "sword/makeshift_guard"
+						"sword/hilt": "sword/basic_hilt"
+						"sword/hilt:hilt/wrap/dragon_sinew": 0
+						"sword/hilt:hilt_hone/damage": 1
+						"sword/makeshift_guard_material": "makeshift_guard/diamond"
+						"sword/pommel": "sword/decorative_pommel"
+					}
+				}
+				id: "4B54C5AFE180C488"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[sword/fuller]:[sword/beheading_sawtooth]"
+					}
+				}
+				title: "装有斩首锯齿的武器"
+				type: "item"
+			}]
+			title: "安装斩首锯齿"
+			x: 22.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"31C551BCFF060F3B"
+				"729D887900900CCF"
+				"5AE1E539302CD778"
+			]
+			description: [
+				"历经&6模仿 - 发想 - 验证&r后，我现在有把握&6进行创世工序的完整复现&r。"
+				""
+				"或者换句话来说，这并非是对过去创世工序的复刻，而是新世界工匠以自己理解创造的&6新世界工序&r。"
+			]
+			id: "03C7BEEA8B969DD3"
+			rewards: [{
+				id: "5FF93A1775163B20"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "发想已成"
+			tasks: [{
+				elapsedTime: 180L
+				icon: "supplementaries:hourglass"
+				id: "1350CE70DEC5DE4B"
+				title: "准备创世工序"
+				type: "questsadditions:time"
+			}]
+			title: "重现创世工序：准备"
+			x: 25.0d
 			y: -5.0d
 		}
 	]

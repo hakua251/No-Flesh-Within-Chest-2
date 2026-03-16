@@ -7,7 +7,6 @@ ItemEvents.rightClicked('stick', event => {
     const level = event.level
     const server = event.server
     const itemStack = event.item
-
     // /**@type {Internal.ModularItem} */
     // const item = itemStack.getItem()
 

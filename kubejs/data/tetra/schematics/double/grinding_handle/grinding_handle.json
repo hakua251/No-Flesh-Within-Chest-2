@@ -1,7 +1,7 @@
 {
     "replace": true,
     "slots": [
-        "single/handle"
+        "double/handle"
     ],
     "rarity": "inspired",
     "materialSlotCount": 1,
@@ -20,8 +20,8 @@
     "outcomes": [
         {
             "materials": ["tetra:wood/", "tetra:metal/", "tetra:bone/", "tetra:rod/"],
-            "moduleKey": "single/rough_handle",
-            "moduleVariant": "rough_handle/"
+            "moduleKey": "double/grinding_handle",
+            "moduleVariant": "grinding_handle/"
         }
     ]
 }
