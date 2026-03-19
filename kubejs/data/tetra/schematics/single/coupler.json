@@ -7,8 +7,9 @@
     "materialSlotCount": 1,
     "displayType": "minor",
     "glyph": {
-        "textureX": 88,
-        "textureY": 112
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 0,
+        "textureY": 16
     },
     "outcomes": [
         {

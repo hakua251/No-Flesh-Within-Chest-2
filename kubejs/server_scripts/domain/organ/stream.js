@@ -22,6 +22,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
  */
 NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent} event */ event => {
     const entity = event.entity
+    entity.invulnerable
     if (!entity) return
     let customData = {
         thornsDamage: 0

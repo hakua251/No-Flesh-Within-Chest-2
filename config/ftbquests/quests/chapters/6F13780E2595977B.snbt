@@ -73,7 +73,7 @@
 					isServer: false
 					remove: false
 					stage: "ftb_genesis_process_done"
-					title: "&6知晓创世工艺&r"
+					title: "&6通晓创世工艺&r"
 					type: "maa:astages"
 				}
 				{
@@ -86,13 +86,19 @@
 			shape: "square"
 			subtitle: "匠工创世创工匠"
 			tasks: [{
-				id: "1DC3F450BA179042"
-				item: "minecraft:spruce_wood"
+				id: "6C27DDA37278E7DE"
+				item: {
+					Count: 1
+					id: "maa:tetra_improvement_level"
+					tag: {
+						value: "genesis_inspiration>=3"
+					}
+				}
 				type: "item"
 			}]
 			title: "&6庆贺吧！此乃创世工艺！&r"
-			x: 30.5d
-			y: -5.0d
+			x: 31.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -116,8 +122,8 @@
 				title: "疑虑"
 				type: "checkmark"
 			}]
-			x: 31.5d
-			y: -3.5d
+			x: 32.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]

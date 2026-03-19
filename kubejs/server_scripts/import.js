@@ -122,4 +122,3 @@ const $ToolAction = Java.loadClass('net.minecraftforge.common.ToolAction')
 const $NbtUtils = Java.loadClass('net.minecraft.nbt.NbtUtils')
 
 const $OrganManager = Java.loadClass('net.tigereye.chestcavity.chestcavities.json.organs.OrganManager')
-const $ItemModuleMajor = Java.loadClass('se.mickelus.tetra.module.ItemModuleMajor')

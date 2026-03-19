@@ -1,0 +1,8 @@
+[
+    {
+        "key": "genesis_ranged_durability_add_process",
+        "infinite": true,
+        "integrity": 0,
+        "durability": 100
+    }
+]

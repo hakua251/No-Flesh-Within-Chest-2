@@ -2,7 +2,7 @@
     "type": "compactcrafting:miniaturization",
     "recipeSize": 9,
     "layers": [
-    {
+        {
         "type": "compactcrafting:mixed",
         "pattern": [
             ["A","A","A","A","A","A","A","A","A"],
@@ -14,9 +14,8 @@
             ["A","D","D","D","E","D","D","D","A"],
             ["A","B","D","D","E","D","D","B","A"],
             ["A","A","A","A","A","A","A","A","A"]
-        ]
-    }
-],
+        ]}
+    ],
     "catalyst": {
         "id": "kubejs:unstable_matter",
         "Count": 1

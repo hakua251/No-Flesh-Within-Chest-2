@@ -7,9 +7,17 @@ ItemEvents.rightClicked(event => {
     const level = event.level
     const server = event.server
     const itemStack = event.item
-    
+
+    // player.tell(player.getFoodData().getSaturationLevel())
     /**@type {Internal.ModularItem} */
     const item = itemStack.getItem()
+    
+    item.getImprovements(itemStack).forEach(pImprove => {
+        console.log(pImprove.key, pImprove.level)
+        
+    })
+    // TetraJSUtils.addImprovement(itemStack, 'sword/blade', 'genesis_inspiration', 1)
+    // $IModularItem.updateIdentifier(itemStack)
     // TetraDataManager.improvementData.data.forEach((resourceLocation, improvementList) => {
     //     console.log("group" + resourceLocation)
     //     improvementList.forEach(improvement => {
@@ -19,7 +27,6 @@ ItemEvents.rightClicked(event => {
     // item.getModuleFromSlot(itemStack, 'sword/blade').addImprovement(itemStack, 'blade/test', 1)
 
     // itemStack.getOrCreateTag().putInt('sword/blade' + ":" + 'blade/test', 1)
-        // $ItemModuleMajor.addImprovement(itemStack, 'sword/blade', 'blade/test', 1)
     // if (!TetraJSUtils.isModularItem(item)) return
     // item.getModuleAttributes(itemStack).forEach((attri, modifier) => {
     //     console.log(attri.descriptionId, modifier.name, modifier.getAmount())

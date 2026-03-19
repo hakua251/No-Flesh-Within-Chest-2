@@ -1,0 +1,35 @@
+{
+    "replace": true,
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:locked",
+                "key": "tetra:strength_inspiration"
+            },
+            {
+                "type": "tetra:craft_type",
+                "craft": "module"
+            },
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "mr:all_improvement",
+                    "improvement": "genesis_inspiration"
+                }
+            },
+            {
+                "type":"mr:custom",
+                "key":"strength_inspiration"
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "type": "tetra:apply_improvements",
+            "improvements": {
+                "genesis_inspiration": 1
+            }
+        }
+    ]
+}

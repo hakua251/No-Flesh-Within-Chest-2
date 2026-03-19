@@ -12,7 +12,8 @@
     "displayType": "minor",
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
-        "textureX": 144
+        "textureX": 16,
+        "textureY": 16
     },
     "outcomes": [
         {

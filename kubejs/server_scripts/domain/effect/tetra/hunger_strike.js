@@ -5,7 +5,6 @@
 NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} event */ event => {
     /**@type {Player} */
     const sourceEntity = event.source.actual
-    const targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isPlayer()) return
     if (sourceEntity.getAttackStrengthScale(0) < 0.9) return
     let heldItem = sourceEntity.mainHandItem
@@ -22,6 +21,5 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     }
 
     if (effectLevel > 0) sourceEntity.addExhaustion(effectLevel)
-    targetEntity.invulnerableTime = 0
-    targetEntity.attack(targetEntity.damageSources().starve(), sourceEntity.getMaxHealth() * effectEfficiency * 0.1)
+    event.setAmount(event.getAmount() + sourceEntity.getMaxHealth() * effectEfficiency * 0.1)
 })

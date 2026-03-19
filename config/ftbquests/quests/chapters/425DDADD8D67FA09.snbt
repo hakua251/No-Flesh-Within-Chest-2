@@ -529,16 +529,14 @@
 			y: -9.0d
 		}
 		{
-			dependencies: [
-				"1B7AA06C30AD228E"
-				"213A5C217F398F0D"
-			]
+			dependencies: ["213A5C217F398F0D"]
 			description: [
 				"在决定好了该如何摆放这些机械后，为了让几个这些机械形成一个整体，您需要使用&6强力胶右键框选您提前建造摆放好的机械&r，将其粘合成一个整体。"
 				""
 				"强力胶可以广泛用于动力结构的粘合，因此在您明确要构造动力结构时，请备足强力胶。"
 			]
 			id: "47637031D6C57B8A"
+			invisible: true
 			rewards: [
 				{
 					id: "567C6A870B737221"
@@ -546,23 +544,31 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "155EB3C212E51A35"
-					table_id: 7339994821011760246L
-					type: "choice"
+					id: "4F684F1595767B35"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 			]
 			subtitle: "使用强力胶粘合一切"
 			tasks: [{
-				id: "2408C20A41A8E481"
-				item: {
+				count: 1L
+				icon: {
 					Count: 1
 					id: "create:super_glue"
 					tag: {
 						Damage: 0
 					}
 				}
-				type: "item"
+				id: "17C5A9851BDC8FBA"
+				kubeId: "create_intro_task_hard"
+				title: "启用协议"
+				type: "maa:kube"
 			}]
 			title: "组装动力结构"
 			x: 8.5d
@@ -611,10 +617,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: [
-				"298A74965996E72C"
-				"213A5C217F398F0D"
-			]
+			dependencies: ["213A5C217F398F0D"]
 			description: [
 				"不结合实例的去完成前文所述的操作确实有些强人所难。"
 				""
@@ -623,6 +626,7 @@
 				"&6请您制作一门蓝图加农炮&r，我会将前人留存下的实例给予您，并且向您展示如何使用这些经验。"
 			]
 			id: "3E8E055CA54AFDA5"
+			invisible: true
 			rewards: [
 				{
 					id: "54BD4A0043246585"
@@ -654,12 +658,20 @@
 					}
 					type: "item"
 				}
+				{
+					id: "421E7D345BBAFE49"
+					item: "create:schematicannon"
+					type: "item"
+				}
 			]
 			subtitle: "更简单的方式"
 			tasks: [{
-				id: "5AF3DAF34D6A99B2"
-				item: "create:schematicannon"
-				type: "item"
+				count: 1L
+				icon: "create:schematicannon"
+				id: "30B10B9375A95581"
+				kubeId: "create_intro_task_easy"
+				title: "启动备用协议"
+				type: "maa:kube"
 			}]
 			title: "借前人之鉴"
 			x: 8.5d
@@ -776,42 +788,6 @@
 			title: "自行借鉴他人之利"
 			x: 10.5d
 			y: -12.5d
-		}
-		{
-			dependencies: ["213A5C217F398F0D"]
-			description: ["&7** 启动备用协议 **&r"]
-			id: "298A74965996E72C"
-			secret: true
-			subtitle: "为理解能力较弱的玩家准备的道路"
-			tasks: [{
-				icon: "create:wrench"
-				id: "49910F373DA25A01"
-				isServer: false
-				stage: "ftb_mechanical_tutorial_1"
-				title: "启动简化协议"
-				type: "maa:astages"
-			}]
-			title: "似乎这有些太难了"
-			x: 7.0d
-			y: -11.0d
-		}
-		{
-			dependencies: ["213A5C217F398F0D"]
-			description: ["&7** 启动常规协议 **&r"]
-			id: "1B7AA06C30AD228E"
-			secret: true
-			subtitle: "为理解能力较强的玩家准备的道路"
-			tasks: [{
-				icon: "create:wrench"
-				id: "060CFBD834C6CB6C"
-				isServer: false
-				stage: "ftb_mechanical_tutorial_2"
-				title: "常规协议通过"
-				type: "maa:astages"
-			}]
-			title: "似乎难度刚好"
-			x: 7.5d
-			y: -7.5d
 		}
 	]
 	title: "认知：机械"

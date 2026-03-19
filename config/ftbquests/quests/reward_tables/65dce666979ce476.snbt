@@ -5,24 +5,18 @@
 	order_index: 5
 	rewards: [
 		{
-			auto: "invisible"
 			icon: "minecraft:slime_ball"
 			ignore_reward_blocking: true
-			isServer: false
-			remove: false
-			stage: "ftb_mechanical_tutorial_1"
+			kubeId: "unlock_create_intro_task_easy"
 			title: "感觉没听懂，独立完成有点难"
-			type: "maa:astages"
+			type: "maa:kube"
 		}
 		{
-			auto: "invisible"
 			icon: "create:wrench"
 			ignore_reward_blocking: true
-			isServer: false
-			remove: false
-			stage: "ftb_mechanical_tutorial_2"
+			kubeId: "unlock_create_intro_task_hard"
 			title: "我完全明白，我能独立完成"
-			type: "maa:astages"
+			type: "maa:kube"
 		}
 	]
 	title: "机械认知抉择"

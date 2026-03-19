@@ -1,10 +1,8 @@
 {
     "replace": true,
     "slots": [ 
-        "sword/blade",
-        "double/head_left",
-        "double/head_right",
-        "single/head"
+        "bow/stave",
+        "crossbow/stave"
     ],
     "requirement":{
         "type":"mr:custom",
@@ -15,7 +13,7 @@
     "displayType": "major",
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
-		"textureX": 64,
+		"textureX": 32,
         "textureY": 32
     },
     "outcomes": [
@@ -25,7 +23,7 @@
                 "hammer_dig": "minecraft:diamond"
             },
             "improvements": {
-                "genesis_speed_add_process": 1
+                "genesis_durability_add_process": 1
             }
         }
     ]
