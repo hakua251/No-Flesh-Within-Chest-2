@@ -1,0 +1,18 @@
+{
+  "key.showcaser.share_item_in_chat": "分享",
+  "key.showcaser.category": "Show Caser",
+
+  "showcaser.chat.share_message": "%s分享了%s",
+  "showcaser.chat.share_message.recipe": "%s分享了配方%s",
+  "showcaser.chat.share_message.quest": "%s分享了任务%s",
+  "showcaser.chat.share_message.quest.not_visible": "任务 %s 对您不可见",
+
+  "showcaser.chat.share_message.tooltip.unverified": "未被服务器验证",
+  "showcaser.chat.share_message.tooltip.verified": "已被服务器验证",
+
+  "showcaser.chat.banned": "服务器已限制您的资源分享",
+
+  "showcaser.commands.sharing.ban": "玩家 %s 已被限制分享物品",
+  "showcaser.commands.sharing.unban": "玩家 %s 可以再次分享物品",
+  "showcaser.commands.reload": "Show Caser 已成功重新加载存储和配置文件"
+}

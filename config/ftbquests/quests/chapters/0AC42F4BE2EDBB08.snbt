@@ -476,8 +476,8 @@
 			]
 			id: "6DF4D3AE711778B7"
 			rewards: [{
-				id: "100CD6CF9100AC7E"
-				item: "minecraft:diamond"
+				id: "5F54AC86F09A503A"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "誓言"
@@ -618,32 +618,30 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["6DF4D3AE711778B7"]
+			dependencies: ["4E805DA2B8D171E4"]
 			description: [
-				"某些情况下，您和您的朋友互相联系就已经非常困难，更别提交换友谊之戒。"
+				"考虑到这个世界存在太多的未知数，为了确保您能较方便的与您的同伴取得联系，请您尽可能早的制作&6魔镜&r。"
 				""
-				"此时，您需要一个&6虫洞神器&r，其使用&6末影珍珠母&r进行充能。右键使用时，您可以&6选中任何一个位于同一维度的玩家进行传送&r。"
+				"魔镜是一个极其特殊的简易传送装置。直接右键长按使用并不能让您传送到任何一个地方，甚至还会导致镜子破裂——其正确使用方法是，与另一个玩家约定好，让另一位玩家手持魔镜，而您使用魔镜，即可定向的传送到他所在的位置。"
+				""
+				"手持魔镜的玩家会构成一个可传送的维度空间，当您使用魔镜时，&6会查找所有当前手持魔镜的玩家，并且随机选择一人将您传送至他所在的位置&r。"
+				""
+				"因此，&6最为稳定的传送方法便是您和另一位玩家约定好，对方手持魔镜时，您再进行传送&r。"
 			]
-			id: "58681C6EE5964352"
+			id: "24D645FF144CBC13"
 			rewards: [{
-				id: "4BC68D1F53B6D156"
+				id: "424EE80C8E49AD56"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "快捷传送"
+			subtitle: "约定"
 			tasks: [{
-				id: "04FEC07172EF042C"
-				item: {
-					Count: 1
-					id: "wormhole_artifact:wormhole_artifact"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "4733A24A4735AE8B"
+				item: "mirror_mirror_forge:mirror"
 				type: "item"
 			}]
 			x: 1.0d
-			y: -8.5d
+			y: -5.0d
 		}
 	]
 	title: "壹"

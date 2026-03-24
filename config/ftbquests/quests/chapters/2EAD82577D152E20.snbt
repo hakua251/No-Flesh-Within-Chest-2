@@ -1943,7 +1943,13 @@
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
-			icon: "minecraft:nether_star"
+			icon: {
+				Count: 1
+				id: "brewery:brewfest_shoes"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "3F9EFE9B6E8BDAF2"
 			rewards: [
 				{

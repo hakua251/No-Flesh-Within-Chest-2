@@ -47,7 +47,7 @@
 				type: "questsadditions:days"
 			}]
 			x: -0.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["133A28D884F01479"]
@@ -88,7 +88,7 @@
 			}]
 			title: "&c警告信&r"
 			x: -0.5d
-			y: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5035E48ED5283A0A"]
@@ -113,7 +113,7 @@
 			}]
 			title: "制作末地传送门框架"
 			x: 3.5d
-			y: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["028470DB13C00215"]
@@ -140,7 +140,7 @@
 			}]
 			title: "获取嘎枝之心"
 			x: 1.5d
-			y: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5B18501C50C0A384"]
@@ -175,7 +175,7 @@
 			}]
 			title: "为什么你能看到这"
 			x: 5.5d
-			y: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2F9EE70E103CA5D0"]
@@ -206,7 +206,7 @@
 			}]
 			title: "&6好吃&r"
 			x: -0.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2678AE772D365B92"]
@@ -234,7 +234,7 @@
 			}]
 			title: "&6这也好吃！&r"
 			x: 1.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2E34A2B03950E15E"]
@@ -283,7 +283,7 @@
 			}]
 			title: "&6你走过来给我吃！&r"
 			x: 3.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
@@ -317,7 +317,7 @@
 			}]
 			title: "异常维度控制检测机制"
 			x: -0.5d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["74E1C83962A64BB7"]
@@ -345,8 +345,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "&c不说话装死？&r"
-			x: 5.5d
-			y: 2.0d
+			x: 9.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["08BCA79DDB1B235E"]
@@ -369,7 +369,7 @@
 			}]
 			title: "&6协议确认：临时维度扩展&r"
 			x: 1.5d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["28B0B07A19295E57"]
@@ -394,12 +394,12 @@
 			}]
 			title: "约定已达"
 			x: 7.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["75962868AC80D343"]
 			description: [
-				"首先，为了制造&c“维度同步控制系统”&r我需要大量的&6维度碎片&r。"
+				"首先，为了制造&c“维度同步控制系统”&r我需要大量的&6维度碎片&r，用以活化维度泡的边界。"
 				""
 				"维度碎片通常漂泊在各个维度之间的裂缝之中，一般来说极难获取。但部分&6以魔源为生的生物&r能够将部分维度碎片的能量提取出来，也正式因此您可以从这些生物身上&6间接获取到维度碎片&r。"
 				""
@@ -419,10 +419,14 @@
 			}]
 			title: "将维度打上属于我的补丁"
 			x: 3.5d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["00C0ABA6D807D15F"]
+			can_repeat: true
+			dependencies: [
+				"00C0ABA6D807D15F"
+				"3F59D410E064D734"
+			]
 			description: [
 				"每当您提供这些任务物品时，我便会进行一次维度探针的刺穿尝试。"
 				""
@@ -430,23 +434,91 @@
 				""
 				"每次完成维度探针的任务提交，我都需要大概现实时间&6两分钟左右&r进行刺穿尝试，而后您才能再次提交该任务。"
 			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_single"
+				tag: {
+					Damage: 0
+					HideFlags: 1
+					honing_progress: 120
+					id: "a1ec8b86-39fb-4825-9633-0b7a833c1281"
+					"single/basic_handle_material": "basic_handle/netherite"
+					"single/dimension_probe_material": "dimension_probe/netherite"
+					"single/handle": "single/basic_handle"
+					"single/handle:genesis_inspiration": 1
+					"single/head": "single/dimension_probe"
+				}
+			}
 			id: "1A033D35372B167E"
+			repeat_cooldown: 120
 			rewards: [{
-				id: "47323073F7E00B15"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
+				icon: {
+					Count: 1
+					id: "minecraft:crying_obsidian"
+					tag: { }
+				}
+				id: "38398F1AEC1C00EB"
+				ignore_reward_blocking: true
+				kubeId: "try_dimension_pierce"
+				title: "尝试进行维度刺穿"
+				type: "maa:kube"
 			}]
 			shape: "gear"
 			subtitle: "植入维度探针"
-			tasks: [{
-				consume_items: true
-				id: "5E235A8895735800"
-				item: "kubejs:dimension_shards"
-				type: "item"
-			}]
-			title: "&c破坏性实验：部署探针&r"
+			tasks: [
+				{
+					consume_items: true
+					id: "5E235A8895735800"
+					item: "kubejs:dimension_shards"
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1
+						id: "tetra:modular_single"
+						tag: {
+							Damage: 0
+							HideFlags: 1
+							honing_progress: 120
+							id: "a1ec8b86-39fb-4825-9633-0b7a833c1281"
+							"single/basic_handle_material": "basic_handle/netherite"
+							"single/dimension_probe_material": "dimension_probe/netherite"
+							"single/handle": "single/basic_handle"
+							"single/handle:genesis_inspiration": 1
+							"single/head": "single/dimension_probe"
+						}
+					}
+					id: "2088439A46A35BA4"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "maa:tetra_module"
+									tag: {
+										value: "[single/head]:[single/dimension_probe]"
+									}
+								}
+								{
+									Count: 1b
+									id: "maa:durability"
+									tag: {
+										value: ">=5000"
+									}
+								}
+							]
+						}
+					}
+					title: "耐久度大于5000的维度探针"
+					type: "item"
+				}
+			]
+			title: "&c破坏性实验：探针刺穿&r"
 			x: 5.5d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["75962868AC80D343"]
@@ -513,7 +585,7 @@
 			}]
 			title: "最为坚硬的探针"
 			x: 3.5d
-			y: 5.5d
+			y: 7.5d
 		}
 		{
 			id: "0A30963862F5CFBF"
@@ -523,8 +595,253 @@
 				type: "item"
 			}]
 			title: "开启终局"
-			x: 15.5d
-			y: 2.0d
+			x: 18.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1A033D35372B167E"]
+			description: [
+				"现在，&6我们成功刺穿了维度泡&r，创造了一个能够控制另一维度且不受维度虫干扰的窗口。"
+				""
+				"下一步，我们需要在需要控制的维度中部署&c维度同步控制系统&r。"
+			]
+			id: "6EF16BD7804710C9"
+			invisible: true
+			rewards: [{
+				id: "0CCBE3AC4EE3CB3A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "成功刺穿维度"
+			tasks: [{
+				count: 1L
+				icon: "tetra:metal_scrap"
+				id: "35E962D66282623E"
+				kubeId: "dimension_pierce_success"
+				title: "&6维度刺穿成功&r"
+				type: "maa:kube"
+			}]
+			title: "探针刺穿成功"
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6EF16BD7804710C9"]
+			description: [
+				"在近乎无限的维度中均进行这样的工作几乎是不可能的，但好在，我们其实并不需要近乎无限的维度——我们可以通过选定几个特定的维度，进行维度同步设备的部署，进而框定出一个稳定的维度范围，在这个范围中，我们可以有效的控制、改变维度，避免维度虫对我们的影响。"
+				""
+				"为了实行这样的框定，您需要&6前往固定的几个维度进行维度重置&r。"
+				""
+				"维度重置的方法很简单——将&6维度炸弹放入维度，而后右键启动&r。一段时间后，维度便会被维度炸弹回收。"
+				""
+				"维度炸弹将会完全摧毁原维度，不过您不需要担心，在您之后进入时，这些维度会重新生成——只不过不会在原本的位置。"
+			]
+			id: "05FB47DBF2D31DD9"
+			rewards: [{
+				id: "417C925B9084319F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "重置维度"
+			tasks: [{
+				id: "35E9035A1507AD97"
+				item: "infinity:timebomb"
+				type: "item"
+			}]
+			title: "框定有限维度范围"
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["67BDBE441F838A24"]
+			description: [
+				"为了及时修正这个问题，我需要您的一些帮助。"
+				""
+				"请在"
+			]
+			id: "0070FA6B05E5CAB1"
+			rewards: [{
+				id: "55FBDCF962050657"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "借助外力以修正问题"
+			title: "辅助调整计划"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05FB47DBF2D31DD9"]
+			description: ["计算得出，为了进行有限维度框定，您需要使用维度炸弹重置&6编号：19972456&r的维度。"]
+			id: "64139D1152E9DA2B"
+			rewards: [{
+				id: "36C9D59746C5235E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "进行维度重置"
+			tasks: [{
+				dimension: "infinity:19972456"
+				id: "4086C65CF5DDCC9C"
+				title: "前往19972456维度"
+				type: "dimension"
+			}]
+			title: "编号维度：19972456"
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["05FB47DBF2D31DD9"]
+			description: ["计算得出，为了进行有限维度框定，您需要使用维度炸弹重置&6编号：89671254&r的维度。"]
+			id: "0217842380022591"
+			rewards: [{
+				id: "5C3BBD29637B5716"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "进行维度重置"
+			tasks: [{
+				dimension: "infinity:89671254"
+				id: "699372F217301C4B"
+				title: "前往89671254维度"
+				type: "dimension"
+			}]
+			title: "编号维度：89671254"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["05FB47DBF2D31DD9"]
+			description: ["计算得出，为了进行有限维度框定，您需要使用维度炸弹重置&6编号：35466218&r的维度。"]
+			id: "2FB360F38B89A454"
+			rewards: [{
+				id: "75CD9F3CCD53618B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "进行维度重置"
+			tasks: [{
+				dimension: "infinity:35466218"
+				id: "71EB6F420C81956A"
+				title: "前往35466218维度"
+				type: "dimension"
+			}]
+			title: "编号维度：35466218"
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["05FB47DBF2D31DD9"]
+			description: [
+				"检测到编号维度已经被标记为重置，残留的维度虚影将会&6在下一次数据重载时清除&r。"
+				""
+				"感谢您的配合，请您继续重置剩余两个标记维度，以成功进行有限维度框定。"
+			]
+			hide_dependency_lines: true
+			id: "41003F56DB62413B"
+			rewards: [{
+				id: "24AE9A44DFEA34D9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "维度重置成功"
+			tasks: [{
+				icon: "infinity:timebomb"
+				id: "66BBB158BA75314F"
+				isServer: true
+				stage: "ftb_reset_dim_89671254"
+				title: "成功重置89671254维度"
+				type: "maa:astages"
+			}]
+			title: "编号维度已被正确移开"
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["05FB47DBF2D31DD9"]
+			description: [
+				"检测到编号维度已经被标记为重置，残留的维度虚影将会&6在下一次数据重载时清除&r。"
+				""
+				"感谢您的配合，请您继续重置剩余两个标记维度，以成功进行有限维度框定。"
+			]
+			hide_dependency_lines: true
+			id: "458224F0C92DA4A3"
+			rewards: [{
+				id: "69F2FB4373176333"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "维度重置成功"
+			tasks: [{
+				icon: "infinity:timebomb"
+				id: "7EB3E0CAABB26A8E"
+				isServer: true
+				stage: "ftb_reset_dim_35466218"
+				title: "成功重置35466218维度"
+				type: "maa:astages"
+			}]
+			title: "编号维度已被正确移开"
+			x: 14.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["05FB47DBF2D31DD9"]
+			description: [
+				"检测到编号维度已经被标记为重置，残留的维度虚影将会&6在下一次数据重载时清除&r。"
+				""
+				"感谢您的配合，请您继续重置剩余两个标记维度，以成功进行有限维度框定。"
+			]
+			hide_dependency_lines: true
+			id: "37A1BECE99072DDD"
+			rewards: [{
+				id: "2229D1133DE275AE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "维度重置成功"
+			tasks: [{
+				icon: "infinity:timebomb"
+				id: "18ECF06ECED5D845"
+				isServer: true
+				stage: "ftb_reset_dim_19972456"
+				title: "成功重置19972456维度"
+				type: "maa:astages"
+			}]
+			title: "编号维度已被正确移开"
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"37A1BECE99072DDD"
+				"41003F56DB62413B"
+				"458224F0C92DA4A3"
+			]
+			description: [
+				"感谢您的帮助。"
+				""
+				"在您的帮助下，&6我成功的框定了一个有限的维度范围&r，并且&6有效的将维度虫从中清除&r。"
+				""
+				"之后它们再也无法打扰到我们了。"
+			]
+			icon: "kubejs:quantum_dimension_resolver"
+			id: "7531026821B67389"
+			rewards: [{
+				id: "51075750F32769A4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "维度已被稳定"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "39BCCFA97DA24893"
+				item: "kubejs:dimension_shards"
+				type: "item"
+			}]
+			title: "&6有限维度框定成功&r"
+			x: 16.0d
+			y: 6.0d
 		}
 	]
 	title: "贰"

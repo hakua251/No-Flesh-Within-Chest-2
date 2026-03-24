@@ -8,20 +8,23 @@
 // })
 
 ItemEvents.rightClicked(event => {
-    /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    const itemStack = event.item
+
+    switch (level.getDimension()) {
+        case 'minecraft:overworld':
+            player.tell(1)
+            break
+    }
 
     // player.tell(player.getFoodData().getSaturationLevel())
-    /**@type {Internal.ModularItem} */
-    const item = itemStack.getItem()
+
     
-    item.getImprovements(itemStack).forEach(pImprove => {
-        console.log(pImprove.key, pImprove.level)
-    })
+    // item.getImprovements(itemStack).forEach(pImprove => {
+    //     console.log(pImprove.key, pImprove.level)
+    // })
     // TetraJSUtils.addImprovement(itemStack, 'sword/blade', 'genesis_inspiration', 1)
     // $IModularItem.updateIdentifier(itemStack)
     // TetraDataManager.improvementData.data.forEach((resourceLocation, improvementList) => {

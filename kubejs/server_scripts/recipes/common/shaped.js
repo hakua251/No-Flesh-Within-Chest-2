@@ -18,5 +18,11 @@ ServerEvents.recipes(event => {
         ['tetra:metal_scrap', 'minecraft:copper_ingot', 'tetra:metal_scrap'],
         ['tetra:metal_scrap', 'tetra:metal_scrap', '']
     ])
+    event.remove({ id: 'mirror_mirror_forge:mirror_recipe' })
+    event.shaped(Item.of('mirror_mirror_forge:mirror'), [
+        ['', 'minecraft:iron_ingot', ''],
+        ['minecraft:iron_ingot', 'minecraft:light_blue_stained_glass', 'minecraft:iron_ingot'],
+        ['', 'minecraft:iron_ingot', '']
+    ])
 })
 

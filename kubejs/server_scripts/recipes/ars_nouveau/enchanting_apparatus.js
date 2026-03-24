@@ -31,4 +31,12 @@ ServerEvents.recipes(event => {
         1000,
         false
     )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        ['minecraft:dragon_breath', 'minecraft:ghast_tear', 'minecraft:echo_shard', 'minecraft:resin_clump'],
+        'ars_nouveau:source_jar',
+        'infinity:timebomb',
+        3000,
+        false
+    )
 })

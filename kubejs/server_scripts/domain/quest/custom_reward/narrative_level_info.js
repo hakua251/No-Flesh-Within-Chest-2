@@ -13,7 +13,6 @@ FTBQuestsEvents.customReward('narrative_level_info', event => {
 // 返航任务
 MAAEvents.ftbQuestCheckRepeatable('1504B976EC5B23D9', event => {
     const teamData = event.teamData
-    // 警告信完成则停止循环任务
     if (!teamData.isCompletedById('028470DB13C00215')) return
     event.cancel()
 })
