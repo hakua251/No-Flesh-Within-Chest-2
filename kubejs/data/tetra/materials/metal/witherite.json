@@ -1,0 +1,27 @@
+{
+    "key": "witherite",
+    "category": "metal",
+    "primary": 4.1,
+    "secondary": 2.1,
+    "tertiary": 3.2,
+    "durability": 3120,
+    "integrityCost": 4,
+    "integrityGain": 4,
+    "magicCapacity": 80,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 5,
+    "tints": {
+        "glyph": "6d7684",
+        "texture": "5f6b7d"
+    },
+    "textures": [
+        "heavy",
+        "metal"
+    ],
+    "material": {
+        "items": [ "cataclysm:witherite_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

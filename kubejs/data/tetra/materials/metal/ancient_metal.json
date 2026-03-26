@@ -1,0 +1,27 @@
+{
+    "key": "ancient_metal",
+    "category": "metal",
+    "primary": 9.8,
+    "secondary": 2.1,
+    "tertiary": 1.6,
+    "durability": 633,
+    "integrityCost": 4,
+    "integrityGain": 2,
+    "magicCapacity": 85,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 4,
+    "tints": {
+        "glyph": "f0d891",
+        "texture": "d9bf73"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "cataclysm:ancient_metal_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

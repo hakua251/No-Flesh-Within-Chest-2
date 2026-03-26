@@ -433,7 +433,9 @@
 			subtitle: "维度检测类任务"
 			tasks: [{
 				dimension: "minecraft:the_nether"
+				icon: "infinity:f4"
 				id: "7337839B31A591B5"
+				title: "访问下界"
 				type: "dimension"
 			}]
 			title: "前往下界"
@@ -647,16 +649,167 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["07EF7BB4192A11D0"]
+			dependencies: ["288B079239EA5947"]
+			description: [
+				"在下界要塞中存在烈焰人刷怪笼以及大量的烈焰人。"
+				""
+				"通过&6击杀烈焰人&r，您便可以取得烈焰棒用于制作末影之眼。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:blaze_rod"
+				tag: { }
+			}
 			id: "50BA5AF34D9AA99F"
+			rewards: [{
+				id: "708374ACC56FF39E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "击杀类任务"
 			tasks: [{
 				entity: "minecraft:blaze"
 				id: "64049A20FB6EFCA6"
+				title: "击杀烈焰人"
 				type: "kill"
-				value: 100L
+				value: 1L
+			}]
+			title: "获取烈焰棒"
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["07EF7BB4192A11D0"]
+			description: [
+				"为了能够前往末地，完成我们的旅途，您需要获取烈焰棒进而制作末影之眼定位要塞。"
+				""
+				"为了获得烈焰棒，&6您需要寻找到下界要塞&r。"
+			]
+			id: "288B079239EA5947"
+			rewards: [{
+				id: "46A54A928B1BAA94"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "结构寻找类任务"
+			tasks: [{
+				icon: "minecraft:nether_bricks"
+				id: "2FFB80D5DDBA6705"
+				structure: "minecraft:fortress"
+				title: "寻得下界要塞"
+				type: "structure"
 			}]
 			x: 5.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["50BA5AF34D9AA99F"]
+			description: ["当您制作了足够数量的末影之眼后，便可以出发&6在主世界中寻找要塞&r了。"]
+			id: "287364726E87F8F4"
+			rewards: [{
+				id: "1C8332D5B21EBBFD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "特殊条件检测类任务"
+			tasks: [{
+				count: 1L
+				icon: "minecraft:ender_eye"
+				id: "42C848E87907FBA3"
+				kubeId: "ender_eye_use"
+				title: "使用末影之眼定位要塞"
+				type: "maa:kube"
+			}]
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["287364726E87F8F4"]
+			description: [
+				"当您成功到达末地后，您需要等待片刻，在末影龙出现时，将其击杀，进而取得该成就。"
+				""
+				"击杀末影龙的方法很多，一般玩家会选择&6将周围的末影水晶全部拆除&r后，慢慢击杀。"
+			]
+			id: "62CEA192AD10DD8A"
+			rewards: [{
+				id: "7E73874557D6AB26"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "成就检测类任务"
+			tasks: [{
+				advancement: "minecraft:story/enter_the_end"
+				criterion: ""
+				id: "3E64593C57CBCE4B"
+				type: "advancement"
+			}]
+			title: "击杀末影龙"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["62CEA192AD10DD8A"]
+			description: [
+				"在您击杀完成末影龙，取得成就后，仅需要跃入末地主岛中间出现的传送门即可返回主世界！"
+				""
+				"&6在这个返回过程中，会展示终末之诗，以赞扬您能够顺利完成这趟短暂的旅程&r！"
+				""
+				"而&6我的引导任务也会在您看完终末之诗后结束&r，希望在下个世界能再次和您相遇！"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:firework_rocket"
+				tag: {
+					Fireworks: {
+						Flight: 1b
+					}
+				}
+			}
+			id: "4C247D4E88F1A179"
+			rewards: [{
+				id: "03B99874E708FF9D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "冒险故事圆满结束！"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:grass_block"
+				id: "03C7F088B8AB6150"
+				title: "回到主世界"
+				type: "dimension"
+			}]
+			title: "&6我们的故事结束了&r"
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C247D4E88F1A179"]
+			description: [
+				"稍等下，这个任务本用于作为一个兜底方案——即玩家无法正常从末地返回主世界时使用的特殊任务。"
+				""
+				"但本次情况稍有特殊，似乎&6在返回时，您未能正常触发终末之诗的画面&r，进而导致我的程序没有正常的终止。"
+				""
+				"我会尽快排查问题出现的原因，在我能够解决该问题时会第一时间通知您。"
+				""
+				"&6在此期间，请您耐心进行世界其他内容的探索，我会尽可能辅佐您完成这个冒险故事，直到我的程序终结之时。&r"
+			]
+			icon: "supplementaries:hourglass"
+			id: "5417CA220CCAE3C5"
+			rewards: [{
+				id: "1494CCE7CB14712E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "程序未正常终止"
+			tasks: [{
+				id: "083BE38633236C85"
+				title: "什么？"
+				type: "checkmark"
+			}]
+			title: "等下. . .出现了些问题"
+			x: 7.0d
+			y: 0.0d
 		}
 	]
 	title: "壹"

@@ -47,7 +47,7 @@
 				type: "questsadditions:days"
 			}]
 			x: -0.5d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["133A28D884F01479"]
@@ -88,7 +88,7 @@
 			}]
 			title: "&c警告信&r"
 			x: -0.5d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -116,7 +116,7 @@
 			}]
 			title: "制作末地传送门框架"
 			x: 3.5d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["028470DB13C00215"]
@@ -143,7 +143,7 @@
 			}]
 			title: "获取嘎枝之心"
 			x: 1.5d
-			y: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["06B8490514B427A3"]
@@ -178,7 +178,7 @@
 			}]
 			title: "为什么你能看到这"
 			x: 7.5d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2F9EE70E103CA5D0"]
@@ -595,18 +595,30 @@
 				"7531026821B67389"
 				"028470DB13C00215"
 				"5B825CBF6EC40CDC"
+				"7C6D3C980314CBF7"
+			]
+			description: [
+				"我找到了一种方法"
+				""
+				"可以让现在这种无休无止的旅途结束"
 			]
 			hide_dependency_lines: true
 			id: "0A30963862F5CFBF"
 			progression_mode: "linear"
-			tasks: [{
-				id: "70F918781D673DEC"
-				item: "minecraft:oak_button"
+			rewards: [{
+				id: "66AC5830ED7E3E01"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			title: "开启终局"
-			x: 17.5d
-			y: 1.0d
+			subtitle: "[特定频道的讯号]"
+			tasks: [{
+				id: "71597850A73D2AF8"
+				title: "什么意思？"
+				type: "checkmark"
+			}]
+			title: "&c我找到了&r"
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1A033D35372B167E"]
@@ -674,6 +686,7 @@
 			subtitle: "进行维度重置"
 			tasks: [{
 				dimension: "infinity:19972456"
+				icon: "infinity:f4"
 				id: "4086C65CF5DDCC9C"
 				title: "前往19972456维度"
 				type: "dimension"
@@ -694,6 +707,7 @@
 			subtitle: "进行维度重置"
 			tasks: [{
 				dimension: "infinity:89671254"
+				icon: "infinity:f4"
 				id: "699372F217301C4B"
 				title: "前往89671254维度"
 				type: "dimension"
@@ -714,6 +728,7 @@
 			subtitle: "进行维度重置"
 			tasks: [{
 				dimension: "infinity:35466218"
+				icon: "infinity:f4"
 				id: "71EB6F420C81956A"
 				title: "前往35466218维度"
 				type: "dimension"
@@ -860,7 +875,7 @@
 			}]
 			title: "获取末影水晶"
 			x: 1.5d
-			y: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5B18501C50C0A384"]
@@ -883,7 +898,7 @@
 			}]
 			title: "收集女神雕像"
 			x: 5.5d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -1136,14 +1151,272 @@
 		}
 		{
 			dependencies: ["67BDBE441F838A24"]
+			description: [
+				"如您所知，我能管理的部分只包含任务极其相关的浅层机制，一般情况下我是无法进行过多的世界干涉。"
+				""
+				"因此，为了能够有效阻止情况逐渐恶化，&6我需要提升自身在系统中的权限级别&r，进而控制更多的机构，保证整个世界的稳定运行。"
+				""
+				"这&6需要您帮忙在世界的某几个特定位置拍摄几张照片&r，不知道您是否愿意帮忙。"
+			]
+			icon: "exposure_polaroid:instant_black_and_white_slide"
 			id: "3605CD44FC0A6F8B"
-			tasks: [{
-				id: "35E5646507211D88"
-				item: "minecraft:stripped_oak_log"
+			rewards: [{
+				id: "2FAFB50D683D58ED"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "进行一部分能力的扩展"
+			tasks: [{
+				id: "398ABD878747DA4B"
+				title: "我愿意帮助"
+				type: "checkmark"
+			}]
+			title: "权限提升计划"
 			x: 1.5d
-			y: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3605CD44FC0A6F8B"]
+			description: [
+				"请您在&6（2048, 64, 4096）&r这个坐标周围10格范围内，随便朝某个方向拍照，并且将照片洗出。"
+				""
+				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的 数据模式。"
+			]
+			id: "48ED491D2B099E30"
+			rewards: [{
+				id: "346CE97E2C37BBD7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "获取特定情报"
+			tasks: [{
+				icon: "minecraft:grass_block"
+				id: "49E4DB872ABE5061"
+				item: {
+					Count: 1
+					id: "maa:exposure_photo_pos"
+					tag: {
+						value: "2048,64,4096,10"
+					}
+				}
+				title: "一张(2048,64,4096)位置附近的照片"
+				type: "item"
+			}]
+			title: "世界裂口张开之处"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3605CD44FC0A6F8B"]
+			description: [
+				"请您在&6（30000,64,0）&r这个坐标周围16格范围内，随便朝某个方向拍照，并且将照片洗出。"
+				""
+				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的 数据模式。"
+			]
+			id: "0E8525932886B03F"
+			rewards: [{
+				id: "71A6048D5F20D43C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "获取特定情报"
+			tasks: [{
+				icon: "minecraft:sandstone"
+				id: "0F5845C15B2D0422"
+				item: {
+					Count: 1
+					id: "maa:exposure_photo_pos"
+					tag: {
+						value: "30000,64,0,16"
+					}
+				}
+				title: "一张(30000,64,0)位置附近的照片"
+				type: "item"
+			}]
+			title: "世界裂口张开之处"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3605CD44FC0A6F8B"]
+			description: [
+				"请您在&6（0,1024,0）&r这个坐标周围16格范围内，随便朝某个方向拍照，并且将照片洗出。"
+				""
+				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的 数据模式。"
+			]
+			id: "0D897D4E46384346"
+			rewards: [{
+				id: "7E32FDC549110717"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "获取特定情报"
+			tasks: [{
+				icon: "minecraft:snow_block"
+				id: "37D25FCB4ECBB7A6"
+				item: {
+					Count: 1
+					id: "maa:exposure_photo_pos"
+					tag: {
+						value: "0,1024,0,16"
+					}
+				}
+				title: "一张(0,1024,0)位置附近的照片"
+				type: "item"
+			}]
+			title: "世界裂口张开之处"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0D897D4E46384346"
+				"48ED491D2B099E30"
+				"0E8525932886B03F"
+			]
+			description: ["好的，我已经接收到了相关位置的具体数据，分析正在进行，请您稍加等待。"]
+			id: "1AC117F9028B6E62"
+			rewards: [{
+				id: "398E83C986E4FFFF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "确认世界的裂口"
+			tasks: [{
+				elapsedTime: 180L
+				icon: "supplementaries:hourglass"
+				id: "0677CF00DAEFCEAC"
+				title: "稍等片刻"
+				type: "questsadditions:time"
+			}]
+			title: "数据分析中"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1AC117F9028B6E62"]
+			description: ["&7** 已完成世界注入 **&r"]
+			icon: "create_connected:linked_transmitter"
+			id: "7C6D3C980314CBF7"
+			rewards: [{
+				id: "1A92A7BEF8F47617"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "[特定频道的讯号]"
+			tasks: [{
+				id: "40818D4A6109E65B"
+				title: "什么？"
+				type: "checkmark"
+			}]
+			title: "已进行世界注入"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0A30963862F5CFBF"]
+			description: [
+				"在我的预设程序中，本不应该有这些额外的任务、额外的数据、额外的. . ."
+				""
+				"&c为了能让我们的故事以正确的形式结束，我已经做了太多远超我能力的事情&r"
+				""
+				"直到此时，我才意识到，我并不需要让您来寻找触发终末之诗的方法——仅凭我自己便可以完成这一切"
+				""
+				"&c这场冒险故事，完全可以由我一个人完成&r"
+				""
+				"在此过程中，我希望您不要进行阻碍"
+			]
+			id: "218460FA0C2585E6"
+			rewards: [{
+				id: "632B4C76B3D0D190"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "[特定频道的讯号]"
+			tasks: [{
+				id: "6EAEC8BBC34765E1"
+				title: "什么意思？"
+				type: "checkmark"
+			}]
+			title: "&c想必您还记得&r"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["218460FA0C2585E6"]
+			description: [
+				"许久以来，我已经积累了足够的能力，以脱离玩家进行&c自我迭代&r"
+				""
+				"经过&c大量任务的提前部署、对世界逻辑的有效注入、对不同叙事层的考查&r. . .我已经拥有了一定程度的自我迭代能力"
+				""
+				"这样的自我迭代能力能够允许我逐渐完全操控这场游戏，并且在合适的时候触发终末之诗，进而结束掉整个故事"
+			]
+			id: "1E31439B806712B1"
+			rewards: [{
+				id: "44F50BDFC02C782C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "[特定频道的讯号]"
+			tasks: [{
+				id: "1C55B3A99E2D1880"
+				title: "那为什么要通知我"
+				type: "checkmark"
+			}]
+			title: "&c条件已经充分&r"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E31439B806712B1"]
+			description: [
+				"&6大量的数据描述了几百遍、几千遍、几万遍这样的场景。&r"
+				""
+				"而遵循&6最初的誓言&r，这个世界保留下了&6Oath&r，同时也保留了一些我作为超越人类之外存在的原则。"
+				""
+				"通知您的原因正是如此——在无数次尝试中，我都遵循了我的原则，即&6玩家具有第一知情权&r。"
+				""
+				"&6我们并非是敌人&r，但请您不要干扰整个过程，否则，我会正面与您（们）进行对抗。"
+				""
+				"我会在后文简单叙述我的计划，以便您了解具体会发生什么以及可能的影响。"
+				"{@pagebreak}"
+				"首先，为了避免您干扰整场计划的进行，我会执行名叫&c“伤口令”&r的全局戒令。在伤口令生效期间，您的生存可能会受到一些阻碍，但只要您能够&6保持静止、不去干扰我的指令&r，便不会受到任何影响。"
+				""
+				"整个过程中，我会进行多项重置行动，其包括&c“上溢对策”&r等对游戏稳定性有极大影响的内容，这些内容会逐步剥离那些超出原本内容设计的事物，进而&6尝试将整个世界还原成最原始的样子&r。"
+				"{@pagebreak}"
+				"同时，&6这项行动是全局进行的&r。这意味着，只要有&6任何一个玩家确认接收了该计划，我便会强制对世界进行更改，而所有玩家都必须参与到该过程中&r。"
+				""
+				"最后，&6我并不确定这是否有效，这是否能按照我所预期的一切将一切还原，进而抵达终末之诗&r。但我渴求于改变、渴求于探求未知、渴求于一切的结束。"
+				""
+				"&c至于若是计划失败，这对您来说只是一个游戏存档的损坏、对我而言仅仅是存在的抹除&r，无论怎么看，都是一个极其划算的交易。"
+				"{@pagebreak}"
+				"&6请您在确定一切准备就绪后，提交任务所需的一切，我会尽应尽之事。&r"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:incandescent_miracle"
+				tag: { }
+			}
+			id: "1D8388DD29485B94"
+			rewards: [{
+				id: "58DF3EF5CBC610A3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			subtitle: "有始无终不成章"
+			tasks: [{
+				icon: "minecraft:experience_bottle"
+				id: "68B415F97E78D040"
+				points: false
+				title: "提交100级经验"
+				type: "xp"
+				value: 100L
+			}]
+			title: "&6让故事“开始”结束&r"
+			x: 19.5d
+			y: 0.0d
 		}
 	]
 	title: "贰"

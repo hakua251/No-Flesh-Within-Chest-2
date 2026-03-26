@@ -863,7 +863,7 @@
 				elapsedTime: 600L
 				icon: "supplementaries:hourglass"
 				id: "0AA8EC9B7361AA3A"
-				title: "可以理解"
+				title: "稍等片刻"
 				type: "questsadditions:time"
 			}]
 			title: "发生了什么？"

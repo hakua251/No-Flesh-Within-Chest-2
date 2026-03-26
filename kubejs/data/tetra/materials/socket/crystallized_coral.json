@@ -1,0 +1,29 @@
+{
+    "key": "crystallized_coral",
+    "hidden": true,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 1.0,
+    "tertiary": 0,
+    "durability": 220,
+    "integrityCost": -1,
+    "integrityGain": 0,
+    "magicCapacity": 0,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {},
+    "tints": {
+        "glyph": "d48996",
+        "texture": "e3a1ad"
+    },
+    "textures": [
+        "default"
+    ],
+    "experienceCost": 5,
+    "material": {
+        "items": [
+            "cataclysm:crystallized_coral_fragments",
+            "cataclysm:crystallized_coral"
+        ]
+    }
+}

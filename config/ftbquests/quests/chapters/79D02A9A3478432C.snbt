@@ -928,7 +928,7 @@
 				elapsedTime: 600L
 				icon: "supplementaries:hourglass"
 				id: "70E0F201C2EAA909"
-				title: "静候佳音"
+				title: "稍等片刻"
 				type: "questsadditions:time"
 			}]
 			title: "地幔能提取危害分析"

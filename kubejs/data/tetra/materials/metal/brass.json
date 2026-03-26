@@ -1,0 +1,27 @@
+{
+    "key": "brass",
+    "category": "metal",
+    "primary": 4.2,
+    "secondary": 1.9,
+    "tertiary": 4.9,
+    "durability": 632,
+    "integrityCost": 1,
+    "integrityGain": 6,
+    "magicCapacity": 130,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 7,
+    "tints": {
+        "glyph": "f8ca67",
+        "texture": "edc161"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "create:brass_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:gold"
+    }
+}

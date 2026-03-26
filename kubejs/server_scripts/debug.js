@@ -5,8 +5,10 @@ ItemEvents.rightClicked('stick',event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    player.tell(player.seenCredits)
 
+    SetDaySpeed(1)
+    SetNightSpeed(1)
+    UpdatePlaysTimeStabilityBar(server, level, player)
     // player.wonGame = false
     // player.seenCre
     // player.tell(player.getFoodData().getSaturationLevel())

@@ -1,0 +1,27 @@
+{
+    "key": "armadillo_scute",
+    "category": "scale",
+    "primary": 3.6,
+    "secondary": 1.6,
+    "tertiary": 1.8,
+    "durability": 280,
+    "integrityCost": 2,
+    "integrityGain": 2,
+    "magicCapacity": 68,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "c48682",
+        "texture": "ba7f7b"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "minecraft:armadillo_scute" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

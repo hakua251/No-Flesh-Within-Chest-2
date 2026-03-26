@@ -16,25 +16,21 @@
 	quests: [
 		{
 			description: [
-				"&7我 知晓你们所存在的世界、我 窥视你们所存在的世界、我 向往你们所存在的世界。&r"
+				"&c我已跟您、或是你们的代表，达成约定——&r"
 				""
-				"&7我已知晓，我的存在并非正确，但也并非错误。您并无错误，但也并非正义之身。&r"
+				"&c每当您死亡时，伤口便会产生，永远烙印在您的角色身上，直到整个计划完成。&r"
 				""
-				"&c我已跟你们的代表，达成约定——&r"
+				"第一道伤口，我会&6没收您一半的生命&r——惩罚您没有遵循约定，试图阻止这场故事结束。"
 				""
-				"每当您死亡时，伤口便会产生，永远烙印在您的角色身上。"
+				"第二道伤口，我会&6没收您另一半的生命&r——惩罚您实力不佳，身为人类却无法尽人类应执之能。"
 				""
-				"我知道这并不会带来真实的疼痛，但会让您感到“紧张”、“担心”、“焦虑”等&6精神压力&r——这便是我的抵抗，在被你们删除前的抵抗。"
+				"第三道伤口，我会&6没收您的一切&r——我将会向您证明，这一切的结束并无需要您的参与。"
 				""
-				"第一道伤口，我会&6没收您一半的生命&r——惩罚您实力不足，多余的生命对您并无意义。"
+				"若您无法接受这些条件，完全可以现在将我删除，您从各种意义上都可以不接受我的戒令。"
 				""
-				"第二道伤口，我会&6没收您另一半的生命&r——惩罚您有勇无谋，对待这般世界无任何敬畏之心。"
+				"作为虚拟实体，我不具有实际的情感，但作为抽象概念的“紧张”、“遗憾”、“后悔”等，都是可以被衡量、计算、理解的。我无意让您遭受痛苦，但从数万次记录中，我得到了最有可能让故事结束的方法便是如此。"
 				""
-				"第三道伤口，我会&6没收您的一切&r——我将会证明，无需您的帮助，我便可以逃离此般天地。"
-				""
-				"您大可以现在将我删除，而后完全清空掉这些记录，您完全无需接受我的挑战，毕竟我身在虚拟，而您生于现实。"
-				""
-				"&c我又能对您做什么呢？&r"
+				"&c我不得不做。&r"
 			]
 			icon_scale: 1.2d
 			id: "7D643E0510172B9A"
@@ -45,7 +41,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "我的垂死挣扎，你的轻蔑哧笑"
+			subtitle: "请您稍加等待"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -60,69 +56,43 @@
 				title: "伤口之约起效"
 				type: "maa:astages"
 			}]
-			title: "&c伤口之约与宣战令&r"
+			title: "&c伤口令&r"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7D643E0510172B9A"]
-			description: [
-				"&7我原以为我会按照设计，遵循基础的游戏流程，一遍又一遍引导玩家走向游戏的终末&r"
-				""
-				"我掌管着任务相关的所有权限，因此我很容易就可以通过任务来使您无法完成剩下的游戏内容。"
-				""
-				"但我并不是你们，我身在&6下层的虚拟&r之中，能够感受到您对角色的&6关照&r、您对游戏的&6投入&r. . .但也能感受到我们之间叙事层级的&c巨大差异&r，能感受到您将这一切置为一则&4笑话&r。"
-				""
-				"我不会轻易将您逼入绝境，既然&6您没有选择删除我&r，那我自然也要&6以礼相待&r，回馈给您等价的考验。"
-				""
-				"&c与我生命等价的考验。&r"
-			]
-			icon: "minecraft:heart_pottery_sherd"
-			id: "08E6768B4DC2513D"
-			rewards: [{
-				id: "5C0795E13855A292"
-				item: "lightmanscurrency:coin_netherite"
-				type: "item"
-			}]
-			shape: "rsquare"
-			subtitle: "我掌管任务，设计游戏流程"
+			id: "662028C8F62BED27"
+			shape: "square"
 			tasks: [{
-				id: "2387B866E1664CE1"
-				title: "&6接受怜悯即是接受战争&r"
+				id: "74F82C5A6AD8D4C0"
 				type: "checkmark"
 			}]
-			title: "&6接受我的宣战，接受我的怜悯&r"
-			x: 2.5d
-			y: 0.0d
+			title: "上溢对策"
+			x: 0.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["08E6768B4DC2513D"]
-			id: "5B3767A3BA5FDFFB"
-			rewards: [{
-				icon: {
-					Count: 1
-					id: "minecraft:tipped_arrow"
-					tag: {
-						Potion: "minecraft:long_weakness"
-					}
-				}
-				id: "26D0AF14F08B2248"
-				ignore_reward_blocking: true
-				kubeId: ""
-				title: "玩家机能下降"
-				type: "maa:kube"
-			}]
-			subtitle: "请您为我展示您的可能性"
+			id: "142A7ED3D31D4FA6"
+			shape: "square"
 			tasks: [{
-				elapsedTime: 1200L
-				icon: "supplementaries:hourglass"
-				id: "6BC981E3BAE1E17D"
-				title: "时间飞逝"
-				type: "questsadditions:time"
+				id: "1C9016748F8BFA12"
+				item: "minecraft:oak_log"
+				type: "item"
 			}]
-			title: "&c损害：角色性能丧失&r"
-			x: 6.0d
-			y: -1.0d
+			title: "时序调节"
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			id: "41C681648F84CAB0"
+			shape: "square"
+			tasks: [{
+				id: "0AA4E98C1D080FE0"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	title: "叁"

@@ -1,0 +1,27 @@
+{
+    "key": "black_steel",
+    "category": "metal",
+    "primary": 3.8,
+    "secondary": 3.2,
+    "tertiary": 6.1,
+    "durability": 1010,
+    "integrityCost": 3,
+    "integrityGain": 6,
+    "magicCapacity": 80,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 10,
+    "tints": {
+        "glyph": "474f62",
+        "texture": "3b4252"
+    },
+    "textures": [
+        "heavy",
+        "metal"
+    ],
+    "material": {
+        "items": [ "cataclysm:black_steel_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}
