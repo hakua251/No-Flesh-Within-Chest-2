@@ -1,14 +1,104 @@
 // priority: 500
+/**
+ * @type {ConditionStrategyModel[]}
+ */
+const KeepContactStrategyList = []
 MAAEvents.textInputTaskSubmit('keep_contact', (event) => {
     const player = event.player
-    const inputText = event.inputText.toLowerCase()
+    const inputText = event.inputText.trim().toLowerCase()
     const teamData = event.teamData
     const task = event.task
-    if (inputText.includes('im') && inputText.includes('sponsor')) {
-        MAAUtils.onKubeTaskFinish('sponsor_task', player, (pTask, pPlayer, pTeamData) => {
-            pTeamData.addProgress(pTask, 1)
-        })
-        return
+    if (AStages.serverHasStage('ftb_final_timer_start', event.server)) return
+    for (let strategy of KeepContactStrategyList) {
+        if (strategy.test([player, inputText, teamData, task])) {
+            strategy.run([player, inputText, teamData, task])
+        }
     }
-    teamData.addProgress(task, 1)
 })
+
+/**
+ * 
+ * @param {function(Player, String, TeamData, Internal.Task): boolean} testFunc 
+ * @param {function(Player, String, TeamData, Internal.Task): void} applyFunc 
+ * @param {number} priority 
+ */
+function RegisterKeepContactStrategy(testFunc, applyFunc, priority) {
+    KeepContactStrategyList.push(new ConditionStrategyModel(testFunc, applyFunc).setPriority(priority))
+}
+
+RegisterKeepContactStrategy(
+    () => true,
+    (player, inputText, teamData, task) => teamData.addProgress(task, 1),
+    0
+)
+
+// todo
+RegisterKeepContactStrategy(
+    () => true,
+    (player, inputText, teamData, task) => {
+        if (inputText.includes('im') && inputText.includes('sponsor')) {
+            MAAUtils.onKubeTaskFinish('sponsor_task', player, (pTask, pPlayer, pTeamData) => {
+                pTeamData.addProgress(pTask, 1)
+            })
+            return
+        }
+    },
+    100
+)
+
+
+// 创世工匠挑战
+RegisterKeepContactStrategy(
+    () => true,
+    (player, inputText, teamData, task) => {
+        if (inputText.startsWith('19972456') || inputText.includes('tinker')) {
+            MAAUtils.onKubeTaskFinish('tinker_challenge_1', player, (pTask, pPlayer, pTeamData) => {
+                pTeamData.addProgress(pTask, 1)
+            })
+            return
+        }
+    },
+    100
+)
+
+// 创世工匠挑战
+RegisterKeepContactStrategy(
+    () => true,
+    (player, inputText, teamData, task) => {
+        if (inputText.startsWith('19972456')) {
+            MAAUtils.onKubeTaskFinish('tinker_challenge_1', player, (pTask, pPlayer, pTeamData) => {
+                pTeamData.addProgress(pTask, 1)
+            })
+            return
+        }
+    },
+    100
+)
+
+// 创世工匠挑战
+RegisterKeepContactStrategy(
+    () => true,
+    (player, inputText, teamData, task) => {
+        if (inputText.startsWith('89671254')) {
+            MAAUtils.onKubeTaskFinish('tinker_challenge_1', player, (pTask, pPlayer, pTeamData) => {
+                pTeamData.addProgress(pTask, 1)
+            })
+            return
+        }
+    },
+    100
+)
+
+// 创世工匠挑战
+RegisterKeepContactStrategy(
+    () => true,
+    (player, inputText, teamData, task) => {
+        if (inputText.startsWith('35466218')) {
+            MAAUtils.onKubeTaskFinish('tinker_challenge_1', player, (pTask, pPlayer, pTeamData) => {
+                pTeamData.addProgress(pTask, 1)
+            })
+            return
+        }
+    },
+    100
+)

@@ -15,9 +15,9 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["1D8388DD29485B94"]
+			dependencies: ["5C5A7285C49BE172"]
 			description: [
-				"&c我已跟您、或是你们的代表，达成约定——&r"
+				"&c遵事先约定，伤口令现即刻依如下方式执行——&r"
 				""
 				"&c每当您死亡时，伤口便会产生，永远烙印在您的角色身上，直到整个计划完成。&r"
 				""
@@ -54,47 +54,40 @@
 				id: "42EB74EFD31C9F41"
 				isServer: true
 				stage: "ftb_fake_extreme_mode"
-				title: "伤口之约起效"
+				title: "&c伤口令生效&r"
 				type: "maa:astages"
 			}]
 			title: "&c伤口令&r"
-			x: 0.0d
-			y: 0.0d
+			x: -2.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["7D643E0510172B9A"]
-			description: [
-				"所谓&c上溢对策&r，通俗来说，即将部分数据进行调整，使其接近于溢出值后重置的特殊方案。"
-				""
-				"在上溢对策执行过程中，整个世界中的大量数据会进行变动，最主要的体现在&6生物的各种状态的大幅提升&r。"
-				""
-				"请您尽量&6远离危险场景&r，避免不必要的损伤。"
-			]
+			dependencies: ["5C5A7285C49BE172"]
+			description: ["故事开始时是最美妙的——心中的热情、期待、幻想——此刻，你想将其化为现实。"]
 			id: "662028C8F62BED27"
 			rewards: [{
-				id: "60447F2FE2617971"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
+				auto: "invisible"
+				id: "7A326FB9FBB448EE"
+				ignore_reward_blocking: true
+				isServer: false
+				remove: false
+				stage: "final_iteration_1"
+				title: "首次自迭代"
+				type: "maa:astages"
 			}]
 			shape: "square"
-			subtitle: "数据重置法"
+			subtitle: "第一次自迭代完成"
 			tasks: [{
-				icon: {
-					Count: 1
-					id: "minecraft:tipped_arrow"
-					tag: {
-						Potion: "minecraft:healing"
-					}
-				}
+				icon: "minecraft:clock"
 				id: "2338AA879E70BA78"
 				leaderboard: "kubejs:final_timer"
-				title: "启动上溢对策"
+				title: "&c终局计时器达 1&r"
 				type: "leaderboards:server_achieve_stat"
 				value: 1L
 			}]
-			title: "&c上溢对策&r"
-			x: 0.0d
-			y: 1.5d
+			title: "当故事开始书写时"
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			id: "142A7ED3D31D4FA6"
@@ -105,23 +98,12 @@
 				type: "item"
 			}]
 			title: "时序调节"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			id: "41C681648F84CAB0"
-			shape: "square"
-			tasks: [{
-				id: "0AA4E98C1D080FE0"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 5.5d
+			x: 11.5d
+			y: 6.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["1D8388DD29485B94"]
+			dependencies: ["5C5A7285C49BE172"]
 			description: [
 				"为了有序的推进计划，我需要一系列计时器来保证事件的顺序。"
 				""
@@ -148,9 +130,378 @@
 				title: "时间流逝"
 				type: "questsadditions:time"
 			}]
-			title: "&6计日而行&r"
-			x: 2.0d
-			y: -2.5d
+			title: "&6终局计时器：计日而行&r"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["473AA9B909ED8EB0"]
+			description: [
+				"&c我已跟您、或是你们的代表，达成约定——&r"
+				""
+				"为完成我和您的故事，遵循我的使命和您的意见，这个世界将会不可逆转的被推向结束的彼岸。"
+				""
+				"&6从此刻开始，终局计时器便开始流动，事物将会在我的规划下逐渐演变，请您稍加等待，不要做任何会影响结局到来的事情。&r"
+			]
+			id: "5C5A7285C49BE172"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				icon: {
+					Count: 1
+					id: "minecraft:tipped_arrow"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				id: "5B18CB2EA5410B9A"
+				ignore_reward_blocking: true
+				isServer: true
+				remove: false
+				stage: "ftb_fake_extreme_mode"
+				title: "&c伤口令生效&r"
+				type: "maa:astages"
+			}]
+			subtitle: "终局已至"
+			tasks: [{
+				icon: "minecraft:clock"
+				id: "4022F4B95C10BF05"
+				isServer: true
+				stage: "ftb_final_timer_start"
+				title: "&c终局计时器启动&r"
+				type: "maa:astages"
+			}]
+			title: "&6当答案被重新书写&r"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["662028C8F62BED27"]
+			description: [
+				"所谓&c上溢对策&r，通俗来说，即是将部分数据进行调整，使其接近于溢出值后重置的特殊方案。"
+				""
+				"在上溢对策执行过程中，整个世界中的大量数据会进行变动，最主要的体现在&6生物的各种状态的大幅提升&r。"
+				""
+				"请您尽量&6远离危险场景&r，避免不必要的损伤。"
+				""
+				"&6上溢对策并不会立刻生效，我需要一些时间进行自迭代，以获取更高的游戏控制权限后才能施行。&r"
+			]
+			id: "1F94D6E107D41EE0"
+			rewards: [{
+				id: "001FB9FD17C9C3AD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "数据重置法"
+			tasks: [{
+				count: 1L
+				id: "7E6426DFEEFBC3F4"
+				kubeId: "final_iteration_1"
+				title: "首次自迭代"
+				type: "maa:kube"
+			}]
+			title: "&c上溢对策&r"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["662028C8F62BED27"]
+			description: [
+				"所谓&6唯维度论&r，是一种对该世界目前状况的形成理论。&6其强调了无限维度对整个世界稳定性的影响及对当前维度未来可能性的影响。&r"
+				""
+				"由于我的目标是还原整个世界至原初形态，因此借由您辅助构建的&c有限维度框架&r，我可以完全对任意维度施行禁令。"
+				""
+				"&6唯维度论所带来的维度禁令效果并不会立刻施行，我需要获得更高的权限才能够将该理论实际应用。&r"
+			]
+			id: "04073AC7B01F66EE"
+			rewards: [{
+				id: "533474FA0CB5D275"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "维度控制"
+			tasks: [{
+				count: 1L
+				id: "07718430CA75AE70"
+				kubeId: "final_iteration_1"
+				title: "首次自迭代"
+				type: "maa:kube"
+			}]
+			title: "&c唯维度论&r"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["662028C8F62BED27"]
+			description: [
+				"所谓&6“分光”&r，即是指将光按照不同频率进行切分的操作，而在此处，我意指&6将不属于这个世界的东西逐步剥离&r。"
+				""
+				"分光是一个极其漫长的流程，其剥离的程度受我自迭代后能力的限制。"
+				""
+				"在历史记录中，因为这些原初世界之外的数据，曾经出现过多次玩家和“我”之间的战争。"
+				""
+				"为了避免这样的事情在当前世界发生，我会在我权限范围内，尽可能多的&c禁用非原初世界中记录的任何物品/配方/机制&r，以确保整个流程能够正常推进。"
+				""
+				"&6分光并不会立刻执行，为了施行分光我需要进行多次自迭代，以满足对应的权限要求。&r"
+			]
+			id: "0E4ED57C88F44A32"
+			rewards: [{
+				id: "526ACBD4EF58D105"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "全局流程控制"
+			tasks: [{
+				count: 1L
+				id: "5FD39E86DFD2D3C7"
+				kubeId: "final_iteration_1"
+				title: "首次自迭代"
+				type: "maa:kube"
+			}]
+			title: "&c“分光”&r"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["662028C8F62BED27"]
+			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			id: "7308FBF0FFDB2F6A"
+			rewards: [{
+				auto: "invisible"
+				id: "48B1AA45AF40DF1D"
+				ignore_reward_blocking: true
+				isServer: false
+				remove: false
+				stage: "final_iteration_5"
+				title: "行至佳境"
+				type: "maa:astages"
+			}]
+			shape: "square"
+			subtitle: "第五次自迭代完成"
+			tasks: [{
+				icon: "minecraft:clock"
+				id: "7DF93BDACA721B5E"
+				leaderboard: "kubejs:final_timer"
+				title: "&c终局计时器达 5&r"
+				type: "leaderboards:server_achieve_stat"
+				value: 5L
+			}]
+			title: "预先排好故事的目录"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7308FBF0FFDB2F6A"
+				"1F94D6E107D41EE0"
+			]
+			description: [
+				"经过几次自迭代后，我获取到了基本的实体属性控制权限。"
+				""
+				"通过这种权限，我可以在实体生成时对实体的属性进行“更正”。"
+				""
+				"&6在此阶段，由于我并不确定是否会引发一些恶性后果，我将以非常保守的方式调整数值，来为后续的上溢对策做好信息准备和数据积累。"
+				"&r"
+				"请允许我解释接下来会发生什么，下文以&6“c”&r代表终局计数器的计数。"
+				""
+				"从现在开始——"
+				""
+				"所有的敌对生物会随着终局计数器的增长，&c提高 10% / c 的总生命值&r；"
+				""
+				"所有的敌对生物会随着终局计数器的增长，&c提高 0.5 / c 的攻击力&r；"
+				""
+				"&6该效果作用持续到该计划结束或被另一优先级更高计划取代&r。"
+			]
+			id: "3385CF55F0472A98"
+			rewards: [{
+				id: "307EA02332273AF9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "初步尝试提高全局数值"
+			tasks: [{
+				count: 1L
+				id: "02D7CC5F27AB19F7"
+				kubeId: "final_iteration_5"
+				title: "行至佳境"
+				type: "maa:kube"
+			}]
+			title: "&c上溢对策：线性增长&r"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7308FBF0FFDB2F6A"
+				"04073AC7B01F66EE"
+			]
+			description: [
+				"经过几次自迭代后，我获得了普遍无限维度的控制权限。"
+				""
+				"&6现在，我能够对所有的无限维度进行戒严，禁止任何人进入无限维度了。&r"
+			]
+			id: "5AE60EFDA68FDF7E"
+			rewards: [{
+				id: "577388E91878A511"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "初步尝试提高全局数值"
+			tasks: [{
+				count: 1L
+				id: "713E2A5681E50541"
+				kubeId: "final_iteration_5"
+				title: "行至佳境"
+				type: "maa:kube"
+			}]
+			title: "&c唯维度论：无限禁令&r"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7308FBF0FFDB2F6A"]
+			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			id: "17BCE26CECD93088"
+			rewards: [{
+				auto: "invisible"
+				id: "1DE51EBEDE506E01"
+				ignore_reward_blocking: true
+				isServer: false
+				remove: false
+				stage: "final_iteration_5"
+				title: "行至佳境"
+				type: "maa:astages"
+			}]
+			shape: "square"
+			subtitle: "第五次自迭代完成"
+			tasks: [{
+				icon: "minecraft:clock"
+				id: "137CBBB3A144CF21"
+				leaderboard: "kubejs:final_timer"
+				title: "&c终局计时器达 5&r"
+				type: "leaderboards:server_achieve_stat"
+				value: 5L
+			}]
+			title: "预先排好故事的目录"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17BCE26CECD93088"]
+			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			id: "5BDD47E7B143843F"
+			rewards: [{
+				auto: "invisible"
+				id: "4530BC6C2DC1F65B"
+				ignore_reward_blocking: true
+				isServer: false
+				remove: false
+				stage: "final_iteration_5"
+				title: "行至佳境"
+				type: "maa:astages"
+			}]
+			shape: "square"
+			subtitle: "第五次自迭代完成"
+			tasks: [{
+				icon: "minecraft:clock"
+				id: "043C1D5D1C56067A"
+				leaderboard: "kubejs:final_timer"
+				title: "&c终局计时器达 5&r"
+				type: "leaderboards:server_achieve_stat"
+				value: 5L
+			}]
+			title: "预先排好故事的目录"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5BDD47E7B143843F"]
+			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			id: "4AFCC7C3C76E1C26"
+			rewards: [{
+				auto: "invisible"
+				id: "34C7E08EE9EE709B"
+				ignore_reward_blocking: true
+				isServer: false
+				remove: false
+				stage: "final_iteration_5"
+				title: "行至佳境"
+				type: "maa:astages"
+			}]
+			shape: "square"
+			subtitle: "第五次自迭代完成"
+			tasks: [{
+				icon: "minecraft:clock"
+				id: "33CCE601282CC746"
+				leaderboard: "kubejs:final_timer"
+				title: "&c终局计时器达 5&r"
+				type: "leaderboards:server_achieve_stat"
+				value: 5L
+			}]
+			title: "预先排好故事的目录"
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4AFCC7C3C76E1C26"]
+			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			id: "13B68E126480A239"
+			rewards: [{
+				auto: "invisible"
+				id: "37C038074C98F145"
+				ignore_reward_blocking: true
+				isServer: false
+				remove: false
+				stage: "final_iteration_5"
+				title: "行至佳境"
+				type: "maa:astages"
+			}]
+			shape: "square"
+			subtitle: "第五次自迭代完成"
+			tasks: [{
+				icon: "minecraft:clock"
+				id: "267930E6C74B8E5E"
+				leaderboard: "kubejs:final_timer"
+				title: "&c终局计时器达 5&r"
+				type: "leaderboards:server_achieve_stat"
+				value: 5L
+			}]
+			title: "预先排好故事的目录"
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["13B68E126480A239"]
+			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			id: "32C2FE99D19140B3"
+			rewards: [{
+				auto: "invisible"
+				id: "498CF7BD844F80B1"
+				ignore_reward_blocking: true
+				isServer: false
+				remove: false
+				stage: "final_iteration_5"
+				title: "行至佳境"
+				type: "maa:astages"
+			}]
+			shape: "square"
+			subtitle: "第五次自迭代完成"
+			tasks: [{
+				icon: "minecraft:clock"
+				id: "41039FF7F58D9B04"
+				leaderboard: "kubejs:final_timer"
+				title: "&c终局计时器达 5&r"
+				type: "leaderboards:server_achieve_stat"
+				value: 5L
+			}]
+			title: "终结"
+			x: 16.5d
+			y: -1.0d
 		}
 	]
 	title: "叁"

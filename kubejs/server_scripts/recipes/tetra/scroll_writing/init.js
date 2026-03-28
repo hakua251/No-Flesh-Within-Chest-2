@@ -26,7 +26,7 @@ function RegisterScrollWritingStrategy(testFunc, applyFunc, priority) {
 }
 
 RegisterScrollWritingStrategy(
-    (event) => { return true },
-    (event) => { event.setUpgradedStack(Item.of('minecraft:paper')) },
-    0
+    (event) => true ,
+    (event) => event.setUpgradedStack(Item.of('minecraft:paper')),
+   0
 )

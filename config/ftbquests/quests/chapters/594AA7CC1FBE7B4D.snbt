@@ -7,15 +7,46 @@
 	id: "594AA7CC1FBE7B4D"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "574C74EEF58FDD85"
-		tasks: [{
-			id: "28F43A0EDB58E459"
-			type: "checkmark"
-		}]
-		title: "生长痛"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "574C74EEF58FDD85"
+			tasks: [{
+				id: "28F43A0EDB58E459"
+				type: "checkmark"
+			}]
+			title: "生长痛"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["227116C21A39F449"]
+			description: ["** "]
+			id: "6AB14D30B38F74ED"
+			invisible: true
+			rewards: [{
+				id: "052DDBEC0390966E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "[特殊的信道]"
+			tasks: [{
+				count: 1L
+				icon: {
+					Count: 1
+					id: "minecraft:netherite_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "352979BA4E05A705"
+				kubeId: "tinker_challenge_1"
+				title: "特殊讯息"
+				type: "maa:kube"
+			}]
+			title: "往过去的一瞥"
+			x: -8.0d
+			y: -4.5d
+		}
+	]
 	title: "零"
 }

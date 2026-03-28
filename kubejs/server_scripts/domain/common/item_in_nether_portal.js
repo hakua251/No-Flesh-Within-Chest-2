@@ -63,5 +63,3 @@ InfinityEvents.itemInPortal(event => {
         InfinityPortalCreator.tryCreatePortalById(dimId, level, pos)
     }
 })
-
-AStages.addRestrictionForDimension('infinity/nexus', 'ftb_can_enter_nexus', 'infinity:nexus')

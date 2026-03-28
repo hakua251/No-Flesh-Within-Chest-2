@@ -1,5 +1,5 @@
 // priority: 500
-AStages.addRestrictionForDimension('main/dimensional_worm_nether', 'ftb_server_ban_nether', 'minecraft:nether')
+
 
 // 维度盛宴循环
 MAAEvents.ftbQuestCheckRepeatable('28B0B07A19295E57', event => {

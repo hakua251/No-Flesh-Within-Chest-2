@@ -830,11 +830,28 @@
 			]
 			icon: "kubejs:quantum_dimension_resolver"
 			id: "7531026821B67389"
-			rewards: [{
-				id: "51075750F32769A4"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "51075750F32769A4"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					icon: {
+						Count: 1
+						id: "createdieselgenerators:chemical_sprayer"
+						tag: { }
+					}
+					id: "02AC93CF688C0FD5"
+					ignore_reward_blocking: true
+					isServer: true
+					remove: true
+					stage: "ftb_server_ban_nether"
+					title: "开放下界"
+					type: "maa:astages"
+				}
+			]
 			subtitle: "维度已被稳定"
 			tasks: [{
 				consume_items: true
@@ -1396,9 +1413,15 @@
 			}
 			id: "1D8388DD29485B94"
 			rewards: [{
-				id: "58DF3EF5CBC610A3"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
+				auto: "invisible"
+				icon: "minecraft:clock"
+				id: "010972700A058BC7"
+				ignore_reward_blocking: true
+				isServer: true
+				remove: false
+				stage: "ftb_final_timer_start"
+				title: "&c启动终局计时器&r"
+				type: "maa:astages"
 			}]
 			shape: "square"
 			size: 1.5d

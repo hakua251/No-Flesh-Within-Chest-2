@@ -1,6 +1,6 @@
 // priority: 500
 StartupEvents.registry('item', event => {
-    // 模板器官
+    // todo 模板器官
     event.create('kubejs:lung_template').maxStackSize(1).texture('kubejs:item/organs/template/lung_template').tag('kubejs:lung')
     
     event.create('kubejs:muscle_template').maxStackSize(1).texture('kubejs:item/organs/template/muscle_template').tag('kubejs:muscle')
