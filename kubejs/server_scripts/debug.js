@@ -1,4 +1,5 @@
 // priority: 500
+AStages.addRestrictionForItem('final/test', 'ftb_test', ['minecraft:stick']).setReverse(true)
 ItemEvents.rightClicked('stick',event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
@@ -6,12 +7,9 @@ ItemEvents.rightClicked('stick',event => {
     const level = event.level
     const server = event.server
 
-    SetDaySpeed(1)
-    SetNightSpeed(1)
-    UpdatePlaysTimeStabilityBar(server, level, player)
-    // player.wonGame = false
-    // player.seenCre
-    // player.tell(player.getFoodData().getSaturationLevel())
+    // SetDaySpeed(1)
+    // SetNightSpeed(1)
+    // UpdatePlaysTimeStabilityBar(server, level, player)
 
     
     // item.getImprovements(itemStack).forEach(pImprove => {

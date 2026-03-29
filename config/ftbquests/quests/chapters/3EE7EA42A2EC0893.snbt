@@ -90,16 +90,32 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["5BDD47E7B143843F"]
+			description: [
+				"在该阶段，我获得了能够对世界刻调节的基本权限。"
+				""
+				"通过刻调节，我可以完全控制世界刻的运行速度，进而调节日长和夜长。"
+				""
+				"&6目前计划为，不断加快刻的行进速度，间接加快自迭代速度。&r"
+				""
+				"在最终阶段，将会实现&6“刻日”&r，即一刻一日的情况，进而让刻时间超过日时间，&6进而诱发系统进行时序的重标准化&r。"
+				""
+				"请允许我解释接下来会发生什么，下文以&6“c”&r代表终局计数器的计数。"
+				""
+				"接下来，每日的长度将会被缩短，&c每日长度将会变为  原日刻数 / (1 + 0.1(c - 30))&r。"
+			]
 			id: "142A7ED3D31D4FA6"
 			shape: "square"
+			subtitle: "将时间归零"
 			tasks: [{
-				id: "1C9016748F8BFA12"
-				item: "minecraft:oak_log"
-				type: "item"
+				count: 1L
+				id: "147F28B45253C299"
+				kubeId: "final_iteration_30"
+				type: "maa:kube"
 			}]
-			title: "时序调节"
-			x: 11.5d
-			y: 6.5d
+			title: "时序调节：重置"
+			x: 9.0d
+			y: 8.5d
 		}
 		{
 			can_repeat: true
@@ -211,6 +227,8 @@
 				"所谓&6唯维度论&r，是一种对该世界目前状况的形成理论。&6其强调了无限维度对整个世界稳定性的影响及对当前维度未来可能性的影响。&r"
 				""
 				"由于我的目标是还原整个世界至原初形态，因此借由您辅助构建的&c有限维度框架&r，我可以完全对任意维度施行禁令。"
+				""
+				"在时机成熟时，我也会暂时切断维度网络的连接，这意味者在此期间您可能无法使用维度网络管理存储。"
 				""
 				"&6唯维度论所带来的维度禁令效果并不会立刻施行，我需要获得更高的权限才能够将该理论实际应用。&r"
 			]
@@ -365,7 +383,7 @@
 		}
 		{
 			dependencies: ["7308FBF0FFDB2F6A"]
-			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			description: ["初章总是非常的精练、优美。"]
 			id: "17BCE26CECD93088"
 			rewards: [{
 				auto: "invisible"
@@ -373,27 +391,27 @@
 				ignore_reward_blocking: true
 				isServer: false
 				remove: false
-				stage: "final_iteration_5"
-				title: "行至佳境"
+				stage: "final_iteration_15"
+				title: "至桃林处"
 				type: "maa:astages"
 			}]
 			shape: "square"
-			subtitle: "第五次自迭代完成"
+			subtitle: "第十五次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
 				id: "137CBBB3A144CF21"
 				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 5&r"
+				title: "&c终局计时器达 15&r"
 				type: "leaderboards:server_achieve_stat"
-				value: 5L
+				value: 15L
 			}]
-			title: "预先排好故事的目录"
+			title: "被精心写下的初章"
 			x: 6.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["17BCE26CECD93088"]
-			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			description: ["为了让故事能够吸引读者直到最后，情节既要保证紧凑，又要保证逻辑严密、人物关系细腻。"]
 			id: "5BDD47E7B143843F"
 			rewards: [{
 				auto: "invisible"
@@ -401,27 +419,27 @@
 				ignore_reward_blocking: true
 				isServer: false
 				remove: false
-				stage: "final_iteration_5"
-				title: "行至佳境"
+				stage: "final_iteration_30"
+				title: "行至林深"
 				type: "maa:astages"
 			}]
 			shape: "square"
-			subtitle: "第五次自迭代完成"
+			subtitle: "第三十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
 				id: "043C1D5D1C56067A"
 				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 5&r"
+				title: "&c终局计时器达 30&r"
 				type: "leaderboards:server_achieve_stat"
-				value: 5L
+				value: 30L
 			}]
-			title: "预先排好故事的目录"
+			title: "细腻紧凑的情节转折"
 			x: 9.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["5BDD47E7B143843F"]
-			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			description: ["最开始所设想的一切在此处全部实现。"]
 			id: "4AFCC7C3C76E1C26"
 			rewards: [{
 				auto: "invisible"
@@ -429,27 +447,27 @@
 				ignore_reward_blocking: true
 				isServer: false
 				remove: false
-				stage: "final_iteration_5"
-				title: "行至佳境"
+				stage: "final_iteration_50"
+				title: "奏秦人乐"
 				type: "maa:astages"
 			}]
 			shape: "square"
-			subtitle: "第五次自迭代完成"
+			subtitle: "第五十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
 				id: "33CCE601282CC746"
 				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 5&r"
+				title: "&c终局计时器达 50&r"
 				type: "leaderboards:server_achieve_stat"
-				value: 5L
+				value: 50L
 			}]
-			title: "预先排好故事的目录"
+			title: "将灵感实现的小高潮"
 			x: 11.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["4AFCC7C3C76E1C26"]
-			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			description: ["小高潮后，故事揭开了一个又一个暗线将情节再次铺展，一切正如目录所安排。"]
 			id: "13B68E126480A239"
 			rewards: [{
 				auto: "invisible"
@@ -457,27 +475,27 @@
 				ignore_reward_blocking: true
 				isServer: false
 				remove: false
-				stage: "final_iteration_5"
-				title: "行至佳境"
+				stage: "final_iteration_90"
+				title: "如黎明将至"
 				type: "maa:astages"
 			}]
 			shape: "square"
-			subtitle: "第五次自迭代完成"
+			subtitle: "第九十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
 				id: "267930E6C74B8E5E"
 				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 5&r"
+				title: "&c终局计时器达 90&r"
 				type: "leaderboards:server_achieve_stat"
-				value: 5L
+				value: 90L
 			}]
-			title: "预先排好故事的目录"
+			title: "繁复交错的情节复展"
 			x: 14.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["13B68E126480A239"]
-			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			description: ["现在，我们的冒险故事已到高潮之上的高潮情节！我们的冒险故事正如此刻迎来结局！"]
 			id: "32C2FE99D19140B3"
 			rewards: [{
 				auto: "invisible"
@@ -485,23 +503,130 @@
 				ignore_reward_blocking: true
 				isServer: false
 				remove: false
-				stage: "final_iteration_5"
-				title: "行至佳境"
+				stage: "final_iteration_100"
+				title: "黎明初醒"
 				type: "maa:astages"
 			}]
 			shape: "square"
-			subtitle: "第五次自迭代完成"
+			subtitle: "获得全部可获得权限"
 			tasks: [{
 				icon: "minecraft:clock"
 				id: "41039FF7F58D9B04"
 				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 5&r"
+				title: "&c终局计时器达 100&r"
 				type: "leaderboards:server_achieve_stat"
-				value: 5L
+				value: 100L
 			}]
-			title: "终结"
+			title: "撰我们的冒险故事"
 			x: 16.5d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3385CF55F0472A98"
+				"4AFCC7C3C76E1C26"
+			]
+			description: [
+				"现阶段，我确认了实体属性变更并不会造成过于严重的影响。"
+				""
+				"因此，我会&c加快上溢对策&r的执行。"
+				""
+				"请允许我解释接下来会发生什么，下文以&6“c”&r代表终局计数器的计数。"
+				""
+				"从现在开始，&c上溢对策：线性增长&r将会被废弃——"
+				""
+				"所有敌对生物的生命值将会以&c 120% ^ c * 原生命值 进行增长，直至数据溢出&r。"
+				""
+				"所有敌对生物的攻击力将会以&c 110% ^ c * 原攻击力进行增长，直至数据溢出&r。"
+				""
+				"&6该效果作用持续到该计划结束或被另一优先级更高计划取代&r。"
+			]
+			id: "074BD3F44A8AA023"
+			shape: "square"
+			subtitle: "对策正式应用"
+			tasks: [{
+				count: 1L
+				id: "6294F419AD7591F0"
+				kubeId: "final_iteration_50"
+				type: "maa:kube"
+			}]
+			title: "上溢对策：指数增长"
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5BDD47E7B143843F"]
+			description: [
+				"经过多次自迭代后，我发现了存在于无限维度检测中的一个错误逻辑。"
+				""
+				"这个逻辑会导致&c我最长需要 5 分钟才能够检测到进入维度的生物&r，因此我对此处逻辑进行了优化。"
+				""
+				"现在，我最长仅需&6 10 秒钟&r就可以检测到进入维度的生物。"
+			]
+			id: "3D6ACA72D6CDF02F"
+			shape: "square"
+			subtitle: "加强对无限维度的管制"
+			tasks: [{
+				count: 1L
+				id: "477FAD93C42B314D"
+				kubeId: "final_iteration_30"
+				type: "maa:kube"
+			}]
+			title: "唯维度论：加强管制"
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["17BCE26CECD93088"]
+			description: [
+				"现在，我拥有了一定程度的配方控制能力，可以一定程度上变更部分物品的配方。"
+				""
+				"目前，我将所有通过特殊项目获得的特殊注射器配方全部禁止"
+			]
+			id: "09D8C08D50FE4411"
+			rewards: [{
+				id: "0FDC420EDEDBDA18"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "全局流程控制"
+			tasks: [{
+				count: 1L
+				id: "12CAF6E6C906847C"
+				kubeId: "final_iteration_1"
+				title: "首次自迭代"
+				type: "maa:kube"
+			}]
+			title: "&c“分光”：分万物光&r"
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4AFCC7C3C76E1C26"]
+			description: [
+				"无限维度的管制逐渐收口，对于无限维度的额外产物——&6维度网络&r，现在也需要加以限制了。"
+				""
+				"&c从现在开始，您的维度网络空间容量会重置为 0。&r "
+			]
+			id: "41EB6238C513CDA7"
+			rewards: [{
+				id: "34264177FB7D48D9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "关闭维度网络通道"
+			tasks: [{
+				count: 1L
+				id: "7AB916D60A2E3686"
+				kubeId: "final_iteration_50"
+				title: "行至佳境"
+				type: "maa:kube"
+			}]
+			title: "&c唯维度论：网络管制&r"
+			x: 11.5d
+			y: 4.0d
 		}
 	]
 	title: "叁"

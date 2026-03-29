@@ -1,6 +1,4 @@
 // priority: 500
-
-
 // 维度盛宴循环
 MAAEvents.ftbQuestCheckRepeatable('28B0B07A19295E57', event => {
     const teamData = event.teamData
