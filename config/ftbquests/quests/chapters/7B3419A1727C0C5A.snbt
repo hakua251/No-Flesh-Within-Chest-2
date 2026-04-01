@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "7B3419A1727C0C5A"
-	group: "78F99AC9360F0137"
+	group: "74BE103AC753AC46"
 	icon: "kubejs:badge"
 	id: "7B3419A1727C0C5A"
-	order_index: 4
+	order_index: 0
 	quest_links: [ ]
 	quests: [{
 		dependencies: ["4E805DA2B8D171E4"]

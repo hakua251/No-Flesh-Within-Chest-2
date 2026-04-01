@@ -1916,7 +1916,7 @@
 			shape: "gear"
 			subtitle: "请见证我们的冒险故事"
 			tasks: [{
-				elapsedTime: 3600L
+				elapsedTime: 1800L
 				icon: "supplementaries:hourglass"
 				id: "53BC87B3E5867EBD"
 				title: "穿越无尽"

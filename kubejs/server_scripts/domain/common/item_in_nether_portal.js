@@ -19,6 +19,7 @@ const InfinityDimItem2DimId = {
     'minecraft:gold_block': 'infinity:golden',
     'minecraft:gold_ingot': 'kubejs:oath',
     'minecraft:map': 'infinity:void',
+    "minecraft:sandstone": "infinity:redstone_flat",
 }
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.entity

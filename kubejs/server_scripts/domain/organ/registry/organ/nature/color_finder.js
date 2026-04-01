@@ -1,7 +1,7 @@
 // priority: 500
 // todo
-RegistryOrgan('kubejs:color_finder')
-    .addScore('chestcavity:defense', 1.5)
+// RegistryOrgan('kubejs:color_finder')
+//     .addScore('chestcavity:defense', 1.5)
 
 /**
 * @param {OrganEventCustomData} customData
@@ -30,8 +30,8 @@ function ColorFinderChestCavityTakeOff(customData, event, organItem, organIndex,
     RemoveCustomGoalByName(entity.goalSelector, 'lay_egg')
 }
 
-RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:color_finder')
-        .addOnlyStrategy('organ_take_on', ColorFinderChestCavityTakeOn)
-        .addOnlyStrategy('organ_take_off', ColorFinderChestCavityTakeOff)
-)
+// RegistryOrganStrategy(
+//     new OrganStrategyModel('kubejs:color_finder')
+//         .addOnlyStrategy('organ_take_on', ColorFinderChestCavityTakeOn)
+//         .addOnlyStrategy('organ_take_off', ColorFinderChestCavityTakeOff)
+// )
