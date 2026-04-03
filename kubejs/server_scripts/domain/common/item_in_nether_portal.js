@@ -17,7 +17,6 @@ const InfinityDimItem2DimId = {
     'minecraft:white_concrete': 'infinity:ant',
     'minecraft:dragon_egg': 'infinity:skygrid',
     'minecraft:gold_block': 'infinity:golden',
-    'minecraft:gold_ingot': 'kubejs:oath',
     'minecraft:map': 'infinity:void',
     "minecraft:sandstone": "infinity:redstone_flat",
 }
@@ -26,8 +25,11 @@ InfinityEvents.itemInPortal(event => {
     if (itemEntity.isOnPortalCooldown()) return
     /** @type {Internal.ItemStack} */
     const itemStack = itemEntity.getItem()
-    itemEntity.setPortalCooldown(200)
     const level = event.getLevel()
+    if (level.isClientSide()) return
+    console.log('1')
+    // itemEntity.setPortalCooldown(200)
+    
     const pos = event.getPos()
     if (itemStack.is('kubejs:key_to_infinity')) {
         let nameString = 'infinity:random'

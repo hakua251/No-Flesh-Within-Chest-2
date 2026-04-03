@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:worm_of_gula')
     .addScore('chestcavity:digestion', 1)
     .addScore('chestcavity:nutrition', 1)
-    .addScore('chestcavity:endurance', -3)
+    .addScore('chestcavity:endurance', 1)
 
 /**
  * @param {OrganEventCustomData} customData

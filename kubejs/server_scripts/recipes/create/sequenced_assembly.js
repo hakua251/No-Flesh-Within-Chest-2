@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
         [
             Item.of('kubejs:redstone_capacitor')
         ],
-        'vanillabackport:resin_brick',
+        'minecraft:resin_brick',
         [
             event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:dusts/redstone']),
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         'minecraft:slime_ball',
         [
             event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
-            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'vanillabackport:resin_brick']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'minecraft:resin_brick']),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'minecraft:slime_ball']),
             event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
         ]

@@ -20,17 +20,6 @@ FTBQuestsEvents.customReward('final_iteration_30', event => {
     MAAUtils.onKubeTaskFinish('final_iteration_30', event.player, (pTask, pPlayer, pTeamData) => {
         pTeamData.addProgress(pTask, 1)
     })
-    const dimnet = DimensionsNet.getNetFromPlayer(event.player)
-    if (dimnet != null) {
-        let dimNetProp = new $CompoundTag()
-        let unifiedStorage = dimnet.unifiedStorage
-        dimNetProp.putInt('capacity', unifiedStorage.slotCapacity)
-        dimNetProp.putInt('maxSize', unifiedStorage.slotMaxSize)
-        event.player.persistentData.put('finalDimNetRestrict', dimNetProp)
-        unifiedStorage.setSlotCapacity(0)
-        unifiedStorage.setSlotMaxSize(0)
-        // todo 还原
-    }
 
     if (AStages.serverHasStage('ftb_final_iteration_30', event.server)) return
     AStages.addStageToServer('ftb_final_iteration_30', event.server)
@@ -40,6 +29,11 @@ FTBQuestsEvents.customReward('final_iteration_30', event => {
 
     AStages.addStageToServer('ftb_final_mob_spawn_2', event.server)
     AStages.removeStageFromServer('ftb_final_mob_spawn_1', event.server)
+
+    // 全局锁定维度网络
+    MAAUtils.getAllDimNet(event.server).forEach(dimnet => {
+        dimnet.setLocked(true)
+    })
 })
 
 FTBQuestsEvents.customReward('final_iteration_50', event => {

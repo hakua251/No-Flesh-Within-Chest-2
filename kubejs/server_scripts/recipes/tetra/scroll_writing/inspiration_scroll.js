@@ -126,7 +126,7 @@ RegisterScrollWritingStrategy(
         return socketData.key == 'socket/socket_emerald' && effectLevelA >= 3 && effectLevelB >= 3
     },
     (event) => {
-        event.setUpgradedStack(TetraJSUtils.setupScrollData('end_inspiration', 'end_inspiration', [], ['end_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
+        event.setUpgradedStack(TetraJSUtils.setupScrollData('blood_inspiration', 'blood_inspiration', [], ['blood_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
     },
     200
 )

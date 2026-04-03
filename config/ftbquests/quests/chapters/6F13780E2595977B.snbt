@@ -1756,7 +1756,7 @@
 			description: [
 				"镶嵌&6纯净紫水晶&r时，若卷轴的布料启发和宝石启发的数值均≥3，则卷轴会尝试转换成&6启发：星辉&r。"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工位置处于晴朗的夜空下&r，则工具该部件会获得&6创世启迪&r。"
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工位置处于新月夜空下&r，则工具该部件会获得&6创世启迪&r。"
 			]
 			id: "5E3F52BD93D59729"
 			rewards: [{
@@ -1858,9 +1858,9 @@
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"镶嵌&6绿宝石&r时，若卷轴的骨材启发和布料启发的数值均≥3，则卷轴会尝试转换成&6启发：末界&r。"
+				"镶嵌&6绿宝石&r时，若卷轴的骨材启发和布料启发的数值均≥3，则卷轴会尝试转换成&6启发：鲜血&r。"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工维度为末地&r，则工具该部件会获得&6创世启迪&r。"
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若周围存在至少 3 个村民作为祭品&r，则工具该部件会获得&6创世启迪&r。"
 			]
 			id: "281B257C8111B6F2"
 			rewards: [{
@@ -1868,7 +1868,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启发于末界之始"
+			subtitle: "启发于鲜血之祭"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1876,8 +1876,8 @@
 					tag: {
 						BlockEntityTag: {
 							data: [{
-								details: "end_inspiration"
-								effects: ["tetra:end_inspiration"]
+								details: "blood_inspiration"
+								effects: ["tetra:blood_inspiration"]
 								glyphs: [I;
 									15
 									14
@@ -1885,9 +1885,9 @@
 									15
 								]
 								intricate: 0b
-								key: "end_inspiration"
+								key: "blood_inspiration"
 								material: 0
-								ribbon: "3a8c00"
+								ribbon: "f6141b"
 							}]
 						}
 					}
@@ -1897,13 +1897,13 @@
 					Count: 1
 					id: "maa:tetra_scroll"
 					tag: {
-						value: "end_inspiration"
+						value: "blood_inspiration"
 					}
 				}
-				title: "启发：末界"
+				title: "启发：鲜血"
 				type: "item"
 			}]
-			title: "启发：末界"
+			title: "启发：鲜血"
 			x: 29.5d
 			y: -5.5d
 		}

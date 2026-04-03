@@ -11,7 +11,7 @@ StartupEvents.modifyCreativeTab('kubejs:tab', event => {
         TetraJSUtils.setupScrollData('durability_inspiration', 'durability_inspiration', [], ['durability_inspiration'], false, 0, 0x87e36d, [15, 14, 15, 15]),
         TetraJSUtils.setupScrollData('exhaustion_inspiration', 'exhaustion_inspiration', [], ['exhaustion_inspiration'], false, 0, 0xedb75a, [15, 14, 15, 15]),
         TetraJSUtils.setupScrollData('effect_inspiration', 'effect_inspiration', [], ['effect_inspiration'], false, 0, 0xbaa6ed, [15, 14, 15, 15]),
-        TetraJSUtils.setupScrollData('end_inspiration', 'end_inspiration', [], ['end_inspiration'], false, 0, 0x3a8c00, [15, 14, 15, 15]),
+        TetraJSUtils.setupScrollData('blood_inspiration', 'blood_inspiration', [], ['blood_inspiration'], false, 0, 0xf6141b, [15, 14, 15, 15]),
         TetraJSUtils.setupScrollData('thunder_inspiration', 'thunder_inspiration', [], ['thunder_inspiration'], false, 0, 0xf5f573, [15, 14, 15, 15]),
     ])
 })

@@ -19,15 +19,11 @@
                 }
             },
             {
-                "type":"mr:see_sky"
+                "type": "mr:see_sky"
             },
             {
-                "type":"mr:time",
-                "time":"night"
-            },
-            {
-                "type":"mr:weather",
-                "weather":"clear"
+                "type": "mr:moon_phase",
+                "moonPhase": "5"
             }
         ]
     },

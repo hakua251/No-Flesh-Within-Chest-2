@@ -1,5 +1,5 @@
 // priority: 500
-ItemEvents.rightClicked('stick',event => {
+ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
@@ -10,7 +10,7 @@ ItemEvents.rightClicked('stick',event => {
     // SetNightSpeed(1)
     // UpdatePlaysTimeStabilityBar(server, level, player)
 
-    
+
     // item.getImprovements(itemStack).forEach(pImprove => {
     //     console.log(pImprove.key, pImprove.level)
     // })
@@ -46,7 +46,7 @@ ItemEvents.rightClicked('stick',event => {
     //     console.log(pEffect.key, num)
     // })
     // item.getImprovements(itemStack).forEach(pImprove => {
-        
+
     //     console.log(pImprove.group, pImprove.efficiency)
     //     console.log(pImprove.key, pImprove.infinite)
     // })

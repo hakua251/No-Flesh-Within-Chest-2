@@ -476,8 +476,8 @@
 				type: "checkmark"
 			}]
 			title: "&c我找到了&r"
-			x: 15.0d
-			y: 0.0d
+			x: 17.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["08BCA79DDB1B235E"]
@@ -1164,8 +1164,8 @@
 				type: "checkmark"
 			}]
 			title: "&c想必您还记得&r"
-			x: 16.5d
-			y: 0.0d
+			x: 18.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["218460FA0C2585E6"]
@@ -1189,8 +1189,8 @@
 				type: "checkmark"
 			}]
 			title: "&c条件已经充分&r"
-			x: 18.0d
-			y: 0.0d
+			x: 20.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1E31439B806712B1"]
@@ -1246,8 +1246,8 @@
 				value: 100L
 			}]
 			title: "&6让故事“开始”结束&r"
-			x: 19.5d
-			y: 0.0d
+			x: 21.5d
+			y: 2.0d
 		}
 	]
 	title: "贰"

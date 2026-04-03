@@ -667,7 +667,7 @@
 				ignore_reward_blocking: true
 				isServer: false
 				remove: false
-				stage: "ftb_final_end"
+				stage: "ftb_final_end_1"
 				type: "maa:astages"
 			}]
 			tasks: [{

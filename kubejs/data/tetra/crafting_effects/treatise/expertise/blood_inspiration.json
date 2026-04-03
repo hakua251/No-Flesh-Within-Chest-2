@@ -5,7 +5,7 @@
         "requirements": [
             {
                 "type": "tetra:locked",
-                "key": "tetra:end_inspiration"
+                "key": "tetra:blood_inspiration"
             },
             {
                 "type": "tetra:craft_type",
@@ -19,8 +19,8 @@
                 }
             },
             {
-                "type":"mr:dimension",
-                "dimension":"the_end"
+                "type":"mr:custom",
+                "key":"blood_inspiration"
             }
         ]
     },
