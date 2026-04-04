@@ -7,26 +7,6 @@
 				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
 				},
-				"id": "graveyard:memorial_tree"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-				},
-				"id": "graveyard:lich_prison"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_box",
-				"spawn_overrides": {
-				},
 				"id": "graveyard:altar"
 			}
 		},
@@ -36,31 +16,18 @@
 				"step": "surface_structures",
 				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "piece",
-						"spawns": [
-							{
-								"type": "graveyard:skeleton_creeper",
-								"weight": 35,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "graveyard:revenant",
-								"weight": 45,
-								"minCount": 1,
-								"maxCount": 3
-							},
-							{
-								"type": "graveyard:ghoul",
-								"weight": 50,
-								"minCount": 1,
-								"maxCount": 2
-							}
-						]
-					}
 				},
-				"id": "graveyard:ruins"
+				"id": "graveyard:dead_tree"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "graveyard:giant_mushroom"
 			}
 		},
 		{
@@ -70,7 +37,7 @@
 				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
 				},
-				"id": "graveyard:small_savanna_grave"
+				"id": "graveyard:small_desert_grave"
 			}
 		},
 		{
@@ -120,10 +87,83 @@
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
+				"terrain_adaptation": "beard_box",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "piece",
+						"spawns": [
+							{
+								"type": "graveyard:skeleton_creeper",
+								"weight": 35,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "graveyard:revenant",
+								"weight": 45,
+								"minCount": 1,
+								"maxCount": 3
+							},
+							{
+								"type": "graveyard:ghoul",
+								"weight": 50,
+								"minCount": 1,
+								"maxCount": 2
+							}
+						]
+					}
+				},
+				"id": "graveyard:ruins"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
 				},
-				"id": "graveyard:giant_mushroom"
+				"id": "graveyard:small_grave"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_box",
+				"spawn_overrides": {
+				},
+				"id": "graveyard:small_savanna_grave"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_box",
+				"spawn_overrides": {
+				},
+				"id": "graveyard:small_mountain_grave"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_box",
+				"spawn_overrides": {
+				},
+				"id": "graveyard:memorial_tree"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+				},
+				"id": "graveyard:lich_prison"
 			}
 		},
 		{
@@ -162,11 +202,34 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_box",
+				"step": "underground_structures",
+				"terrain_adaptation": "none",
 				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "piece",
+						"spawns": [
+							{
+								"type": "graveyard:acolyte",
+								"weight": 25,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "graveyard:corrupted_vindicator",
+								"weight": 35,
+								"minCount": 1,
+								"maxCount": 3
+							},
+							{
+								"type": "graveyard:corrupted_pillager",
+								"weight": 35,
+								"minCount": 1,
+								"maxCount": 3
+							}
+						]
+					}
 				},
-				"id": "graveyard:small_desert_grave"
+				"id": "graveyard:crypt"
 			}
 		},
 		{
@@ -194,36 +257,6 @@
 					}
 				},
 				"id": "graveyard:small_desert_graveyard"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_box",
-				"spawn_overrides": {
-				},
-				"id": "graveyard:small_grave"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_box",
-				"spawn_overrides": {
-				},
-				"id": "graveyard:small_mountain_grave"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_box",
-				"spawn_overrides": {
-				},
-				"id": "graveyard:dead_tree"
 			}
 		},
 		{
@@ -267,39 +300,6 @@
 					}
 				},
 				"id": "graveyard:large_graveyard"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "underground_structures",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "piece",
-						"spawns": [
-							{
-								"type": "graveyard:acolyte",
-								"weight": 25,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "graveyard:corrupted_vindicator",
-								"weight": 35,
-								"minCount": 1,
-								"maxCount": 3
-							},
-							{
-								"type": "graveyard:corrupted_pillager",
-								"weight": 35,
-								"minCount": 1,
-								"maxCount": 3
-							}
-						]
-					}
-				},
-				"id": "graveyard:crypt"
 			}
 		}
 	]

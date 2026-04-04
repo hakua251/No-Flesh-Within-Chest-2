@@ -490,6 +490,14 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:block.cactus_flower.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.cactus_flower.place"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:block.cake.add_candle"
 		},
 		{
@@ -826,6 +834,66 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:block.copper_bulb.turn_off"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_bulb.turn_on"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_chest.close"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_chest.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_grate.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_grate.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_grate.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_grate.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_grate.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_statue.become_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_statue.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_statue.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_statue.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_trapdoor.close"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.copper_trapdoor.open"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:block.coral_block.break"
 		},
 		{
@@ -846,7 +914,43 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:block.creaking_heart.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.creaking_heart.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.creaking_heart.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.creaking_heart.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.creaking_heart.idle"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.creaking_heart.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.creaking_heart.spawn"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.creaking_heart.step"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:block.crop.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.deadbush.idle"
 		},
 		{
 			"weight": 1.0,
@@ -859,6 +963,14 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:block.decorated_pot.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.decorated_pot.insert"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.decorated_pot.insert_fail"
 		},
 		{
 			"weight": 1.0,
@@ -946,6 +1058,38 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:block.dried_ghast.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.dried_ghast.ambient_water"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.dried_ghast.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.dried_ghast.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.dried_ghast.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.dried_ghast.place_in_water"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.dried_ghast.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.dried_ghast.transition"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:block.dripstone_block.break"
 		},
 		{
@@ -963,6 +1107,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:block.dripstone_block.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.dry_grass.ambient"
 		},
 		{
 			"weight": 1.0,
@@ -990,6 +1138,26 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:block.eyeblossom.close"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.eyeblossom.close_long"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.eyeblossom.idle"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.eyeblossom.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.eyeblossom.open_long"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:block.fence_gate.close"
 		},
 		{
@@ -1003,6 +1171,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:block.fire.extinguish"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.firefly_bush.idle"
 		},
 		{
 			"weight": 1.0,
@@ -1319,6 +1491,26 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:block.lava.pop"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.leaf_litter.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.leaf_litter.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.leaf_litter.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.leaf_litter.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.leaf_litter.step"
 		},
 		{
 			"weight": 1.0,
@@ -1838,6 +2030,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:block.pale_hanging_moss.idle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:block.pink_petals.break"
 		},
 		{
@@ -1966,6 +2162,42 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:block.resin.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.resin.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.resin.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.resin.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.resin_bricks.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.resin_bricks.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.resin_bricks.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.resin_bricks.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.resin_bricks.step"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:block.respawn_anchor.ambient"
 		},
 		{
@@ -2031,6 +2263,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:block.sand.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.sand.idle"
 		},
 		{
 			"weight": 1.0,
@@ -2183,6 +2419,30 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:block.sculk_vein.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.shelf.activate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.shelf.deactivate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.shelf.multi_swap"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.shelf.place_item"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.shelf.single_swap"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:block.shelf.take_item"
 		},
 		{
 			"weight": 1.0,
@@ -2698,6 +2958,58 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.brush"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.eat"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.hurt_reduced"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.land"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.peek"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.roll"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.scute_drop"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.unroll_finish"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.armadillo.unroll_start"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:entity.armor_stand.break"
 		},
 		{
@@ -2942,6 +3254,98 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.become_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.death.exposed"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.death.oxidized"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.death.unaffected"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.death.weathered"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.head_spin.exposed"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.head_spin.oxidized"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.head_spin.unaffected"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.head_spin.weathered"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.hurt.exposed"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.hurt.oxidized"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.hurt.unaffected"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.hurt.weathered"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.item_drop"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.item_no_drop"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.no_item_get"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.no_item_no_get"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.shear"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.spawn"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.step.exposed"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.step.oxidized"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.step.unaffected"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.copper_golem.step.weathered"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:entity.cow.ambient"
 		},
 		{
@@ -2959,6 +3363,50 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:entity.cow.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.activate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.attack"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.deactivate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.freeze"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.spawn"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.sway"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.twitch"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.creaking.unfreeze"
 		},
 		{
 			"weight": 1.0,
@@ -3426,6 +3874,22 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:entity.ghastling.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.ghastling.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.ghastling.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.ghastling.spawn"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:entity.glow_item_frame.add_item"
 		},
 		{
@@ -3567,6 +4031,38 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:entity.guardian.hurt_land"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.happy_ghast.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.happy_ghast.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.happy_ghast.equip"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.happy_ghast.harness_goggles_down"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.happy_ghast.harness_goggles_up"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.happy_ghast.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.happy_ghast.riding"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.happy_ghast.unequip"
 		},
 		{
 			"weight": 1.0,
@@ -4003,6 +4499,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:entity.parrot.imitate.blaze"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.parrot.imitate.creaking"
 		},
 		{
 			"weight": 1.0,
@@ -5210,6 +5710,150 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:entity.wolf_angry.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_angry.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_angry.growl"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_angry.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_angry.pant"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_angry.whine"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_big.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_big.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_big.growl"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_big.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_big.pant"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_big.whine"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_cute.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_cute.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_cute.growl"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_cute.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_cute.pant"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_cute.whine"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_grumpy.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_grumpy.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_grumpy.growl"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_grumpy.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_grumpy.pant"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_grumpy.whine"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_puglin.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_puglin.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_puglin.growl"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_puglin.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_puglin.pant"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_puglin.whine"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_sad.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_sad.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_sad.growl"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_sad.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_sad.pant"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:entity.wolf_sad.whine"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:entity.zoglin.ambient"
 		},
 		{
@@ -5338,6 +5982,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:item.armor.equip_copper"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:item.armor.equip_diamond"
 		},
 		{
@@ -5367,6 +6015,14 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:item.armor.equip_turtle"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:item.armor.equip_wolf"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:item.armor.unequip_wolf"
 		},
 		{
 			"weight": 1.0,
@@ -5487,6 +6143,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:item.bundle.insert"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:item.bundle.insert_fail"
 		},
 		{
 			"weight": 1.0,
@@ -5614,6 +6274,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:item.ominous_bottle.dispose"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:item.shield.block"
 		},
 		{
@@ -5670,6 +6334,22 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:item.wolf_armor.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:item.wolf_armor.crack"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:item.wolf_armor.damage"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:item.wolf_armor.repair"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:particle.soul_escape"
 		},
 		{
@@ -5707,6 +6387,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:ui.toast.out"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weather.end_flash"
 		},
 		{
 			"weight": 1.0,

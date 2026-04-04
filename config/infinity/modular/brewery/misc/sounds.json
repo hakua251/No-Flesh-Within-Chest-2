@@ -1,0 +1,64 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "brewery:beer_elemental_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:beer_elemental_attack"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:beer_elemental_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:beer_elemental_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:breath"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:brewstation_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:brewstation_kettle"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:brewstation_oven"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:brewstation_process_failed"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:brewstation_timer_loop"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:brewstation_whistle"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:cabinet_close"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:cabinet_open"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:drawer_close"
+		},
+		{
+			"weight": 1.0,
+			"key": "brewery:drawer_open"
+		}
+	]
+}

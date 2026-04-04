@@ -1,0 +1,368 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.bio_lab.crafting"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.bio_lab.crafting_completed"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.bio_lab.crafting_random"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.cradle.became_full"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.cradle.crafting_random"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.cradle.eat"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.cradle.no"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.cradle.spawn_mob"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.cradle.spawn_primordial_mob"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.decomposer.crafting"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.decomposer.crafting_completed"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.decomposer.crafting_random"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.decomposer.eat"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.digester.crafting"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.digester.crafting_completed"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:block.digester.crafting_random"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bony_flesh_block.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bony_flesh_block.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bony_flesh_block.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bony_flesh_block.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bony_flesh_block.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:claws.attack.bleed_proc"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:claws.attack.strong"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:cradle.spike_attack"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.acid.spit"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.acid_blob.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.acid_blob.shoot"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.bloomberry.shoot"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_blob.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_blob.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_blob.growl"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_blob.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_blob.jump"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_blob.mew_purr"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_chicken.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_chicken.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_chicken.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_cow.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_cow.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_cow.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_pig.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_pig.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_pig.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_sheep.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_sheep.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.flesh_sheep.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:entity.grenade.throw"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_block.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_block.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_block.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_block.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_block.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_door.close"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_door.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin.awakened"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin.burp"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin.dormant"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin.eat"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin.no"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin_chest.bite_attack"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin_chest.close"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin_chest.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:gel_block.break"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:gel_block.fall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:gel_block.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:gel_block.place"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:gel_block.step"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.armor.bullet_jump"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.armor.equip_bio_alchemist"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.armor.equip_warrior"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.armor.imposing_roar"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.bone_marrow.drink"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.chrysalis.insert"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.chrysalis.remove"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.impaler.charge"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.impaler.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.impaler.impact"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.impaler.shoot"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.injector.fail"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:item.injector.inject"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.bio_forge.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.bio_forge.select_recipe"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.bio_forge.take_result"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.bio_lab.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.button.click"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.decomposer.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.digester.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.menu.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.radial_menu.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ui.storage_sac.open"
+		}
+	]
+}

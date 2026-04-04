@@ -1,0 +1,216 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": [
+				{
+					"Name": "refurbished_furniture:white_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:light_gray_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:gray_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:black_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:brown_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:red_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:orange_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:yellow_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:lime_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:green_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:light_blue_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:blue_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:cyan_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:purple_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:magenta_kitchen_cabinetry"
+				},
+				{
+					"Name": "refurbished_furniture:pink_kitchen_cabinetry"
+				}
+			]
+		},
+		{
+			"weight": 1.0,
+			"key": [
+				{
+					"Name": "refurbished_furniture:white_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:light_gray_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:gray_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:black_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:brown_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:red_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:orange_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:yellow_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:lime_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:green_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:light_blue_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:blue_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:cyan_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:purple_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:magenta_sofa"
+				},
+				{
+					"Name": "refurbished_furniture:pink_sofa"
+				}
+			]
+		},
+		{
+			"weight": 1.0,
+			"key": [
+				{
+					"Name": "refurbished_furniture:white_stool"
+				},
+				{
+					"Name": "refurbished_furniture:light_gray_stool"
+				},
+				{
+					"Name": "refurbished_furniture:gray_stool"
+				},
+				{
+					"Name": "refurbished_furniture:black_stool"
+				},
+				{
+					"Name": "refurbished_furniture:brown_stool"
+				},
+				{
+					"Name": "refurbished_furniture:red_stool"
+				},
+				{
+					"Name": "refurbished_furniture:orange_stool"
+				},
+				{
+					"Name": "refurbished_furniture:yellow_stool"
+				},
+				{
+					"Name": "refurbished_furniture:lime_stool"
+				},
+				{
+					"Name": "refurbished_furniture:green_stool"
+				},
+				{
+					"Name": "refurbished_furniture:light_blue_stool"
+				},
+				{
+					"Name": "refurbished_furniture:blue_stool"
+				},
+				{
+					"Name": "refurbished_furniture:cyan_stool"
+				},
+				{
+					"Name": "refurbished_furniture:purple_stool"
+				},
+				{
+					"Name": "refurbished_furniture:magenta_stool"
+				},
+				{
+					"Name": "refurbished_furniture:pink_stool"
+				}
+			]
+		},
+		{
+			"weight": 1.0,
+			"key": [
+				{
+					"Name": "refurbished_furniture:white_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:light_gray_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:gray_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:black_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:brown_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:red_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:orange_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:yellow_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:lime_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:green_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:light_blue_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:blue_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:cyan_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:purple_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:magenta_trampoline"
+				},
+				{
+					"Name": "refurbished_furniture:pink_trampoline"
+				}
+			]
+		}
+	]
+}

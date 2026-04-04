@@ -1,0 +1,64 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedbackpacks:backpack",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedbackpacks:copper_backpack",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedbackpacks:diamond_backpack",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedbackpacks:gold_backpack",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedbackpacks:iron_backpack",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedbackpacks:netherite_backpack",
+				"top": true,
+				"full": false
+			}
+		}
+	]
+}

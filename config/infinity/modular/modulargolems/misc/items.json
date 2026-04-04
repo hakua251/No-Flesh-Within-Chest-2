@@ -1,0 +1,556 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "modulargolems:ancient_remnant_sandstorm"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:azure_cube"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:barbaric_vanguard_boots"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:barbaric_vanguard_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:barbaric_vanguard_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:barbaric_vanguard_shinguard"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:beacon_boots"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:beacon_cannon"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:bell"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:black_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:blue_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:brown_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:cauldron"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:coating"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:command_wand"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:cyan_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:diamond"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:diamond_dog_golem_armor"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:diamond_expansion_template"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:diamond_golem_axe"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:diamond_golem_spear"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:diamond_golem_sword"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:dog_golem_body"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:dog_golem_holder"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:dog_golem_legs"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:dummy_furnace"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:emerald"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:empty_upgrade"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:enchanted_gold"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:ender_guardian_void_rune"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:ender_sight"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:fire_immune"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:flame_thrower"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:float"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:gold"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:gold_dog_golem_armor"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:golem_facade"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:golem_slicing_axe"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:golem_workbench"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:gray_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:green_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:harbinger_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:harbinger_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:harbinger_shinguard"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:harbinger_upgrade_template"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:hostile_wand"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:humanoid_golem_arms"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:humanoid_golem_body"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:humanoid_golem_holder"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:humanoid_golem_legs"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:ignis_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:ignis_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:ignis_shinguard"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:incomplete_dog_golem_body"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:incomplete_dog_golem_legs"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:incomplete_humanoid_golem_arms"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:incomplete_humanoid_golem_body"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:incomplete_humanoid_golem_legs"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:incomplete_metal_golem_arm"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:incomplete_metal_golem_body"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:incomplete_metal_golem_legs"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:iron_dog_golem_armor"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:iron_golem_axe"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:iron_golem_spear"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:iron_golem_sword"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:iron_mecha_bow"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:leviathan_blast_portal"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:light_blue_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:light_gray_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:lime_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:magenta_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:mechanical_arm"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:metal_golem_arm"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:metal_golem_body"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:metal_golem_holder"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:metal_golem_legs"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:metal_golem_template"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:monstrosity_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:monstrosity_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:monstrosity_shinguard"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:monstrosity_upgrade_template"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:mount_upgrade"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:netherite"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:netherite_dog_golem_armor"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:netherite_expansion_template"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:netherite_golem_axe"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:netherite_golem_spear"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:netherite_golem_sword"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:netherite_mecha_bow"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:netherite_monstrosity_earthquake"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:omnipotent_wand_command"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:omnipotent_wand_retrieval"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:omnipotent_wand_rider"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:omnipotent_wand_squad"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:omnipotent_wand_summon"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:orange_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:patrol_path_recorder"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:pickup"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:pickup_mending"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:pickup_no_destroy"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:pink_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:player"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:purple_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:push"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:quartz"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:recycle"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:red_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:retrieval_wand"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:rider_wand"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:roman_guard_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:roman_guard_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:roman_guard_shinguard"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:scylla_lightning_upgrade"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:size_upgrade"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:slow"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:sonic_cannon"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:speed"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:sponge"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:squad_wand"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:storm_construct"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:summon_wand"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:swim"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:talented"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:target_filter_default"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:target_filter_name"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:target_filter_type"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:target_filter_uuid"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:thunder_immune"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:void_construct"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:void_cube"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:weak"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:white_config_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:wind_spirit_boots"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:wind_spirit_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:wind_spirit_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:wind_spirit_shinguard"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:wither"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:yellow_config_card"
+		}
+	]
+}

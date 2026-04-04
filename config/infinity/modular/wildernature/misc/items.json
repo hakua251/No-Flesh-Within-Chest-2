@@ -1,0 +1,188 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "wildernature:bison_horn"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:bison_meat"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:bison_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:bison_trophy"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:blunderbuss"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:boar_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:bounty_board"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:bunny_stalker_banner"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cassowary_meat"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cassowary_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cod_catcher_banner"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:common_contract"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cooked_bison_meat"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cooked_cassowary_meat"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cooked_pelican_meat"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cooked_turkey_meat"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cooked_venison"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:deer_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:deer_trophy"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:diamond_ammunition"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:dog_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:fish_oil"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:flamingo_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:flint_ammunition"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:fur_cloak"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:hazelnut"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:hedgehog_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:leveling_contract"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:loot_bag"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:minisheep_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:owl_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:pelican_meat"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:pelican_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:penguin_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:raccoon_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:rare_contract"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:red_wolf_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:red_wolf_trophy"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:squirrel_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:stylin_purple_hat"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:truffle"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:turkey_meat"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:turkey_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:uncommon_contract"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:venison"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:wolf_trapper_banner"
+		}
+	]
+}

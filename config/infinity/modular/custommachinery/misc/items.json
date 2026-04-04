@@ -1,0 +1,20 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "custommachinery:box_creator_item"
+		},
+		{
+			"weight": 1.0,
+			"key": "custommachinery:configuration_card"
+		},
+		{
+			"weight": 1.0,
+			"key": "custommachinery:custom_machine_item"
+		},
+		{
+			"weight": 1.0,
+			"key": "custommachinery:structure_creator"
+		}
+	]
+}

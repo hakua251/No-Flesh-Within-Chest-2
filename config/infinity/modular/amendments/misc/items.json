@@ -1,0 +1,12 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "amendments:dragon_charge"
+		},
+		{
+			"weight": 1.0,
+			"key": "amendments:dye_bottle"
+		}
+	]
+}

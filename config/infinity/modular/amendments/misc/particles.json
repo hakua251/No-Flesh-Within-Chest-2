@@ -1,0 +1,28 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "amendments:boiling_bubble"
+		},
+		{
+			"weight": 1.0,
+			"key": "amendments:dragon_fireball_trail"
+		},
+		{
+			"weight": 1.0,
+			"key": "amendments:fireball_explosion"
+		},
+		{
+			"weight": 1.0,
+			"key": "amendments:fireball_explosion_emitter"
+		},
+		{
+			"weight": 1.0,
+			"key": "amendments:fireball_trail"
+		},
+		{
+			"weight": 1.0,
+			"key": "amendments:fluid_splash"
+		}
+	]
+}

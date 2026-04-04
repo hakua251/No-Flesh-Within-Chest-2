@@ -276,6 +276,13 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"Color": 8883574,
+				"Name": "minecraft:pale_garden"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"Color": -8934609,
 				"Name": "minecraft:plains"
 			}

@@ -1,0 +1,19 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"creature": {
+						"bounding_box": "piece",
+						"spawns": [
+						]
+					}
+				},
+				"id": "brewery:brewfest_tent"
+			}
+		}
+	]
+}

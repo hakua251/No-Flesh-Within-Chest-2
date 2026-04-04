@@ -1,0 +1,688 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "biomancy:absorption_boost"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:acid_bucket"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:acid_extract"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:acid_grenade"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:acid_splatter"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:acidic_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:acolyte_armor_boots"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:acolyte_armor_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:acolyte_armor_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:acolyte_armor_leggings"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:active_muscle"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:adult_permeable_membrane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:adult_permeable_membrane_pane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ageing_serum"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:baby_permeable_membrane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:baby_permeable_membrane_pane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bile"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bio_forge"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bio_lab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bio_lantern_blue"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bio_lantern_yellow"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bio_lumens"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:biometric_membrane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bloomberry"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bloomlight"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bone_fragments"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:breeding_stimulant"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:caustic_gunblade"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:chiseled_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:chroma_sheep_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:chrysalis"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:cleansing_serum"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:creator_mix"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:decay_grenade"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:decaying_additive"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:decomposer"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:despoil_sickle"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:dev_arm_cannon"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:digester"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:elastic_fibers"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:enlargement_serum"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:essence"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:exotic_compound"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:exotic_dust"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:extractor"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fertilizer"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fibrous_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fibrous_flesh_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fibrous_flesh_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fibrous_flesh_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fibrous_primal_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fibrous_primal_flesh_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fibrous_primal_flesh_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fibrous_primal_flesh_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_bits"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_blob_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_chicken_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_cow_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_fence"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_fence_gate"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_iris_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_ladder"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_pig_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_pillar"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_sheep_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_spike"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:flesh_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin_chest"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:fleshkin_pressure_plate"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:frenzy_serum"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:full_flesh_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:gelling_agent"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:gem_fragments"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:genetic_compound"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:grenade_casing"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:guide_book"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:healing_additive"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:hormone_secretion"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:hungry_flesh_blob_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:impaler"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:impermeable_membrane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:impermeable_membrane_pane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:incendiary_grenade"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:injector"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:insomnia_cure"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:legacy_flesh_blob_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:living_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:malignant_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:malignant_flesh_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:malignant_flesh_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:malignant_flesh_veins"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:malignant_flesh_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:mascot_patterns"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:maw_hopper"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:mineral_fragment"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:mob_claw"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:mob_fang"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:mob_gland"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:mob_marrow"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:mob_sinew"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:modular_larynx"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:nutrient_bar"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:nutrient_paste"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:nutrients"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:oneway_membrane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:organic_compound"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:organic_matter"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ornate_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ornate_flesh_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:packed_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:packed_flesh_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:packed_flesh_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:packed_flesh_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:porous_primal_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:porous_primal_flesh_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:porous_primal_flesh_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:porous_primal_flesh_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:potion_serum"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_bloom"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_bone_block"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_flesh_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_flesh_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_flesh_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_organ_bloom"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_orifice"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_permeable_membrane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primal_permeable_membrane_pane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primordial_bio_lantern"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primordial_core"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primordial_cradle"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primordial_flesh_blob_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:primordial_hungry_flesh_blob_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:ravenous_claws"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:regenerative_fluid"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:rejuvenation_serum"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:shrinking_serum"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:smooth_primal_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:smooth_primal_flesh_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:smooth_primal_flesh_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:smooth_primal_flesh_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:stone_powder"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:storage_sac"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:tab_icon"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:tendon_chain"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:thick_fur_sheep_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:thorn_shield"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:tongue"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:tough_fibers"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:toxin_extract"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:toxin_gland"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:toxin_grenade"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:tubular_flesh"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:undead_permeable_membrane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:undead_permeable_membrane_pane"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:unstable_compound"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:vial"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:vial_holder"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:volatile_fluid"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:volatile_gland"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:warrior_armor_boots"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:warrior_armor_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:warrior_armor_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:warrior_armor_leggings"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:water_gel_block"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:withered_mob_marrow"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:withering_ooze"
+		}
+	]
+}

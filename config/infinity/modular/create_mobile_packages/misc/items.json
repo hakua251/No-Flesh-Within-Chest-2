@@ -1,0 +1,20 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "create_mobile_packages:bee_port"
+		},
+		{
+			"weight": 1.0,
+			"key": "create_mobile_packages:mobile_packager"
+		},
+		{
+			"weight": 1.0,
+			"key": "create_mobile_packages:portable_stock_ticker"
+		},
+		{
+			"weight": 1.0,
+			"key": "create_mobile_packages:robo_bee"
+		}
+	]
+}

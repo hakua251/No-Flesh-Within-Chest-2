@@ -1,0 +1,24 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": true,
+				"Name": "doapi:standard",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": true,
+				"Name": "doapi:wall_standard",
+				"top": false,
+				"full": false
+			}
+		}
+	]
+}

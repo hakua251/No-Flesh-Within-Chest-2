@@ -1,0 +1,11 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "create_mobile_packages:robo_bee",
+				"Category": "creature"
+			}
+		}
+	]
+}

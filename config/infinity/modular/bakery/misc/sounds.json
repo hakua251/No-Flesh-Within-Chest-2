@@ -1,0 +1,28 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "bakery:cabinet_close"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:cabinet_open"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:cake_cut"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:cooking_pot_hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:drawer_close"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:drawer_open"
+		}
+	]
+}

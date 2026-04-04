@@ -130,6 +130,27 @@
 			"weight": 1.0,
 			"key": {
 				"Type": "tree",
+				"Name": "minecraft:pale_oak"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Type": "tree",
+				"Name": "minecraft:pale_oak_bonemeal"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Type": "tree",
+				"Name": "minecraft:pale_oak_creaking"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Type": "tree",
 				"Name": "minecraft:pine"
 			}
 		},

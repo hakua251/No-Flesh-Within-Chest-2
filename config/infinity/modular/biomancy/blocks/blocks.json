@@ -653,6 +653,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "biomancy:primal_organ_bloom",
+				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": true,
 				"laggy": false,
 				"Name": "biomancy:primal_orifice",

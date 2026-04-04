@@ -1,0 +1,12 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:magic_flame"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:necromancer_buff"
+		}
+	]
+}

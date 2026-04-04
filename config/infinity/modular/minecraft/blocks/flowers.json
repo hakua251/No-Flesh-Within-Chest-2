@@ -14,6 +14,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:closed_eyeblossom"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:cornflower"
 		},
 		{
@@ -23,6 +27,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:lily_of_the_valley"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:open_eyeblossom"
 		},
 		{
 			"weight": 1.0,

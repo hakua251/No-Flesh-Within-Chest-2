@@ -1,0 +1,594 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:acacia_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:bamboo_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:barrel",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:birch_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:cherry_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:controller",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:copper_barrel",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:copper_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:copper_shulker_box",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:crimson_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:dark_oak_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:decoration_table",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:diamond_barrel",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:diamond_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:diamond_shulker_box",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:gold_barrel",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:gold_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:gold_shulker_box",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:iron_barrel",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:iron_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:iron_shulker_box",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:jungle_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_barrel_1",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_barrel_2",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_barrel_3",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_barrel_4",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_copper_barrel_1",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_copper_barrel_2",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_copper_barrel_3",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_copper_barrel_4",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_diamond_barrel_1",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_diamond_barrel_2",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_diamond_barrel_3",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_diamond_barrel_4",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_gold_barrel_1",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_gold_barrel_2",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_gold_barrel_3",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_gold_barrel_4",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_iron_barrel_1",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_iron_barrel_2",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_iron_barrel_3",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_iron_barrel_4",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_netherite_barrel_1",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_netherite_barrel_2",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_netherite_barrel_3",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:limited_netherite_barrel_4",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:mangrove_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:netherite_barrel",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:netherite_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:netherite_shulker_box",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:oak_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:shulker_box",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:spruce_storage_connector",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:storage_input",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:storage_io",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:storage_link",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:storage_output",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "sophisticatedstorage:warped_storage_connector",
+				"top": true,
+				"full": true
+			}
+		}
+	]
+}

@@ -1,0 +1,96 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:alchemist_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:archivist_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:basher_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:firecaller_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:hallowed_gem"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:horn_of_sight"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:illusionary_dust"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:illusioner_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:imbuing_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:inquisitor_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:invoker_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:lost_candle"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:magical_fire_charge"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:marauder_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:necromancer_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:platinum_chunk"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:platinum_infused_hatchet"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:platinum_sheet"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:primal_essence"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:provoker_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:sorcerer_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:surrendered_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:unusual_dust"
+		}
+	]
+}

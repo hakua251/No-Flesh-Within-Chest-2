@@ -1,0 +1,18 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "vinery:mule",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "vinery:wandering_winemaker",
+				"Category": "creature"
+			}
+		}
+	]
+}

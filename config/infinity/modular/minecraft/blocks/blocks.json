@@ -109,6 +109,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:acacia_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:acacia_sign",
@@ -465,6 +475,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:bamboo_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:bamboo_sign",
@@ -735,6 +755,16 @@
 				"laggy": false,
 				"Name": "minecraft:birch_sapling",
 				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:birch_shelf",
+				"top": true,
 				"full": false
 			}
 		},
@@ -1514,8 +1544,28 @@
 			"key": {
 				"float": false,
 				"laggy": false,
+				"Name": "minecraft:bush",
+				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
 				"Name": "minecraft:cactus",
 				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:cactus_flower",
+				"top": true,
 				"full": false
 			}
 		},
@@ -1787,6 +1837,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:cherry_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:cherry_sign",
@@ -1889,6 +1949,16 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:chiseled_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:chiseled_deepslate",
 				"top": true,
 				"full": true
@@ -1930,6 +2000,16 @@
 				"float": true,
 				"laggy": false,
 				"Name": "minecraft:chiseled_red_sandstone",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:chiseled_resin_bricks",
 				"top": true,
 				"full": true
 			}
@@ -1982,6 +2062,16 @@
 				"Name": "minecraft:clay",
 				"top": true,
 				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:closed_eyeblossom",
+				"top": false,
+				"full": false
 			}
 		},
 		{
@@ -2117,6 +2207,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:command_block",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:comparator",
@@ -2149,6 +2249,16 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:copper_bars",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:copper_block",
 				"top": true,
 				"full": true
@@ -2159,9 +2269,112 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:copper_bulb",
+				"Properties": {
+					"lit": "false"
+				},
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:copper_chain",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:copper_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:copper_door",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:copper_golem_statue",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:copper_grate",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:copper_lantern",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:copper_ore",
 				"top": true,
 				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:copper_torch",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:copper_trapdoor",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:copper_wall_torch",
+				"top": false,
+				"full": false
 			}
 		},
 		{
@@ -2230,6 +2443,16 @@
 				"float": true,
 				"laggy": false,
 				"Name": "minecraft:crafting_table",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:creaking_heart",
 				"top": true,
 				"full": true
 			}
@@ -2370,6 +2593,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:crimson_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:crimson_sign",
@@ -2445,6 +2678,76 @@
 				"Name": "minecraft:crying_obsidian",
 				"top": true,
 				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:cut_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:cut_copper_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:cut_copper_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:cut_red_sandstone",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:cut_red_sandstone_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:cut_sandstone",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:cut_sandstone_slab",
+				"top": true,
+				"full": false
 			}
 		},
 		{
@@ -2716,6 +3019,16 @@
 				"laggy": false,
 				"Name": "minecraft:dark_oak_sapling",
 				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:dark_oak_shelf",
+				"top": true,
 				"full": false
 			}
 		},
@@ -3293,7 +3606,7 @@
 			}
 		},
 		{
-			"weight": 10.0,
+			"weight": 1.0,
 			"key": {
 				"float": true,
 				"laggy": false,
@@ -3348,6 +3661,16 @@
 				"float": true,
 				"laggy": true,
 				"Name": "minecraft:dragon_wall_head",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:dried_ghast",
 				"top": true,
 				"full": false
 			}
@@ -3517,9 +3840,152 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:exposed_chiseled_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:exposed_copper",
 				"top": true,
 				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:exposed_copper_bars",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:exposed_copper_bulb",
+				"Properties": {
+					"lit": "false"
+				},
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:exposed_copper_chain",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:exposed_copper_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:exposed_copper_door",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:exposed_copper_golem_statue",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:exposed_copper_grate",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:exposed_copper_lantern",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:exposed_copper_trapdoor",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:exposed_cut_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:exposed_cut_copper_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:exposed_cut_copper_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:exposed_lightning_rod",
+				"top": true,
+				"full": false
 			}
 		},
 		{
@@ -3588,6 +4054,16 @@
 				"float": false,
 				"laggy": false,
 				"Name": "minecraft:fire_coral_wall_fan",
+				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:firefly_bush",
 				"top": false,
 				"full": false
 			}
@@ -3789,7 +4265,7 @@
 			}
 		},
 		{
-			"weight": 10.0,
+			"weight": 1.0,
 			"key": {
 				"float": true,
 				"laggy": false,
@@ -3799,7 +4275,7 @@
 			}
 		},
 		{
-			"weight": 5.0,
+			"weight": 1.0,
 			"key": {
 				"float": false,
 				"laggy": false,
@@ -4482,6 +4958,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:jungle_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:jungle_sign",
@@ -4635,6 +5121,16 @@
 				"float": true,
 				"laggy": false,
 				"Name": "minecraft:lava_cauldron",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:leaf_litter",
 				"top": true,
 				"full": false
 			}
@@ -5455,6 +5951,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:mangrove_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:mangrove_sign",
@@ -5991,6 +6497,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:oak_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:oak_sign",
@@ -6086,6 +6602,16 @@
 				"Name": "minecraft:ochre_froglight",
 				"top": true,
 				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:open_eyeblossom",
+				"top": false,
+				"full": false
 			}
 		},
 		{
@@ -6259,9 +6785,152 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:oxidized_chiseled_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:oxidized_copper",
 				"top": true,
 				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:oxidized_copper_bars",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:oxidized_copper_bulb",
+				"Properties": {
+					"lit": "false"
+				},
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:oxidized_copper_chain",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:oxidized_copper_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:oxidized_copper_door",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:oxidized_copper_golem_statue",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:oxidized_copper_grate",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:oxidized_copper_lantern",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:oxidized_copper_trapdoor",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:oxidized_cut_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:oxidized_cut_copper_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:oxidized_cut_copper_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:oxidized_lightning_rod",
+				"top": true,
+				"full": false
 			}
 		},
 		{
@@ -6280,6 +6949,222 @@
 				"float": true,
 				"laggy": false,
 				"Name": "minecraft:packed_mud",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:pale_hanging_moss",
+				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_moss_block",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:pale_moss_carpet",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_button",
+				"Properties": {
+					"face": "floor"
+				},
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_door",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_fence",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_fence_gate",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": true,
+				"Name": "minecraft:pale_oak_hanging_sign",
+				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_leaves",
+				"Properties": {
+					"persistent": "true"
+				},
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_log",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_planks",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_pressure_plate",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_sapling",
+				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:pale_oak_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": true,
+				"Name": "minecraft:pale_oak_sign",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_trapdoor",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:pale_oak_wall_hanging_sign",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": true,
+				"Name": "minecraft:pale_oak_wall_sign",
+				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:pale_oak_wood",
 				"top": true,
 				"full": true
 			}
@@ -6948,6 +7833,16 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:potted_closed_eyeblossom",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:potted_cornflower",
 				"top": true,
 				"full": false
@@ -7068,6 +7963,16 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:potted_open_eyeblossom",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:potted_orange_tulip",
 				"top": true,
 				"full": false
@@ -7079,6 +7984,16 @@
 				"float": true,
 				"laggy": false,
 				"Name": "minecraft:potted_oxeye_daisy",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:potted_pale_oak_sapling",
 				"top": true,
 				"full": false
 			}
@@ -7726,7 +8641,7 @@
 			}
 		},
 		{
-			"weight": 5.0,
+			"weight": 1.0,
 			"key": {
 				"float": false,
 				"laggy": false,
@@ -7952,6 +8867,66 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:resin_block",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:resin_brick_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:resin_brick_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:resin_brick_wall",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:resin_bricks",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:resin_clump",
+				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:respawn_anchor",
 				"top": true,
 				"full": true
@@ -7978,7 +8953,7 @@
 			}
 		},
 		{
-			"weight": 5.0,
+			"weight": 1.0,
 			"key": {
 				"float": false,
 				"laggy": false,
@@ -7988,7 +8963,7 @@
 			}
 		},
 		{
-			"weight": 3.0,
+			"weight": 1.0,
 			"key": {
 				"float": true,
 				"laggy": false,
@@ -8114,6 +9089,16 @@
 				"laggy": false,
 				"Name": "minecraft:seagrass",
 				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:short_dry_grass",
+				"top": false,
 				"full": false
 			}
 		},
@@ -8572,6 +9557,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:spruce_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:spruce_sign",
@@ -8650,7 +9645,7 @@
 			}
 		},
 		{
-			"weight": 5.0,
+			"weight": 1.0,
 			"key": {
 				"float": true,
 				"laggy": false,
@@ -8927,6 +9922,26 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:stripped_pale_oak_log",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:stripped_pale_oak_wood",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:stripped_spruce_log",
 				"top": true,
 				"full": true
@@ -9028,6 +10043,16 @@
 				"float": false,
 				"laggy": false,
 				"Name": "minecraft:sweet_berry_bush",
+				"top": false,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:tall_dry_grass",
 				"top": false,
 				"full": false
 			}
@@ -9388,6 +10413,16 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:warped_shelf",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:warped_sign",
@@ -9480,7 +10515,150 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:waxed_chiseled_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_copper_bars",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:waxed_copper_block",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_copper_bulb",
+				"Properties": {
+					"lit": "false"
+				},
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_copper_chain",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:waxed_copper_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:waxed_copper_door",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:waxed_copper_golem_statue",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_copper_grate",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:waxed_copper_lantern",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_copper_trapdoor",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_cut_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_cut_copper_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_cut_copper_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_chiseled_copper",
 				"top": true,
 				"full": true
 			}
@@ -9500,7 +10678,303 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:waxed_exposed_copper_bars",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_copper_bulb",
+				"Properties": {
+					"lit": "false"
+				},
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_copper_chain",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:waxed_exposed_copper_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_copper_door",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:waxed_exposed_copper_golem_statue",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_copper_grate",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_copper_lantern",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_copper_trapdoor",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_cut_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_cut_copper_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_cut_copper_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_exposed_lightning_rod",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_lightning_rod",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_chiseled_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:waxed_oxidized_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_copper_bars",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_copper_bulb",
+				"Properties": {
+					"lit": "false"
+				},
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_copper_chain",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:waxed_oxidized_copper_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_copper_door",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:waxed_oxidized_copper_golem_statue",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_copper_grate",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_copper_lantern",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_copper_trapdoor",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_cut_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_cut_copper_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_cut_copper_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_oxidized_lightning_rod",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_chiseled_copper",
 				"top": true,
 				"full": true
 			}
@@ -9520,9 +10994,285 @@
 			"key": {
 				"float": true,
 				"laggy": false,
+				"Name": "minecraft:waxed_weathered_copper_bars",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_copper_bulb",
+				"Properties": {
+					"lit": "false"
+				},
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_copper_chain",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:waxed_weathered_copper_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_copper_door",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:waxed_weathered_copper_golem_statue",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_copper_grate",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_copper_lantern",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_copper_trapdoor",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_cut_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_cut_copper_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_cut_copper_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:waxed_weathered_lightning_rod",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_chiseled_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
 				"Name": "minecraft:weathered_copper",
 				"top": true,
 				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_copper_bars",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_copper_bulb",
+				"Properties": {
+					"lit": "false"
+				},
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_copper_chain",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:weathered_copper_chest",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:weathered_copper_door",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": true,
+				"Name": "minecraft:weathered_copper_golem_statue",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_copper_grate",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:weathered_copper_lantern",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_copper_trapdoor",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_cut_copper",
+				"top": true,
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_cut_copper_slab",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_cut_copper_stairs",
+				"top": true,
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "minecraft:weathered_lightning_rod",
+				"top": true,
+				"full": false
 			}
 		},
 		{
@@ -9719,6 +11469,16 @@
 				"Name": "minecraft:white_wool",
 				"top": true,
 				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"float": false,
+				"laggy": false,
+				"Name": "minecraft:wildflowers",
+				"top": false,
+				"full": false
 			}
 		},
 		{

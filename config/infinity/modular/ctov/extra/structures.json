@@ -7,26 +7,6 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:medium/village_plains"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_mountain_alpine"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
 				"id": "ctov:large/village_savanna_na"
 			}
 		},
@@ -37,7 +17,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:medium/village_mushroom"
+				"id": "ctov:medium/village_underground"
 			}
 		},
 		{
@@ -47,7 +27,17 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:medium/village_mountain_alpine"
+				"id": "ctov:small/village_underground"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_mountain"
 			}
 		},
 		{
@@ -86,7 +76,7 @@
 						]
 					}
 				},
-				"id": "ctov:pillager_outpost_mesa"
+				"id": "ctov:pillager_outpost_jungle"
 			}
 		},
 		{
@@ -96,7 +86,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:large/village_swamp"
+				"id": "ctov:large/village_mountain"
 			}
 		},
 		{
@@ -106,47 +96,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:large/village_jungle"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_desert"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_swamp_fortified"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_taiga"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_savanna_na"
+				"id": "ctov:small/village_desert_oasis"
 			}
 		},
 		{
@@ -166,145 +116,6 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:medium/village_swamp"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_swamp_fortified"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_mushroom"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_mesa_fortified"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_mesa"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_jungle_tree"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_beach"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_underground"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_taiga_fortified"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "full",
-						"spawns": [
-							{
-								"type": "minecraft:pillager",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:evoker",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:vindicator",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:witch",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							}
-						]
-					}
-				},
-				"id": "ctov:pillager_outpost_snowy"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_snowy_igloo"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
 				"id": "ctov:large/village_desert_oasis"
 			}
 		},
@@ -314,76 +125,8 @@
 				"step": "surface_structures",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "full",
-						"spawns": [
-							{
-								"type": "minecraft:pillager",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:evoker",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:vindicator",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:witch",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							}
-						]
-					}
 				},
-				"id": "ctov:pillager_outpost_mountain"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "full",
-						"spawns": [
-							{
-								"type": "minecraft:pillager",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:evoker",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:vindicator",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:witch",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							}
-						]
-					}
-				},
-				"id": "ctov:pillager_outpost_taiga"
+				"id": "ctov:large/village_desert"
 			}
 		},
 		{
@@ -393,7 +136,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:small/village_mesa"
+				"id": "ctov:large/village_christmas"
 			}
 		},
 		{
@@ -403,27 +146,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:medium/village_desert_oasis"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_christmas"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_beach"
+				"id": "ctov:small/village_dark_forest"
 			}
 		},
 		{
@@ -472,66 +195,6 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:large/village_taiga_fortified"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_mushroom"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_taiga"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_beach"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_jungle"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_christmas"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
 				"id": "ctov:large/village_savanna"
 			}
 		},
@@ -542,97 +205,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:large/village_taiga"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_underground"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_plains_fortified"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_christmas"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_jungle_tree"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_snowy_igloo"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_swamp"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_desert"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_mesa_fortified"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_plains"
+				"id": "ctov:medium/village_plains_fortified"
 			}
 		},
 		{
@@ -671,17 +244,7 @@
 						]
 					}
 				},
-				"id": "ctov:pillager_outpost_beach"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_swamp_fortified"
+				"id": "ctov:pillager_outpost_swamp"
 			}
 		},
 		{
@@ -730,7 +293,37 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:small/village_savanna"
+				"id": "ctov:large/village_jungle_tree"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_swamp"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_beach"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_snowy_igloo"
 			}
 		},
 		{
@@ -769,7 +362,246 @@
 						]
 					}
 				},
-				"id": "ctov:pillager_outpost_desert"
+				"id": "ctov:pillager_outpost_snowy"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_mountain"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_taiga"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_savanna_na"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_jungle_tree"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "minecraft:pillager",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:evoker",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:vindicator",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:witch",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							}
+						]
+					}
+				},
+				"id": "ctov:pillager_outpost_beach"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_plains"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_desert"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_taiga_fortified"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_savanna"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_taiga"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_jungle"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_mesa"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_mesa"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_desert"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_beach"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_mushroom"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_mountain_alpine"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_desert_oasis"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_mountain_alpine"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_swamp_fortified"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_underground"
 			}
 		},
 		{
@@ -818,7 +650,234 @@
 						]
 					}
 				},
-				"id": "ctov:pillager_outpost_jungle"
+				"id": "ctov:pillager_outpost_taiga"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "minecraft:pillager",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:evoker",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:vindicator",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:witch",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							}
+						]
+					}
+				},
+				"id": "ctov:pillager_outpost_mesa"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_mesa"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_plains"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_taiga_fortified"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_swamp_fortified"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_jungle"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_swamp"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_beach"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_swamp"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "minecraft:pillager",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:evoker",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:vindicator",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:witch",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							}
+						]
+					}
+				},
+				"id": "ctov:pillager_outpost_desert"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_dark_forest"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_mushroom"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_plains"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"type": "minecraft:pillager",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:evoker",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:vindicator",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							},
+							{
+								"type": "minecraft:witch",
+								"weight": 1,
+								"minCount": 1,
+								"maxCount": 1
+							}
+						]
+					}
+				},
+				"id": "ctov:pillager_outpost_badlands"
 			}
 		},
 		{
@@ -867,7 +926,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:medium/village_plains_fortified"
+				"id": "ctov:large/village_jungle"
 			}
 		},
 		{
@@ -877,7 +936,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:small/village_plains"
+				"id": "ctov:small/village_mushroom"
 			}
 		},
 		{
@@ -887,46 +946,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:large/village_jungle_tree"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "full",
-						"spawns": [
-							{
-								"type": "minecraft:pillager",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:evoker",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:vindicator",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							},
-							{
-								"type": "minecraft:witch",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							}
-						]
-					}
-				},
-				"id": "ctov:pillager_outpost_swamp"
+				"id": "ctov:medium/village_mesa_fortified"
 			}
 		},
 		{
@@ -936,7 +956,27 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:large/village_mountain"
+				"id": "ctov:small/village_swamp_fortified"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_jungle_tree"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_taiga"
 			}
 		},
 		{
@@ -975,7 +1015,7 @@
 						]
 					}
 				},
-				"id": "ctov:pillager_outpost_badlands"
+				"id": "ctov:pillager_outpost_mountain"
 			}
 		},
 		{
@@ -995,6 +1035,46 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
+				"id": "ctov:small/village_savanna_na"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_plains_fortified"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:medium/village_christmas"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:large/village_mesa_fortified"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
 				"id": "ctov:small/village_plains_fortified"
 			}
 		},
@@ -1005,117 +1085,7 @@
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 				},
-				"id": "ctov:medium/village_taiga_fortified"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_mountain"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_savanna_na"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_dark_forest"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_dark_forest"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_desert"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_underground"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_mountain_alpine"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:large/village_mesa"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_jungle"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:medium/village_mountain"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "ctov:small/village_desert_oasis"
+				"id": "ctov:small/village_christmas"
 			}
 		},
 		{
@@ -1126,6 +1096,36 @@
 				"spawn_overrides": {
 				},
 				"id": "ctov:medium/village_dark_forest"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_taiga_fortified"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_mountain_alpine"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				},
+				"id": "ctov:small/village_snowy_igloo"
 			}
 		}
 	]

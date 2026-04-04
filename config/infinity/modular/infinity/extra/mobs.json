@@ -1,0 +1,46 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "infinity:ant",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "infinity:bishop",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "infinity:chaos_creeper",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "infinity:chaos_pawn",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "infinity:chaos_skeleton",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "infinity:chaos_slime",
+				"Category": "monster"
+			}
+		}
+	]
+}

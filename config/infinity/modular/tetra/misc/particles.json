@@ -1,0 +1,36 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "tetra:arcane_fire"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:falling_blood"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:falling_slime"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:landing_blood"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:landing_slime"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:sparkle"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:splintered_power"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:sputtering_power"
+		}
+	]
+}

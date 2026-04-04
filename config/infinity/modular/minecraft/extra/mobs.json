@@ -10,6 +10,13 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"Name": "minecraft:armadillo",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"Name": "minecraft:axolotl",
 				"Category": "axolotls"
 			}
@@ -75,6 +82,13 @@
 			"key": {
 				"Name": "minecraft:cow",
 				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "minecraft:creaking",
+				"Category": "monster"
 			}
 		},
 		{
@@ -187,6 +201,13 @@
 			"key": {
 				"Name": "minecraft:guardian",
 				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "minecraft:happy_ghast",
+				"Category": "creature"
 			}
 		},
 		{

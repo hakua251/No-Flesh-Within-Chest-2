@@ -1,0 +1,44 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "tetra:earthpiercer"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:extractor"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:extractor_breakable"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:hoe_extra_mineable"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:multiblock_schematic"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:nailed"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:scannable"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:stonecutter"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:sword_instamine"
+		},
+		{
+			"weight": 1.0,
+			"key": "tetra:sword_very_efficient"
+		}
+	]
+}

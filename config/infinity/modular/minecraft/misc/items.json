@@ -50,6 +50,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:acacia_shelf"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:acacia_sign"
 		},
 		{
@@ -131,6 +135,14 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:archer_pottery_sherd"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:armadillo_scute"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:armadillo_spawn_egg"
 		},
 		{
 			"weight": 1.0,
@@ -223,6 +235,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:bamboo_raft"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:bamboo_shelf"
 		},
 		{
 			"weight": 1.0,
@@ -350,6 +366,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:birch_shelf"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:birch_sign"
 		},
 		{
@@ -378,6 +398,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:black_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:black_candle"
 		},
 		{
@@ -399,6 +423,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:black_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:black_harness"
 		},
 		{
 			"weight": 1.0,
@@ -466,6 +494,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:blue_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:blue_candle"
 		},
 		{
@@ -486,7 +518,15 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:blue_egg"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:blue_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:blue_harness"
 		},
 		{
 			"weight": 1.0,
@@ -598,6 +638,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:brown_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:brown_candle"
 		},
 		{
@@ -618,7 +662,15 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:brown_egg"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:brown_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:brown_harness"
 		},
 		{
 			"weight": 1.0,
@@ -682,7 +734,15 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:bush"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:cactus"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cactus_flower"
 		},
 		{
 			"weight": 1.0,
@@ -814,6 +874,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:cherry_shelf"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:cherry_sign"
 		},
 		{
@@ -858,6 +922,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:chiseled_copper"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:chiseled_deepslate"
 		},
 		{
@@ -875,6 +943,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:chiseled_red_sandstone"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:chiseled_resin_bricks"
 		},
 		{
 			"weight": 1.0,
@@ -907,6 +979,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:clock"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:closed_eyeblossom"
 		},
 		{
 			"weight": 1.0,
@@ -1038,7 +1114,63 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:copper_axe"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_bars"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:copper_block"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_boots"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_bulb"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_chain"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_chest"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_golem_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_golem_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_grate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_hoe"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_horse_armor"
 		},
 		{
 			"weight": 1.0,
@@ -1046,7 +1178,39 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:copper_lantern"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_leggings"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_nugget"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:copper_ore"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_pickaxe"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_shovel"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_sword"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_torch"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -1079,6 +1243,14 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:crafting_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:creaking_heart"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:creaking_spawn_egg"
 		},
 		{
 			"weight": 1.0,
@@ -1135,6 +1307,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:crimson_roots"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:crimson_shelf"
 		},
 		{
 			"weight": 1.0,
@@ -1202,6 +1378,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:cyan_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:cyan_candle"
 		},
 		{
@@ -1223,6 +1403,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:cyan_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cyan_harness"
 		},
 		{
 			"weight": 1.0,
@@ -1303,6 +1487,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:dark_oak_sapling"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:dark_oak_shelf"
 		},
 		{
 			"weight": 1.0,
@@ -1403,6 +1591,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:dead_tube_coral_fan"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:debug_stick"
 		},
 		{
 			"weight": 1.0,
@@ -1586,6 +1778,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:dried_ghast"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:dried_kelp"
 		},
 		{
@@ -1718,7 +1914,47 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:exposed_chiseled_copper"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:exposed_copper"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_copper_bars"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_copper_bulb"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_copper_chain"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_copper_chest"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_copper_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_copper_golem_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_copper_grate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_copper_lantern"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -1731,6 +1967,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:exposed_cut_copper_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:exposed_lightning_rod"
 		},
 		{
 			"weight": 1.0,
@@ -1771,6 +2011,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:fire_coral_fan"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:firefly_bush"
 		},
 		{
 			"weight": 1.0,
@@ -2006,6 +2250,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:gray_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:gray_candle"
 		},
 		{
@@ -2027,6 +2275,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:gray_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:gray_harness"
 		},
 		{
 			"weight": 1.0,
@@ -2058,6 +2310,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:green_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:green_candle"
 		},
 		{
@@ -2079,6 +2335,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:green_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:green_harness"
 		},
 		{
 			"weight": 1.0,
@@ -2115,6 +2375,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:hanging_roots"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:happy_ghast_spawn_egg"
 		},
 		{
 			"weight": 1.0,
@@ -2366,6 +2630,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:jungle_shelf"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:jungle_sign"
 		},
 		{
@@ -2430,6 +2698,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:leaf_litter"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:leather"
 		},
 		{
@@ -2474,6 +2746,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:light_blue_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:light_blue_candle"
 		},
 		{
@@ -2495,6 +2771,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:light_blue_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:light_blue_harness"
 		},
 		{
 			"weight": 1.0,
@@ -2526,6 +2806,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:light_gray_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:light_gray_candle"
 		},
 		{
@@ -2547,6 +2831,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:light_gray_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:light_gray_harness"
 		},
 		{
 			"weight": 1.0,
@@ -2598,6 +2886,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:lime_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:lime_candle"
 		},
 		{
@@ -2619,6 +2911,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:lime_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:lime_harness"
 		},
 		{
 			"weight": 1.0,
@@ -2666,6 +2962,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:magenta_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:magenta_candle"
 		},
 		{
@@ -2687,6 +2987,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:magenta_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:magenta_harness"
 		},
 		{
 			"weight": 1.0,
@@ -2771,6 +3075,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:mangrove_roots"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:mangrove_shelf"
 		},
 		{
 			"weight": 1.0,
@@ -2942,6 +3250,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:music_disc_lava_chicken"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:music_disc_mall"
 		},
 		{
@@ -2967,6 +3279,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:music_disc_strad"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:music_disc_tears"
 		},
 		{
 			"weight": 1.0,
@@ -3150,6 +3466,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:oak_shelf"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:oak_sign"
 		},
 		{
@@ -3186,11 +3506,19 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:open_eyeblossom"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:orange_banner"
 		},
 		{
 			"weight": 1.0,
 			"key": "minecraft:orange_bed"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:orange_bundle"
 		},
 		{
 			"weight": 1.0,
@@ -3215,6 +3543,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:orange_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:orange_harness"
 		},
 		{
 			"weight": 1.0,
@@ -3246,7 +3578,47 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:oxidized_chiseled_copper"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:oxidized_copper"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:oxidized_copper_bars"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:oxidized_copper_bulb"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:oxidized_copper_chain"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:oxidized_copper_chest"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:oxidized_copper_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:oxidized_copper_golem_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:oxidized_copper_grate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:oxidized_copper_lantern"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:oxidized_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -3262,6 +3634,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:oxidized_lightning_rod"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:packed_ice"
 		},
 		{
@@ -3271,6 +3647,90 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:painting"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_hanging_moss"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_moss_block"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_moss_carpet"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_boat"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_button"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_chest_boat"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_fence"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_fence_gate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_hanging_sign"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_leaves"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_log"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_planks"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_pressure_plate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_sapling"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_sign"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_trapdoor"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_wood"
 		},
 		{
 			"weight": 1.0,
@@ -3338,6 +3798,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:pink_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:pink_candle"
 		},
 		{
@@ -3359,6 +3823,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:pink_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pink_harness"
 		},
 		{
 			"weight": 1.0,
@@ -3622,6 +4090,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:purple_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:purple_candle"
 		},
 		{
@@ -3643,6 +4115,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:purple_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:purple_harness"
 		},
 		{
 			"weight": 1.0,
@@ -3774,6 +4250,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:red_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:red_candle"
 		},
 		{
@@ -3795,6 +4275,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:red_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:red_harness"
 		},
 		{
 			"weight": 1.0,
@@ -3895,6 +4379,34 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:repeating_command_block"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:resin_block"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:resin_brick"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:resin_brick_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:resin_brick_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:resin_brick_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:resin_bricks"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:resin_clump"
 		},
 		{
 			"weight": 1.0,
@@ -4019,6 +4531,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:shield"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:short_dry_grass"
 		},
 		{
 			"weight": 1.0,
@@ -4274,6 +4790,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:spruce_shelf"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:spruce_sign"
 		},
 		{
@@ -4450,6 +4970,14 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:stripped_pale_oak_log"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:stripped_pale_oak_wood"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:stripped_spruce_log"
 		},
 		{
@@ -4507,6 +5035,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:tadpole_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:tall_dry_grass"
 		},
 		{
 			"weight": 1.0,
@@ -4702,6 +5234,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:warped_shelf"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:warped_sign"
 		},
 		{
@@ -4730,7 +5266,47 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:waxed_chiseled_copper"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_copper_bars"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:waxed_copper_block"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_copper_bulb"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_copper_chain"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_copper_chest"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_copper_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_copper_golem_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_copper_grate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_copper_lantern"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -4746,7 +5322,47 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_chiseled_copper"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:waxed_exposed_copper"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_copper_bars"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_copper_bulb"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_copper_chain"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_copper_chest"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_copper_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_copper_golem_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_copper_grate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_copper_lantern"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -4762,7 +5378,55 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:waxed_exposed_lightning_rod"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_lightning_rod"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_chiseled_copper"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:waxed_oxidized_copper"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_copper_bars"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_copper_bulb"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_copper_chain"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_copper_chest"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_copper_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_copper_golem_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_copper_grate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_copper_lantern"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -4778,7 +5442,51 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:waxed_oxidized_lightning_rod"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_chiseled_copper"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:waxed_weathered_copper"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_copper_bars"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_copper_bulb"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_copper_chain"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_copper_chest"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_copper_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_copper_golem_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_copper_grate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_copper_lantern"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -4794,11 +5502,55 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:waxed_weathered_lightning_rod"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:wayfinder_armor_trim_smithing_template"
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:weathered_chiseled_copper"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:weathered_copper"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_copper_bars"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_copper_bulb"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_copper_chain"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_copper_chest"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_copper_door"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_copper_golem_statue"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_copper_grate"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_copper_lantern"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -4811,6 +5563,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:weathered_cut_copper_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:weathered_lightning_rod"
 		},
 		{
 			"weight": 1.0,
@@ -4838,6 +5594,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:white_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:white_candle"
 		},
 		{
@@ -4859,6 +5619,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:white_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:white_harness"
 		},
 		{
 			"weight": 1.0,
@@ -4890,6 +5654,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:wildflowers"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:witch_spawn_egg"
 		},
 		{
@@ -4907,6 +5675,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:wither_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:wolf_armor"
 		},
 		{
 			"weight": 1.0,
@@ -4950,6 +5722,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:yellow_bundle"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:yellow_candle"
 		},
 		{
@@ -4971,6 +5747,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:yellow_glazed_terracotta"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:yellow_harness"
 		},
 		{
 			"weight": 1.0,

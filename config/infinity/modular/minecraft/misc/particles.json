@@ -54,6 +54,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:copper_fire_flame"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:crimson_spore"
 		},
 		{
@@ -107,6 +111,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:dust_color_transition"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:dust_plume"
 		},
 		{
 			"weight": 1.0,
@@ -183,6 +191,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:falling_water"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:firefly"
 		},
 		{
 			"weight": 1.0,
@@ -263,6 +275,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:note"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:pale_oak_leaves"
 		},
 		{
 			"weight": 1.0,
@@ -350,7 +366,19 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:tinted_leaves"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:tinted_needles"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:totem_of_undying"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:trail"
 		},
 		{
 			"weight": 1.0,

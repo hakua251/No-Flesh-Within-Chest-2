@@ -1,0 +1,192 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "wildernature:bison_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:bison_angry"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:bison_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:bison_horn"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:bison_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:blunderbuss_load"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:blunderbuss_shoot"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:boar_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:boar_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:boar_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cassowary_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cassowary_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:cassowary_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:deer_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:deer_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:deer_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:dog_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:dog_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:dog_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:flamingo_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:flamingo_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:flamingo_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:hedgehog_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:hedgehog_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:hedgehog_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:owl_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:owl_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:owl_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:pelican_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:pelican_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:pelican_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:penguin_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:penguin_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:penguin_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:raccoon_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:raccoon_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:raccoon_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:red_wolf_aggro"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:red_wolf_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:red_wolf_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:red_wolf_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:squirrel_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:squirrel_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:squirrel_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:turkey_ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:turkey_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "wildernature:turkey_hurt"
+		}
+	]
+}

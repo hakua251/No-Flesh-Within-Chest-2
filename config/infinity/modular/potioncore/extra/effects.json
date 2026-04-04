@@ -1,0 +1,391 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 52377,
+				"Name": "potioncore:antidote",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 6737151,
+				"Name": "potioncore:bless",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 10583930,
+				"Name": "potioncore:broken_armor",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 11012960,
+				"Name": "potioncore:broken_magic_shield",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 6710886,
+				"Name": "potioncore:burst",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 255,
+				"Name": "potioncore:chance",
+				"Category": "neutral"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 13391104,
+				"Name": "potioncore:climb",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 16733695,
+				"Name": "potioncore:cure",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 0,
+				"Name": "potioncore:curse",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 2873584,
+				"Name": "potioncore:diamond_skin",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 10027263,
+				"Name": "potioncore:disorganization",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 10027161,
+				"Name": "potioncore:dispel",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 65535,
+				"Name": "potioncore:drown",
+				"Category": "neutral"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 3355443,
+				"Name": "potioncore:explode",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 10027161,
+				"Name": "potioncore:extend",
+				"Category": "neutral"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 16733440,
+				"Name": "potioncore:fire",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 5609983,
+				"Name": "potioncore:flight",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 10092441,
+				"Name": "potioncore:invert",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 13092807,
+				"Name": "potioncore:iron_skin",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 10066227,
+				"Name": "potioncore:klutz",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 65280,
+				"Name": "potioncore:launch",
+				"Category": "neutral"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 16776960,
+				"Name": "potioncore:lightning",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 16724787,
+				"Name": "potioncore:love",
+				"Category": "neutral"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 15114239,
+				"Name": "potioncore:magic_focus",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 10845875,
+				"Name": "potioncore:magic_inhibition",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 16729770,
+				"Name": "potioncore:magic_shield",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 10027263,
+				"Name": "potioncore:perplexity",
+				"Category": "neutral"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 16711935,
+				"Name": "potioncore:potion_sickness",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 16777215,
+				"Name": "potioncore:purity",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 52377,
+				"Name": "potioncore:random_teleport",
+				"Category": "neutral"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 13120100,
+				"Name": "potioncore:reach",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 34850,
+				"Name": "potioncore:recoil",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 7829367,
+				"Name": "potioncore:repair",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 16711680,
+				"Name": "potioncore:revival",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 7811840,
+				"Name": "potioncore:rust",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 2236962,
+				"Name": "potioncore:solid_core",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 10049023,
+				"Name": "potioncore:spawn_teleport",
+				"Category": "neutral"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 10079232,
+				"Name": "potioncore:spin",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 3394611,
+				"Name": "potioncore:step_up",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": true,
+				"Color": 65433,
+				"Name": "potioncore:surface_teleport",
+				"Category": "neutral"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 10048768,
+				"Name": "potioncore:true_shot",
+				"Category": "beneficial"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 5601024,
+				"Name": "potioncore:vulnerable",
+				"Category": "harmful"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Instant": false,
+				"Color": 5592405,
+				"Name": "potioncore:weight",
+				"Category": "harmful"
+			}
+		}
+	]
+}

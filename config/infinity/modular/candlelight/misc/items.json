@@ -1,0 +1,692 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "candlelight:acacia_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:acacia_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:acacia_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:acacia_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:acacia_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:acacia_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bamboo_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bamboo_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bamboo_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bamboo_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bamboo_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bamboo_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bamboo_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bamboo_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bamboo_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:basalt_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:basalt_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:basalt_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:beef_tartare"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:beef_wellington"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:beef_with_mushroom_in_wine_and_potatoes"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:beetroot_salad"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:birch_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:birch_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:birch_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:birch_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:birch_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:birch_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bolognese"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:bowl"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:candlelight_banner"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:chefs_boots"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:chefs_jacket"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:chefs_pants"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cherry_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cherry_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cherry_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cherry_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cherry_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cherry_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:chicken_alfredo"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:chicken_teriyaki"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:chicken_with_vegetables"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:chocolate_box"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:chocolate_mousse"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cloche"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cobblestone_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cobblestone_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cobblestone_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cooking_hat"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cooking_pan"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:cooking_pot"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:crimson_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:crimson_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:crimson_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:crimson_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:crimson_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:crimson_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:dark_oak_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:dark_oak_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:dark_oak_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:dark_oak_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:dark_oak_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:dark_oak_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:deepslate_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:deepslate_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:deepslate_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:dinner_bell"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:dress"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:end_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:end_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:end_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:fillet_steak"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:floorboard"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:flower_crown"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:formal_shirt"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:fresh_garden_salad"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:glass"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:gold_ring"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:granite_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:granite_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:granite_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:harvest_plate"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:hearth"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:jewelry_box"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:jungle_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:jungle_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:jungle_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:jungle_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:jungle_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:jungle_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:khinkali"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:lamp"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:lasagne"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:letter_closed"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:letter_open"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:love_letter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:love_letter_open"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mangrove_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mangrove_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mangrove_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mangrove_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mangrove_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mangrove_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mozzarella"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mud_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mud_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mud_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:mushroom_soup"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:napkin"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:necktie"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:note_paper"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:note_paper_writeable"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:note_paper_written"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:oak_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:oak_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:oak_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:oak_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:oak_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:oak_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:omelet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:painting"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:pasta_with_bolognese"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:pasta_with_lettuce"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:pasta_with_mozzarella"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:plate"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:pork_ribs"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:quartz_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:quartz_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:quartz_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:red_nether_bricks_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:red_nether_bricks_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:red_nether_bricks_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:roastbeef_with_glazed_carrots"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:roasted_lamb_with_lettuce"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:rose"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:salad"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:salmon_on_white_wine"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:sandstone_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:sandstone_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:sandstone_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:shirt"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:side_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:sideboard"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:sofa"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:spruce_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:spruce_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:spruce_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:spruce_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:spruce_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:spruce_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:stone_bricks_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:stone_bricks_kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:stone_bricks_stove"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:table_sign"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:tomato_mozzarella_salad"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:tomato_soup"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:tropical_fish_supreme"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:trousers_and_vest"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:typewriter_copper"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:typewriter_iron"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:warped_big_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:warped_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:warped_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:warped_drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:warped_shelf"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:warped_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:wine_glass"
+		}
+	]
+}

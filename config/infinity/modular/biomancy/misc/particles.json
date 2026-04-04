@@ -1,0 +1,64 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "biomancy:acid_bubble"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:biohazard"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:bloody_claws_attack"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:corrosive_swipe"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:dripping_acid"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:falling_acid"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:falling_blood"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:hostile"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:landing_acid"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:landing_blood"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:light_green_glow"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:pink_glow"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:toxin_gas"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:toxin_gas_explosion"
+		},
+		{
+			"weight": 1.0,
+			"key": "biomancy:toxin_gas_explosion_emitter"
+		}
+	]
+}

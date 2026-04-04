@@ -1,0 +1,296 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "bakery:apple_cupcake"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:apple_jam"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:apple_pie"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:apple_pie_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:baguette"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:baker_station"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:bakery_banner"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:braided_bread"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:bread"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:bread_crate"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:bread_knife"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:bread_with_jam"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:breadbox"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:brick_counter"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:bun"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:bundt_cake"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:bundt_cake_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:cake_display"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:cake_dough"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:cake_stand"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_box"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_cake"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_cake_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_gateau"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_gateau_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_glazed_cookie"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_jam"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_tart"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_tart_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:chocolate_truffle"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:cornet"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:croissant"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:crusty_bread"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:cupcake_display"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:drawer"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:glowberry_jam"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:glowberry_pie_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:glowberry_tart"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:grilled_bacon_sandwich"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:grilled_salmon_sandwich"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:iron_bench"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:iron_chair"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:iron_table"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:jam_roll"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:jar"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:kitchen_sink"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:linzer_tart"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:linzer_tart_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:misslilitu_biscuit"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:pudding"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:pudding_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:rolling_pin"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:sandwich"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:small_cooking_pot"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:strawberry_cake"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:strawberry_cake_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:strawberry_cupcake"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:strawberry_glazed_cookie"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:strawberry_jam"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:street_sign"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:sweet_dough"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:sweetberry_cake"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:sweetberry_cake_slice"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:sweetberry_cupcake"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:sweetberry_glazed_cookie"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:sweetberry_jam"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:toast"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:tray"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:vegetable_sandwich"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:waffle"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:wall_cabinet"
+		},
+		{
+			"weight": 1.0,
+			"key": "bakery:wall_display"
+		}
+	]
+}

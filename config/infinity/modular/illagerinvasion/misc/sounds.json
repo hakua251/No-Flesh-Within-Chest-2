@@ -1,0 +1,188 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.archivist.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.archivist.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.archivist.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.basher.celebrate"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.basher.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.basher.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.basher.idle"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.firecaller.cast"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.firecaller.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.firecaller.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.firecaller.idle"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.illager_brute.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.illager_brute.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.illager_brute.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.big_cast"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.completecast"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.fangs"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.fangs_cast"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.shield_break"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.shield_create"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.summon_cast"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.invoker.teleport_cast"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.necromancer.summon"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.provoker.celebrate"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.provoker.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.provoker.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.provoker.idle"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.sorcerer.cast"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.sorcerer.celebrate"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.sorcerer.complete_cast"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.sorcerer.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.sorcerer.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.sorcerer.idle"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.surrendered.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.surrendered.charge"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.surrendered.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:entity.surrendered.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:item.horn_of_sight.blow"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:item.lost_candle.coal"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:item.lost_candle.copper"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:item.lost_candle.diamond"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:item.lost_candle.gold"
+		},
+		{
+			"weight": 1.0,
+			"key": "illagerinvasion:item.lost_candle.iron"
+		}
+	]
+}

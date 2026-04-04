@@ -1,0 +1,109 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:bison",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:boar",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:cassowary",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:deer",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:dog",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:flamingo",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:hedgehog",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:minisheep",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:owl",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:pelican",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:penguin",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:raccoon",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:red_wolf",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:squirrel",
+				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "wildernature:turkey",
+				"Category": "creature"
+			}
+		}
+	]
+}

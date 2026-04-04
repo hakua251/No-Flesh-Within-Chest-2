@@ -1,0 +1,12 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "create_connected:elevator_music"
+		},
+		{
+			"weight": 1.0,
+			"key": "create_connected:interlude_music"
+		}
+	]
+}

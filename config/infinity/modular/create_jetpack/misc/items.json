@@ -1,0 +1,20 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "create_jetpack:jetpack"
+		},
+		{
+			"weight": 1.0,
+			"key": "create_jetpack:jetpack_placeable"
+		},
+		{
+			"weight": 1.0,
+			"key": "create_jetpack:netherite_jetpack"
+		},
+		{
+			"weight": 1.0,
+			"key": "create_jetpack:netherite_jetpack_placeable"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "brewery:beer_elemental",
+				"Category": "monster"
+			}
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "candlelight:allows_cooking"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:glass_panes"
+		},
+		{
+			"weight": 1.0,
+			"key": "candlelight:stoves"
+		}
+	]
+}
