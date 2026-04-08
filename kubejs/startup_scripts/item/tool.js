@@ -53,4 +53,36 @@ StartupEvents.registry('item', event => {
             if (entity instanceof $ServerPlayer) ADimensionRestriction.removeDimensionAccess(entity, restriction)
             return Item.empty
         })
+
+    event.create('experience_injection').maxStackSize(1).texture('kubejs:item/injections/experience_injection')
+        .useDuration(itemStack => 65)
+        .useAnimation('none')
+        .use((level, player, hand) => {
+            if (level.isClientSide()) return true
+            if (player.isPlayer()) player.triggerAnimation('kubejs:inject_animation', 3.25, 'linear', true, true)
+            return true
+        })
+        .releaseUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            if (entity.isPlayer()) entity.stopAnimation('kubejs:inject_animation')
+            return itemstack
+        })
+        .finishUsing(/**@param {Player} entity */(itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            if (!entity.isPlayer()) return itemstack
+
+            if (!itemstack.hasNBT()) return itemstack
+            const nbt = itemstack.getNbt()
+            let expValue = nbt.getInt('value')
+            if (entity.isCrouching()) {
+                let remainingValue = MAAUtils.repairPlayerItems(entity, expValue, expValue)
+                if (remainingValue > 0) entity.giveExperiencePoints(remainingValue)
+                return Item.empty
+            } else {
+                let remainingValue = MAAUtils.repairPlayerItems(entity, expValue, expValue)
+                if (remainingValue <= 0) return Item.empty
+                nbt.putInt('value', remainingValue)
+            }
+            return itemstack
+        })
 })

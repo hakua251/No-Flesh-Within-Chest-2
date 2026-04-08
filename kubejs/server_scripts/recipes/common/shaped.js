@@ -24,5 +24,20 @@ ServerEvents.recipes(event => {
         ['minecraft:iron_ingot', 'minecraft:light_blue_stained_glass', 'minecraft:iron_ingot'],
         ['', 'minecraft:iron_ingot', '']
     ])
+    event.shaped(Item.of('torchmaster:feral_flare_lantern'), [
+        ['', 'minecraft:gold_ingot', ''],
+        ['#forge:glass', 'minecraft:glow_berries', '#forge:glass'],
+        ['', 'minecraft:gold_ingot', '']
+    ])
+    event.shaped(Item.of('torchmaster:feral_flare_lantern'), [
+        ['', 'minecraft:gold_ingot', ''],
+        ['#forge:glass', 'minecraft:glow_ink_sac', '#forge:glass'],
+        ['', 'minecraft:gold_ingot', '']
+    ])
+    event.shaped(Item.of('torchmaster:feral_flare_lantern'), [
+        ['', 'minecraft:gold_ingot', ''],
+        ['#forge:glass', 'minecraft:orange_dye', '#forge:glass'],
+        ['', 'minecraft:gold_ingot', '']
+    ])
 })
 

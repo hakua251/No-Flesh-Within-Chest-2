@@ -647,7 +647,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -5.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["288B079239EA5947"]
@@ -811,6 +811,30 @@
 			title: "等下. . .出现了些问题"
 			x: 7.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["4E805DA2B8D171E4"]
+			description: [
+				"如若遇到了需要&6大规模点亮周围环境&r的场景，您可以使用&6野火灯笼&r来进行区域点亮。"
+				""
+				"其会在周围生成不可见的光源实体，大范围的点亮周围的环境。"
+				""
+				"在拆除该灯笼时如果遇到了光源无法正常销毁的问题，则可以使用&6霜冻珍珠&r消除。"
+			]
+			id: "2E911706C477B127"
+			rewards: [{
+				id: "55952A37D054CCAF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "承诺"
+			tasks: [{
+				id: "5D16633BCD4F6F4D"
+				item: "torchmaster:feral_flare_lantern"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
 		}
 	]
 	title: "壹"

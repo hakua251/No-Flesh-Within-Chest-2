@@ -10,6 +10,9 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
+
+    
+    player.give(Item.of('kubejs:experience_injection', {value: NBT.i(Math.pow(1, 2) + 1 * 8 + 159)}))
     // SetDaySpeed(1)
     // SetNightSpeed(1)
     // UpdatePlaysTimeStabilityBar(server, level, player)
