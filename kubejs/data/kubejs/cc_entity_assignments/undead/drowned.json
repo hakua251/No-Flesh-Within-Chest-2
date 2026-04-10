@@ -1,6 +1,7 @@
 {
   "chestcavity": "kubejs:cc_types/undead/drowned.json",
   "entities": [
-    "minecraft:drowned"
+    "minecraft:drowned",
+    "cataclysm:drowned_host"
   ]
 }

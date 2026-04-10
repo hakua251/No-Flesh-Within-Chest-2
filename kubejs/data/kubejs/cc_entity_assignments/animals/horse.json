@@ -1,6 +1,7 @@
 {
   "chestcavity": "kubejs:cc_types/animals/horse.json",
   "entities": [
-    "minecraft:horse"
+    "minecraft:horse",
+    "vinery:mule"
   ]
 }

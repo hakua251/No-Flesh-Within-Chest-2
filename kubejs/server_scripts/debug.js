@@ -1,10 +1,12 @@
 // priority: 500
 ItemEvents.entityInteracted('stick', event => {
-    /**@type {Internal.PathfinderMob} */
     const target = event.target
-    target.goalSelector.availableGoals.forEach(goal => {
-        console.log(goal.goal)
-    })
+
+    /**@type {Internal.ServerPlayer} */
+    const player = event.player
+    player.tell(target.startRiding(player, true))
+    player.tell(player.getPassengers().size())
+    player.connection.send(new $ClientboundSetPassengersPacket(player))
 })
 
 ItemEvents.rightClicked('stick', event => {

@@ -135,3 +135,5 @@ const $UseOnContext = Java.loadClass('net.minecraft.world.item.context.UseOnCont
 const $ItemBlockPlacedItems = Java.loadClass('com.breakinblocks.plonk.common.item.ItemBlockPlacedItems')
 const $Boolean = Java.loadClass('java.lang.Boolean')
 const $ItemStackKey = Java.loadClass('com.wintercogs.beyonddimensions.api.storage.key.impl.ItemStackKey')
+
+const $ClientboundSetPassengersPacket = Java.loadClass('net.minecraft.network.protocol.game.ClientboundSetPassengersPacket')

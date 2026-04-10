@@ -1,6 +1,7 @@
 {
   "chestcavity": "kubejs:cc_types/functional_entity.json",
   "entities": [
-    "dummmmmmy:target_dummy"
+    "dummmmmmy:target_dummy",
+    "ars_nouveau:ally_vex"
   ]
 }

@@ -42,3 +42,4 @@ const $CustomRequirement = Java.loadClass('net.yiran.morerequirement.requirement
 const $CustomCraftingEffectOutcome = Java.loadClass('net.yiran.morerequirement.craftefffect.CustomCraftingEffectOutcome')
 const $ToolAction = Java.loadClass('net.minecraftforge.common.ToolAction')
 const $InfinityStats = Java.loadClass('net.lerariemann.infinity.registry.var.ModStats')
+const $PotionBuilder = Java.loadClass('dev.latvian.mods.kubejs.misc.PotionBuilder')

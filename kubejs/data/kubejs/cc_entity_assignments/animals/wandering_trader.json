@@ -1,6 +1,0 @@
-{
-  "chestcavity": "kubejs:cc_types/animals/wandering_trader.json",
-  "entities": [
-    "minecraft:wandering_trader"
-  ]
-}

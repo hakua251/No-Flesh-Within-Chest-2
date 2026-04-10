@@ -603,7 +603,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "square"
+			shape: "rsquare"
 			subtitle: "原初净化之极"
 			tasks: [{
 				id: "55F24286AA932421"
@@ -821,6 +821,35 @@
 			}]
 			title: "蕾莓快速扩产技术"
 			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4BDC3EB3E3B69CE9"]
+			description: [
+				"在原初药水的基础上，你可以酿造器官滑脱药水。"
+				""
+				"被器官滑脱药水影响的生物，在死亡时会将器官// todo"
+			]
+			id: "70C13C3DDAA845F8"
+			rewards: [{
+				id: "74FCA41C0E13A192"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "器官顺滑至极"
+			tasks: [{
+				id: "1FD7C2EF6BE74E27"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "kubejs:organ_slip"
+					}
+				}
+				type: "item"
+			}]
+			title: "高效器官摘取法"
+			x: 6.0d
 			y: 4.5d
 		}
 	]

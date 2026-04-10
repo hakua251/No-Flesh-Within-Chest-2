@@ -571,7 +571,14 @@
 			]
 			icon: "supplementaries:candle_holder"
 			id: "227116C21A39F449"
-			repeat_cooldown: 60
+			repeat_cooldown: 3
+			rewards: [{
+				auto: "no_toast"
+				icon: "minecraft:paper"
+				id: "4347A33C07D2FBE9"
+				title: "开始检索"
+				type: "custom"
+			}]
 			subtitle: "直接交流的窗口"
 			tasks: [{
 				count: 1L
