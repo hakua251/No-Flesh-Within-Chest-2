@@ -1,19 +1,19 @@
 {
   "defaultChestCavity": [
-    {"item": "chestcavity:animal_rib","position": 0},
-    {"item": "chestcavity:ender_lung","position": 1},
-    {"item": "chestcavity:ender_heart","position": 2},
-    {"item": "chestcavity:ender_liver","position": 3},
-    {"item": "chestcavity:animal_rib","position": 4},
-    {"item": "chestcavity:animal_rib","position": 5},
-    {"item": "chestcavity:ender_intestine","position": 6},
-    {"item": "chestcavity:ender_stomach","position": 8},
-    {"item": "chestcavity:animal_rib","position": 9},
-    {"item": "chestcavity:animal_rib","position": 10},
-    {"item": "chestcavity:shulker_spleen","position": 11},
-    {"item": "chestcavity:ender_spine","position": 12},
-    {"item": "chestcavity:ender_kidney","position": 13},
-    {"item": "chestcavity:animal_rib","position": 14}
+    {"item": "kubejs:animal_rib","position": 0},
+    {"item": "kubejs:ender_lung","position": 1},
+    {"item": "kubejs:ender_heart","position": 2},
+    {"item": "kubejs:ender_liver","position": 3},
+    {"item": "kubejs:animal_rib","position": 4},
+    {"item": "kubejs:animal_rib","position": 5},
+    {"item": "kubejs:ender_intestine","position": 6},
+    {"item": "kubejs:ender_stomach","position": 8},
+    {"item": "kubejs:animal_rib","position": 9},
+    {"item": "kubejs:animal_rib","position": 10},
+    {"item": "kubejs:shulker_spleen","position": 11},
+    {"item": "kubejs:ender_spine","position": 12},
+    {"item": "kubejs:ender_kidney","position": 13},
+    {"item": "kubejs:animal_rib","position": 14}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/small_ender"

@@ -11,20 +11,20 @@
     { "name": "DiffuseSampler" }
   ],
   "uniforms": [
-    { "name": "ProjMat",       "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
-    { "name": "OutSize",       "type": "float",     "count": 2,  "values": [ 1.0, 1.0 ] },
+    { "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "OutSize", "type": "float",     "count": 2,  "values": [ 1.0, 1.0 ] },
     { "name": "ColorModulate", "type": "float",     "count": 4,  "values": [ 1.0, 1.0, 1.0, 1.0 ] },
-    { "name": "hideRed",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hideOrange",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hideBrown",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hideYellow",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hideGreen",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hideLime",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hideCyan",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hideLightBlue",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hideBlue",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hideMagenta",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hidePurple",       "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "hidePink",       "type": "float",     "count": 1,  "values": [ 0.0 ] }
+    { "name": "hideRed", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hideOrange", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hideBrown", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hideYellow", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hideGreen", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hideLime", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hideCyan", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hideLightBlue", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hideBlue", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hideMagenta", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hidePurple", "type": "float",     "count": 1,  "values": [ 0.0 ] },
+    { "name": "hidePink", "type": "float",     "count": 1,  "values": [ 0.0 ] }
   ]
 }

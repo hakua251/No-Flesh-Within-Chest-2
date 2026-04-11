@@ -1595,7 +1595,7 @@
 					entity: "minecraft:blaze"
 					icon: {
 						Count: 1
-						id: "chestcavity:blaze_shell"
+						id: "kubejs:blaze_shell"
 						tag: { }
 					}
 					id: "0E15DAF52512E93B"

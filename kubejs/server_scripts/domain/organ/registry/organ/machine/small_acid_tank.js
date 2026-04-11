@@ -3,7 +3,6 @@ RegistryOrgan('kubejs:small_acid_tank')
     .addScore('chestcavity:digestion', -3)
     .addScore('chestcavity:nutrition', -3)
     .addScore('chestcavity:health', -1)
-    .addScore('chestcavity:buff_purging', 1)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

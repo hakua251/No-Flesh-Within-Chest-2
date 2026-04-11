@@ -7,7 +7,7 @@
 	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
-		id: "chestcavity:heart"
+		id: "kubejs:heart"
 		tag: { }
 	}
 	id: "2218D095B234A44A"
@@ -68,7 +68,7 @@
 				entity: "minecraft:player"
 				icon: {
 					Count: 1
-					id: "chestcavity:heart"
+					id: "kubejs:heart"
 					tag: { }
 				}
 				id: "7C235F5C7B4FC314"
@@ -98,7 +98,7 @@
 			]
 			icon: {
 				Count: 1
-				id: "chestcavity:muscle"
+				id: "kubejs:muscle"
 				tag: { }
 			}
 			id: "3706063CCC0981B2"

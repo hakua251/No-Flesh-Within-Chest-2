@@ -1,6 +1,0 @@
-{
-  "chestcavity": "kubejs:cc_types/animals/cave_spider.json",
-  "entities": [
-    "minecraft:cave_spider"
-  ]
-}

@@ -1,6 +1,7 @@
 {
   "chestcavity": "kubejs:cc_types/nether/ghast.json",
   "entities": [
-    "minecraft:ghast"
+    "minecraft:ghast",
+    "minecraft:happy_ghast"
   ]
 }

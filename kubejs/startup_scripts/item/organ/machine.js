@@ -15,7 +15,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:lava_life_cycle_system').maxStackSize(1).texture('kubejs:item/organs/machine/lava_life_cycle_system').tag('kubejs:machine')
 
     event.create('kubejs:prowler_rotating_shaft').maxStackSize(1).texture('kubejs:item/organs/machine/prowler_rotating_shaft').tag('kubejs:machine')
-    
+
     event.create('kubejs:watcher_probe').maxStackSize(1).texture('kubejs:item/organs/machine/watcher_probe').tag('kubejs:machine')
 
     event.create('kubejs:source_reactor_furnace').maxStackSize(1).texture('kubejs:item/organs/machine/source_reactor_furnace').tag('kubejs:machine').tag('kubejs:magic')
@@ -27,4 +27,8 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:energy_bottle_red').maxStackSize(1).texture('kubejs:item/organs/machine/energy_bottle_red').maxDamage(100).tag('kubejs:muscle').tag('kubejs:machine')
 
     event.create('kubejs:small_acid_tank').maxStackSize(1).texture('kubejs:item/organs/machine/small_acid_tank').maxDamage(600).tag('kubejs:machine')
+
+    event.create('kubejs:inner_furnace').maxStackSize(1).tag('kubejs:machine').tag('kubejs:basic').texture('kubejs:item/organs/machine/inner_furnace').tag('kubejs:heart')
+    event.create('kubejs:golem_cable').maxStackSize(1).tag('kubejs:machine').tag('kubejs:basic').texture('kubejs:item/organs/machine/golem_cable').tag('kubejs:spine').tag('kubejs:muscle')
+    event.create('kubejs:golem_plating').maxStackSize(1).tag('kubejs:machine').tag('kubejs:basic').texture('kubejs:item/organs/machine/golem_plating').tag('kubejs:bone')
 })

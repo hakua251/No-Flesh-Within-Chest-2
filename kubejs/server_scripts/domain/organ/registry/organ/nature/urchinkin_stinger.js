@@ -18,7 +18,7 @@ function UrchinkinStingerEntityBeHurt(customData, event, organItem, organIndex, 
     const entity = event.entity
     const harmEffectList = []
     entity.potionEffects.active.forEach(pEffect => {
-        if (pEffect.effect.CC_IsHarmful()) {
+        if (pEffect.effect.isHarmful()) {
             harmEffectList.push(pEffect)
         }
     })

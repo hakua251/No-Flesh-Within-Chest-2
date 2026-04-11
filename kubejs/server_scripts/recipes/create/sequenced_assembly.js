@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
         [
             Item.of('kubejs:furnace_core')
         ],
-        'chestcavity:golem_core',
+        'kubejs:inner_furnace',
         [
             event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'kubejs:flame_crystal']),

@@ -1,20 +1,8 @@
 {
   "defaultChestCavity": [
-    {"item": "","position": 0},
-    {"item": "chestcavity:blaze_shell","position": 1},
-    {"item": "chestcavity:blaze_core","position": 2},
-    {"item": "chestcavity:blaze_shell","position": 3},
-    {"item": "","position": 4},
-    {"item": "","position": 5},
-    {"item": "","position": 6},
-    {"item": "chestcavity:active_blaze_rod","position": 7,"count":1},
-    {"item": "","position": 8},
-    {"item": "chestcavity:active_blaze_rod","position": 9,"count":1},
-    {"item": "","position": 10},
-    {"item": "","position": 11},
-    {"item": "","position": 12},
-    {"item": "chestcavity:active_blaze_rod","position": 13,"count":1},
-    {"item": "","position": 14}
+    {"item": "kubejs:active_blaze_rod","position": 7,"count":1},
+    {"item": "kubejs:active_blaze_rod","position": 9,"count":1},
+    {"item": "kubejs:active_blaze_rod","position": 13,"count":1}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/small_nether"

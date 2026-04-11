@@ -405,7 +405,7 @@
 			]
 			icon: {
 				Count: 1
-				id: "chestcavity:heart"
+				id: "kubejs:heart"
 				tag: { }
 			}
 			id: "2DFCF1B70C69B560"
@@ -436,7 +436,7 @@
 			]
 			icon: {
 				Count: 1
-				id: "chestcavity:stomach"
+				id: "kubejs:stomach"
 				tag: { }
 			}
 			id: "3CF6A52040DC32FD"
@@ -469,7 +469,7 @@
 			]
 			icon: {
 				Count: 1
-				id: "chestcavity:rib"
+				id: "kubejs:rib"
 				tag: { }
 			}
 			id: "16CA184F429B7CE2"
@@ -523,7 +523,7 @@
 			]
 			icon: {
 				Count: 1
-				id: "chestcavity:liver"
+				id: "kubejs:liver"
 				tag: { }
 			}
 			id: "0DF26FFC05523C2B"
@@ -554,7 +554,7 @@
 			]
 			icon: {
 				Count: 1
-				id: "chestcavity:kidney"
+				id: "kubejs:kidney"
 				tag: { }
 			}
 			id: "67DAAFD99C02F670"

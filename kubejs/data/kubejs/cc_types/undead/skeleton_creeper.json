@@ -1,19 +1,12 @@
 {
   "defaultChestCavity": [
-    {"item": "chestcavity:rotten_rib","position": 0},
-    {"item": "","position": 1},
-    {"item": "chestcavity:rotten_spine","position": 2},
-    {"item": "","position": 3},
-    {"item": "chestcavity:rotten_rib","position": 4},
-    {"item": "","position": 5},
-    {"item": "chestcavity:rotten_rib","position": 6},
-    {"item": "","position": 7},
-    {"item": "","position": 9},
-    {"item": "chestcavity:rotten_rib","position": 10},
-    {"item": "","position": 11},
-    {"item": "chestcavity:rotten_rib","position": 12},
-    {"item": "","position": 13},
-    {"item": "chestcavity:rotten_rib","position": 14}
+    {"item": "kubejs:rotten_rib","position": 0},
+    {"item": "kubejs:rotten_spine","position": 2},
+    {"item": "kubejs:rotten_rib","position": 4},
+    {"item": "kubejs:rotten_rib","position": 6},
+    {"item": "kubejs:rotten_rib","position": 10},
+    {"item": "kubejs:rotten_rib","position": 12},
+    {"item": "kubejs:rotten_rib","position": 14}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/small_undead"

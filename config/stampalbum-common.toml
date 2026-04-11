@@ -25,9 +25,9 @@ detailSlotColumns = 4
 #Layout mode: 0=Classic book view, 1=Grid view
 #Range: 0 ~ 1
 layoutMode = 1
-#Sort mode: 0=Name, 1=Mod, 2=Status (unlocked first)
-#Range: 0 ~ 2
-sortMode = 0
+#Sort mode: 0=Name, 1=Status (unlocked first)
+#Range: 0 ~ 1
+sortMode = 1
 #Enable the favorites system (star items)
 enableFavorites = true
 #Show visual progress bar in the album header
@@ -51,4 +51,62 @@ showProperties = true
 showAcquisition = true
 #Show a toast notification popup when items are unlocked during gameplay
 showUnlockToast = true
+#Automatically unlock items when the player uses (right-clicks) them
+autoUnlockOnUse = true
+#Automatically unlock items when the player equips them (armor/offhand)
+autoUnlockOnEquip = true
+#Automatically unlock potion items when the player takes them from a brewing stand
+autoUnlockOnBrew = true
+#Automatically unlock items when the player takes smelted results from a furnace
+autoUnlockOnSmelt = true
+#Automatically unlock items obtained through villager/wandering trader trades
+autoUnlockOnTrade = true
+#Automatically unlock items obtained through fishing
+autoUnlockOnFish = true
+#Periodically scan the player's inventory and unlock any items found. Useful for items obtained by non-standard means.
+autoUnlockOnInventoryScan = false
+#How often (in ticks, 20 = 1 second) to scan the player's inventory for unlock. Only used when autoUnlockOnInventoryScan is enabled.
+#Range: 20 ~ 6000
+inventoryScanIntervalTicks = 100
+#Unlock notification style: 0=Toast only, 1=Chat only, 2=Both, 3=None
+#Range: 0 ~ 3
+unlockNotificationStyle = 0
+#Show the unlock source (pickup, craft, etc.) in the toast notification
+showUnlockSourceInToast = true
+#Play a sound effect when items are unlocked
+playUnlockSound = true
+#Duration (in milliseconds) to display unlock toasts. 0 uses default (3500ms)
+#Range: 0 ~ 10000
+unlockToastDuration = 0
+#Show a separate toast notification when entities are unlocked
+showEntityUnlockToast = true
+#Number of unlocks within a short time before showing a batch toast instead of individual ones
+#Range: 1 ~ 20
+toastCoalesceThreshold = 3
+#Show vanilla item tooltip info (enchantments, attributes, durability etc.) in album tooltips
+showVanillaTooltipInAlbum = true
+#Enable the entity album feature. When enabled, entities can be tracked and unlocked similar to items.
+enableEntityAlbum = true
+#Automatically unlock entities when the player kills them
+autoUnlockOnEntityKill = true
+#Automatically unlock entities when the player interacts with them (right-click)
+autoUnlockOnEntityInteract = true
+#Automatically unlock baby entities when the player breeds animals
+autoUnlockOnEntityBreed = true
+#Automatically unlock entities when the player tames them
+autoUnlockOnEntityTame = true
+#Automatically unlock entities when the player gets close to them
+autoUnlockOnEntityNearby = false
+#Range (in blocks) for nearby entity auto-unlock. Only used when autoUnlockOnEntityNearby is enabled.
+#Range: 2.0 ~ 64.0
+entityNearbyRange = 8.0
+#How often (in ticks) to scan for nearby entities. Only used when autoUnlockOnEntityNearby is enabled.
+#Range: 20 ~ 6000
+entityNearbyScanIntervalTicks = 60
+#Automatically unlock entities when they damage the player (e.g. getting hit by a zombie unlocks the zombie)
+autoUnlockOnEntityHurtBy = true
+#Show the edit mode button in the album header. Edit mode allows per-item layout customization.
+enableEditMode = true
+#Show the category management button in the album header. Allows hiding/showing categories.
+enableCategoryManagement = true
 

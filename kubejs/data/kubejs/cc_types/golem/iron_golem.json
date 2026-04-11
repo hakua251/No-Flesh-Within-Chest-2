@@ -1,11 +1,14 @@
 {
   "defaultChestCavity": [
-    {"item":"chestcavity:piston_muscle","position": 0},
-    {"item":"chestcavity:inner_furnace","position": 1},
-    {"item":"chestcavity:golem_core","position": 2},
-    {"item":"chestcavity:golem_plating","position": 3},
-    {"item":"chestcavity:golem_cable","position": 4}
+    {"item":"kubejs:piston_muscle","position": 0},
+    {"item":"kubejs:golem_cable","position": 1},
+    {"item":"kubejs:piston_muscle","position": 2},
+    {"item":"kubejs:inner_furnace","position": 3},
+    {"item":"kubejs:inner_furnace","position": 5},
+    {"item":"kubejs:golem_plating","position": 6},
+    {"item":"kubejs:golem_cable","position": 7},
+    {"item":"kubejs:golem_plating","position": 8}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_golem"
+  "inventoryType": "kubejs:cc_inventory_types/medium_golem"
 }

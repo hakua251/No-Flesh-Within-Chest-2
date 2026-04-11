@@ -1,20 +1,12 @@
 {
   "defaultChestCavity": [
-    {"item": "chestcavity:withered_rib","position": 0},
-    {"item": "","position": 1},
-    {"item": "chestcavity:withered_spine","position": 2},
-    {"item": "","position": 3},
-    {"item": "chestcavity:withered_rib","position": 4},
-    {"item": "","position": 5},
-    {"item": "chestcavity:withered_rib", "position": 6},
-    {"item": "","position": 7},
-    {"item": "","position": 8},
-    {"item": "","position": 9},
-    {"item": "chestcavity:withered_rib","position": 10},
-    {"item": "","position": 11},
-    {"item": "chestcavity:withered_rib","position": 12},
-    {"item": "","position": 13},
-    {"item": "chestcavity:withered_rib","position": 14}
+    {"item": "kubejs:withered_rib","position": 0},
+    {"item": "kubejs:withered_spine","position": 2},
+    {"item": "kubejs:withered_rib","position": 4},
+    {"item": "kubejs:withered_rib", "position": 6},
+    {"item": "kubejs:withered_rib","position": 10},
+    {"item": "kubejs:withered_rib","position": 12},
+    {"item": "kubejs:withered_rib","position": 14}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/small_undead"

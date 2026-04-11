@@ -1,0 +1,42 @@
+{
+    "slotDefinitions": [
+        {"x": 34, "y": 44},
+        {"x": 70, "y": 44},
+        {"x": 88, "y": 44},
+        {"x": 106, "y": 44},
+        {"x": 142, "y": 44},
+        {"x": 16, "y": 62},
+        {"x": 34, "y": 62},
+        {"x": 52, "y": 62},
+        {"x": 70, "y": 62},
+        {"x": 88, "y": 62},
+        {"x": 106, "y": 62},
+        {"x": 124, "y": 62},
+        {"x": 142, "y": 62},
+        {"x": 160, "y": 62},
+        {"x": 34, "y": 80},
+        {"x": 70, "y": 80},
+        {"x": 88, "y": 80},
+        {"x": 106, "y": 80},
+        {"x": 142, "y": 80}
+    ],
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity/medium_vita.png",
+    "playerInventoryPosition": {
+        "x": 8,
+        "y": 36
+    },
+    "titlePosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    },
+    "backgroundSize": {
+        "x": 193,
+        "y": 208
+    },
+    "inventoryLabelPosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    }
+}
