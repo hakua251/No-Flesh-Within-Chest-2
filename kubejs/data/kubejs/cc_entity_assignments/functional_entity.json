@@ -1,7 +1,6 @@
 {
   "chestcavity": "kubejs:cc_types/functional_entity.json",
   "entities": [
-    "dummmmmmy:target_dummy",
     "ars_nouveau:ally_vex",
     "ars_nouveau:summon_wolf",
     "ars_nouveau:summon_horse",
@@ -60,6 +59,7 @@
     "infinity:chaos_pawn",
     "infinity:ant",
     "infinity:bishop",
-    "graveyard:nameless_hanged"
+    "graveyard:nameless_hanged",
+    "dummmmmmy:target_dummy"
   ]
 }

@@ -1,6 +1,6 @@
 // priority: 1000
 StartupEvents.registry('entity_type', event => {
-    event.create("airdrop_balloon", 'entityjs:mob')
+    event.create('airdrop_balloon', 'entityjs:mob')
         .tag('kubejs:airdrop')
         .mobCategory('misc')
         .noEggItem()
