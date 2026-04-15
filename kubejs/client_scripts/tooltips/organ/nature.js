@@ -41,6 +41,9 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:jumping_spider_leg')
     .addAlt(Text.translatable('tooltips.kubejs.jumping_spider_leg.alt.1'))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:spider_leg')
+    .addDefault(Text.translatable('tooltips.kubejs.spider_leg.default.1').gray())
+)
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:koi_fish_scale')
     .addDefault(Text.translatable('tooltips.kubejs.koi_fish_scale.default.1').gray())
@@ -60,9 +63,17 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:red_panda_tail')
     .addAlt(Text.translatable('tooltips.kubejs.red_panda_tail.alt.1'))
 )
 
-
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:shima_enaga_feather')
     .addDefault(Text.translatable('tooltips.kubejs.shima_enaga_feather.default.1').gray())
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:bat_throat')
+    .addDefault(Text.translatable('tooltips.kubejs.bat_throat.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.bat_throat.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:axolotl_gill')
+    .addDefault(Text.translatable('tooltips.kubejs.axolotl_gill.default.1').gray())
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:deer_horn')
@@ -221,4 +232,11 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:explosion_bag')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:dragonfly_wing')
     .addDefault(Text.translatable('tooltips.kubejs.dragonfly_wing.default.1').gray())
+)
+
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:camel_hump')
+    .addDefault(Text.translatable('tooltips.kubejs.camel_hump.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.camel_hump.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.camel_hump.alt.2'))
 )
