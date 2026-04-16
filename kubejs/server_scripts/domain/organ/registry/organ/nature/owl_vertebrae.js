@@ -4,7 +4,7 @@ RegistryOrgan('kubejs:owl_vertebrae')
     .addScore('chestcavity:defense', 0.5)
     .addScore('chestcavity:endurance', -1)
     .setCanSpawn(true)
-    
+
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.OpenedEntityTickJS} event 
@@ -15,8 +15,9 @@ RegistryOrgan('kubejs:owl_vertebrae')
 function OwlVertebraeEntityTick(customData, event, organItem, organIndex, slotType) {
     const level = event.level
     const entity = event.entity
+    if (entity.hasEffect('minecraft:night_vision') && entity.getEffect('minecraft:night_vision').getDuration() > 20 * 3) return
     if (!level.isDay()) {
-        entity.potionEffects.add('minecraft:night_vision', 400)
+        entity.potionEffects.add('minecraft:night_vision', 20 * 30, 0, false, false)
     }
 }
 

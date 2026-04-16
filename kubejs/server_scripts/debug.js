@@ -4,9 +4,7 @@ ItemEvents.entityInteracted('stick', event => {
 
     /**@type {Internal.ServerPlayer} */
     const player = event.player
-    player.tell(target.startRiding(player, true))
-    player.tell(player.getPassengers().size())
-    player.connection.send(new $ClientboundSetPassengersPacket(player))
+    player.tell(target.airSupply)
 })
 
 ItemEvents.rightClicked('stick', event => {

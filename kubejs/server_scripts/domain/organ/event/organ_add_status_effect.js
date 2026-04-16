@@ -3,13 +3,11 @@ const OrganAddStatusEffectEvent = new OrganEventModel('organ_add_status_effect')
 
 ChestCavityEvents.organAddStatusEffect(event => {
     const entity = event.entity
-    const effect = event.effect
     let customData = {}
     OrganAddStatusEffectEvent.run(entity, customData, [event])
-    organInjectionEffectAdded(entity, effect)
 })
 
-
+// 器官排异备选方案
 // /**
 //  * @param {Internal.Entity} entity
 //  * @param {Internal.MobEffectInstance} effectInstance

@@ -240,3 +240,27 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:camel_hump')
     .addAlt(Text.translatable('tooltips.kubejs.camel_hump.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.camel_hump.alt.2'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:hatching_chamber')
+    .addDefault(Text.translatable('tooltips.kubejs.hatching_chamber.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.hatching_chamber.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:swim_bladder')
+    .addDefault(Text.translatable('tooltips.kubejs.swim_bladder.default.1').gray())
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:dolphin_fin')
+    .addDefault(Text.translatable('tooltips.kubejs.dolphin_fin.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.dolphin_fin.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:guardian_core')
+    .addDefault(Text.translatable('tooltips.kubejs.guardian_core.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.guardian_core.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:elder_guardian_core')
+    .addDefault(Text.translatable('tooltips.kubejs.elder_guardian_core.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.elder_guardian_core.alt.1'))
+)

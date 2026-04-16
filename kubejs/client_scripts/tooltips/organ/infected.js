@@ -53,3 +53,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:bone_meal_bag')
     .addAlt(Text.translatable('tooltips.kubejs.bone_meal_bag.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.bone_meal_bag.alt.2'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:drowned_intestine')
+    .addDefault(Text.translatable('tooltips.kubejs.drowned_intestine.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.drowned_intestine.alt.1'))
+)

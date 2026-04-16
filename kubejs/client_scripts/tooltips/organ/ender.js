@@ -40,3 +40,16 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:endermaptera_shell')
     .addDefault(Text.translatable('tooltips.kubejs.endermaptera_shell.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.endermaptera_shell.alt.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:ender_breath')
+    .addDefault(Text.translatable('tooltips.kubejs.ender_breath.default.1').gray())
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:ender_ectoplasm')
+    .addDefault(Text.translatable('tooltips.kubejs.ender_ectoplasm.default.1').gray())
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:ender_eye')
+    .addDefault(Text.translatable('tooltips.kubejs.ender_eye.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.ender_eye.alt.1'))
+)

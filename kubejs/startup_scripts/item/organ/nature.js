@@ -88,6 +88,16 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:bat_throat').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/bat_throat')
 
+    event.create('kubejs:hatching_chamber').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/hatching_chamber').tag('kubejs:machine')
+
+    event.create('kubejs:swim_bladder').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/swim_bladder').tag('kubejs:lung')
+
+    event.create('kubejs:dolphin_fin').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/dolphin_fin')
+
+    event.create('kubejs:guardian_core').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/guardian_core')
+
+    event.create('kubejs:elder_guardian_core').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/elder_guardian_core')
+
     event.create('kubejs:camel_hump').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/camel_hump')
 
     event.create('kubejs:appendix').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/appendix').tag('kubejs:appendix')

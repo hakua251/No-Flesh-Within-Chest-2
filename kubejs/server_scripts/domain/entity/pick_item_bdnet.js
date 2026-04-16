@@ -1,8 +1,8 @@
 // priority: 999
 // todo 边界条件 玩家不在线时的表现
-function NewFindCCItemGoal(entity) {
+function NewPickItemBDNetGoal(entity) {
     return new $CustomGoal(
-        'find_cc_item',
+        'pick_item_bdnet',
         entity,
         /** @param {Internal.TamableAnimal} mob **/ mob => {
             if (!mob.owner || !mob.owner.isPlayer()) return false
@@ -36,7 +36,7 @@ function NewFindCCItemGoal(entity) {
             })
             if (!targetItemEntity) return
             let targetPos = targetItemEntity.position()
-            if (mob.getPosition(1.0).distanceTo(targetPos) <= 1) {
+            if (mob.position().distanceTo(targetPos) <= 2) {
                 let dimnet = DimensionsNet.getPrimaryNetFromPlayer(mob.owner)
                 if (!dimnet) return
                 let targetItem = targetItemEntity.getItem()

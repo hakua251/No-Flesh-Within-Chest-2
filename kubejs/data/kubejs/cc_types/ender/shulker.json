@@ -1,19 +1,16 @@
 {
   "defaultChestCavity": [
-    {"item": "kubejs:animal_rib","position": 0},
-    {"item": "kubejs:ender_lung","position": 1},
-    {"item": "kubejs:ender_heart","position": 2},
-    {"item": "kubejs:ender_liver","position": 3},
-    {"item": "kubejs:animal_rib","position": 4},
-    {"item": "kubejs:animal_rib","position": 5},
-    {"item": "kubejs:ender_intestine","position": 6},
-    {"item": "kubejs:ender_stomach","position": 8},
-    {"item": "kubejs:animal_rib","position": 9},
-    {"item": "kubejs:animal_rib","position": 10},
-    {"item": "kubejs:shulker_spleen","position": 11},
-    {"item": "kubejs:ender_spine","position": 12},
-    {"item": "kubejs:ender_kidney","position": 13},
-    {"item": "kubejs:animal_rib","position": 14}
+    {"item": "kubejs:ender_ectoplasm","position": 0},
+    {"item": "kubejs:ender_breath","position": 1},
+    {"item": "kubejs:ender_breath","position": 3},
+    {"item": "kubejs:ender_ectoplasm","position": 4},
+    {"item": "kubejs:ender_ectoplasm","position": 5},
+    {"item": "","position": 7},
+    {"item": "kubejs:ender_ectoplasm","position": 9},
+    {"item": "kubejs:ender_ectoplasm","position": 10},
+    {"item": "kubejs:ender_breath","position": 11},
+    {"item": "kubejs:ender_breath","position": 13},
+    {"item": "kubejs:ender_ectoplasm","position": 14}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/small_ender"

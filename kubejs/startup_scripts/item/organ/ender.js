@@ -12,4 +12,8 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:ender_golem_line').maxDamage(10).maxStackSize(1).texture('kubejs:item/organs/ender/ender_golem_line').tag('kubejs:ender')
     event.create('kubejs:endermaptera_shell').maxStackSize(1).texture('kubejs:item/organs/ender/endermaptera_shell').tag('kubejs:ender')
+
+    event.create('kubejs:ender_breath').maxStackSize(1).texture('kubejs:item/organs/ender/ender_breath').tag('kubejs:ender').tag('kubejs:basic')
+    event.create('kubejs:ender_ectoplasm').maxStackSize(1).texture('kubejs:item/organs/ender/ender_ectoplasm').tag('kubejs:ender').tag('kubejs:basic')
+    event.create('kubejs:ender_eye').maxStackSize(1).texture('kubejs:item/organs/ender/ender_eye').tag('kubejs:ender').tag('kubejs:basic')
 })

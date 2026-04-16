@@ -1,4 +1,5 @@
 // priority: 501
+// todo 回归测试
 function NewGulaChallengeGoal(entity) {
     return new $CustomGoal(
         'gula_challenge',
@@ -6,12 +7,10 @@ function NewGulaChallengeGoal(entity) {
         /** @param {Internal.PathfinderMob} mob **/ mob => {
             const level = mob.level
             if (!level.isRaining() || !level.isNight()) return false
-            const pos = mob.blockPosition()
             if (!mob.persistentData.contains('gulaChallenge')) {
                 mob.persistentData.put('gulaChallenge', new $CompoundTag())
             }
-            const persistentData = mob.persistentData.getCompound('gulaChallenge')
-            let targetBlock = FindNearestBlockAround(level, pos, 6, 2, (curBlock) => {
+            let targetBlock = FindNearestBlockAround(level, mob.blockPosition(), 6, 2, (curBlock) => {
                 if (curBlock.blockState.isAir()) return false
                 if (!curBlock.hasTag('kubejs:table_block')) return false
                 let pPos = curBlock.pos
@@ -20,8 +19,6 @@ function NewGulaChallengeGoal(entity) {
                     let neighborBlock = level.getBlock(neighborPos)
                     if (neighborBlock.hasTag('kubejs:chair_block')) {
                         if (IsAnyOnChair(curBlock)) continue
-                        persistentData.put('targetPos', ConvertPos2Nbt(neighborPos))
-                        persistentData.put('tablePos', ConvertPos2Nbt(pPos))
                         return true
                     }
                 }
@@ -54,22 +51,39 @@ function NewGulaChallengeGoal(entity) {
             const persistentData = mob.persistentData.getCompound('gulaChallenge')
             if (persistentData.contains('waitingTimer') && persistentData.getInt('waitingTimer') > level.time) return
 
-            if (persistentData.contains('targetPos')) {
-                let targetPos = ConvertNbt2Pos(persistentData.getCompound('targetPos'))
-                if (mob.getPosition(1.0).distanceTo(targetPos) <= 1.5) {
-                    let chairBlock = level.getBlock(targetPos)
+            /**@type {Internal.BlockContainerJS} */
+            let chairBlock
+            let tableBlock = FindNearestBlockAround(level, mob.blockPosition(), 6, 2, (curBlock) => {
+                if (curBlock.blockState.isAir()) return false
+                if (!curBlock.hasTag('kubejs:table_block')) return false
+                let pPos = curBlock.pos
+                for (let posOffset of [[1, 0, 0], [-1, 0, 0], [0, 0, 1], [0, 0, -1]]) {
+                    let neighborPos = pPos.offset(posOffset[0], posOffset[1], posOffset[2])
+                    let neighborBlock = level.getBlock(neighborPos)
+                    if (neighborBlock.hasTag('kubejs:chair_block')) {
+                        if (IsAnyOnChair(curBlock)) continue
+                        chairBlock = neighborBlock
+                        return true
+                    }
+                }
+                return false
+            })
+            if (!tableBlock || !chairBlock) return mob.isPassenger() ? mob.unRide() : null
+            const chairPos = chairBlock.getPos()
+            if (!mob.isPassenger()) {
+                if (mob.position().distanceTo(chairPos) <= 2) {
                     let chairFacing = chairBlock.blockState.getValue($BlockStateProperties.HORIZONTAL_FACING)
                     if (chairBlock.id.startsWith('refurbished_furniture')) chairFacing = chairFacing.getOpposite()
-                    SitOnChair(mob, targetPos, 0.5, chairFacing, false)
-                    persistentData.remove('targetPos')
+                    SitOnChair(mob, chairPos, 0.5, chairFacing, false)
                     persistentData.putInt('waitingTimer', level.time + 20 * 5)
                 } else {
-                    NavigateWithDegrade(mob, targetPos, 1.0)
+                    NavigateWithDegrade(mob, chairPos, 1.0)
                 }
-                return
             }
 
-            const tablePos = ConvertNbt2Pos(persistentData.getCompound('tablePos'))
+            if (!(mob.getVehicle() instanceof $Seat)) return
+
+            const tablePos = tableBlock.getPos()
             const onTablePos = tablePos.above()
             const onTableBlock = level.getBlock(onTablePos)
 

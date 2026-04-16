@@ -3,7 +3,6 @@ const InfinityDimItem2DimId = {
     'minecraft:obsidian': 'infinity:cube',
     'minecraft:slime_ball': 'infinity:slime',
     'minecraft:grass_block': 'infinity:hills',
-    'minecraft:dragon_breath': 'infinity:missingno',
     'minecraft:cherry_leaves': 'infinity:spiral',
     'minecraft:sponge': 'infinity:sponge',
     'minecraft:stick': 'infinity:content',
@@ -17,7 +16,7 @@ const InfinityDimItem2DimId = {
     'minecraft:white_concrete': 'infinity:ant',
     'minecraft:dragon_egg': 'infinity:skygrid',
     'minecraft:gold_block': 'infinity:golden',
-    'minecraft:map': 'infinity:void',
+    'kubejs:elder_guardian_core': 'infinity:void',
     "minecraft:sandstone": "infinity:redstone_flat",
 }
 InfinityEvents.itemInPortal(event => {

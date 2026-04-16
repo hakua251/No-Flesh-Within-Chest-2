@@ -12,39 +12,17 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:rotten_spleen').maxStackSize(1).tag('kubejs:infected').tag('kubejs:basic').texture('kubejs:item/organs/infected/rotten_spleen').tag('kubejs:spleen')
     event.create('kubejs:rotten_stomach').maxStackSize(1).tag('kubejs:infected').tag('kubejs:basic').texture('kubejs:item/organs/infected/rotten_stomach').tag('kubejs:stomach')
 
-    event.create('kubejs:worm_neuron')
-        .maxStackSize(1)
-        .texture('kubejs:item/organs/infected/worm_neuron')
-        .tag('kubejs:infected')
+    event.create('kubejs:drowned_intestine').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/drowned_intestine').tag('kubejs:intestine')
 
-    event.create('kubejs:tumor')
-        .texture('kubejs:item/organs/infected/tumor')
-        .maxStackSize(1)
-        .tag('kubejs:organ')
-        .tag('kubejs:infected')
-        .tag('kubejs:tumor')
+    event.create('kubejs:worm_neuron').maxStackSize(1).texture('kubejs:item/organs/infected/worm_neuron').tag('kubejs:infected')
 
-    event.create('kubejs:unformed_tumor')
-        .texture('kubejs:item/organs/infected/unformed_tumor')
-        .maxStackSize(1)
-        .tag('kubejs:organ')
-        .tag('kubejs:infected')
-        .tag('kubejs:tumor')
+    event.create('kubejs:tumor').texture('kubejs:item/organs/infected/tumor').maxStackSize(1).tag('kubejs:organ').tag('kubejs:infected').tag('kubejs:tumor')
 
-    event.create('kubejs:rosy_tumor')
-        .texture('kubejs:item/organs/infected/rosy_tumor')
-        .maxStackSize(1)
-        .tag('kubejs:organ')
-        .tag('kubejs:rose')
-        .tag('kubejs:infected')
-        .tag('kubejs:tumor')
+    event.create('kubejs:unformed_tumor').texture('kubejs:item/organs/infected/unformed_tumor').maxStackSize(1).tag('kubejs:organ').tag('kubejs:infected').tag('kubejs:tumor')
 
-    event.create('kubejs:malignant_neuron_tumor')
-        .texture('kubejs:item/organs/infected/malignant_neuron_tumor')
-        .maxDamage(600)
-        .maxStackSize(1)
-        .tag('kubejs:organ')
-        .tag('kubejs:infected')
+    event.create('kubejs:rosy_tumor').texture('kubejs:item/organs/infected/rosy_tumor').maxStackSize(1).tag('kubejs:organ').tag('kubejs:rose').tag('kubejs:infected').tag('kubejs:tumor')
+
+    event.create('kubejs:malignant_neuron_tumor').texture('kubejs:item/organs/infected/malignant_neuron_tumor').maxDamage(600).maxStackSize(1).tag('kubejs:organ').tag('kubejs:infected')
 
     event.create('kubejs:parasitic_tumor')
         .overrideStackedOnOther((stack, slot, action, player) => {

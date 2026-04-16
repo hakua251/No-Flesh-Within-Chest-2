@@ -193,7 +193,7 @@ function GetEntityPosition(mob) {
 function NavigateWithDegrade(mob, pos, speed) {
     if (!pos) return false
     let navigation = mob.getNavigation()
-    if (navigation.isInProgress() && mob.isInFluidType()) {
+    if (navigation.isInProgress() && mob.isInFluidType() && Math.random() < 0.8) {
         mob.jumpControl.jump()
     }
     if (!navigation.isInProgress() || !navigation.targetPos.equals(pos)) {
@@ -213,7 +213,7 @@ function NavigateWithDegrade(mob, pos, speed) {
 function NavigateWithDegradeVec3d(mob, pos, speed) {
     if (!pos) return false
     let navigation = mob.getNavigation()
-    if (navigation.isInProgress() && mob.isInFluidType()) {
+    if (navigation.isInProgress() && mob.isInFluidType() && Math.random() < 0.8) {
         mob.jumpControl.jump()
     }
     if (!navigation.isInProgress() || !navigation.targetPos.equals(pos)) {
