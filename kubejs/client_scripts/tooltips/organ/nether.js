@@ -23,3 +23,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:explosion_cavity')
     .addDefault(Text.translatable('tooltips.kubejs.explosion_cavity.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.explosion_cavity.alt.1', Text.gold('10')))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:ghast_sac')
+    .addDefault(Text.translatable('tooltips.kubejs.ghast_sac.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.ghast_sac.alt.1'))
+)

@@ -75,7 +75,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:starbuncle_star_gem')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:calamity_bone_spur')
     .addDefault(Text.translatable('tooltips.kubejs.calamity_bone_spur.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.calamity_bone_spur.alt.1'))
-    .addAlt(Text.translatable('tooltips.kubejs.calamity_bone_spur.alt.2', Text.gold('1'), MagicOverloadHover, Text.gold('1')))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:potion_skin')

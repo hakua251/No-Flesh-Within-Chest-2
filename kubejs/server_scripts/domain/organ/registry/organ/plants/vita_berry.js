@@ -32,5 +32,4 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:vita_berry')
         .addOnlyStrategy('organ_take_on', VitaBerryChestCavityTakeOn)
         .addOnlyStrategy('organ_take_off', VitaBerryChestCavityTakeOff)
-
 )

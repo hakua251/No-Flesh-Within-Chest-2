@@ -13,11 +13,12 @@ RegistryOrgan('kubejs:elder_guardian_core')
 function ElderGuardianCoreKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const level = event.level
-
-    if (level.getDimension().equals('infinity:missingno')) {
-        player.teleportTo(new ResourceLocation('minecraft:overworld'), player.x, player.y, player.z, [], player.yaw, player.pitch)
+    const server = event.server
+    if (level.getDimension() == 'infinity:missingno') {
+        player.teleportTo(new ResourceLocation('minecraft:overworld'), player.x, player.y, player.z, player.yaw, player.pitch)
     } else {
-        player.teleportTo(new ResourceLocation('infinity:missingno'), player.x, player.y, player.z, [], player.yaw, player.pitch)
+        InfinityPortalCreator.addInfinityDimensionIfNotExists(server, new ResourceLocation('infinity:missingno'))
+        player.teleportTo(new ResourceLocation('infinity:missingno'), player.x, player.y, player.z, player.yaw, player.pitch)
     }
 
     player.addItemCooldown(organItem, 20 * 60)

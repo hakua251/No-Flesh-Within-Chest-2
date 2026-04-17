@@ -216,3 +216,14 @@ function StandardNormalRandom() {
 function NormalRandom(mean, sigma) {
     return mean + sigma * StandardNormalRandom()
 }
+
+
+/**
+ * 
+ * @param {Internal.Vec3d} vec3d 
+ * @returns {Internal.Vec3d}
+ */
+function Vec3dNormalize(vec3d) {
+    let i = Math.sqrt(vec3d.x() * vec3d.x() + vec3d.y() * vec3d.y() + vec3d.z() * vec3d.z())
+    return i < 1.0E-4 ? Vec3d.ZERO : new Vec3d(vec3d.x() / i, vec3d.y() / i, vec3d.z() / i)
+}

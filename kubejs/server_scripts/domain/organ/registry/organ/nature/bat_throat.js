@@ -14,7 +14,6 @@ RegistryOrgan('kubejs:bat_throat')
 function BatThroatKeyActive(customData, event, organItem, organIndex, slotType) {
     const level = event.level
     const player = event.player
-    if (OrganItemCoolDown(player, organItem)) return
     const entities = GetEntityWithinRadiusVec3d(level, player.position(), 16, (pLevel, pEntity) => pEntity instanceof $LivingEntity)
     entities.forEach(entity => {
         entity.potionEffects.add('minecraft:glowing', 20 * 30)

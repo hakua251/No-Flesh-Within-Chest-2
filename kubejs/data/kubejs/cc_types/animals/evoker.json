@@ -10,6 +10,7 @@
     {"item": "kubejs:rib","position": 7},
     {"item": "kubejs:spleen","position": 8},
     {"item": "kubejs:liver","position": 9},
+    {"item": "kubejs:calamity_bone_spur","position": 10},
     {"item": "kubejs:stomach","position": 10},
     {"item": "kubejs:intestine","position": 12},
     {"item": "kubejs:appendix","position": 13},

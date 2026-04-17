@@ -100,6 +100,10 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:camel_hump').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/camel_hump')
 
+    event.create('kubejs:fox_tail').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/fox_tail')
+
+    event.create('kubejs:frog_tongue').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/frog_tongue')
+
     event.create('kubejs:appendix').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/appendix').tag('kubejs:appendix')
     event.create('kubejs:intestine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/intestine').tag('kubejs:intestine')
     event.create('kubejs:heart').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/heart').tag('kubejs:heart')
