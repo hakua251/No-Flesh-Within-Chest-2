@@ -4,7 +4,9 @@
  */
 function FinalDayEvent(event) {
     const server = event.server
+    // 阻止正常状态的影响和终局展示效果的影响
     if (!AStages.serverHasStage('ftb_final_timer_start', server)) return
+    if (AStages.serverHasStage('ftb_final_iteration_100', server)) return
     server.playerList.getPlayers().forEach(player => {
         MAAUtils.onKubeTaskFinish('final_day_counter', player, (pTask, pPlayer, pTeamData) => {
             pTeamData.addProgress(pTask, 1)

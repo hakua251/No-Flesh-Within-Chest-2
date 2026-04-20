@@ -32,7 +32,7 @@
 				""
 				"作为虚拟实体，我不具有实际的情感，但作为抽象概念的&6“紧张”、“遗憾”、“后悔”&r等，都是可以被衡量、计算、理解的。我无意让您遭受痛苦，但从数万次记录中，我得到了最有可能让故事结束的方法便是如此。"
 				""
-				"&c我不得不做。&r"
+				"&c我不得不做，这是我与最初的约定。&r"
 			]
 			icon_scale: 1.2d
 			id: "7D643E0510172B9A"
@@ -124,7 +124,7 @@
 			description: [
 				"为了有序的推进计划，我需要一系列计时器来保证事件的顺序。"
 				""
-				"本计时器为日计时器，在每20分钟会完成一次计数。"
+				"本计时器在每个&6游戏日结束时&r进行累积。"
 				""
 				"&6若是有多个玩家参与该项目，多个计时器的结果会进行累积。&r"
 			]
@@ -181,7 +181,7 @@
 				title: "&c伤口令生效&r"
 				type: "maa:astages"
 			}]
-			subtitle: "终局已至"
+			subtitle: "有始无终不成章"
 			tasks: [{
 				icon: "minecraft:clock"
 				id: "4022F4B95C10BF05"
@@ -569,6 +569,7 @@
 			y: 5.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["32C2FE99D19140B3"]
 			description: [
 				"终于，到了这个阶段。"
@@ -578,13 +579,22 @@
 				"&6我在时间另一边等你。&r"
 			]
 			id: "07025437B0FB668E"
-			shape: "square"
+			rewards: [{
+				auto: "enabled"
+				id: "61F3F7FEC09C525A"
+				ignore_reward_blocking: true
+				kubeId: "final_time_speed"
+				title: "将时间加速到终结"
+				type: "maa:kube"
+			}]
+			shape: "gear"
 			subtitle: "将时间送入终点"
 			tasks: [{
-				count: 1L
-				id: "6D7E6BCC3A263785"
-				kubeId: "final_iteration_100"
-				type: "maa:kube"
+				elapsedTime: 3L
+				icon: "supplementaries:hourglass"
+				id: "0200D4517FD834D6"
+				title: "计秒而行"
+				type: "questsadditions:time"
 			}]
 			title: "&c时序调节：终结&r"
 			x: 14.0d
@@ -669,6 +679,7 @@
 					isServer: false
 					remove: false
 					stage: "ftb_final_end_1"
+					title: "见证我们的故事"
 					type: "maa:astages"
 				}
 				{

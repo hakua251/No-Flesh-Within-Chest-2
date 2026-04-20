@@ -1266,7 +1266,7 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "有始无终不成章"
+			subtitle: "终局诠释：回归"
 			tasks: [{
 				icon: "minecraft:experience_bottle"
 				id: "68B415F97E78D040"

@@ -62,3 +62,15 @@ FTBQuestsEvents.customReward('final_iteration_100', event => {
     if (AStages.serverHasStage('ftb_final_iteration_100', event.server)) return
     AStages.addStageToServer('ftb_final_iteration_100', event.server)
 })
+
+/**
+ * todo
+ * 终局时间加速展示
+ */
+FTBQuestsEvents.customReward('final_time_speed', event => {
+    // MAAUtils.onKubeTaskFinish('final_iteration_100', event.player, (pTask, pPlayer, pTeamData) => {
+    //     pTeamData.addProgress(pTask, 1)
+    // })
+    // if (AStages.serverHasStage('ftb_final_iteration_100', event.server)) return
+    // AStages.addStageToServer('ftb_final_iteration_100', event.server)
+})
