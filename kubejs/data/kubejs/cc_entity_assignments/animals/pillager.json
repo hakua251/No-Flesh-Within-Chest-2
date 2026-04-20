@@ -3,6 +3,7 @@
   "entities": [
     "minecraft:pillager",
     "minecraft:illusioner",
+    "minecraft:vindicator",
     "illagerinvasion:provoker",
     "illagerinvasion:invoker",
     "illagerinvasion:necromancer",

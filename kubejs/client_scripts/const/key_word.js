@@ -86,11 +86,6 @@ const PutridToxinsHover = Text.translatable('tooltips.kubejs.hover.putrid_toxins
         Text.translatable('tooltips.kubejs.hover.putrid_toxins.2'),
         Text.translatable('tooltips.kubejs.hover.putrid_toxins.3'),
     ]))
-const MagicOverloadHover = Text.translatable('tooltips.kubejs.hover.magic_overload.0').aqua().underlined()
-    .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.hover.magic_overload.0').aqua(),
-        Text.translatable('tooltips.kubejs.hover.magic_overload.1'),
-    ]))
 
 const ChestcavityTypeHover = Text.translatable('tooltips.kubejs.hover.chestcavity_type.0').gold().underlined()
     .hover(HoverTextList([

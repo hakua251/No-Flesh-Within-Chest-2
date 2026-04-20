@@ -1,6 +1,7 @@
 {
   "chestcavity": "kubejs:cc_types/animals/frog.json",
   "entities": [
-    "minecraft:frog"
+    "minecraft:frog",
+    "minecraft:tadpole"
   ]
 }

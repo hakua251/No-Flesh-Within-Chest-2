@@ -2,6 +2,7 @@
 RegistryOrgan('kubejs:ghast_sac')
     .addScore('chestcavity:speed', 1)
     .addScore('chestcavity:breath_recovery', 1)
+    .setCanSpawn(true)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

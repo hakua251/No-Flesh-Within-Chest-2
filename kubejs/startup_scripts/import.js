@@ -50,3 +50,5 @@ const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleType
 const $SpellDamageSource = Java.loadClass('io.redspace.ironsspellbooks.damage.SpellDamageSource')
 const $Player = Java.loadClass('net.minecraft.world.entity.player.Player')
 const $DevourJaw = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.devour_jaw.DevourJaw')
+const $StompAoe = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.StompAoe')
+const $BlockParticleOption = Java.loadClass('net.minecraft.core.particles.BlockParticleOption')

@@ -77,6 +77,7 @@ const $ItemHelper = Java.loadClass('com.simibubi.create.foundation.item.ItemHelp
 
 const $AnimHeadSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimHeadSummon')
 const $AnimBlockSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimBlockSummon')
+const $AbstractSkullBlock = Java.loadClass('net.minecraft.world.level.block.AbstractSkullBlock')
 
 const $SpellSelectionEvent = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent')
 const $ModifySpellLevelEvent = Java.loadClass('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEvent')

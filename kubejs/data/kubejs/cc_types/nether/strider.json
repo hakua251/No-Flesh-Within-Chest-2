@@ -8,6 +8,7 @@
     {"item": "kubejs:fireproof_muscle","position": 5},
     {"item": "kubejs:fireproof_spleen","position": 6},
     {"item": "kubejs:fireproof_liver","position": 7},
+    {"item": "kubejs:embers_liver","position": 8},
     {"item": "kubejs:fireproof_stomach","position": 9},
     {"item": "kubejs:fireproof_intestine","position": 10},
     {"item": "kubejs:fireproof_appendix","position": 11},

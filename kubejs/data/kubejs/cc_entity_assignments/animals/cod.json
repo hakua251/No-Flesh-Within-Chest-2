@@ -2,6 +2,7 @@
   "chestcavity": "kubejs:cc_types/animals/cod.json",
   "entities": [
     "minecraft:cod",
-    "minecraft:salmon"
+    "minecraft:salmon",
+    "minecraft:tropical_fish"
   ]
 }

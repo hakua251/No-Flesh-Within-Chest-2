@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:necromancer_skull')
+RegistryOrgan('kubejs:shulker_eye')
     .addScore('chestcavity:nerves', 1)
     .setCanSpawn(true)
 /**
@@ -9,11 +9,11 @@ RegistryOrgan('kubejs:necromancer_skull')
  * @param {number} organIndex
  * @param {string} slotType
  */
-function NecromancerSkullChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+function ShulkerEyeChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
-    AddSpellSelection(customData, chestCavity, 'irons_spellbooks:raise_dead', 6)
+    AddSpellSelection(customData, chestCavity, 'irons_spellbooks:pocket_dimension', 1)
 }
 
 /**
@@ -23,14 +23,14 @@ function NecromancerSkullChestCavityUpdate(customData, event, organItem, organIn
  * @param {number} organIndex
  * @param {string} slotType
  */
-function NecromancerSkullTakeOff(customData, event, organItem, organIndex, slotType) {
+function ShulkerEyeTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity, chestCavity } = event
     if (!entity.isPlayer()) return
-    RemoveSpellSelectionBySpellId(customData, chestCavity, 'irons_spellbooks:raise_dead')
+    RemoveSpellSelectionBySpellId(customData, chestCavity, 'irons_spellbooks:pocket_dimension')
 }
 
 RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:necromancer_skull')
-        .addOnlyStrategy('chest_cavity_update', NecromancerSkullChestCavityUpdate)
-        .addOnlyStrategy('organ_take_off', NecromancerSkullTakeOff)
+    new OrganStrategyModel('kubejs:shulker_eye')
+        .addOnlyStrategy('chest_cavity_update', ShulkerEyeChestCavityUpdate)
+        .addOnlyStrategy('organ_take_off', ShulkerEyeTakeOff)
 )

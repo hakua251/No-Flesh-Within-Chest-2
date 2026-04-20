@@ -317,3 +317,13 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:pillager_gland')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:rabbit_foot')
     .addDefault(Text.translatable('tooltips.kubejs.rabbit_foot.default.1').gray())
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:ravager_hoof')
+    .addDefault(Text.translatable('tooltips.kubejs.ravager_hoof.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.ravager_hoof.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:silverfish_gland')
+    .addDefault(Text.translatable('tooltips.kubejs.silverfish_gland.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.silverfish_gland.alt.1'))
+)

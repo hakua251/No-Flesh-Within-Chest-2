@@ -1,4 +1,13 @@
 
+###############################################################################################
+###                                                                                          ##
+###                                      ATTENTION:                                          ##
+###           If you are looking for spell configs, they are now datapack driven!            ##
+###                     Use '/ironsSpellbooks config' in-game for hints!                     ##
+###                                                                                          ##
+###                                                                                          ##
+###############################################################################################
+#
 #Other Configuration
 [Blocks]
 	#Whether Portal Frames can only be dyed by the block's owner. Default: true
@@ -23,7 +32,7 @@
 	#From 0-1, the percent chance for scrolls to be successfully recycled. Default: 0.5 (50%)
 	scrollRecycleChance = 0.5
 	#Whether or not potions should be allowed to be brewed in the alchemist cauldron)
-	allowCauldronBrewing = true
+	allowCauldronBrewing = false
 	#Whether or not Furled Map items should skip chunks when searching for structures (only find new structures). Can impact performance while searching. Default: true
 	furledMapSkipsExistingChunks = true
 	#Whether or not casting items should apply all attributes while in the offhand, or just magic related ones. Default: true
@@ -74,6 +83,14 @@
 
 	#Configure Boss Stats
 	["Boss Config".Tyros]
+		#Additional Health
+		additionalHealth = 0.0
+		#Additional Melee Attack Damage
+		additionalAttackDamage = 0.0
+		#Additional Spell Power (additive percent)
+		additionalSpellPower = 0.0
+
+	["Boss Config"."Dead King"]
 		#Additional Health
 		additionalHealth = 0.0
 		#Additional Melee Attack Damage

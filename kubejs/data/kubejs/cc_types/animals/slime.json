@@ -1,6 +1,6 @@
 {
   "defaultChestCavity": [
-    {"item":"minecraft:slime_ball","position": 2,"count":1}
+    {"item":"minecraft:slime_ball","position": 2, "count":1}
   ],
   "baseOrganScores": [
     {"id": "chestcavity:health","value": "1"},

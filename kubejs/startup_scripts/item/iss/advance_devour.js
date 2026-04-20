@@ -4,7 +4,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setCooldownSeconds(20)
         .setBaseManaCost(50)
         .setManaCostPerLevel(20)
-        .setBaseSpellPower(5)
+        .setBaseSpellPower(1)
         .setSpellPowerPerLevel(1)
         .setCastType('instant')
         .setSchool('irons_spellbooks:blood')
@@ -14,6 +14,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             return ISSUtils.preCastTargetHelper(ctx.level, ctx.entity, ctx.playerMagicData, ctx.spell, 9, 0.1)
         })
         .onCast(ctx => {
+            if (ctx.level.isClientSide()) return
             const level = ctx.level
             const entity = ctx.entity
             const spell = ctx.spell
