@@ -1,6 +1,6 @@
 {
   "defaultChestCavity": [
-    {"item":"kubejs:prowler_rotating_shaft","position": 4}
+    {"item":"kubejs:prowler_rotating_shaft", "position": 4}
   ],
   "baseOrganScores": [
       {"id": "chestcavity:health","value": "1"},

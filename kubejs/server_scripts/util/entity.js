@@ -512,3 +512,42 @@ function SitOnChair(mob, pos, seatHeight, direction, lock) {
     }
     return false
 }
+
+/**
+ * @param {Internal.LivingEntity} entity
+ * @param {Internal.Level} level
+ */
+function SpitTowardFacing(entity, level) {
+    let entityFacing = Vec3dNormalize(entity.getForward())
+    let llamaSpitEntity = new $LlamaSpit($EntityType.LLAMA_SPIT, level)
+    llamaSpitEntity.setOwner(entity)
+    llamaSpitEntity.setPos(entity.getX() - (entity.getBbWidth() + 1.0) * 0.5 * JavaMath.sin(entity.yBodyRot * JavaMath.PI / 180), entity.getEyeY() - 0.1, entity.getZ() + (entity.getBbWidth() + 1.0) * 0.5 * JavaMath.cos(entity.yBodyRot * (JavaMath.PI / 180)))
+    llamaSpitEntity.setMotion(entityFacing.x() * 2, entityFacing.y() * 2, entityFacing.z() * 2)
+    level.addFreshEntity(llamaSpitEntity)
+}
+
+/**
+ * @param {Internal.LivingEntity} entity
+ * @param {Internal.Level} level
+ */
+function SummonFireballTowardFacing(entity, level) {
+    let entityFacing = Vec3dNormalize(entity.getForward())
+    let fireballEntity = new $LargeFireball(level, entity, entityFacing.x(), entityFacing.y(), entityFacing.z(), 1)
+    fireballEntity.setPosition(fireballEntity.getX(), entity.getY(0.5) + 0.3, fireballEntity.getZ())
+    level.addFreshEntity(fireballEntity)
+}
+
+
+
+/**
+ * @param {Internal.LivingEntity} entity
+ * @param {Internal.Level} level
+ */
+function SummonSnowballTowardFacing(entity, level) {
+    let entityFacing = Vec3dNormalize(entity.getForward())
+    let snowBallEntity = new $Snowball(level, entity)
+    snowBallEntity.setOwner(entity)
+    snowBallEntity.setPos(entity.getX() - (entity.getBbWidth() + 1.0) * 0.5 * JavaMath.sin(entity.yBodyRot * JavaMath.PI / 180), entity.getEyeY() - 0.1, entity.getZ() + (entity.getBbWidth() + 1.0) * 0.5 * JavaMath.cos(entity.yBodyRot * (JavaMath.PI / 180)))
+    snowBallEntity.setMotion(entityFacing.x() * 2, entityFacing.y() * 2, entityFacing.z() * 2)
+    level.addFreshEntity(snowBallEntity)
+}

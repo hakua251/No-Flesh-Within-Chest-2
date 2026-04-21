@@ -14,10 +14,7 @@ RegistryOrgan('kubejs:ghast_sac')
 function GhastSacKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const level = event.level
-    let playerFacing = Vec3dNormalize(player.getForward())
-    let fireballEntity = new $LargeFireball(level, player, playerFacing.x(), playerFacing.y(), playerFacing.z(), 1)
-    fireballEntity.setPosition(fireballEntity.getX(), player.getY(0.5) + 0.3, fireballEntity.getZ())
-    level.addFreshEntity(fireballEntity)
+    SummonFireballTowardFacing(player, level)
     player.addItemCooldown(organItem, 20 * 3)
 }
 

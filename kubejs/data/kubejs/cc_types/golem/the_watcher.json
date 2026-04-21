@@ -1,6 +1,6 @@
 {
   "defaultChestCavity": [
-    {"item":"kubejs:watcher_probe","position": 2}
+    {"item":"kubejs:watcher_probe", "position": 2}
   ],
   "baseOrganScores": [
       {"id": "chestcavity:health","value": "1"},

@@ -16,6 +16,7 @@ function RacconPawEntityInteract(customData, event, organItem, organIndex, slotT
     const target = event.target
     const player = event.player
     if (event.hand != 'main_hand') return
+    if (!player.mainHandItem.isEmpty()) return
     if (OrganItemCoolDown(player, organItem)) return
     switch (target.type) {
         case 'minecraft:villager':

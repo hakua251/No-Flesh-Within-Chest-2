@@ -1,7 +1,6 @@
 // priority: 500
-RegistryOrgan('kubejs:embers_liver')
-    .addScore('chestcavity:detoxification', 1)
-    .addScore('chestcavity:fire_resistant', 1)
+RegistryOrgan('kubejs:magam_colloid')
+    .addScore('chestcavity:health', 1)
     .setCanSpawn(true)
 
 /**
@@ -11,9 +10,9 @@ RegistryOrgan('kubejs:embers_liver')
  * @param {number} organIndex
  * @param {string} slotType
  */
-function EmbersLiverEntityBeHurt(customData, event, organItem, organIndex, slotType) {
+function MagamColloidEntityBeHurt(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (slotType == RevolutionFlame) {
+    if (slotType == RevolutionFlameType) {
         let fireTick = 60 * event.amount
         let remainTick = entity.getRemainingFireTicks()
         if (fireTick <= remainTick) {
@@ -29,6 +28,6 @@ function EmbersLiverEntityBeHurt(customData, event, organItem, organIndex, slotT
 }
 
 RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:embers_liver')
-        .addStrategy('entity_be_hurt', EmbersLiverEntityBeHurt)
+    new OrganStrategyModel('kubejs:magam_colloid')
+        .addStrategy('entity_be_hurt', MagamColloidEntityBeHurt)
 )

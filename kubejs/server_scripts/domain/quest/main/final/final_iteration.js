@@ -64,7 +64,6 @@ FTBQuestsEvents.customReward('final_iteration_100', event => {
 })
 
 /**
- * todo
  * 终局时间加速展示
  */
 FTBQuestsEvents.customReward('final_time_speed', event => {

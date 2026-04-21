@@ -1,6 +1,6 @@
 {
     "defaultChestCavity": [   
-        {"item": "kubejs:warden_core","position": 1}
+        {"item": "kubejs:warden_core", "position": 1}
     ],
     "baseOrganScores": [],
     "inventoryType": "kubejs:cc_inventory_types/relic"

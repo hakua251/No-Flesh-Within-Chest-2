@@ -2,11 +2,6 @@
 StartupEvents.registry('item', event => {
     event.create('kubejs:animted_soul').maxStackSize(1).texture('kubejs:item/organs/magic/animted_soul').tag('kubejs:magic')
 
-    // 糖果
-    event.create('kubejs:candy_heart').maxStackSize(1).texture('kubejs:item/organs/magic/candy_heart').tag('kubejs:magic').tag('kubejs:heart')
-    event.create('kubejs:candy_pancreas').maxStackSize(1).texture('kubejs:item/organs/magic/candy_pancreas').tag('kubejs:magic')
-    event.create('kubejs:candy_stomach').maxStackSize(1).texture('kubejs:item/organs/magic/candy_stomach').tag('kubejs:magic').tag('kubejs:stomach')
-
     event.create('kubejs:shulker_eye').maxStackSize(1).texture('kubejs:item/organs/magic/shulker_eye').tag('kubejs:magic')
 
     // 星宝石
@@ -32,4 +27,49 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:potion_skin').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/potion_skin')
     event.create('kubejs:organic_mana_condense').maxStackSize(1).tag('kubejs:magic').tag('kubejs:lung').texture('kubejs:item/organs/magic/organic_mana_condense')
     event.create('kubejs:source_resonator').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/source_resonator')
+
+    event.create('kubejs:witch_stomach')
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
+            if (oStack.isEmpty()) {
+                RemoveBundleOneStack(stack).ifPresent(pStack => {
+                    PlayBundleRemoveSound(player)
+                    access.set(pStack)
+                })
+            } else if (!$PotionUtils.getPotion(oStack).effects.isEmpty()) {
+                let added = AddItemIntoBundle(stack, oStack, 1, (pStack) => 1)
+                if (added > 0) {
+                    PlayerBundleInsertSound(player)
+                    oStack.shrink(added)
+                }
+            }
+            return true
+        })
+        .overrideStackedOnOther((stack, slot, action, player) => {
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
+            let oStack = slot.getItem()
+            if (oStack.isEmpty()) {
+                PlayBundleRemoveSound(player)
+                RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
+            } else if (!$PotionUtils.getPotion(oStack).effects.isEmpty()) {
+                let added = AddItemIntoBundle(stack, slot.safeTake(oStack.getCount(), 65535, player), 1, (pStack) => 1)
+                if (added > 0) PlayerBundleInsertSound(player)
+            }
+            return true
+        })
+        .barWidth((stack) => {
+            let stackList = GetBundleContents(stack)
+            return Math.min(1 + 12 * stackList.length, 13)
+        })
+        .barColor(() => Color.DARK_BLUE)
+        .tooltipImage((stack) => {
+            let itemList = $NonNullList.create()
+            GetBundleContents(stack).forEach((pStack) => itemList.add(pStack))
+            return Optional.of(new $BundleTooltip(itemList, GetBundleCountentWeight(stack, (pStack) => 1)))
+        })
+        .canFitInsideContainerItems(false)
+        .texture('kubejs:item/organs/nature/witch_stomach')
+        .maxStackSize(1)
+        .tag('kubejs:magic')
+        .tag('kubejs:stomach')
 })

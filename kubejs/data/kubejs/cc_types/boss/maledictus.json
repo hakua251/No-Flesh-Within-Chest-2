@@ -1,6 +1,6 @@
 {
     "defaultChestCavity": [
-        {"item": "kubejs:maledictus_wing","position": 1}
+        {"item": "kubejs:maledictus_wing", "position": 1}
     ],
     "baseOrganScores": [
         {"id": "chestcavity:ease_of_access","value": "1"}

@@ -24,6 +24,10 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:malignant_neuron_tumor').texture('kubejs:item/organs/infected/malignant_neuron_tumor').maxDamage(600).maxStackSize(1).tag('kubejs:organ').tag('kubejs:infected')
 
+    event.create('kubejs:bone_cage').texture('kubejs:item/organs/infected/bone_cage').maxStackSize(1).tag('kubejs:infected').tag('kubejs:bone')
+
+    event.create('kubejs:wither_bone_cage').texture('kubejs:item/organs/infected/wither_bone_cage').maxStackSize(1).tag('kubejs:infected').tag('kubejs:bone')
+
     event.create('kubejs:parasitic_tumor')
         .overrideStackedOnOther((stack, slot, action, player) => {
             if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false

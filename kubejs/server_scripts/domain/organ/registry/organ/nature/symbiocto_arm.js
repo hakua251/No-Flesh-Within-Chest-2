@@ -15,6 +15,8 @@ function SymbioctoArmEntityInteract(customData, event, organItem, organIndex, sl
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     if (!player) return
+    if (event.getHand() != 'main_hand') return
+    if (!player.mainHandItem.isEmpty()) return
     const target = event.target
     if (player.isVehicle()) return
     target.startRiding(player, true)

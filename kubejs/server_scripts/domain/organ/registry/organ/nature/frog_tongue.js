@@ -47,6 +47,7 @@ function FrogTongueEntityInteract(customData, event, organItem, organIndex, slot
     const player = event.player
     const level = event.level
     if (event.hand != 'main_hand') return
+    if (!player.mainHandItem.isEmpty()) return
 
     const playerCC = player.chestCavityInstance
     let counter = GetCustomDataMap(playerCC, 'frogTongueEffectReady', 0)

@@ -1,6 +1,6 @@
 {
   "defaultChestCavity": [
-    {"item":"kubejs:coral_armor","position": 4}
+    {"item":"kubejs:coral_armor", "position": 4}
   ],
   "baseOrganScores": [
       {"id": "chestcavity:health","value": "1"},

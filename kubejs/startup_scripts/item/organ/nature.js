@@ -122,6 +122,14 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:silverfish_gland').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/silverfish_gland')
 
+    event.create('kubejs:slime_colloid').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/slime_colloid')
+
+    event.create('kubejs:pumpkin_shooter').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pumpkin_shooter')
+
+    event.create('kubejs:turtle_shell').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/turtle_shell')
+
+    event.create('kubejs:refill_agreement').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/refill_agreement')
+
     // event.create('kubejs:armadillo').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pufferfish_liver')
 
     event.create('kubejs:appendix').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/appendix').tag('kubejs:appendix')

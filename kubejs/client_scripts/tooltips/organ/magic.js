@@ -109,3 +109,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:shulker_eye')
     .addDefault(Text.translatable('tooltips.kubejs.shulker_eye.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.shulker_eye.alt.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:wither_skull')
+    .addDefault(Text.translatable('tooltips.kubejs.wither_skull.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.wither_skull.alt.1'))
+)

@@ -1,6 +1,6 @@
 {
     "defaultChestCavity": [
-        {"item": "kubejs:dying_heart","position": 1}
+        {"item": "kubejs:dying_heart", "position": 1}
     ],
     "baseOrganScores": [],
     "inventoryType": "kubejs:cc_inventory_types/relic"

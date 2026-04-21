@@ -1,10 +1,10 @@
 {
   "defaultChestCavity": [
-    {"item":"minecraft:stick","position": 0},
-    {"item":"minecraft:stick","position": 1},
-    {"item":"kubejs:pumpkin_pulse","position": 2},
-    {"item":"minecraft:snow","position": 3},
-    {"item":"minecraft:snow","position": 4}
+    {"item":"minecraft:snow", "position": 0, "count": 1},
+    {"item":"minecraft:snow", "position": 1, "count": 1},
+    {"item":"kubejs:pumpkin_shooter", "position": 2},
+    {"item":"minecraft:snow", "position": 3, "count": 1},
+    {"item":"minecraft:snow", "position": 4, "count": 1}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/small_golem"

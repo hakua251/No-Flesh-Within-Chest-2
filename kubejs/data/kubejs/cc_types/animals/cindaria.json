@@ -1,6 +1,6 @@
 {
   "defaultChestCavity": [
-    {"item": "kubejs:cindaria_umbrella","position": 9}
+    {"item": "kubejs:cindaria_umbrella", "position": 9}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/medium_aquatic"

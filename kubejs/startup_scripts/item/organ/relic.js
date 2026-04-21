@@ -12,4 +12,5 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:maledictus_wing').maxStackSize(1).texture('kubejs:item/organs/relic/maledictus_wing').tag('kubejs:relic').tag('kubejs:magic')
     event.create('kubejs:scylla_star_gem').maxStackSize(1).tag('kubejs:relic').tag('kubejs:magic').texture('kubejs:item/organs/relic/scylla_star_gem').tag('kubejs:gem')
     event.create('kubejs:dying_heart').maxStackSize(1).tag('kubejs:relic').tag('kubejs:magic').texture('kubejs:item/organs/relic/dying_heart')
+    event.create('kubejs:wither_skull').maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/relic/wither_skull')
 })

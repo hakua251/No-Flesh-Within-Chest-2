@@ -58,3 +58,9 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:mutation_intestine')
     .addDefault(Text.translatable('tooltips.kubejs.mutation_intestine.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.mutation_intestine.alt.1'))
 )
+
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:wither_bone_cage')
+    .addDefault(Text.translatable('tooltips.kubejs.wither_bone_cage.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.wither_bone_cage.alt.1', Text.gold('20%'), LuckHover, Text.gold('5')))
+)

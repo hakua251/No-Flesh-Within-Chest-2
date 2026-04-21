@@ -19,6 +19,7 @@ function PelicanLarynxEntityInteract(customData, event, organItem, organIndex, s
     if (!(target.isLiving() && target instanceof $PathfinderMob)) return
     const level = event.level
     if (event.getHand() != 'main_hand') return
+    if (!player.mainHandItem.isEmpty()) return
     if (OrganItemCoolDown(player, organItem)) return
     if (player.getMaxHealth() <= target.getMaxHealth()) return
     if (target.isPlayer()) return
