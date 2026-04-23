@@ -33,7 +33,7 @@
 	#Range: 1 ~ 20
 	maxUnhoveredAssignments = 3
 	#Mods that are disabled in the mod filter list. These mod ids/names will be hidden from the atlas when present.
-	disabledMods = ["Minecraft"]
+	disabledMods = []
 	#Individual bindings disabled in the mod filter list. Format: 'ModName::BindingLabel'.
 	disabledBindings = []
 

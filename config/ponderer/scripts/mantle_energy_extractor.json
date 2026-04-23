@@ -1,0 +1,185 @@
+{
+  "id": "ponderer:mantle_energy_extractor",
+  "items": [
+    "kubejs:mantle_energy_extractor"
+  ],
+  "title": {
+    "zh_cn": "地幔能提取器",
+    "en_us": "New Scene - mantle_energy_extractor"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "scenes": [
+    {
+      "id": "s_48d07",
+      "title": {
+        "zh_cn": "如何提取地幔能"
+      },
+      "steps": [
+        {
+          "type": "show_interface",
+          "point": [
+            0.39556482940146154,
+            0.8125,
+            0.5622046435685633
+          ],
+          "direction": "up",
+          "block": "kubejs:mantle_energy_extractor",
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "nbt": "{ForgeCaps:{\"astages:owners\":{owner:[I;-224672219,1723023954,-2042640788,-662891648]}},componentManager:{active:0b,data_component:{},fuel:0,items:[{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_crystal\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_target\"},{config:{BACK:1b,BOTTOM:1b,FRONT:1b,LEFT:1b,RIGHT:1b,TOP:1b,input:0b,output:0b},slotID:\"output_extract\"},{config:{BACK:1b,BOTTOM:1b,FRONT:1b,LEFT:1b,RIGHT:1b,TOP:1b,input:0b,output:0b},slotID:\"output_flame\"}],maxFuel:0,mode:\"input\",radius:1,source:0},craftingManager:{phase:\"STARTING\",recipeProgressTime:0.0d,type:\"custommachinery:machine\"},machineID:\"kubejs:mantle_energy_extractor\",message:'{\"text\":\"\"}',ownerID:\"f29bc625-66b3-4252-863f-c66cd87d1380\",ownerName:'{\"text\":\"YoruNina\"}',status:\"idle\",x:0,y:0,z:0}",
+          "whileSneaking": false,
+          "enableNbt": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "change_interface_slot",
+          "attachKeyFrame": true,
+          "interfaceSlots": [
+            {
+              "slotIndex": 37,
+              "slotX": 158,
+              "slotY": 136,
+              "ingredientId": "minecraft:raw_iron",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "放入需要被复制的材料"
+          },
+          "point": [
+            0.795,
+            -0.238,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "提供魔源并等待加工完成"
+          },
+          "point": [
+            -0.722,
+            -0.19,
+            0.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "change_interface_slot",
+          "attachKeyFrame": true,
+          "interfaceSlots": [
+            {
+              "slotIndex": 37,
+              "slotX": 158,
+              "slotY": 136,
+              "ingredientId": "minecraft:raw_iron",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 38,
+              "slotX": 25,
+              "slotY": 80,
+              "ingredientId": "minecraft:raw_iron",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 39,
+              "slotX": 156,
+              "slotY": 80,
+              "ingredientId": "kubejs:flame_fragment",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "此处输出复制产物"
+          },
+          "point": [
+            -0.71,
+            0.431,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "此处输出副产物烈焰裂片"
+          },
+          "point": [
+            0.761,
+            0.419,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "同时每次运作会使挖掘深度会增加"
+          },
+          "point": [
+            0.017,
+            0.817,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "深度增加后会扩展可复制物品的种类"
+          },
+          "point": [
+            0.017,
+            0.817,
+            0.0
+          ],
+          "placeNearTarget": true
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,6 @@ ItemEvents.entityInteracted('stick', event => {
 })
 
 ItemEvents.rightClicked('stick', event => {
-    /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
     const level = event.level
