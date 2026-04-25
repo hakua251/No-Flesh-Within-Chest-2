@@ -12,7 +12,7 @@
     {"item": "kubejs:animal_liver", "position": 9},
     {"item": "kubejs:animal_stomach", "position": 10},
     {"item": "kubejs:horse_tendon", "position": 11},
-    {"item": "kubejs:animal_intestine", "position": 12},
+    {"item": "kubejs:rumen", "position": 12},
     {"item": "kubejs:animal_intestine", "position": 13},
     {"item": "kubejs:animal_intestine", "position": 14},
     {"item": "kubejs:animal_rib", "position": 15},

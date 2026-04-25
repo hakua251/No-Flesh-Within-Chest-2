@@ -36,13 +36,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:revolution_cable')
     .addCtrl(Text.translatable('tooltips.kubejs.revolution_cable.ctrl.1', Text.gold('300%')))
 )
 
-RegistryOrganTooltip(new MultiStateTooltip('kubejs:revolution_cable')
-    .addDefault(Text.translatable('tooltips.kubejs.revolution_cable.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.revolution_cable.alt.1', Text.gold('1')))
-    .addAlt(Text.translatable('tooltips.kubejs.revolution_cable.alt.2', Text.gold('1')))
-    .addCtrl(MachinaryLubricantSlotType)
-    .addCtrl(Text.translatable('tooltips.kubejs.revolution_cable.ctrl.1', Text.gold('300%')))
-)
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:revolution_relay')
     .addDefault(Text.translatable('tooltips.kubejs.revolution_relay.default.1').gray())

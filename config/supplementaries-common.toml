@@ -161,7 +161,7 @@
 		slots = 9
 
 	[functional.bamboo_spikes]
-		enabled = true
+		enabled = false
 		tipped_spikes = true
 		#Allows entities killed by spikes to drop loot as if they were killed by a player
 		player_loot = false
