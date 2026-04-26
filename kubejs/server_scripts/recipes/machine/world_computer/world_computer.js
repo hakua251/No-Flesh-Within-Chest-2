@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             const machine = ctx.getMachine()
             const data = machine.getData()
             data.putInt('resource_bar', 512)
-            return ctx.error('')
+            return ctx.success()
         })
         .requireFunctionEachTick(ctx => {
             const machine = ctx.getMachine()
@@ -403,13 +403,13 @@ ServerEvents.recipes(event => {
         .produceItem(Item.of('kubejs:entity_simulator', 1), 'output_1')
         .resetOnError()
 
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
+    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 1200)
         .requireFunctionOnEnd(ctx => {
             console.log('Congratulations.')
             console.log('New Horizon Establish.')
             console.log('Keep promise and explore the world you can\'t arrive.')
             const server = ctx.block.level.server
-            if (owner.isPlayer() && !AStages.serverHasStage('ftb_world_computer_2', server)) {
+            if (!AStages.serverHasStage('ftb_world_computer_2', server)) {
                 AStages.addStageToServer('ftb_world_computer_2', server)
             }
         })

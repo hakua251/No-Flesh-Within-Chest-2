@@ -36,7 +36,7 @@ function NewLayLootGoal(entity) {
             let dist = mob.position().distanceTo(targetPos)
             if (dist <= 2) {
                 SpawnLootAtLocation(mob.level, targetPos, Utils.rollChestLoot(mob.getLootTable()).toArray())
-                mob.persistentData.putInt('layLootTimer', level.time + 20 * 10)
+                mob.persistentData.putInt('layLootTimer', level.time + 20 * 240)
             } else {
                 NavigateWithDegrade(mob, targetPos, 1.0)
             }

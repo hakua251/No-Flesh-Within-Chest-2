@@ -506,7 +506,7 @@
     "tooltips.kubejs.sweets_gland.alt.2": "        §6★§r 食物提供的每点饥饿度将会提高 %s 点生命值上限",
     "tooltips.kubejs.sweets_gland.alt.3": "        §6★§r 食物提供的每点饱和度将会提高 %s 点攻击力",
     "tooltips.kubejs.sweets_gland.ctrl.1": "        §6★§r 蛋糕类食物被重复视作多个甜品的叠加，同样会触发大胃王的效果",
-    "item.kubejs.hatching_chamber": "孵化室",
+    "item.kubejs.hatching_chamber": "孵化腔",
     "tooltips.kubejs.hatching_chamber.default.1": "都可以尝试孵化一下！",
     "tooltips.kubejs.hatching_chamber.alt.1": "    §6★§r 生物带有该器官时，会每隔一段时间寻找周围可用的漏斗/传送带/机械动力漏斗在其上方产下自身§6死亡时的掉落物§r",
     "item.kubejs.ravager_hoof": "劫掠兽蹄",
