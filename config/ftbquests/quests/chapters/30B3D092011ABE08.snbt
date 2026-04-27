@@ -202,7 +202,6 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "rsquare"
 			subtitle: "忍受慢性痛苦"
 			tasks: [{
 				id: "77747E78D5B1CE49"
@@ -665,7 +664,6 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "rsquare"
 			subtitle: "原初净化之极"
 			tasks: [{
 				id: "55F24286AA932421"
@@ -823,6 +821,7 @@
 				""
 				"但不管怎么样，恭喜您完成了这一系列荒诞的任务。"
 			]
+			hide_until_deps_complete: true
 			id: "23D00C1EBDF3036C"
 			rewards: [
 				{

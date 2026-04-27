@@ -19,6 +19,7 @@ const InfinityDimItem2DimId = {
     'kubejs:elder_guardian_core': 'infinity:void',
     "minecraft:sandstone": "infinity:redstone_flat",
     "minecraft:dragon_breath": "infinity:missingno",
+    "minecraft:shroomlight": "infinity:cavern",
 }
 
 InfinityEvents.itemInPortal(event => {

@@ -1,12 +1,526 @@
 {
 	autofocus_id: "7DFD8F39E1AC3083"
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "2EAD82577D152E20"
 	group: "0B365C36A50478AA"
-	hide_quest_until_deps_complete: true
 	icon: "kubejs:key_to_infinity"
 	id: "2EAD82577D152E20"
+	images: [
+		{
+			height: 2.5d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/title_start.png"
+			rotation: 0.0d
+			width: 8.642d
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photo_frame_wood_start.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -1.2d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photo_frame_wood.png"
+			order: 2
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/aged_photograph.png"
+			rotation: -8.0d
+			width: 2.0d
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/aged_photograph.png"
+			order: 1
+			rotation: 20.0d
+			width: 2.0d
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/polaroid.png"
+			order: 1
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photo_frame_wood.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photo_frame_wood.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 21.5d
+			y: 0.0d
+		}
+		{
+			dependency: "6B524BB21FC95A01"
+			height: 2.5d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/title_journey.png"
+			rotation: 0.0d
+			width: 11.75d
+			x: 21.0d
+			y: 8.5d
+		}
+		{
+			dependency: "6B524BB21FC95A01"
+			height: 12.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photo_frame.png"
+			rotation: 0.0d
+			width: 35.52d
+			x: 10.5d
+			y: 15.0d
+		}
+		{
+			dependency: "6B524BB21FC95A01"
+			height: 6.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/aged_photograph.png"
+			order: -1
+			rotation: 0.0d
+			width: 6.0d
+			x: -2.75d
+			y: 12.0d
+		}
+		{
+			dependency: "6B524BB21FC95A01"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photograph_2.png"
+			order: 2
+			rotation: 3.0d
+			width: 3.0d
+			x: -3.0d
+			y: 11.5d
+		}
+		{
+			dependency: "6B524BB21FC95A01"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photograph_1.png"
+			order: 1
+			rotation: -10.0d
+			width: 3.0d
+			x: -1.5d
+			y: 10.0d
+		}
+		{
+			dependency: "6B524BB21FC95A01"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photo_frame_wood.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 25.5d
+			y: 20.0d
+		}
+		{
+			dependency: "6B524BB21FC95A01"
+			height: 2.83d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photo_finish.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 25.5d
+			y: 22.5d
+		}
+		{
+			dependency: "42611C6251FAB454"
+			height: 2.5d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/title_explore.png"
+			rotation: 0.0d
+			width: 11.83d
+			x: 1.0d
+			y: 25.5d
+		}
+		{
+			dependency: "05B30D636925E1C1"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.5d
+			y: 31.0d
+		}
+		{
+			dependency: "2E7B76E8277B6B60"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_red.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.5d
+			y: 31.0d
+		}
+		{
+			dependency: "20A8A171833B2F50"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.5d
+			y: 31.0d
+		}
+		{
+			dependency: "4329E9383BBF0B7E"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.5d
+			y: 31.0d
+		}
+		{
+			dependency: "7862A6B384A0E8B4"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_purple.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.5d
+			y: 31.0d
+		}
+		{
+			dependency: "1633AB544EB13336"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.5d
+			y: 31.0d
+		}
+		{
+			dependency: "20A8A171833B2F50"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_pale.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.5d
+			y: 31.0d
+		}
+		{
+			dependency: "1242839DAB198513"
+			height: 4.4d
+			hideDependency: "49BCABE5A8123636"
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_bd.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.5d
+			y: 31.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.5d
+			y: 43.0d
+		}
+		{
+			dependency: "28000C5318439D41"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_violet.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.5d
+			y: 43.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 21.5d
+			y: 37.0d
+		}
+		{
+			dependency: "2455A4DF5434609A"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_darkgreen.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 21.5d
+			y: 37.0d
+		}
+		{
+			dependency: "1242839DAB198513"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 17.5d
+			y: 31.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 17.5d
+			y: 37.0d
+		}
+		{
+			dependency: "02786AFE7AB7BE1E"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_sandybrown.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 17.5d
+			y: 37.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.5d
+			y: 37.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.5d
+			y: 37.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.5d
+			y: 37.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.5d
+			y: 37.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.5d
+			y: 37.0d
+		}
+		{
+			dependency: "562BC502EA6B3A24"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_orange.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.5d
+			y: 37.0d
+		}
+		{
+			dependency: "0E6E3462A96BC570"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_light_yellow.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.5d
+			y: 37.0d
+		}
+		{
+			dependency: "104E4B71FE7206FB"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_auqa.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.5d
+			y: 37.0d
+		}
+		{
+			dependency: "303B0983EE1CEE05"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_steel_blue.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.5d
+			y: 37.0d
+		}
+		{
+			dependency: "2AB48534C195A790"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_chessboard.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.5d
+			y: 37.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.5d
+			y: 43.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.5d
+			y: 43.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.5d
+			y: 43.0d
+		}
+		{
+			dependency: "4FE89156D8CDCE29"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_light_pink.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.5d
+			y: 43.0d
+		}
+		{
+			dependency: "486E9213485BB076"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_olive.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.5d
+			y: 43.0d
+		}
+		{
+			dependency: "7ACE1C4CE1A9D896"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.5d
+			y: 49.0d
+		}
+		{
+			dependency: "051ABDFF508A5451"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.5d
+			y: 49.0d
+		}
+		{
+			dependency: "2F9EE70E103CA5D0"
+			height: 5.3d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_nexus.png"
+			rotation: 0.0d
+			width: 4.3d
+			x: 5.45d
+			y: 49.08d
+		}
+		{
+			dependency: "051ABDFF508A5451"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_gold.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.5d
+			y: 49.0d
+		}
+		{
+			dependency: "2F9EE70E103CA5D0"
+			height: 1.97d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_library.png"
+			order: 1
+			rotation: 0.0d
+			width: 2.46d
+			x: 1.5d
+			y: 48.63d
+		}
+		{
+			dependency: "3F9EFE9B6E8BDAF2"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_nexus.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.5d
+			y: 49.0d
+		}
+		{
+			dependency: "49BCABE5A8123636"
+			height: 3.0d
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.5d
+			y: 30.5d
+		}
+		{
+			dependency: "49BCABE5A8123636"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_bd2.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.5d
+			y: 31.0d
+		}
+		{
+			dependency: "49BCABE5A8123636"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 21.5d
+			y: 31.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -63,7 +577,7 @@
 				type: "item"
 			}]
 			title: "记录身边的一切"
-			x: 1.5d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
@@ -82,6 +596,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "记录载体"
 			tasks: [{
 				id: "2BDD9D9E57382052"
@@ -96,8 +611,8 @@
 				type: "item"
 			}]
 			title: "制作胶卷"
-			x: 3.0d
-			y: -1.0d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3F88ADBD557E73A8"]
@@ -114,6 +629,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "冲洗工具"
 			tasks: [{
 				id: "32967090AB62EAF4"
@@ -121,8 +637,8 @@
 				type: "item"
 			}]
 			title: "制作暗房"
-			x: 3.0d
-			y: 1.0d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -149,7 +665,7 @@
 				type: "advancement"
 			}]
 			title: "刹那光阴"
-			x: 4.5d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -185,7 +701,7 @@
 				type: "item"
 			}]
 			title: "记录您所见之生灵"
-			x: 6.0d
+			x: 11.5d
 			y: 0.0d
 		}
 		{
@@ -219,7 +735,7 @@
 				type: "item"
 			}]
 			title: "记录您所见之地标"
-			x: 7.5d
+			x: 14.5d
 			y: 0.0d
 		}
 		{
@@ -270,13 +786,14 @@
 				type: "item"
 			}]
 			title: "我们的好朋友"
-			x: 9.0d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6爬行者&r在&6黑暗&r中慢慢靠近您的世纪性照片。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "14E235C60FC2ECC7"
 			rewards: [{
 				id: "2481023461890763"
@@ -314,7 +831,7 @@
 			}]
 			title: "苦力怕在阴暗中"
 			x: 0.0d
-			y: 3.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["5F95F25DAC9FBAAA"]
@@ -359,13 +876,14 @@
 				type: "item"
 			}]
 			title: "保存这一切"
-			x: 10.5d
+			x: 21.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6监守者&r在&6远古都市&r，因为不安的噪音破土而出的珍稀画面。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "318B5462AAC0EA2C"
 			rewards: [{
 				id: "1D277718484F2B64"
@@ -402,13 +920,14 @@
 				type: "item"
 			}]
 			title: "惊扰远古的守卫者"
-			x: 1.5d
-			y: 3.0d
+			x: 2.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["多只&6烈焰人&r环绕四周，紧张刺激的战斗令人肾上腺素飙升。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "61C07953977FBE7D"
 			rewards: [{
 				id: "3DB7CD077CB33313"
@@ -430,13 +949,14 @@
 				type: "item"
 			}]
 			title: "身陷烈焰漩涡之中"
-			x: 3.0d
-			y: 3.0d
+			x: 5.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6牛&r、&6羊&r、&6鸡&r同时出现在画面上，它们正享受着自己的平凡生活，殊不知这番平凡是被您赐予的。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "5A99F20FF077C796"
 			rewards: [{
 				id: "08102B39D761B89E"
@@ -480,13 +1000,14 @@
 				type: "item"
 			}]
 			title: "鸡牛羊与风之舞"
-			x: 4.5d
-			y: 3.0d
+			x: 7.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["一群&6小猪&r环绕在身边的温馨场景，虽然它们后面遭遇的大概率是残忍的屠刀. . ."]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "7D8F39C702BAB785"
 			rewards: [{
 				id: "3134962BF5CF043B"
@@ -508,13 +1029,14 @@
 				type: "item"
 			}]
 			title: "小猪军团的再进发"
-			x: 6.0d
-			y: 3.0d
+			x: 10.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["画面记录下了&6恶魂&r发射&6火焰弹&r的宝贵瞬间，希望您在捕捉这画面时没有受伤。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "7D6B8F4427BDF3D4"
 			rewards: [{
 				id: "3E187C1580CF05B5"
@@ -551,13 +1073,14 @@
 				type: "item"
 			}]
 			title: "灰烬与火焰之舞"
-			x: 7.5d
-			y: 3.0d
+			x: 12.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6掠夺者&r在他们的&6蒸汽飞空艇&r上巡视新的征服目标——但是他们忘记了自己并不会使用&6大炮&r。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "38FAE1A100E355A0"
 			rewards: [{
 				id: "7629FB0C19CA912B"
@@ -640,13 +1163,14 @@
 				type: "item"
 			}]
 			title: "飞空艇与掠夺艺术"
-			x: 9.0d
-			y: 3.0d
+			x: 15.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["在&6丛林&r中，偶尔一些&6村民&r会选择在树上&6筑家&r. . .就是这些家看起来并不怎么牢固。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "60F183947BCAB462"
 			rewards: [{
 				id: "3CC31F1FA7B84239"
@@ -668,13 +1192,14 @@
 				type: "item"
 			}]
 			title: "浮空岛与浮空村"
-			x: 10.5d
-			y: 3.0d
+			x: 17.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6铁傀儡&r会和&6村民&r一起出现，村民会和&6猫&r一起出现，因此，他们三者同时都出现也不是没有可能。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "124D19952BE48419"
 			rewards: [{
 				id: "6DBCB490CD68EDBC"
@@ -724,8 +1249,8 @@
 				type: "item"
 			}]
 			title: "村庄生态的平衡"
-			x: 12.0d
-			y: 3.0d
+			x: 20.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["5F95F25DAC9FBAAA"]
@@ -755,13 +1280,14 @@
 				type: "item"
 			}]
 			title: "我对我的定义"
-			x: 9.0d
-			y: -1.5d
+			x: 18.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["偶尔会在世界中发现一些承载着大量&6机械物资&r的&6热气球&r，站在上面来一张&6自拍&r或许不错。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "32F948AC9FFEB8B9"
 			rewards: [{
 				id: "2AC3FB316402C970"
@@ -802,13 +1328,14 @@
 				type: "item"
 			}]
 			title: "我、机械与热气球"
-			x: 13.5d
-			y: 3.0d
+			x: 22.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["画面描述了在&6恶地&r生态群系下，一只&6犰狳&r蜷缩着身体，静静地等待着你的离开。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "569948788E7E213F"
 			rewards: [{
 				id: "476553248FF2A82D"
@@ -846,12 +1373,13 @@
 			}]
 			title: "越危险越小心！"
 			x: 0.0d
-			y: 4.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["偶尔您会在世界上发现一些&6位于地下的村庄&r——严格意义上，它们并不算村庄，这仅仅只能算作一个庇护所！"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "6171DB7303057149"
 			rewards: [{
 				id: "3AE36D7DE82B4F16"
@@ -873,13 +1401,14 @@
 				type: "item"
 			}]
 			title: "地下居民们的业余生活"
-			x: 1.5d
-			y: 4.5d
+			x: 2.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["如果您能发现&6蘑菇岛&r，请您一定要留下&6您&r和&6哞菇&r的自拍，这并不是为了分析数据，单纯是因为我很喜欢哞菇这种生物。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "4418CA94AA22BB26"
 			ignore_reward_blocking: true
 			rewards: [{
@@ -925,13 +1454,14 @@
 				type: "item"
 			}]
 			title: "蘑菇遍布的岛屿"
-			x: 3.0d
-			y: 4.5d
+			x: 5.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["您会在海底神殿遇到它的守护者——&6远古守护者&r。请您一定要拍摄一张它的照片！"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "4CAA51BAD4982EA2"
 			rewards: [{
 				id: "0AC45FA0044D0659"
@@ -953,13 +1483,14 @@
 				type: "item"
 			}]
 			title: "咕咕从水下涌上的气泡"
-			x: 4.5d
-			y: 4.5d
+			x: 7.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["拍摄一张&6舵背鲸&r和它身上&6舵盘&r的照片！尽量拍全一些！因为它真的很大！"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "35796740FDCA3F1A"
 			rewards: [{
 				id: "6DD87FABEAC3A5F1"
@@ -996,13 +1527,14 @@
 				type: "item"
 			}]
 			title: "舵背鲸之号"
-			x: 6.0d
-			y: 4.5d
+			x: 10.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["在&6幽暗&r的&6墓穴地下室&r中，危险的&6幽魂&r总是想要夺取你的魂魄。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "7CD76D088A4E820F"
 			rewards: [{
 				id: "18E708BF4A623F64"
@@ -1043,13 +1575,14 @@
 				type: "item"
 			}]
 			title: "幽暗古迹废墟"
-			x: 7.5d
-			y: 4.5d
+			x: 12.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6狼&r会误以为&6骷髅&r身上的骨头是可以食用的. . .虽然好像确实都是可食用的！"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "5A38CC02FFCFB4DE"
 			rewards: [{
 				id: "4276A2ED97BA9BEA"
@@ -1087,13 +1620,14 @@
 				type: "item"
 			}]
 			title: "自由驱逐者"
-			x: 9.0d
-			y: 4.5d
+			x: 15.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["画面记录了4、5. . .至少&66只史莱姆&r在跳跃的场景。虽然史莱姆看起来可爱，但对玩家是极度富有敌意的。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "00FA2D477EE7E146"
 			rewards: [{
 				id: "51EE6A05633E3778"
@@ -1115,13 +1649,14 @@
 				type: "item"
 			}]
 			title: "由史莱姆染成的绿"
-			x: 10.5d
-			y: 4.5d
+			x: 17.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["画面记录了&6企鹅&r在&6冰刺之地&r，在冰面上缓慢行走的场景。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "359B8EFE5765385A"
 			rewards: [
 				{
@@ -1167,8 +1702,8 @@
 				type: "item"
 			}]
 			title: "凛冬若企鹅毛大雪"
-			x: 12.0d
-			y: 4.5d
+			x: 20.0d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -1195,7 +1730,6 @@
 			]
 			description: ["这个任务没有什么取景地的要求，您只要按照您的想法拍摄出&6最好的照片&r并且&6提交&r即可。"]
 			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "42611C6251FAB454"
 			min_required_dependencies: 5
 			rewards: [{
@@ -1212,13 +1746,14 @@
 				type: "item"
 			}]
 			title: "收官之作"
-			x: 0.0d
-			y: 6.5d
+			x: 25.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
 			description: ["拍摄一张&6您的朋友们&r的照片——当然，您也可以用&6很多村民&r来替代。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "28F29F5D3B3453B7"
 			rewards: [{
 				id: "3987BB848091B552"
@@ -1255,8 +1790,8 @@
 				type: "item"
 			}]
 			title: "我们的好时光"
-			x: 13.5d
-			y: 4.5d
+			x: 22.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["42611C6251FAB454"]
@@ -1265,6 +1800,7 @@
 				""
 				"现在请您搭建一个下界传送门，并且将&6黑曜石&r丢到下界门中——它绝对不会穿越到另一个维度的，它将会为您打开一扇通向未知的桥梁。"
 			]
+			hide_until_deps_complete: true
 			id: "05B30D636925E1C1"
 			rewards: [
 				{
@@ -1288,8 +1824,8 @@
 				type: "dimension"
 			}]
 			title: "探访被发现的牢笼"
-			x: 1.5d
-			y: 6.5d
+			x: -2.5d
+			y: 28.0d
 		}
 		{
 			dependencies: ["2E7B76E8277B6B60"]
@@ -1298,6 +1834,7 @@
 				""
 				"现在请您将&6黏液球&r投掷到传送门中，它将会重新开启一道通向更加混乱世界的通道。"
 			]
+			hide_until_deps_complete: true
 			id: "4329E9383BBF0B7E"
 			rewards: [{
 				id: "1F632E3C299FC7F4"
@@ -1312,9 +1849,9 @@
 				title: "访问维度"
 				type: "dimension"
 			}]
-			title: "探访被发现的原液"
-			x: 4.5d
-			y: 6.5d
+			title: "探访被发现的原野"
+			x: 1.5d
+			y: 28.0d
 		}
 		{
 			dependencies: ["05B30D636925E1C1"]
@@ -1325,6 +1862,7 @@
 				""
 				"我们必须前往下一个踪迹所在的位置，了解到真实的意图。"
 			]
+			hide_until_deps_complete: true
 			icon: "supplementaries:cage"
 			id: "2E7B76E8277B6B60"
 			rewards: [{
@@ -1332,6 +1870,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "分析结果：监牢"
 			tasks: [{
 				icon: "exposure:photograph"
@@ -1347,8 +1886,8 @@
 				type: "item"
 			}]
 			title: "暗无天日的黑曜石监牢"
-			x: 3.0d
-			y: 6.5d
+			x: -2.5d
+			y: 32.5d
 		}
 		{
 			dependencies: ["4329E9383BBF0B7E"]
@@ -1359,6 +1898,7 @@
 				""
 				"但由于其奇怪的碰撞箱，击杀它可能需要一些时间和技巧。"
 			]
+			hide_until_deps_complete: true
 			icon: "simplehats:slime_head"
 			id: "7862A6B384A0E8B4"
 			rewards: [{
@@ -1366,6 +1906,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "混乱初现"
 			tasks: [{
 				icon: "exposure:photograph"
@@ -1381,8 +1922,8 @@
 				type: "item"
 			}]
 			title: "史莱姆构成的原野"
-			x: 6.0d
-			y: 6.5d
+			x: 1.5d
+			y: 32.5d
 		}
 		{
 			dependencies: ["7862A6B384A0E8B4"]
@@ -1391,6 +1932,7 @@
 				""
 				"在那之后，辛苦您进入新的维度并且带回它的照片。"
 			]
+			hide_until_deps_complete: true
 			id: "1633AB544EB13336"
 			rewards: [{
 				id: "0E27EDA4B432287C"
@@ -1405,9 +1947,9 @@
 				title: "访问维度"
 				type: "dimension"
 			}]
-			title: "探索不确定的世界"
-			x: 7.5d
-			y: 6.5d
+			title: "探访不确定的世界"
+			x: 5.5d
+			y: 28.0d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
@@ -1424,6 +1966,7 @@
 				""
 				"目前，这个维度空间可能比较有限，您只能存储&6相当有限&r的物品（27种不同的物品，每种最多1024个）在维度网络中。后续我相信一定有方法可以进一步拓展存储能力，但这需要时间。"
 			]
+			hide_until_deps_complete: true
 			id: "1242839DAB198513"
 			rewards: [{
 				id: "6310D0D7EC13F449"
@@ -1440,8 +1983,8 @@
 				type: "maa:dim_net"
 			}]
 			title: "维度网络"
-			x: 12.0d
-			y: 6.5d
+			x: 13.5d
+			y: 28.0d
 		}
 		{
 			dependencies: ["1633AB544EB13336"]
@@ -1454,6 +1997,7 @@
 				""
 				"所以，请您完全忘记龙息的方案吧，它显然有些危险。"
 			]
+			hide_until_deps_complete: true
 			icon: "amendments:dragon_charge"
 			id: "20A8A171833B2F50"
 			rewards: [{
@@ -1461,6 +2005,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "这并非我本意！"
 			tasks: [{
 				icon: "exposure:photograph"
@@ -1476,8 +2021,8 @@
 				type: "item"
 			}]
 			title: "错误的导向！"
-			x: 9.0d
-			y: 6.5d
+			x: 5.5d
+			y: 32.5d
 		}
 		{
 			dependencies: ["20A8A171833B2F50"]
@@ -1486,12 +2031,14 @@
 				""
 				"因此我决定&6优先进行扫描&r，而后再让您进行探索。请您稍等一段时间。"
 			]
+			hide_until_deps_complete: true
 			id: "1C316C6505326313"
 			rewards: [{
 				id: "11AA7BC2EB546873"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "追寻踪迹至此"
 			tasks: [{
 				elapsedTime: 600L
@@ -1501,8 +2048,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "停下脚步"
-			x: 10.5d
-			y: 6.5d
+			x: 9.5d
+			y: 32.5d
 		}
 		{
 			dependencies: ["1242839DAB198513"]
@@ -1513,12 +2060,14 @@
 				""
 				"通过维度网络通道，可以制作出各种各样用于和维度网络交互的设备，在后面我会举一个例子作为介绍，向您解释它的基本功能。"
 			]
+			hide_until_deps_complete: true
 			id: "49BCABE5A8123636"
 			rewards: [{
 				id: "1E676F06211B9551"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "维度网络交流信标"
 			tasks: [{
 				id: "2986BE449D72E9E7"
@@ -1526,7 +2075,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 6.5d
+			y: 32.5d
 		}
 		{
 			dependencies: ["49BCABE5A8123636"]
@@ -1541,31 +2090,35 @@
 				""
 				"- 使用其他的模块也是同理，再次请允许我不再赘述。"
 			]
+			hide_until_deps_complete: true
 			id: "1E560E6025CC2C22"
 			rewards: [{
 				id: "2313C40283FAC301"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "物品交互方案"
 			tasks: [{
 				id: "39A038CB34327FBE"
 				item: "beyonddimensions:net_interface"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 7.5d
+			x: 21.5d
+			y: 32.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
 			description: ["用草方块作为引子，您便可以来到一个富有规律山脉的世界。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "486E9213485BB076"
 			rewards: [{
 				id: "558060C7F27CFC4F"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:hills"
@@ -1575,8 +2128,8 @@
 				type: "dimension"
 			}]
 			title: "探索间隙山谷"
-			x: 0.0d
-			y: 8.5d
+			x: 1.5d
+			y: 44.5d
 		}
 		{
 			dependencies: ["1242839DAB198513"]
@@ -1585,6 +2138,7 @@
 				""
 				"其实我大概已经有一些结论了，但只有在您拜访过这些维度之后，您才大概能够理解这个结论。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:writable_book"
 			id: "7ACE1C4CE1A9D896"
 			rewards: [{
@@ -1592,6 +2146,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "踪迹之N"
 			tasks: [{
 				id: "0A19DC62E986C4D7"
@@ -1599,19 +2154,21 @@
 				type: "checkmark"
 			}]
 			title: "继续追寻踪迹"
-			x: 12.0d
-			y: 7.5d
+			x: 17.5d
+			y: 32.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
 			description: ["用樱花树叶作为引子，您便可以来到一个呈现螺旋形生成樱花林的世界。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "4FE89156D8CDCE29"
 			rewards: [{
 				id: "082F81DB1C6E45F1"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:spiral"
@@ -1621,19 +2178,21 @@
 				type: "dimension"
 			}]
 			title: "探索螺旋樱花林"
-			x: 1.5d
-			y: 8.5d
+			x: -2.5d
+			y: 44.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
 			description: ["用黑色羊毛作为引子，您便会来到一个黑白羊毛构成的棋盘世界。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "2AB48534C195A790"
 			rewards: [{
 				id: "450C3CCCE8DCA94D"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:chess"
@@ -1643,8 +2202,8 @@
 				type: "dimension"
 			}]
 			title: "探索棋盘世界"
-			x: 3.0d
-			y: 8.5d
+			x: -2.5d
+			y: 38.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
@@ -1654,12 +2213,14 @@
 				"不知道是谁把它留在了那里，又或者它自己选择了. . .但不管怎么样，我们后面要做的事情跟它无异。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "303B0983EE1CEE05"
 			rewards: [{
 				id: "407D6B022AA44BA9"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:isolation"
@@ -1669,8 +2230,8 @@
 				type: "dimension"
 			}]
 			title: "探索孤独者的维度"
-			x: 4.5d
-			y: 8.5d
+			x: 1.5d
+			y: 38.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
@@ -1680,12 +2241,14 @@
 				"我们无法得知这个世界保留的意义是什么，或许只是单纯的——单纯的因为有无限的维度可以利用罢了。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "104E4B71FE7206FB"
 			rewards: [{
 				id: "71652E65E7BED7AD"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:classic"
@@ -1695,19 +2258,21 @@
 				type: "dimension"
 			}]
 			title: "探索过去的回忆"
-			x: 6.0d
-			y: 8.5d
+			x: 5.5d
+			y: 38.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
 			description: ["用海绵作为引子，您便可以访问由海绵分形图案组成的世界。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "0E6E3462A96BC570"
 			rewards: [{
 				id: "29CBCB3B64370E56"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:sponge"
@@ -1717,19 +2282,21 @@
 				type: "dimension"
 			}]
 			title: "探索分形海绵世界"
-			x: 7.5d
-			y: 8.5d
+			x: 9.5d
+			y: 38.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
 			description: ["以木棍作为引子，则可以将您带入到一个虚空维度之中。在这个维度的中心，应当有前人留下的，为空岛生存所准备的基本物资。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "562BC502EA6B3A24"
 			rewards: [{
 				id: "4EE6FAD71D43E0D7"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:content"
@@ -1739,19 +2306,21 @@
 				type: "dimension"
 			}]
 			title: "探索空岛维度"
-			x: 9.0d
-			y: 8.5d
+			x: 13.5d
+			y: 38.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
 			description: ["以陶瓦为引子，您可以来到一个被陶瓦路分割的世界。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "02786AFE7AB7BE1E"
 			rewards: [{
 				id: "0D06B1C6BE5D2370"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:custom"
@@ -1761,8 +2330,8 @@
 				type: "dimension"
 			}]
 			title: "探索预留地"
-			x: 10.5d
-			y: 8.5d
+			x: 17.5d
+			y: 38.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
@@ -1772,6 +2341,7 @@
 				"右键它便会引发其自发性的行为——如果您对此非常感兴趣，我可以为您提供更多的蚂蚁进行试验。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "2455A4DF5434609A"
 			rewards: [
 				{
@@ -1785,6 +2355,7 @@
 					type: "item"
 				}
 			]
+			shape: "none"
 			subtitle: "大量踪迹之一"
 			tasks: [{
 				dimension: "infinity:ant"
@@ -1794,8 +2365,8 @@
 				type: "dimension"
 			}]
 			title: "探索朗顿蚂蚁的世界"
-			x: 12.0d
-			y: 8.5d
+			x: 21.5d
+			y: 38.5d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
@@ -1805,12 +2376,14 @@
 				"在其中，理论上您可以找到一切——但仅仅是理论上。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "28000C5318439D41"
 			rewards: [{
 				id: "3440E9D6FE3018F4"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "大量踪迹之末"
 			tasks: [{
 				dimension: "infinity:skygrid"
@@ -1820,8 +2393,8 @@
 				type: "dimension"
 			}]
 			title: "探索网格维度"
-			x: 13.5d
-			y: 8.5d
+			x: 9.5d
+			y: 44.5d
 		}
 		{
 			dependencies: [
@@ -1835,6 +2408,7 @@
 				"02786AFE7AB7BE1E"
 				"2455A4DF5434609A"
 				"28000C5318439D41"
+				"354161CC18BA01F3"
 			]
 			description: [
 				"在长久的寻找之中，我明确了一个事实——这些维度远比想象的还要多得多，它的数量大到使用我的最大数据类型都几乎无法存储。"
@@ -1844,6 +2418,7 @@
 				"我在无数的维度中，为您找到了一个物理意义上的“&6黄金乡&r”，通过&6金块&r作为引子，您便可以拜访这番天地。希望您喜欢我为您准备的&6这份礼物&r。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "051ABDFF508A5451"
 			min_required_dependencies: 5
 			rewards: [{
@@ -1851,6 +2426,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "为您准备的礼物"
 			tasks: [{
 				dimension: "infinity:golden"
@@ -1860,13 +2436,13 @@
 				type: "dimension"
 			}]
 			title: "来吧，这“黄金乡”"
-			x: 0.0d
-			y: 10.5d
+			x: -2.5d
+			y: 50.5d
 		}
 		{
 			dependencies: ["051ABDFF508A5451"]
 			description: [
-				"为了证明我所言非虚，也为了向您解释这番天地的广阔，请您以书本作为引子，来到这番维度。"
+				"为了证明我所言非虚，也为了向您解释这番天地的广阔，请您以&6书&r作为引子，来到这番维度。"
 				""
 				"在这个维度中，每个书架都存放着一本写着一页字符的书籍。您可以通过右键书架无限的取出。"
 				""
@@ -1874,6 +2450,7 @@
 				""
 				"而这些维度也是如此——它们并不是遵循了什么规则生成，它们只是在混乱的组合所有的可能性，&6最后为我们、为您呈现上不同的奇迹！！&r"
 			]
+			hide_until_deps_complete: true
 			id: "2F9EE70E103CA5D0"
 			rewards: [
 				{
@@ -1888,6 +2465,7 @@
 					type: "titles:title"
 				}
 			]
+			shape: "none"
 			subtitle: "来吧，来到这无穷无尽的图书馆"
 			tasks: [{
 				dimension: "infinity:library"
@@ -1896,9 +2474,9 @@
 				title: "访问“图书馆”"
 				type: "dimension"
 			}]
-			title: "证明所言非需"
+			title: "证明所言非虚"
 			x: 1.5d
-			y: 10.5d
+			y: 50.5d
 		}
 		{
 			can_repeat: true
@@ -1929,8 +2507,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "&6庆贺吧！此乃通往无尽之钥！&r"
-			x: 1.5d
-			y: 12.0d
+			x: 11.0d
+			y: 48.5d
 		}
 		{
 			dependencies: ["2F9EE70E103CA5D0"]
@@ -1978,7 +2556,7 @@
 					type: "item"
 				}
 			]
-			shape: "diamond"
+			shape: "none"
 			subtitle: "无限的冒险故事"
 			tasks: [{
 				icon: {
@@ -1996,8 +2574,8 @@
 				type: "leaderboards:rank_task"
 			}]
 			title: "无限中转站"
-			x: 3.0d
-			y: 10.5d
+			x: 5.5d
+			y: 50.5d
 		}
 		{
 			dependencies: ["530B934745125A72"]
@@ -2028,8 +2606,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: -1.5d
+			x: 14.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4449195A34FB718E"]
@@ -2053,7 +2631,30 @@
 			}]
 			title: "所见即所得"
 			x: 4.5d
-			y: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7ACE1C4CE1A9D896"]
+			description: ["用菌光体作为引子，您便可以来到一个埋藏在地底深处的世界。"]
+			hide_until_deps_complete: true
+			id: "354161CC18BA01F3"
+			rewards: [{
+				id: "5396D7D22EB97FDB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "none"
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "infinity:cavern"
+				icon: "minecraft:shroomlight"
+				id: "6A58E0F15C591346"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索螺旋洞穴"
+			x: 5.5d
+			y: 44.5d
 		}
 	]
 	title: "传闻：重现黄金乡"
