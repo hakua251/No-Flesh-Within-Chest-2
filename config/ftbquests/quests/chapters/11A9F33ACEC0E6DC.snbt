@@ -1003,6 +1003,7 @@
 				table_id: 7788571112521187502L
 				type: "choice"
 			}]
+			shape: "diamond"
 			subtitle: "多吃几口吧"
 			tasks: [{
 				icon: "minecraft:cake"
