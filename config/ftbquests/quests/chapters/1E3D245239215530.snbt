@@ -23,6 +23,7 @@
 			dependency: "0E67DFADB3CDCA82"
 			height: 22.0d
 			image: "kubejs:textures/gui/tasks/world_computer/world_computer_1.png"
+			order: 1
 			rotation: 0.0d
 			width: 22.0d
 			x: 8.5d
@@ -33,6 +34,7 @@
 			dependency: "56D4ED795F1CFC15"
 			height: 22.0d
 			image: "kubejs:textures/gui/tasks/world_computer/world_computer_2.png"
+			order: 2
 			rotation: 0.0d
 			width: 22.0d
 			x: 8.5d
@@ -43,6 +45,7 @@
 			dependency: "133A28D884F01479"
 			height: 22.0d
 			image: "kubejs:textures/gui/tasks/world_computer/world_computer_3.png"
+			order: 3
 			rotation: 0.0d
 			width: 22.0d
 			x: 8.5d

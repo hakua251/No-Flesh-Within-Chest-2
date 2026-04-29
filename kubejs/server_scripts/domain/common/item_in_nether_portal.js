@@ -31,9 +31,9 @@ RegisterPortalItem2DimId('minecraft:white_concrete', 'infinity:ant')
 RegisterPortalItem2DimId('minecraft:dragon_egg', 'infinity:skygrid')
 RegisterPortalItem2DimId('minecraft:gold_block', 'infinity:golden')
 RegisterPortalItem2DimId('kubejs:elder_guardian_core', 'infinity:void')
-RegisterPortalItem2DimId("minecraft:sandstone", 'infinity:redstone_flat')
-RegisterPortalItem2DimId("minecraft:dragon_breath", 'infinity:missingno')
-RegisterPortalItem2DimId("minecraft:shroomlight", 'infinity:cavern')
+RegisterPortalItem2DimId('minecraft:sandstone', 'infinity:redstone_flat')
+RegisterPortalItem2DimId('minecraft:dragon_breath', 'infinity:missingno')
+RegisterPortalItem2DimId('minecraft:shroomlight', 'infinity:cavern')
 
 
 InfinityEvents.itemInPortal(event => {
