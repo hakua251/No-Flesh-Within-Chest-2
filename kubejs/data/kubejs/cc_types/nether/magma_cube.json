@@ -2,7 +2,7 @@
   "defaultChestCavity": [
     {"item":"minecraft:magma_cream", "position": 1, "count": 1},
     {"item":"minecraft:magma_cream", "position": 3, "count": 1},
-    {"item":"kubejs:explosion_cavity", "position": 8},
+    {"item":"kubejs:magam_colloid", "position": 8},
     {"item":"minecraft:magma_cream", "position": 12, "count": 1},
     {"item":"minecraft:magma_cream", "position": 14, "count": 1}
   ],

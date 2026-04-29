@@ -37,8 +37,6 @@ function FieryCoreOrganTakeOff(customData, event, organItem, organIndex, slotTyp
     }
 }
 
-
-
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:fiery_core')
         .addOnlyStrategy('organ_take_on', FieryCoreOrganTakeOn)

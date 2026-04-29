@@ -1547,6 +1547,11 @@
 				""
 				"我们的第一个尝试可以从岩浆胶体开始。其能够在您受到攻击时，为您提供额外的&6燃烧持续时间&r。"
 			]
+			icon: {
+				Count: 1
+				id: "kubejs:magam_colloid"
+				tag: { }
+			}
 			id: "6AA1CAF275057D26"
 			rewards: [{
 				id: "38B2D61E91C4A4B3"
@@ -1554,15 +1559,25 @@
 				type: "item"
 			}]
 			subtitle: "更加炽热！"
-			tasks: [{
-				id: "381304D9786C1574"
-				item: {
-					Count: 1
-					id: "kubejs:magam_colloid"
-					tag: { }
+			tasks: [
+				{
+					entity: "minecraft:magma_cube"
+					icon: "minecraft:magma_cube_spawn_egg"
+					id: "33101C9D4DCFC881"
+					inventoryType: "minecraft:empty"
+					type: "chestcavity:open_chest_cavity_task"
+					value: 1L
 				}
-				type: "item"
-			}]
+				{
+					id: "381304D9786C1574"
+					item: {
+						Count: 1
+						id: "kubejs:magam_colloid"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "寻找更加炽热的东西"
 			x: 12.5d
 			y: 8.0d
@@ -1572,7 +1587,7 @@
 			description: [
 				"为了驾驭足够强大的烈焰，我们需要一些防护烈焰的方法。"
 				""
-				"通过烈焰人胸腔中的物品，我们可以制成&6赤核&r，其可以让您&6免受持续的火焰灼烧&r。"
+				"通过炽足兽胸腔中的物品，我们可以制成&6赤核&r，其可以让您&6免受持续的火焰灼烧&r。"
 				""
 				"但是这并不代表您可以免疫火焰或者岩浆的直接伤害，其仅仅会让您不会被持续的火焰伤害烦扰。"
 			]
@@ -1590,12 +1605,8 @@
 			subtitle: "烈焰缠身"
 			tasks: [
 				{
-					entity: "minecraft:blaze"
-					icon: {
-						Count: 1
-						id: "kubejs:blaze_shell"
-						tag: { }
-					}
+					entity: "minecraft:strider"
+					icon: "minecraft:strider_spawn_egg"
 					id: "0E15DAF52512E93B"
 					inventoryType: "minecraft:empty"
 					type: "chestcavity:open_chest_cavity_task"
@@ -1651,6 +1662,11 @@
 				""
 				"除此之外，烈焰脊柱也是一个&6有效提高您输出&r的方式。其可以让对面持有&6相当长时间的异常状态&r，可以配合某些依赖于异常状态的攻击方式发挥出极强的效果。"
 			]
+			icon: {
+				Count: 1
+				id: "kubejs:blaze_spine"
+				tag: { }
+			}
 			id: "471AE5AA85D6A899"
 			rewards: [{
 				id: "0B80AED3597A0F97"
@@ -1658,15 +1674,25 @@
 				type: "item"
 			}]
 			subtitle: "灼热炎魂"
-			tasks: [{
-				id: "3D5BBA3F6E44152F"
-				item: {
-					Count: 1
-					id: "kubejs:blaze_spine"
-					tag: { }
+			tasks: [
+				{
+					entity: "minecraft:blaze"
+					icon: "minecraft:blaze_spawn_egg"
+					id: "59C68D91E3E4AA52"
+					inventoryType: "minecraft:empty"
+					type: "chestcavity:open_chest_cavity_task"
+					value: 1L
 				}
-				type: "item"
-			}]
+				{
+					id: "3D5BBA3F6E44152F"
+					item: {
+						Count: 1
+						id: "kubejs:blaze_spine"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "将炽热赠予所有人"
 			x: 14.0d
 			y: 8.0d

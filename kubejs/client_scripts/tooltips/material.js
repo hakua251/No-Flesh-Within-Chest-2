@@ -112,6 +112,13 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:growth_vat')
     .addShift(Text.translatable('tooltips.kubejs.growth_vat.shift.1'))
 )
 
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:mantle_energy_extractor')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.mantle_energy_extractor.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.mantle_energy_extractor.shift.1'))
+)
+
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:inactivated_neuron_tumor')
     .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
     .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))

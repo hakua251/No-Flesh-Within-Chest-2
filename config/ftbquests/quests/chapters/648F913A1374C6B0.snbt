@@ -601,12 +601,12 @@
 			shape: "diamond"
 			subtitle: "芬芳魔术"
 			tasks: [{
-				icon: "minecraft:flower_pot"
+				icon: "kubejs:growth_vat"
 				id: "214DA6683064BB20"
-				leaderboard: "leaderboards:flowers_potted"
+				leaderboard: "kubejs:growth_vat_runs"
 				min: 1
 				rank: 1
-				title: "种植花盆数称霸"
+				title: "培育肿瘤次数争霸"
 				type: "leaderboards:rank_task"
 			}]
 			title: "玫瑰注射器配方"

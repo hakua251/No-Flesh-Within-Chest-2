@@ -1,4 +1,12 @@
 // priority: 500
+/**
+ * @param {Player} owner 
+ */
+function IncrGrowthVatRuns(owner) {
+    if (!owner) return
+    owner.stats.add(global.STAT_GROWTH_VAT_RUNS, 1)
+}
+
 const GrowthVatOutputSlotsList = ['slot_1', 'slot_2', 'slot_3', 'slot_4', 'slot_5', 'slot_6']
 ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 3600)
@@ -9,6 +17,7 @@ ServerEvents.recipes(event => {
                 if (!item || item.isEmpty()) return
                 UnformedTumorGrowth(machine, item, pSlotId)
             })
+            IncrGrowthVatRuns(machine.owner)
             return ctx.success()
         })
         .requireItem('kubejs:simple_culture_medium', 'input_slot')
@@ -26,6 +35,7 @@ ServerEvents.recipes(event => {
                     UnformedTumorGrowth(machine, item, pSlotId)
                 }
             })
+            IncrGrowthVatRuns(machine.owner)
             return ctx.success()
         })
         .requireItem('kubejs:culture_medium', 'input_slot')
@@ -42,6 +52,7 @@ ServerEvents.recipes(event => {
                     UnformedTumorMutationGrowth(machine, fluid, item, pSlotId)
                 }
             })
+            IncrGrowthVatRuns(machine.owner)
             return ctx.success()
         })
         .requireItem('kubejs:mutation_culture_medium', 'input_slot')
@@ -67,6 +78,7 @@ ServerEvents.recipes(event => {
             emptySlots.forEach((pSlotId, index) => {
                 machine.setItemStored(pSlotId, outputItems[index])
             })
+            IncrGrowthVatRuns(machine.owner)
             return ctx.success()
         })
         .requireItem('kubejs:proliferation_culture_medium', 'input_slot')
@@ -85,6 +97,7 @@ ServerEvents.recipes(event => {
                 unformedTumorList.push({ item: item, slotId: pSlotId })
             })
             MixUnformedTumorAttri(machine, fluid, unformedTumorList)
+            IncrGrowthVatRuns(machine.owner)
             return ctx.success()
         })
         .requireItem('kubejs:mixed_culture_medium', 'input_slot')

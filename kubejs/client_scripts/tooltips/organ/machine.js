@@ -132,3 +132,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:iron_repair_device')
     .addDefault(Text.translatable('tooltips.kubejs.iron_repair_device.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.iron_repair_device.alt.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:cyborgization_device')
+    .addDefault(Text.translatable('tooltips.kubejs.cyborgization_device.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.cyborgization_device.alt.1', RevolutionMachineTypeHover))
+)

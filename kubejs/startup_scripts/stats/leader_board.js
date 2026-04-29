@@ -57,6 +57,19 @@ LeaderboardsEvents.registryLeaderboards(event => {
 	)
 
 	event.register(
+		global.STAT_GROWTH_VAT_RUNS,
+		Text.translatable('leaderboard.kubejs.growth_vat_runs'),
+		player => {
+			return Text.of(player.getStats().getValue(global.STAT_GROWTH_VAT_RUNS).toFixed(0))
+		},
+		player => {
+			return player.getStats().getValue(global.STAT_GROWTH_VAT_RUNS)
+		},
+		Comparator.comparingInt(player => player.getStats().getValue(global.STAT_GROWTH_VAT_RUNS)).reversed(),
+		player => player.getStats().getValue(global.STAT_GROWTH_VAT_RUNS) > 0
+	)
+
+	event.register(
 		global.STAT_TETRA_CRAFT_GENESIS,
 		Text.translatable('leaderboard.kubejs.tetra_craft_genesis'),
 		player => {

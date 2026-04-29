@@ -1,10 +1,10 @@
 // priority: 502
-const VenomOrganDataWeightModel = new WeightRandomModel()
+const MilkOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'chestcavity:detoxification', mean: 1, sigma: 1 }, 15)
     .addWeightRandom({ name: 'chestcavity:filtration', mean: 1, sigma: 1 }, 15)
     .addWeightRandom({ name: 'chestcavity:health', mean: -1, sigma: 0.5 }, 15)
 
-const VenomPotentialOrganDataWeightModel = new WeightRandomModel()
+const MilkPotentialOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'chestcavity:defense', mean: 1, sigma: 1.5 }, 30)
     .addWeightRandom({ name: 'chestcavity:strength', mean: 0, sigma: 1 }, 10)
     .addWeightRandom({ name: 'chestcavity:nerves', mean: 0, sigma: 0.5 }, 10)
@@ -19,8 +19,8 @@ const VenomPotentialOrganDataWeightModel = new WeightRandomModel()
 
 RegistryUnformedTumorFluidConfig(
     new UnformedTumorFluidConfigModel('minecraft:milk')
-        .setOrganDataModel(VenomOrganDataWeightModel)
-        .setPotentialOrganDataModel(VenomPotentialOrganDataWeightModel)
+        .setOrganDataModel(MilkOrganDataWeightModel)
+        .setPotentialOrganDataModel(MilkPotentialOrganDataWeightModel)
         .setOrganDataCount(1)
         .setPotentialOrganDataCount(1)
 )

@@ -1223,6 +1223,7 @@
 				""
 				"虽然说对方似乎非常不满意您的一些行为，但是至少说明对方是一个有智慧的物种（或者说是群体？），那我们其实可以尝试和它们谈谈，达成一些合作关系。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1268,6 +1269,7 @@
 				""
 				"抱歉，我暂时允许了它们的直接数据通信，不过确实如它们所说，只要您稍微尝试，就能明白该如何使用。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "4F1FFCBD1BF6A6E4"
 			rewards: [{

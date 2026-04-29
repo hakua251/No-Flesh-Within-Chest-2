@@ -122,5 +122,20 @@ ServerEvents.recipes(event => {
     )
         .transitionalItem(CommonTransitionalItem)
         .loops(5)
+
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:thermometer')
+        ],
+        'minecraft:light_gray_stained_glass',
+        [
+            event.recipes.create.cutting(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:dusts/redstone']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:ingots/gold']),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('minecraft:lava', 1000)]),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(3)
 })
 
