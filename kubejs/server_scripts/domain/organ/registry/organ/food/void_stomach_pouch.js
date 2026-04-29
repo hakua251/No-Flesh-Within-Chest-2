@@ -67,7 +67,7 @@ function VoidStomachPouchEntityTick(customData, event, organItem, organIndex, sl
     let curDamage = organItem.getDamageValue() + 1
     if (curDamage >= organItem.getMaxDamage()) {
         if (AStages.serverHasStage(FTBFinalTimerStart, event.server)) return
-        let dimNet = DimensionsNet.getNetFromPlayer(player)
+        let dimNet = DimensionsNet.getPrimaryNetFromPlayer(player)
         if (!dimNet) {
             player.setStatusMessage(Text.translatable('status_msg.kubejs.void_stomach_pouch.no_dimnet'))
             RemoveChestCavityOrgan(customData, event.chestCavity, organIndex, slotType, true)
