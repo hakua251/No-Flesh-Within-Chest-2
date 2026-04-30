@@ -4,9 +4,78 @@
 	default_quest_shape: ""
 	filename: "425DDADD8D67FA09"
 	group: "63198C281F0E9667"
-	hide_quest_until_deps_complete: true
 	icon: "create:andesite_alloy"
 	id: "425DDADD8D67FA09"
+	images: [
+		{
+			height: 2.59d
+			image: "kubejs:textures/gui/tasks/tutorial_machine/title.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			click: "command:/ponder create:basin"
+			dependency: "560A05CD905A3EBA"
+			height: 4.0d
+			image: "kubejs:textures/gui/tasks/tutorial_machine/basin.png"
+			order: 1
+			rotation: 0.0d
+			width: 4.0d
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependency: "560A05CD905A3EBA"
+			height: 1.0d
+			image: "minecraft:item/copper_ingot"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -12.0d
+			y: -1.0d
+		}
+		{
+			dependency: "560A05CD905A3EBA"
+			height: 1.0d
+			image: "create:item/zinc_ingot"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			height: 14.9d
+			image: "kubejs:textures/gui/tasks/tutorial_chestcavity/frame.png"
+			order: -1
+			rotation: 0.0d
+			width: 30.0d
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependency: "560A05CD905A3EBA"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_machine/leading_line.png"
+			order: 2
+			rotation: 0.0d
+			width: 2.1d
+			x: -10.5d
+			y: -0.5d
+		}
+		{
+			dependency: "6B7A5AE2D8EFD037"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_machine/complete_icon.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: -8.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -30,8 +99,8 @@
 				type: "item"
 			}]
 			title: "新矿物新启示"
-			x: 0.0d
-			y: 0.0d
+			x: 3.5d
+			y: -1.8d
 		}
 		{
 			dependencies: ["3D02CAC6C9FF9512"]
@@ -53,8 +122,8 @@
 				type: "item"
 			}]
 			title: "不常见的材料"
-			x: -2.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.7d
 		}
 		{
 			dependencies: ["7FAD357E92A68A9D"]
@@ -76,8 +145,8 @@
 				type: "item"
 			}]
 			title: "机械基础材料"
-			x: -1.0d
-			y: -1.5d
+			x: 3.5d
+			y: 3.3d
 		}
 		{
 			dependencies: ["6ED1A20AB0BEA658"]
@@ -88,6 +157,7 @@
 				""
 				"当您制作出后，鼠标指向该物品&6长按思索按键&r，即可在前人精心准备的幻灯片中了解如何正确使用它。"
 			]
+			hide_dependency_lines: true
 			id: "678E67B0D26DAF91"
 			rewards: [
 				{
@@ -109,8 +179,8 @@
 				type: "item"
 			}]
 			title: "从生产动力开始"
-			x: 1.0d
-			y: -1.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["678E67B0D26DAF91"]
@@ -148,8 +218,8 @@
 				}
 			]
 			title: "到第一个动力机械"
-			x: 3.0d
-			y: -1.5d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4559E83BDFE139FF"]
@@ -177,8 +247,8 @@
 				type: "item"
 			}]
 			title: "最后驱动动力机械"
-			x: 5.0d
-			y: -1.5d
+			x: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6BCFA180CF3AF597"]
@@ -202,7 +272,6 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "square"
 			subtitle: "一个最简单的目标"
 			tasks: [{
 				id: "3E9087B42BB66A9A"
@@ -210,7 +279,7 @@
 				type: "checkmark"
 			}]
 			title: "目标，成为林业专家"
-			x: 4.5d
+			x: 0.0d
 			y: -3.0d
 		}
 		{
@@ -223,7 +292,7 @@
 				"在具体使用时，动力锯需要对准树木的最底层方块，进而可以&6连锁破坏整棵树木&r。您可以使用思索来查看具体使用该动力机械的案例。"
 			]
 			hide_dependency_lines: true
-			hide_until_deps_complete: false
+			hide_until_deps_complete: true
 			id: "35D80EB805BF79B0"
 			rewards: [{
 				id: "4FC51C40E4D1E944"
@@ -236,9 +305,9 @@
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			title: "事项 1：如何收割木材"
-			x: 4.5d
-			y: -6.0d
+			title: "如何收割木材"
+			x: -7.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -252,6 +321,7 @@
 				""
 				"在整个林场建设中，我们可能需要将砍伐出来的树苗用于下一次的种植，因此我们需要&6做一些过滤&r，以避免机械手将其他我们不希望的方块放置出来。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "3F5BB167BF4FF06B"
 			rewards: [{
@@ -265,14 +335,14 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			title: "事项 2：如何补种树木"
-			x: 4.5d
-			y: -8.0d
+			title: "如何补种树木"
+			x: -7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["788A9985BFF98038"]
 			description: [
-				"在讨论完如何收割、种植后，&6我们需要考虑如何为这些机械提供动力。&r"
+				"在收割和种植之外，&6我们还需要考虑如何为这些机械提供动力。&r"
 				""
 				"动力机械有着一个极其特殊的性质——一些可以在动态结构中发挥作用的动力机械，&6只要其所属的动态结构因动力而运动，动力机械自身便可以“借用”这部分动力运作&r。"
 				""
@@ -295,14 +365,14 @@
 				item: "create:mechanical_bearing"
 				type: "item"
 			}]
-			title: "事项 3：如何提供动力"
-			x: 4.5d
-			y: -11.0d
+			title: "如何提供动力"
+			x: -7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
 			hide_dependency_lines: true
-			hide_until_deps_complete: false
+			hide_until_deps_complete: true
 			id: "788A9985BFF98038"
 			rewards: [{
 				id: "53943D3E2A7DFBEE"
@@ -314,8 +384,8 @@
 				item: "create:shaft"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -11.0d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["560A05CD905A3EBA"]
@@ -338,8 +408,8 @@
 				type: "item"
 			}]
 			title: "制成黄铜"
-			x: 2.5d
-			y: -8.0d
+			x: -10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["69EF81C377807656"]
@@ -372,8 +442,8 @@
 				}
 			]
 			title: "进行动力搅拌"
-			x: 0.5d
-			y: -8.0d
+			x: -7.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
@@ -387,7 +457,7 @@
 				"您需要制成&6空的烈焰人燃烧室框架&r，而后&6手持框架右键活着的烈焰人或者烈焰人刷怪笼&r，将其转化成为烈焰人燃烧室。"
 			]
 			hide_dependency_lines: true
-			hide_until_deps_complete: false
+			hide_until_deps_complete: true
 			icon: "create:blaze_burner"
 			id: "69EF81C377807656"
 			rewards: [{
@@ -409,8 +479,8 @@
 				}
 			]
 			title: "高级加热手段"
-			x: -1.5d
-			y: -8.0d
+			x: -3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["39798147F6F5CD1D"]
@@ -454,13 +524,14 @@
 				}
 			]
 			title: "精修打磨技艺"
-			x: 2.5d
-			y: -9.5d
+			x: -3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
 			description: ["为了制成电子管，您需要准备一些&6玫瑰石英&r。但通过合成而来的&6粗制玫瑰石&r英无法满足电子管的精度需求。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "39798147F6F5CD1D"
 			rewards: [{
 				id: "33EB58C64DEB458F"
@@ -474,8 +545,8 @@
 				type: "item"
 			}]
 			title: "红色晶体"
-			x: 0.5d
-			y: -9.5d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -494,8 +565,10 @@
 				""
 				"如果遇到无法解决的问题，您也可以选择咨询您的同伴，我作为引导系统，所能做的事情极其有限。最终能够影响事情成败的要素还是取决于您作为人的主观能动性。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:oak_log"
 			id: "001D8E839A9D730C"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					id: "4D05FB1DE9112DFD"
@@ -525,8 +598,8 @@
 				type: "item"
 			}]
 			title: "建成属于您的第一座“奇迹”"
-			x: 13.0d
-			y: -9.0d
+			x: -10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["213A5C217F398F0D"]
@@ -571,8 +644,8 @@
 				type: "maa:kube"
 			}]
 			title: "组装动力结构"
-			x: 8.5d
-			y: -9.0d
+			x: -14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -591,6 +664,8 @@
 				""
 				"最后，对于如何让这些结构运动起来，只要保证&6这些方块能够在动力轴承的驱动下，一体按照圆周轨迹运动&r，即可满足要求。动力轴承本身的动力来源则可以是水车等常见的基本动力源。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "create:crafting_blueprint"
 			id: "213A5C217F398F0D"
 			rewards: [
@@ -613,8 +688,8 @@
 				type: "checkmark"
 			}]
 			title: "动力结构组合方式"
-			x: 6.5d
-			y: -9.0d
+			x: -14.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["213A5C217F398F0D"]
@@ -674,8 +749,8 @@
 				type: "maa:kube"
 			}]
 			title: "借前人之鉴"
-			x: 8.5d
-			y: -11.0d
+			x: -14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3E8E055CA54AFDA5"]
@@ -692,6 +767,7 @@
 				""
 				"但独立的思考仍旧是被推荐的，请您在构建完成后，仔细观察其运行的状态，以便未来某天，您也能够创造出如此机构。"
 			]
+			hide_dependent_lines: true
 			icon: "create:clipboard"
 			id: "079B9E3B196A43B6"
 			rewards: [{
@@ -713,8 +789,8 @@
 				}
 			]
 			title: "将前人的经验实体化"
-			x: 10.5d
-			y: -11.0d
+			x: -14.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["47637031D6C57B8A"]
@@ -723,6 +799,7 @@
 				""
 				"在本项目中，选择&6水车&r一般来说便是一个最优的方案。其转速不仅能够满足一般树场的要求，且不需要特殊人为维护，体积非常小巧。"
 			]
+			hide_dependent_lines: true
 			id: "460C9F19E6BA2781"
 			rewards: [{
 				id: "5CFA19BED2200405"
@@ -736,8 +813,8 @@
 				type: "item"
 			}]
 			title: "选择动力源"
-			x: 10.5d
-			y: -9.0d
+			x: -14.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["47637031D6C57B8A"]
@@ -761,8 +838,8 @@
 				type: "item"
 			}]
 			title: "动态结构的存储问题"
-			x: 10.5d
-			y: -7.5d
+			x: -14.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3E8E055CA54AFDA5"]
@@ -786,8 +863,8 @@
 				type: "item"
 			}]
 			title: "自行借鉴他人之利"
-			x: 10.5d
-			y: -12.5d
+			x: -14.0d
+			y: -3.0d
 		}
 	]
 	title: "认知：机械"

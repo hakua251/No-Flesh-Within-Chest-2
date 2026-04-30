@@ -549,6 +549,15 @@
 			x: 10.25d
 			y: -0.5d
 		}
+		{
+			dependency: "354161CC18BA01F3"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_light_green.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.5d
+			y: 43.0d
+		}
 	]
 	order_index: 2
 	quest_links: [ ]

@@ -549,7 +549,7 @@
     "tooltips.kubejs.iron_repair_device.alt.1": "    §6★§r 手持铁锭右键，即可消耗铁锭，立刻恢复 10%% 最大生命值，并且恢复少量饥饿值",
     "item.kubejs.cyborgization_device": "义体改造装置",
     "tooltips.kubejs.cyborgization_device.default.1": "革命！烈焰！重铸我！",
-    "tooltips.kubejs.cyborgization_device.alt.1": "    §6★§r 当玩家携带该器官时，其胸腔会被逐渐转变为%s",
+    "tooltips.kubejs.cyborgization_device.alt.1": "    §6★§r 当玩家携带该器官时，其胸腔会在特定条件下转变为%s",
     "item.kubejs.glow_gland": "发光腺体",
     "tooltips.kubejs.glow_gland.default.1": "生命的光芒",
     "item.kubejs.horse_tendon": "马腱",

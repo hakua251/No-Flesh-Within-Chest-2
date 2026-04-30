@@ -1,26 +1,27 @@
 [*]
-background:          ftblibrary:textures/gui/background_squares.png; color=#00FFFFFF; tile_size=64
+background:          ftblibrary:textures/gui/background_squares.png; color= rgb(28, 28, 28); tile_size=64
 extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear
-
-# 认知：神赐
-[4E9F7565791921E9]
-background: ftblibrary:textures/gui/ars_bg.png; color=#00FFFFFF; tile_size=64; color= #1919190c; tile_size=64
-
-# 认知：人造
-[2045B996D427DDC8]
-background: ftblibrary:textures/gui/create_tinker_bg.png; color=#00FFFFFF; tile_size=64; color= #ffffff07; tile_size=64
 
 # 认知：胸腔
 [2218D095B234A44A]
-background: ftblibrary:textures/gui/flesh_bg.png; color=#00FFFFFF; tile_size=64; color= #ffffff07; tile_size=64
+background: ftblibrary:textures/gui/chestcavity_background.png; color=#00FFFFFF; tile_size=64; color= #ffffff07; tile_size=64
+
+# 认知：机械
+[425DDADD8D67FA09]
+background: ftblibrary:textures/gui/machine_background.png; color=#00FFFFFF; tile_size=64; color= #ffffff07; tile_size=64
+
+# 认知：魔源
+[3141E7EEF2FD1ABE]
+background: ftblibrary:textures/gui/magic_background.png; color=#00FFFFFF; tile_size=64; color= #ffffff07; tile_size=64
+
+# 认知：匠艺
+[450DBC0CF3ED321E]
+background: ftblibrary:textures/gui/tetra_background.png; color=#00FFFFFF; tile_size=64; color= #ffffff07; tile_size=64
 
 # 引
 [167CD65AF2F0E691]
-background: ftblibrary:textures/gui/code_bg.png; color=#00FFFFFF; tile_size=64; color= #ffffff07; tile_size=64
+background: ftblibrary:textures/gui/chapter_1_background.png; color=#00FFFFFF; tile_size=64; color= #ffffff07;; tile_size=64
 
-# 引壹
-[0AC42F4BE2EDBB08]
-background: ftblibrary:textures/gui/code_bricks_bg.png; color=#00FFFFFF; tile_size=64; color= #ffffff07; tile_size=64
 
 text_color:          #FFFFFF
 hover_text_color:    #FFFFA0

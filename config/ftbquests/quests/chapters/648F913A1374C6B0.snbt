@@ -26,6 +26,7 @@
 			y: 4.7d
 		}
 		{
+			click: "command:/ponder kubejs:growth_vat"
 			dependency: "2A309A1975C86D4A"
 			height: 8.0d
 			image: "kubejs:textures/gui/tasks/growth_vat/instruction.png"

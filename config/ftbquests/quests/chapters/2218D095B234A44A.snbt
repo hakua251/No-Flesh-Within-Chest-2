@@ -4,13 +4,59 @@
 	default_quest_shape: ""
 	filename: "2218D095B234A44A"
 	group: "63198C281F0E9667"
-	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		id: "kubejs:heart"
 		tag: { }
 	}
 	id: "2218D095B234A44A"
+	images: [
+		{
+			height: 2.59d
+			image: "kubejs:textures/gui/tasks/tutorial_chestcavity/title.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			height: 14.9d
+			image: "kubejs:textures/gui/tasks/tutorial_chestcavity/frame.png"
+			order: -1
+			rotation: 0.0d
+			width: 30.0d
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependency: "7EDB195FE22A8D47"
+			height: 4.0d
+			image: "kubejs:textures/gui/tasks/tutorial_chestcavity/organ_purify.png"
+			rotation: 0.0d
+			width: 9.67d
+			x: 13.5d
+			y: 8.5d
+		}
+		{
+			dependency: "1D2835C031D8C57F"
+			height: 0.5d
+			image: "kubejs:textures/gui/tasks/tutorial_chestcavity/complete_icon.png"
+			order: 1
+			rotation: 0.0d
+			width: 0.5d
+			x: 17.0d
+			y: -3.0d
+		}
+		{
+			dependency: "70010BB6C23E4927"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/tutorial_chestcavity/item_background.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.5d
+			y: 7.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -78,8 +124,8 @@
 				value: 1L
 			}]
 			title: "活化自身胸腔"
-			x: 0.0d
-			y: -1.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6ACBA86B2F8BA384"]
@@ -121,8 +167,8 @@
 				type: "item"
 			}]
 			title: "尝试摘取器官"
-			x: 0.0d
-			y: -2.0d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3706063CCC0981B2"]
@@ -153,7 +199,7 @@
 			}]
 			title: "了解动物"
 			x: 0.0d
-			y: -3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2322A3BFAC31A4C2"]
@@ -178,8 +224,8 @@
 				type: "checkmark"
 			}]
 			title: "排异反应"
-			x: 0.0d
-			y: -5.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3546342552F8444E"]
@@ -203,8 +249,8 @@
 				type: "item"
 			}]
 			title: "制作原初核心"
-			x: 0.0d
-			y: -6.0d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1D65BF71E2DCA300"]
@@ -230,8 +276,8 @@
 				value: 1L
 			}]
 			title: "了解怪物"
-			x: 0.0d
-			y: -4.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["25AF51750AAA5976"]
@@ -244,6 +290,8 @@
 				""
 				"请使用&6切石机&r打磨您的肋骨，制成&6肋骨牙刃&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "04BD8BC9319A7E1C"
 			rewards: [
 				{
@@ -270,7 +318,7 @@
 			}]
 			title: "从肋骨牙刃开始"
 			x: 0.0d
-			y: -7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["04BD8BC9319A7E1C"]
@@ -295,8 +343,8 @@
 				type: "item"
 			}]
 			title: "获取尖牙"
-			x: 0.0d
-			y: -8.0d
+			x: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7CCB3B294B86F7AA"]
@@ -311,6 +359,7 @@
 				""
 				"如果失败了，您需要重复上述过程，直到孵化出肉块为止。"
 			]
+			hide_until_deps_complete: true
 			id: "714F4F7810E3D89C"
 			rewards: [
 				{
@@ -332,8 +381,8 @@
 				type: "item"
 			}]
 			title: "养育原初摇篮"
-			x: 0.0d
-			y: -9.0d
+			x: 7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["714F4F7810E3D89C"]
@@ -358,8 +407,8 @@
 				type: "checkmark"
 			}]
 			title: "逃离排异反应"
-			x: 1.5d
-			y: -9.0d
+			x: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["70010BB6C23E4927"]
@@ -368,6 +417,7 @@
 				""
 				"&6分解器&r可以解决此类问题。通过放入一些常见物品，即可分解成生物材料。这会大大降低我们对生物资源的依赖程度。"
 			]
+			hide_until_deps_complete: true
 			id: "1D2835C031D8C57F"
 			rewards: [{
 				id: "05FCF5ED2F5F2262"
@@ -380,8 +430,8 @@
 				item: "biomancy:decomposer"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -12.0d
+			x: -2.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["5CF36FC89AB073E8"]
@@ -390,6 +440,7 @@
 				""
 				"但其需要投入一些&6食物&r以供给营养，否则合成配方将无法正常进行。"
 			]
+			hide_until_deps_complete: true
 			id: "4FBC882804C1F6A9"
 			rewards: [{
 				id: "5EB0261C5F46433C"
@@ -402,8 +453,8 @@
 				item: "biomancy:bio_forge"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -12.0d
+			x: 2.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1D2835C031D8C57F"]
@@ -424,8 +475,8 @@
 				item: "biomancy:digester"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -13.5d
+			x: -5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["714F4F7810E3D89C"]
@@ -454,8 +505,8 @@
 				item: "biomancy:living_flesh"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -10.5d
+			x: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -467,6 +518,7 @@
 				""
 				"通过与&6生物注射器&r的结合使用，能够发挥出各种各样的效果，大部分生物制剂需要使用&6有机试管&r来进行保存。"
 			]
+			hide_until_deps_complete: true
 			id: "6668756163C6B317"
 			rewards: [{
 				id: "5AD2655F629BB22F"
@@ -480,7 +532,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -13.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1D2835C031D8C57F"]
@@ -503,8 +555,8 @@
 				item: "biomancy:elastic_fibers"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -12.0d
+			x: -2.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["04BD8BC9319A7E1C"]
@@ -525,8 +577,8 @@
 				item: "biomancy:mob_gland"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -8.0d
+			x: -2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6668756163C6B317"]
@@ -561,7 +613,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -15.0d
+			y: 10.0d
 		}
 	]
 	title: "认知：胸腔"

@@ -84,7 +84,7 @@
 				type: "fluid"
 			}]
 			title: "逆向分析熔岩"
-			x: 2.0d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -1183,14 +1183,11 @@
 			y: -4.0d
 		}
 		{
-			can_repeat: true
 			dependencies: ["6EAC98701F6297E7"]
 			description: [
 				"现在我大概能明白为什么如此简单的提取方法，在过去的日志中却仅有极少部分玩家使用——&6因为地幔能的重新平衡是一件非常“亏本”的事情&r。"
 				""
 				"为了平衡地幔能，我们需要巨大量的常规燃料，以平衡之前所使用的那部分地幔能。"
-				""
-				"我们至少要完成这样的平衡工作100次，才有可能能解除掉目前所面临的&b永恒寒冬&r问题。"
 			]
 			id: "4A6163EABA119B99"
 			incompatible: ["636CDD764ADFA00D"]
@@ -1213,10 +1210,9 @@
 			}]
 			title: "&6地幔能平衡：煤炭块&r"
 			x: 2.0d
-			y: -5.5d
+			y: -4.0d
 		}
 		{
-			can_repeat: true
 			dependencies: ["6EAC98701F6297E7"]
 			description: [
 				"使用熔岩可能会稍微划算一些. . .因为我们可以从&6下界&r或者其他地方大量的抽取这种燃料. . ."
@@ -1243,11 +1239,10 @@
 				type: "fluid"
 			}]
 			title: "&6地幔能平衡：熔岩&r"
-			x: 2.0d
-			y: -4.5d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
-			can_repeat: true
 			dependencies: ["6EAC98701F6297E7"]
 			description: [
 				"倘若这样的冬日其实并不会对我们的生活造成什么影响——而我们又&b没有办法避免有人再步后尘&r. . ."
@@ -1274,11 +1269,10 @@
 				type: "item"
 			}]
 			title: "&6地幔能平衡：烈焰蛋糕&r"
-			x: 2.0d
-			y: -3.5d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
-			can_repeat: true
 			dependencies: ["6EAC98701F6297E7"]
 			description: [
 				"&o&7[通讯中断]&r"
@@ -1307,8 +1301,8 @@
 				type: "item"
 			}]
 			title: "&6地幔能平衡：熔岩动力电池&r"
-			x: 2.0d
-			y: -2.5d
+			x: 6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["588B97AAEC0E2385"]
@@ -1389,7 +1383,7 @@
 				type: "maa:astages"
 			}]
 			title: "&6当阳光洒向大地&r"
-			x: 4.0d
+			x: 8.0d
 			y: -4.0d
 		}
 		{

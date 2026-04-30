@@ -259,6 +259,7 @@
 			y: -24.5d
 		}
 		{
+			click: "command:/ponder kubejs:eternal_altar"
 			dependency: "5FCBCB78FDA46E87"
 			height: 7.0d
 			image: "kubejs:textures/gui/tasks/eternal_gateway/instrcution.png"
