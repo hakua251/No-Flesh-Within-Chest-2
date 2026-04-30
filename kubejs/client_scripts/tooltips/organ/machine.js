@@ -105,11 +105,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:watcher_probe')
     .addDefault(Text.translatable('tooltips.kubejs.watcher_probe.default.1').gray())
 )
 
-RegistryOrganTooltip(new MultiStateTooltip('kubejs:revolution_reinforcement')
-    .addDefault(Text.translatable('tooltips.kubejs.revolution_reinforcement.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.revolution_reinforcement.alt.1'))
-    .addAlt(Text.translatable('tooltips.kubejs.revolution_reinforcement.alt.2'))
-)
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:fiery_core')
     .addDefault(Text.translatable('tooltips.kubejs.fiery_core.default.1').gray())

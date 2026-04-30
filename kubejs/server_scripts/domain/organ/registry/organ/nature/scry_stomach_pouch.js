@@ -15,22 +15,27 @@ function ScryStomachPouchKeyActiveOnly(customData, event, organItem, organIndex,
     const player = event.player
     const level = event.level
     let renderList = []
-    /** @type {Internal.ItemStack[]} */
-    let revealBlockItemList = []
+    /** @type {string[]} */
+    let revealBlockList = []
     let contentsItem = GetBundleContents(organItem)
-    for (let pItem of contentsItem) {
-        if (pItem.isEmpty() || !pItem.isBlock()) continue
-        revealBlockItemList.push(pItem)
+    for (let pItemStack of contentsItem) {
+        if (pItemStack.isEmpty()) continue
+        let pItem = pItemStack.getItem()
+        if (!(pItem instanceof $BlockItem)) continue
+        let pBlock = pItem.getBlock()
+        if (pBlock.id == 'minecraft:chest') revealBlockList.push('lootr:lootr_chest')
+        if (pBlock.id == 'minecraft:barrel') revealBlockList.push('lootr:lootr_barrel')
+        revealBlockList.push(pBlock.id)
     }
-    if (revealBlockItemList.length <= 0) return
+    if (revealBlockList.length <= 0) return
     for (let pBlockPos of BlockPos.withinManhattan(player.blockPosition(), 16, 32, 16)) {
         if (level.isOutsideBuildHeight(pBlockPos)) continue
         let blockState = level.getBlockState(pBlockPos)
         if (blockState.isAir()) continue
         if (renderList.length >= 50) break
-        let blockItem = level.getBlock(pBlockPos).getItem()
-        for (let pItem of revealBlockItemList) {
-            if (pItem.is(blockItem)) {
+        let block = blockState.getBlock()
+        for (let pBlock of revealBlockList) {
+            if (pBlock == block.id) {
                 renderList.push(new OutlineRenderModel(pBlockPos, 0xf50000).setTime(level.time + 20 * 60))
                 break
             }
