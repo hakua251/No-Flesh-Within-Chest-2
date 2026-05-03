@@ -42,19 +42,6 @@ function IncreaseEternalWinterCounter(server, num) {
 }
 
 /**
- * @param {Internal.MinecraftServer} server 
- * @param {number} num 
- */
-function DecreaseEternalWinterCounter(server, num) {
-    const persistentData = server.persistentData
-    let counter = persistentData.getInt('eternalWinterCounter') - num
-    persistentData.putInt('eternalWinterCounter', counter)
-    if (counter <= 0) {
-        SetEternalWinterState(server, 2)
-    }
-}
-
-/**
  * @param {ResourceLocation} id
  * @param {Internal.Minecraft} server 
  * @returns 

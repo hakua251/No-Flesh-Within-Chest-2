@@ -156,3 +156,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:colorful_slime_ball')
         return [GradientText(Text.translatable('tooltips.kubejs.colorful_slime_ball.default.1'), '#de68c3', '#68deda')]
     })
 )
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:colorful_singularity')
+    .addDefault(Component.translatable('tooltips.kubejs.colorful_singularity.default.1').black())
+)

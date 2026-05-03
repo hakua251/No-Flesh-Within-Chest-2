@@ -45,8 +45,6 @@ function ScryStomachPouchKeyActiveOnly(customData, event, organItem, organIndex,
     player.addItemCooldown(organItem, 20 * 60)
 }
 
-
-
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:scry_stomach_pouch')
         .addOnlyStrategy('key_active', ScryStomachPouchKeyActiveOnly)

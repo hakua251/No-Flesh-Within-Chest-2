@@ -17,14 +17,6 @@ ServerEvents.recipes(event => {
     )
 
     event.recipes.ars_nouveau.enchanting_apparatus(
-        ['ars_nouveau:abjuration_essence', 'ars_nouveau:source_gem', 'ars_nouveau:magebloom_fiber', 'kubejs:flame_fragment'],
-        'kubejs:amethyst_resonator',
-        'kubejs:source_resonator',
-        1000,
-        false
-    )
-
-    event.recipes.ars_nouveau.enchanting_apparatus(
         ['ars_nouveau:starbuncle_shards', 'ars_nouveau:whirlisprig_shards', 'ars_nouveau:wixie_shards', 'ars_nouveau:drygmy_shard'],
         'ars_nouveau:shapers_focus',
         'kubejs:dimension_shards',

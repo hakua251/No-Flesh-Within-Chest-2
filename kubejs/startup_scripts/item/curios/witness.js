@@ -8,4 +8,5 @@ StartupEvents.registry('minecraft:item', event => {
             .canUnequip(() => true)
         )
         .tag('curios:witness')
+    event.create('kubejs:story_proof', 'basic').texture('kubejs:item/curios/story_proof').maxStackSize(1)
 })

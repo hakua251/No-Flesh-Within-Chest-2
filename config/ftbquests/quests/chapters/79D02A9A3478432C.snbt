@@ -235,7 +235,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["704C3BF028E0283A"]
+			dependencies: ["3B54F5D4E7AE9822"]
 			description: [
 				"魔源汇聚晶体是一种&6极易损坏&r的物品。"
 				""
@@ -259,63 +259,6 @@
 			}]
 			title: "魔源汇聚晶体"
 			x: 21.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3377828AA207E85A"]
-			description: [
-				"为了开启暴力开采流程，您需要寻找一件称作&d魔源汇聚晶体&r的特殊魔能物品。"
-				""
-				"但魔源汇聚晶体是一种不会在世界上自然生成，且无法通过制作获得的特殊物品。一种简单的获取方式是使用&6锦鲤鳞片&r，在空投补给中获得魔源汇聚晶体。"
-				""
-				"为此，您需要寻找&6锦鲤&r并且开胸，获取锦鲤鳞片。"
-			]
-			id: "312C7EC9561496C4"
-			rewards: [{
-				id: "2F99D2DC56F07FC5"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "定向搜索战利品"
-			tasks: [{
-				id: "57908F1BDEFDB6DD"
-				item: {
-					Count: 1
-					id: "kubejs:koi_fish_scale"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "锦鲤鳞片与特殊战利品"
-			x: 17.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["312C7EC9561496C4"]
-			description: [
-				"但仅仅通过&6锦鲤鳞片&r定位的空投中，战利品表并不会包含魔源汇聚晶体。"
-				""
-				"您需要再制作一个&6魔源共鸣器&r，它会往战利品表中新增关于&6魔源汇聚晶体&r的相关战利品。"
-				""
-				"通过同时佩戴魔源共鸣器和锦鲤鳞片，使用主动技能触发锦鲤鳞片获得空投位置后，破坏空投气球。这将大概率从空投中获得到&6魔源汇聚晶体&r。"
-			]
-			id: "704C3BF028E0283A"
-			rewards: [{
-				id: "1E29059B4B8B06A1"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "定向战利品表"
-			tasks: [{
-				id: "7EF7FA0D9C3DA3C8"
-				item: {
-					Count: 1
-					id: "kubejs:source_resonator"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 19.0d
 			y: 0.0d
 		}
 		{
@@ -394,7 +337,7 @@
 		{
 			dependencies: [
 				"12E7C53A56C43097"
-				"288DA5451A36194F"
+				"2201B118100DDBB7"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1161,18 +1104,19 @@
 			id: "4A6163EABA119B99"
 			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
-				icon: "kubejs:flame_fragment"
-				id: "53444D56D0829A49"
-				ignore_reward_blocking: true
-				kubeId: "balance_mantle_energy"
-				title: "平衡部分地幔能"
-				type: "maa:kube"
+				icon: {
+					Count: 1
+					id: "kubejs:thermometer"
+					tag: { }
+				}
+				id: "66D17675EED64D7C"
+				title: "完成部分准备"
+				type: "custom"
 			}]
-			shape: "gear"
 			subtitle: "平衡地幔能之法"
 			tasks: [{
 				consume_items: true
-				count: 256L
+				count: 1024L
 				id: "58755CD452227639"
 				item: "minecraft:coal_block"
 				type: "item"
@@ -1182,7 +1126,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6EAC98701F6297E7"]
+			dependencies: ["4A6163EABA119B99"]
 			description: [
 				"使用熔岩可能会稍微划算一些. . .因为我们可以从&6下界&r或者其他地方大量的抽取这种燃料. . ."
 				""
@@ -1192,17 +1136,18 @@
 			id: "470BBE519FAFAC9B"
 			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
-				icon: "kubejs:flame_fragment"
-				id: "1404A25D3EEDDACA"
-				ignore_reward_blocking: true
-				kubeId: "balance_mantle_energy"
-				title: "平衡部分地幔能"
-				type: "maa:kube"
+				icon: {
+					Count: 1
+					id: "kubejs:thermometer"
+					tag: { }
+				}
+				id: "42B174EED460DA8E"
+				title: "完成部分准备"
+				type: "custom"
 			}]
-			shape: "gear"
 			subtitle: "平衡地幔能之法"
 			tasks: [{
-				amount: 1000000L
+				amount: 10000000L
 				fluid: "minecraft:lava"
 				id: "700E798626A15D5C"
 				type: "fluid"
@@ -1212,7 +1157,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6EAC98701F6297E7"]
+			dependencies: ["470BBE519FAFAC9B"]
 			description: [
 				"倘若这样的冬日其实并不会对我们的生活造成什么影响——而我们又&b没有办法避免有人再步后尘&r. . ."
 				""
@@ -1221,18 +1166,19 @@
 			id: "0030F907B76DF60A"
 			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
-				icon: "kubejs:flame_fragment"
-				id: "37CA58E636244BE9"
-				ignore_reward_blocking: true
-				kubeId: "balance_mantle_energy"
-				title: "平衡部分地幔能"
-				type: "maa:kube"
+				icon: {
+					Count: 1
+					id: "kubejs:thermometer"
+					tag: { }
+				}
+				id: "66677DABDDD1E141"
+				title: "完成部分准备"
+				type: "custom"
 			}]
-			shape: "gear"
 			subtitle: "平衡地幔能之法"
 			tasks: [{
 				consume_items: true
-				count: 256L
+				count: 1024L
 				id: "1BA844D34F285354"
 				item: "create:blaze_cake"
 				type: "item"
@@ -1242,7 +1188,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6EAC98701F6297E7"]
+			dependencies: ["0030F907B76DF60A"]
 			description: [
 				"&o&7[通讯中断]&r"
 				""
@@ -1253,18 +1199,21 @@
 			id: "422C30F050C2356E"
 			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
-				icon: "kubejs:flame_fragment"
-				id: "50B2493AD545A91F"
+				icon: {
+					Count: 1
+					id: "kubejs:thermometer"
+					tag: { }
+				}
+				id: "7E2A2113CC9B8BA4"
 				ignore_reward_blocking: true
 				kubeId: "balance_mantle_energy"
-				title: "平衡部分地热能"
+				title: "完成地幔能平衡"
 				type: "maa:kube"
 			}]
-			shape: "gear"
 			subtitle: "平衡地幔能之法"
 			tasks: [{
 				consume_items: true
-				count: 8L
+				count: 16L
 				id: "751344437AF6A829"
 				item: "cataclysm:lava_power_cell"
 				type: "item"
@@ -1352,8 +1301,8 @@
 				type: "maa:astages"
 			}]
 			title: "&6当阳光洒向大地&r"
-			x: 8.0d
-			y: -4.0d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["238304E64039192F"]
@@ -1383,63 +1332,6 @@
 			}]
 			title: "地幔能的故事"
 			x: 2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["67967AFA0EECD984"]
-			description: [
-				"由于过去的地幔能提取方式已经无法使用。如今倘若想要获取&6烈焰裂片&r和&6烈焰水晶&r，仅能够通过&6锦鲤鳞片&r定位空投的方式获得。"
-				""
-				"因此，您的首要工作，便是开胸一只锦鲤，随后从其胸腔中获取&6锦鲤鳞片&r。"
-			]
-			id: "224669ADAF1640C2"
-			rewards: [{
-				id: "14D5826079AAA405"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "定向搜索战利品"
-			tasks: [{
-				id: "3972B7FCC757A393"
-				item: {
-					Count: 1
-					id: "kubejs:koi_fish_scale"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "如今的烈焰如何升起"
-			x: 4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["224669ADAF1640C2"]
-			description: [
-				"但仅仅通过&6锦鲤鳞片&r定位的空投中，战利品表并不会包含魔源汇聚晶体。"
-				""
-				"您需要再制作一个&6魔源共鸣器&r，它会往战利品表中新增关于&6烈焰 水晶&r的相关战利品。"
-				""
-				"通过同时佩戴魔源共鸣器和锦鲤鳞片，使用主动技能触发锦鲤鳞片获得空投位置后，破坏空投气球。这将大概率从空投中获得到&6烈焰水晶&r。"
-				""
-				"后续任务则与&b灾难前&r基本相同，因此为了节约算力开销，我会将您的任务线与灾难前的任务线合并，望您理解。"
-			]
-			id: "288DA5451A36194F"
-			rewards: [{
-				id: "5FB4E9949D4A907D"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "定向战利品表"
-			tasks: [{
-				id: "07A47B6DD3E9BF0E"
-				item: {
-					Count: 1
-					id: "kubejs:source_resonator"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 6.0d
 			y: 2.0d
 		}
 		{
@@ -1834,7 +1726,9 @@
 				item: {
 					Count: 1
 					id: "kubejs:cyborgization_device"
-					tag: { }
+					tag: {
+						Damage: 0
+					}
 				}
 				type: "item"
 			}]
@@ -1866,6 +1760,26 @@
 			title: "急剧升温的准则"
 			x: 8.0d
 			y: 13.0d
+		}
+		{
+			dependencies: ["3377828AA207E85A"]
+			id: "3B54F5D4E7AE9822"
+			tasks: [{
+				id: "0D5818925C70644A"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67967AFA0EECD984"]
+			id: "2201B118100DDBB7"
+			tasks: [{
+				id: "56BD33F5DF9D5FA1"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 2.0d
 		}
 	]
 	title: "秘闻：地幔燃料"

@@ -1,16 +1,6 @@
 // priority: 1000
 // 工具（具有独立功能的物品）
 StartupEvents.registry('item', event => {
-    event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {
-        food.hunger(1).saturation(1).alwaysEdible().eaten(event => {
-            if (!event.player) return
-            event.player.server.runCommandSilent(`/title ${event.player.name.getString()} title {"translate":"${randomGet(luckyCookieSentence)}"}`)
-            if (Math.random() < 0.02) {
-                event.player.give(Item.of('kubejs:lucky_cookie_organ'))
-            }
-        })
-    }).tag('supplementaries:cookies').maxStackSize(64)
-
     event.create('key_to_infinity').rarity('epic').texture('kubejs:item/tools/key_to_infinity').maxStackSize(1)
 
     event.create('blood_extractor')

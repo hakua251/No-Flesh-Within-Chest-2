@@ -371,6 +371,11 @@
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
+			description: [
+				"传动杆不仅是一种合成材料，更是重要的动力传输方式。"
+				""
+				"在机械动力的游玩流程中，您会需要大量的制造传动杆，因此您可以预先制作一批传动杆以备不时之需。"
+			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "788A9985BFF98038"
@@ -379,6 +384,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "将动力延续"
 			tasks: [{
 				id: "42301B4D9066A3A5"
 				item: "create:shaft"

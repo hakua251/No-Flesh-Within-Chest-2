@@ -1,5 +1,4 @@
 // priority: 500
-// todo 回归
 RegistryOrgan('kubejs:bone_meal_bag')
     .addScore('chestcavity:digestion', 2)
     .addScore('chestcavity:detoxification', -0.5)

@@ -4,7 +4,7 @@ ItemEvents.tooltip(tooltip => {
         if (!item.hasNBT()) return
         let nbt = item.getNbt()
         if (nbt.getInt('isCreative') == 1) {
-            text.add(Text.translate('tooltips.create.schematic.isCreative').yellow().underlined())
+            text.add(Text.translate('tooltips.create.schematic.isCreative').yellow())
         }
     })
 })

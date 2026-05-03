@@ -16,9 +16,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:prowler_rotating_shaft').maxStackSize(1).texture('kubejs:item/organs/machine/prowler_rotating_shaft').tag('kubejs:machine')
 
     event.create('kubejs:watcher_probe').maxStackSize(1).texture('kubejs:item/organs/machine/watcher_probe').tag('kubejs:machine')
-
-    event.create('kubejs:source_reactor_furnace').maxStackSize(1).texture('kubejs:item/organs/machine/source_reactor_furnace').tag('kubejs:machine').tag('kubejs:magic')
-
+    
     event.create('kubejs:fiery_core').maxStackSize(1).texture('kubejs:item/organs/machine/fiery_core').tag('kubejs:machine').tag('kubejs:heart')
 
     event.create('kubejs:thermometer').maxStackSize(1).texture('kubejs:item/organs/machine/thermometer').tag('kubejs:machine').tag('kubejs:bone')
@@ -29,7 +27,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:iron_repair_device').maxStackSize(1).texture('kubejs:item/organs/machine/iron_repair_device').tag('kubejs:machine')
 
-    event.create('kubejs:cyborgization_device').maxStackSize(1).texture('kubejs:item/organs/machine/cyborgization_device').tag('kubejs:machine')
+    event.create('kubejs:cyborgization_device').maxStackSize(1).texture('kubejs:item/organs/machine/cyborgization_device').tag('kubejs:machine').maxDamage(30)
 
     event.create('kubejs:programmable_automatic_core').texture('kubejs:item/organs/machine/programmable_automatic_core').maxStackSize(1).tag('kubejs:machine')
 

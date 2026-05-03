@@ -25,8 +25,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:hippocamtus_scale').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/hippocamtus_scale')
     event.create('kubejs:calamity_bone_spur').maxStackSize(1).tag('kubejs:magic').tag('kubejs:bone').texture('kubejs:item/organs/magic/calamity_bone_spur')
     event.create('kubejs:potion_skin').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/potion_skin')
-    event.create('kubejs:organic_mana_condense').maxStackSize(1).tag('kubejs:magic').tag('kubejs:lung').texture('kubejs:item/organs/magic/organic_mana_condense')
-    event.create('kubejs:source_resonator').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/source_resonator')
+    event.create('kubejs:source_resonator').maxStackSize(1).maxDamage(100).texture('kubejs:item/organs/magic/source_resonator').tag('kubejs:magic')
 
     event.create('kubejs:witch_stomach')
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {

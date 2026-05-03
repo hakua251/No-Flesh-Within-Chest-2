@@ -122,5 +122,52 @@ ServerEvents.recipes(event => {
         E: 'minecraft:netherite_ingot',
         F: 'minecraft:fire_charge',
     })
+
+    event.recipes.create.mechanical_crafting('kubejs:revolution_cable', [
+        'IIIII',
+        'RGAGR',
+        'IIIII',
+    ], {
+        I: 'create:iron_sheet',
+        R: 'minecraft:redstone',
+        A: 'minecraft:amethyst_shard',
+        G: 'minecraft:glowstone_dust',
+    })
+
+    // todo 配方没改完
+
+    event.recipes.create.mechanical_crafting('kubejs:revolution_relay', [
+        'IIIII',
+        'RGAGR',
+        'IIIII',
+    ], {
+        I: 'create:iron_sheet',
+        R: 'minecraft:redstone',
+        A: 'minecraft:amethyst_shard',
+        G: 'minecraft:glowstone_dust',
+    })
+
+    event.recipes.create.mechanical_crafting('kubejs:revolution_delay', [
+        'IIIII',
+        'RGAGR',
+        'IIIII',
+    ], {
+        I: 'create:iron_sheet',
+        R: 'minecraft:redstone',
+        A: 'minecraft:amethyst_shard',
+        G: 'minecraft:glowstone_dust',
+    })
+
+    event.recipes.create.mechanical_crafting('kubejs:revolution_bell', [
+        'IIIII',
+        'RGAGR',
+        'IIIII',
+    ], {
+        I: 'create:iron_sheet',
+        R: 'minecraft:redstone',
+        A: 'minecraft:amethyst_shard',
+        G: 'minecraft:glowstone_dust',
+    })
+
 })
 

@@ -757,6 +757,31 @@
 			x: 3.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["47FECDBBB74D22BA"]
+			description: [
+				"在地下深处，层层叠叠的&6深板岩之间&r，偶尔你会看到一些零落的白色光球。"
+				""
+				"这些光球是名为&6晶簇块&r的特殊矿石所散发出来的，其虽然外表与深板岩类似，但是挖掘它会获得名为晶簇的特殊物品。"
+				""
+				"你可以&6在加工台上使用锤子敲开这些晶簇&r，进而获得到里面所蕴藏的&6罕见宝石&r。"
+			]
+			id: "3265BCAC65A9D699"
+			rewards: [{
+				id: "2F701BB47AB4C787"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "最为深邃处的宝石"
+			tasks: [{
+				id: "7575FFF58AFAA4EC"
+				item: "tetra:geode"
+				type: "item"
+			}]
+			title: "地底深处"
+			x: 3.0d
+			y: 2.5d
+		}
 	]
 	title: "认知：匠艺"
 }
