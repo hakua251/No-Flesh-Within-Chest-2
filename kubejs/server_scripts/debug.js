@@ -1,11 +1,28 @@
 // priority: 500
-ItemEvents.entityInteracted('stick', event => {
+// BlockEvents.rightClicked(event => {
+//     const player = event.player
+//     const block = event.block
+//     const state = block.getBlockState()
+//     let nbt = new $CompoundTag()
+//     let customTrade = new LightmansCustomTraderModel()
+//     customTrade.addTrade(new LightmansTradeModel().addItem(Item.of('minecraft:oak_sapling')))
+//     nbt.put('CustomTrader', customTrade.write())
+//     block.mergeEntityData(nbt)
+// })
 
-    const target = event.target
-
-    /**@type {Internal.ServerPlayer} */
-    const player = event.player
-    player.tell(target.totalDamageTakenInCombat)
+MAAEvents.lightmansTradeBlockOnUse(event => {
+    /**@type {Internal.TraderBlockEntity} */
+    const blockEntity = event.blockEntity
+    const pos = blockEntity.getBlockPos()
+    const block = event.level.getBlock(pos)
+    if (event.blockState.block instanceof $GachaMachineBlock) return
+    if (blockEntity.isIgnoreCustomTrader()) return
+    let nbt = new $CompoundTag()
+    let customTrade = new LightmansCustomTraderModel()
+    customTrade.addTrade(new LightmansTradeModel().addItem(Item.of('minecraft:oak_sapling')))
+    nbt.put('CustomTrader', customTrade.write())
+    block.mergeEntityData(nbt)
+    blockEntity.serverTick()
 })
 
 ItemEvents.rightClicked('stick', event => {
@@ -99,3 +116,18 @@ ItemEvents.rightClicked('stick', event => {
 })
 
 // CreateWaypoint(player, pos, new Date().toLocaleString(), 0xFAED34)
+
+
+// BlockEvents.rightClicked(event => {
+//     const player = event.player
+//     if (!player.getMainHandItem().is('minecraft:stick')) return
+//     const block = event.block
+//     const state = block.getBlockState()
+//     let nbt = new $CompoundTag()
+    
+//     nbt.put('CustomTrader', NBTIO.read('test.snbt'))
+//     console.log(nbt)
+//     block.mergeEntityData(nbt)
+//     // let res = block.entityData.get('CustomTrader')
+//     // NBTIO.write('test.snbt', res)
+// })

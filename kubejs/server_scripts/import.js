@@ -151,3 +151,4 @@ const $PotionUtils = Java.loadClass('net.minecraft.world.item.alchemy.PotionUtil
 const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem')
 
 const $TargetDummyEntity = Java.loadClass('net.mehvahdjukaar.dummmmmmy.common.TargetDummyEntity')
+const $GachaMachineBlock = Java.loadClass('io.github.lightman314.lightmanscurrency.common.blocks.traderblocks.GachaMachineBlock')
