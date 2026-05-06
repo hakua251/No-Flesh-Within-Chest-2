@@ -7,7 +7,7 @@
       "biome": "minecraft:plains"
     },
     "structure_paths": [
-      "kubejs:shop"
+      "kubejs:road"
     ],
     "weights": [
       1

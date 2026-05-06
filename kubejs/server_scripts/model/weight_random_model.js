@@ -1,17 +1,4 @@
 // priority: 2001
-/**
- * 权重随机对象
- * @param {any} obj 
- * @param {Number} weight
- * @returns 
- */
-function WeightRandomItem(obj, weight) {
-    this.obj = obj
-    this.weight = weight
-    this.startWeight = 0
-    this.endWeight = 0
-}
-
 function WeightRandomModel() {
     this.weightRandomList = []
 }
@@ -62,4 +49,18 @@ WeightRandomModel.prototype = {
         }
         return objs
     }
+}
+
+
+/**
+ * 权重随机对象
+ * @param {any} obj 
+ * @param {Number} weight
+ * @returns 
+ */
+function WeightRandomItem(obj, weight) {
+    this.obj = obj
+    this.weight = weight
+    this.startWeight = 0
+    this.endWeight = 0
 }

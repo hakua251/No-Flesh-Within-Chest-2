@@ -4,7 +4,7 @@
   "soundIds": {
     "TASK": "minecraft:entity.firework_rocket.twinkle_far",
     "GOAL": "minecraft:entity.firework_rocket.twinkle_far",
-    "CHALLENGE": "minecraft:ui.toast.challenge_complete"
+    "CHALLENGE": "minecraft:entity.firework_rocket.twinkle_far"
   },
   "version": 1
 }

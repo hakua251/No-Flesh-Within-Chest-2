@@ -1,0 +1,58 @@
+
+#Client-side configuration for Lightspeed
+[client]
+	#Show launch time on the title screen.
+	showLaunchTime = true
+	#Enable parallel class preloading during startup.
+	#Preloads commonly used classes in parallel to reduce subsequent loading time.
+	#Disable if you experience class loading issues.
+	enableClassPreloading = true
+	#Enable resource pack metadata (pack.mcmeta) caching.
+	#This caches parsed pack metadata to avoid redundant JSON parsing.
+	#Disable if you experience issues with resource pack metadata changes.
+	enablePackMetadataCache = true
+	#Enable caching for TagLoader.
+	#This caches tag loading results to speed up subsequent loads.
+	#Disable if you have issues with tags not updating correctly.
+	enableTagLoaderCache = true
+	#Parallelize RecipeManager.apply() — the per-recipe JSON deserialization loop.
+	#Big win on modpacks with thousands of recipes (KubeJS / Thermal / etc).
+	#Vanilla and standard Forge recipe serializers are pure functions and
+	#thread-safe; if a third-party serializer mutates shared state during
+	#fromJson, blacklist its namespace via recipeParallelBlacklist or disable
+	#this flag entirely.
+	enableRecipeParallelLoad = true
+	#Fast startup mode for vanilla/minimal modpacks (RECOMMENDED FOR VANILLA).
+	#When enabled, disables most caching and parallel processing to minimize overhead.
+	#Use this if vanilla startup is slower than without Lightspeed.
+	#Recommended: true for vanilla, false for modpacks with 20+ mods.
+	#NOTE: configs are loaded after Minecraft.main has begun, so this toml flag
+	#only affects caching during/after mod loading. To skip the very-early
+	#startup work too (class preloading, persisted-cache restore), pass the JVM
+	#property -Dlightspeed.fastStartup=true on the launcher command line.
+	fastStartupMode = false
+	#Number of worker threads in the CPU-bound parallel pool.
+	#0 = auto: max(1, availableProcessors() - 1).
+	#Set explicitly only if you want to cap or increase parallelism.
+	#NOTE: bound to the pool at first use; changes require a game restart.
+	#Range: 0 ~ 32
+	parallelismLevel = 0
+	#Minimum collection size before parallel processing kicks in.
+	#Smaller collections fall back to sequential iteration to avoid
+	#ForkJoinPool dispatch overhead.
+	#Range: 1 ~ 1000
+	parallelThreshold = 32
+	#Maximum number of resource packs to cache metadata for.
+	#Higher values use more memory but improve performance with many resource packs.
+	#Range: 50 ~ 1000
+	packMetadataCacheSize = 200
+	#A list of strings to disable TagLoader caching for.
+	#Can be tag namespaces or specific tag resource locations.
+	tagLoaderBlacklist = []
+	#Recipes whose ResourceLocation matches one of these prefixes are
+	#processed sequentially even when enableRecipeParallelLoad=true.
+	#Use the form "namespace" or "namespace:path/prefix".
+	#Add an entry here if a mod's recipe serializer is known to be unsafe
+	#for concurrent fromJson invocation.
+	recipeParallelBlacklist = []
+

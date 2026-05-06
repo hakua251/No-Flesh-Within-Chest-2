@@ -10,21 +10,6 @@
 //     block.mergeEntityData(nbt)
 // })
 
-MAAEvents.lightmansTradeBlockOnUse(event => {
-    /**@type {Internal.TraderBlockEntity} */
-    const blockEntity = event.blockEntity
-    const pos = blockEntity.getBlockPos()
-    const block = event.level.getBlock(pos)
-    if (event.blockState.block instanceof $GachaMachineBlock) return
-    if (blockEntity.isIgnoreCustomTrader()) return
-    let nbt = new $CompoundTag()
-    let customTrade = new LightmansCustomTraderModel()
-    customTrade.addTrade(new LightmansTradeModel().addItem(Item.of('minecraft:oak_sapling')))
-    nbt.put('CustomTrader', customTrade.write())
-    block.mergeEntityData(nbt)
-    blockEntity.serverTick()
-})
-
 ItemEvents.rightClicked('stick', event => {
     const player = event.player
     /**@type {Internal.ServerLevel} */

@@ -5,7 +5,6 @@ RegistryOrgan('kubejs:nightmare_core')
     .addScore('chestcavity:defense', -0.5)
     .setCanSpawn(true)
 
-
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.PlayerSpawnPhantomsEvent} event 

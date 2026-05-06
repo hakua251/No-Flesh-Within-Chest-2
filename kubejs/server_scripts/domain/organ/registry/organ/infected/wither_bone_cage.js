@@ -1,5 +1,4 @@
 // priority: 500
-// todo
 RegistryOrgan('kubejs:wither_bone_cage')
     .addScore('chestcavity:defense', 2)
     .addScore('chestcavity:breath_capacity', -0.5)

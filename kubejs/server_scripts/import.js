@@ -152,3 +152,4 @@ const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem')
 
 const $TargetDummyEntity = Java.loadClass('net.mehvahdjukaar.dummmmmmy.common.TargetDummyEntity')
 const $GachaMachineBlock = Java.loadClass('io.github.lightman314.lightmanscurrency.common.blocks.traderblocks.GachaMachineBlock')
+const $TraderBlockBase = Java.loadClass('io.github.lightman314.lightmanscurrency.api.traders.blocks.TraderBlockBase')

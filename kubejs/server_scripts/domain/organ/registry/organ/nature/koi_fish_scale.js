@@ -3,7 +3,6 @@ RegistryOrgan('kubejs:koi_fish_scale')
     .addScore('chestcavity:knockback_resistant', -0.5)
     .setCanSpawn(true)
 
-// todo
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.NetworkEventJS} event
