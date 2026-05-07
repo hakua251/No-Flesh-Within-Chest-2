@@ -11,6 +11,7 @@ function RegistryChestCavityInjection(event, typeName, typeLocation) {
         .useDuration(itemStack => 65)
         .useAnimation('none')
         .use((level, player, hand) => {
+            if (player instanceof $DeployerFakePlayer) return false
             if (level.isClientSide()) return true
             if (player.isPlayer()) player.triggerAnimation('kubejs:inject_animation', 3.25, 'linear', true, true)
             return true

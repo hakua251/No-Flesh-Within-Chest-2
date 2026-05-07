@@ -23,14 +23,10 @@
 				"为了阻止整个任务的重置，你需要制造缤纷染料。"
 				""
 				"缤纷染料需要&6让史莱姆获得至少7种药水效果&r后，将其击杀，才能获得前体&6缤纷黏液球&r。"
-				"{@pagebreak}"
+				""
 				"而后，简单加工获得缤纷染料。"
 				""
-				"需要量非常大，工厂需要非常大，需要稳定史莱姆生成源。"
-				""
-				"同时原有的异彩化合物产线需要扩大，两者规模需要匹配。"
-				""
-				"利用这两者，你便可以做出&6缤纷奇点&r。"
+				"不需要较大的产线规模，便可以做出&6缤纷奇点&r，除非你的运气真的很差。"
 			]
 			id: "574C74EEF58FDD85"
 			tasks: [{
@@ -67,9 +63,9 @@
 				""
 				"很遗憾我现在说的有点晚，但是至少你还有时间！尤其是先把无限维度相关的任务做完！"
 				""
-				"在全部完成后，背包中放置一个通往无尽之钥便可以解锁隐藏的任务。"
+				"在全部完成后，便可以解锁隐藏的任务。"
 				""
-				"我们这条线压力相对较低，你需要尽快！"
+				"我们这条线压力相对较低，但你需要尽快！"
 			]
 			id: "1189CC2229F322FB"
 			tasks: [{
@@ -82,32 +78,28 @@
 		}
 		{
 			dependencies: [
-				"783B0077E83DE572"
-				"5121A86698661215"
 				"14D2D38B5ACB1BC5"
-				"383B69FA2554F232"
-				"528DAC93DA6578E7"
 				"724FC0FEF605490A"
+				"5121A86698661215"
 				"19B781F578FC1D11"
+				"528DAC93DA6578E7"
+				"783B0077E83DE572"
 				"7E6C9359DD54DC4E"
+				"383B69FA2554F232"
 			]
-			description: [""]
+			description: ["&7** 何为目的、何为终点、何为生长的巅峰 **&r"]
 			id: "021D54858D50E409"
 			incompatible: ["32C2FE99D19140B3"]
-			rewards: [{
-				id: "1E43211D6AE9C61B"
-				ignore_reward_blocking: true
-				kubeId: "final_end_2"
-				title: "见证我们的故事"
-				type: "maa:kube"
-			}]
+			subtitle: "以时间为最终的养料"
 			tasks: [{
-				id: "6AE151C38EA6ABEE"
-				title: "亲手重启这一切"
-				type: "checkmark"
+				elapsedTime: 300L
+				icon: "supplementaries:hourglass"
+				id: "0AE4E74234C31497"
+				title: "赋予生长以时间"
+				type: "questsadditions:time"
 			}]
-			title: "让时间重启吧"
-			x: 4.0d
+			title: "生长痛：浇灌时间养料"
+			x: 4.5d
 			y: 0.5d
 		}
 		{
@@ -352,6 +344,7 @@
 			dependencies: ["2D33BCD423DAC69A"]
 			id: "14D2D38B5ACB1BC5"
 			invisible: true
+			subtitle: "我从零开始生长，痛苦从脚跟传递"
 			tasks: [{
 				id: "0459EAF53A0A337D"
 				item: {
@@ -361,7 +354,7 @@
 				}
 				type: "item"
 			}]
-			title: "原初之心"
+			title: "&6生长痛：获取原初之心&r"
 			x: 0.0d
 			y: -6.5d
 		}
@@ -369,11 +362,13 @@
 			dependencies: ["2D33BCD423DAC69A"]
 			id: "724FC0FEF605490A"
 			invisible: true
+			subtitle: "我已研习而得何为生长之痛"
 			tasks: [{
-				id: "6E71EA2BD626D575"
-				item: "kubejs:colorful_dye"
+				id: "52E8B2064918C2A0"
+				item: "kubejs:colorful_singularity"
 				type: "item"
 			}]
+			title: "&6生长痛：制造缤纷奇点&r"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -414,11 +409,14 @@
 			]
 			id: "5121A86698661215"
 			invisible: true
+			subtitle: "痛苦消弭于狭缝，而后又从中生长"
 			tasks: [{
-				id: "2EC130500B78167D"
-				item: "kubejs:key_to_infinity"
-				type: "item"
+				icon: "kubejs:key_to_infinity"
+				id: "453790952EE33FD9"
+				title: "探秘无尽奇迹"
+				type: "maa:auto_complete"
 			}]
+			title: "&6生长痛：探秘无尽奇迹&r"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -436,7 +434,23 @@
 			]
 			id: "19B781F578FC1D11"
 			invisible: true
+			subtitle: "命运的矛在刺穿根后成为了干的芯"
 			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_single"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						honing_progress: 120
+						id: "dfa976ba-a7ee-417e-8762-dcc823271eee"
+						"single/basic_handle_material": "basic_handle/stick"
+						"single/dimension_probe_material": "dimension_probe/netherite"
+						"single/handle": "single/basic_handle"
+						"single/handle:basic_handle/soot": 0
+						"single/head": "single/dimension_probe"
+					}
+				}
 				id: "7D9FBC6CBE9B7700"
 				item: {
 					Count: 1
@@ -474,9 +488,10 @@
 						]
 					}
 				}
-				title: "锚定原初之矛"
+				title: "创世启迪≥8 、耐久度≥10000且完整度≥20"
 				type: "item"
 			}]
+			title: "&6生长痛：锚定原初之矛&r"
 			x: 0.0d
 			y: -0.5d
 		}
@@ -484,6 +499,7 @@
 			dependencies: ["2D33BCD423DAC69A"]
 			id: "7E6C9359DD54DC4E"
 			invisible: true
+			subtitle: "将最高的枝舞动、逆着风、迎着风"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -501,6 +517,7 @@
 				title: "源头之源的奇迹 且 奇迹数≥10"
 				type: "item"
 			}]
+			title: "&6生长痛：巡回源头之源&r"
 			x: 0.0d
 			y: 5.5d
 		}
@@ -508,13 +525,20 @@
 			dependencies: ["2D33BCD423DAC69A"]
 			id: "528DAC93DA6578E7"
 			invisible: true
+			subtitle: "吞食养分至痛苦痛苦痛苦到无法忍受"
 			tasks: [{
 				count: 1L
+				icon: {
+					Count: 1
+					id: "kubejs:gula_beacon"
+					tag: { }
+				}
 				id: "4906140360B85B88"
 				kubeId: "gula_challenge_success"
-				title: "完成暴食挑战"
+				title: "满足暴食之欲"
 				type: "maa:kube"
 			}]
+			title: "&6生长痛：满足暴食之欲&r"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -522,13 +546,16 @@
 			dependencies: ["2D33BCD423DAC69A"]
 			id: "783B0077E83DE572"
 			invisible: true
+			subtitle: "生长于严寒、生长于酷暑、生长于生长"
 			tasks: [{
+				icon: "simplehats:snowmanbaby"
 				id: "60E891D0CCBF5375"
 				isServer: false
 				stage: "ftb_after_eternal_winter"
-				title: "永恒寒冬之后"
+				title: "跨越永恒寒冬"
 				type: "maa:astages"
 			}]
+			title: "&6生长痛：跨越永恒寒冬&r"
 			x: 0.0d
 			y: 3.5d
 		}
@@ -536,6 +563,7 @@
 			dependencies: ["2D33BCD423DAC69A"]
 			id: "383B69FA2554F232"
 			invisible: true
+			subtitle: "肿胀将外壳撑破，生长正在此刻"
 			tasks: [{
 				id: "04D4EB3B006193A4"
 				item: {
@@ -545,6 +573,7 @@
 				}
 				type: "item"
 			}]
+			title: "&6生长痛：培育原初骨笼&r"
 			x: 0.0d
 			y: 7.5d
 		}
@@ -570,6 +599,30 @@
 			}]
 			title: "&6生长痛&r"
 			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["021D54858D50E409"]
+			id: "01653E8674F24617"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:ender_eye"
+				id: "159835458194967F"
+				ignore_reward_blocking: true
+				kubeId: "final_end_1"
+				title: "终结吧，我们的冒险故事"
+				type: "maa:kube"
+			}]
+			subtitle: "现在，由你来亲手重启冒险故事"
+			tasks: [{
+				count: 1L
+				id: "6563CA1DADBB6FC5"
+				kubeId: "final_end_1"
+				title: "原初的话语"
+				type: "maa:kube_text_input"
+			}]
+			title: "生长到与树同高"
+			x: 7.5d
 			y: 0.5d
 		}
 	]

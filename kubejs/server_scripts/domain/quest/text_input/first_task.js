@@ -12,6 +12,5 @@ MAAEvents.textInputTaskSubmit('first_task', (event) => {
             pTeamData.addProgress(pTask, 1)
         })
     }
-
 })
 

@@ -84,4 +84,20 @@
 	#long reload pauses.
 	#Range: 256 ~ 65536
 	modelBakeryStagingCapacity = 8192
+	#Canonicalise Style instances attached to MutableComponent.
+	#Vanilla derives a fresh Style on every withStyle/applyStyle call
+	#even though the resulting content is often identical to a Style
+	#another Component already holds. Interning collapses those duplicate
+	#instances; long-lived component trees retain only one Style per
+	#unique content. Soft references let the JVM reclaim canonical
+	#entries that no Component still references.
+	enableStyleIntern = true
+	#Initial capacity of the four HashBiMap fields on every ForgeRegistry.
+	#Vanilla starts each at 16 buckets and resizes seven times to reach
+	#the ~2048-bucket layout needed by the largest 1.20.1 registries
+	#(Block, Item, SoundEvent). 1024 absorbs all vanilla content in one
+	#allocation; raise if your modpack pushes a single registry past 1500
+	#entries and you observe extra resize churn during startup.
+	#Range: 16 ~ 65536
+	forgeRegistryBiMapCapacity = 1024
 

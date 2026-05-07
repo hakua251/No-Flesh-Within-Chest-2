@@ -31,21 +31,22 @@ function SetPlayerNoFireDamage(player) {
 /**
  * 
  * @param {Internal.ServerPlayer} player 
- * @returns 
+ * @returns {number}
  */
 function RecoverPlayerHungerAndSaturation(player, amount) {
     let foodData = player.getFoodData()
     let needFood = 20 - foodData.getFoodLevel()
     if (needFood > amount) {
         foodData.setFoodLevel(Math.floor(foodData.getFoodLevel() + amount))
-        return
+        return 0
     }
     amount = amount - needFood
     foodData.setFoodLevel(20)
     let needSaturation = 20 - foodData.getSaturationLevel()
     if (needSaturation > amount) {
         foodData.setSaturation(Math.floor(foodData.getSaturationLevel() + amount))
-        return
+        return 0
     }
     foodData.setSaturation(20)
+    return amount - needSaturation
 }

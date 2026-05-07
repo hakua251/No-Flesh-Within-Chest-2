@@ -35,7 +35,7 @@
 				count: 1L
 				icon: "minecraft:oak_log"
 				id: "72DE55E275C662B0"
-				kubeId: "final_end_2"
+				kubeId: "final_end_1"
 				title: "任何种类原木"
 				type: "maa:kube"
 			}]
@@ -72,6 +72,8 @@
 		{
 			dependencies: ["741EF779923ACEF6"]
 			description: [
+				"&6您完成任务的速度真的很快&r，比历史记录中的任何一次都要快得多！"
+				""
 				"工作台的意义便是解锁更多的配方，在之后的旅途中，绝大多数的配方都需要在工作台中完成。"
 				""
 				"当然，工作台也并不一定需要放置在地面上才能够使用。通过打开自己的背包，对工作台物品按下鼠标右键，可以直接在背包中打开对应的合成界面。"
@@ -89,10 +91,10 @@
 			}
 			id: "796D46EF3EB3956D"
 			rewards: [{
-				id: "343C9C41D01BAFC6"
+				id: "21E2814199B6E401"
 				item: {
 					Count: 1
-					id: "minecraft:stone_pickaxe"
+					id: "minecraft:iron_pickaxe"
 					tag: {
 						Damage: 0
 						Enchantments: [
@@ -146,7 +148,9 @@
 		{
 			dependencies: ["796D46EF3EB3956D"]
 			description: [
-				"当您学会制作工具之后，第一件事便是不断提高挖掘等级。因此，制作并且使用一个熔炉是一件非常重要的事情。"
+				"您是否有使用过我刚才为您提供的工具？虽然它很好用，但您仍要学习如何制造工具，&6未来的冒险中会有很多事情是需要您自己去解决的&r。"
+				""
+				"为了制造工具，制作并且使用一个熔炉是一件非常重要的事情。"
 				""
 				"通过&6工作台&r合成出&6熔炉&r，将其放置到地面上，使用&6鼠标右键打开其界面&r，便可以完成本任务。"
 			]
@@ -200,7 +204,7 @@
 		}
 		{
 			dependencies: ["2B5EE534394F9950"]
-			description: ["请您在获得铁锭后制作铁镐，随后在世界上获取到&6钻石&r。获取钻石的流程可能并非来源于采掘，更有可能来自于世界上的自然生成，因此在这里并不对您的获取方式做任何限制。"]
+			description: ["到这一步，您可以使用您自己的镐子或者我送给您的镐子，在世界上获取到&6钻石&r。获取钻石的流程也可能并非来源于采掘，在自然探索时也有很大的可能能够得到钻石。"]
 			id: "540807B4153D8E77"
 			rewards: [{
 				id: "257841ABCA65BC1A"
@@ -427,11 +431,20 @@
 				"非常感谢！"
 			]
 			id: "1B332C3841A7CC3C"
-			rewards: [{
-				id: "6D26AC37D75505DB"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6D26AC37D75505DB"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					icon: "titles:title_scroll_rare"
+					id: "1A0CF25A9A991030"
+					titleId: "kubejs:my_future"
+					type: "titles:title"
+				}
+			]
 			subtitle: "还请您留下宝贵意见"
 			tasks: [{
 				count: 1L

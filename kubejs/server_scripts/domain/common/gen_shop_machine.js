@@ -8,26 +8,31 @@ BlockEvents.rightClicked(event => {
     const block = event.block
     const state = block.blockState
     if (!(state.block instanceof $TraderBlockBase)) return
-    // 排除掉扭蛋
-    if (state.block instanceof $GachaMachineBlock) return
-    // blockEntity.persistentData.putString('genType', 'create_parts')
     // 逻辑仅在商店维度生效
-    // if (level.dimension != 'infinity:room') return
+    if (level.dimension != 'infinity:room') return
 
     /**@type {Internal.TraderBlockEntity} */
-    const blockEntity = block.entity
-    if (blockEntity.isIgnoreCustomTrader()) return
-
-    const persistentData = blockEntity.persistentData
-    if (!persistentData.contains('genType')) return
-    let genType = String(persistentData.getString('genType'))
+    let coreBlockEntity = block.entity
+    if (coreBlockEntity instanceof $CapabilityInterfaceBlockEntity) {
+        coreBlockEntity = coreBlockEntity.tryGetCoreBlockEntity()
+    }
+    if (coreBlockEntity == null) return
+    if (!(coreBlockEntity instanceof $ItemTraderBlockEntity)) return
+    if (coreBlockEntity.isIgnoreCustomTrader()) return
+    const persistentData = coreBlockEntity.persistentData
+    if (persistentData.getBoolean('hadGen')) return
+    // if (!persistentData.contains('genType')) return
+    // let genType = String(persistentData.getString('genType'))
+    let genType = 'minecraft_basic'
     if (!ShopMachineType2CustomTradeData.has(genType)) return
     let nbt = new $CompoundTag()
-    let trades = ShopMachineType2CustomTradeData.get(genType).getWeightRandomObjs(2)
+    let trades = ShopMachineType2CustomTradeData.get(genType).getWeightRandomObjs(coreBlockEntity.getTradeCount())
     let customTrader = new LightmansCustomTraderModel().setTrades(trades)
     nbt.put('CustomTrader', customTrader.write())
-    block.mergeEntityData(nbt)
-    blockEntity.serverTick()
+    const coreBlock = level.getBlock(coreBlockEntity.blockPos)
+    coreBlock.mergeEntityData(nbt)
+    coreBlockEntity.serverTick()
+    coreBlockEntity.persistentData.putBoolean('hadGen', true)
 })
 
 /**

@@ -15,13 +15,6 @@
 	#This caches tag loading results to speed up subsequent loads.
 	#Disable if you have issues with tags not updating correctly.
 	enableTagLoaderCache = true
-	#Parallelize RecipeManager.apply() — the per-recipe JSON deserialization loop.
-	#Big win on modpacks with thousands of recipes (KubeJS / Thermal / etc).
-	#Vanilla and standard Forge recipe serializers are pure functions and
-	#thread-safe; if a third-party serializer mutates shared state during
-	#fromJson, blacklist its namespace via recipeParallelBlacklist or disable
-	#this flag entirely.
-	enableRecipeParallelLoad = true
 	#Fast startup mode for vanilla/minimal modpacks (RECOMMENDED FOR VANILLA).
 	#When enabled, disables most caching and parallel processing to minimize overhead.
 	#Use this if vanilla startup is slower than without Lightspeed.
@@ -49,10 +42,26 @@
 	#A list of strings to disable TagLoader caching for.
 	#Can be tag namespaces or specific tag resource locations.
 	tagLoaderBlacklist = []
-	#Recipes whose ResourceLocation matches one of these prefixes are
-	#processed sequentially even when enableRecipeParallelLoad=true.
-	#Use the form "namespace" or "namespace:path/prefix".
-	#Add an entry here if a mod's recipe serializer is known to be unsafe
-	#for concurrent fromJson invocation.
-	recipeParallelBlacklist = []
+	#Bake block/item models in parallel during resource reload.
+	#Reduces reload time on multi-core machines, but mods with custom
+	#IUnbakedGeometry / dynamic baked models are NOT contractually
+	#thread-safe under Forge. Known offenders include the Sophisticated
+	#family (storage / backpacks / core), which use shared mutable state
+	#during bake — parallel baking races them and breaks item display.
+	#Disable this if you see broken / wrong-texture items after a reload.
+	#When any mod listed in parallelModelBakingModBlacklist is loaded,
+	#this flag is force-disabled regardless of the user setting.
+	enableParallelModelBaking = true
+	#Mod IDs that auto-disable parallel model baking when present.
+	#Defaults cover known-incompatible families:
+	#  - Sophisticated (storage / core / backpacks): non-thread-safe
+	#    IUnbakedGeometry impls; parallel bake races shared state.
+	#  - Script / data-driven mods (KubeJS, CraftTweaker, JsonThings):
+	#    register items / models / recipes from user scripts or JSON
+	#    during reload; their custom model loaders are not audited
+	#    for parallel-bake safety, and racing them produces missing
+	#    or wrong-texture items.
+	#Add other mods here if you see model-corruption symptoms after
+	#a resource reload.
+	parallelModelBakingModBlacklist = ["sophisticatedstorage", "sophisticatedcore", "sophisticatedbackpacks", "kubejs", "crafttweaker", "jsonthings"]
 

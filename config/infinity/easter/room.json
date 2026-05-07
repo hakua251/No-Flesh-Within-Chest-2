@@ -4,12 +4,14 @@
     "type": "infinity:room",
     "biome_source": {
       "type": "fixed",
-      "biome": "minecraft:plains"
+      "biome": "minecraft:the_void"
     },
     "structure_paths": [
-      "kubejs:road"
+      "kubejs:room/shop_0",
+      "kubejs:room/shop_1"
     ],
     "weights": [
+      1,
       1
     ]
   }

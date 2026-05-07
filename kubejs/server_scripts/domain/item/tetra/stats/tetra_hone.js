@@ -12,8 +12,9 @@ BlockEvents.rightClicked('minecraft:grindstone', event => {
     if (player.playingAnimation) return
     if (!TetraJSUtils.isModularItem(item)) return
     if (!item.canGainHoneProgress(stack) || $IModularItem.isHoneable(stack)) return
-    player.triggerAnimation('kubejs:grindstone_hone_animation', 0.5, 'linear', true, true)
+    item.tickHoningProgression(player, stack, 50)
+    stack.setDamageValue(damageValue + 50)
     level.playSound(null, player.getX(), player.getY(), player.getZ(), 'minecraft:block.grindstone.use', player.getSoundSource(), 1, 1)
-    item.tickHoningProgression(player, stack, 20)
-    stack.setDamageValue(damageValue + 20)
+    if (player instanceof $DeployerFakePlayer) return
+    player.triggerAnimation('kubejs:grindstone_hone_animation', 0.5, 'linear', true, true)
 })

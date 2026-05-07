@@ -40,6 +40,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["440318F5E2A002F4"]
 			description: ["以我的信息处理能力，仅能够解明并开启&6 3 &r个前人所留之宝藏，这是其一。"]
 			id: "4CD51B13B77E0C9E"
 			rewards: [{

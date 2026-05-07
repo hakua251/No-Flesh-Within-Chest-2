@@ -54,3 +54,4 @@ const $StompAoe = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.Stom
 const $BlockParticleOption = Java.loadClass('net.minecraft.core.particles.BlockParticleOption')
 const $PotionUtils = Java.loadClass('net.minecraft.world.item.alchemy.PotionUtils')
 const $WitherSkullProjectile = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.WitherSkullProjectile')
+const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer')
