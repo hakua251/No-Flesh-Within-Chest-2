@@ -3,6 +3,8 @@
 MAAEvents.ftbQuestCheckRepeatable('28B0B07A19295E57', event => {
     const teamData = event.teamData
     if (!teamData.isCompletedById('7531026821B67389')) return
+    teamData.clearCachedProgress()
+    teamData.markDirty()
     event.cancel()
 })
 
@@ -13,9 +15,13 @@ MAAEvents.ftbQuestCheckRepeatable('1A033D35372B167E', event => {
         let targetTask = MAAUtils.getTaskByTeamData(teamData, '3A1023B5092EC993')
         if (!targetTask) return
         teamData.addProgress(targetTask, 1)
+        teamData.clearCachedProgress()
+        teamData.markDirty()
         event.cancel()
     }
     if (!teamData.isCompletedById('6EF16BD7804710C9')) return
+    teamData.clearCachedProgress()
+    teamData.markDirty()
     event.cancel()
 })
 

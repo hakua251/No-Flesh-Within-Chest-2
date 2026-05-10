@@ -551,3 +551,24 @@ function SummonSnowballTowardFacing(entity, level) {
     snowBallEntity.setMotion(entityFacing.x() * 2, entityFacing.y() * 2, entityFacing.z() * 2)
     level.addFreshEntity(snowBallEntity)
 }
+
+/**
+ * 判断生物是否能看到指定方块位置
+ * @param {Internal.PathfinderMob} mob 生物
+ * @param {Internal.BlockPos} targetPos 目标方块位置
+ * @returns {boolean} 是否可见
+ */
+function CanMobSeeBlock(mob, targetPos) {
+    const level = mob.level
+    let eyePos = mob.getEyePosition()
+    let targetVec = Vec3d.atCenterOf(targetPos)
+    let clipContext = new $ClipContext(
+        eyePos,
+        targetVec,
+        $ClipContextBlock.COLLIDER,
+        $ClipContextFluid.NONE,
+        mob
+    )
+    let hitResult = level.clip(clipContext)
+    return hitResult instanceof $BlockHitResult && hitResult.getBlockPos().equals(targetPos)
+}

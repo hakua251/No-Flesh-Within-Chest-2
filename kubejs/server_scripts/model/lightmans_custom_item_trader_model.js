@@ -1,5 +1,5 @@
 // priority: 2000
-function LightmansCustomTraderModel() {
+function LightmansCustomItemTraderModel() {
     this.creative = true
     /**@type {LightmansTradeModel[]} */
     this.trades = []
@@ -7,7 +7,7 @@ function LightmansCustomTraderModel() {
     return this
 }
 
-LightmansCustomTraderModel.prototype = {
+LightmansCustomItemTraderModel.prototype = {
     /** @param {LightmansTradeModel} trade */
     addTrade: function (trade) {
         this.trades.push(trade)

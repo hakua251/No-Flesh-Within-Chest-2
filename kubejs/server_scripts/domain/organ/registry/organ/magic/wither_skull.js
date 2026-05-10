@@ -1,5 +1,4 @@
 // priority: 500
-// todo
 RegistryOrgan('kubejs:wither_skull')
     .addScore('chestcavity:health', -0.5)
     .addScore('kubejs:magic_capacity', 2)

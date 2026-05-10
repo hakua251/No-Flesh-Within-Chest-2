@@ -1,6 +1,6 @@
 // priority: 500
 StartupEvents.registry('item', event => {
-    event.create('kubejs:hop_kidney').maxStackSize(1).texture('kubejs:item/organs/plant/hop_kidney').tag('kubejs:plant').tag('kubejs:kidney')
+    event.create('kubejs:hop_kidney').food(food => food.hunger(2).saturation(1).effect('brewery:drunk', 200, 0, 1)).maxStackSize(1).texture('kubejs:item/organs/plant/hop_kidney').tag('kubejs:plant').tag('kubejs:kidney')
     event.create('kubejs:pitcher_stomach').maxStackSize(1).texture('kubejs:item/organs/plant/pitcher_stomach').maxDamage(10).tag('kubejs:plant').tag('kubejs:stomach')
     event.create('kubejs:crimson_brain').maxStackSize(1).texture('kubejs:item/organs/plant/crimson_brain').tag('kubejs:plant')
     event.create('kubejs:twisting_weeping_intestine').maxStackSize(1).texture('kubejs:item/organs/plant/twisting_weeping_intestine').tag('kubejs:plant').tag('kubejs:intestine')

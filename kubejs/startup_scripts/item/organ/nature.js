@@ -1,10 +1,10 @@
 // priority: 500
 StartupEvents.registry('item', event => {
-    event.create('kubejs:sea_bunny_skin').maxStackSize(1).texture('kubejs:item/organs/nature/sea_bunny_skin').tag('kubejs:nature')
+    event.create('kubejs:sea_bunny_skin').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/sea_bunny_skin').tag('kubejs:nature')
 
-    event.create('kubejs:mammary_gland').maxStackSize(1).texture('kubejs:item/organs/nature/mammary_gland').tag('kubejs:nature')
+    event.create('kubejs:mammary_gland').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/mammary_gland').tag('kubejs:nature')
 
-    event.create('kubejs:moew_nose').maxStackSize(1).texture('kubejs:item/organs/nature/moew_nose').tag('kubejs:nature')
+    event.create('kubejs:moew_nose').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/moew_nose').tag('kubejs:nature')
 
     event.create('kubejs:leaf_insect_exoskeleton').maxStackSize(1).texture('kubejs:item/organs/nature/leaf_insect_exoskeleton').tag('kubejs:nature')
 
@@ -12,17 +12,17 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:dumbo_octopus_hat').maxStackSize(1).texture('kubejs:item/organs/nature/dumbo_octopus_hat').tag('kubejs:nature')
 
-    event.create('kubejs:ferret_tail').maxStackSize(1).texture('kubejs:item/organs/nature/ferret_tail').tag('kubejs:nature')
+    event.create('kubejs:ferret_tail').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/ferret_tail').tag('kubejs:nature')
 
-    event.create('kubejs:jumping_spider_leg').maxStackSize(1).texture('kubejs:item/organs/nature/jumping_spider_leg').tag('kubejs:nature').tag('kubejs:muscle')
+    event.create('kubejs:jumping_spider_leg').food(food => food.hunger(2).saturation(0.5).effect('minecraft:poison', 200, 0, 0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/jumping_spider_leg').tag('kubejs:nature').tag('kubejs:muscle')
 
-    event.create('kubejs:spider_leg').maxStackSize(1).texture('kubejs:item/organs/nature/spider_leg').tag('kubejs:nature').tag('kubejs:muscle')
+    event.create('kubejs:spider_leg').food(food => food.hunger(2).saturation(0.5).effect('minecraft:poison', 200, 0, 0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/spider_leg').tag('kubejs:nature').tag('kubejs:muscle')
 
     event.create('kubejs:koi_fish_scale').maxStackSize(1).texture('kubejs:item/organs/nature/koi_fish_scale').tag('kubejs:nature')
 
     event.create('kubejs:otter_tooth').maxStackSize(1).texture('kubejs:item/organs/nature/otter_tooth').tag('kubejs:nature')
 
-    event.create('kubejs:red_panda_tail').maxStackSize(1).texture('kubejs:item/organs/nature/red_panda_tail').tag('kubejs:nature')
+    event.create('kubejs:red_panda_tail').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/red_panda_tail').tag('kubejs:nature')
 
     event.create('kubejs:shima_enaga_feather').maxStackSize(1).texture('kubejs:item/organs/nature/shima_enaga_feather').tag('kubejs:nature')
 
@@ -30,17 +30,17 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:red_wolf_beard').maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/nature/red_wolf_beard').tag('kubejs:nature')
 
-    event.create('kubejs:raccoon_paw').maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/nature/raccoon_paw').tag('kubejs:nature')
+    event.create('kubejs:raccoon_paw').food(food => food.hunger(1).saturation(0.5)).maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/nature/raccoon_paw').tag('kubejs:nature')
 
     event.create('kubejs:boar_nose').maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/nature/boar_nose').tag('kubejs:nature')
 
-    event.create('kubejs:minisheep_gland').maxStackSize(1).texture('kubejs:item/organs/nature/minisheep_gland').tag('kubejs:nature')
+    event.create('kubejs:minisheep_gland').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/minisheep_gland').tag('kubejs:nature')
 
-    event.create('kubejs:squirrel_tail').maxStackSize(1).texture('kubejs:item/organs/nature/squirrel_tail').tag('kubejs:nature')
+    event.create('kubejs:squirrel_tail').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/squirrel_tail').tag('kubejs:nature')
 
-    event.create('kubejs:pelican_larynx').maxStackSize(1).texture('kubejs:item/organs/nature/pelican_larynx').tag('kubejs:nature')
+    event.create('kubejs:pelican_larynx').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/pelican_larynx').tag('kubejs:nature')
 
-    event.create('kubejs:owl_vertebrae').maxStackSize(1).texture('kubejs:item/organs/nature/owl_vertebrae').tag('kubejs:nature')
+    event.create('kubejs:owl_vertebrae').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/owl_vertebrae').tag('kubejs:nature')
 
     event.create('kubejs:bison_horn').maxStackSize(1).texture('kubejs:item/organs/nature/bison_horn').tag('kubejs:nature')
 
@@ -76,19 +76,19 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:wolf_fang').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/wolf_fang')
 
-    event.create('kubejs:pig_stomach').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pig_stomach').tag('kubejs:stomach')
+    event.create('kubejs:pig_stomach').food(food => food.hunger(2).saturation(1)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pig_stomach').tag('kubejs:stomach')
 
     event.create('kubejs:rib_blade').maxStackSize(1).tag('kubejs:nature').tag('kubejs:bone').texture('kubejs:item/organs/nature/rib_blade')
 
     event.create('kubejs:allay_wing').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/allay_wing')
 
-    event.create('kubejs:symbiocto_arm').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/symbiocto_arm').tag('kubejs:nature').tag('kubejs:muscle')
+    event.create('kubejs:symbiocto_arm').food(food => food.hunger(3).saturation(1)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/symbiocto_arm').tag('kubejs:nature').tag('kubejs:muscle')
 
-    event.create('kubejs:axolotl_gill').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/axolotl_gill').tag('kubejs:lung')
+    event.create('kubejs:axolotl_gill').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/axolotl_gill').tag('kubejs:lung')
 
     event.create('kubejs:bat_throat').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/bat_throat')
 
-    event.create('kubejs:hatching_chamber').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/hatching_chamber').tag('kubejs:machine')
+    event.create('kubejs:hatching_chamber').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/hatching_chamber')
 
     event.create('kubejs:swim_bladder').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/swim_bladder').tag('kubejs:lung')
 
@@ -98,31 +98,31 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:elder_guardian_core').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/elder_guardian_core')
 
-    event.create('kubejs:camel_hump').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/camel_hump')
+    event.create('kubejs:camel_hump').food(food => food.hunger(3).saturation(2)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/camel_hump')
 
-    event.create('kubejs:fox_tail').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/fox_tail')
+    event.create('kubejs:fox_tail').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/fox_tail')
 
-    event.create('kubejs:frog_tongue').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/frog_tongue')
+    event.create('kubejs:frog_tongue').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/frog_tongue')
 
-    event.create('kubejs:glow_gland').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/glow_gland')
+    event.create('kubejs:glow_gland').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/glow_gland')
 
-    event.create('kubejs:horse_tendon').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/horse_tendon').tag('kubejs:muscle')
+    event.create('kubejs:horse_tendon').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/horse_tendon').tag('kubejs:muscle')
 
-    event.create('kubejs:llama_gland').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/llama_gland')
+    event.create('kubejs:llama_gland').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/llama_gland')
 
-    event.create('kubejs:bear_paw').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/bear_paw')
+    event.create('kubejs:bear_paw').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/bear_paw')
 
-    event.create('kubejs:pillager_gland').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pillager_gland')
+    event.create('kubejs:pillager_gland').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pillager_gland')
 
-    event.create('kubejs:pufferfish_liver').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pufferfish_liver').tag('kubejs:liver')
+    event.create('kubejs:pufferfish_liver').food(food => food.hunger(2).saturation(1).effect('minecraft:poison', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pufferfish_liver').tag('kubejs:liver')
 
-    event.create('kubejs:rabbit_foot').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/rabbit_foot')
+    event.create('kubejs:rabbit_foot').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/rabbit_foot')
 
     event.create('kubejs:ravager_hoof').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/ravager_hoof')
 
-    event.create('kubejs:silverfish_gland').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/silverfish_gland')
+    event.create('kubejs:silverfish_gland').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/silverfish_gland')
 
-    event.create('kubejs:slime_colloid').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/slime_colloid')
+    event.create('kubejs:slime_colloid').food(food => food.hunger(2).saturation(2)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/slime_colloid')
 
     event.create('kubejs:pumpkin_shooter').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pumpkin_shooter')
 
@@ -132,40 +132,40 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:armadillo_shell').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/armadillo_shell')
 
-    event.create('kubejs:appendix').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/appendix').tag('kubejs:appendix')
-    event.create('kubejs:intestine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/intestine').tag('kubejs:intestine')
-    event.create('kubejs:heart').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/heart').tag('kubejs:heart')
-    event.create('kubejs:kidney').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/kidney').tag('kubejs:kidney')
-    event.create('kubejs:liver').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/liver').tag('kubejs:liver')
-    event.create('kubejs:lung').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/lung').tag('kubejs:lung')
-    event.create('kubejs:muscle').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/muscle').tag('kubejs:muscle')
+    event.create('kubejs:appendix').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/appendix').tag('kubejs:appendix')
+    event.create('kubejs:intestine').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/intestine').tag('kubejs:intestine')
+    event.create('kubejs:heart').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/heart').tag('kubejs:heart')
+    event.create('kubejs:kidney').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/kidney').tag('kubejs:kidney')
+    event.create('kubejs:liver').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/liver').tag('kubejs:liver')
+    event.create('kubejs:lung').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/lung').tag('kubejs:lung')
+    event.create('kubejs:muscle').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/muscle').tag('kubejs:muscle')
     event.create('kubejs:rib').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/rib').tag('kubejs:bone')
     event.create('kubejs:spine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/spine').tag('kubejs:spine')
-    event.create('kubejs:spleen').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/spleen').tag('kubejs:spleen')
-    event.create('kubejs:stomach').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/stomach').tag('kubejs:stomach')
+    event.create('kubejs:spleen').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/spleen').tag('kubejs:spleen')
+    event.create('kubejs:stomach').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/stomach').tag('kubejs:stomach')
 
-    event.create('kubejs:animal_appendix').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_appendix').tag('kubejs:appendix')
-    event.create('kubejs:animal_intestine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_intestine').tag('kubejs:intestine')
-    event.create('kubejs:animal_heart').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_heart').tag('kubejs:heart')
-    event.create('kubejs:animal_kidney').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_kidney').tag('kubejs:kidney')
-    event.create('kubejs:animal_liver').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_liver').tag('kubejs:liver')
-    event.create('kubejs:animal_lung').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_lung').tag('kubejs:lung')
-    event.create('kubejs:animal_muscle').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_muscle').tag('kubejs:muscle')
+    event.create('kubejs:animal_appendix').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_appendix').tag('kubejs:appendix')
+    event.create('kubejs:animal_intestine').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_intestine').tag('kubejs:intestine')
+    event.create('kubejs:animal_heart').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_heart').tag('kubejs:heart')
+    event.create('kubejs:animal_kidney').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_kidney').tag('kubejs:kidney')
+    event.create('kubejs:animal_liver').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_liver').tag('kubejs:liver')
+    event.create('kubejs:animal_lung').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_lung').tag('kubejs:lung')
+    event.create('kubejs:animal_muscle').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_muscle').tag('kubejs:muscle')
     event.create('kubejs:animal_rib').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_rib').tag('kubejs:bone')
     event.create('kubejs:animal_spine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_spine').tag('kubejs:spine')
-    event.create('kubejs:animal_spleen').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_spleen').tag('kubejs:spleen')
-    event.create('kubejs:animal_stomach').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_stomach').tag('kubejs:stomach')
+    event.create('kubejs:animal_spleen').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_spleen').tag('kubejs:spleen')
+    event.create('kubejs:animal_stomach').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_stomach').tag('kubejs:stomach')
 
-    event.create('kubejs:rumen').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/rumen').tag('kubejs:stomach')
+    event.create('kubejs:rumen').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/rumen').tag('kubejs:stomach')
 
-    event.create('kubejs:insect_stomach').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_stomach').tag('kubejs:stomach')
-    event.create('kubejs:insect_caeca').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_caeca')
-    event.create('kubejs:insect_heart').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_heart').tag('kubejs:heart')
-    event.create('kubejs:insect_intestine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_intestine').tag('kubejs:intestine')
-    event.create('kubejs:insect_lung').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_lung').tag('kubejs:lung')
-    event.create('kubejs:insect_muscle').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_muscle').tag('kubejs:muscle')
+    event.create('kubejs:insect_stomach').food(food => food.hunger(1).saturation(0.5).effect('minecraft:nausea', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_stomach').tag('kubejs:stomach')
+    event.create('kubejs:insect_caeca').food(food => food.hunger(1).saturation(0.5).effect('minecraft:nausea', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_caeca')
+    event.create('kubejs:insect_heart').food(food => food.hunger(1).saturation(0.5).effect('minecraft:nausea', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_heart').tag('kubejs:heart')
+    event.create('kubejs:insect_intestine').food(food => food.hunger(1).saturation(0.5).effect('minecraft:nausea', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_intestine').tag('kubejs:intestine')
+    event.create('kubejs:insect_lung').food(food => food.hunger(1).saturation(0.5).effect('minecraft:nausea', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_lung').tag('kubejs:lung')
+    event.create('kubejs:insect_muscle').food(food => food.hunger(1).saturation(0.5).effect('minecraft:nausea', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_muscle').tag('kubejs:muscle')
 
-    event.create('kubejs:gills').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/gills').tag('kubejs:lung')
+    event.create('kubejs:gills').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/gills').tag('kubejs:lung')
 
     event.create('kubejs:explosion_bag').maxStackSize(1)
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
@@ -244,7 +244,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/nature/parrot_beak')
         .tag('kubejs:nature')
 
-    event.create('kubejs:scry_stomach_pouch').maxStackSize(1)
+    event.create('kubejs:scry_stomach_pouch').food(food => food.hunger(1).saturation(1)).maxStackSize(1)
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
             if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
             if (oStack.isEmpty()) {

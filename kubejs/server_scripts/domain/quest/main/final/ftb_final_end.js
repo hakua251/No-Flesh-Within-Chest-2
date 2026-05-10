@@ -28,6 +28,8 @@ ServerEvents.tick(event => {
 
 MAAEvents.ftbQuestCheckRepeatable('55DE4F49CDD42FDF', event => {
     if (!AStages.serverHasStage(FTBFinalTimerPause, null)) return
+    teamData.clearCachedProgress()
+    teamData.markDirty()
     event.cancel()
 })
 

@@ -5,17 +5,15 @@ RegistryOrgan('kubejs:bison_horn')
     .setCanSpawn(true)
 
 /**
- * @param {OrganEventCustomData} customData
- * @param {Internal.LivingHurtEvent} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
+* @param {OrganEventCustomData} customData
+* @param {Internal.LivingHurtEvent} event 
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
 function BisonHornEntityDoDamage(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.isCrouching()) {
-        event.amount = event.amount * 1.2
-    }
+    event.amount = event.amount + (entity.maxHealth - entity.health) * 2
 }
 
 RegistryOrganStrategy(

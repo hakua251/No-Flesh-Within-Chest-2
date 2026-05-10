@@ -141,9 +141,6 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:tetra_scroll')
     .addShift(Text.translatable('tooltips.kubejs.tetra_scroll.shift.1'))
 )
 
-ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:infinity_dimension_interference')
-    .addDefault(Text.translatable('tooltips.kubejs.infinity_dimension_interference.default.1').gray())
-)
 
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:colorful_dye')
     .addDefault((text, item) => {

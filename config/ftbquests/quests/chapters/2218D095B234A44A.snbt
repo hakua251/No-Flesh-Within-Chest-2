@@ -640,6 +640,30 @@
 			x: 2.5d
 			y: 10.0d
 		}
+		{
+			dependencies: ["4FBC882804C1F6A9"]
+			description: [
+				"在您深入编辑器官时，经常无法快速计算得到自身的胸腔属性值。"
+				""
+				"为了解决这个问题，您可以制作血样提取器——&6手持该设备长按右键&r，即可从您的体内提取出血样，进而在&6该物品的详细信息中显示出胸腔属性的具体数值&r。"
+			]
+			hide_dependency_lines: true
+			id: "2D198179DC85AA3D"
+			rewards: [{
+				id: "494902D11F5A8BA2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "使用血样提取器"
+			tasks: [{
+				id: "17388D5FD8F3E7B8"
+				item: "kubejs:blood_extractor"
+				type: "item"
+			}]
+			title: "分析自身血样"
+			x: 5.0d
+			y: 10.0d
+		}
 	]
 	title: "认知：胸腔"
 }

@@ -48,10 +48,6 @@
 				"终局后续会禁用掉维度网络和无限维度的进入权限。因此如果你有重要的东西存在维度网络中也最好提前拿出来！"
 				""
 				"如果你看到这条消息的时候，已经触发了维度禁令——那也不要紧，只要维度禁令不达到二阶段就还有救！"
-				""
-				"有一个物品叫作无限维度干扰器，如果你在无限维度中被移出了，你可以通过它重置你的状态，进而获得额外的五分钟！"
-				""
-				"但如果维度禁令到了下一阶段，你每次使用干扰器仅会获得十秒钟时间，所以你要抓紧！"
 				"{@pagebreak}"
 				"无限维度禁令实际是一种资源限制，因为很多人其实会依赖于通过几个固定的无限维度获取某种特定资源。"
 				""
@@ -546,7 +542,7 @@
 			dependencies: ["2D33BCD423DAC69A"]
 			id: "783B0077E83DE572"
 			invisible: true
-			subtitle: "生长于严寒、生长于酷暑、生长于生长"
+			subtitle: "日暖月寒，耐得人性倍受煎"
 			tasks: [{
 				icon: "simplehats:snowmanbaby"
 				id: "60E891D0CCBF5375"
@@ -602,7 +598,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["021D54858D50E409"]
+			dependencies: ["1AD9BC3FCA4C5317"]
 			id: "01653E8674F24617"
 			rewards: [{
 				auto: "enabled"
@@ -618,12 +614,26 @@
 				count: 1L
 				id: "6563CA1DADBB6FC5"
 				kubeId: "final_end_1"
-				textBoxRawTitle: ""
+				textBoxRawTitle: "Hello World"
 				title: "原初的话语"
 				type: "maa:kube_text_input"
 			}]
 			title: "生长到与树同高"
-			x: 7.5d
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["021D54858D50E409"]
+			description: ["&7** 献上所见证的一切，我将奉行于无尽生长之路，尽使疼痛依旧 **&r"]
+			id: "1AD9BC3FCA4C5317"
+			subtitle: "正因我所见、所闻、所知"
+			tasks: [{
+				id: "6BA3CE55F0B6BEED"
+				item: "kubejs:story_proof"
+				type: "item"
+			}]
+			title: "生长痛：献上终之见证"
+			x: 6.5d
 			y: 0.5d
 		}
 	]

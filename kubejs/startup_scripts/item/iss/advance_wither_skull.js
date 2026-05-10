@@ -4,7 +4,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setCooldownSeconds(3)
         .setBaseManaCost(20)
         .setManaCostPerLevel(10)
-        .setBaseSpellPower(1)
+        .setBaseSpellPower(12)
         .setSpellPowerPerLevel(1)
         .setCastType('instant')
         .setSchool('irons_spellbooks:blood')
@@ -16,11 +16,22 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             const entity = ctx.entity
             const level = ctx.level
             const spellLevel = ctx.spellLevel
-            let weaknessEffect = entity.getEffect('minecraft:weakness')
-            let damage = spell.getSpellPower(spellLevel, entity) * weaknessEffect.getDuration() / 20 * weaknessEffect.getAmplifier()
-            let skull = new $WitherSkullProjectile(entity, level, 6, damage)
+            const weaknessEffect = entity.getEffect('minecraft:weakness')
+            let weaknessDuration = 0
+            let weaknessAmplifier = 0
+            if (weaknessEffect) {
+                weaknessDuration = weaknessEffect.getDuration()
+                weaknessAmplifier = weaknessEffect.getAmplifier()
+            }
+            let damage = spell.getSpellPower(spellLevel, entity) * (1 + weaknessDuration / 20 * weaknessAmplifier)
+            const skull = new $WitherSkullProjectile(entity, level, 0.5, damage)
             let spawn = entity.getEyePosition().add(entity.getForward())
-            skull.moveTo(spawn.x(), spawn.y() - skull.getBoundingBox().getYsize() / 2, spawn.z(), entity.yRot + 180, entity.xRot)
+            let px = spawn.x()
+            let py = spawn.y() - skull.getBoundingBox().getYsize() / 2
+            let pz = spawn.z()
+            skull.setPosRaw(px, py, pz)
+            skull.setOldPosAndRot()
+            skull.callReapplyPosition()
             level.addFreshEntity(skull)
         })
 })

@@ -22,6 +22,7 @@ ServerEvents.tags('item', event => {
     event.add('chestcavity:cannot_remove', [])
 
     event.add('kubejs:nature', ['cornucopia:cornucopia'])
+    event.add('minecraft:music_discs', ['kubejs:faded_disc'])
 })
 
 ServerEvents.tags('entity_type', event => {

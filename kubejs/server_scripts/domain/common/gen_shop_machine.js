@@ -1,15 +1,20 @@
 // priority: 500
+// LightmansCustomGachaTraderModel
 /**
  * @type {Map<String, WeightRandomModel>}
  */
-const ShopMachineType2CustomTradeData = new Map()
+const ShopItemTraderType2TradeData = new Map()
+/**
+ * @type {Map<String, WeightRandomModel>}
+ */
+const ShopGachaTraderType2TradeData = new Map()
 BlockEvents.rightClicked(event => {
     const level = event.level
     const block = event.block
     const state = block.blockState
     if (!(state.block instanceof $TraderBlockBase)) return
     // 逻辑仅在商店维度生效
-    if (level.dimension != 'infinity:room') return
+    // if (level.dimension != 'infinity:room') return
 
     /**@type {Internal.TraderBlockEntity} */
     let coreBlockEntity = block.entity
@@ -17,18 +22,27 @@ BlockEvents.rightClicked(event => {
         coreBlockEntity = coreBlockEntity.tryGetCoreBlockEntity()
     }
     if (coreBlockEntity == null) return
-    if (!(coreBlockEntity instanceof $ItemTraderBlockEntity)) return
     if (coreBlockEntity.isIgnoreCustomTrader()) return
     const persistentData = coreBlockEntity.persistentData
     if (persistentData.getBoolean('hadGen')) return
+    const nbt = new $CompoundTag()
     // if (!persistentData.contains('genType')) return
     // let genType = String(persistentData.getString('genType'))
     let genType = 'minecraft_basic'
-    if (!ShopMachineType2CustomTradeData.has(genType)) return
-    let nbt = new $CompoundTag()
-    let trades = ShopMachineType2CustomTradeData.get(genType).getWeightRandomObjs(coreBlockEntity.getTradeCount())
-    let customTrader = new LightmansCustomTraderModel().setTrades(trades)
-    nbt.put('CustomTrader', customTrader.write())
+    if (coreBlockEntity instanceof $ItemTraderBlockEntity) {
+        if (!ShopItemTraderType2TradeData.has(genType)) return
+        let trades = ShopItemTraderType2TradeData.get(genType).getWeightRandomObjs(coreBlockEntity.getTradeCount())
+        let customTrader = new LightmansCustomItemTraderModel().setTrades(trades)
+        nbt.put('CustomTrader', customTrader.write())
+    } else if (coreBlockEntity instanceof $GachaMachineBlockEntity) {
+        genType = 'organ'
+        if (!ShopGachaTraderType2TradeData.has(genType)) return
+        let storages = ShopGachaTraderType2TradeData.get(genType).getWeightRandomRepeatedObjs(Math.floor(Math.random() * 40))
+        let customTrader = new LightmansCustomGachaTraderModel().setStorage(storages)
+        nbt.put('CustomTrader', customTrader.write())
+    } else {
+        return
+    }
     const coreBlock = level.getBlock(coreBlockEntity.blockPos)
     coreBlock.mergeEntityData(nbt)
     coreBlockEntity.serverTick()
@@ -40,12 +54,28 @@ BlockEvents.rightClicked(event => {
  * @param {String} type 
  * @param {WeightRandomModel} data 
  */
-function RegistryShopMachineType(type, data) {
-    ShopMachineType2CustomTradeData.set(type, data)
+function RegistryShopGachaTraderType(type, data) {
+    ShopGachaTraderType2TradeData.set(type, data)
+}
+RegistryShopGachaTraderType('organ',
+    new WeightRandomModel()
+        .addWeightRandom(Item.of('minecraft:totem_of_undying'), 5)
+        .addWeightRandom(Item.of('minecraft:iron_ingot'), 100)
+        .addWeightRandom(Item.of('minecraft:copper_ingot'), 100)
+)
+
+
+/**
+ * 
+ * @param {String} type 
+ * @param {WeightRandomModel} data 
+ */
+function RegistryShopItemTraderType(type, data) {
+    ShopItemTraderType2TradeData.set(type, data)
 }
 
 
-RegistryShopMachineType('minecraft_basic',
+RegistryShopItemTraderType('minecraft_basic',
     new WeightRandomModel()
         .addWeightRandom(CreateSimpleTradeModel([Item.of('minecraft:totem_of_undying')], 200), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('minecraft:dried_ghast')], 100).setTradeLimitRule(1), 50)
@@ -81,7 +111,7 @@ RegistryShopMachineType('minecraft_basic',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('minecraft:axolotl_bucket')], 100), 50)
 )
 
-RegistryShopMachineType('ore',
+RegistryShopItemTraderType('ore',
     new WeightRandomModel()
         .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:geode')], 100), 50)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('minecraft:clay')], 5), 100)
@@ -101,7 +131,7 @@ RegistryShopMachineType('ore',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:raw_zinc')], 10), 100)
 )
 
-RegistryShopMachineType('toy',
+RegistryShopItemTraderType('toy',
     new WeightRandomModel()
         .addWeightRandom(CreateSimpleTradeModel([Item.of('supplementaries:lunch_basket')], 100), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('candlelight:love_letter', '{author:"未名人",letter_sender:"未名人",letter_title:"你",text:["每次看你砍树、挖矿、建起小屋，我的心就跟着你的脚步跳动。不敢靠太近，怕打扰你的冒险。但请知道——这个世界里，最珍贵的不是钻石，而是你。愿陪你走过每一座山、每一条河。永远爱你♥️♥️♥️。"],title:"♥️"}')], 300).setTradeLimitRule(1), 10)
@@ -125,7 +155,7 @@ RegistryShopMachineType('toy',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('refurbished_furniture:yellow_toilet')], 50), 100)
 )
 
-RegistryShopMachineType('create_parts',
+RegistryShopItemTraderType('create_parts',
     new WeightRandomModel()
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create_connected:fan_blasting_catalyst')], 100), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create_connected:fan_haunting_catalyst')], 100), 100)

@@ -48,6 +48,30 @@ WeightRandomModel.prototype = {
             }
         }
         return objs
+    },
+    getWeightRandomRepeatedObjs: function (count) {
+        let list = this.weightRandomList
+        let len = list.length
+        let cumulativeWeights = new Array(len)
+        let totalWeight = 0
+        for (let i = 0; i < len; i++) {
+            totalWeight += list[i].weight
+            cumulativeWeights[i] = totalWeight
+        }
+        let randomList = new Array(count)
+        for (let i = 0; i < count; i++) {
+            randomList[i] = Math.random() * totalWeight
+        }
+        randomList.sort(function (a, b) { return a - b })
+        let objs = new Array(count)
+        let ci = 0
+        for (let i = 0; i < count; i++) {
+            while (ci < len && randomList[i] >= cumulativeWeights[ci]) {
+                ci++
+            }
+            objs[i] = list[ci].obj
+        }
+        return objs
     }
 }
 
