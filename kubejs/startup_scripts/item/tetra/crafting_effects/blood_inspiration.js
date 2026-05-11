@@ -7,10 +7,8 @@ $CustomRequirement.registerCustomCEFunction('blood_inspiration', ctx => {
     let villagers = GetEntityWithinRadius(level, pos, 8, (pLevel, pEntity) => {
         return pEntity.type == 'minecraft:villager'
     })
-    if (villagers.length >= 3) {
-        for (let i = 0; i < 3; i++) {
-            villagers[i].kill()
-        }
+    if (villagers.length >= 1) {
+        villagers[0].kill()
         return true
     }
     return false

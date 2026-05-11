@@ -41,6 +41,17 @@
 	#Keyboard layout shown by Keybind Atlas. Valid values: US_QWERTY, UK_QWERTY, ABNT2, FRENCH_AZERTY, BELGIAN_AZERTY, GERMAN_QWERTZ, SWISS_QWERTZ, SPANISH, ITALIAN, NORDIC_ISO. Legacy values AZERTY and QWERTZ are still accepted.
 	#Allowed Values: US_QWERTY, UK_QWERTY, ABNT2, FRENCH_AZERTY, BELGIAN_AZERTY, GERMAN_QWERTZ, SWISS_QWERTZ, SPANISH, ITALIAN, NORDIC_ISO, AZERTY, QWERTZ
 	keyboardLayout = "US_QWERTY"
+	#When enabled, custom category assignments and colors are applied. Hidden keybinds remain available.
+	categoriesEnabled = true
+	#Preset colors shown when creating categories. Format: 'id|Name|#RRGGBBAA'.
+	#Each entry must use a unique id and color. Defaults include the built-in palette used by the category picker.
+	presetCategoryColors = ["crimson|Crimson|#B63C47FF", "purple|Purple|#9145D6FF", "emerald|Emerald|#1F9F4DFF", "tangerine|Tangerine|#F97316FF", "amber|Amber|#F59E0BFF", "cyan|Cyan|#06B6D4FF", "rose|Rose|#EC4899FF", "lime|Lime|#84CC16FF", "teal|Teal|#14B8A6FF", "copper|Copper|#B45309FF"]
+	#User-defined key categories. Format: 'id|Name|#RRGGBBAA|#RRGGBBAA'.
+	#Defaults include Combat, Magic, Movement, Building, Utility, and Technology.
+	customCategories = ["combat|Combat|#B63C47FF|#FFFFFFFF", "magic|Magic|#9145D6FF|#FFFFFFFF", "movement|Movement|#1F9F4DFF|#FFFFFFFF", "building|Building|#F59E0BFF|#111318FF", "utility|Utility|#F97316FF|#FFFFFFFF", "technology|Technology|#06B6D4FF|#FFFFFFFF"]
+	#Per-key custom category assignments. Format: 'KeyTarget::category-id'.
+	#Targets follow the same key-label rules as hiddenBindingLabels, including the NUM- prefix for numpad keys.
+	keyCategoryAssignments = []
 
 #Color values use RGBA hex format, for example #0161CCFF.
 [colors]

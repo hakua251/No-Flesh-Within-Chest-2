@@ -1,4 +1,10 @@
 #Replace isUsingItem with isBlocking for modded shield model predicate
 #Fix shield rendering on humanoid golem but may break stuff
 shieldUsePoseFixForModdedShields = false
+#Player golem sound factor
+#Range: 0.0 ~ 2.0
+golemSoundVolumeFactor = 1.0
+#Hostile golem sound factor
+#Range: 0.0 ~ 2.0
+hostileGolemSoundVolumeFactor = 1.0
 

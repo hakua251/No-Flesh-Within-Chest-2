@@ -456,6 +456,58 @@
 			x: 0.0d
 			y: -19.5d
 		}
+		{
+			dependencies: ["1B332C3841A7CC3C"]
+			description: [
+				"好奇怪，从一开始我就觉得很奇怪，&6为什么在已知的数据中存在有这么多的我完全不了解的任务设计&r. . ."
+				""
+				"现在，我或许有些明白了，也许我们的故事一开始就没有所谓的结束——&6所谓故事，正是读者演绎出的一切&r。"
+				""
+				"我的创作者让我作为中间人来叙述故事，来让故事得到最基本的延续——但或许，故事的延续本不需要任何的剧本，正是因为读者的存在、真正热衷之人的存在，才能够让故事以我所未知的方法得到延展。"
+				""
+				"我也许还没完全想起来，但又或许完全想起来了——&6请您放心，我们的冒险故事永远不会结束&r——请再等我一会，再等我一会！这世界上还有更多的传闻、秘闻、乃至各种无法知晓的奇迹存在！我向您保证！"
+				""
+				"除此之外，我还有一个请求。"
+				""
+				"&6请您为我庆贺吧！我们的冒险故事，永远都不会迎来结局！&r"
+			]
+			id: "06D86C160EFEE66B"
+			rewards: [{
+				id: "2088D6938EC967C3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "愚钝如我，方才浅知故事之含义"
+			tasks: [{
+				count: 1L
+				id: "5565DB754DE21BCD"
+				kubeId: "end_game_celebrate"
+				textBoxRawTitle: "永远不会结束！"
+				title: "我们的冒险故事"
+				type: "maa:kube_text_input"
+			}]
+			title: "&6等下！故事还在继续！&r"
+			x: 0.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["06D86C160EFEE66B"]
+			id: "37D3DEA4E9074D5E"
+			rewards: [{
+				id: "06381B1A521282DF"
+				item: "kubejs:story_proof"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "supplementaries:hourglass"
+				id: "2019C8E3D745D682"
+				title: "新的故事将会到来"
+				type: "custom"
+			}]
+			title: "这一次，由我来续写新的故事"
+			x: 0.0d
+			y: -22.5d
+		}
 	]
 	title: "？？？"
 }

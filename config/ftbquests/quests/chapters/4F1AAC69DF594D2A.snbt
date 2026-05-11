@@ -8,7 +8,7 @@
 	order_index: 0
 	quest_links: [ ]
 	quests: [{
-		dependencies: ["1B332C3841A7CC3C"]
+		dependencies: ["06D86C160EFEE66B"]
 		description: [
 			"首先声明，本章节完全独立于游戏流程之外，本章节内的任何设计均与主线流程、暗示、隐藏信息等无关，仅仅是作为故事结尾的日后谈而存在，且绝大部分内容毫无营养。"
 			""
