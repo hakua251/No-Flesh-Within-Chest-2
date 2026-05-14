@@ -123,9 +123,9 @@ function ExtractantMaterial4Strategy(customData, machine, levelIndicator, chaosI
  */
 function ExtractantMaterial5Strategy(customData, machine, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem) {
     let stackList = []
-    let commonGemList = RandomGetN(['minecraft:redstone', 'minecraft:glowstone_dust', 'minecraft:diamond', 'minecraft:emerald', 'minecraft:lapis_lazuli', 'minecraft:amethyst_shard', 'minecraft:quartz', 'ars_nouveau:source_gem'], Math.floor(1 + Math.random() * 3))
+    let commonGemList = RandomGetN(['minecraft:redstone', 'minecraft:glowstone_dust', 'minecraft:diamond', 'minecraft:emerald', 'minecraft:lapis_lazuli', 'minecraft:amethyst_shard', 'minecraft:quartz', 'ars_nouveau:source_gem'], Math.floor(2 + Math.random() * 3))
     commonGemList.forEach(pGem => {
-        stackList.push(Item.of(pGem, Math.floor(levelIndicator / 2 + 1)))
+        stackList.push(Item.of(pGem, Math.floor(levelIndicator + 1)))
     })
     if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:cheat_death_memory', 1).withNBT(genCuriosAttriValueNbt(Math.floor(1 + levelIndicator / 20 * (1 + Math.random())))))
     customData.rewardList.push(new GatewayStackListReward(stackList))

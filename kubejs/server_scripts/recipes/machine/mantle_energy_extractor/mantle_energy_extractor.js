@@ -30,6 +30,14 @@ ServerEvents.recipes(event => {
             const level = block.getLevel()
             const server = level.getServer()
             if (HadUnderEternalWinter(server)) return ctx.error('')
+            let inputTarget = machine.getItemStored('input_target')
+            if (inputTarget.is('kubejs:flame_crystal')) {
+                return ctx.error('')
+            }
+            const pos = block.getPos()
+            const biome = level.getBiome(pos).get()
+            const biomeTemp = biome.getTemperature(pos)
+            if (biomeTemp <= -0.5) return ctx.error('')
             const depthBar = Math.round(data.getFloat('depth_bar'))
             if (depthBar >= 2000) return ctx.error('')
             let crystal = machine.getItemStored('input_crystal')
@@ -83,6 +91,16 @@ ServerEvents.recipes(event => {
             const level = block.getLevel()
             const server = level.getServer()
             if (HadUnderEternalWinter(server)) return ctx.error('')
+            let inputTarget = machine.getItemStored('input_target')
+            if (inputTarget.is('kubejs:flame_crystal')) {
+                return ctx.error('')
+            }
+
+            const pos = block.getPos()
+            const biome = level.getBiome(pos).get()
+            const biomeTemp = biome.getTemperature(pos)
+            if (biomeTemp <= -0.5) return ctx.error('')
+
             let crystal = machine.getItemStored('input_crystal')
             if (crystal && crystal.is('kubejs:source_focus_crystal')) {
                 return ctx.success()
@@ -98,6 +116,15 @@ ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 200)
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
+            const block = ctx.getBlock()
+            /**@type {Internal.ServerLevel} */
+            const level = block.getLevel()
+
+            const pos = block.getPos()
+            const biome = level.getBiome(pos).get()
+            const biomeTemp = biome.getTemperature(pos)
+            if (biomeTemp <= -0.5) return ctx.error('')
+
             let crystal = machine.getItemStored('input_crystal')
             if (crystal && crystal.is('kubejs:source_focus_crystal')) {
                 return ctx.success()
@@ -116,9 +143,17 @@ ServerEvents.recipes(event => {
             if (Math.random() < 0.1) {
                 machine.setItemStored('input_crystal', 'kubejs:exhausted_source_focus_crystal')
             }
-            const depthBar = data.getInt('depth_bar')
-            data.putInt('depth_bar', Math.min(depthBar * 2, MantleEnergyExtractorMaxDepth))
+            const pos = block.getPos()
+            const biome = level.getBiome(pos).get()
+            const biomeTemp = biome.getBaseTemperature()
+            if (biomeTemp <= -0.5) return ctx.success()
+            let targetBiome = getBiome2LowerTemperature(biomeTemp, biome.getDownfall())
+            SetBiomeByChunk(level, GetChunkAccess(level, pos), targetBiome)
             IncreaseEternalWinterCounter(server, 5)
+
+            const depthBar = Math.max(data.getInt('depth_bar'), 200)
+            data.putInt('depth_bar', Math.min(depthBar * 2, MantleEnergyExtractorMaxDepth))
+
             return ctx.success()
         })
         .requireItem('kubejs:flame_crystal', 'input_target')
@@ -160,23 +195,24 @@ function validMantleInputTarget(input, depth) {
  * @returns {String}
  */
 function getBiome2LowerTemperature(baseTemp, downFall) {
+    console.log(baseTemp, downFall)
     if (baseTemp >= 2) {
         return 'minecraft:stony_peaks' // 1.0, 0.3
     }
     if (downFall <= 0.5) {
-        if (baseTemp > 1) {
+        if (baseTemp >= 1) {
             return RandomGet(['minecraft:plains', 'minecraft:sunflower_plains'])
-        } else if (baseTemp > 0.5) {
+        } else if (baseTemp >= 0.5) {
             return RandomGet(['minecraft:stony_shore', 'minecraft:windswept_forest', 'minecraft:windswept_hills'])
-        } else if (baseTemp > 0) {
+        } else if (baseTemp >= 0) {
             return 'minecraft:snowy_plains'
         }
     } else {
-        if (baseTemp > 1) {
+        if (baseTemp >= 1) {
             return RandomGet(['minecraft:forest', 'minecraft:swamp', 'minecraft:birch_forest'])
-        } else if (baseTemp > 0.5) {
+        } else if (baseTemp >= 0.5) {
             return RandomGet(['minecraft:old_growth_spruce_taiga', 'minecraft:old_growth_spruce_taiga', 'minecraft:taiga'])
-        } else if (baseTemp > 0) {
+        } else if (baseTemp >= 0) {
             return 'minecraft:snowy_plains'
         }
     }

@@ -1525,6 +1525,7 @@
     "effect.kubejs.fragile.desc": "每层脆弱单位所受伤害会提高 10%",
     "effect.kubejs.differentiation_induction": "诱导分化",
     "effect.kubejs.differentiation_induction.desc": "单位因为注射分化药剂，正在进行诱导分化",
+    "effect.biomancy.primordial_infestation.desc": "能够让器官回归到其最原始的状态",
     "_comment.spell": "法术",
     "spell.kubejs.raise_overlord_undead": "驱役死灵",
     "spell.kubejs.advance_fang_strike": "尖牙突刺",

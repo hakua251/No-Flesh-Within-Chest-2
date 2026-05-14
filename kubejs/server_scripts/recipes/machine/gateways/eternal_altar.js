@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
             const data = machine.getData()
             const block = ctx.getBlock()
             const level = block.getLevel()
-            const gatewayPos = block.getPos().above()
+            const gatewayPos = block.getPos().above(2)
             const inputAwake = machine.getItemStored('input_awake')
             const awakeStoneLevel = GatewayAwakeStoneLevelMap[inputAwake.getId()]
             let entityList = GetEntityWithinRadius(level, gatewayPos, 1, (pLevel, pEntity) => pEntity instanceof $GatewayEntity)

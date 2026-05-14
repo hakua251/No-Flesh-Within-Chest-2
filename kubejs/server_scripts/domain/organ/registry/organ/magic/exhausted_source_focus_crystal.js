@@ -16,8 +16,8 @@ function SourceResonatorEntityTick(customData, event, organItem, organIndex, slo
     const chestCavity = event.chestCavity
     let magicData = entity.getMagicData()
     let curMana = magicData.getMana()
-    if (curMana <= 10) return
-    let damageValue = curMana / 10 + organItem.getDamageValue()
+    if (curMana <= 50) return
+    let damageValue = curMana / 50 + organItem.getDamageValue()
     let maxDamageValue = organItem.getMaxDamage()
     if (damageValue >= maxDamageValue) {
         SetChestCavityOrgan(customData, chestCavity, Item.of('kubejs:source_focus_crystal'), organIndex, slotType, true)

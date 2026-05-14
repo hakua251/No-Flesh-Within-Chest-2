@@ -101,6 +101,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(10, 20, new StandardWaveEntityItemModel(50, 'minecraft:pillager')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator * 0.5),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor_toughness', 'addition', levelIndicator * 0.5),
@@ -111,6 +112,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(12, 18, new StandardWaveEntityItemModel(200, 'minecraft:vindicator')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.5),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor_toughness', 'addition', levelIndicator),
@@ -120,6 +122,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(13, 17, new StandardWaveEntityItemModel(200, 'minecraft:ravager')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5)
                 ]
@@ -136,6 +139,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(14, 20, new StandardWaveEntityItemModel(200, 'cataclysm:koboleton')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor_toughness', 'addition', levelIndicator),
@@ -146,6 +150,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(14, 20, new StandardWaveEntityItemModel(300, 'cataclysm:wadjet')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.2),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator * 0.5),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor_toughness', 'addition', levelIndicator * 0.5),
@@ -156,6 +161,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(16, 20, new StandardWaveEntityItemModel(500, 'cataclysm:kobolediator')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.5),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator * 2),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor_toughness', 'addition', levelIndicator)
@@ -231,6 +237,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(30, 40, new StandardWaveEntityItemModel(50, 'minecraft:pillager')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator * 0.5),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor_toughness', 'addition', levelIndicator * 0.5),
@@ -241,6 +248,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(30, 40, new StandardWaveEntityItemModel(200, 'minecraft:vindicator')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.5),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor_toughness', 'addition', levelIndicator),
@@ -250,6 +258,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(30, 40, new StandardWaveEntityItemModel(150, 'minecraft:ravager')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator)
                 ]
@@ -310,14 +319,13 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(40, 50, new StandardWaveEntityItemModel(200, 'graveyard:skeleton_creeper')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.10)
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.05)
                 ]
             })
         )
         .addPiece(40, 50, new StandardWaveEntityItemModel(25, 'graveyard:ghoul')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.10),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 20 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total',levelIndicator * 0.5),
                 ]
@@ -326,7 +334,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(40, 50, new StandardWaveEntityItemModel(25, 'graveyard:revenant')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.10),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 20 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.5),
                 ]
@@ -335,7 +342,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(40, 50, new StandardWaveEntityItemModel(80, 'graveyard:nightmare')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.10),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 20 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.2),
                     GatewayUtils.buildAttributeModifier('generic.armor', 'addition', levelIndicator * 2),
@@ -345,7 +351,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(43, 47, new StandardWaveEntityItemModel(50, 'graveyard:acolyte')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.10),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 10 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5)
@@ -355,7 +360,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(43, 47, new StandardWaveEntityItemModel(100, 'graveyard:corrupted_vindicator')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.10),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 10 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator)
@@ -365,7 +369,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(43, 47, new StandardWaveEntityItemModel(50, 'graveyard:corrupted_pillager')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.10),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 10 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.2),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5)
@@ -375,7 +378,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(42, 48, new StandardWaveEntityItemModel(100, 'graveyard:wraith')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.10),
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.2),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.2)
                 ]
@@ -384,7 +387,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(42, 48, new StandardWaveEntityItemModel(200, 'graveyard:reaper')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', levelIndicator * 0.10),
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator)
                 ]
@@ -393,6 +396,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(50, 61, new StandardWaveEntityItemModel(30, 'minecraft:drowned')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator * 0.2),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.1)
@@ -440,7 +444,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
         .addPiece(52, 58, new StandardWaveEntityItemModel(200, 'cataclysm:coralssus')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.5),
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.2),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 20 * levelIndicator),
                     new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ]
@@ -453,15 +457,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5),
                     new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
-                ]
-            })
-        )
-        .addPiece(9, 9, new StandardWaveEntityItemModel(1000, 'minecraft:warden')
-            .setModifier((levelIndicator, chaosIndicator) => {
-                return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 100 * levelIndicator),
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.armor', 'addition', levelIndicator),
                 ]
             })
         )

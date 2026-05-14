@@ -8,7 +8,7 @@ const GatewayChaosModifierMapping = new PiecewiseMappingModel()
     })
     .addPiece(20, 30, (levelIndicator, chaosIndicator) => {
         let modifierList = []
-        modifierList.push(GatewayUtils.buildEffectModifier(chaosIndicator / 60, 'minecraft:invisibility', 0, true, true))
+        modifierList.push(GatewayUtils.buildEffectModifier(chaosIndicator / 300, 'minecraft:invisibility', 0, true, true))
         modifierList.push(GatewayUtils.buildStepEffectModifier(chaosIndicator / 60, 'minecraft:resistance', 0, 2, 1, false, false))
         return modifierList
     })

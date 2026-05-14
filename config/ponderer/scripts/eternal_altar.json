@@ -11,6 +11,7 @@
     "ponderer:basic"
   ],
   "tags": [],
+  "editable": true,
   "scenes": [
     {
       "id": "s_4a567",
@@ -75,11 +76,11 @@
           "type": "text",
           "duration": 60,
           "text": {
-            "zh_cn": "不同的唤醒材料会有不同的类型及混乱度修正"
+            "zh_cn": "不同的唤醒材料会有不同的阶级修正"
           },
           "point": [
-            -0.017,
-            0.461,
+            0.009,
+            0.451,
             0.0
           ],
           "placeNearTarget": true
@@ -92,24 +93,11 @@
           "type": "text",
           "duration": 40,
           "text": {
-            "zh_cn": "这里就是混乱度展示槽"
+            "zh_cn": "这里就是阶级展示槽，控制怪物属性，阶级越高难度越高"
           },
           "point": [
-            -0.045,
-            0.009,
-            0.0
-          ],
-          "placeNearTarget": true
-        },
-        {
-          "type": "text",
-          "duration": 40,
-          "text": {
-            "zh_cn": "这里就是类型展示槽"
-          },
-          "point": [
-            -0.943,
-            0.443,
+            0.926,
+            0.952,
             0.0
           ],
           "placeNearTarget": true
@@ -158,7 +146,7 @@
           "type": "text",
           "duration": 60,
           "text": {
-            "zh_cn": "辅助材料不会被消耗，可以用于修正祭坛阶级，进而提高或降低敌人难度"
+            "zh_cn": "辅助材料不会被消耗，可以用于修正祭坛类型和混乱度"
           },
           "point": [
             -0.437,
@@ -175,11 +163,24 @@
           "type": "text",
           "duration": 40,
           "text": {
-            "zh_cn": "这里就是阶级展示槽"
+            "zh_cn": "这里就是类型展示槽，控制生成类型"
           },
           "point": [
-            0.903,
-            0.335,
+            -0.943,
+            0.443,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "这里就是混乱度展示槽，控制生物效果"
+          },
+          "point": [
+            -0.045,
+            0.009,
             0.0
           ],
           "placeNearTarget": true
