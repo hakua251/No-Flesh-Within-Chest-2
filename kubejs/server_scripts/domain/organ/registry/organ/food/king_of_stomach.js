@@ -43,7 +43,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
                 let foodPro = item.getFoodProperties(entity)
                 if (!foodPro) return
                 let nutrition = foodPro.getNutrition() + (isGreedy ? 2 : 0)
-                let staturation = foodPro.getSaturationModifier() * nutrition
+                let staturation = foodPro.getSaturationModifier() * nutrition * 2
 
                 attackUp = attackUp + staturation * 2
                 healthUp = healthUp + nutrition / 4
@@ -51,7 +51,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
                 let foodPro = item.getFoodProperties(entity)
                 if (!foodPro) return
                 let nutrition = foodPro.getNutrition() + (isGreedy ? 2 : 0)
-                let staturation = foodPro.getSaturationModifier() * nutrition
+                let staturation = foodPro.getSaturationModifier() * nutrition * 2
                 attackUp = attackUp + staturation * 2 + nutrition * 2
                 if (beerGlandEffect == 2) {
                     // 允许重复放置
@@ -65,7 +65,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
                 if (!foodPro) return
                 let nutrition = foodPro.getNutrition() + (isGreedy ? 2 : 0)
 
-                let staturation = foodPro.getSaturationModifier() * nutrition
+                let staturation = foodPro.getSaturationModifier() * nutrition * 2
                 attackUp = attackUp + staturation / 2
                 healthUp = healthUp + nutrition / 4
 

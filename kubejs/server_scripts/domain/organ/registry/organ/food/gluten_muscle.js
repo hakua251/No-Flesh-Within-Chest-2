@@ -23,7 +23,7 @@ function GlutenMuscleChestCavityUpdate(customData, event, organItem, organIndex,
         if (pItem.isEmpty() || !pItem.isEdible()) continue
         let foodProperties = pItem.getFoodProperties(entity)
         let foodHunger = foodProperties.getNutrition()
-        let foodSaturation = foodHunger * foodProperties.getSaturationModifier()
+        let foodSaturation = foodHunger * foodProperties.getSaturationModifier() * 2
         value += foodSaturation
     }
     if (value != 0) {

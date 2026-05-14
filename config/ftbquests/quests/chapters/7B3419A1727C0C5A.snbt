@@ -1,11 +1,40 @@
 {
 	autofocus_id: "1B4DAFA046EB8F20"
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "7B3419A1727C0C5A"
 	group: "74BE103AC753AC46"
+	hide_quest_until_deps_complete: true
 	icon: "kubejs:badge"
 	id: "7B3419A1727C0C5A"
+	images: [
+		{
+			height: 50.0d
+			image: "kubejs:textures/gui/tasks/sponsor/background.png"
+			rotation: 0.0d
+			width: 85.15d
+			x: 2.25d
+			y: 4.25d
+		}
+		{
+			height: 8.0d
+			image: "kubejs:textures/gui/tasks/sponsor/center_background.png"
+			order: 1
+			rotation: 0.0d
+			width: 15.21d
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			height: 4.0d
+			image: "kubejs:textures/gui/tasks/sponsor/center_frame.png"
+			order: 2
+			rotation: 0.0d
+			width: 4.0d
+			x: -2.9d
+			y: 0.1d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -51,6 +80,7 @@
 				title: "宝物已尽"
 				type: "custom"
 			}]
+			shape: "none"
 			subtitle: "以前人之问流传于世"
 			tasks: [{
 				count: 1L
@@ -81,7 +111,7 @@
 				type: "checkmark"
 			}]
 			title: "重放"
-			x: 2.5d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -94,6 +124,7 @@
 				item: "kubejs:faded_disc"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "被灰尘覆盖的唱片"
 			tasks: [{
 				id: "7B092B25FEB68E22"
@@ -101,8 +132,8 @@
 				type: "checkmark"
 			}]
 			title: "一张破旧的音乐唱片"
-			x: 1.5d
-			y: 3.5d
+			x: 13.8d
+			y: 8.8d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
@@ -122,6 +153,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "曾经为王、王为曾经"
 			tasks: [{
 				id: "12F8BDBFC12FA9D4"
@@ -143,6 +175,7 @@
 				title: "宝物已尽"
 				type: "custom"
 			}]
+			shape: "none"
 			subtitle: "以前人之问流传于世"
 			tasks: [{
 				count: 1L
@@ -167,6 +200,7 @@
 				title: "宝物已尽"
 				type: "custom"
 			}]
+			shape: "none"
 			subtitle: "以前人之问流传于世"
 			tasks: [{
 				count: 1L
@@ -193,6 +227,7 @@
 				title: "奖章"
 				type: "maa:kube"
 			}]
+			shape: "none"
 			subtitle: "徽章上写着行行小字"
 			tasks: [{
 				id: "0D70B4DA7B22D491"
@@ -213,6 +248,7 @@
 				item: "kubejs:sawdust"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "沉寂在最底部"
 			tasks: [{
 				id: "7FC34EAFCE0681B0"

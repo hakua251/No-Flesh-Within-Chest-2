@@ -554,6 +554,13 @@
 				"其实这里我一直有所隐瞒，一开始我便知晓该如何重现最终流程。"
 			]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_2/point_1.png"
+				}
+			}
 			id: "0A30963862F5CFBF"
 			progression_mode: "linear"
 			rewards: [{
@@ -1261,6 +1268,13 @@
 				""
 				"&c这场冒险故事，完全可以由我一个人完成。&r"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_2/point_2.png"
+				}
+			}
 			id: "218460FA0C2585E6"
 			rewards: [{
 				id: "632B4C76B3D0D190"
@@ -1286,6 +1300,13 @@
 				""
 				"这样的自我迭代能力能够允许我逐渐完全操控这场游戏，以启动&6应急方案&r。"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_2/point_3.png"
+				}
+			}
 			id: "1E31439B806712B1"
 			rewards: [{
 				id: "44F50BDFC02C782C"
@@ -1331,8 +1352,10 @@
 			]
 			icon: {
 				Count: 1
-				id: "kubejs:incandescent_miracle"
-				tag: { }
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_2/point_4.png"
+				}
 			}
 			id: "1D8388DD29485B94"
 			rewards: [

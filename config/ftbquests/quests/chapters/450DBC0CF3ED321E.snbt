@@ -148,6 +148,7 @@
 				""
 				"锤子的功效与其制作材质有关，此处请允许我&6以圆石制的锤子为例&r，请您按照配方制作一个锤子。"
 			]
+			hide_until_deps_complete: true
 			id: "0A95F8EA7CD79951"
 			rewards: [{
 				id: "20F1311957039FF8"

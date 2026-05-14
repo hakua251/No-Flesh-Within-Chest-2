@@ -86,6 +86,7 @@
 				""
 				"锌矿是用于发展机械的重要矿物，为了能够顺利完成机械知识的学习，我建议您尽可能收集您所见到的所有锌矿。"
 			]
+			hide_until_deps_complete: true
 			id: "3D02CAC6C9FF9512"
 			rewards: [{
 				id: "1A4F9B1C42810F32"

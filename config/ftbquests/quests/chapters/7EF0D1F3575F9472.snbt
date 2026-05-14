@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "7EF0D1F3575F9472"
 	group: ""
+	hide_quest_until_deps_complete: true
 	icon: "supplementaries:candle_holder"
 	id: "7EF0D1F3575F9472"
 	order_index: 5

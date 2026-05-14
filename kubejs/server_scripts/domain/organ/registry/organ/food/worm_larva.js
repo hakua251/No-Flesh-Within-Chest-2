@@ -23,13 +23,13 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
 
     let foodProperties = item.getFoodProperties(player)
     let foodHunger = foodProperties.getNutrition()
-    let foodSaturation = foodProperties.getSaturationModifier() * foodHunger
+    let foodSaturation = foodProperties.getSaturationModifier() * foodHunger * 2
     let curSaturation = saturation + foodSaturation
     nbt.putFloat('saturation', curSaturation)
     let curDamage = organItem.getDamageValue() - foodHunger
     if (curDamage <= 0) {
         let ratio = curSaturation / (organItem.getMaxDamage() - curDamage)
-        if (ratio >= 0.5) {
+        if (ratio >= 1) {
             let chestCavity = player.getChestCavityInstance()
             if (!chestCavity) return
             let invTypeData = chestCavity.getInventoryTypeData()

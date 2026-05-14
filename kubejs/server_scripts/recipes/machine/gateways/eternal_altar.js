@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
             const data = machine.getData()
             const block = ctx.getBlock()
             const level = block.getLevel()
-            const gatewayPos = block.getPos().above()
+            const gatewayPos = block.getPos().above(2)
             const player = GetNearestPlayer(level, gatewayPos, 32)
             if (!player) return ctx.error('')
 

@@ -39,3 +39,7 @@ background: ftblibrary:textures/gui/tetra_background.png; color=rgb(0, 0, 0); ti
 # 引
 [167CD65AF2F0E691]
 background: ftblibrary:textures/gui/prologue_background.png; color=rgb(0, 0, 0); tile_size=64
+
+# 赞助
+[7B3419A1727C0C5A]
+background: ftblibrary:textures/gui/sponsor_background.png; color=rgb(0, 0, 0); tile_size=64

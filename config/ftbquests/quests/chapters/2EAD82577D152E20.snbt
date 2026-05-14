@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "2EAD82577D152E20"
 	group: "0B365C36A50478AA"
-	icon: "kubejs:key_to_infinity"
+	icon: "exposure:camera"
 	id: "2EAD82577D152E20"
 	images: [
 		{

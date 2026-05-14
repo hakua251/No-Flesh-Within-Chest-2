@@ -21,7 +21,7 @@ function ParasitismStomachFoodEaten(customData, event, organItem, organIndex, sl
     let foodPro = foodItem.getFoodProperties(player)
     if (!foodPro) return
     let nutrition = foodPro.getNutrition()
-    let staturation = foodPro.getSaturationModifier() * nutrition
+    let staturation = foodPro.getSaturationModifier() * nutrition * 2
     let organItemCount = ccInv.count(foodItem)
     let attackUp = (staturation + nutrition) * organItemCount * 0.2
     SetCustomDataMap(chestCavity, 'parasitismStomachCounter', 3)

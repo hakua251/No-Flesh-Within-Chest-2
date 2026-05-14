@@ -129,6 +129,7 @@
 				""
 				"但不管怎么样，您在获得了至高木原木后，便可以利用其中蕴含的魔源力量制作抄写台。"
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:blue_archwood_sapling"
 			id: "5764F8AEDDF6EC9E"
 			rewards: [{

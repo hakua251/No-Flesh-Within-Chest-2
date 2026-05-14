@@ -67,6 +67,7 @@
 				""
 				"与其关联度较高的物品则是名为&6“开胸器”&r的特殊工具，其拥有着&6“将生物不确定的特殊属性固定化”&r的特殊能力，使用它应该就可以可视化生物身上的特殊属性。"
 			]
+			hide_until_deps_complete: true
 			icon: "chestcavity:chest_opener"
 			id: "180947BC2C1A1516"
 			rewards: [{

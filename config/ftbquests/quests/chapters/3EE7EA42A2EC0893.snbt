@@ -223,6 +223,7 @@
 				}
 			}
 			id: "662028C8F62BED27"
+			invisible: true
 			shape: "none"
 			subtitle: "第一次自迭代完成"
 			tasks: [{
@@ -451,6 +452,7 @@
 				}
 			}
 			id: "7308FBF0FFDB2F6A"
+			invisible: true
 			shape: "none"
 			subtitle: "第五次自迭代完成"
 			tasks: [{
@@ -542,6 +544,7 @@
 				}
 			}
 			id: "5BDD47E7B143843F"
+			invisible: true
 			shape: "none"
 			subtitle: "第十次自迭代完成"
 			tasks: [{
@@ -567,6 +570,7 @@
 				}
 			}
 			id: "4AFCC7C3C76E1C26"
+			invisible: true
 			shape: "none"
 			subtitle: "第十五次自迭代完成"
 			tasks: [{
@@ -592,6 +596,7 @@
 				}
 			}
 			id: "13B68E126480A239"
+			invisible: true
 			shape: "none"
 			subtitle: "第二十五次自迭代完成"
 			tasks: [{
@@ -617,6 +622,7 @@
 				}
 			}
 			id: "32C2FE99D19140B3"
+			invisible: true
 			shape: "none"
 			subtitle: "获得全部可获得权限"
 			tasks: [{
@@ -741,6 +747,7 @@
 				}
 			}
 			id: "07025437B0FB668E"
+			invisible: true
 			rewards: [{
 				icon: "titles:title_scroll_rare"
 				id: "2B501D37AE13E702"

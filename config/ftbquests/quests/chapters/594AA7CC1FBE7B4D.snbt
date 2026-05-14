@@ -28,6 +28,8 @@
 				""
 				"不需要较大的产线规模，便可以做出&6缤纷奇点&r，除非你的运气真的很差。"
 			]
+			hide_until_deps_complete: true
+			icon: "create:brass_ingot"
 			id: "574C74EEF58FDD85"
 			tasks: [{
 				id: "2803DA20901238F2"
@@ -63,6 +65,8 @@
 				""
 				"我们这条线压力相对较低，但你需要尽快！"
 			]
+			hide_until_deps_complete: true
+			icon: "exposure:camera"
 			id: "1189CC2229F322FB"
 			tasks: [{
 				id: "079A049F2D80CBF9"
@@ -142,6 +146,8 @@
 				""
 				"拿到原初之心。"
 			]
+			hide_until_deps_complete: true
+			icon: "kubejs:player_27_injection"
 			id: "05C1F929FBF2ADA8"
 			tasks: [{
 				id: "430B908FA735F10D"
@@ -179,6 +185,21 @@
 				""
 				"你可以再来，再来，再来！不管是提前备份也好，还是真真正正的重新玩一遍也好，你可以无限次的用这些知识尝试！"
 			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tetra:holo"
+				tag: {
+					"holo/core": "holo/core"
+					"holo/core_material": "frame/dim"
+					"holo/frame": "holo/frame"
+					"holo/frame_material": "core/ancient"
+					"holo/repo": "holo/repo"
+					"holo/repo_material": "repo/default"
+					"holo/scanner": "holo/scanner"
+					"holo/scanner_material": "scanner/default"
+				}
+			}
 			id: "18B8226CFC19F422"
 			tasks: [{
 				id: "0AD65ED0415025B3"
@@ -214,6 +235,14 @@
 				""
 				"没有难点，但处处是难点——大量准备食材吧，希望你能一次成功。"
 			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "kubejs:jar_of_mystery"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "26BC6127243E9250"
 			rewards: [{
 				id: "34A4471F014C3D04"
@@ -254,6 +283,8 @@
 				""
 				"祝好运。"
 			]
+			hide_until_deps_complete: true
+			icon: "create:creative_blaze_cake"
 			id: "6515659C6F2C1CD1"
 			rewards: [{
 				id: "42A99F2B8EC255E9"
@@ -284,6 +315,12 @@
 				""
 				"祝好运。"
 			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "kubejs:tumor"
+				tag: { }
+			}
 			id: "65E545E172F28292"
 			rewards: [{
 				id: "0383077AEB90EFC5"
@@ -322,6 +359,8 @@
 				""
 				"最后使用&6突变培养基使用原初培养液&r培养即可获得。"
 			]
+			hide_until_deps_complete: true
+			icon: "kubejs:eternal_altar"
 			id: "5DD1310146FE18AB"
 			rewards: [{
 				id: "0BFE79D7CAAE0EE7"
@@ -575,7 +614,7 @@
 		}
 		{
 			dependencies: ["5C5A7285C49BE172"]
-			icon: "minecraft:oak_sapling"
+			icon: "minecraft:melon_seeds"
 			id: "2D33BCD423DAC69A"
 			rewards: [{
 				auto: "no_toast"
@@ -599,6 +638,7 @@
 		}
 		{
 			dependencies: ["1AD9BC3FCA4C5317"]
+			icon: "minecraft:oak_sapling"
 			id: "01653E8674F24617"
 			rewards: [{
 				auto: "enabled"

@@ -23,7 +23,7 @@ function LivingBeefWellingtonChestCavityUpdate(customData, event, organItem, org
         let pItem = ccInv.getStackInSlot(slotDefinition.getId())
         if (pItem.isEmpty() || !pItem.isEdible()) continue
         let foodProperties = pItem.getFoodProperties(entity)
-        if (foodProperties.getSaturationModifier() >= 1) continue
+        if (foodProperties.getSaturationModifier() * 2 >= 1) continue
         value += 1
     }
     if (value != 0) {

@@ -87,7 +87,7 @@
 		{
 			dependencies: ["473AA9B909ED8EB0"]
 			description: [
-				"&6请您一定要使用您的心灵来观察和思考这个世界&r，只有这样我们才能&6顺利的完成预先设计好的游戏流程&r。"
+				"很抱歉上个任务使用了有误导性的图标作为奖励——这是我给您的一个警示——&6请您一定要使用您的心灵来观察和思考这个世界&r，只有这样我们才能&6顺利的完成预先设计好的游戏流程&r。"
 				""
 				"现在我们应该步入正轨了，请&6寻找一棵树木&r，长按左键采集它下方的&6原木&r，并拾取该物品至物品栏中。"
 				""
@@ -1078,6 +1078,42 @@
 			title: "见证者"
 			x: 6.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["4A1C6C6150E32CEE"]
+			description: [
+				"在这个世界中，似乎有大量的&6概念&r被具象化为了另一种形式——比如说一种&6饰品&r。"
+				""
+				"这种名为誓言的饰品即是其中一类，您可以轻松制作名为&6永恒的誓言&r的誓言饰品。"
+				""
+				"誓言饰品具有着&6扭曲游戏规则&r的作用，往往能对游戏流程发挥着举足轻重的作用。"
+			]
+			id: "7E16877C14CFD254"
+			rewards: [
+				{
+					id: "5069F2A6FE48A3B6"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 1
+					icon: "kubejs:eternal_oath"
+					id: "0069746500E68AE5"
+					ignore_reward_blocking: true
+					isPermanent: true
+					slot: "oath"
+					type: "maa:curios_slot"
+				}
+			]
+			subtitle: "概念具象化"
+			tasks: [{
+				id: "27E28F7234FC01A5"
+				item: "kubejs:eternal_oath"
+				type: "item"
+			}]
+			title: "名为誓言的胸针"
+			x: 3.0d
+			y: 13.5d
 		}
 	]
 	title: "壹"
