@@ -15,8 +15,9 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    player.tell(server.persistentData.getInt('eternalWinterCounter'))
-    MAAUtils.setEternalWinterEnabled(true)
+    player.tell(server.persistentData.getInt('isEternalWinter'))
+    player.tell(MAAUtils.shouldSnowContinuously())
+    player.sendData('modify_moon', {})
     // player.give(Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[18,22,20],Deployed:0b,File:"苹果乐.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE"}'))
     // SetDaySpeed(1)
     // SetNightSpeed(1)

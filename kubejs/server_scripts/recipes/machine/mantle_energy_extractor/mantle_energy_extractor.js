@@ -137,6 +137,7 @@ ServerEvents.recipes(event => {
             /**@type {Internal.ServerLevel} */
             const level = block.getLevel()
             const server = level.getServer()
+            if (HadUnderEternalWinter(server)) return ctx.error('')
             const data = machine.getData()
             let crystal = machine.getItemStored('input_crystal')
             if (!crystal || !crystal.is('kubejs:source_focus_crystal')) return ctx.error('')
@@ -195,16 +196,15 @@ function validMantleInputTarget(input, depth) {
  * @returns {String}
  */
 function getBiome2LowerTemperature(baseTemp, downFall) {
-    console.log(baseTemp, downFall)
     if (baseTemp >= 2) {
         return 'minecraft:stony_peaks' // 1.0, 0.3
     }
     if (downFall <= 0.5) {
         if (baseTemp >= 1) {
-            return RandomGet(['minecraft:plains', 'minecraft:sunflower_plains'])
+            return 'minecraft:plains'
         } else if (baseTemp >= 0.5) {
             return RandomGet(['minecraft:stony_shore', 'minecraft:windswept_forest', 'minecraft:windswept_hills'])
-        } else if (baseTemp >= 0) {
+        } else if (baseTemp > 0) {
             return 'minecraft:snowy_plains'
         }
     } else {
@@ -212,7 +212,7 @@ function getBiome2LowerTemperature(baseTemp, downFall) {
             return RandomGet(['minecraft:forest', 'minecraft:swamp', 'minecraft:birch_forest'])
         } else if (baseTemp >= 0.5) {
             return RandomGet(['minecraft:old_growth_spruce_taiga', 'minecraft:old_growth_spruce_taiga', 'minecraft:taiga'])
-        } else if (baseTemp >= 0) {
+        } else if (baseTemp > 0) {
             return 'minecraft:snowy_plains'
         }
     }

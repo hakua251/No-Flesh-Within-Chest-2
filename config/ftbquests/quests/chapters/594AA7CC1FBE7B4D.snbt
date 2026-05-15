@@ -3,8 +3,66 @@
 	default_quest_shape: ""
 	filename: "594AA7CC1FBE7B4D"
 	group: ""
+	hide_quest_until_deps_complete: true
 	icon: "minecraft:oak_sapling"
 	id: "594AA7CC1FBE7B4D"
+	images: [
+		{
+			dependency: "2D33BCD423DAC69A"
+			height: 40.0d
+			image: "kubejs:textures/gui/tasks/chapter_0/tree_line.png"
+			order: -1
+			rotation: 0.0d
+			width: 27.86d
+			x: 0.0d
+			y: -15.8d
+		}
+		{
+			dependency: "021D54858D50E409"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/chapter_0/tree_frame.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -43.0d
+		}
+		{
+			dependency: "1AD9BC3FCA4C5317"
+			height: 2.03d
+			image: "kubejs:textures/gui/tasks/chapter_0/line.png"
+			rotation: 0.0d
+			width: 0.1d
+			x: 0.0d
+			y: -44.5d
+		}
+		{
+			dependency: "021D54858D50E409"
+			height: 2.03d
+			image: "kubejs:textures/gui/tasks/chapter_0/line.png"
+			rotation: 0.0d
+			width: 0.1d
+			x: 0.0d
+			y: -41.5d
+		}
+		{
+			dependency: "021D54858D50E409"
+			height: 5.0d
+			image: "kubejs:textures/gui/tasks/chapter_0/code_1.png"
+			rotation: 0.0d
+			width: 9.753d
+			x: 6.5d
+			y: -43.5d
+		}
+		{
+			dependency: "2D33BCD423DAC69A"
+			height: 30.0d
+			image: "kubejs:textures/gui/tasks/chapter_0/code_2.png"
+			rotation: 0.0d
+			width: 9.36d
+			x: 6.5d
+			y: 3.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -36,8 +94,8 @@
 				type: "checkmark"
 			}]
 			title: "&6生长痛：大世界计算机&r"
-			x: -6.0d
-			y: -4.5d
+			x: -2.65d
+			y: -18.85d
 		}
 		{
 			dependencies: [
@@ -73,8 +131,8 @@
 				type: "checkmark"
 			}]
 			title: "&6生长痛：重现黄金乡&r"
-			x: -6.0d
-			y: -2.5d
+			x: -0.2d
+			y: -23.45d
 		}
 		{
 			dependencies: [
@@ -88,8 +146,17 @@
 				"383B69FA2554F232"
 			]
 			description: ["&7** 何为目的、何为终点、何为生长的巅峰 **&r"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_0/time_nutrients.png"
+				}
+			}
 			id: "021D54858D50E409"
 			incompatible: ["32C2FE99D19140B3"]
+			shape: "none"
+			size: 3.0d
 			subtitle: "以时间为最终的养料"
 			tasks: [{
 				elapsedTime: 300L
@@ -99,8 +166,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "&6生长痛：浇灌时间养料&r"
-			x: 4.5d
-			y: 0.5d
+			x: 0.0d
+			y: -39.5d
 		}
 		{
 			dependencies: [
@@ -154,8 +221,8 @@
 				type: "checkmark"
 			}]
 			title: "&6生长痛：胸腔扩容&r"
-			x: -6.0d
-			y: -6.5d
+			x: -5.6d
+			y: -17.75d
 		}
 		{
 			dependencies: [
@@ -206,8 +273,8 @@
 				type: "checkmark"
 			}]
 			title: "&6生长痛：创世工艺&r"
-			x: -6.0d
-			y: -0.5d
+			x: 2.2d
+			y: -18.9d
 		}
 		{
 			dependencies: [
@@ -254,8 +321,8 @@
 				type: "checkmark"
 			}]
 			title: "&6生长痛：罐装美味&r"
-			x: -6.0d
-			y: 1.5d
+			x: -1.05d
+			y: -14.4d
 		}
 		{
 			dependencies: [
@@ -296,8 +363,8 @@
 				type: "checkmark"
 			}]
 			title: "&6生长痛：地幔燃料&r"
-			x: -6.0d
-			y: 3.5d
+			x: 4.0d
+			y: -15.9d
 		}
 		{
 			dependencies: [
@@ -332,8 +399,8 @@
 				type: "checkmark"
 			}]
 			title: "&6生长痛：永恒门扉&r"
-			x: -6.0d
-			y: 5.5d
+			x: 5.65d
+			y: -18.9d
 		}
 		{
 			dependencies: [
@@ -372,8 +439,8 @@
 				type: "checkmark"
 			}]
 			title: "&6生长痛：体外培养&r"
-			x: -6.0d
-			y: 7.5d
+			x: 3.6d
+			y: -10.75d
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
@@ -390,8 +457,8 @@
 				type: "item"
 			}]
 			title: "&6生长痛：获取原初之心&r"
-			x: 0.0d
-			y: -6.5d
+			x: -10.95d
+			y: -30.45d
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
@@ -404,8 +471,8 @@
 				type: "item"
 			}]
 			title: "&6生长痛：制造缤纷奇点&r"
-			x: 0.0d
-			y: -4.5d
+			x: -8.65d
+			y: -27.85d
 		}
 		{
 			dependencies: [
@@ -452,8 +519,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&6生长痛：探秘无尽奇迹&r"
-			x: 0.0d
-			y: -2.5d
+			x: -5.6d
+			y: -28.75d
 		}
 		{
 			dependencies: [
@@ -527,8 +594,8 @@
 				type: "item"
 			}]
 			title: "&6生长痛：锚定原初之矛&r"
-			x: 0.0d
-			y: -0.5d
+			x: -3.45d
+			y: -31.95d
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
@@ -553,8 +620,8 @@
 				type: "item"
 			}]
 			title: "&6生长痛：巡回源头之源&r"
-			x: 0.0d
-			y: 5.5d
+			x: 8.95d
+			y: -25.45d
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
@@ -574,8 +641,8 @@
 				type: "maa:kube"
 			}]
 			title: "&6生长痛：满足暴食之欲&r"
-			x: 0.0d
-			y: 1.5d
+			x: 4.05d
+			y: -30.2d
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
@@ -591,8 +658,8 @@
 				type: "maa:astages"
 			}]
 			title: "&6生长痛：跨越永恒寒冬&r"
-			x: 0.0d
-			y: 3.5d
+			x: 6.7d
+			y: -28.5d
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
@@ -609,12 +676,18 @@
 				type: "item"
 			}]
 			title: "&6生长痛：培育原初骨笼&r"
-			x: 0.0d
-			y: 7.5d
+			x: 11.05d
+			y: -28.75d
 		}
 		{
 			dependencies: ["5C5A7285C49BE172"]
-			icon: "minecraft:melon_seeds"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_0/growth_pain.png"
+				}
+			}
 			id: "2D33BCD423DAC69A"
 			rewards: [{
 				auto: "no_toast"
@@ -623,6 +696,8 @@
 				title: "踏上成长之路"
 				type: "custom"
 			}]
+			shape: "none"
+			size: 3.0d
 			subtitle: "我们向上生长、学习、终与树同高"
 			tasks: [{
 				count: 1L
@@ -633,12 +708,18 @@
 				type: "maa:kube"
 			}]
 			title: "&6生长痛&r"
-			x: -9.0d
-			y: 0.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1AD9BC3FCA4C5317"]
-			icon: "minecraft:oak_sapling"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_0/tree.png"
+				}
+			}
 			id: "01653E8674F24617"
 			rewards: [{
 				auto: "enabled"
@@ -649,6 +730,8 @@
 				title: "终结吧，我们的冒险故事"
 				type: "maa:kube"
 			}]
+			shape: "none"
+			size: 3.0d
 			subtitle: "现在，由我来亲手重启冒险故事"
 			tasks: [{
 				count: 1L
@@ -659,8 +742,8 @@
 				type: "maa:kube_text_input"
 			}]
 			title: "&6生长到与树同高&r"
-			x: 8.5d
-			y: 0.5d
+			x: 0.0d
+			y: -46.5d
 		}
 		{
 			dependencies: ["021D54858D50E409"]
@@ -670,6 +753,7 @@
 				"&7**  正是因为读者的存在，所以才被赋予了意义 **&r"
 			]
 			id: "1AD9BC3FCA4C5317"
+			shape: "none"
 			subtitle: "是风，风吹过了枝头，席卷走了我的故事"
 			tasks: [{
 				consume_items: true
@@ -678,8 +762,8 @@
 				type: "item"
 			}]
 			title: "&6生长痛：献上终之见证&r"
-			x: 6.5d
-			y: 0.5d
+			x: 0.0d
+			y: -43.0d
 		}
 	]
 	title: "零"
