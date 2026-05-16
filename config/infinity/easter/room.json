@@ -15,9 +15,11 @@
       "kubejs:room/shop_7",
       "kubejs:room/shop_8",
       "kubejs:room/shop_9",
-      "kubejs:room/shop_10"
+      "kubejs:room/shop_10",
+      "kubejs:room/shop_11"
     ],
     "weights": [
+      1,
       1,
       1,
       1,

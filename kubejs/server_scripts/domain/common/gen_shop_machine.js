@@ -177,6 +177,8 @@ RegistryShopItemTraderType('create',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:mechanical_roller')], 50), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:mechanical_harvester')], 50), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:mechanical_plough')], 50), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:encased_fan')], 50), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:basin')], 50), 100)
 )
 
 RegistryShopItemTraderType('potion',
@@ -298,7 +300,7 @@ RegistryShopItemTraderType('blueprint',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[15,9,17],Deployed:0b,File:"schematic.small_house.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 200).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[18,22,20],Deployed:0b,File:"schematic.small_apple.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 325).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[22,13,15],Deployed:0b,File:"schematic.laterano_sweets_house.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 400).setTradeLimitRule(1), 100)
-        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[41,36,21],Deployed:0b,File:"schematic.create_workshop.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 6666).setTradeLimitRule(1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[41,36,21],Deployed:0b,File:"schematic.create_workbase.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 6666).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[32,17,16],Deployed:0b,File:"schematic.create_bar.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 1200).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[20,47,20],Deployed:0b,File:"schematic.lighthouse.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 250).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[27,30,27],Deployed:0b,File:"schematic.cherry_pavilion.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 325).setTradeLimitRule(1), 100)
@@ -307,8 +309,31 @@ RegistryShopItemTraderType('blueprint',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[48,58,48],Deployed:0b,File:"schematic.defiled_monastery.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 2500).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[30,30,31],Deployed:0b,File:"schematic.hanami_pavilion.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 500).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[39,33,59],Deployed:0b,File:"schematic.honey_villa.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 1100).setTradeLimitRule(1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[19,13,31],Deployed:0b,File:"schematic.create_workshop.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 1800).setTradeLimitRule(1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[45,36,45],Deployed:0b,File:"schematic.chocolate_cake_shop.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 1000).setTradeLimitRule(1), 100)
+        
 )
 
+RegistryShopItemTraderType('graveyard',
+    new WeightRandomModel()
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('graveyard:corruption')], 5), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('minecraft:bone')], 3), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('graveyard:sarcophagus')], 20), 50)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('minecraft:rotten_flesh')], 1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('minecraft:golden_apple')], 10), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('graveyard:skull_pile')], 5), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('graveyard:leaning_skeleton')], 5), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('minecraft:sculk_catalyst')], 50), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('minecraft:echo_shard')], 20), 100)
+)
 
-
-
+RegistryShopItemTraderType('tetra',
+    new WeightRandomModel()
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:geode')], 50), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:vent_plate')], 300), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:planar_stabilizer')], 300), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:thermal_cell', '{Damage:0}')], 300), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:lubricant_dispenser')], 300), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:combustion_chamber')], 300), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:forged_workbench')], 300), 100)
+)

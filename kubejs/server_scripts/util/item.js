@@ -158,7 +158,7 @@ function GetModularItemMineSpeed(stack) {
 
 /**
  * @param {Internal.LivingEntity} entity 
- * @returns {ItemStack}
+ * @returns {Internal.ItemStack}
  */
 function GetEntityHeadItem(entity) {
     if (entity.isPlayer) {
@@ -169,7 +169,15 @@ function GetEntityHeadItem(entity) {
     }
     return null
 }
-
+/**
+ * @param {string} playerName 
+ * @returns {Internal.ItemStack}
+ */
+function GetPlayerHeadItem(playerName) {
+    let nbt = new $CompoundTag()
+    nbt.putString('SkullOwner', playerName)
+    return Item.of('minecraft:player_head', nbt)
+}
 /**
  * 
  * @param {Player} player
