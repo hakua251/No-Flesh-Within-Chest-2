@@ -91,8 +91,8 @@
 				type: "maa:kube_text_input"
 			}]
 			title: "前人所埋藏宝藏之一"
-			x: 9.5d
-			y: -2.0d
+			x: 9.9d
+			y: -9.65d
 		}
 		{
 			dependencies: ["1B4DAFA046EB8F20"]
@@ -161,8 +161,8 @@
 				type: "checkmark"
 			}]
 			title: "曾经为王的证明"
-			x: 3.5d
-			y: 4.0d
+			x: -5.8d
+			y: 8.85d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
@@ -186,8 +186,8 @@
 				type: "maa:kube_text_input"
 			}]
 			title: "前人所埋藏宝藏之一"
-			x: 8.0d
-			y: -3.0d
+			x: -4.8d
+			y: -8.7d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
@@ -211,8 +211,8 @@
 				type: "maa:kube_text_input"
 			}]
 			title: "前人所埋藏宝藏之一"
-			x: 8.5d
-			y: -0.5d
+			x: 14.8d
+			y: -1.0d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
@@ -235,8 +235,8 @@
 				type: "checkmark"
 			}]
 			title: "荣誉的象征"
-			x: 5.5d
-			y: 4.0d
+			x: 0.1d
+			y: 10.4d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
@@ -256,8 +256,8 @@
 				type: "checkmark"
 			}]
 			title: "在最为华贵的角落"
-			x: 7.5d
-			y: 3.5d
+			x: 8.95d
+			y: 11.8d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
@@ -276,8 +276,8 @@
 				title: "什么味道"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -13.65d
+			y: 9.8d
 		}
 	]
 	title: "外传：被尊重者"
