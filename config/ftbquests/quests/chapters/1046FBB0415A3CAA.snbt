@@ -125,7 +125,7 @@
 				stat: "minecraft:total_world_time"
 				title: "行程至此"
 				type: "stat"
-				value: 24000
+				value: 720000
 			}]
 			x: 0.0d
 			y: 0.0d

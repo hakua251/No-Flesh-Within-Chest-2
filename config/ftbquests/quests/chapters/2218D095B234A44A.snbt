@@ -330,6 +330,7 @@
 				""
 				"简单来说，在一般情况下，在佩戴该器官的情况下，您有50%的概率会获得额外战利品，如果您的幸运越高，则会有更高的概率获得额外战利品。"
 			]
+			hide_until_deps_complete: true
 			id: "7CCB3B294B86F7AA"
 			rewards: [{
 				id: "71FE5097D7BCC88B"
@@ -566,6 +567,7 @@
 				""
 				"该生物材料能够有效分解各种物质，因此极适合用于制作一种特殊的生物设备——&6分解体&r。"
 			]
+			hide_until_deps_complete: true
 			id: "70010BB6C23E4927"
 			rewards: [{
 				id: "7EF42C8AB22D0443"

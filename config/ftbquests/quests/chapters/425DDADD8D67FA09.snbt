@@ -16,7 +16,6 @@
 			y: -8.0d
 		}
 		{
-			click: "command:/ponder create:basin"
 			dependency: "560A05CD905A3EBA"
 			height: 4.0d
 			image: "kubejs:textures/gui/tasks/tutorial_machine/basin.png"
@@ -49,8 +48,7 @@
 		{
 			height: 14.9d
 			image: "kubejs:textures/gui/tasks/tutorial_chestcavity/frame.png"
-			order: -1
-			rotation: 0.0d
+			rotation: -1.0d
 			width: 30.0d
 			x: -5.5d
 			y: 1.0d
@@ -74,6 +72,18 @@
 			width: 1.0d
 			x: 6.0d
 			y: -8.0d
+		}
+		{
+			click: "command:/ponder create:basin"
+			dependency: "560A05CD905A3EBA"
+			height: 1.0d
+			hover: ["点击以思索"]
+			image: "kubejs:textures/gui/tasks/common/ponder_icon.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 2.0d
 		}
 	]
 	order_index: 1

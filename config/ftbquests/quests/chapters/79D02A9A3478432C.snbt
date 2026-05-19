@@ -278,12 +278,29 @@
 				type: "item"
 			}]
 			subtitle: "我需要逆向分析原料"
-			tasks: [{
-				amount: 100000L
-				fluid: "minecraft:lava"
-				id: "05B70CD6573290F0"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "0AD06B0A31130A99"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 411812005653156080L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 100000L
+					fluid: "minecraft:lava"
+					id: "05B70CD6573290F0"
+					type: "fluid"
+				}
+			]
 			title: "逆向分析熔岩"
 			x: 3.0d
 			y: 0.0d
@@ -1395,12 +1412,29 @@
 				type: "custom"
 			}]
 			subtitle: "平衡地幔能之法"
-			tasks: [{
-				amount: 10000000L
-				fluid: "minecraft:lava"
-				id: "700E798626A15D5C"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "1706CEEB804CBE8A"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 8074524799002565980L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 10000000L
+					fluid: "minecraft:lava"
+					id: "700E798626A15D5C"
+					type: "fluid"
+				}
+			]
 			title: "&6地幔能平衡：熔岩&r"
 			x: 24.5d
 			y: 31.0d

@@ -792,23 +792,40 @@
 			}]
 			shape: "circle"
 			subtitle: "为了酿造药水"
-			tasks: [{
-				amount: 8000L
-				fluid: "create:potion"
-				icon: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
+			tasks: [
+				{
+					id: "22BF23DCD1C749A9"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 4915979782985166711L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 8000L
+					fluid: "create:potion"
+					icon: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:awkward"
+						}
+					}
+					id: "443911910FD52F77"
+					nbt: {
+						Bottle: "REGULAR"
 						Potion: "minecraft:awkward"
 					}
+					type: "fluid"
 				}
-				id: "443911910FD52F77"
-				nbt: {
-					Bottle: "REGULAR"
-					Potion: "minecraft:awkward"
-				}
-				type: "fluid"
-			}]
+			]
 			title: "粗制药水"
 			x: -0.5d
 			y: 10.0d
@@ -878,23 +895,40 @@
 			}]
 			shape: "circle"
 			subtitle: "为了自动化药水"
-			tasks: [{
-				amount: 8000L
-				fluid: "create:potion"
-				icon: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
+			tasks: [
+				{
+					id: "7C2165011ADDCF48"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 2659268041790799273L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 8000L
+					fluid: "create:potion"
+					icon: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					id: "24E79E31D17D3DA9"
+					nbt: {
+						Bottle: "REGULAR"
 						Potion: "minecraft:healing"
 					}
+					type: "fluid"
 				}
-				id: "24E79E31D17D3DA9"
-				nbt: {
-					Bottle: "REGULAR"
-					Potion: "minecraft:healing"
-				}
-				type: "fluid"
-			}]
+			]
 			title: "治疗药水"
 			x: -0.5d
 			y: 3.5d
@@ -960,23 +994,40 @@
 			}]
 			shape: "circle"
 			subtitle: "为了更多的自动化"
-			tasks: [{
-				amount: 8000L
-				fluid: "create:potion"
-				icon: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
+			tasks: [
+				{
+					id: "43BEE54C54EE9F26"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 6030100188824512594L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 8000L
+					fluid: "create:potion"
+					icon: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:harming"
+						}
+					}
+					id: "53AF382C42E6A852"
+					nbt: {
+						Bottle: "REGULAR"
 						Potion: "minecraft:harming"
 					}
+					type: "fluid"
 				}
-				id: "53AF382C42E6A852"
-				nbt: {
-					Bottle: "REGULAR"
-					Potion: "minecraft:harming"
-				}
-				type: "fluid"
-			}]
+			]
 			title: "伤害药水"
 			x: -0.5d
 			y: 2.0d
@@ -1099,6 +1150,13 @@
 				""
 				"力量药水可以通过&6取奶&r对应生物获得，如果运气好的话，您可以尝试熊猫或者北极熊这种相对比较温顺的动物。"
 			]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:strength"
+				}
+			}
 			id: "2E93CEFF3FD4CD2F"
 			rewards: [{
 				id: "505315304CCC35BC"
@@ -1107,23 +1165,40 @@
 			}]
 			shape: "circle"
 			subtitle: "为了红石自动化"
-			tasks: [{
-				amount: 8000L
-				fluid: "create:potion"
-				icon: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
+			tasks: [
+				{
+					id: "4B1A5F21944CCBF3"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 7665289901233695705L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 8000L
+					fluid: "create:potion"
+					icon: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strength"
+						}
+					}
+					id: "6A60948D7F6C6BD9"
+					nbt: {
+						Bottle: "REGULAR"
 						Potion: "minecraft:strength"
 					}
+					type: "fluid"
 				}
-				id: "6A60948D7F6C6BD9"
-				nbt: {
-					Bottle: "REGULAR"
-					Potion: "minecraft:strength"
-				}
-				type: "fluid"
-			}]
+			]
 			title: "力量药水"
 			x: -0.5d
 			y: 13.0d
@@ -1262,6 +1337,13 @@
 				""
 				"当然，您也可以选择使用金胡萝卜酿造，这两者成本基本一致，看您对局势的具体判断。"
 			]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:night_vision"
+				}
+			}
 			id: "5A67CF3EB894A6E2"
 			rewards: [{
 				id: "0B394CA3BAAD3592"
@@ -1270,23 +1352,40 @@
 			}]
 			shape: "circle"
 			subtitle: "为了荧石"
-			tasks: [{
-				amount: 8000L
-				fluid: "create:potion"
-				icon: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
+			tasks: [
+				{
+					id: "39364E9CD4017234"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 8993598540176111105L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 8000L
+					fluid: "create:potion"
+					icon: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:night_vision"
+						}
+					}
+					id: "7CCFAE38DFAB3601"
+					nbt: {
+						Bottle: "REGULAR"
 						Potion: "minecraft:night_vision"
 					}
+					type: "fluid"
 				}
-				id: "7CCFAE38DFAB3601"
-				nbt: {
-					Bottle: "REGULAR"
-					Potion: "minecraft:night_vision"
-				}
-				type: "fluid"
-			}]
+			]
 			title: "夜视药水"
 			x: -0.5d
 			y: 11.5d
@@ -1328,12 +1427,29 @@
 			}]
 			shape: "circle"
 			subtitle: "为了精制黄铜"
-			tasks: [{
-				amount: 8000L
-				fluid: "createdieselgenerators:ethanol"
-				id: "073B1808976B268B"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "0713D11EA13C7E2E"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 521036607070611083L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 8000L
+					fluid: "createdieselgenerators:ethanol"
+					id: "073B1808976B268B"
+					type: "fluid"
+				}
+			]
 			title: "乙醇生产"
 			x: 4.0d
 			y: -2.0d
@@ -1575,12 +1691,29 @@
 			}]
 			shape: "circle"
 			subtitle: "为了柴油"
-			tasks: [{
-				amount: 8000L
-				fluid: "createdieselgenerators:crude_oil"
-				id: "053714E3E3020B35"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "696B63E93B60852A"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 375792062907419445L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 8000L
+					fluid: "createdieselgenerators:crude_oil"
+					id: "053714E3E3020B35"
+					type: "fluid"
+				}
+			]
 			title: "原油开采"
 			x: 6.0d
 			y: 18.5d
@@ -1601,12 +1734,29 @@
 			}]
 			shape: "circle"
 			subtitle: "为了随机刻弹簧"
-			tasks: [{
-				amount: 8000L
-				fluid: "createdieselgenerators:diesel"
-				id: "20DA9375E2C0963F"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "0803E0DFB37112C4"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 2367366688661345855L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 8000L
+					fluid: "createdieselgenerators:diesel"
+					id: "20DA9375E2C0963F"
+					type: "fluid"
+				}
+			]
 			title: "柴油生产"
 			x: 12.5d
 			y: 14.0d
@@ -1868,23 +2018,40 @@
 			}]
 			shape: "circle"
 			subtitle: "为了谕示门"
-			tasks: [{
-				amount: 8000L
-				fluid: "create:potion"
-				icon: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
+			tasks: [
+				{
+					id: "38763A007AF6E95B"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 5311359571391507527L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 8000L
+					fluid: "create:potion"
+					icon: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					id: "49B5BD63AF296C47"
+					nbt: {
+						Bottle: "REGULAR"
 						Potion: "minecraft:fire_resistance"
 					}
+					type: "fluid"
 				}
-				id: "49B5BD63AF296C47"
-				nbt: {
-					Bottle: "REGULAR"
-					Potion: "minecraft:fire_resistance"
-				}
-				type: "fluid"
-			}]
+			]
 			title: "抗火药水"
 			x: -0.5d
 			y: 0.5d

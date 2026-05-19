@@ -196,12 +196,29 @@
 				type: "item"
 			}]
 			subtitle: "体外组织必备的培养环境"
-			tasks: [{
-				amount: 1000L
-				fluid: "kubejs:nutrients_fluid"
-				id: "60F8F2EDAFE12304"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "660869D90E5198A5"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 6987601924537262852L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 1000L
+					fluid: "kubejs:nutrients_fluid"
+					id: "60F8F2EDAFE12304"
+					type: "fluid"
+				}
+			]
 			title: "营养素生产"
 			x: 6.4d
 			y: -2.6d
@@ -382,12 +399,29 @@
 				type: "item"
 			}]
 			subtitle: "未知意义的培养素"
-			tasks: [{
-				amount: 1000L
-				fluid: "kubejs:rose_nutrients_fluid"
-				id: "789E7FDD5D5C663D"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "01739E5F325FC108"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 8691524919602472509L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 1000L
+					fluid: "kubejs:rose_nutrients_fluid"
+					id: "789E7FDD5D5C663D"
+					type: "fluid"
+				}
+			]
 			title: "特殊培养素：玫瑰"
 			x: 21.5d
 			y: 0.2d
@@ -720,12 +754,29 @@
 				type: "item"
 			}]
 			subtitle: "用于培育力量相关肿瘤"
-			tasks: [{
-				amount: 1000L
-				fluid: "kubejs:rotten_nutrients_fluid"
-				id: "687E18D339EAA6A0"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "66F0FEFDA971E27B"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 7529482922498893472L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 1000L
+					fluid: "kubejs:rotten_nutrients_fluid"
+					id: "687E18D339EAA6A0"
+					type: "fluid"
+				}
+			]
 			title: "特殊培养素：腐烂"
 			x: 19.9d
 			y: -1.4d
@@ -940,12 +991,29 @@
 				type: "item"
 			}]
 			subtitle: "健康的营养素"
-			tasks: [{
-				amount: 1000L
-				fluid: "create:honey"
-				id: "4F3495952922D332"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "01A3455CB4E69743"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 5707351095658074930L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 1000L
+					fluid: "create:honey"
+					id: "4F3495952922D332"
+					type: "fluid"
+				}
+			]
 			title: "特殊培养素：蜂蜜"
 			x: 18.1d
 			y: -2.7d
@@ -968,12 +1036,29 @@
 				type: "item"
 			}]
 			subtitle: "剧毒物质"
-			tasks: [{
-				amount: 1000L
-				fluid: "minecraft:milk"
-				id: "5E1620645E1208E0"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "17FB523C201B816A"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 6779641904499919072L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 1000L
+					fluid: "minecraft:milk"
+					id: "5E1620645E1208E0"
+					type: "fluid"
+				}
+			]
 			title: "特殊培养素：牛奶"
 			x: 15.8d
 			y: -2.7d
@@ -996,12 +1081,29 @@
 				type: "item"
 			}]
 			subtitle: "酸性环境"
-			tasks: [{
-				amount: 1000L
-				fluid: "biomancy:acid"
-				id: "08DC94523BB7B1C4"
-				type: "fluid"
-			}]
+			tasks: [
+				{
+					id: "3AD00AC46F0E7B57"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 638548328089891268L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					amount: 1000L
+					fluid: "biomancy:acid"
+					id: "08DC94523BB7B1C4"
+					type: "fluid"
+				}
+			]
 			title: "特殊培养素：酸液"
 			x: 13.9d
 			y: -1.9d

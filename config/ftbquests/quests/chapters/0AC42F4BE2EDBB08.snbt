@@ -533,11 +533,11 @@
 			description: [
 				"某些时候，我可能需要您&6提交流体&r来完成任务，作为一类相对麻烦的任务类型，您可以按照以下步骤来完成流体的提交，同时这可能是成本最低的提交方式。"
 				""
-				"&71. &r 制造&6任务屏幕&r，将任务屏幕放置在任意位置，右键任务屏幕打开界面，选择当前您需要提交的流体任务。"
+				"&71.&r 在任务中领取对应的&6任务屏幕&r，我会在此类任务中为您发放特殊的&6用于任务提交的特殊任务屏幕&r，其可以被视作一个用于提交物品/流体的接口放置在世界上。"
 				""
-				"&72.&r  在选择完毕后，将&6水龙头&r放置在&6任务屏幕上方&r，将&6流体源&r/&6装有流体的储罐&r放置在水龙头的另一端。如果是&6浇筑口&r则也可以通过类似方法使用，在此不赘述。"
+				"&72.&r  在领取完毕后，将&6水龙头&r放置在&6任务屏幕上方&r，将&6流体源&r/&6装有流体的储罐&r放置在水龙头的另一端。"
 				""
-				"&73.&r 打开水龙头，如果任务是可进行的，则流体会被缓慢的抽取到任务屏幕中，用于提交任务。 "
+				"&73.&r 打开水龙头，如果任务是可进行的，则流体会被抽取到任务屏幕中，即可完成该任务。 "
 			]
 			icon: "minecraft:lava_bucket"
 			id: "07EF7BB4192A11D0"
@@ -549,42 +549,22 @@
 			subtitle: "流体检测类任务"
 			tasks: [
 				{
+					id: "24B832A70D8B8FAF"
+					title: "点此获取&6特制任务屏幕"
+					type: "maa:claim_item"
+				}
+				{
+					icon: "supplementaries:faucet"
+					id: "0FC38646311F05C3"
+					item: "supplementaries:faucet"
+					type: "item"
+				}
+				{
 					amount: 1000L
 					fluid: "minecraft:lava"
 					id: "783EED89DD910463"
 					title: "一桶岩浆"
 					type: "fluid"
-				}
-				{
-					id: "6BD375E9A4FBFF4E"
-					item: "ftbquests:screen_1"
-					type: "item"
-				}
-				{
-					icon: "supplementaries:faucet"
-					id: "0FC38646311F05C3"
-					item: {
-						Count: 1
-						id: "itemfilters:and"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "supplementaries:faucet"
-								}
-								{
-									Count: 1b
-									id: "tconstruct:seared_faucet"
-								}
-								{
-									Count: 1b
-									id: "tconstruct:scorched_faucet"
-								}
-							]
-						}
-					}
-					title: "水龙头或浇筑口"
-					type: "item"
 				}
 			]
 			title: "将岩浆带回家"
@@ -843,6 +823,7 @@
 				""
 				"&6在此期间，请您耐心进行世界其他内容的探索，我会尽可能辅佐您完成这个冒险故事，直到我的程序终结之时。&r"
 			]
+			hide_until_deps_complete: true
 			icon: "supplementaries:hourglass"
 			id: "5417CA220CCAE3C5"
 			rewards: [{
