@@ -61,12 +61,20 @@
 			x: -30.0d
 			y: -1.5d
 		}
+		{
+			height: 3.5d
+			image: "kubejs:textures/gui/tasks/chestcavity_expansion/title.png"
+			rotation: 0.0d
+			width: 46.15d
+			x: -11.0d
+			y: 9.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["19E83624556F5D0A"]
+			dependencies: ["46E78442AD5DB22E"]
 			description: [
 				"为了进一步探索生物技术，我们需要制作一些&6特殊的药剂&r。"
 				""

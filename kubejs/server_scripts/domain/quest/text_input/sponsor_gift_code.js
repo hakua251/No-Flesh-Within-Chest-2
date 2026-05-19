@@ -434,7 +434,7 @@ RegisterSponsorGiftCode('认知偏差认知偏认知认', (event) => {
     player.give(Item.of('minecraft:potion', "{Potion:'potioncore:lightning',display:{Name:'{\"text\":\"§l§e闪电充能球\"}'}}").enchant('minecraft:sharpness', 3))
     player.give(Item.of('minecraft:blue_ice', "{display:{Name:'{\"text\":\"§l§3冰霜充能球\"}'}}").enchant('minecraft:protection', 2))
     player.give(Item.of('minecraft:ender_pearl', "{display:{Name:'{\"text\":\"§l§5黑暗充能球\"}'}}").enchant('minecraft:sharpness', 6))
-    player.give(Item.of('minecraft:glass', "{display:{Name:'{\"text\":\"§l§7玻璃充能球\"}'}}").enchant('minecraft:sharpness', 4))
+    player.give(Item.of('minecraft:glass', "{display:{Name:'{\"text\":\"§l§7玻璃充能球\"}'}}").enchant('minecraft:sweeping', 4))
     player.give(GetPlayerHeadItem('YeYu_YanMu'))
 })
 RegisterSponsorGiftCode('a helping hand', (event) => {
@@ -505,4 +505,125 @@ RegisterSponsorGiftCode('全村最好的开胸器', (event) => {
     const player = event.player
     player.give(Item.of('chestcavity:chest_opener', "{display:{Name:'{\"text\":\"全村最好的开胸器\"}'}}").enchant('chestcavity:safe_surgery', 1).enchant('chestcavity:painless_surgery', 1).enchant('chestcavity:advance_surgery', 5))
     player.give(GetPlayerHeadItem('Darling000000'))
+})
+RegisterSponsorGiftCode('神临', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:diamond_sword', `{Unbreakable:1b,display:{Name:'{\"text\":\"§c§o寰宇支配之剑\"}',Lore:['{"text":"在必要时，该武器的攻击力会提升至敌人最大血量的100%","color":"gray"}']}}`))
+    player.give(Item.of('minecraft:enchanted_golden_apple', 2))
+    player.give(GetPlayerHeadItem('jiuli_123'))
+})
+RegisterSponsorGiftCode('脆骨症2明天出', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:written_book', '{author:"MC_jiaJ1A",pages:[\'{"text":"关注YoruNina谢谢喵，谢谢你喵，真的谢谢你喵，喵♥️。"}\'],title:"YoruNina单推人"}'))
+    player.give(GetPlayerHeadItem('MC_jiaJ1A'))
+})
+RegisterSponsorGiftCode('是啊吃什么', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:golden_carrot'))
+    player.give(Item.of('minecraft:dragon_breath'))
+    player.give(GetPlayerHeadItem('Huli_NotFound'))
+})
+RegisterSponsorGiftCode('1024', (event) => {
+    const player = event.player
+    player.give(Item.of('create:rose_quartz', 32))
+    player.give(GetPlayerHeadItem('YuZH1024'))
+})
+RegisterSponsorGiftCode('我不是带师', (event) => {
+    const player = event.player
+    player.give(Item.of('create:wrench', '{AttributeModifiers:[{Amount:7.26f,AttributeName:"generic.luck",Name:"1779127623066",Slot:"mainhand",UUID:[I;-126419,101992,13849,-203984]}],Unbreakable:1,display:{Lore:[\'[{"text":"左旋，破坏齿轮排列逐渐崩坏的老旧律法。","italic":false,"color":"red"}]\',\'[{"text":"右旋，将崩坏的齿轮重新钉入秩序的轴心。","italic":false,"color":"aqua"}]\'],Name:\'[{"text":"带","italic":false,"color":"#ff808a"},{"text":"师","italic":false,"color":"#f28a96"},{"text":"的","italic":false,"color":"#e693a1"},{"text":"超","italic":false,"color":"#d99dad"},{"text":"极","italic":false,"color":"#cca6b9"},{"text":"无","italic":false,"color":"#c0b0c5"},{"text":"敌","italic":false,"color":"#b3b9d0"},{"text":"炫","italic":false,"color":"#a6c3dc"},{"text":"酷","italic":false,"color":"#99cce8"},{"text":"扳","italic":false,"color":"#8dd6f3"},{"text":"手","italic":false,"color":"#80dfff"}]\'}}'))
+    player.give(GetPlayerHeadItem('MiKu22333'))
+})
+RegisterSponsorGiftCode('咕咕嘎嘎', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:polar_bear_spawn_egg'))
+    player.give(Item.of('minecraft:totem_of_undying', 3))
+    player.give(GetPlayerHeadItem('yindun'))
+})
+RegisterSponsorGiftCode('年年有余岁岁平安', (event) => {
+    const player = event.player
+    player.give(Item.of('lightmanscurrency:coin_emerald', 2))
+})
+RegisterSponsorGiftCode('084company启动！', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:wooden_sword', `{Unbreakable:1b,display:{Name:'{\"text\":\"§c§o天杀星刀\"}',Lore:['{"text":"将天也斩杀。天、地、人，然后是我。此星，是为那个将所有的存在与时间视为一个整体，并将其斩断之人升起之星。","color":"gray"}']}}`))
+    player.give(Item.of('minecraft:potion', `{Potion:"minecraft:long_weakness",display:{Name:'{\"text\":\"李箱の力量\"}'}`))
+    player.give(GetPlayerHeadItem('kelaien234'))
+})
+RegisterSponsorGiftCode('Ezfic', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:skeleton_skull'))
+    player.give(Item.of('minecraft:bone', 2))
+    player.give(Item.of('minecraft:saddle', `{display:{Name:'{\"text\":\"黏鞍\"}',Lore:['{"text":"亡了，亡了，我没有史莱姆昂","color":"gray"}']}}`).enchant('minecraft:knockback', 2))
+    player.give(GetPlayerHeadItem('yeka114514'))
+})
+RegisterSponsorGiftCode('传奇厨师长', (event) => {
+    const player = event.player
+    player.give(Item.of('bakery:small_cooking_pot', '{Damage:0}'))
+    player.give(Item.of('bakery:bread_knife', '{Damage:0}'))
+    player.give(Item.of('bakery:rolling_pin', '{Damage:0}'))
+    player.give(Item.of('kaleidoscope_cookery:kitchen_shovel', '{Damage:0}'))
+    player.give(Item.of('kaleidoscope_cookery:netherite_kitchen_knife', '{Damage:0}'))
+    player.give(GetPlayerHeadItem('Wnagcai'))
+})
+RegisterSponsorGiftCode('sz嘿嘿', (event) => {
+    const player = event.player
+    player.give(Item.of('create:mechanical_saw', 17, "{display:{Name:'{\"text\":\"我会玩动力锯了\"}'}}"))
+    player.tell('我会玩动力锯了!!!!!!')
+    player.give(GetPlayerHeadItem('Steve_zhang'))
+})
+RegisterSponsorGiftCode('icebee152', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:trident', `{Damage:0,display:{Name:'{\"text\":\"随手抛弃的三叉戟其实是稀有度超高的绝世神器\"}',Lore:['{"text":"42062唯一指定icebee，致敬瓶子君在直播mc中为了孝敬圆石爹扔掉三叉戟","color":"gray"}']}}`).enchant('minecraft:loyalty', 3).enchant('minecraft:channeling', 1).enchant('minecraft:impaling', 5).enchant('minecraft:mending', 1).enchant('minecraft:unbreaking', 3))
+    player.give(GetPlayerHeadItem('celaier1'))
+})
+RegisterSponsorGiftCode('你懂机加工吗', (event) => {
+    const player = event.player
+    player.give(Item.of('create:wrench', "{display:{Name:'{\"text\":\"扳手之吻\"}'}}").enchant('minecraft:sharpness', 8).enchant('minecraft:knockback', 5))
+    player.tell('我身为一名机械师，随身带着一把扳手很合理吧')
+})
+RegisterSponsorGiftCode('大机器在哪里？大机器又离我们而去。', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:golden_sword', `{Unbreakable:1b,display:{Name:'{\"text\":\"§c§o不再炽热的黎明之剑\"}'}}`))
+    player.give(GetPlayerHeadItem('THXHRS'))
+})
+RegisterSponsorGiftCode('AMa-10', (event) => {
+    const player = event.player
+    player.give(Item.of('create:goggles', `{display:{Name:'{\"text\":\"灰质销钉\"}',Lore:['{"text":"我又该如何原谅你的背叛？ ——普瑞赛斯","color":"gray"}']}}`).enchant('minecraft:binding_curse', 1))
+    player.tell('我有多么失望。\n我又该如何原谅你的背叛？')
+    player.give(GetPlayerHeadItem('BenzenPenxil'))
+})
+RegisterSponsorGiftCode('胖宝宝哈基米', (event) => {
+    const player = event.player
+    const level = player.level
+    /**@type {Internal.Cat} */
+    let cat = level.createEntity('minecraft:cat')
+    cat.mergeNbt(`{variant:red,CustomName:'["小白手套"]',CustomNameVisible:1b,Health:114514,Attributes:[{Base:114514f},{Name:"generic.max_health",Base:114514f}],HandItems:[{id:crossbow,tag:{Charged:0b,Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:5s},{id:"minecraft:multishot",lvl:1s},{id:"minecraft:piercing",lvl:5s}],Unbreakable:1b,display:{Name:'{"text":"略猫区我和你们拼了"}'}},Count:1},{}],HandDropChances:[1f,0f]}`)
+    cat.setPos(player.position())
+    cat.finalizeSpawn(level, level.getCurrentDifficultyAt(cat.getOnPos()), 'mob_summoned', null, null)
+    level.addFreshEntity(cat)
+    player.give(GetPlayerHeadItem('OHCM233'))
+})
+RegisterSponsorGiftCode('mfrz', (event) => {
+    const player = event.player
+    const level = player.level
+    /**@type {Internal.Cat} */
+    let villager = level.createEntity('minecraft:villager')
+    villager.mergeNbt(`{CustomName:'["美服忍者"]',CustomNameVisible:1b}`)
+    villager.setPos(player.position())
+    villager.finalizeSpawn(level, level.getCurrentDifficultyAt(villager.getOnPos()), 'mob_summoned', null, null)
+    level.addFreshEntity(villager)
+    player.give(GetPlayerHeadItem('Sendai_'))
+})
+RegisterSponsorGiftCode('可是萝莉鸟妈真的很棒哎', (event) => {
+    const player = event.player
+    const level = player.level
+    /**@type {Internal.LightningBolt} */
+    let lightningBolt = level.createEntity('minecraft:lightning_bolt')
+    lightningBolt.setDamage(player.getMaxHealth())
+    lightningBolt.setPos(player.position())
+    player.thunderHit(level, lightningBolt)
+    lightningBolt.spawn()
+    level.addFreshEntity(lightningBolt)
+    level.server.tell(Text.of(player.getName()).append('是个炼铜批！！！！！！！！！！'))
+    player.give(GetPlayerHeadItem('37arknight'))
 })

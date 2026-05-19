@@ -558,6 +558,14 @@
 			x: 5.5d
 			y: 43.0d
 		}
+		{
+			height: 3.7d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/title.png"
+			rotation: 0.0d
+			width: 34.98d
+			x: 10.2d
+			y: -10.9d
+		}
 	]
 	order_index: 2
 	quest_links: [ ]

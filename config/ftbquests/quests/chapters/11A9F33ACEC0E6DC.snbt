@@ -134,6 +134,15 @@
 			x: 15.0d
 			y: -3.0d
 		}
+		{
+			dependency: "4BFD35B09AF6436E"
+			height: 3.5d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/title.png"
+			rotation: 0.0d
+			width: 23.62d
+			x: 14.5d
+			y: 16.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]

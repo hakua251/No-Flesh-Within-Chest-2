@@ -3,7 +3,7 @@ RegistryOrgan('kubejs:void_stomach_pouch')
     .addScore('chestcavity:digestion', 2)
     .addScore('chestcavity:nutrition', -0.5)
     .addScore('chestcavity:endurance', -3)
-// todo 回归测试
+
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.FoodEatenEventJS} event

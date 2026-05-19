@@ -1,6 +1,5 @@
 // priority: 500
 const FinalDoDamageAttackDownUUID = UUID.fromString('A44F02C1-0E7B-490B-AD95-7DAEF3FF3F28')
-// todo 需要进行额外的回归测试
 /**
  * 
  * @param {Internal.LivingHurtEvent} event 

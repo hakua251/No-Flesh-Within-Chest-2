@@ -1,5 +1,4 @@
 // priority: 500
-// todo 测试
 RegistryOrgan('kubejs:nightmare_core')
     .addScore('chestcavity:health', 1.5)
     .addScore('chestcavity:defense', -0.5)

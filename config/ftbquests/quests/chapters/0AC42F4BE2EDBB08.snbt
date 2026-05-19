@@ -550,6 +550,16 @@
 			tasks: [
 				{
 					id: "24B832A70D8B8FAF"
+					itemStack: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								TaskID: 8664623909490984035L
+								id: "ftbquests:core_task_screen"
+							}
+						}
+					}
 					title: "点此获取&6特制任务屏幕"
 					type: "maa:claim_item"
 				}
