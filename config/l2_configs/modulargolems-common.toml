@@ -66,6 +66,12 @@ sonicCannonDamageFactor = 0.25
 #Bonus damage of Sonic Cannon per sculk part, as percentage of golem melee damage
 #Range: 0.0 ~ 1.0
 sonicCannonResonanceBonus = 0.1
+#Player golem sound factor
+#Range: 0.0 ~ 2.0
+golemSoundVolumeFactor = 1.0
+#Hostile golem sound factor
+#Range: 0.0 ~ 2.0
+hostileGolemSoundVolumeFactor = 1.0
 
 [modifiers]
 	#Percentage damage reflection per level of thorn
