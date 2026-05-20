@@ -623,5 +623,26 @@ RegisterSponsorGiftCode('可是萝莉鸟妈真的很棒哎', (event) => {
     level.addFreshEntity(lightningBolt)
     level.server.tell(Text.of(player.getName()).append('是个炼铜批！！！！！！！！！！'))
     player.give(GetPlayerHeadItem('37arknight'))
+})
+RegisterSponsorGiftCode('冲击大王', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:magma_cream', '{AttributeModifiers:[{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54370,32940,-108740]},{Amount:20,AttributeName:"generic.max_health",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54670,32940,-109340]},{Amount:5,AttributeName:"generic.attack_knockback",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54970,32940,-109940]},{Amount:29,AttributeName:"generic.attack_damage",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,55270,32940,-110540]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"offhand",UUID:[I;-126420,55570,32940,-111140]}],HideFlags:7,Unbreakable:1,display:{Lore:[\'[{"text":"Good morning! Rider! ","italic":false,"color":"#ff0000"}]\'],Name:\'[{"text":"Impact","italic":false,"color":"#ff0000"}]\'}}'))
+    player.give(GetPlayerHeadItem('KALTIST_Esperant'))
+})
+RegisterSponsorGiftCode('SAIKAI', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:netherite_shovel', "{Damage:0,Unbreakable:1,display:{Lore:['[{\"text\":\"应该用叉勺···在下水道吃拼好饭时···\",\"italic\":false,\"color\":\"#B4684D\",\"underlined\":true}]','[{\"text\":\"女儿啊......看来你忘记帮我解冻了\",\"italic\":false,\"color\":\"dark_gray\",\"italic\":true}]'],Name:'[{\"text\":\"神谕终端[双蛇杖]\",\"italic\":false,\"color\":\"gold\"}]'}}").enchant('sharpness', 9))
+    player.give(Item.of('minecraft:paper', '{AttributeModifiers:[{Amount:7.99d,AttributeName:"generic.luck",Name:"1779224367042",Slot:"offhand",UUID:[I;-126420,15153,45311,-30306]}],display:{Lore:[\'[{"text":"致 Player，打开哔哩哔哩 YoruNina 的主页点击关注","italic":false,"color":"white"}]\',\'[{"text":"并在最近三个视频中三连并留下一句赞美","italic":false,"color":"white"}]\',\'[{"text":"后单曲循环 SAIKAI 325次。","italic":false,"color":"white"}]\'],Name:\'[{"text":"✿指令[纸条]","italic":false,"color":"blue"}]\'}}'))
     player.give(Item.of('minecraft:carved_pumpkin', '{AttributeModifiers:[{Amount:3,AttributeName:"generic.attack_damage",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54558,4318,-109116]},{Amount:-3,AttributeName:"generic.armor",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54858,4318,-109716]},{Amount:0.15d,AttributeName:"generic.attack_damage",Name:"1779221247370",Operation:1,Slot:"head",UUID:[I;-126420,55158,4318,-110316]}],Unbreakable:1,display:{Lore:[\'[{"text":"- 攻击等级+3，防御等级-3","italic":false,"color":"white"}]\',\'[{"text":"- 受到的单方面攻击伤害-25%","italic":false,"color":"white"}]\',\'[{"text":"- 基础攻击造成的伤害+15%","italic":false,"color":"white"}]\',\'[{"text":"...如果就这样放你离开，你大概永远也不会再回家吧。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"就算拦下你，让你留在这里，我也已经一无所剩了。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"不过......总比被空虚的悔意绞痛心脏要好，不是吗?","italic":false,"color":"dark_gray","strikethrough":true}]\'],Name:\'[{"text":"灼烧着的伤口","italic":false,"color":"red"}]\'}}').enchant('protection', 6))
+    player.give(GetPlayerHeadItem('Tsuki_Kira'))
+})
+RegisterSponsorGiftCode('组一辈子乐队吧', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('XS_T'), 'immersive_melodies:handpan', 'immersive_melodies:piano', 'immersive_melodies:bagpipe', 'immersive_melodies:didgeridoo', 'immersive_melodies:ender_bass', 'immersive_melodies:lute', 'immersive_melodies:flute', 'immersive_melodies:triangle', 'immersive_melodies:tiny_drum', 'immersive_melodies:trumpet', 'immersive_melodies:vielle', Item.of('minecraft:wooden_sword', "{Unbreakable:1}").enchant('knockback', 10)])
+})
+RegisterSponsorGiftCode('一个人要坚强', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:cake', `{display:{Lore:['{"text":"在重要的人走后，要学会自己去面对生活","color":"gray"}']}}`))
+    player.tell(Text.of('少吃点奶油对身体不健康 - 最后的嘱托'))
+    player.give(GetPlayerHeadItem('SilverWolfGG'))
 })
