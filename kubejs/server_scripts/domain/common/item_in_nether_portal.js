@@ -81,22 +81,29 @@ InfinityEvents.itemInPortal(event => {
  */
 function GetInfinityKeyDim(itemStack) {
     if (itemStack.hasCustomHoverName()) {
-        let nameString = itemStack.getHoverName().getString()
+        let rawName = itemStack.getHoverName().getString()
 
-        if (nameString.startsWith('infinity:')) {
-            nameString = nameString.replace('infinity:', '')
+        if (rawName.startsWith('infinity:')) {
+            rawName = rawName.replace('infinity:', '')
         }
+        rawName = rawName.trim().toLowerCase()
 
-        if (nameString == 'random') {
+        if (rawName == 'random') {
             return 'infinity:random'
         }
-        
-        let isEaster = InfinityMod.provider.easterizer.isEaster(nameString)
-        
-        if (!isEaster && !nameString.startsWith('generated_')) {
-            nameString = 'generated_' + nameString
+
+        // 特殊维度特殊处理
+        if (InfinityMod.provider.easterizer.isEaster(rawName)) return 'infinity:' + rawName
+
+        if (!/^[a-z0-9/._-]+$/.test(rawName)) {
+            return 'infinity:random'
         }
-        return 'infinity:' + nameString
+
+        if (!rawName.startsWith('generated_')) {
+            rawName = 'generated_' + rawName
+        }
+
+        return 'infinity:' + rawName
     } else {
         return 'infinity:random'
     }
