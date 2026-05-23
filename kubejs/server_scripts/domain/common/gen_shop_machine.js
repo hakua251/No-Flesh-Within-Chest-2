@@ -315,7 +315,11 @@ RegistryShopItemTraderType('blueprint',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[7,13,23],Deployed:0b,File:"schematic.arcane_organ.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 500).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[26,44,38],Deployed:0b,File:"schematic.blood_big_windmill.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 600).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[5,5,5],Deployed:0b,File:"schematic.auto_source_gem.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 200).setTradeLimitRule(1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[15,27,27],Deployed:0b,File:"schematic.god_of_waterwheel.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",Author:"老King呀老King",canSurvivalPrint:1b}')], 500).setTradeLimitRule(1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[19,30,16],Deployed:0b,File:"schematic.kelp_farm.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",Author:"老King呀老King",canSurvivalPrint:1b}')], 200).setTradeLimitRule(1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[19,26,14],Deployed:0b,File:"schematic.dimension_behemoth.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 200).setTradeLimitRule(1), 100)
 )
+
 
 RegistryShopItemTraderType('graveyard',
     new WeightRandomModel()

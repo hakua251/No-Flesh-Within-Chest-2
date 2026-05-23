@@ -119,7 +119,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:small_acid_tank')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:iron_repair_device')
     .addDefault(Text.translatable('tooltips.kubejs.iron_repair_device.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.iron_repair_device.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.iron_repair_device.alt.1', Text.gold('10%')))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:cyborgization_device')

@@ -7,7 +7,7 @@ MAAEvents.textInputTaskSubmit('sponsor_gift_code', (event) => {
     if (SponsorGiftCodeMap.has(inputText)) {
         let reward = SponsorGiftCodeMap.get(inputText)
         reward(event)
-        // teamData.addProgress(task, 1)
+        teamData.addProgress(task, 1)
     }
 })
 
@@ -416,7 +416,9 @@ RegisterSponsorGiftCode('vivo50', (event) => {
 })
 RegisterSponsorGiftCode('Join the helldiver', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:tnt', 64, "{display:{Name:'{\"text\":\"飞鹰500kg炸药\"}'}}"))
+    let pos = player.blockPosition()
+    player.runCommandSilent('/ftbchunks waypoint add eagle500kgbombiscoming ~ 50 ~ dark_red')
+    player.server.runCommandSilent(`/summon minecraft:fireball ${pos.x} 500 ${pos.z} ~ {CustomName:"飞鹰500kg炸弹",direction:[0.0,-50.0,0.0],life:50,ExplosionPower:100,Motion:[0.0,-0.001,0.0],power:[0.0,-0.2,0.0]}`)
     player.give(GetPlayerHeadItem('GodPathfinder'))
 })
 RegisterSponsorGiftCode('来点龙', (event) => {
@@ -594,10 +596,10 @@ RegisterSponsorGiftCode('胖宝宝哈基米', (event) => {
     const level = player.level
     /**@type {Internal.Cat} */
     let cat = level.createEntity('minecraft:cat')
-    cat.setVariant('minecraft:red')
     cat.mergeNbt(`{CustomName:'["小白手套"]',CustomNameVisible:1b,Health:114514,Attributes:[{Base:114514f},{Name:"generic.max_health",Base:114514f}],HandItems:[{id:crossbow,tag:{Charged:0b,Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:5s},{id:"minecraft:multishot",lvl:1s},{id:"minecraft:piercing",lvl:5s}],Unbreakable:1b,display:{Name:'{"text":"略猫区我和你们拼了"}'}},Count:1},{}],HandDropChances:[1f,0f]}`)
     cat.setPos(player.position())
     cat.finalizeSpawn(level, level.getCurrentDifficultyAt(cat.getOnPos()), 'mob_summoned', null, null)
+    cat.setVariant('red')
     level.addFreshEntity(cat)
     player.give(GetPlayerHeadItem('OHCM233'))
 })
@@ -701,7 +703,7 @@ RegisterSponsorGiftCode('ciallo', (event) => {
 })
 RegisterSponsorGiftCode('Rezero', (event) => {
     const player = event.player
-    player.runCommandSilent('title @a title [{"text":"死","color":"#87CEEB"},{"text":"亡","color":"#00BFFF"},{"text":"并","color":"#1E90FF"},{"text":"非","color":"#6495ED"},{"text":"结","color":"#4169E1"},{"text":"束","color":"#0000CD"}]')
+    player.server.runCommandSilent('title @a title [{"text":"死","color":"#87CEEB"},{"text":"亡","color":"#00BFFF"},{"text":"并","color":"#1E90FF"},{"text":"非","color":"#6495ED"},{"text":"结","color":"#4169E1"},{"text":"束","color":"#0000CD"}]')
     player.give(Item.of('minecraft:totem_of_undying', "{HideFlags:1,display:{Lore:['[{\"text\":\"「\",\"color\":\"red\"},{\"text\":\" \",\"color\":\"gold\"},{\"text\":\"こ\",\"color\":\"yellow\"},{\"text\":\"こ\",\"color\":\"green\"},{\"text\":\"か\",\"color\":\"aqua\"},{\"text\":\"ら\",\"color\":\"blue\"},{\"text\":\"始\",\"color\":\"light_purple\"},{\"text\":\"め\",\"color\":\"red\"},{\"text\":\"よ\",\"color\":\"gold\"},{\"text\":\"う\",\"color\":\"yellow\"},{\"text\":\"…\",\"color\":\"green\"},{\"text\":\"…\",\"color\":\"aqua\"},{\"text\":\"い\",\"color\":\"blue\"},{\"text\":\"や\",\"color\":\"light_purple\"},{\"text\":\" \",\"color\":\"red\"},{\"text\":\"ゼ\",\"color\":\"gold\"},{\"text\":\"ロ\",\"color\":\"yellow\"},{\"text\":\"か\",\"color\":\"green\"},{\"text\":\"ら\",\"color\":\"aqua\"},{\"text\":\" \",\"color\":\"blue\"},{\"text\":\"」\",\"color\":\"light_purple\"}]'],Name:'[{\"text\":\"至\",\"color\":\"#FFD700\"},{\"text\":\"此\",\"color\":\"#FFC125\"},{\"text\":\"迎\",\"color\":\"#FFB347\"},{\"text\":\"临\",\"color\":\"#FFA500\"},{\"text\":\"新\",\"color\":\"#FF8C00\"},{\"text\":\"生\",\"color\":\"#FF6A00\"}]'}}").enchant('minecraft:mending', 1).enchant('minecraft:vanishing_curse', 1))
     player.give(GetPlayerHeadItem('clks2719'))
 })
@@ -843,4 +845,19 @@ RegisterSponsorGiftCode('让邺城燃烧', (event) => {
 RegisterSponsorGiftCode('是关东煮来了', (event) => {
     const player = event.player
     GivePlayerItemList(player, [GetPlayerHeadItem('Yitheizi'), Item.of('kaleidoscope_cookery:brown_mushroom_pot_soup', '{display:{Name:\'{"text":"棕色关东煮"}\'}}'), Item.of('kaleidoscope_cookery:crimson_fungus_pot_soup', '{display:{Name:\'{"text":"异画关东煮"}\'}}'), Item.of('kaleidoscope_cookery:buddha_jumps_over_the_wall', '{display:{Name:\'{"text":"豪华版关东煮"}\'}}'), Item.of('kaleidoscope_cookery:warped_fungus_pot_soup', '{display:{Name:\'{"text":"绿色关东煮"}\'}}'), Item.of('kaleidoscope_cookery:red_mushroom_pot_soup', '{display:{Name:\'{"text":"红色关东煮"}\'}}')])
+})
+RegisterSponsorGiftCode('击飞蛋打', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:stick').enchant('minecraft:knockback', 10))
+    player.give(Item.of('minecraft:egg', 16))
+    player.tell(Text.of('你蛋留着干嘛！留来过年哈啊！'))
+})
+RegisterSponsorGiftCode('众神之父赐予我视野', (event) => {
+    const player = event.player
+    player.give(Item.of('kubejs:owl_vertebrae', `{display:{Name:\'{"text":"第三只眼"}\',Lore:['{"text":"全知的双子有第三只眼，身后的眼也是眼，ass we can","color":"gray"}']}}`))
+    player.give(GetPlayerHeadItem('zyjwjx'))
+})
+RegisterSponsorGiftCode('超级屯屯鼠', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('tobenot'), 'functionalstorage:storage_controller', Item.of('functionalstorage:diamond_upgrade', 4), 'functionalstorage:armory_cabinet'])
 })

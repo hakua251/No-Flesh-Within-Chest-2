@@ -19,7 +19,7 @@ function GreedyThroatFoodEaten(customData, event, organItem, organIndex, slotTyp
     const ccInv = chestCavity.inventory
     const foodItem = event.item
     if (!foodItem) return
-    if (OrganItemCoolDown(player, organItem)) return
+    if (OrganItemCoolDownSlience(player, organItem)) return
     let itemCopy = foodItem.copyWithCount(1)
     let nbt = itemCopy.getOrCreateTag()
     if (nbt.contains('greedyThroatUUID')) {

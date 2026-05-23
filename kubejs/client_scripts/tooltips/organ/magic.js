@@ -108,3 +108,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:wither_skull')
     .addDefault(Text.translatable('tooltips.kubejs.wither_skull.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.wither_skull.alt.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:soul_wing')
+    .addDefault(Text.translatable('tooltips.kubejs.soul_wing.default.1').gray())
+)

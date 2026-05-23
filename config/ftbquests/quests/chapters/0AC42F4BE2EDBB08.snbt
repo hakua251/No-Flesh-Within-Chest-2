@@ -1106,6 +1106,65 @@
 			x: 3.0d
 			y: 13.5d
 		}
+		{
+			dependencies: ["4E805DA2B8D171E4"]
+			description: [
+				"看来您获得了一个&6武器皮肤&r！这是一个很罕见的物品！"
+				""
+				"您可以通过制作一个&6镶嵌工作台&r，将武器皮肤镶嵌在任意物品上——物品便会展现出武器皮肤的样式，并且不影响其原有的功能。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "armourers_workshop:skin"
+				tag: {
+					ArmourersWorkshop: {
+						Identifier: "secret/weapon_skins/wea_25"
+						SkinType: "armourers:item"
+					}
+				}
+			}
+			id: "2C1DF8FD4C48C335"
+			invisible: true
+			rewards: [
+				{
+					id: "6659EC42DDB1C9BB"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "4946D192AA487D24"
+					item: "armourers_workshop:skinning-table"
+					type: "item"
+				}
+			]
+			subtitle: "应用武器皮肤"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "armourers_workshop:skin"
+					tag: {
+						ArmourersWorkshop: {
+							Identifier: "secret/weapon_skins/wea_25"
+							SkinType: "armourers:item"
+						}
+					}
+				}
+				id: "1A6AC9DBCF5478B7"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "is_skin_type:[armourers:item]"
+					}
+				}
+				title: "任意武器皮肤"
+				type: "item"
+			}]
+			title: "皮肤镶嵌"
+			x: -6.0d
+			y: 6.0d
+		}
 	]
 	title: "壹"
 }

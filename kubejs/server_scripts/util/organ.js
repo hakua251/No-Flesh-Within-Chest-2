@@ -134,7 +134,7 @@ function OrganItemCoolDown(player, item) {
     const cooldowns = player.getCooldowns()
     if (cooldowns.isOnCooldown(item)) {
         let cooldownInstance = cooldowns.cooldowns.getOrDefault(item.getItem(), null)
-        if (!cooldownInstance) return
+        if (!cooldownInstance) return false
         let endTime = cooldownInstance.endTime
         let leftTime = endTime - cooldowns.tickCount
         player.setStatusMessage(Text.translatable('status_msg.kubejs.key_active.cooldown', Text.gold(item.getHoverName()), leftTime / 20))
@@ -142,6 +142,22 @@ function OrganItemCoolDown(player, item) {
     }
     return false
 }
+
+
+/**
+ * 
+ * @param {Internal.ServerPlayer} player 
+ * @param {Internal.ItemStack} item 
+ * @returns {Boolean}
+ */
+function OrganItemCoolDownSlience(player, item) {
+    const cooldowns = player.getCooldowns()
+    if (cooldowns.isOnCooldown(item)) {
+        return true
+    }
+    return false
+}
+
 
 
 /**

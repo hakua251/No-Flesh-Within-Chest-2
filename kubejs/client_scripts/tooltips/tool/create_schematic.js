@@ -6,5 +6,8 @@ ItemEvents.tooltip(tooltip => {
         if (nbt.getBoolean('canSurvivalPrint')) {
             text.add(Text.translate('tooltips.create.schematic.canSurvivalPrint').yellow())
         }
+        if (nbt.contains('Author')) {
+            text.add(Text.translatable('tooltips.create.schematic.author', nbt.getString('Author')).gray())
+        }
     })
 })
