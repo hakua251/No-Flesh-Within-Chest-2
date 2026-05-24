@@ -39,7 +39,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:primal_heart')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:primal_bone_cage')
     .addDefault(Text.translatable('tooltips.kubejs.primal_bone_cage.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.primal_bone_cage.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.primal_bone_cage.alt.1').red())
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:devour_teeth')

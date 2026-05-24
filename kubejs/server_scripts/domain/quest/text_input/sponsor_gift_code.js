@@ -103,7 +103,7 @@ RegisterSponsorGiftCode('在启动了', (event) => {
 })
 RegisterSponsorGiftCode('早上好！骑士', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:slime_ball', '{ArmourersWorkshop:{Identifier:"secret/sponsor/barrier",SkinType:"armourers:item"},AttributeModifiers:[{Amount:10,AttributeName:"generic.armor",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47228,233218,-94456]},{Amount:10,AttributeName:"generic.armor",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,47528,233218,-95056]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47828,233218,-95656]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,48128,233218,-96256]}],HideFlags:2,display:{Lore:[\'[{"text":"Good morning! Rider!","italic":false,"color":"#4bb77c"}]\'],Name:\'[{"text":"Barrier","italic":false,"color":"#4bb77c"}]\'}}'))
+    player.give(Item.of('minecraft:slime_ball', '{ArmourersWorkshop:{Identifier:"secret/sponsor/barrier",SkinType:"armourers:item"},AttributeModifiers:[{Amount:8,AttributeName:"generic.armor",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47228,233218,-94456]},{Amount:8,AttributeName:"generic.armor",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,47528,233218,-95056]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47828,233218,-95656]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,48128,233218,-96256]}],HideFlags:2,display:{Lore:[\'[{"text":"Good morning! Rider!","italic":false,"color":"#4bb77c"}]\'],Name:\'[{"text":"Barrier","italic":false,"color":"#4bb77c"}]\'}}'))
     player.give(GetPlayerHeadItem('sjsxh125'))
 })
 RegisterSponsorGiftCode('偷盗者', (event) => {
@@ -243,7 +243,7 @@ RegisterSponsorGiftCode('召唤一台锅炉？', (event) => {
 RegisterSponsorGiftCode('oiiaioiiiiai', (event) => {
     const player = event.player
     player.give(Item.of('create:cardboard_sword', "{display:{Lore:['[{\"text\":\"oiiaioiiiiai\",\"italic\":false,\"color\":\"aqua\"}]'],Name:'[{\"text\":\"逗\",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\"猫\",\"italic\":false,\"color\":\"gold\"},{\"text\":\"棒\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\"—\",\"italic\":false,\"color\":\"green\"},{\"text\":\"—\",\"italic\":false,\"color\":\"dark_blue\"},{\"text\":\"—\",\"italic\":false,\"color\":\"dark_purple\"}]'}}").enchant('knockback', 10))
-    player.give(Item.of('minecraft:cat_spawn_egg'))
+    player.give(Item.of('minecraft:cat_spawn_egg', '{EntityTag:{ActiveEffects:[{Ambient:1b,Amplifier:5,Duration:99999,Id:28,ShowParticles:0b},{Ambient:1b,Amplifier:1,Duration:9999,Id:10,ShowParticles:0b},{Ambient:1b,Amplifier:1,Duration:99999,Id:1,ShowParticles:0b}],Attributes:[{Base:64.0f,Name:"generic.max_health"}],CustomName:\'[{"text":"o","color":"red"},{"text":"i","color":"gold"},{"text":"i","color":"yellow"},{"text":"a","color":"green"},{"text":"i","color":"aqua"},{"text":"o","color":"dark_purple"},{"text":"猫","color":"gray"}]\',CustomNameVisible:1b,Glowing:1b,Health:64,Motion:[0.0d,1.0d],PersistenceRequired:1b,Rotation:[5.2f,0.0f],Silent:1b},display:{Lore:[\'[{"text":"不会转，但会飘","italic":false,"color":"yellow"}]\'],Name:\'[{"text":"oiia猫","italic":false,"color":"aqua"}]\'}}'))
     player.give(GetPlayerHeadItem('nuoleihe'))
 })
 RegisterSponsorGiftCode('2778', (event) => {
@@ -452,7 +452,7 @@ RegisterSponsorGiftCode('旅途愉快', (event) => {
 })
 RegisterSponsorGiftCode('2816174', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:crossbow', "{Unbreakable:1b,display:{Name:'{\"text\":\"R99\"}'}}").enchant('minecraft:quick_charge', 5))
+    player.give(Item.of('minecraft:crossbow', '{AttributeModifiers:[{Amount:1.5d,AttributeName:"generic.movement_speed",Name:"1779635718439",Operation:2,Slot:"offhand",UUID:[I;-126424,27655,231123,-55310]}],Charged:0b,ChargedProjectiles:[],Damage:0,HideFlags:6,Unbreakable:1,display:{Lore:[\'[{"text":"散热 174","italic":false,"color":"gray"}]\',\'[{"text":"成为爽文男主了!?","italic":false,"color":"blue"}]\'],Name:\'[{"text":"R-99","italic":false,"color":"dark_red"}]\'}}').enchant('quick_charge', 5))
     player.give(GetPlayerHeadItem('LC_hc'))
 })
 RegisterSponsorGiftCode('114514', (event) => {
@@ -487,12 +487,13 @@ RegisterSponsorGiftCode('link start', (event) => {
 })
 RegisterSponsorGiftCode('这真的是个激活码，不骗你', (event) => {
     const player = event.player
-    player.give(Item.of('biomancy:thorn_shield', `{display:{Name:'{\"text\":\"§c§o般若\"}',Lore:['{"text":"缪尔赛思：哎呀，现在反悔已经来不及了，呼呼~","color":"gray"}']},AttributeModifiers:[{Amount:5,AttributeName:"generic.max_health",Name:"1779044450516",Slot:"mainhand",UUID:[I;-126418,56042,2579,-112084]},{Amount:8,AttributeName:"generic.armor",Name:"1779044450516",Slot:"mainhand",UUID:[I;-126418,56342,2579,-112684]},{Amount:-0.35d,AttributeName:"generic.movement_speed",Name:"1779044450516",Operation:1,Slot:"mainhand",UUID:[I;-126418,56642,2579,-113284]},{Amount:5,AttributeName:"generic.max_health",Name:"1779044450516",Slot:"offhand",UUID:[I;-126418,56942,2579,-113884]},{Amount:8,AttributeName:"generic.armor",Name:"1779044450516",Slot:"offhand",UUID:[I;-126418,57242,2579,-114484]},{Amount:-0.35d,AttributeName:"generic.movement_speed",Name:"1779044450516",Slot:"offhand",Operation:1,UUID:[I;-126418,57542,2579,-115084]}],GeckoLibID:1L,"biomancy:nutrients":250}`).enchant('thorns', 9))
+    player.give(Item.of('biomancy:thorn_shield', `{display:{Name:'{\"text\":\"§c§o般若\"}',Lore:['{"text":"缪尔赛思：哎呀，现在反悔已经来不及了，呼呼~","color":"gray"}']},AttributeModifiers:[{Amount:5,AttributeName:"generic.max_health",Name:"1779044450516",Slot:"mainhand",UUID:[I;-126418,56042,2579,-112084]},{Amount:8,AttributeName:"generic.armor",Name:"1779044450516",Slot:"mainhand",UUID:[I;-126418,56342,2579,-112684]},{Amount:-0.1d,AttributeName:"generic.movement_speed",Name:"1779044450516",Operation:1,Slot:"mainhand",UUID:[I;-126418,56642,2579,-113284]},{Amount:5,AttributeName:"generic.max_health",Name:"1779044450516",Slot:"offhand",UUID:[I;-126418,56942,2579,-113884]},{Amount:8,AttributeName:"generic.armor",Name:"1779044450516",Slot:"offhand",UUID:[I;-126418,57242,2579,-114484]},{Amount:-0.1d,AttributeName:"generic.movement_speed",Name:"1779044450516",Slot:"offhand",Operation:1,UUID:[I;-126418,57542,2579,-115084]}],GeckoLibID:1L,"biomancy:nutrients":250}`).enchant('thorns', 9))
     player.give(GetPlayerHeadItem('W_Dynamite'))
 })
 RegisterSponsorGiftCode('我在这里记录一位亲爱之人', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:diamond', "{display:{Name:'{\"text\":\"阿谢姆水晶\"}'}}"))
+    player.give(Item.of('minecraft:diamond', `{display:{Name:'{\"text\":\"阿谢姆水晶\"}',Lore:['{"text":"不管我说多少， 你也不可能回想起来吧","color":"gray"}']}}`))
+    player.tell(Text.of('我在这里记录一位亲爱之人,一位行遍天下 、尽其一生连接地上繁星之人。如若经你之手,即使如今天地分断, 人心永隔,相信命运也不会迷失方向。'))
     player.server.getPlayerList().players.forEach(pPlayer => {
         if (pPlayer.equals(player)) return
         pPlayer.teleportTo(player.level.dimension, player.x, 64, player.z, player.yaw, player.pitch)
@@ -629,7 +630,7 @@ RegisterSponsorGiftCode('可是萝莉鸟妈真的很棒哎', (event) => {
 })
 RegisterSponsorGiftCode('冲击大王', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:magma_cream', '{ArmourersWorkshop:{Identifier:"secret\\\\sponsor\\\\impact",SkinType:"armourers:item"},AttributeModifiers:[{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54370,32940,-108740]},{Amount:20,AttributeName:"generic.max_health",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54670,32940,-109340]},{Amount:5,AttributeName:"generic.attack_knockback",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54970,32940,-109940]},{Amount:29,AttributeName:"generic.attack_damage",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,55270,32940,-110540]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"offhand",UUID:[I;-126420,55570,32940,-111140]}],HideFlags:7,Unbreakable:1,display:{Lore:[\'[{"text":"Good morning! Rider! ","italic":false,"color":"#ff0000"}]\'],Name:\'[{"text":"Impact","italic":false,"color":"#ff0000"}]\'}}'))
+    player.give(Item.of('minecraft:magma_cream', '{ArmourersWorkshop:{Identifier:"secret\\\\sponsor\\\\impact",SkinOptions:{EmbeddedItemRenderer:2,TooltipFlags:183},SkinType:"armourers:item"},AttributeModifiers:[{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54370,32940,-108740]},{Amount:20,AttributeName:"generic.max_health",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54670,32940,-109340]},{Amount:5,AttributeName:"generic.attack_knockback",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54970,32940,-109940]},{Amount:29,AttributeName:"generic.attack_damage",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,55270,32940,-110540]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"offhand",UUID:[I;-126420,55570,32940,-111140]}],HideFlags:7,Unbreakable:1,display:{Lore:[\'[{"text":"Good morning! Rider! ","italic":false,"color":"#ff0000"}]\'],Name:\'[{"text":"Impact","italic":false,"color":"#ff0000"}]\'}}'))
     player.give(GetPlayerHeadItem('KALTIST_Esperant'))
 })
 RegisterSponsorGiftCode('SAIKAI', (event) => {
@@ -854,10 +855,99 @@ RegisterSponsorGiftCode('击飞蛋打', (event) => {
 })
 RegisterSponsorGiftCode('众神之父赐予我视野', (event) => {
     const player = event.player
-    player.give(Item.of('kubejs:owl_vertebrae', `{display:{Name:\'{"text":"第三只眼"}\',Lore:['{"text":"全知的双子有第三只眼，身后的眼也是眼，ass we can","color":"gray"}']}}`))
+    player.give(Item.of('kubejs:owl_vertebrae', `{display:{Name:'{"text":"第三只眼"}',Lore:['{"text":"全知的双子有第三只眼，身后的眼也是眼，ass we can","color":"gray"}']}}`))
     player.give(GetPlayerHeadItem('zyjwjx'))
 })
 RegisterSponsorGiftCode('超级屯屯鼠', (event) => {
     const player = event.player
     GivePlayerItemList(player, [GetPlayerHeadItem('tobenot'), 'functionalstorage:storage_controller', Item.of('functionalstorage:diamond_upgrade', 4), 'functionalstorage:armory_cabinet'])
+})
+RegisterSponsorGiftCode('俺寻思这样可以安抚机魂', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:orange_shulker_box', '{BlockEntityTag:{Items:[{Count:1b,Slot:0b,id:"minecraft:bell",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1s}],HideFlags:1,Unbreakable:1b,display:{Lore:[\'[{"text":"鸣响大钟一次！","italic":false,"bold":true,"color":"gold"}]\',\'[{"text":"鸣响大钟两次！","italic":false,"bold":true,"color":"gold"}]\',\'[{"text":"鸣响大钟三次！","italic":false,"bold":true,"color":"gold"}]\'],Name:\'[{"text":"伟","italic":false,"bold":true,"color":"#ffd700"},{"text":"大","italic":false,"bold":true,"color":"#ffb347"},{"text":"之","italic":false,"bold":true,"color":"#ff7f50"},{"text":"钟","italic":false,"bold":true,"color":"#ff4040"}]\'}}},{Count:1b,Slot:1b,id:"minecraft:lever",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1s}],HideFlags:1,Unbreakable:1b,display:{Lore:[\'[{"text":"推动杠杆，使活塞与泵接合……","italic":false,"color":"yellow"}]\'],Name:\'[{"text":"杠","italic":false,"bold":true,"color":"#d0d0d0"},{"text":"杆","italic":false,"bold":true,"color":"#ffffff"}]\'}}},{Count:1b,Slot:2b,id:"minecraft:stone_button",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1s}],HideFlags:1,Unbreakable:1b,display:{Lore:[\'[{"text":"按下按钮，发动引擎。","italic":false,"color":"aqua"}]\',\'[{"text":"点燃涡轮，注入生命……","italic":false,"color":"aqua"}]\'],Name:\'[{"text":"按","italic":false,"bold":true,"color":"#ff4040"},{"text":"钮","italic":false,"bold":true,"color":"#ffff40"}]\'}}},{Count:1b,Slot:3b,id:"minecraft:piston",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1s}],HideFlags:1,Unbreakable:1b,display:{Lore:[\'[{"text":"推动杠杆，使活塞与泵接合……","italic":false,"color":"yellow"}]\'],Name:\'[{"text":"活","italic":false,"bold":true,"color":"#80dfff"},{"text":"塞","italic":false,"bold":true,"color":"#8dd6f3"},{"text":"与","italic":false,"bold":true,"color":"#99cce8"},{"text":"泵","italic":false,"bold":true,"color":"#a6c3dc"}]\'}}},{Count:1b,Slot:4b,id:"minecraft:soul_lantern",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1s}],HideFlags:1,Unbreakable:1b,display:{Lore:[\'[{"text":"01110111","italic":false,"bold":true,"color":"dark_aqua"}]\',\'[{"text":"01100001","italic":false,"bold":true,"color":"aqua"}]\',\'[{"text":"01110010","italic":false,"bold":true,"color":"gold"}]\',\'[{"text":"01110111","italic":false,"bold":true,"color":"yellow"}]\',\'[{"text":"01100001","italic":false,"bold":true,"color":"red"}]\',\'[{"text":"01110010","italic":false,"bold":true,"color":"dark_red"}]\'],Name:\'[{"text":"机","italic":false,"bold":true,"color":"#ffd700"},{"text":"械","italic":false,"bold":true,"color":"#ffb347"},{"text":"神","italic":false,"bold":true,"color":"#ff4040"},{"text":"教","italic":false,"bold":true,"color":"#cc0000"},{"text":"香","italic":false,"bold":true,"color":"#80dfff"},{"text":"炉","italic":false,"bold":true,"color":"#40c4ff"}]\'}}}]},display:{Lore:[\'[{"text":"内含大钟、杠杆、按钮、活塞与香炉。","italic":false,"color":"gray"}]\'],Name:\'[{"text":"鸣","italic":false,"bold":true,"color":"#ffd700"},{"text":"钟","italic":false,"bold":true,"color":"#ffb347"},{"text":"仪","italic":false,"bold":true,"color":"#ff7f50"},{"text":"式","italic":false,"bold":true,"color":"#ff4040"},{"text":"匣","italic":false,"bold":true,"color":"#80dfff"}]\'}}'))
+    player.give(GetPlayerHeadItem('Omni_Secutor'))
+})
+RegisterSponsorGiftCode('风车仙人', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('baivbai'), Item.of('create:windmill_bearing', 2), Item.of('minecraft:white_wool', 256), Item.of('create:super_glue', '{Damage:0}')])
+})
+RegisterSponsorGiftCode('我们的部队正如雪花般消逝', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('DestroyTonight'), 'sophisticatedbackpacks:gold_backpack', 'kubejs:sulfur_cube_colloid'])
+    player.tell(Text.of('我们必须重新集结部队'))
+})
+RegisterSponsorGiftCode('让雷电在这里降临吧', (event) => {
+    const player = event.player
+    player.give(Item.of('wildernature:blunderbuss', `{Damage:0,display:{Name:\'{"text":"Thunder.50"}\'}}`))
+    player.give(GetPlayerHeadItem('Thunder50BMG'))
+    player.tell(Text.of('在雷霆支配下的天空里也是需要鸟儿的'))
+})
+RegisterSponsorGiftCode('鸡你太美', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:bedrock', `{Unbreakable:1b,display:{Lore:['{"text":"你干嘛？哈哈，哎哟","color":"gray"}']}}`))
+    player.give(Item.of('minecraft:dirt', `{Unbreakable:1b,display:{Lore:['{"text":"你干嘛？哈哈，哎哟","color":"gray"}']}}`))
+    player.give(Item.of('minecraft:moss_block', `{Unbreakable:1b,display:{Lore:['{"text":"你干嘛？哈哈，哎哟","color":"gray"}']}}`))
+    player.give(Item.of('minecraft:coal_block', `{Unbreakable:1b,display:{Lore:['{"text":"你干嘛？哈哈，哎哟","color":"gray"}']}}`))
+    player.give(GetPlayerHeadItem('java9527'))
+    player.tell(Text.of('鸡你实在是太美，哦贝贝'))
+})
+RegisterSponsorGiftCode('DJYYDS', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:bone', 206, `{display:{Name:'{"text":"未知生物的骨头"}',Lore:['{"text":"据说是他某M姓朋友的骨头","color":"gray"}','{"text":"§o“死了你也逃不出我手掌心”","color":"gray"}']}}`))
+    player.give(GetPlayerHeadItem('WhiteWolf_DJ'))
+})
+RegisterSponsorGiftCode('芜湖', (event) => {
+    const player = event.player
+    player.give(Item.of('create_jetpack:jetpack', '{Air:900}'))
+    player.tell(Text.of('芜湖起飞！'))
+    player.give(GetPlayerHeadItem('Little_Ni_Zi'))
+})
+RegisterSponsorGiftCode('生日快乐', (event) => {
+    const player = event.player
+    player.give(Item.of('simplehats:christmascakehat', '{AttributeModifiers:[{Amount:1.0d,AttributeName:"minecraft:generic.luck",Operation:0,Slot:"offhand",UUID:[I;1112896850,361381980,-2031037621,533610845]}],display:{Lore:[\'{"italic":false,"color":"white","extra":[{"text":""},{"color":"yellow","text":"祝你生日快乐！"}],"text":""}\'],Name:\'{"italic":false,"extra":[{"text":""},{"bold":true,"color":"gold","text":"生"},{"bold":true,"color":"red","text":"日"},{"bold":true,"color":"green","text":"快"},{"bold":true,"color":"aqua","text":"乐"},{"bold":true,"color":"light_purple","text":"！"}],"text":""}\'}}'))
+    player.give(GetPlayerHeadItem('Baka122'))
+})
+RegisterSponsorGiftCode('屠宰论', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:diamond_pickaxe', `{display:{Name:\'{"text":"VV镐"}\'}}`).enchant('minecraft:fortune', 3).enchant('minecraft:efficiency', 5).enchant('minecraft:unbreaking', 5))
+    player.give(Item.of('minecraft:enchanted_book', `{display:{Name:\'{"text":"1"}\'}}`).enchant('minecraft:mending', 1))
+    player.tell(Text.of('疯狂矿工启动！'))
+    player.give(GetPlayerHeadItem('xiaolong_ovo'))
+})
+RegisterSponsorGiftCode('天胡开局', (event) => {
+    const player = event.player
+    player.give('minecraft:netherite_block')
+    player.tell(Text.of('胡过头了'))
+    player.give(GetPlayerHeadItem('Feng_XLY'))
+})
+RegisterSponsorGiftCode('Banana', (event) => {
+    const player = event.player
+    player.give(Item.of('supplementaries:soap', 2, `{display:{Name:'{"text":"焦迟但到"}',Lore:['{"text":"♂来自纽约的热情♂","color":"gray"}']}}`))
+    player.give(GetPlayerHeadItem('PulseMouse'))
+})
+RegisterSponsorGiftCode('懒得找', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:netherite_upgrade_smithing_template'))
+    player.tell(Text.of('不用去找啦'))
+    player.give(GetPlayerHeadItem('GreenWhiter'))
+})
+RegisterSponsorGiftCode('ZZH2011', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:enchanted_book', '{Unbreakable:1b}').enchant('minecraft:mending', 1))
+    player.give(GetPlayerHeadItem('MengXinAUya'))
+})
+RegisterSponsorGiftCode('妖精的祝福', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:splash_potion', '{CustomPotionColor:8900351,CustomPotionEffects:[{Amplifier:0b,Duration:-1,Id:24b,ShowIcon:1b,ShowParticles:0b},{Amplifier:0b,Duration:-1,Id:16b,ShowIcon:1b,ShowParticles:0b},{Amplifier:0b,Duration:-1,Id:26b,ShowIcon:1b,ShowParticles:0b},{Amplifier:4b,Duration:-1,Id:1b,ShowIcon:1b,ShowParticles:0b}],Potion:"minecraft:water",display:{Lore:[\'{"text":"据说被祝福的人会被妖精偷偷偏爱~","color":"yellow","italic":false}\',\'{"text":"瓶子里装着一点月光、一点恶作剧，和很多很多好运。","color":"#ff8c00","italic":false}\',\'{"text":"警告：被祝福者可能会忍不住到处乱跑。","color":"gray","italic":false}\'],Name:\'[{"text":"✦ ","color":"#e8ffff","bold":true,"italic":false},{"text":"妖","color":"#d8ffff","bold":true,"italic":false},{"text":"精","color":"#b8f7ff","bold":true,"italic":false},{"text":"的","color":"#8eeaff","bold":true,"italic":false},{"text":"祝","color":"#55cfff","bold":true,"italic":false},{"text":"福","color":"#1fa8ff","bold":true,"italic":false},{"text":" ✦","color":"#0077ff","bold":true,"italic":false}]\'}}'))
+    player.give(GetPlayerHeadItem('YoseSama2050'))
+})
+RegisterSponsorGiftCode('Ruina', (event) => {
+    const player = event.player
+    player.give(Item.of('simplehats:bigribbon', `{display:{Name:'{"text":"艾克薇尔的加护"}',Lore:['{"text":"唯有施与拯救，你自身方可获得救赎，你便朝那暗黑的彼岸前进吧。并且，在获得五颗明星后，请你...务必再想起我来","color":"gray"}'],color:10141152}}`))
+    player.give(GetPlayerHeadItem('Ylx_'))
+})
+RegisterSponsorGiftCode('lets go！！！', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [Item.of('minecraft:observer', 2), 'minecraft:sticky_piston', 'minecraft:end_rod', 'minecraft:oak_boat', 'minecraft:sheep_spawn_egg'])
+    player.tell(Text.of('喜欢曹羊'))
 })
