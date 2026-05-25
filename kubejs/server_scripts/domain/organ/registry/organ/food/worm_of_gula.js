@@ -14,7 +14,7 @@ RegistryOrgan('kubejs:worm_of_gula')
 function WormOfGulaEntityTick(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
     const player = event.entity
-    if (player.age % 100 != 0) return
+    if (player.age % 200 != 0) return
     const level = event.level
     if (!player.isPlayer()) return
     const foodData = player.getFoodData()
@@ -24,7 +24,9 @@ function WormOfGulaEntityTick(customData, event, organItem, organIndex, slotType
     if (inventory.canAddItem(Item.of('kubejs:gula_worm_nest'))) {
         inventory.addItem(Item.of('kubejs:gula_worm_nest'))
         foodData.setFoodLevel(4)
+        foodData.setSaturation(0)
         level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.player.burp', player.getSoundSource(), 0.5, 1)
+        player.potionEffects.add('minecraft:nausea', 100, 0, false, true)
     }
 
     if (!inventory.hasAnyMatching((ctx) => !ctx.is('kubejs:gula_worm_nest') && !ctx.is('kubejs:worm_of_gula'))) {

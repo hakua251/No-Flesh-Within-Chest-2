@@ -93,7 +93,6 @@ function NewGulaChallengeGoal(entity) {
                     level.setBlockAndUpdate(onTablePos, GetPlonkDefaultBlockState())
                     /**@type {Internal.TilePlacedItems} */
                     let plonkBlockEntity = level.getBlockEntity(onTablePos)
-
                     if (round >= 7) {
                         plonkBlockEntity.insertStack(Item.of('candlelight:note_paper_written',
                             `{author:"§kGula§r",text:["
@@ -101,7 +100,7 @@ function NewGulaChallengeGoal(entity) {
                             title:"${Text.translatable(`tooltips.gula_challenge.title.7`).getString()}"}`), 0)
                         plonkBlockEntity.setChanged()
                         plonkBlockEntity.clean()
-                        let nearestPlayer = level["getNearestPlayer(net.minecraft.world.entity.Entity,double)"](mob, 16.0)
+                        let nearestPlayer = GetNearestPlayer(level, mob.position(), 16)
                         MAAUtils.onKubeTaskFinish('gula_challenge_success', nearestPlayer, (task, pPlayer, teamData) => teamData.addProgress(task, 1))
                         return mob.persistentData.remove('gulaChallenge')
                     }

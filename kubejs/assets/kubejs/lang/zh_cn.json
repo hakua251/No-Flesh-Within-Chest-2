@@ -44,7 +44,7 @@
     "tooltips.gula_challenge.title.6": "第七单：你",
     "tooltips.gula_challenge.text.6": "正餐，用你的肉，制作§6 %s §r给我。",
     "tooltips.gula_challenge.title.7": "最终单：祭品",
-    "tooltips.gula_challenge.text.7": "跟你们之前约定的一样，我已经将你们需要的数据发送到对应的端口，下次记得准备的再快些。",
+    "tooltips.gula_challenge.text.7": "跟之前约定的一样，我已经将你们需要的数据发送到对应的端口，下次记得准备的再快些。",
     "tooltips.kubejs.no_ues_item": "该物品因部分原因被移除/无作用，被标记为无意义物品",
     "_comment.organ_score_tooltips": "器官 Score Tooltips",
     "tooltips.kubejs.bind_entity.1": "■ 绑定实体：%s",
