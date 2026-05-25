@@ -666,11 +666,21 @@
 			hide_until_deps_complete: true
 			icon: "kubejs:rose_injection"
 			id: "5A2C4544B9011D4F"
-			rewards: [{
-				id: "050109FA6E04A597"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "050109FA6E04A597"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "58CBA5A761BE30CF"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
+			]
 			shape: "none"
 			subtitle: "此心予我"
 			tasks: [{

@@ -1889,11 +1889,21 @@
 			]
 			hide_until_deps_complete: true
 			id: "56CAE9C01AF71671"
-			rewards: [{
-				id: "466C973A1A5AF58E"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "466C973A1A5AF58E"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "12DAD9A3FAC93E6D"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
+			]
 			shape: "none"
 			subtitle: "我奉行我之准则"
 			tasks: [{

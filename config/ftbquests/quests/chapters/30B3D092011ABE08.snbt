@@ -853,6 +853,14 @@
 					titleId: "kubejs:primal_chestcavity"
 					type: "titles:title"
 				}
+				{
+					auto: "invisible"
+					id: "0177EFE9934C119E"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
 			]
 			shape: "square"
 			size: 1.5d

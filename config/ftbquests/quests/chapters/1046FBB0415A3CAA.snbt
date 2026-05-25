@@ -1376,6 +1376,14 @@
 					titleId: "kubejs:adventure_story"
 					type: "titles:title"
 				}
+				{
+					auto: "invisible"
+					id: "1E1A4021D700A3F4"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
 			]
 			size: 1.0d
 			subtitle: "终局诠释：回归"

@@ -230,6 +230,14 @@
 					titleId: "kubejs:my_genesis"
 					type: "titles:title"
 				}
+				{
+					auto: "invisible"
+					id: "1659430E63B9BFAC"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
 			]
 			shape: "diamond"
 			subtitle: "匠工创世创工匠"

@@ -967,11 +967,21 @@
 			hide_until_deps_complete: true
 			id: "2227580EB38F9126"
 			invisible: true
-			rewards: [{
-				id: "031980599D82D0C5"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "031980599D82D0C5"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "11482FE2866E4D84"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
+			]
 			shape: "none"
 			subtitle: "这是我们的谢礼"
 			tasks: [{

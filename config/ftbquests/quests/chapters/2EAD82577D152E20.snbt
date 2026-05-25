@@ -2520,6 +2520,14 @@
 					titleId: "kubejs:multiworld_future"
 					type: "titles:title"
 				}
+				{
+					auto: "invisible"
+					id: "4A370B8BB155CC3D"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
 			]
 			shape: "none"
 			subtitle: "来吧，来到这无穷无尽的图书馆"

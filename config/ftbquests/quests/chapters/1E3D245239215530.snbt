@@ -149,15 +149,15 @@
 			id: "2650CE0D76584853"
 			rewards: [
 				{
+					id: "5C549B071AC9360D"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
 					icon: "titles:title_scroll_common"
 					id: "48452ACE1367FB41"
 					titleId: "kubejs:assembly_line_builder"
 					type: "titles:title"
-				}
-				{
-					id: "5C549B071AC9360D"
-					item: "lightmanscurrency:coin_gold"
-					type: "item"
 				}
 			]
 			shape: "circle"
@@ -2375,6 +2375,14 @@
 					id: "288EEBFD56A66F65"
 					titleId: "kubejs:world_machine_builder"
 					type: "titles:title"
+				}
+				{
+					auto: "invisible"
+					id: "080FF1EA76A2E3D5"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
 				}
 			]
 			shape: "diamond"

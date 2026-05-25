@@ -1233,6 +1233,14 @@
 					slot: "memory"
 					type: "maa:curios_slot"
 				}
+				{
+					auto: "invisible"
+					id: "051EFD1C6A301AC5"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
 			]
 			subtitle: "假若奇迹真的存在"
 			tasks: [{

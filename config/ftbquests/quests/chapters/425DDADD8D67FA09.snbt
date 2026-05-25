@@ -597,6 +597,14 @@
 					titleId: "kubejs:mechanics_scholar"
 					type: "titles:title"
 				}
+				{
+					auto: "invisible"
+					id: "6D9A5847E9A50F2A"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
 			]
 			shape: "square"
 			subtitle: "长远旅程的起点"
