@@ -1,6 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:turkey_gizzard')
-    .addScore('chestcavity:rot_digestion', 2)
+    .addScore('chestcavity:digestion', 1)
     .addScore('chestcavity:nutrition', 1)
     .setCanSpawn(true)
 

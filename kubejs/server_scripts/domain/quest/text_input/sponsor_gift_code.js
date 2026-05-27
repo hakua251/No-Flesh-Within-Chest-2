@@ -539,7 +539,7 @@ RegisterSponsorGiftCode('咕咕嘎嘎', (event) => {
 })
 RegisterSponsorGiftCode('年年有余岁岁平安', (event) => {
     const player = event.player
-    player.give(Item.of('lightmanscurrency:coin_emerald', 2))
+    player.give(Item.of('lightmanscurrency:coin_emerald', 1))
 })
 RegisterSponsorGiftCode('084company启动！', (event) => {
     const player = event.player

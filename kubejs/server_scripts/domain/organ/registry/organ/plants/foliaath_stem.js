@@ -1,7 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:foliaath_stem')
     .addScore('chestcavity:digestion', 1)
-    .addScore('chestcavity:buff_purging', -1)
 
 /**
 * @param {OrganEventCustomData} customData
