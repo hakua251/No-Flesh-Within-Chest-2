@@ -69,7 +69,7 @@ InfinityEvents.itemInPortal(event => {
             level.playSound(null, targetPlayer.getX(), targetPlayer.getY(), targetPlayer.getZ(), 'ui.toast.challenge_complete', targetPlayer.getSoundSource(), 0.25, 1)
         }
     } else if (InfinityPortalItem2Item.has(itemId)) {
-        itemEntity.setPortalCooldown(200)
+        itemEntity.setPortalCooldown(100)
         itemEntity.setItem(Item.of(InfinityPortalItem2Item.get(itemId), itemStack.getCount()))
     } else if (InfinityPortalItem2DimId.has(itemId)) {
         itemEntity.remove('changed_dimension')

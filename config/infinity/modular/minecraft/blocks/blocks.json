@@ -8825,16 +8825,6 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
-				"laggy": false,
-				"Name": "minecraft:redstone_wire",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
 				"float": true,
 				"laggy": false,
 				"Name": "minecraft:reinforced_deepslate",

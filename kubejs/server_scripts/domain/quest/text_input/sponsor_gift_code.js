@@ -144,7 +144,7 @@ RegisterSponsorGiftCode('喵凸条', (event) => {
 })
 RegisterSponsorGiftCode('知识的力量', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:book', '{AttributeModifiers:[{Amount:33,AttributeName:"generic.attack_damage",Name:"1778950941255",Slot:"mainhand",UUID:[I;-126417,35685,1017,-71370]},{Amount:3,AttributeName:"generic.attack_speed",Name:"1778950941255",Slot:"mainhand",UUID:[I;-126417,35985,1017,-71970]}]}'))
+    player.give(Item.of('minecraft:book', '{AttributeModifiers:[{Amount:18,AttributeName:"generic.attack_damage",Name:"1778950941255",Slot:"mainhand",UUID:[I;-126417,35685,1017,-71370]},{Amount:3,AttributeName:"generic.attack_speed",Name:"1778950941255",Slot:"mainhand",UUID:[I;-126417,35985,1017,-71970]}]}'))
     player.give(GetPlayerHeadItem('Flyhuhuhu'))
 })
 RegisterSponsorGiftCode('猫冬', (event) => {
@@ -629,7 +629,7 @@ RegisterSponsorGiftCode('可是萝莉鸟妈真的很棒哎', (event) => {
 })
 RegisterSponsorGiftCode('冲击大王', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:magma_cream', '{ArmourersWorkshop:{Identifier:"secret\\\\sponsor\\\\impact",SkinOptions:{EmbeddedItemRenderer:2,TooltipFlags:183},SkinType:"armourers:item"},AttributeModifiers:[{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54370,32940,-108740]},{Amount:20,AttributeName:"generic.max_health",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54670,32940,-109340]},{Amount:5,AttributeName:"generic.attack_knockback",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54970,32940,-109940]},{Amount:29,AttributeName:"generic.attack_damage",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,55270,32940,-110540]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"offhand",UUID:[I;-126420,55570,32940,-111140]}],HideFlags:7,Unbreakable:1,display:{Lore:[\'[{"text":"Good morning! Rider! ","italic":false,"color":"#ff0000"}]\'],Name:\'[{"text":"Impact","italic":false,"color":"#ff0000"}]\'}}'))
+    player.give(Item.of('minecraft:magma_cream', '{ArmourersWorkshop:{Identifier:"secret\\\\sponsor\\\\impact",SkinOptions:{EmbeddedItemRenderer:2,TooltipFlags:183},SkinType:"armourers:item"},AttributeModifiers:[{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54370,32940,-108740]},{Amount:20,AttributeName:"generic.max_health",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54670,32940,-109340]},{Amount:5,AttributeName:"generic.attack_knockback",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54970,32940,-109940]},{Amount:19,AttributeName:"generic.attack_damage",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,55270,32940,-110540]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"offhand",UUID:[I;-126420,55570,32940,-111140]}],HideFlags:7,Unbreakable:1,display:{Lore:[\'[{"text":"Good morning! Rider! ","italic":false,"color":"#ff0000"}]\'],Name:\'[{"text":"Impact","italic":false,"color":"#ff0000"}]\'}}'))
     player.give(GetPlayerHeadItem('KALTIST_Esperant'))
 })
 RegisterSponsorGiftCode('SAIKAI', (event) => {
