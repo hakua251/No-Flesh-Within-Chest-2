@@ -227,6 +227,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "0440DEA59DCDAB5F"
+					title: "解锁头衔：&e我创世"
 					titleId: "kubejs:my_genesis"
 					type: "titles:title"
 				}
@@ -1136,6 +1137,7 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "204C847EE288BC0F"
+					title: "解锁头衔：&e学无止境"
 					titleId: "kubejs:tinker_study"
 					type: "titles:title"
 				}

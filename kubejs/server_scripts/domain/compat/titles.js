@@ -51,6 +51,6 @@ TitlesEvent.onTitleRegistry(event => {
     regsitryTitleSimple('scapegoat', 'uncommon')
     regsitryTitleSimple('bring_up_me', 'epic')
     regsitryTitleSimple('primal_chestcavity', 'epic')
-    regsitryTitleSimple('your_wife', 'rare') // todo 赞助者
-    regsitryTitleSimple('sponsor', 'epic') // todo 赞助者
+    regsitryTitleSimple('your_wife', 'rare')
+    regsitryTitleSimple('sponsor', 'epic')
 })

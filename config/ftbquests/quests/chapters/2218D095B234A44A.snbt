@@ -106,6 +106,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "5836B87D444ED6DC"
+					title: "解锁头衔：&e开膛手"
 					titleId: "kubejs:chest_opener"
 					type: "titles:title"
 				}
@@ -304,6 +305,7 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "445CECC1351FFBE5"
+					title: "解锁头衔：&e骨刃"
 					titleId: "kubejs:rib_blade"
 					type: "titles:title"
 				}
@@ -498,6 +500,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "2246016AAAAE2EA5"
+					title: "解锁头衔：&e肉团宝宝"
 					titleId: "kubejs:flesh_blob"
 					type: "titles:title"
 				}

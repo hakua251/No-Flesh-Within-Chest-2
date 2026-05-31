@@ -409,6 +409,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "7522AAD8EC3DBCD7"
+					title: "解锁头衔：&e旅者"
 					titleId: "kubejs:beginner"
 					type: "titles:title"
 				}
@@ -806,6 +807,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "4618F9DF74819AD0"
+					title: "解锁头衔：&e终末舞者"
 					titleId: "kubejs:ender_dancer"
 					type: "titles:title"
 				}

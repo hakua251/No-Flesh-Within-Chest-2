@@ -28,7 +28,7 @@ ServerEvents.tags('item', event => {
     event.add('kubejs:nether_meat', ['kubejs:fireproof_appendix', 'kubejs:fireproof_intestine', 'kubejs:fireproof_heart', 'kubejs:fireproof_kidney', 'kubejs:fireproof_liver', 'kubejs:fireproof_lung', 'kubejs:fireproof_muscle', 'kubejs:fireproof_spleen', 'kubejs:fireproof_stomach', 'kubejs:hoglin_rumen'])
 
     event.add('kubejs:nature', ['cornucopia:cornucopia'])
-    event.add('minecraft:music_discs', ['kubejs:faded_disc'])
+    event.add('minecraft:music_discs', ['kubejs:faded_disc', 'kubejs:assumptions_disc'])
 })
 
 ServerEvents.tags('entity_type', event => {

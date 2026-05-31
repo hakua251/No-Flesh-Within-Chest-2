@@ -505,6 +505,7 @@
 				{
 					icon: "kubejs:gateways_awake_stone_2"
 					id: "2E50E22459AF95C3"
+					title: "解锁头衔：&e门扉窥探者"
 					titleId: "kubejs:gate_observer"
 					type: "titles:title"
 				}
@@ -542,6 +543,7 @@
 				{
 					icon: "kubejs:gateways_awake_stone_3"
 					id: "65E21934FCA762D1"
+					title: "解锁头衔：&e门扉征服者"
 					titleId: "kubejs:gate_conqueror"
 					type: "titles:title"
 				}
@@ -581,6 +583,7 @@
 				{
 					icon: "kubejs:gateways_awake_stone_4"
 					id: "45ECB383519B245C"
+					title: "解锁头衔：&e门扉破坏者"
 					titleId: "kubejs:gate_buster"
 					type: "titles:title"
 				}
@@ -618,6 +621,7 @@
 				{
 					icon: "kubejs:gateways_awake_stone_5"
 					id: "17EC4FD5A2CF8E0D"
+					title: "解锁头衔：&e门扉粉碎者"
 					titleId: "kubejs:gate_smasher"
 					type: "titles:title"
 				}
@@ -655,6 +659,7 @@
 				{
 					icon: "kubejs:gateways_awake_stone_6"
 					id: "67A309F886741801"
+					title: "解锁头衔：&e门扉统御者"
 					titleId: "kubejs:gate_ruler"
 					type: "titles:title"
 				}

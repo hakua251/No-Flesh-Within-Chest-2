@@ -13,11 +13,13 @@ RegistryOrgan('kubejs:iron_repair_device')
  */
 function IronRepairDeviceItemRightClicked(customData, event, organItem, organIndex, slotType) {
     const item = event.item
-    if (!item.is('minecraft:iron_ingot')) return
     const player = event.player
+    if (OrganItemCoolDown(player, organItem)) return
+    if (!item.is('minecraft:iron_ingot')) return
     player.heal(player.getMaxHealth() * 0.1)
     RecoverPlayerHungerAndSaturation(player, 4)
     item.shrink(1)
+    player.addItemCooldown(organItem, 20 * 3)
 }
 
 RegistryOrganStrategy(

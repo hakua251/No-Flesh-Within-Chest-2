@@ -446,6 +446,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "6554736ED8ED1CAB"
+					title: "解锁头衔：&e深入地幔"
 					titleId: "kubejs:mantle_extractor"
 					type: "titles:title"
 				}
@@ -1339,6 +1340,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "712D571209E7461D"
+					title: "解锁头衔：&e永恒风雪"
 					titleId: "kubejs:eternal_winter"
 					type: "titles:title"
 				}
@@ -1533,6 +1535,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "328E0F032A8AB679"
+					title: "解锁头衔：&e太阳花"
 					titleId: "kubejs:sun_flower"
 					type: "titles:title"
 				}
@@ -1575,6 +1578,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "2806BE4A2329B4B3"
+					title: "解锁头衔：&e暖心"
 					titleId: "kubejs:heart_warm"
 					type: "titles:title"
 				}

@@ -820,6 +820,7 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "36135EB1EC993698"
+					title: "解锁头衔：&e维度虫"
 					titleId: "kubejs:dim_worm"
 					type: "titles:title"
 				}
@@ -1086,6 +1087,7 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "7ABE0B0BEC7B78AC"
+					title: "解锁头衔：&e回响者"
 					titleId: "kubejs:valley_echo"
 					type: "titles:title"
 				}
@@ -1258,6 +1260,7 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "6E6BBC777F707ACF"
+					title: "解锁头衔：&e破界者"
 					titleId: "kubejs:world_wound"
 					type: "titles:title"
 				}
@@ -1392,6 +1395,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "1D39560EF684560B"
+					title: "解锁头衔：&e新冒险"
 					titleId: "kubejs:adventure_story"
 					type: "titles:title"
 				}

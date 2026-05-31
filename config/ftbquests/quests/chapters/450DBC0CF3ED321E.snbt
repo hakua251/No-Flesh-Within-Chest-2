@@ -210,6 +210,7 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "4FDF777E61EB30BF"
+					title: "解锁头衔：&e新世界工匠"
 					titleId: "kubejs:new_tinker"
 					type: "titles:title"
 				}
@@ -630,6 +631,7 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "396EA469D30ABFDA"
+					title: "解锁头衔：&e锻锤"
 					titleId: "kubejs:forge_hammer"
 					type: "titles:title"
 				}

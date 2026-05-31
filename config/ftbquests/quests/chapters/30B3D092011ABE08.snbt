@@ -295,6 +295,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "46564C8DA185467F"
+					title: "解锁头衔：&e酸黄瓜"
 					titleId: "kubejs:sour_pickles"
 					type: "titles:title"
 				}
@@ -600,6 +601,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "67D207BDCFB0799C"
+					title: "解锁头衔：&e替罪羊"
 					titleId: "kubejs:scapegoat"
 					type: "titles:title"
 				}
@@ -787,6 +789,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "579020153CE7891B"
+					title: "解锁头衔：&e抚育者"
 					titleId: "kubejs:bring_up_me"
 					type: "titles:title"
 				}
@@ -850,6 +853,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "451796D122D94BA5"
+					title: "解锁头衔：&e完美躯体"
 					titleId: "kubejs:primal_chestcavity"
 					type: "titles:title"
 				}

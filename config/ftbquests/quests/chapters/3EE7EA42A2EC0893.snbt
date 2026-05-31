@@ -749,6 +749,7 @@
 			rewards: [{
 				icon: "titles:title_scroll_rare"
 				id: "2B501D37AE13E702"
+				title: "解锁头衔：&e你的未来"
 				titleId: "kubejs:your_future"
 				type: "titles:title"
 			}]

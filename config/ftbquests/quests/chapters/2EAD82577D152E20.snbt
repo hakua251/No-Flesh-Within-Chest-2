@@ -1858,6 +1858,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "013958312F0D29FA"
+					title: "解锁头衔：&e异界行者"
 					titleId: "kubejs:explore_multiworld"
 					type: "titles:title"
 				}
@@ -2517,6 +2518,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "40D2D8E0C8F17379"
+					title: "解锁头衔：&e数亿未来"
 					titleId: "kubejs:multiworld_future"
 					type: "titles:title"
 				}

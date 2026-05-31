@@ -3,8 +3,8 @@ RegistryWitnessStrategy('kubejs:story_witness', StoryWitnessCuriosStrategy)
 
 const StoryWitnessLootList = [
     { damage: 100, lootList: [Item.of('minecraft:iron_ingot', 8)] },
-    { damage: 500, lootList: [Item.of('torchmaster:megatorch')] },
-    { damage: 1000, lootList: [Item.of('minecraft:diamond', 3)] },
+    { damage: 500, lootList: [Item.of('minecraft:diamond', 3)] },
+    { damage: 1000, lootList: [Item.of('kubejs:fox_tail')] },
     { damage: 3000, lootList: [Item.of('kubejs:koi_fish_scale')] },
     { damage: 5000, lootList: [Item.of('tetra:geode', 8)] },
     { damage: 10000, lootList: [Item.of('kubejs:bravery_witness')] },

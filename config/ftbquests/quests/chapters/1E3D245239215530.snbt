@@ -156,6 +156,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "48452ACE1367FB41"
+					title: "解锁头衔：&e流水线工人"
 					titleId: "kubejs:assembly_line_builder"
 					type: "titles:title"
 				}
@@ -2373,6 +2374,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "288EEBFD56A66F65"
+					title: "解锁头衔：&e大世界建设者"
 					titleId: "kubejs:world_machine_builder"
 					type: "titles:title"
 				}

@@ -1,9 +1,18 @@
 {
-  "faded_song": {
+  "faded": {
     "category": "record",
     "sounds": [
       {
-        "name": "kubejs:records/faded_song",
+        "name": "kubejs:records/faded",
+        "stream": true
+      }
+    ]
+  },
+  "assumptions": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "kubejs:records/assumptions",
         "stream": true
       }
     ]

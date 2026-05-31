@@ -35,7 +35,7 @@ BlockEvents.rightClicked(event => {
         nbt.put('CustomTrader', customTrader.write())
     } else if (coreBlockEntity instanceof $GachaMachineBlockEntity) {
         if (!ShopGachaTraderType2TradeData.has(genType)) genType = 'weapon_skin'
-        let storages = ShopGachaTraderType2TradeData.get(genType).getWeightRandomRepeatedObjs(Math.floor(Math.random() * 40))
+        let storages = ShopGachaTraderType2TradeData.get(genType).getWeightRandomRepeatedObjs(Math.floor(Math.random() * 35 + 5))
         let customTrader = new LightmansCustomGachaTraderModel().setStorage(storages)
         nbt.put('CustomTrader', customTrader.write())
     } else {

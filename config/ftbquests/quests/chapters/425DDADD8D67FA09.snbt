@@ -180,6 +180,7 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "12403FEE5FCA5124"
+					title: "解锁头衔：&e齿轮匠"
 					titleId: "kubejs:gearsmith"
 					type: "titles:title"
 				}
@@ -595,6 +596,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "288D903B8EFE4DA1"
+					title: "解锁头衔：&e械学家"
 					titleId: "kubejs:mechanics_scholar"
 					type: "titles:title"
 				}

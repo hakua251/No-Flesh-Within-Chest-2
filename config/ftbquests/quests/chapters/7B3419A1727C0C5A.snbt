@@ -107,11 +107,20 @@
 			description: ["&7** 好想玩脆二 **&r"]
 			icon: "candlelight:letter_open"
 			id: "440318F5E2A002F4"
-			rewards: [{
-				id: "07DD7B04A9A8B6ED"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "07DD7B04A9A8B6ED"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "6978334FFDE9EB2D"
+					title: "解锁头衔：&e赞助者"
+					titleId: "kubejs:sponsor"
+					type: "titles:title"
+				}
+			]
 			subtitle: "[一段模糊不清的语音]"
 			tasks: [{
 				id: "1183166C34188972"
@@ -277,7 +286,7 @@
 			}]
 			title: "荣誉的象征"
 			x: -9.75d
-			y: 16.650000000000002d
+			y: 16.8d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
@@ -374,6 +383,68 @@
 			title: "皱巴巴的纸张"
 			x: 3.0d
 			y: 16.7d
+		}
+		{
+			dependencies: ["440318F5E2A002F4"]
+			description: [
+				"&7一个完全崭新的音乐唱片，就好像刚从封装里取出一样。&r"
+				""
+				"&7你不知道这是什么——至少现在还不知道。&r"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/redstone_ore.png"
+				}
+			}
+			id: "4FDD77A141F86F42"
+			rewards: [{
+				id: "072F66938574C6F6"
+				item: "kubejs:assumptions_disc"
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			subtitle: "什么鬼东西"
+			tasks: [{
+				id: "072AECC63CEB8CF3"
+				title: "从底部抽出"
+				type: "checkmark"
+			}]
+			title: "一张崭新的唱片"
+			x: -17.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["440318F5E2A002F4"]
+			description: ["&7有什么机关被触动了，你似乎莫名其妙多了重身份。&r"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/coal_ore.png"
+				}
+			}
+			id: "0E6957F34A4B3337"
+			rewards: [{
+				icon: "titles:title_scroll_uncommon"
+				id: "017E3C60206C90EE"
+				title: "解锁头衔：&e你的老婆"
+				titleId: "kubejs:your_wife"
+				type: "titles:title"
+			}]
+			shape: "none"
+			size: 1.5d
+			subtitle: "这是什么东西"
+			tasks: [{
+				id: "5B8ADFB5CBD93FD5"
+				title: "轻轻触摸"
+				type: "checkmark"
+			}]
+			title: "一块暗石"
+			x: -7.800000000000001d
+			y: -6.9d
 		}
 	]
 	title: "外传：被尊重者"
