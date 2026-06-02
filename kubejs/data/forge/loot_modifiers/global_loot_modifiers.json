@@ -1,4 +1,7 @@
 {
   "replace": true,
-  "entries": []
+  "entries": [
+    "biomancy:despoil",
+    "biomancy:cat_morning_gift"
+  ]
 }

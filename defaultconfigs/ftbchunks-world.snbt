@@ -92,7 +92,7 @@
 	
 	# Dimension ID's where the no_wilderness rule is enforced - building is only allowed in claimed chunks. If this is non-empty, it overrides the 'no_wilderness' setting.
 	# Default: []
-	no_wilderness_dimensions: [ ]
+	no_wilderness_dimensions: []
 	
 	# Method by which party claim & force-load limits are calculated.
 	# LARGEST: use the limits of the member with the largest limits
@@ -129,17 +129,17 @@
 		# Default mode for block breaking and placing in claimed chunks (NeoForge only)
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_block_edit: "allies"
+		def_block_edit: "public"
 		
 		# Default mode for block interaction, breaking and placing in claimed chunks (Fabric only)
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_block_edit_interact: "allies"
+		def_block_edit_interact: "public"
 		
 		# Default mode for block interaction (right-click) in claimed chunks (NeoForge only)
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_block_interact: "allies"
+		def_block_interact: "public"
 		
 		# Default claim visibility for claimed chunks
 		# Default: "public"
@@ -149,12 +149,12 @@
 		# Default mode for left-clicking non-living entities (armor stands, item frames...) in claimed chunks
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_entity_attack: "allies"
+		def_entity_attack: "public"
 		
 		# Default mode for entity interaction in claimed chunks
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_entity_interact: "allies"
+		def_entity_interact: "public"
 		
 		# Default allow fake player IDs which are the same as real permitted players
 		# Default: true
@@ -170,12 +170,12 @@
 		
 		# Default named fake players who should be allowed by default
 		# Default: []
-		def_named_fake_players: [ ]
+		def_named_fake_players: []
 		
 		# Default long-range player visibility on map
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_player_visibility: "allies"
+		def_player_visibility: "public"
 		
 		# Default PvP setting in claimed chunks
 		# Default: true

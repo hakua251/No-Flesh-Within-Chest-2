@@ -19,10 +19,12 @@ function ProwlerRotatingShaftEntityBeHurt(customData, event, organItem, organInd
 
     if (tamedLivingList.length <= 0) return
     let sharedAmount = event.amount / (tamedLivingList.length + 1)
+
     for (let target of tamedLivingList) {
+        if (target.invulnerableTime > 0) continue
         target.attack(event.source, sharedAmount)
+        event.amount = event.amount - sharedAmount
     }
-    event.amount = sharedAmount
 }
 
 RegistryOrganStrategy(

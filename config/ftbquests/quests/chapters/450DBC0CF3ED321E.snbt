@@ -185,9 +185,7 @@
 						"double/mallet_left_material": "mallet/stone"
 					}
 				}
-				match_nbt: true
 				type: "item"
-				weak_nbt_match: true
 			}]
 			title: "从锤子开始"
 			x: 0.0d

@@ -47,6 +47,7 @@ function SymbioctoArmEntityBeInteracted(customData, event, organItem, organIndex
  */
 function SymbioctoArmEntityFall(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
+    if (event.distance < 3) return
     if (!entity.isPlayer()) return
     if (entity.getPassengers().size() <= 0) return
     entity.getFirstPassenger().stopRiding()

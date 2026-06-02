@@ -35,7 +35,7 @@ function MammaryGlandEntityBeInteracted(customData, event, organItem, organIndex
     const targetType = target.getType()
     if (item.isEmpty()) return
     if (targetType == 'minecraft:cow') return
-
+    if (target.invulnerableTime > 0) target.invulnerableTime = 0
     let recipe = MammaryGlandRecipeMap.has(String(targetType)) ? MammaryGlandRecipeMap.get(String(targetType)) : MammaryGlandRecipeMap.get('default')
 
     if (!item.is(recipe['oriItem'])) return
@@ -79,10 +79,10 @@ registryMammaryGlandRecipe('minecraft:ocelot', Item.of('minecraft:glass_bottle')
 registryMammaryGlandRecipe('minecraft:turtle', Item.of('minecraft:glass_bottle'), Item.of('minecraft:potion', '{Potion:"minecraft:turtle_master"}'), 4)
 registryMammaryGlandRecipe('minecraft:squid', Item.of('minecraft:glass_bottle'), Item.of('minecraft:potion', '{Potion:"minecraft:water_breathing"}'), 4)
 registryMammaryGlandRecipe('minecraft:pufferfish', Item.of('minecraft:glass_bottle'), Item.of('minecraft:potion', '{Potion:"minecraft:water_breathing"}'), 4)
-registryMammaryGlandRecipe('minecraft:zombified_piglin', Item.of('minecraft:bucket'), Item.of('kubejs:molten_gold_fluid_bucket'), 10)
-registryMammaryGlandRecipe('minecraft:drowned', Item.of('minecraft:bucket'), Item.of('kubejs:molten_copper_fluid_bucket'), 10)
-registryMammaryGlandRecipe('minecraft:iron_golem', Item.of('minecraft:bucket'), Item.of('kubejs:molten_iron_fluid_bucket'), 20)
+registryMammaryGlandRecipe('minecraft:zombified_piglin', Item.of('minecraft:bucket'), Item.of('kubejs:molten_gold_fluid_bucket'), 15)
+registryMammaryGlandRecipe('minecraft:drowned', Item.of('minecraft:bucket'), Item.of('kubejs:molten_copper_fluid_bucket'), 15)
+registryMammaryGlandRecipe('minecraft:iron_golem', Item.of('minecraft:bucket'), Item.of('kubejs:molten_iron_fluid_bucket'), 25)
 registryMammaryGlandRecipe('minecraft:magma_cube', Item.of('minecraft:slime_ball'), Item.of('minecraft:magma_cream'), 1)
-registryMammaryGlandRecipe('minecraft:villager', Item.of('minecraft:bucket'), Item.of('kubejs:molten_emerald_fluid_bucket'), 10)
+registryMammaryGlandRecipe('minecraft:villager', Item.of('minecraft:bucket'), Item.of('kubejs:molten_emerald_fluid_bucket'), 15)
 registryMammaryGlandRecipe('minecraft:ender_dragon', Item.of('minecraft:glass_bottle'), Item.of('minecraft:dragon_breath'), 10)
 registryMammaryGlandRecipe('dracolotl:dracolotl', Item.of('minecraft:glass_bottle'), Item.of('minecraft:dragon_breath'), 1)
