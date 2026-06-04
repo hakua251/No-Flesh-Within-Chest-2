@@ -151,7 +151,6 @@ const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')
 const $PotionUtils = Java.loadClass('net.minecraft.world.item.alchemy.PotionUtils')
 const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem')
 
-const $TargetDummyEntity = Java.loadClass('net.mehvahdjukaar.dummmmmmy.common.TargetDummyEntity')
 const $ItemTraderBlockEntity = Java.loadClass('io.github.lightman314.lightmanscurrency.common.blockentity.trader.ItemTraderBlockEntity')
 const $TraderBlockBase = Java.loadClass('io.github.lightman314.lightmanscurrency.api.traders.blocks.TraderBlockBase')
 const $GachaMachineBlockEntity = Java.loadClass('io.github.lightman314.lightmanscurrency.common.blockentity.trader.GachaMachineBlockEntity')
@@ -163,3 +162,4 @@ const $ClipContextFluid = Java.loadClass('net.minecraft.world.level.ClipContext$
 
 const $VoidTentacle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.void_tentacle.VoidTentacle')
 const $AsyncLocator = Java.loadClass('brightspark.asynclocator.AsyncLocator')
+const $TargetDummyEntity = Java.loadClass('net.mehvahdjukaar.dummmmmmy.common.TargetDummyEntity')

@@ -20,5 +20,5 @@ function LeafInsectExoskeletonChestCavityUpdate(customData, event, organItem, or
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:leaf_insect_exoskeleton')
-        .addOnlyStrategy('chest_cavity_update', LeafInsectExoskeletonChestCavityUpdate, 1)
+        .addOnlyStrategy('chest_cavity_update', LeafInsectExoskeletonChestCavityUpdate)
 )

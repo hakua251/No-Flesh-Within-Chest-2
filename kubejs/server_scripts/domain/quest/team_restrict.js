@@ -3,11 +3,17 @@
 MAAEvents.ftbPlayerJoinParty(event => {
     event.cancel()
 })
+// 阻止玩家邀请
+MAAEvents.ftbPlayerInviteParty(event => {
+    event.cancel()
+})
 
-MAAEvents.ftbCreateParty(event => {
-    event.cancel()
-})
+// 允许声明盟友
+
+// MAAEvents.ftbCreateParty(event => {
+//     event.cancel()
+// })
 // 现在不允许创建ServerTeam了
-MAAEvents.ftbCreateServerTeam(event => {
-    event.cancel()
-})
+// MAAEvents.ftbCreateServerTeam(event => {
+//     event.cancel()
+// })

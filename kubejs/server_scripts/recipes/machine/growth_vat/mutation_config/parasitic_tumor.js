@@ -8,7 +8,7 @@ const ParasiticTumorMutationConfigModel = new TumorMutationConfigModel()
         let targetOrganData = new $CompoundTag()
         let keys = RandomGetN(organData.allKeys.toArray(), 1)
         keys.forEach(key => {
-            targetOrganData.putFloat(key, FloorFix(organData.getFloat(key) * 0.5, 2))
+            targetOrganData.putFloat(key, FloorFix(organData.getFloat(key) * 0.3, 2))
         })
         tumorNbt.put('organData', targetOrganData)
         return Item.of('kubejs:parasitic_tumor', tumorNbt)

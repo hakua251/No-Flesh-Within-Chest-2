@@ -102,7 +102,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["051ABDFF508A5451"]
+			dependencies: ["5FCBCB78FDA46E87"]
 			description: [
 				"尽管您可能没发现，但一些事情在这个世界中正在悄然发生。"
 				""
@@ -131,7 +131,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["051ABDFF508A5451"]
+			dependencies: ["279EB57E529F3640"]
 			description: [
 				"&6食物！好吃！&r"
 				""
@@ -156,7 +156,7 @@
 			}]
 			title: "&6好吃&r"
 			x: -10.5d
-			y: -9.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["2678AE772D365B92"]
@@ -848,7 +848,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["46E78442AD5DB22E"]
+			dependencies: ["6361C451E76A6805"]
 			description: [
 				"&7** 我们所有的技艺传承至此 **&r"
 				""

@@ -1,4 +1,5 @@
 // priority: 500
+
 ItemEvents.rightClicked('stick', event => {
     const player = event.player
     /**@type {Internal.ServerLevel} */
