@@ -110,9 +110,9 @@
 				""
 				"对此，&6我有一个解决方案，可以一定程度上延缓这种情况的发生&r。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:clock"
 			id: "67BDBE441F838A24"
-			invisible: true
 			rewards: [{
 				id: "74DEFE21053DC14C"
 				item: "lightmanscurrency:coin_gold"
@@ -120,13 +120,11 @@
 			}]
 			subtitle: "一些事情正在发生"
 			tasks: [{
-				icon: "minecraft:clock"
-				id: "7C8C01110C32DCD9"
-				stat: "minecraft:total_world_time"
-				title: "行程至此"
-				type: "stat"
-				value: 720000
+				id: "025D25676A859D3F"
+				title: "什么？"
+				type: "checkmark"
 			}]
+			title: "行程至此"
 			x: 0.0d
 			y: 0.0d
 		}
