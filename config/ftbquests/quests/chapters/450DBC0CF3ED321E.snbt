@@ -321,11 +321,22 @@
 				"如果您要用常规木材加工拐杖头，您只需要保证物品栏内有一柄木斧以上的斧头即可。"
 			]
 			id: "4352DE73166C1622"
-			rewards: [{
-				id: "5647CC631B022A94"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5647CC631B022A94"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "5DB424F7B53D2B5E"
+					item: {
+						Count: 1
+						id: "kubejs:horse_tendon"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			subtitle: "将工具类型转换"
 			tasks: [{
 				icon: {

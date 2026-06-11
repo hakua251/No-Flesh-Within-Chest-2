@@ -108,4 +108,9 @@ ServerEvents.recipes(event => {
         ['minecraft:iron_nugget', 'minecraft:stone_bricks', 'minecraft:iron_nugget'],
         ['minecraft:gold_nugget', 'minecraft:iron_nugget', 'minecraft:gold_nugget']
     ])
+    event.shaped(Item.of('kubejs:organ_bundle'), [
+        ['', '#forge:string', ''],
+        ['', '#forge:leather', ''],
+        ['', '#kubejs:stomach', '']
+    ])
 })

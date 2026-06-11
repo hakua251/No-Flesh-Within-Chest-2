@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.biomancy.bio_forging([Item.of('kubejs:player_25_injection', 1), Item.of('biomancy:bloomberry', 1), Item.of('biomancy:frenzy_serum', 1)], Item.of('kubejs:player_27_injection'), 'biomancy:components', 50)
 
-    event.recipes.biomancy.bio_forging([Item.of('graveyard:dark_iron_block', 1), Item.of('kubejs:small_acid_tank', 2), Item.of('minecraft:green_stained_glass', 6)], Item.of('kubejs:growth_vat'), 'biomancy:machines', 50)
+    event.recipes.biomancy.bio_forging([Item.of('graveyard:dark_iron_block', 1), Item.of('kubejs:small_acid_tank', 2), Item.of('minecraft:glass', 6)], Item.of('kubejs:growth_vat'), 'biomancy:machines', 50)
 
     event.recipes.biomancy.bio_forging([Item.of('biomancy:malignant_flesh', 1), Item.of('biomancy:acid_extract', 4)], Item.of('biomancy:primal_orifice'), 'biomancy:misc', 10)
 

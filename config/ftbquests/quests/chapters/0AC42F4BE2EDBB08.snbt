@@ -259,6 +259,7 @@
 			icon: "minecraft:iron_ore"
 			id: "24908FF341485C05"
 			rewards: [{
+				count: 3
 				id: "66A73E0393E9CA0C"
 				item: "minecraft:iron_ingot"
 				type: "item"
@@ -611,7 +612,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["4E805DA2B8D171E4"]
+			dependencies: ["563087C8FE4275E8"]
 			description: [
 				"在某些时候，您可能会需要建造一些&6指定类型的复杂结构&r——由于我只能通过极其有限的文字交流方式与您沟通，因此我并不能有效的向您表达如何构造这些结构。"
 				""
@@ -621,7 +622,6 @@
 				""
 				"当您选择完成后，即可手持该打印机，在世界中预览到该结构最终的放置效果。在&6打印机内部资源充足&r的情况下，您可以直接&6通过右键放置复杂结构&r。"
 			]
-			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "183701E5F614F6AD"
 			rewards: [{
@@ -648,7 +648,7 @@
 				type: "item"
 			}]
 			title: "知识打印器"
-			x: -3.0d
+			x: -6.0d
 			y: 12.0d
 		}
 		{
@@ -769,10 +769,11 @@
 			}]
 			subtitle: "成就检测类任务"
 			tasks: [{
-				advancement: "minecraft:story/enter_the_end"
-				criterion: ""
-				id: "3E64593C57CBCE4B"
-				type: "advancement"
+				dimension: "minecraft:the_end"
+				icon: "minecraft:end_portal_frame"
+				id: "10D9F9B4809774E8"
+				title: "前往末地"
+				type: "dimension"
 			}]
 			title: "击杀末影龙"
 			x: 0.0d
@@ -909,22 +910,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "28C86788D85A6138"
-			rewards: [
-				{
-					count: 1
-					icon: "kubejs:story_witness"
-					id: "771561DE10AE80F5"
-					ignore_reward_blocking: true
-					isPermanent: true
-					slot: "witness"
-					type: "maa:curios_slot"
-				}
-				{
-					id: "588FC7BAB1420E33"
-					item: "lightmanscurrency:coin_gold"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "588FC7BAB1420E33"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "概念具象化"
 			tasks: [{
 				id: "0E4B31D24385E193"
@@ -1020,42 +1010,8 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["183701E5F614F6AD"]
-			description: [
-				"在某些时候，您的基地可能需要进行上下联通，相比于使用楼梯，我更推荐您使用我发现的这个特殊方块——电梯方块。"
-				""
-				"通过在其正上方或者正下方一定距离放置另一个电梯方块，您便可以在该电梯方块上&6通过跳跃/潜行来进行垂直方向的传送&r。"
-				""
-				"除此之外，该方块也具有着&6伪装&r功能。您可以通过手持另一方块右键它来使其伪装为目标方块。"
-			]
-			icon: "elevatorid:elevator_white"
-			id: "39CD045117837363"
-			rewards: [{
-				id: "79A0D6FCFF1BE1BC"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "如果不用楼梯"
-			tasks: [{
-				id: "7EDC1809F61083B7"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "elevatorid:elevators"
-					}
-				}
-				title: "任意电梯方块"
-				type: "item"
-			}]
-			title: "快捷输送"
-			x: -4.5d
-			y: 12.0d
-		}
-		{
 			dependencies: ["28C86788D85A6138"]
 			description: ["由于见证系列饰品的触发方式均为造成&6伤害触发&r，因此您可以制作一个&6试验假人&r——其不具有攻击性，但是能够作为极佳的输出木桩使用，进而不断触发伤害累计的效果。"]
-			hide_until_deps_complete: true
 			id: "3EAB05477DC10CE1"
 			rewards: [{
 				id: "00776DF61EA78079"
@@ -1082,22 +1038,11 @@
 				"誓言饰品具有着&6扭曲游戏规则&r的作用，往往能对游戏流程发挥着举足轻重的作用。"
 			]
 			id: "7E16877C14CFD254"
-			rewards: [
-				{
-					count: 1
-					icon: "kubejs:eternal_oath"
-					id: "0069746500E68AE5"
-					ignore_reward_blocking: true
-					isPermanent: true
-					slot: "oath"
-					type: "maa:curios_slot"
-				}
-				{
-					id: "5069F2A6FE48A3B6"
-					item: "lightmanscurrency:coin_gold"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5069F2A6FE48A3B6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "概念具象化"
 			tasks: [{
 				id: "27E28F7234FC01A5"
@@ -1168,6 +1113,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["4E805DA2B8D171E4"]
 			description: [
 				"为了方便后续的长途旅行，您可能需要一个&6类似于鞘翅&r一样的能够将高度转换为动能的工具。"
 				""
@@ -1175,6 +1121,7 @@
 				""
 				"除此之外，滑翔翼似乎可以和各种能够&6让您高高跃起的工具&r进行配合，达到快速旅行的目的。"
 			]
+			hide_dependency_lines: true
 			id: "57BBCCCD732ED543"
 			rewards: [{
 				id: "26265381FDBCEE0D"
@@ -1195,7 +1142,7 @@
 			}]
 			title: "在高空中滑行"
 			x: -3.0d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["57BBCCCD732ED543"]
@@ -1222,7 +1169,55 @@
 			}]
 			title: "在高空中步行"
 			x: -4.5d
-			y: 13.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["28C86788D85A6138"]
+			description: [
+				"你可以通过&6故事的见证&r获得各种各样的新的见证。"
+				""
+				"其中不乏有一些能够用于&6获取资源、获取经验、以及扩容容器的类型&r——但无一例外，它们都需要您累计足够多的伤害才能够触发效果。"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:knowledge_witness"
+				tag: { }
+			}
+			id: "305C7E95F3826187"
+			rewards: [{
+				id: "34C56B1A37EE5311"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "更多的见证"
+			tasks: [{
+				id: "35E1121C93936929"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:perseverance_witness"
+							}
+							{
+								Count: 1b
+								id: "kubejs:bravery_witness"
+							}
+							{
+								Count: 1b
+								id: "kubejs:knowledge_witness"
+							}
+						]
+					}
+				}
+				title: "其他的见证"
+				type: "item"
+			}]
+			title: "见证中的见证"
+			x: 3.0d
+			y: 15.0d
 		}
 	]
 	title: "序章"

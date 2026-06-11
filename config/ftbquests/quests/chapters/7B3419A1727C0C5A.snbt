@@ -70,39 +70,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["440318F5E2A002F4"]
-			description: ["以我的信息处理能力，仅能够解明并开启&6 3 &r个前人所留之宝藏，这是其一。"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:textures/gui/tasks/sponsor/diamond_ore.png"
-				}
-			}
-			id: "4CD51B13B77E0C9E"
-			rewards: [{
-				auto: "enabled"
-				icon: "minecraft:copper_chest"
-				id: "6930B12F2B285B98"
-				title: "宝物已尽"
-				type: "custom"
-			}]
-			shape: "none"
-			size: 1.5d
-			subtitle: "以前人之问流传于世"
-			tasks: [{
-				count: 1L
-				id: "2562A3686DE5E765"
-				kubeId: "sponsor_gift_code"
-				textBoxRawTitle: ""
-				title: "密文为何"
-				type: "maa:kube_text_input"
-			}]
-			title: "前人所埋藏宝藏之一"
-			x: 9.9d
-			y: -9.65d
-		}
-		{
 			dependencies: ["1B4DAFA046EB8F20"]
 			description: ["&7** 好想玩脆二 **&r"]
 			icon: "candlelight:letter_open"
@@ -190,72 +157,6 @@
 			title: "曾经为王的证明"
 			x: -18.450000000000003d
 			y: 10.8d
-		}
-		{
-			dependencies: ["440318F5E2A002F4"]
-			description: ["以我的信息处理能力，仅能够解明并开启&6 3 &r个前人所留之宝藏，这是其一。"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:textures/gui/tasks/sponsor/emerald_ore.png"
-				}
-			}
-			id: "626233DC1095036E"
-			rewards: [{
-				auto: "enabled"
-				icon: "minecraft:copper_chest"
-				id: "3AC4D4179A012328"
-				title: "宝物已尽"
-				type: "custom"
-			}]
-			shape: "none"
-			size: 1.5d
-			subtitle: "以前人之问流传于世"
-			tasks: [{
-				count: 1L
-				id: "7FFA77F53A9E9991"
-				kubeId: "sponsor_gift_code"
-				textBoxRawTitle: ""
-				title: "密文为何"
-				type: "maa:kube_text_input"
-			}]
-			title: "前人所埋藏宝藏之一"
-			x: -19.5d
-			y: -9.75d
-		}
-		{
-			dependencies: ["440318F5E2A002F4"]
-			description: ["以我的信息处理能力，仅能够解明并开启&6 3 &r个前人所留之宝藏，这是其一。"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:textures/gui/tasks/sponsor/coal_ore.png"
-				}
-			}
-			id: "343D2F562292CF6C"
-			rewards: [{
-				auto: "enabled"
-				icon: "minecraft:copper_chest"
-				id: "470E4EEAD05F208C"
-				title: "宝物已尽"
-				type: "custom"
-			}]
-			shape: "none"
-			size: 1.5d
-			subtitle: "以前人之问流传于世"
-			tasks: [{
-				count: 1L
-				id: "796EAE8D513865D8"
-				kubeId: "sponsor_gift_code"
-				textBoxRawTitle: ""
-				title: "密文为何"
-				type: "maa:kube_text_input"
-			}]
-			title: "前人所埋藏宝藏之一"
-			x: 17.700000000000003d
-			y: 13.65d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]

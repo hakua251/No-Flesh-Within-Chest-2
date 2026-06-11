@@ -70,11 +70,18 @@
 			hide_until_deps_complete: true
 			icon: "chestcavity:chest_opener"
 			id: "180947BC2C1A1516"
-			rewards: [{
-				id: "526E751D4A6BA3A2"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "526E751D4A6BA3A2"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "669825716200B525"
+					item: "kubejs:organ_bundle"
+					type: "item"
+				}
+			]
 			subtitle: "一种特殊的生物属性"
 			tasks: [{
 				id: "4007BD9251408DD1"
@@ -142,7 +149,7 @@
 				""
 				"一般而言，对生物来说，必须要具备有至少为1的&6健康&r和至少为1的&6神经效率&r，前者会保证你不会持续流血，后者可以保证你能移动。"
 				""
-				"其他的属性也都有各自的作用，具体您可以使用&6固定提示框&r按键将物品提示固定住，而后将鼠标放在词条上观察。"
+				"其他的属性也都有各自的作用，具体您可以使用&6固定提示框按键（默认为D）&r将物品提示固定住，而后将鼠标放在词条上观察。"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -151,11 +158,18 @@
 				tag: { }
 			}
 			id: "3706063CCC0981B2"
-			rewards: [{
-				id: "1743A1957161902C"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1743A1957161902C"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "0D51927F87DCCEDA"
+					item: "kubejs:organ_purification_tank"
+					type: "item"
+				}
+			]
 			subtitle: "小心摘取你的器官！"
 			tasks: [{
 				id: "5934C16E1C3FE57E"
@@ -180,7 +194,7 @@
 				""
 				"但是打开胸腔需要一定的条件，这包括两部分——“&6生物生命值低于10%或者低于10&r”和“&6生物未穿戴胸甲&r”。"
 				""
-				"很明显，&6猪&r在天然状态下就满足这些条件，并且不会因为开胸造成的伤害一击致命。"
+				"很明显，&6猪/牛/羊等种种动物&r在天然状态下就满足这些条件，并且不会因为开胸造成的伤害一击致命。"
 				""
 				"因此，请您使用开胸器打开猪的胸腔，您可以取出它的任意器官以实验不同属性会导致的效果。"
 			]
@@ -193,11 +207,11 @@
 			}]
 			subtitle: "先从简单的生物开始"
 			tasks: [{
-				entity: "minecraft:pig"
+				entity: "minecraft:empty"
 				icon: "simplehats:pighead"
 				id: "47FAF2FB24171CF5"
-				inventoryType: "minecraft:empty"
-				title: "打开猪的胸腔"
+				inventoryType: "kubejs:cc_inventory_types/medium_terra"
+				title: "打开中型动物的胸腔"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
@@ -396,6 +410,8 @@
 				"器官排异在这个世界上本质上是一种&6非原初化&r的表现。肉块可以以自身生命为代价将这些器官原初化。"
 				""
 				"您可以将曾经有主的器官&6丢弃在肉团附近&r，肉团会自己寻找可净化的器官食用，并且在&630s&r后，生成一个&6无主的同名器官&r在原地。"
+				""
+				"如果您&6关闭了生物破坏&r，则可以通过&6手持器官右键肉团&r的方式，让它强制净化器官。"
 				""
 				"虽然效率低一些，但考虑到这是完全免费的，多养几个肉块或许就可以解决您的数量焦虑。"
 			]
@@ -700,6 +716,32 @@
 			title: "更高效的掠夺方案"
 			x: 2.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["180947BC2C1A1516"]
+			description: [
+				"有些时候，您需要对比多个物品信息。可以通过&6固定提示框按键（默认为D）&r将物品提示固定到屏幕。"
+				""
+				"若您需要取消已经固定的物品提示，则可以通过&6右键点击该提示框取消其固定状态&r。"
+				""
+				"有些时候，在物品描述中会存在有带下划线的表述。您可以通过将其物品提示框固定后，将&6鼠标悬浮在下划线文字上&r查看进一步信息。"
+			]
+			icon: "minecraft:item_frame"
+			id: "246F98FFF269D869"
+			rewards: [{
+				id: "16A41D6F77939243"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "更好的阅读方式"
+			tasks: [{
+				id: "325AF4FD5827BF39"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "悬浮物品框"
+			x: 2.5d
+			y: 0.0d
 		}
 	]
 	title: "认知：胸腔"

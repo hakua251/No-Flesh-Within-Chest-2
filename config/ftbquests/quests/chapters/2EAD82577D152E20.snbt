@@ -695,6 +695,8 @@
 				"看来您已经能够学会如何冲洗照片了。"
 				""
 				"现在，我希望您能够通过您的眼睛，来收集这个世界上我们&6错过的一切&r。"
+				""
+				"请注意，在后文中的拍照任务，需要您单独提供一张照片，&c堆叠的照片并不会被纳入检测&r。"
 			]
 			id: "766A21B5DC7F7CF0"
 			rewards: [{
@@ -2684,11 +2686,19 @@
 			]
 			icon: "exposure_polaroid:instant_camera"
 			id: "0D0F8F2985EF7CC8"
-			rewards: [{
-				id: "701FFF2FD54B14DD"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "701FFF2FD54B14DD"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "68C11EE0396A98C2"
+					item: "exposure_polaroid:instant_color_slide"
+					type: "item"
+				}
+			]
 			subtitle: "快捷照片生产设备"
 			tasks: [{
 				id: "46BFAAF9116D4783"

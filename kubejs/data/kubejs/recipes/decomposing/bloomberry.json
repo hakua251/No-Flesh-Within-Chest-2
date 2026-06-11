@@ -41,7 +41,7 @@
         {
             "countRange": {
                 "type": "uniform",
-                "max": 1,
+                "max": 2,
                 "min": 0
             },
             "item": "biomancy:bloomberry"
