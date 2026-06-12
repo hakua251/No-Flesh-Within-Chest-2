@@ -106,7 +106,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/tools/organ_purification_tank')
 
 
-    event.create('kubejs:organ_bundle').maxStackSize(1)
+    event.create('organ_bundle').maxStackSize(1)
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
             if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
             if (oStack.isEmpty()) {

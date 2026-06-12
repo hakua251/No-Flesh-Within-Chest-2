@@ -77,7 +77,7 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
         let replaceItem = Item.of('kubejs:burning_heart')
         SetChestCavityOrgan(customData, chestCavity, replaceItem, organIndex, slotType, false)
         // 革命之钟触发烈焰加压器
-        if (chestCavity.inventory.find('kubejs:revolution_bell') > 0) {
+        if (chestCavity.inventory.find('kubejs:revolution_bell') > -1) {
             if (sourceEntity instanceof $ServerPlayer) {
                 if (!sourceEntity.getCooldowns().isOnCooldown('kubejs:blaze_pressurizer')) {
                     let counter = BlazePressurizerActive(chestCavity, slotType)

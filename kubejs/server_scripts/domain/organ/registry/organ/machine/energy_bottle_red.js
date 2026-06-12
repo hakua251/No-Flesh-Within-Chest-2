@@ -39,7 +39,7 @@ function EnergyBottleRedDoDamage(customData, event, organItem, organIndex, slotT
     const sourceEntity = event.source.actual
     const chestCavity = sourceEntity.chestCavityInstance
 
-    if (chestCavity.inventory.find('kubejs:burning_heart') > 0) {
+    if (chestCavity.inventory.find('kubejs:burning_heart') > -1) {
         switch (slotType) {
             case RevolutionFlame:
                 if (organItem.getDamageValue() + 10 <= organItem.getMaxDamage()) {

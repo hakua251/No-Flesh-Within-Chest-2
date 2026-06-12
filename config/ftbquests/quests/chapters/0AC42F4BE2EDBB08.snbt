@@ -154,7 +154,7 @@
 				""
 				"当然，工作台也并不一定需要放置在地面上才能够使用。通过打开自己的背包，对工作台物品按下鼠标右键，可以直接在背包中打开对应的合成界面。"
 				""
-				"现在，您需要合成出一个木镐，并且挖掘至少 3 块圆石类方块。随后，将您&6受损的木镐&r和&6圆石&r均&6提交&r到本任务&r中。"
+				"现在，您需要合成出一个木镐，并且挖掘至少 3 块圆石类方块。随后，将&6圆石&r均&6提交&r到本任务&r中。"
 				""
 				"本任务会消耗掉您的木镐和圆石，作为交换，会返还给您性能更为优秀的石镐。"
 			]
@@ -191,7 +191,6 @@
 			subtitle: "提交类任务"
 			tasks: [
 				{
-					consume_items: true
 					id: "6E1307B08DAD2260"
 					item: {
 						Count: 1
@@ -254,25 +253,21 @@
 			description: [
 				"在预先设定好的游戏流程中，您需要在世界中向下挖掘，获取到一定量的&n&6铁矿石&r来提高您的挖掘等级。"
 				""
-				"但稍等. . . &c好像这个世界存在一些问题&r，我会在之后为您查明这些问题，暂且还&6请您先按照任务的要求挖掘对应数量的矿物&r。"
+				"当然，您也可以通过世界中的战利品来获取铁锭。"
 			]
-			icon: "minecraft:iron_ore"
+			icon: "minecraft:iron_ingot"
 			id: "24908FF341485C05"
 			rewards: [{
-				count: 3
+				count: 8
 				id: "66A73E0393E9CA0C"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			subtitle: "挖掘类任务"
+			subtitle: "关键生存物资"
 			tasks: [{
-				block: "forge:ores/iron"
-				block_type: 1
-				checkItem: false
-				id: "54746139866A967C"
-				title: "挖掘铁矿石"
-				type: "questsadditions:break"
-				value: 1L
+				id: "457B9B3D155232F6"
+				item: "minecraft:iron_ingot"
+				type: "item"
 			}]
 			x: 0.0d
 			y: 6.0d
@@ -1122,6 +1117,7 @@
 				"除此之外，滑翔翼似乎可以和各种能够&6让您高高跃起的工具&r进行配合，达到快速旅行的目的。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "57BBCCCD732ED543"
 			rewards: [{
 				id: "26265381FDBCEE0D"
@@ -1218,6 +1214,34 @@
 			title: "见证中的见证"
 			x: 3.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["4BEDD898484E1898"]
+			description: [
+				"有些时候，您需要对比多个物品信息。可以通过&6固定提示框按键（默认为D）&r将物品提示固定到屏幕。"
+				""
+				"若您需要取消已经固定的物品提示，则可以通过&6右键点击该提示框取消其固定状态&r。"
+				""
+				"有些时候，在物品描述中会存在有带下划线的表述。您可以通过将其物品提示框固定后，将&6鼠标悬浮在下划线文字上&r查看进一步信息。"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:item_frame"
+			id: "246F98FFF269D869"
+			rewards: [{
+				id: "16A41D6F77939243"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "更好的阅读方式"
+			tasks: [{
+				id: "325AF4FD5827BF39"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "悬浮物品框"
+			x: 3.0d
+			y: 1.5d
 		}
 	]
 	title: "序章"

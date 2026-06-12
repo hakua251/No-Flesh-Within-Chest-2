@@ -192,7 +192,7 @@
 			description: [
 				"除了您自己的胸腔之外，您也可以打开其他生物的胸腔。"
 				""
-				"但是打开胸腔需要一定的条件，这包括两部分——“&6生物生命值低于10%或者低于10&r”和“&6生物未穿戴胸甲&r”。"
+				"但是打开胸腔需要一定的条件，这包括两部分——&6“生物生命值低于10%或者低于10”&r和&6“生物未穿戴胸甲”&r。"
 				""
 				"很明显，&6猪/牛/羊等种种动物&r在天然状态下就满足这些条件，并且不会因为开胸造成的伤害一击致命。"
 				""
@@ -720,26 +720,24 @@
 		{
 			dependencies: ["180947BC2C1A1516"]
 			description: [
-				"有些时候，您需要对比多个物品信息。可以通过&6固定提示框按键（默认为D）&r将物品提示固定到屏幕。"
+				"[\"现阶段，您可以通过在JEI中搜索\",{\"text\":\"$organ\",\"underlined\":true,\"color\":\"gold\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"$organ\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"点此复制\"}},\"来查看所有的器官。\"]"
 				""
-				"若您需要取消已经固定的物品提示，则可以通过&6右键点击该提示框取消其固定状态&r。"
-				""
-				"有些时候，在物品描述中会存在有带下划线的表述。您可以通过将其物品提示框固定后，将&6鼠标悬浮在下划线文字上&r查看进一步信息。"
+				"这只是个&6临时方案&r，在后续版本中，会有更细致的图鉴来描述各个器官的效果。"
 			]
-			icon: "minecraft:item_frame"
-			id: "246F98FFF269D869"
+			icon: "exposure:album"
+			id: "43227BE4252AEDC8"
 			rewards: [{
-				id: "16A41D6F77939243"
+				id: "384BB9BFF1D16094"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "更好的阅读方式"
+			subtitle: "世界上的所有器官"
 			tasks: [{
-				id: "325AF4FD5827BF39"
+				id: "304BB80EEB89D6C3"
 				title: "我已了解"
 				type: "checkmark"
 			}]
-			title: "悬浮物品框"
+			title: "世界器官综述"
 			x: 2.5d
 			y: 0.0d
 		}

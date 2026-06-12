@@ -3,14 +3,8 @@ RegistryOrgan('kubejs:moew_nose')
     .addScore('chestcavity:luck', 1.5)
     .setCanSpawn(true)
 
-const MoewLanguageCharCodeMap = [
-    Text.translatable('msg.kubejs.moew_nose.char_code.1').getString(),
-    Text.translatable('msg.kubejs.moew_nose.char_code.2').getString(),
-    Text.translatable('msg.kubejs.moew_nose.char_code.3').getString(),
-    Text.translatable('msg.kubejs.moew_nose.char_code.4').getString(),
-    Text.translatable('msg.kubejs.moew_nose.char_code.5').getString(),
-]
-const MoewLanguageBegin = Text.translatable('msg.kubejs.moew_nose.begin.1').getString()
+const MoewLanguageCharCodeMap = ['呜', '喵', '~', '嗷', '！', '喵~ ']
+const MoewLanguageBegin = '呜'
 
 /**
  * @param {OrganEventCustomData} customData

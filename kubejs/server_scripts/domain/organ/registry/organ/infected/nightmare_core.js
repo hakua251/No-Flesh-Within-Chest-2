@@ -12,7 +12,7 @@ RegistryOrgan('kubejs:nightmare_core')
  * @param {string} slotType
  */
 function NightmareCorePlayerSpawnPhantoms(customData, event, organItem, organIndex, slotType) {
-    event.cancel()
+    event.setPhantomsToSpawn(0)
 }
 
 RegistryOrganStrategy(

@@ -20,7 +20,7 @@
                 "type": "tetra:not",
                 "requirement": {
                     "type": "tetra:improvement",
-                    "improvement": "blade/flame_burst"
+                    "improvement": "blade/flame_strike"
                 }
             }
         ]

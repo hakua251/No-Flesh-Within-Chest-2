@@ -10,8 +10,8 @@ ItemEvents.rightClicked('kubejs:organ_purification_tank', event => {
         nbt.remove('chestcavity:organ_compatibility')
         outputList.push(pStack.copyAndClear())
     })
-    item.shrink(1)
     GivePlayerItemList(player, outputList)
+    item.shrink(1)
 })
 
 

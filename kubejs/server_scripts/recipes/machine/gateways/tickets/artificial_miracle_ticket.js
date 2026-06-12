@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
             waveCount = waveCount ? waveCount : 3
             let gatewayModifiers = []
             GatewayChaosModifierMapping.getAllValues(chaosIndicator).forEach(modifierBuilder => {
-                gatewayModifiers.push(modifierBuilder(levelIndicator, chaosIndicator))
+                gatewayModifiers = gatewayModifiers.concat(modifierBuilder(levelIndicator, chaosIndicator))
             })
 
             const entityTypeCount = Math.floor(levelIndicator / 20 + 2)
@@ -128,7 +128,7 @@ function eternalAltarGatewayArtificialTicketReward(machine, player, levelIndicat
             data.put('type_indicator', targetType)
         }))
     } else {
-        data.put('chaos_indicator', Clamp(chaosIndicator - levelModifier - 1, 0, 60))
+        data.put('chaos_indicator', Clamp(chaosIndicator - 1, 0, 60))
     }
     eternalAltarSubmitQuest(player, levelIndicator, chaosIndicator, typeIndicator)
     // Ticket特殊掉落物

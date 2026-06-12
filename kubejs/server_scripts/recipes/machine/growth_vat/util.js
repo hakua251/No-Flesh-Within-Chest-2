@@ -85,7 +85,7 @@ function ProliferateTumor(machine, fluid, item, slotId) {
     if (!item.hasTag('kubejs:tumor')) return
     let random = Math.random()
     if (!item.hasNBT()) return
-    if (random > 0.75) {
+    if (random > 0.85) {
         let nbt = item.getNbt()
         let organData = nbt.getCompound('organData')
         let potentialOrganData = nbt.getCompound('potentialOrganData')
@@ -98,7 +98,7 @@ function ProliferateTumor(machine, fluid, item, slotId) {
             let randomValue = FloorFix(organData.getFloat(randomKey) * 0.9, 2)
             organData.putFloat(randomKey, randomValue)
         }
-    } else if (random < 0.5) {
+    } else if (random < 0.3) {
         return []
     }
     let targetItem = item.copy()

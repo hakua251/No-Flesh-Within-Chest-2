@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "type": "createoreexcavation:vein",
+  "amountMax": 8.0,
+  "amountMin": 3.0,
+  "biomeWhitelist": "minecraft:is_nether",
+  "icon": {
+    "item": "minecraft:gold_nugget"
+  },
+  "name": "{\"translate\":\"item.minecraft.gold_nugget\"}",
+  "placement": {
+    "salt": 148851665,
+    "separation": 32,
+    "spacing": 128
+  },
+  "priority": 0
+}
